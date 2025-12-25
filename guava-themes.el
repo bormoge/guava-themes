@@ -40,8 +40,9 @@ The theme has to be reloaded after changing anything in this group."
   "Face to use as a replacement for `visible-bell'."
   :group 'guava)
 
-(defun guava-visible-bell-fn ()
-  "Change the blink of the mode-line.  Set `ring-bell-function' to this to use it."
+(defun guava-change-visible-bell ()
+  "Change the blink of the minibuffer with a blink for the mode-line.
+Set `ring-bell-function' with this function as its value to use it."
   (let* ((buf (current-buffer))
          (faces (if (facep 'mode-line-active)
                     '(mode-line-active)

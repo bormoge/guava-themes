@@ -1,5 +1,5 @@
 # Images Directory
-This is where all the images are located. Unless noted in the "Attributions" section, all images are licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/legalcode.en)
+This is where all the images are located. Unless otherwise stated in the "Attributions" section, all images were created by [me](https://github.com/bormoge) under the [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/legalcode.en) license.
 
 ## Attributions
 N/A

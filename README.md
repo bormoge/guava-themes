@@ -22,10 +22,14 @@ I recommend you use this Emacs code:
 ```
 (use-package guava-themes
   :vc (:url "https://github.com/bormoge/guava-themes"
-       :rev :newest
-       :branch "main"
-       :vc-backend Git)
+            :rev :newest
+            :branch "main"
+            :vc-backend Git)
   :ensure t
+  :config
+  (setq ring-bell-function #guava-change-visible-bell)
+  (setq visible-bell t)
+  (load-theme 'guava-psidium t)
   )
 ```
 
