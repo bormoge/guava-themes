@@ -4,10 +4,10 @@
 
 ;; Author: Geralld Borbón <eternalmangocean@gmail.com>
 ;; Created: Dec 07, 2025
-;; Version: 0.1.0
+;; Version: 0.1.1
 ;; Keywords: themes faces
 ;; URL: http://github.com/bormoge/guava-themes.el
-;; Package-Requires: (emacs "30.2")
+;; Package-Requires: ((emacs "29.1"))
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -28,8 +28,8 @@
 ;;
 ;;; Code:
 
-(unless (>= emacs-major-version 30)
-  (error "A version of Emacs equal or superior to 30 is required"))
+(unless (>= emacs-major-version 29)
+  (error "A version of Emacs equal or superior to 29 is required"))
 
 (defgroup guava nil
   "Guava theme options.

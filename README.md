@@ -1,7 +1,7 @@
 # guava-themes (WIP)
 A few Emacs themes inspired by guavas (and other plants).
 
-<img src="./img/guava-flower-drawing-2.png" width="400" height="400" alt="guava-drawing">
+<img src="./img/guava-flower-drawing-2.png" width="300" height="300" alt="guava-drawing">
 <!-- ![guava-drawing](./img/guava-flower-drawing-2.png) -->
 
 ### Table of Contents

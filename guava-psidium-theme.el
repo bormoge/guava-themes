@@ -4,10 +4,9 @@
 
 ;; Author: Geralld Borbón <eternalmangocean@gmail.com>
 ;; Created: Dec 07, 2025
-;; Version: 0.1.0
+;; Version: 0.1.1
 ;; Keywords: themes faces
 ;; URL: http://github.com/bormoge/guava-themes.el
-;; Package-Requires: (emacs "30.2")
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
