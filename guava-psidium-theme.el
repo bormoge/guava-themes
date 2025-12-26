@@ -4,7 +4,7 @@
 
 ;; Author: Geralld Borbón <eternalmangocean@gmail.com>
 ;; Created: Dec 07, 2025
-;; Version: 0.1.2
+;; Version: 0.1.3
 ;; Keywords: themes faces
 ;; URL: http://github.com/bormoge/guava-themes.el
 
