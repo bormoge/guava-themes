@@ -161,7 +161,7 @@
 
    ;; line-number
    `(line-number ((,solanum-class (:foreground ,solanum-fg :inherit default))))
-   `(line-number-current-line ((,solanum-class (:foreground ,solanum-light-green :weight bold :inherit (highlight line-number)))))
+   `(line-number-current-line ((,solanum-class (:foreground ,solanum-mode-line :weight bold :inherit (highlight line-number)))))
    `(line-number-minor-tick ((,solanum-class (:background ,solanum-alt-purple :inherit line-number))))
    `(line-number-major-tick ((,solanum-class (:background ,solanum-purple-blue :inherit line-number))))
 

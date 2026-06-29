@@ -159,7 +159,7 @@
 
    ;; line-number
    `(line-number ((,petunia-class (:foreground ,petunia-fg :inherit default))))
-   `(line-number-current-line ((,petunia-class (:foreground ,petunia-light-orange :weight bold :inherit (highlight line-number)))))
+   `(line-number-current-line ((,petunia-class (:foreground ,petunia-mode-line :weight bold :inherit (highlight line-number)))))
    `(line-number-minor-tick ((,petunia-class (:background ,petunia-light-blue :inherit line-number))))
    `(line-number-major-tick ((,petunia-class (:background ,petunia-blue :inherit line-number))))
 

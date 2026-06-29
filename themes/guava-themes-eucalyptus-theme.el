@@ -161,7 +161,7 @@
 
    ;; line-number
    `(line-number ((,eucalyptus-class (:foreground ,eucalyptus-fg :inherit default))))
-   `(line-number-current-line ((,eucalyptus-class (:foreground ,eucalyptus-deep-blue :weight bold :inherit (highlight line-number)))))
+   `(line-number-current-line ((,eucalyptus-class (:foreground ,eucalyptus-mode-line :weight bold :inherit (highlight line-number)))))
    `(line-number-minor-tick ((,eucalyptus-class (:background ,eucalyptus-green :inherit line-number))))
    `(line-number-major-tick ((,eucalyptus-class (:background ,eucalyptus-gray-green :inherit line-number))))
 

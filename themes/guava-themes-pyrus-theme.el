@@ -161,7 +161,7 @@
 
    ;; line-number
    `(line-number ((,pyrus-class (:foreground ,pyrus-fg :inherit default))))
-   `(line-number-current-line ((,pyrus-class (:foreground ,pyrus-black :weight bold :inherit (highlight line-number)))))
+   `(line-number-current-line ((,pyrus-class (:foreground ,pyrus-mode-line :weight bold :inherit (highlight line-number)))))
    `(line-number-minor-tick ((,pyrus-class (:background ,pyrus-light-green :inherit line-number))))
    `(line-number-major-tick ((,pyrus-class (:background ,pyrus-orange-pink :inherit line-number))))
 

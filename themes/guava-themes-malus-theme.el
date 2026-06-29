@@ -160,7 +160,7 @@
 
    ;; line-number
    `(line-number ((,malus-class (:foreground ,malus-yellow-subdued :inherit default))))
-   `(line-number-current-line ((,malus-class (:foreground ,malus-fg :weight bold :inherit (highlight line-number)))))
+   `(line-number-current-line ((,malus-class (:foreground ,malus-mode-line :weight bold :inherit (highlight line-number)))))
    `(line-number-minor-tick ((,malus-class (:background ,malus-red-sweetango :inherit line-number))))
    `(line-number-major-tick ((,malus-class (:background ,malus-deep-red :inherit line-number))))
 

@@ -163,7 +163,7 @@
 
    ;; line-number
    `(line-number ((,rhododendron-class (:foreground ,rhododendron-fg :inherit default))))
-   `(line-number-current-line ((,rhododendron-class (:foreground ,rhododendron-purple-red :weight bold :inherit (highlight line-number)))))
+   `(line-number-current-line ((,rhododendron-class (:foreground ,rhododendron-mode-line :weight bold :inherit (highlight line-number)))))
    `(line-number-minor-tick ((,rhododendron-class (:background ,rhododendron-light-orange :inherit line-number))))
    `(line-number-major-tick ((,rhododendron-class (:background ,rhododendron-purple :inherit line-number))))
 

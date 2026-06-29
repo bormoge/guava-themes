@@ -162,7 +162,7 @@
 
    ;; line-number
    `(line-number ((,prunus-class (:foreground ,prunus-purple-red :inherit default))))
-   `(line-number-current-line ((,prunus-class (:foreground ,prunus-fg :weight bold :inherit (highlight line-number)))))
+   `(line-number-current-line ((,prunus-class (:foreground ,prunus-mode-line :weight bold :inherit (highlight line-number)))))
    `(line-number-minor-tick ((,prunus-class (:background ,prunus-light-pink :inherit line-number))))
    `(line-number-major-tick ((,prunus-class (:background ,prunus-pink :inherit line-number))))
 
