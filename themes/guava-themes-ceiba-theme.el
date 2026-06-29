@@ -67,7 +67,7 @@
       (ceiba-fg                        "#000000")
       (ceiba-bg                        "#bab49e")
       (ceiba-highlight                 "#a6a08a")
-      (ceiba-shadow                    "#7f7f7f")
+      (ceiba-shadow                    "#898989")
 
       (ceiba-error                     "#ff0000")
       (ceiba-warning                   "#f6c911")
