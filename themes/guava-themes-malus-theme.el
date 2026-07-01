@@ -161,8 +161,8 @@
    ;; line-number
    `(line-number ((,malus-class (:foreground ,malus-yellow-subdued :inherit default))))
    `(line-number-current-line ((,malus-class (:foreground ,malus-mode-line :weight bold :inherit (highlight line-number)))))
-   `(line-number-minor-tick ((,malus-class (:background ,malus-red-sweetango :inherit line-number))))
-   `(line-number-major-tick ((,malus-class (:background ,malus-deep-red :inherit line-number))))
+   `(line-number-minor-tick ((,malus-class (:background ,malus-tab-2 :inherit line-number))))
+   `(line-number-major-tick ((,malus-class (:background ,malus-tab-3 :inherit line-number))))
 
    ;; mode-line
    `(mode-line ((,malus-class (:foreground ,malus-white :background ,malus-mode-line))))

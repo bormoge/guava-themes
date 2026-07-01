@@ -159,8 +159,8 @@
    ;; line-number
    `(line-number ((,psidium-class (:foreground ,psidium-brown :inherit default))))
    `(line-number-current-line ((,psidium-class (:foreground ,psidium-mode-line :weight bold :inherit (highlight line-number)))))
-   `(line-number-minor-tick ((,psidium-class (:background ,psidium-light-orange :inherit line-number))))
-   `(line-number-major-tick ((,psidium-class (:background ,psidium-light-purple :inherit line-number))))
+   `(line-number-minor-tick ((,psidium-class (:background ,psidium-tab-2 :inherit line-number))))
+   `(line-number-major-tick ((,psidium-class (:background ,psidium-tab-3 :inherit line-number))))
 
    ;; mode-line
    `(mode-line ((,psidium-class (:foreground ,psidium-white :background ,psidium-mode-line))))

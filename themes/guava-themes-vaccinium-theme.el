@@ -163,8 +163,8 @@
    ;; line-number
    `(line-number ((,vaccinium-class (:foreground ,vaccinium-fg :inherit default))))
    `(line-number-current-line ((,vaccinium-class (:foreground ,vaccinium-mode-line :weight bold :inherit (highlight line-number)))))
-   `(line-number-minor-tick ((,vaccinium-class (:background ,vaccinium-light-purple :inherit line-number))))
-   `(line-number-major-tick ((,vaccinium-class (:background ,vaccinium-deep-purple :inherit line-number))))
+   `(line-number-minor-tick ((,vaccinium-class (:background ,vaccinium-tab-2 :inherit line-number))))
+   `(line-number-major-tick ((,vaccinium-class (:background ,vaccinium-tab-3 :inherit line-number))))
 
    ;; mode-line
    `(mode-line ((,vaccinium-class (:foreground ,vaccinium-white :background ,vaccinium-mode-line))))

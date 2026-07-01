@@ -164,8 +164,8 @@
    ;; line-number
    `(line-number ((,rubus-class (:foreground ,rubus-fg :inherit default))))
    `(line-number-current-line ((,rubus-class (:foreground ,rubus-mode-line :weight bold :inherit (highlight line-number)))))
-   `(line-number-minor-tick ((,rubus-class (:background ,rubus-purple-pink :inherit line-number))))
-   `(line-number-major-tick ((,rubus-class (:background ,rubus-purple :inherit line-number))))
+   `(line-number-minor-tick ((,rubus-class (:background ,rubus-tab-2 :inherit line-number))))
+   `(line-number-major-tick ((,rubus-class (:background ,rubus-tab-3 :inherit line-number))))
 
    ;; mode-line
    `(mode-line ((,rubus-class (:foreground ,rubus-white :background ,rubus-mode-line))))

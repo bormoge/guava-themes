@@ -160,8 +160,8 @@
    ;; line-number
    `(line-number ((,petunia-class (:foreground ,petunia-fg :inherit default))))
    `(line-number-current-line ((,petunia-class (:foreground ,petunia-mode-line :weight bold :inherit (highlight line-number)))))
-   `(line-number-minor-tick ((,petunia-class (:background ,petunia-light-blue :inherit line-number))))
-   `(line-number-major-tick ((,petunia-class (:background ,petunia-blue :inherit line-number))))
+   `(line-number-minor-tick ((,petunia-class (:background ,petunia-tab-2 :inherit line-number))))
+   `(line-number-major-tick ((,petunia-class (:background ,petunia-tab-3 :inherit line-number))))
 
    ;; mode-line
    `(mode-line ((,petunia-class (:foreground ,petunia-white :background ,petunia-mode-line))))

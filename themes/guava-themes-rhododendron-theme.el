@@ -164,8 +164,8 @@
    ;; line-number
    `(line-number ((,rhododendron-class (:foreground ,rhododendron-fg :inherit default))))
    `(line-number-current-line ((,rhododendron-class (:foreground ,rhododendron-mode-line :weight bold :inherit (highlight line-number)))))
-   `(line-number-minor-tick ((,rhododendron-class (:background ,rhododendron-light-orange :inherit line-number))))
-   `(line-number-major-tick ((,rhododendron-class (:background ,rhododendron-purple :inherit line-number))))
+   `(line-number-minor-tick ((,rhododendron-class (:background ,rhododendron-tab-2 :inherit line-number))))
+   `(line-number-major-tick ((,rhododendron-class (:background ,rhododendron-tab-3 :inherit line-number))))
 
    ;; mode-line
    `(mode-line ((,rhododendron-class (:foreground ,rhododendron-white :background ,rhododendron-mode-line))))

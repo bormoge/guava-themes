@@ -163,8 +163,8 @@
    ;; line-number
    `(line-number ((,prunus-class (:foreground ,prunus-purple-red :inherit default))))
    `(line-number-current-line ((,prunus-class (:foreground ,prunus-mode-line :weight bold :inherit (highlight line-number)))))
-   `(line-number-minor-tick ((,prunus-class (:background ,prunus-light-pink :inherit line-number))))
-   `(line-number-major-tick ((,prunus-class (:background ,prunus-pink :inherit line-number))))
+   `(line-number-minor-tick ((,prunus-class (:background ,prunus-tab-2 :inherit line-number))))
+   `(line-number-major-tick ((,prunus-class (:background ,prunus-tab-3 :inherit line-number))))
 
    ;; mode-line
    `(mode-line ((,prunus-class (:foreground ,prunus-white :background ,prunus-mode-line))))
