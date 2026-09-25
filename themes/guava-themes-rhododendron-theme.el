@@ -282,6 +282,7 @@
 
    ;; custom-button
    `(custom-button ((,rhododendron-class (:foreground ,rhododendron-white :background ,rhododendron-mode-line :box (:line-width 2 :style released-button)))))
+   `(custom-button-pressed ((,rhododendron-class (:foreground ,rhododendron-white :background ,rhododendron-mode-line :box (:line-width 2 :style pressed-button)))))
 
 
    ;; external packages

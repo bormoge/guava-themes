@@ -278,6 +278,7 @@
 
    ;; custom-button
    `(custom-button ((,petunia-class (:foreground ,petunia-white :background ,petunia-mode-line :box (:line-width 2 :style released-button)))))
+   `(custom-button-pressed ((,petunia-class (:foreground ,petunia-white :background ,petunia-mode-line :box (:line-width 2 :style pressed-button)))))
 
 
    ;; external packages

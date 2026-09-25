@@ -282,6 +282,7 @@
 
    ;; custom-button
    `(custom-button ((,citrus-class (:foreground ,citrus-white :background ,citrus-tab-1 :box (:line-width 2 :style released-button)))))
+   `(custom-button-pressed ((,citrus-class (:foreground ,citrus-white :background ,citrus-tab-1 :box (:line-width 2 :style pressed-button)))))
 
 
    ;; external packages

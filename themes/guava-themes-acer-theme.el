@@ -280,6 +280,7 @@
 
    ;; custom-button
    `(custom-button ((,acer-class (:foreground ,acer-white :background ,acer-mode-line :box (:line-width 2 :style released-button)))))
+   `(custom-button-pressed ((,acer-class (:foreground ,acer-white :background ,acer-mode-line :box (:line-width 2 :style pressed-button)))))
 
 
    ;; external packages
