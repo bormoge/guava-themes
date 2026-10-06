@@ -197,6 +197,7 @@
    `(tab-line-tab-inactive-alternate ((,ceiba-class (:foreground ,ceiba-white :background ,ceiba-tab-3 :inherit tab-line-tab))))
    `(tab-line-tab-modified ((,ceiba-class (:foreground ,ceiba-purple-red :weight bold))))
    `(tab-line-tab-special ((,ceiba-class (:slant italic :weight bold))))
+   `(tab-line-highlight ((,ceiba-class (:foreground unspecified :background unspecified :box (:line-width 2 :style released-button)))))
 
    ;; parentheses
    `(show-paren-match ((,ceiba-class (:foreground ,ceiba-white :background ,ceiba-bell))))

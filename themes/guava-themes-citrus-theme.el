@@ -195,6 +195,7 @@
    `(tab-line-tab-inactive-alternate ((,citrus-class (:foreground ,citrus-white :background ,citrus-tab-3 :inherit tab-line-tab))))
    `(tab-line-tab-modified ((,citrus-class (:foreground ,citrus-deep-blue :weight bold))))
    `(tab-line-tab-special ((,citrus-class (:slant italic :weight bold))))
+   `(tab-line-highlight ((,citrus-class (:foreground unspecified :background unspecified :box (:line-width 2 :style released-button)))))
 
    ;; parentheses
    `(show-paren-match ((,citrus-class (:foreground ,citrus-white :background ,citrus-bell))))

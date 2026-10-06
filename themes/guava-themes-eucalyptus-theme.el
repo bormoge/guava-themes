@@ -193,6 +193,7 @@
    `(tab-line-tab-inactive-alternate ((,eucalyptus-class (:foreground ,eucalyptus-white :background ,eucalyptus-tab-3 :inherit tab-line-tab))))
    `(tab-line-tab-modified ((,eucalyptus-class (:foreground ,eucalyptus-deep-red :weight bold))))
    `(tab-line-tab-special ((,eucalyptus-class (:slant italic :weight bold))))
+   `(tab-line-highlight ((,eucalyptus-class (:foreground unspecified :background unspecified :box (:line-width 2 :style released-button)))))
 
    ;; parentheses
    `(show-paren-match ((,eucalyptus-class (:foreground ,eucalyptus-white :background ,eucalyptus-bell))))

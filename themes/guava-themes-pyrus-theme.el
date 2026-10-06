@@ -193,6 +193,7 @@
    `(tab-line-tab-inactive-alternate ((,pyrus-class (:foreground ,pyrus-white :background ,pyrus-tab-3 :inherit tab-line-tab))))
    `(tab-line-tab-modified ((,pyrus-class (:foreground ,pyrus-orange-pink :weight bold))))
    `(tab-line-tab-special ((,pyrus-class (:slant italic :weight bold))))
+   `(tab-line-highlight ((,pyrus-class (:foreground unspecified :background unspecified :box (:line-width 2 :style released-button)))))
 
    ;; parentheses
    `(show-paren-match ((,pyrus-class (:foreground ,pyrus-white :background ,pyrus-bell))))

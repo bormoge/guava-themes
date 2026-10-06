@@ -195,6 +195,7 @@
    `(tab-line-tab-inactive-alternate ((,rubus-class (:foreground ,rubus-white :background ,rubus-tab-3 :inherit tab-line-tab))))
    `(tab-line-tab-modified ((,rubus-class (:foreground ,rubus-purple :weight bold))))
    `(tab-line-tab-special ((,rubus-class (:slant italic :weight bold))))
+   `(tab-line-highlight ((,rubus-class (:foreground unspecified :background unspecified :box (:line-width 2 :style released-button)))))
 
    ;; parentheses
    `(show-paren-match ((,rubus-class (:foreground ,rubus-white :background ,rubus-bell))))

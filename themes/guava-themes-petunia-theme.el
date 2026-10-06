@@ -191,6 +191,7 @@
    `(tab-line-tab-inactive-alternate ((,petunia-class (:foreground ,petunia-white :background ,petunia-tab-3 :inherit tab-line-tab))))
    `(tab-line-tab-modified ((,petunia-class (:foreground ,petunia-light-blue :weight bold))))
    `(tab-line-tab-special ((,petunia-class (:slant italic :weight bold))))
+   `(tab-line-highlight ((,petunia-class (:foreground unspecified :background unspecified :box (:line-width 2 :style released-button)))))
 
    ;; parentheses
    `(show-paren-match ((,petunia-class (:foreground ,petunia-black :background ,petunia-bell))))

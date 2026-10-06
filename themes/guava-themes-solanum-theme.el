@@ -193,6 +193,7 @@
    `(tab-line-tab-inactive-alternate ((,solanum-class (:foreground ,solanum-white :background ,solanum-tab-3 :inherit tab-line-tab))))
    `(tab-line-tab-modified ((,solanum-class (:foreground ,solanum-red-tomato :weight bold))))
    `(tab-line-tab-special ((,solanum-class (:slant italic :weight bold))))
+   `(tab-line-highlight ((,solanum-class (:foreground unspecified :background unspecified :box (:line-width 2 :style released-button)))))
 
    ;; parentheses
    `(show-paren-match ((,solanum-class (:foreground ,solanum-white :background ,solanum-bell))))

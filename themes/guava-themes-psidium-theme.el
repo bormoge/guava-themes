@@ -190,6 +190,7 @@
    `(tab-line-tab-inactive-alternate ((,psidium-class (:foreground ,psidium-white :background ,psidium-tab-3 :inherit tab-line-tab))))
    `(tab-line-tab-modified ((,psidium-class (:foreground ,psidium-deep-blue :weight bold))))
    `(tab-line-tab-special ((,psidium-class (:slant italic :weight bold))))
+   `(tab-line-highlight ((,psidium-class (:foreground unspecified :background unspecified :box (:line-width 2 :style released-button)))))
 
    ;; parentheses
    `(show-paren-match ((,psidium-class (:foreground ,psidium-black :background ,psidium-bell))))

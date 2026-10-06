@@ -194,6 +194,7 @@
    `(tab-line-tab-inactive-alternate ((,vaccinium-class (:foreground ,vaccinium-white :background ,vaccinium-tab-3 :inherit tab-line-tab))))
    `(tab-line-tab-modified ((,vaccinium-class (:foreground ,vaccinium-orange :weight bold))))
    `(tab-line-tab-special ((,vaccinium-class (:slant italic :weight bold))))
+   `(tab-line-highlight ((,vaccinium-class (:foreground unspecified :background unspecified :box (:line-width 2 :style released-button)))))
 
    ;; parentheses
    `(show-paren-match ((,vaccinium-class (:foreground ,vaccinium-white :background ,vaccinium-bell))))

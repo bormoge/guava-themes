@@ -193,6 +193,7 @@
    `(tab-line-tab-inactive-alternate ((,acer-class (:foreground ,acer-white :background ,acer-tab-3 :inherit tab-line-tab))))
    `(tab-line-tab-modified ((,acer-class (:foreground ,acer-green-cyan :weight bold))))
    `(tab-line-tab-special ((,acer-class (:slant italic :weight bold))))
+   `(tab-line-highlight ((,acer-class (:foreground unspecified :background unspecified :box (:line-width 2 :style released-button)))))
 
    ;; parentheses
    `(show-paren-match ((,acer-class (:foreground ,acer-black :background ,acer-bell))))

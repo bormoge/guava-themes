@@ -195,6 +195,7 @@
    `(tab-line-tab-inactive-alternate ((,rhododendron-class (:foreground ,rhododendron-white :background ,rhododendron-tab-3 :inherit tab-line-tab))))
    `(tab-line-tab-modified ((,rhododendron-class (:foreground ,rhododendron-purple-blue :weight bold))))
    `(tab-line-tab-special ((,rhododendron-class (:slant italic :weight bold))))
+   `(tab-line-highlight ((,rhododendron-class (:foreground unspecified :background unspecified :box (:line-width 2 :style released-button)))))
 
    ;; parentheses
    `(show-paren-match ((,rhododendron-class (:foreground ,rhododendron-black :background ,rhododendron-bell))))

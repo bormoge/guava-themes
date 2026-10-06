@@ -192,6 +192,7 @@
    `(tab-line-tab-inactive-alternate ((,malus-class (:foreground ,malus-white :background ,malus-tab-3 :inherit tab-line-tab))))
    `(tab-line-tab-modified ((,malus-class (:foreground ,malus-blue :weight bold))))
    `(tab-line-tab-special ((,malus-class (:slant italic :weight bold))))
+   `(tab-line-highlight ((,malus-class (:foreground unspecified :background unspecified :box (:line-width 2 :style released-button)))))
 
    ;; parentheses
    `(show-paren-match ((,malus-class (:foreground ,malus-white :background ,malus-bell))))

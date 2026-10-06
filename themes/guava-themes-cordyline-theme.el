@@ -193,6 +193,7 @@
    `(tab-line-tab-inactive-alternate ((,cordyline-class (:foreground ,cordyline-white :background ,cordyline-tab-3 :inherit tab-line-tab))))
    `(tab-line-tab-modified ((,cordyline-class (:foreground ,cordyline-steel-blue :weight bold))))
    `(tab-line-tab-special ((,cordyline-class (:slant italic :weight bold))))
+   `(tab-line-highlight ((,cordyline-class (:foreground unspecified :background unspecified :box (:line-width 2 :style released-button)))))
 
    ;; parentheses
    `(show-paren-match ((,cordyline-class (:foreground ,cordyline-white :background ,cordyline-bell))))

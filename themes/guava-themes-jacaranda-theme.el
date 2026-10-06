@@ -192,6 +192,7 @@
    `(tab-line-tab-inactive-alternate ((,jacaranda-class (:foreground ,jacaranda-white :background ,jacaranda-tab-3 :inherit tab-line-tab))))
    `(tab-line-tab-modified ((,jacaranda-class (:foreground ,jacaranda-orange :weight bold))))
    `(tab-line-tab-special ((,jacaranda-class (:slant italic :weight bold))))
+   `(tab-line-highlight ((,jacaranda-class (:foreground unspecified :background unspecified :box (:line-width 2 :style released-button)))))
 
    ;; parentheses
    `(show-paren-match ((,jacaranda-class (:foreground ,jacaranda-black :background ,jacaranda-bell))))

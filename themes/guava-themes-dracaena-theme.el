@@ -195,6 +195,7 @@
    `(tab-line-tab-inactive-alternate ((,dracaena-class (:foreground ,dracaena-white :background ,dracaena-tab-3 :inherit tab-line-tab))))
    `(tab-line-tab-modified ((,dracaena-class (:foreground ,dracaena-orange :weight bold))))
    `(tab-line-tab-special ((,dracaena-class (:slant italic :weight bold))))
+   `(tab-line-highlight ((,dracaena-class (:foreground unspecified :background unspecified :box (:line-width 2 :style released-button)))))
 
    ;; parentheses
    `(show-paren-match ((,dracaena-class (:foreground ,dracaena-white :background ,dracaena-bell))))
