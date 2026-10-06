@@ -39,10 +39,10 @@
       (prunus-white                     "#FFFFFF")
 
       (prunus-light-brown               "#785a4b")
-      (prunus-alt-light-brown           "#9b7d6e")
+      (prunus-alt-light-brown           "#917364")
       (prunus-brown                     "#5f4132")
       (prunus-alt-brown                 "#5a5046")
-      (prunus-deep-brown                "#553c23")
+      (prunus-coffee                    "#b49687")
 
       (prunus-light-green               "#50a05f")
       (prunus-green-forest              "#007341")
@@ -77,13 +77,13 @@
 
       (prunus-tab-1                     prunus-mode-line)
       (prunus-tab-2                     prunus-mode-line-inactive)
-      (prunus-tab-3                     prunus-deep-brown)
+      (prunus-tab-3                     prunus-alt-light-brown)
 
       (prunus-fl-comment                prunus-green-forest)
       (prunus-fl-string                 prunus-purple-red)
       (prunus-fl-keyword                prunus-light-brown)
       (prunus-fl-builtin                prunus-pink)
-      (prunus-fl-type                   prunus-alt-light-brown)
+      (prunus-fl-type                   prunus-coffee)
       (prunus-fl-function-name          prunus-red)
       (prunus-fl-variable-name          prunus-green-subdued)
       (prunus-fl-constant               prunus-purple)
@@ -209,7 +209,7 @@
    `(link-visited ((,prunus-class (:foreground ,prunus-cyan :underline t :weight bold))))
 
    ;; outline
-   `(outline-1 ((,prunus-class (:foreground ,prunus-alt-light-brown :weight medium))))
+   `(outline-1 ((,prunus-class (:foreground ,prunus-coffee :weight medium))))
    `(outline-2 ((,prunus-class (:foreground ,prunus-green-forest :weight medium))))
    `(outline-4 ((,prunus-class (:foreground ,prunus-deep-blue :weight medium))))
    `(outline-3 ((,prunus-class (:foreground ,prunus-red :weight medium))))
@@ -299,7 +299,7 @@
    `(elfeed-search-last-update-face ((,prunus-class (:weight bold :foreground ,prunus-light-pink))))
    `(elfeed-search-unread-count-face ((,prunus-class (:weight bold :foreground ,prunus-light-pink))))
 
-   `(elfeed-show-header-face ((,prunus-class (:foreground ,prunus-alt-light-brown))))
+   `(elfeed-show-header-face ((,prunus-class (:foreground ,prunus-coffee))))
    `(elfeed-show-author-face ((,prunus-class (:weight bold :foreground ,prunus-red))))
    `(elfeed-show-title-face ((,prunus-class (:weight bold :foreground ,prunus-red))))
    `(elfeed-show-date-face ((,prunus-class (:foreground ,prunus-light-pink))))
