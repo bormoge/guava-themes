@@ -43,26 +43,25 @@
       (cordyline-pink-purple               "#da70d6")
       (cordyline-deep-fuchsia              "#6e1551")
 
-      (cordyline-light-blue                "#5f70cb")
-      (cordyline-blue                      "#3150af")
+      (cordyline-light-blue                "#7387e1")
+      (cordyline-blue                      "#505ab9")
       (cordyline-deep-blue                 "#214bd5")
       (cordyline-steel-blue                "#4f94cd")
       (cordyline-cyan                      "#00ffff")
-      (cordyline-dark-cyan                 "#007896")
+      (cordyline-dark-cyan                 "#007d9b")
 
       (cordyline-light-green               "#afd2b9")
       (cordyline-green                     "#005f55")
 
-      (cordyline-light-purple              "#a25ad1")
+      (cordyline-light-purple              "#ac64db")
       (cordyline-alt-light-purple          "#a29cf1")
-      (cordyline-purple                    "#7050af")
-      (cordyline-alt-purple                "#493d4e")
-      (cordyline-deep-purple               "#3c193c")
+      (cordyline-purple                    "#7a5ab9")
+      (cordyline-alt-purple                "#5a5064")
       (cordyline-purple-red                "#a03c5a")
 
       (cordyline-fg                        "#FFFFFF")
-      (cordyline-bg                        "#392b38")
-      (cordyline-highlight                 "#251724")
+      (cordyline-bg                        "#2f212e")
+      (cordyline-highlight                 "#433542")
       (cordyline-shadow                    "#b3b3b3")
 
       (cordyline-error                     "#FF0000")
@@ -70,7 +69,7 @@
       (cordyline-success                   "#23a334")
 
       (cordyline-mode-line                 "#a03c5a")
-      (cordyline-mode-line-inactive        "#3c193c")
+      (cordyline-mode-line-inactive        "#502d50")
       (cordyline-bell                      "#3C8CA0")
 
       (cordyline-tab-1                     cordyline-mode-line)
