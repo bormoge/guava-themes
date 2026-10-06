@@ -63,6 +63,7 @@
       (rubus-purple-pink               "#aa649b")
 
       (rubus-fg                        "#FFFFFF")
+      (rubus-fg-2                      "#c3c3c3")
       (rubus-bg                        "#0e1216")
       (rubus-highlight                 "#22262a")
       (rubus-shadow                    "#b3b3b3")
@@ -88,7 +89,7 @@
       (rubus-fl-variable-name          rubus-yellow)
       (rubus-fl-constant               rubus-purple)
       (rubus-fl-warning                rubus-warning)
-      (rubus-fl-punctuation            rubus-light-purple)
+      (rubus-fl-punctuation            rubus-fg-2)
       (rubus-fl-negation-char          rubus-green-blue)
 
       (rubus-diff-added                "#5aa05a")

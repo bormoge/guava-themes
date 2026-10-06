@@ -61,6 +61,7 @@
       (acer-purple-pink               "#5f2258")
 
       (acer-fg                        "#000000")
+      (acer-fg-2                      "#3c3c3c")
       (acer-bg                        "#f7bb78")
       (acer-highlight                 "#e3a764")
       (acer-shadow                    "#717171")
@@ -86,7 +87,7 @@
       (acer-fl-variable-name          acer-orange-pink)
       (acer-fl-constant               acer-green-cyan)
       (acer-fl-warning                acer-warning)
-      (acer-fl-punctuation            acer-purple-pink)
+      (acer-fl-punctuation            acer-fg-2)
       (acer-fl-negation-char          acer-light-blue)
 
       (acer-diff-added                "#c8f0c8")

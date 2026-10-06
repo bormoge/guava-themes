@@ -63,6 +63,7 @@
       (dracaena-dark-cyan                 "#005f55")
 
       (dracaena-fg                        "#becee6")
+      (dracaena-fg-2                      "#8292aa")
       (dracaena-bg                        "#3e4441")
       (dracaena-highlight                 "#2a302d")
       (dracaena-shadow                    "#b3b3b3")
@@ -88,7 +89,7 @@
       (dracaena-fl-variable-name          dracaena-orange-red)
       (dracaena-fl-constant               dracaena-light-blue)
       (dracaena-fl-warning                dracaena-warning)
-      (dracaena-fl-punctuation            dracaena-light-brown)
+      (dracaena-fl-punctuation            dracaena-fg-2)
       (dracaena-fl-negation-char          dracaena-orange)
 
       (dracaena-diff-added                "#5aa05a")

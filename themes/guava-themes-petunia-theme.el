@@ -59,6 +59,7 @@
       (petunia-purple                    "#8a5aff")
 
       (petunia-fg                        "#FFFFFF")
+      (petunia-fg-2                      "#c3c3c3")
       (petunia-bg                        "#000000")
       (petunia-highlight                 "#1e1e1e")
       (petunia-shadow                    "#b3b3b3")
@@ -84,7 +85,7 @@
       (petunia-fl-variable-name          petunia-pink)
       (petunia-fl-constant               petunia-green-forest)
       (petunia-fl-warning                petunia-warning)
-      (petunia-fl-punctuation            petunia-light-purple)
+      (petunia-fl-punctuation            petunia-fg-2)
       (petunia-fl-negation-char          petunia-light-orange)
 
       (petunia-diff-added                "#5aa05a")

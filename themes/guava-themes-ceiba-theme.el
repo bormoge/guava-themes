@@ -65,6 +65,7 @@
       (ceiba-brown-wood                "#53453d")
 
       (ceiba-fg                        "#000000")
+      (ceiba-fg-2                      "#3c3c3c")
       (ceiba-bg                        "#bab49e")
       (ceiba-highlight                 "#a6a08a")
       (ceiba-shadow                    "#898989")
@@ -90,7 +91,7 @@
       (ceiba-fl-variable-name          ceiba-green)
       (ceiba-fl-constant               ceiba-deep-orange)
       (ceiba-fl-warning                ceiba-warning)
-      (ceiba-fl-punctuation            ceiba-green-forest)
+      (ceiba-fl-punctuation            ceiba-fg-2)
       (ceiba-fl-negation-char          ceiba-orange)
 
       (ceiba-diff-added                "#c8f0c8")

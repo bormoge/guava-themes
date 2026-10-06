@@ -60,6 +60,7 @@
       (cordyline-purple-red                "#a03c5a")
 
       (cordyline-fg                        "#FFFFFF")
+      (cordyline-fg-2                      "#c3c3c3")
       (cordyline-bg                        "#2f212e")
       (cordyline-highlight                 "#433542")
       (cordyline-shadow                    "#b3b3b3")
@@ -85,7 +86,7 @@
       (cordyline-fl-variable-name          cordyline-blue)
       (cordyline-fl-constant               cordyline-dark-cyan)
       (cordyline-fl-warning                cordyline-warning)
-      (cordyline-fl-punctuation            cordyline-light-green)
+      (cordyline-fl-punctuation            cordyline-fg-2)
       (cordyline-fl-negation-char          cordyline-orange-red)
 
       (cordyline-diff-added                "#5aa05a")

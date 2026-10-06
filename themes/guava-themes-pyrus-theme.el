@@ -61,6 +61,7 @@
       (pyrus-deep-magenta              "#642864")
 
       (pyrus-fg                        "#780000")
+      (pyrus-fg-2                      "#b43c3c")
       (pyrus-bg                        "#f9fefd")
       (pyrus-highlight                 "#e5eae9")
       (pyrus-shadow                    "#898989")
@@ -86,7 +87,7 @@
       (pyrus-fl-variable-name          pyrus-orange-pink)
       (pyrus-fl-constant               pyrus-light-purple)
       (pyrus-fl-warning                pyrus-warning)
-      (pyrus-fl-punctuation            pyrus-deep-magenta)
+      (pyrus-fl-punctuation            pyrus-fg-2)
       (pyrus-fl-negation-char          pyrus-orange-subdued)
 
       (pyrus-diff-added                "#c8f0c8")

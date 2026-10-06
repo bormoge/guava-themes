@@ -63,6 +63,7 @@
       (citrus-purple-blue               "#504993")
 
       (citrus-fg                        "#000000")
+      (citrus-fg-2                      "#3c3c3c")
       (citrus-bg                        "#edf2ed")
       (citrus-highlight                 "#d9ded9")
       (citrus-shadow                    "#6b6b6b")
@@ -88,7 +89,7 @@
       (citrus-fl-variable-name          citrus-green-lime)
       (citrus-fl-constant               citrus-deep-blue)
       (citrus-fl-warning                citrus-warning)
-      (citrus-fl-punctuation            citrus-purple-blue)
+      (citrus-fl-punctuation            citrus-fg-2)
       (citrus-fl-negation-char          citrus-purple-red)
 
       (citrus-diff-added                "#c8f0c8")

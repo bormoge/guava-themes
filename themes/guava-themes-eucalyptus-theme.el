@@ -61,6 +61,7 @@
       (eucalyptus-brown-wood                "#675951")
 
       (eucalyptus-fg                        "#373c4b")
+      (eucalyptus-fg-2                      "#737887")
       (eucalyptus-bg                        "#a5aa96")
       (eucalyptus-highlight                 "#919682")
       (eucalyptus-shadow                    "#7f7f7f")
@@ -86,7 +87,7 @@
       (eucalyptus-fl-variable-name          eucalyptus-gray-green)
       (eucalyptus-fl-constant               eucalyptus-light-blue)
       (eucalyptus-fl-warning                eucalyptus-warning)
-      (eucalyptus-fl-punctuation            eucalyptus-gray)
+      (eucalyptus-fl-punctuation            eucalyptus-fg-2)
       (eucalyptus-fl-negation-char          eucalyptus-alt-cyan)
 
       (eucalyptus-diff-added                "#c8f0c8")

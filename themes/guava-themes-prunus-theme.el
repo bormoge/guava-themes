@@ -62,6 +62,7 @@
       (prunus-purple-red                "#8B2252")
 
       (prunus-fg                        "#ebafc8")
+      (prunus-fg-2                      "#af738c")
       (prunus-bg                        "#190f05")
       (prunus-highlight                 "#2d2319")
       (prunus-shadow                    "#b3b3b3")
@@ -87,7 +88,7 @@
       (prunus-fl-variable-name          prunus-green-subdued)
       (prunus-fl-constant               prunus-purple)
       (prunus-fl-warning                prunus-warning)
-      (prunus-fl-punctuation            prunus-oxidized-green)
+      (prunus-fl-punctuation            prunus-fg-2)
       (prunus-fl-negation-char          prunus-deep-red)
 
       (prunus-diff-added                "#5aa05a")

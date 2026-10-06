@@ -63,6 +63,7 @@
       (rhododendron-dark-purple-red           "#7d2061")
 
       (rhododendron-fg                        "#000000")
+      (rhododendron-fg-2                      "#3c3c3c")
       (rhododendron-bg                        "#e8c7e3")
       (rhododendron-highlight                 "#d4b3cf")
       (rhododendron-shadow                    "#898989")
@@ -88,7 +89,7 @@
       (rhododendron-fl-variable-name          rhododendron-bright-orange)
       (rhododendron-fl-constant               rhododendron-purple-blue)
       (rhododendron-fl-warning                rhododendron-warning)
-      (rhododendron-fl-punctuation            rhododendron-red)
+      (rhododendron-fl-punctuation            rhododendron-fg-2)
       (rhododendron-fl-negation-char          rhododendron-red-orange)
 
       (rhododendron-diff-added                "#c8f0c8")

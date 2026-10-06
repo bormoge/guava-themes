@@ -60,6 +60,7 @@
       (malus-purple                    "#8468ed")
 
       (malus-fg                        "#fafbb7")
+      (malus-fg-2                      "#bebf7b")
       (malus-bg                        "#1e0910")
       (malus-highlight                 "#321d24")
       (malus-shadow                    "#b3b3b3")
@@ -85,7 +86,7 @@
       (malus-fl-variable-name          malus-yellow-subdued)
       (malus-fl-constant               malus-purple)
       (malus-fl-warning                malus-warning)
-      (malus-fl-punctuation            malus-brown)
+      (malus-fl-punctuation            malus-fg-2)
       (malus-fl-negation-char          malus-oceanic-blue)
 
       (malus-diff-added                "#5aa05a")

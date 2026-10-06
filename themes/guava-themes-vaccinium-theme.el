@@ -62,6 +62,7 @@
       (vaccinium-purple-pink               "#aa78cf")
 
       (vaccinium-fg                        "#FFFFFF")
+      (vaccinium-fg-2                      "#c3c3c3")
       (vaccinium-bg                        "#1c1c26")
       (vaccinium-highlight                 "#30303a")
       (vaccinium-shadow                    "#b3b3b3")
@@ -87,7 +88,7 @@
       (vaccinium-fl-variable-name          vaccinium-red)
       (vaccinium-fl-constant               vaccinium-pink)
       (vaccinium-fl-warning                vaccinium-warning)
-      (vaccinium-fl-punctuation            vaccinium-light-purple)
+      (vaccinium-fl-punctuation            vaccinium-fg-2)
       (vaccinium-fl-negation-char          vaccinium-purple-pink)
 
       (vaccinium-diff-added                "#5aa05a")

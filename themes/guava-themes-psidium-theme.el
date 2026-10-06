@@ -58,6 +58,7 @@
       (psidium-purple                    "#812db2")
 
       (psidium-fg                        "#000000")
+      (psidium-fg-2                      "#3c3c3c")
       (psidium-bg                        "#F1EECE")
       (psidium-highlight                 "#dddaba")
       (psidium-shadow                    "#7f7f7f")
@@ -83,7 +84,7 @@
       (psidium-fl-variable-name          psidium-purple)
       (psidium-fl-constant               psidium-blue)
       (psidium-fl-warning                psidium-warning)
-      (psidium-fl-punctuation            psidium-red-orange)
+      (psidium-fl-punctuation            psidium-fg-2)
       (psidium-fl-negation-char          psidium-pink)
 
       (psidium-diff-added                "#c8f0c8")

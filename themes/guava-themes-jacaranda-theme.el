@@ -60,6 +60,7 @@
       (jacaranda-purple-red                "#8b2252")
 
       (jacaranda-fg                        "#000000")
+      (jacaranda-fg-2                      "#3c3c3c")
       (jacaranda-bg                        "#e9d9f9")
       (jacaranda-highlight                 "#d5c5e5")
       (jacaranda-shadow                    "#898989")
@@ -85,7 +86,7 @@
       (jacaranda-fl-variable-name          jacaranda-light-cyan)
       (jacaranda-fl-constant               jacaranda-oceanic-green)
       (jacaranda-fl-warning                jacaranda-warning)
-      (jacaranda-fl-punctuation            jacaranda-brown)
+      (jacaranda-fl-punctuation            jacaranda-fg-2)
       (jacaranda-fl-negation-char          jacaranda-red)
 
       (jacaranda-diff-added                "#c8f0c8")

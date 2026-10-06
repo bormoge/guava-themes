@@ -61,6 +61,7 @@
       (solanum-alt-dark-purple           "#59536e")
 
       (solanum-fg                        "#FFFFFF")
+      (solanum-fg-2                      "#c3c3c3")
       (solanum-bg                        "#130d1a")
       (solanum-highlight                 "#27212e")
       (solanum-shadow                    "#b3b3b3")
@@ -86,7 +87,7 @@
       (solanum-fl-variable-name          solanum-light-green)
       (solanum-fl-constant               solanum-light-purple)
       (solanum-fl-warning                solanum-warning)
-      (solanum-fl-punctuation            solanum-purple-pink)
+      (solanum-fl-punctuation            solanum-fg-2)
       (solanum-fl-negation-char          solanum-alt-light-green)
 
       (solanum-diff-added                "#5aa05a")
