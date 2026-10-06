@@ -281,6 +281,7 @@
    ;; custom-button
    `(custom-button ((,solanum-class (:foreground ,solanum-white :background ,solanum-mode-line :box (:line-width 2 :style released-button)))))
    `(custom-button-pressed ((,solanum-class (:foreground ,solanum-white :background ,solanum-mode-line :box (:line-width 2 :style pressed-button)))))
+   `(custom-button-mouse ((,solanum-class (:foreground ,solanum-white :background ,solanum-tab-3 :box (:line-width 2 :style released-button)))))
 
 
    ;; external packages

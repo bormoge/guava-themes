@@ -278,6 +278,7 @@
    ;; custom-button
    `(custom-button ((,psidium-class (:foreground ,psidium-white :background ,psidium-mode-line :box (:line-width 2 :style released-button)))))
    `(custom-button-pressed ((,psidium-class (:foreground ,psidium-white :background ,psidium-mode-line :box (:line-width 2 :style pressed-button)))))
+   `(custom-button-mouse ((,psidium-class (:foreground ,psidium-white :background ,psidium-tab-3 :box (:line-width 2 :style released-button)))))
 
 
    ;; external packages

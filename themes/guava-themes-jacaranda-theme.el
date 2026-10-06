@@ -280,6 +280,7 @@
    ;; custom-button
    `(custom-button ((,jacaranda-class (:foreground ,jacaranda-white :background ,jacaranda-mode-line :box (:line-width 2 :style released-button)))))
    `(custom-button-pressed ((,jacaranda-class (:foreground ,jacaranda-white :background ,jacaranda-mode-line :box (:line-width 2 :style pressed-button)))))
+   `(custom-button-mouse ((,jacaranda-class (:foreground ,jacaranda-white :background ,jacaranda-tab-3 :box (:line-width 2 :style released-button)))))
 
 
    ;; external packages

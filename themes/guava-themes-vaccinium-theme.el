@@ -282,6 +282,7 @@
    ;; custom-button
    `(custom-button ((,vaccinium-class (:foreground ,vaccinium-white :background ,vaccinium-mode-line :box (:line-width 2 :style released-button)))))
    `(custom-button-pressed ((,vaccinium-class (:foreground ,vaccinium-white :background ,vaccinium-mode-line :box (:line-width 2 :style pressed-button)))))
+   `(custom-button-mouse ((,vaccinium-class (:foreground ,vaccinium-white :background ,vaccinium-tab-3 :box (:line-width 2 :style released-button)))))
 
 
    ;; external packages

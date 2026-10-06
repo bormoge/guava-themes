@@ -281,6 +281,7 @@
    ;; custom-button
    `(custom-button ((,pyrus-class (:foreground ,pyrus-white :background ,pyrus-mode-line :box (:line-width 2 :style released-button)))))
    `(custom-button-pressed ((,pyrus-class (:foreground ,pyrus-white :background ,pyrus-mode-line :box (:line-width 2 :style pressed-button)))))
+   `(custom-button-mouse ((,pyrus-class (:foreground ,pyrus-white :background ,pyrus-tab-3 :box (:line-width 2 :style released-button)))))
 
 
    ;; external packages

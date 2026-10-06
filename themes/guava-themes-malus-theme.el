@@ -280,6 +280,7 @@
    ;; custom-button
    `(custom-button ((,malus-class (:foreground ,malus-white :background ,malus-mode-line :box (:line-width 2 :style released-button)))))
    `(custom-button-pressed ((,malus-class (:foreground ,malus-white :background ,malus-mode-line :box (:line-width 2 :style pressed-button)))))
+   `(custom-button-mouse ((,malus-class (:foreground ,malus-white :background ,malus-tab-3 :box (:line-width 2 :style released-button)))))
 
 
    ;; external packages

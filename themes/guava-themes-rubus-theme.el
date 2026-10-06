@@ -283,6 +283,7 @@
    ;; custom-button
    `(custom-button ((,rubus-class (:foreground ,rubus-white :background ,rubus-mode-line :box (:line-width 2 :style released-button)))))
    `(custom-button-pressed ((,rubus-class (:foreground ,rubus-white :background ,rubus-mode-line :box (:line-width 2 :style pressed-button)))))
+   `(custom-button-mouse ((,rubus-class (:foreground ,rubus-white :background ,rubus-tab-3 :box (:line-width 2 :style released-button)))))
 
 
    ;; external packages
