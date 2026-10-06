@@ -66,7 +66,7 @@
       (acer-shadow                    "#717171")
 
       (acer-error                     "#d70000")
-      (acer-warning                   "#f0dc00")
+      (acer-warning                   "#b4a000")
       (acer-success                   "#28823c")
 
       (acer-mode-line                 "#e76144")
