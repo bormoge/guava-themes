@@ -74,6 +74,7 @@
 
       (rubus-mode-line                 "#aa3232")
       (rubus-mode-line-inactive        "#cd7378")
+      (rubus-mode-line-modified        "#826ee6")
       (rubus-bell                      "#326EAA")
 
       (rubus-tab-1                     rubus-mode-line)
@@ -196,7 +197,7 @@
    `(tab-line-tab-current ((,rubus-class (:foreground ,rubus-white :background ,rubus-tab-1 :inherit tab-line-tab))))
    `(tab-line-tab-inactive ((,rubus-class (:foreground ,rubus-white :background ,rubus-tab-2 :inherit tab-line-tab))))
    `(tab-line-tab-inactive-alternate ((,rubus-class (:foreground ,rubus-white :background ,rubus-tab-3 :inherit tab-line-tab))))
-   `(tab-line-tab-modified ((,rubus-class (:foreground ,rubus-purple :weight bold))))
+   `(tab-line-tab-modified ((,rubus-class (:foreground ,rubus-mode-line-modified :weight bold))))
    `(tab-line-tab-special ((,rubus-class (:slant italic :weight bold))))
    `(tab-line-highlight ((,rubus-class (:foreground unspecified :background unspecified :box (:line-width 2 :style released-button)))))
 
@@ -313,6 +314,7 @@
    `(doom-modeline-project-name ((,rubus-class (:foreground ,rubus-light-purple :inherit italic))))
    `(doom-modeline-project-parent-dir ((,rubus-class (:foreground ,rubus-light-purple))))
    `(doom-modeline-buffer-minor-mode ((,rubus-class (:foreground ,rubus-orange))))
+   `(doom-modeline-buffer-modified ((,rubus-class (:foreground ,rubus-mode-line-modified :inherit (doom-modeline warning bold)))))
 
    ;; corfu
    `(corfu-default ((,rubus-class (:foreground ,rubus-fg :background ,rubus-bg))))

@@ -71,6 +71,7 @@
 
       (malus-mode-line                 "#cd5a5f")
       (malus-mode-line-inactive        "#49835f")
+      (malus-mode-line-modified        "#4548e3")
       (malus-bell                      "#5A99CD")
 
       (malus-tab-1                     malus-mode-line)
@@ -193,7 +194,7 @@
    `(tab-line-tab-current ((,malus-class (:foreground ,malus-white :background ,malus-tab-1 :inherit tab-line-tab))))
    `(tab-line-tab-inactive ((,malus-class (:foreground ,malus-white :background ,malus-tab-2 :inherit tab-line-tab))))
    `(tab-line-tab-inactive-alternate ((,malus-class (:foreground ,malus-white :background ,malus-tab-3 :inherit tab-line-tab))))
-   `(tab-line-tab-modified ((,malus-class (:foreground ,malus-blue :weight bold))))
+   `(tab-line-tab-modified ((,malus-class (:foreground ,malus-mode-line-modified :weight bold))))
    `(tab-line-tab-special ((,malus-class (:slant italic :weight bold))))
    `(tab-line-highlight ((,malus-class (:foreground unspecified :background unspecified :box (:line-width 2 :style released-button)))))
 
@@ -310,6 +311,7 @@
    `(doom-modeline-project-name ((,malus-class (:foreground ,malus-green-granny :inherit italic))))
    `(doom-modeline-project-parent-dir ((,malus-class (:foreground ,malus-green-granny))))
    `(doom-modeline-buffer-minor-mode ((,malus-class (:foreground ,malus-shadow))))
+   `(doom-modeline-buffer-modified ((,malus-class (:foreground ,malus-mode-line-modified :inherit (doom-modeline warning bold)))))
 
    ;; corfu
    `(corfu-default ((,malus-class (:foreground ,malus-fg :background ,malus-bg))))

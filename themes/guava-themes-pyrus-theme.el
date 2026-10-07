@@ -72,6 +72,7 @@
 
       (pyrus-mode-line                 "#295323")
       (pyrus-mode-line-inactive        "#228b22")
+      (pyrus-mode-line-modified        "#f38866")
       (pyrus-bell                      "#532341")
 
       (pyrus-tab-1                     pyrus-mode-line)
@@ -194,7 +195,7 @@
    `(tab-line-tab-current ((,pyrus-class (:foreground ,pyrus-white :background ,pyrus-tab-1 :inherit tab-line-tab))))
    `(tab-line-tab-inactive ((,pyrus-class (:foreground ,pyrus-white :background ,pyrus-tab-2 :inherit tab-line-tab))))
    `(tab-line-tab-inactive-alternate ((,pyrus-class (:foreground ,pyrus-white :background ,pyrus-tab-3 :inherit tab-line-tab))))
-   `(tab-line-tab-modified ((,pyrus-class (:foreground ,pyrus-orange-pink :weight bold))))
+   `(tab-line-tab-modified ((,pyrus-class (:foreground ,pyrus-mode-line-modified :weight bold))))
    `(tab-line-tab-special ((,pyrus-class (:slant italic :weight bold))))
    `(tab-line-highlight ((,pyrus-class (:foreground unspecified :background unspecified :box (:line-width 2 :style released-button)))))
 
@@ -311,6 +312,7 @@
    `(doom-modeline-project-name ((,pyrus-class (:foreground ,pyrus-light-green :inherit italic))))
    `(doom-modeline-project-parent-dir ((,pyrus-class (:foreground ,pyrus-light-green))))
    `(doom-modeline-buffer-minor-mode ((,pyrus-class (:foreground ,pyrus-orange-pink))))
+   `(doom-modeline-buffer-modified ((,pyrus-class (:foreground ,pyrus-mode-line-modified :inherit (doom-modeline warning bold)))))
 
    ;; corfu
    `(corfu-default ((,pyrus-class (:foreground ,pyrus-fg :background ,pyrus-bg))))

@@ -55,7 +55,7 @@
       (acer-blue                      "#2134d5")
       (acer-deep-blue                 "#1B3B4D")
 
-      (acer-purple                    "#9e4d76")
+      (acer-purple                    "#8a618a")
       (acer-deep-purple               "#60366e")
       (acer-purple-red                "#9b234b")
       (acer-purple-pink               "#5f2258")
@@ -72,6 +72,7 @@
 
       (acer-mode-line                 "#e76144")
       (acer-mode-line-inactive        "#ff8c4e")
+      (acer-mode-line-modified        "#277a6a")
       (acer-bell                      "#4478E7")
 
       (acer-tab-1                     acer-mode-line)
@@ -194,7 +195,7 @@
    `(tab-line-tab-current ((,acer-class (:foreground ,acer-white :background ,acer-tab-1 :inherit tab-line-tab))))
    `(tab-line-tab-inactive ((,acer-class (:foreground ,acer-white :background ,acer-tab-2 :inherit tab-line-tab))))
    `(tab-line-tab-inactive-alternate ((,acer-class (:foreground ,acer-white :background ,acer-tab-3 :inherit tab-line-tab))))
-   `(tab-line-tab-modified ((,acer-class (:foreground ,acer-green-cyan :weight bold))))
+   `(tab-line-tab-modified ((,acer-class (:foreground ,acer-mode-line-modified :weight bold))))
    `(tab-line-tab-special ((,acer-class (:slant italic :weight bold))))
    `(tab-line-highlight ((,acer-class (:foreground unspecified :background unspecified :box (:line-width 2 :style released-button)))))
 
@@ -311,6 +312,7 @@
    `(doom-modeline-project-name ((,acer-class (:foreground ,acer-deep-purple :inherit italic))))
    `(doom-modeline-project-parent-dir ((,acer-class (:foreground ,acer-deep-purple))))
    `(doom-modeline-buffer-minor-mode ((,acer-class (:foreground ,acer-purple))))
+   `(doom-modeline-buffer-modified ((,acer-class (:foreground ,acer-mode-line-modified :inherit (doom-modeline warning bold)))))
 
    ;; corfu
    `(corfu-default ((,acer-class (:foreground ,acer-fg :background ,acer-bg))))

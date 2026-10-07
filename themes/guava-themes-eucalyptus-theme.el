@@ -72,6 +72,7 @@
 
       (eucalyptus-mode-line                 "#373c4b")
       (eucalyptus-mode-line-inactive        "#737887")
+      (eucalyptus-mode-line-modified        "#aa5956")
       (eucalyptus-bell                      "#464B37")
 
       (eucalyptus-tab-1                     eucalyptus-mode-line)
@@ -194,7 +195,7 @@
    `(tab-line-tab-current ((,eucalyptus-class (:foreground ,eucalyptus-white :background ,eucalyptus-tab-1 :inherit tab-line-tab))))
    `(tab-line-tab-inactive ((,eucalyptus-class (:foreground ,eucalyptus-white :background ,eucalyptus-tab-2 :inherit tab-line-tab))))
    `(tab-line-tab-inactive-alternate ((,eucalyptus-class (:foreground ,eucalyptus-white :background ,eucalyptus-tab-3 :inherit tab-line-tab))))
-   `(tab-line-tab-modified ((,eucalyptus-class (:foreground ,eucalyptus-deep-red :weight bold))))
+   `(tab-line-tab-modified ((,eucalyptus-class (:foreground ,eucalyptus-mode-line-modified :weight bold))))
    `(tab-line-tab-special ((,eucalyptus-class (:slant italic :weight bold))))
    `(tab-line-highlight ((,eucalyptus-class (:foreground unspecified :background unspecified :box (:line-width 2 :style released-button)))))
 
@@ -311,6 +312,7 @@
    `(doom-modeline-project-name ((,eucalyptus-class (:foreground ,eucalyptus-light-blue :inherit italic))))
    `(doom-modeline-project-parent-dir ((,eucalyptus-class (:foreground ,eucalyptus-light-blue))))
    `(doom-modeline-buffer-minor-mode ((,eucalyptus-class (:foreground ,eucalyptus-tab-3))))
+   `(doom-modeline-buffer-modified ((,eucalyptus-class (:foreground ,eucalyptus-mode-line-modified :inherit (doom-modeline warning bold)))))
 
    ;; corfu
    `(corfu-default ((,eucalyptus-class (:foreground ,eucalyptus-fg :background ,eucalyptus-bg))))

@@ -69,6 +69,7 @@
 
       (psidium-mode-line                 "#F8767C")
       (psidium-mode-line-inactive        "#aecd34")
+      (psidium-mode-line-modified        "#483d8b")
       (psidium-bell                      "#76BEF8")
 
       (psidium-tab-1                     psidium-mode-line)
@@ -191,7 +192,7 @@
    `(tab-line-tab-current ((,psidium-class (:foreground ,psidium-white :background ,psidium-tab-1 :inherit tab-line-tab))))
    `(tab-line-tab-inactive ((,psidium-class (:foreground ,psidium-white :background ,psidium-tab-2 :inherit tab-line-tab))))
    `(tab-line-tab-inactive-alternate ((,psidium-class (:foreground ,psidium-white :background ,psidium-tab-3 :inherit tab-line-tab))))
-   `(tab-line-tab-modified ((,psidium-class (:foreground ,psidium-deep-blue :weight bold))))
+   `(tab-line-tab-modified ((,psidium-class (:foreground ,psidium-mode-line-modified :weight bold))))
    `(tab-line-tab-special ((,psidium-class (:slant italic :weight bold))))
    `(tab-line-highlight ((,psidium-class (:foreground unspecified :background unspecified :box (:line-width 2 :style released-button)))))
 
@@ -308,6 +309,7 @@
    `(doom-modeline-project-name ((,psidium-class (:foreground ,psidium-deep-blue :inherit italic))))
    `(doom-modeline-project-parent-dir ((,psidium-class (:foreground ,psidium-deep-blue))))
    `(doom-modeline-buffer-minor-mode ((,psidium-class (:foreground ,psidium-shadow))))
+   `(doom-modeline-buffer-modified ((,psidium-class (:foreground ,psidium-mode-line-modified :inherit (doom-modeline warning bold)))))
 
    ;; corfu
    `(corfu-default ((,psidium-class (:foreground ,psidium-fg :background ,psidium-bg))))

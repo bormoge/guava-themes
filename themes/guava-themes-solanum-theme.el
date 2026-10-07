@@ -72,6 +72,7 @@
 
       (solanum-mode-line                 "#672b5f")
       (solanum-mode-line-inactive        "#3b3550")
+      (solanum-mode-line-modified        "#cd151f")
       (solanum-bell                      "#41672B")
 
       (solanum-tab-1                     solanum-mode-line)
@@ -194,7 +195,7 @@
    `(tab-line-tab-current ((,solanum-class (:foreground ,solanum-white :background ,solanum-tab-1 :inherit tab-line-tab))))
    `(tab-line-tab-inactive ((,solanum-class (:foreground ,solanum-white :background ,solanum-tab-2 :inherit tab-line-tab))))
    `(tab-line-tab-inactive-alternate ((,solanum-class (:foreground ,solanum-white :background ,solanum-tab-3 :inherit tab-line-tab))))
-   `(tab-line-tab-modified ((,solanum-class (:foreground ,solanum-red-tomato :weight bold))))
+   `(tab-line-tab-modified ((,solanum-class (:foreground ,solanum-mode-line-modified :weight bold))))
    `(tab-line-tab-special ((,solanum-class (:slant italic :weight bold))))
    `(tab-line-highlight ((,solanum-class (:foreground unspecified :background unspecified :box (:line-width 2 :style released-button)))))
 
@@ -311,6 +312,7 @@
    `(doom-modeline-project-name ((,solanum-class (:foreground ,solanum-red-tomato :inherit italic))))
    `(doom-modeline-project-parent-dir ((,solanum-class (:foreground ,solanum-red-tomato))))
    `(doom-modeline-buffer-minor-mode ((,solanum-class (:foreground ,solanum-yellow-potato))))
+   `(doom-modeline-buffer-modified ((,solanum-class (:foreground ,solanum-mode-line-modified :inherit (doom-modeline warning bold)))))
 
    ;; corfu
    `(corfu-default ((,solanum-class (:foreground ,solanum-fg :background ,solanum-bg))))

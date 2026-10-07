@@ -73,6 +73,7 @@
 
       (prunus-mode-line                 "#463c32")
       (prunus-mode-line-inactive        "#5a5046")
+      (prunus-mode-line-modified        "#cd3c88")
       (prunus-bell                      "#324646")
 
       (prunus-tab-1                     prunus-mode-line)
@@ -195,7 +196,7 @@
    `(tab-line-tab-current ((,prunus-class (:foreground ,prunus-white :background ,prunus-tab-1 :inherit tab-line-tab))))
    `(tab-line-tab-inactive ((,prunus-class (:foreground ,prunus-white :background ,prunus-tab-2 :inherit tab-line-tab))))
    `(tab-line-tab-inactive-alternate ((,prunus-class (:foreground ,prunus-white :background ,prunus-tab-3 :inherit tab-line-tab))))
-   `(tab-line-tab-modified ((,prunus-class (:foreground ,prunus-pink :weight bold))))
+   `(tab-line-tab-modified ((,prunus-class (:foreground ,prunus-mode-line-modified :weight bold))))
    `(tab-line-tab-special ((,prunus-class (:slant italic :weight bold))))
    `(tab-line-highlight ((,prunus-class (:foreground unspecified :background unspecified :box (:line-width 2 :style released-button)))))
 
@@ -312,6 +313,7 @@
    `(doom-modeline-project-name ((,prunus-class (:foreground ,prunus-green-forest :inherit italic))))
    `(doom-modeline-project-parent-dir ((,prunus-class (:foreground ,prunus-green-forest))))
    `(doom-modeline-buffer-minor-mode ((,prunus-class (:foreground ,prunus-shadow))))
+   `(doom-modeline-buffer-modified ((,prunus-class (:foreground ,prunus-mode-line-modified :inherit (doom-modeline warning bold)))))
 
    ;; corfu
    `(corfu-default ((,prunus-class (:foreground ,prunus-fg :background ,prunus-bg))))

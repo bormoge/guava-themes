@@ -70,6 +70,7 @@
 
       (petunia-mode-line                 "#8a5aff")
       (petunia-mode-line-inactive        "#008741")
+      (petunia-mode-line-modified        "#00c3d7")
       (petunia-bell                      "#FFDB5A")
 
       (petunia-tab-1                     petunia-mode-line)
@@ -192,7 +193,7 @@
    `(tab-line-tab-current ((,petunia-class (:foreground ,petunia-white :background ,petunia-tab-1 :inherit tab-line-tab))))
    `(tab-line-tab-inactive ((,petunia-class (:foreground ,petunia-white :background ,petunia-tab-2 :inherit tab-line-tab))))
    `(tab-line-tab-inactive-alternate ((,petunia-class (:foreground ,petunia-white :background ,petunia-tab-3 :inherit tab-line-tab))))
-   `(tab-line-tab-modified ((,petunia-class (:foreground ,petunia-light-blue :weight bold))))
+   `(tab-line-tab-modified ((,petunia-class (:foreground ,petunia-mode-line-modified :weight bold))))
    `(tab-line-tab-special ((,petunia-class (:slant italic :weight bold))))
    `(tab-line-highlight ((,petunia-class (:foreground unspecified :background unspecified :box (:line-width 2 :style released-button)))))
 
@@ -309,6 +310,7 @@
    `(doom-modeline-project-name ((,petunia-class (:foreground ,petunia-light-green :inherit italic))))
    `(doom-modeline-project-parent-dir ((,petunia-class (:foreground ,petunia-light-green))))
    `(doom-modeline-buffer-minor-mode ((,petunia-class (:foreground ,petunia-yellow))))
+   `(doom-modeline-buffer-modified ((,petunia-class (:foreground ,petunia-mode-line-modified :inherit (doom-modeline warning bold)))))
 
    ;; corfu
    `(corfu-default ((,petunia-class (:foreground ,petunia-fg :background ,petunia-bg))))

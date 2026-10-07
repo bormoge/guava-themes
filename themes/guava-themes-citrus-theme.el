@@ -44,6 +44,7 @@
       (citrus-green-blue                "#197d5a")
 
       (citrus-yellow                    "#f5d49b")
+      (citrus-alt-yellow                "#e1b69b")
 
       (citrus-red                       "#df352c")
       (citrus-deep-red                  "#a0352c")
@@ -74,6 +75,7 @@
 
       (citrus-mode-line                 "#589337")
       (citrus-mode-line-inactive        "#6ea56e")
+      (citrus-mode-line-modified        "#43F29B")
       (citrus-bell                      "#933787")
 
       (citrus-tab-1                     citrus-orange-red)
@@ -196,7 +198,7 @@
    `(tab-line-tab-current ((,citrus-class (:foreground ,citrus-white :background ,citrus-tab-1 :inherit tab-line-tab))))
    `(tab-line-tab-inactive ((,citrus-class (:foreground ,citrus-white :background ,citrus-tab-2 :inherit tab-line-tab))))
    `(tab-line-tab-inactive-alternate ((,citrus-class (:foreground ,citrus-white :background ,citrus-tab-3 :inherit tab-line-tab))))
-   `(tab-line-tab-modified ((,citrus-class (:foreground ,citrus-deep-blue :weight bold))))
+   `(tab-line-tab-modified ((,citrus-class (:foreground ,citrus-mode-line-modified :weight bold))))
    `(tab-line-tab-special ((,citrus-class (:slant italic :weight bold))))
    `(tab-line-highlight ((,citrus-class (:foreground unspecified :background unspecified :box (:line-width 2 :style released-button)))))
 
@@ -310,9 +312,10 @@
    `(elfeed-show-tags-face ((,citrus-class (:foreground ,citrus-brown))))
 
    ;; doom-modeline
-   `(doom-modeline-project-name ((,citrus-class (:foreground ,citrus-purple-red :inherit italic))))
+   `(doom-modeline-project-name ((,citrus-class (:foreground ,citrus-yellow :inherit italic))))
    `(doom-modeline-project-parent-dir ((,citrus-class (:foreground ,citrus-purple-red))))
-   `(doom-modeline-buffer-minor-mode ((,citrus-class (:foreground ,citrus-yellow))))
+   `(doom-modeline-buffer-minor-mode ((,citrus-class (:foreground ,citrus-alt-yellow))))
+   `(doom-modeline-buffer-modified ((,citrus-class (:foreground ,citrus-mode-line-modified :inherit (doom-modeline warning bold)))))
 
    ;; corfu
    `(corfu-default ((,citrus-class (:foreground ,citrus-fg :background ,citrus-bg))))

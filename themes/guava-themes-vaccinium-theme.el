@@ -73,6 +73,7 @@
 
       (vaccinium-mode-line                 "#5582d7")
       (vaccinium-mode-line-inactive        "#6a7e98")
+      (vaccinium-mode-line-modified        "#ffa07a")
       (vaccinium-bell                      "#D76955")
 
       (vaccinium-tab-1                     vaccinium-mode-line)
@@ -195,7 +196,7 @@
    `(tab-line-tab-current ((,vaccinium-class (:foreground ,vaccinium-white :background ,vaccinium-tab-1 :inherit tab-line-tab))))
    `(tab-line-tab-inactive ((,vaccinium-class (:foreground ,vaccinium-white :background ,vaccinium-tab-2 :inherit tab-line-tab))))
    `(tab-line-tab-inactive-alternate ((,vaccinium-class (:foreground ,vaccinium-white :background ,vaccinium-tab-3 :inherit tab-line-tab))))
-   `(tab-line-tab-modified ((,vaccinium-class (:foreground ,vaccinium-orange :weight bold))))
+   `(tab-line-tab-modified ((,vaccinium-class (:foreground ,vaccinium-mode-line-modified :weight bold))))
    `(tab-line-tab-special ((,vaccinium-class (:slant italic :weight bold))))
    `(tab-line-highlight ((,vaccinium-class (:foreground unspecified :background unspecified :box (:line-width 2 :style released-button)))))
 
@@ -312,6 +313,7 @@
    `(doom-modeline-project-name ((,vaccinium-class (:foreground ,vaccinium-deep-purple :inherit italic))))
    `(doom-modeline-project-parent-dir ((,vaccinium-class (:foreground ,vaccinium-deep-purple))))
    `(doom-modeline-buffer-minor-mode ((,vaccinium-class (:foreground ,vaccinium-yellow))))
+   `(doom-modeline-buffer-modified ((,vaccinium-class (:foreground ,vaccinium-mode-line-modified :inherit (doom-modeline warning bold)))))
 
    ;; corfu
    `(corfu-default ((,vaccinium-class (:foreground ,vaccinium-fg :background ,vaccinium-bg))))

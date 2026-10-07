@@ -76,7 +76,8 @@
 
       (ceiba-mode-line                 "#5b6452")
       (ceiba-mode-line-inactive        "#826e51")
-      (ceiba-bell                      "#645264")
+      (ceiba-mode-line-modified        "#b287b2")
+      (ceiba-bell                      "#786678")
 
       (ceiba-tab-1                     ceiba-mode-line)
       (ceiba-tab-2                     ceiba-mode-line-inactive)
@@ -198,7 +199,7 @@
    `(tab-line-tab-current ((,ceiba-class (:foreground ,ceiba-white :background ,ceiba-tab-1 :inherit tab-line-tab))))
    `(tab-line-tab-inactive ((,ceiba-class (:foreground ,ceiba-white :background ,ceiba-tab-2 :inherit tab-line-tab))))
    `(tab-line-tab-inactive-alternate ((,ceiba-class (:foreground ,ceiba-white :background ,ceiba-tab-3 :inherit tab-line-tab))))
-   `(tab-line-tab-modified ((,ceiba-class (:foreground ,ceiba-purple-red :weight bold))))
+   `(tab-line-tab-modified ((,ceiba-class (:foreground ,ceiba-mode-line-modified :weight bold))))
    `(tab-line-tab-special ((,ceiba-class (:slant italic :weight bold))))
    `(tab-line-highlight ((,ceiba-class (:foreground unspecified :background unspecified :box (:line-width 2 :style released-button)))))
 
@@ -315,6 +316,7 @@
    `(doom-modeline-project-name ((,ceiba-class (:foreground ,ceiba-steel-blue :inherit italic))))
    `(doom-modeline-project-parent-dir ((,ceiba-class (:foreground ,ceiba-steel-blue))))
    `(doom-modeline-buffer-minor-mode ((,ceiba-class (:foreground ,ceiba-shadow))))
+   `(doom-modeline-buffer-modified ((,ceiba-class (:foreground ,ceiba-mode-line-modified :inherit (doom-modeline warning bold)))))
 
    ;; corfu
    `(corfu-default ((,ceiba-class (:foreground ,ceiba-fg :background ,ceiba-bg))))

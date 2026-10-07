@@ -74,6 +74,7 @@
 
       (rhododendron-mode-line                 "#c00353")
       (rhododendron-mode-line-inactive        "#fd3aae")
+      (rhododendron-mode-line-modified        "#5346cc")
       (rhododendron-bell                      "#03C013")
 
       (rhododendron-tab-1                     rhododendron-mode-line)
@@ -196,7 +197,7 @@
    `(tab-line-tab-current ((,rhododendron-class (:foreground ,rhododendron-white :background ,rhododendron-tab-1 :inherit tab-line-tab))))
    `(tab-line-tab-inactive ((,rhododendron-class (:foreground ,rhododendron-white :background ,rhododendron-tab-2 :inherit tab-line-tab))))
    `(tab-line-tab-inactive-alternate ((,rhododendron-class (:foreground ,rhododendron-white :background ,rhododendron-tab-3 :inherit tab-line-tab))))
-   `(tab-line-tab-modified ((,rhododendron-class (:foreground ,rhododendron-purple-blue :weight bold))))
+   `(tab-line-tab-modified ((,rhododendron-class (:foreground ,rhododendron-mode-line-modified :weight bold))))
    `(tab-line-tab-special ((,rhododendron-class (:slant italic :weight bold))))
    `(tab-line-highlight ((,rhododendron-class (:foreground unspecified :background unspecified :box (:line-width 2 :style released-button)))))
 
@@ -313,6 +314,7 @@
    `(doom-modeline-project-name ((,rhododendron-class (:foreground ,rhododendron-light-purple :inherit italic))))
    `(doom-modeline-project-parent-dir ((,rhododendron-class (:foreground ,rhododendron-light-purple))))
    `(doom-modeline-buffer-minor-mode ((,rhododendron-class (:foreground ,rhododendron-bright-orange))))
+   `(doom-modeline-buffer-modified ((,rhododendron-class (:foreground ,rhododendron-mode-line-modified :inherit (doom-modeline warning bold)))))
 
    ;; corfu
    `(corfu-default ((,rhododendron-class (:foreground ,rhododendron-fg :background ,rhododendron-bg))))

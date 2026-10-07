@@ -74,6 +74,7 @@
 
       (dracaena-mode-line                 "#792725")
       (dracaena-mode-line-inactive        "#353838")
+      (dracaena-mode-line-modified        "#e6825f")
       (dracaena-bell                      "#257950")
 
       (dracaena-tab-1                     dracaena-mode-line)
@@ -196,7 +197,7 @@
    `(tab-line-tab-current ((,dracaena-class (:foreground ,dracaena-white :background ,dracaena-tab-1 :inherit tab-line-tab))))
    `(tab-line-tab-inactive ((,dracaena-class (:foreground ,dracaena-white :background ,dracaena-tab-2 :inherit tab-line-tab))))
    `(tab-line-tab-inactive-alternate ((,dracaena-class (:foreground ,dracaena-white :background ,dracaena-tab-3 :inherit tab-line-tab))))
-   `(tab-line-tab-modified ((,dracaena-class (:foreground ,dracaena-orange :weight bold))))
+   `(tab-line-tab-modified ((,dracaena-class (:foreground ,dracaena-mode-line-modified :weight bold))))
    `(tab-line-tab-special ((,dracaena-class (:slant italic :weight bold))))
    `(tab-line-highlight ((,dracaena-class (:foreground unspecified :background unspecified :box (:line-width 2 :style released-button)))))
 
@@ -313,6 +314,7 @@
    `(doom-modeline-project-name ((,dracaena-class (:foreground ,dracaena-snakeplant-yellow :inherit italic))))
    `(doom-modeline-project-parent-dir ((,dracaena-class (:foreground ,dracaena-snakeplant-yellow))))
    `(doom-modeline-buffer-minor-mode ((,dracaena-class (:foreground ,dracaena-green))))
+   `(doom-modeline-buffer-modified ((,dracaena-class (:foreground ,dracaena-mode-line-modified :inherit (doom-modeline warning bold)))))
 
    ;; corfu
    `(corfu-default ((,dracaena-class (:foreground ,dracaena-fg :background ,dracaena-bg))))

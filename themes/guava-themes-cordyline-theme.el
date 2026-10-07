@@ -39,7 +39,7 @@
       (cordyline-white                     "#FFFFFF")
 
       (cordyline-orange-red                "#ce462c")
-      (cordyline-pink-red                  "#cb646e")
+      (cordyline-pink-red                  "#df7882")
       (cordyline-pink-purple               "#da70d6")
       (cordyline-deep-fuchsia              "#6e1551")
 
@@ -71,6 +71,7 @@
 
       (cordyline-mode-line                 "#a03c5a")
       (cordyline-mode-line-inactive        "#502d50")
+      (cordyline-mode-line-modified        "#4f94cd")
       (cordyline-bell                      "#3C8CA0")
 
       (cordyline-tab-1                     cordyline-mode-line)
@@ -193,7 +194,7 @@
    `(tab-line-tab-current ((,cordyline-class (:foreground ,cordyline-white :background ,cordyline-tab-1 :inherit tab-line-tab))))
    `(tab-line-tab-inactive ((,cordyline-class (:foreground ,cordyline-white :background ,cordyline-tab-2 :inherit tab-line-tab))))
    `(tab-line-tab-inactive-alternate ((,cordyline-class (:foreground ,cordyline-white :background ,cordyline-tab-3 :inherit tab-line-tab))))
-   `(tab-line-tab-modified ((,cordyline-class (:foreground ,cordyline-steel-blue :weight bold))))
+   `(tab-line-tab-modified ((,cordyline-class (:foreground ,cordyline-mode-line-modified :weight bold))))
    `(tab-line-tab-special ((,cordyline-class (:slant italic :weight bold))))
    `(tab-line-highlight ((,cordyline-class (:foreground unspecified :background unspecified :box (:line-width 2 :style released-button)))))
 
@@ -310,6 +311,7 @@
    `(doom-modeline-project-name ((,cordyline-class (:foreground ,cordyline-steel-blue :inherit italic))))
    `(doom-modeline-project-parent-dir ((,cordyline-class (:foreground ,cordyline-steel-blue))))
    `(doom-modeline-buffer-minor-mode ((,cordyline-class (:foreground ,cordyline-pink-red))))
+   `(doom-modeline-buffer-modified ((,cordyline-class (:foreground ,cordyline-mode-line-modified :inherit (doom-modeline warning bold)))))
 
    ;; corfu
    `(corfu-default ((,cordyline-class (:foreground ,cordyline-fg :background ,cordyline-bg))))
