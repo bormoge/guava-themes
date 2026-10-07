@@ -50,7 +50,7 @@
 
       (psidium-brown                     "#785f46")
 
-      (psidium-light-blue                "#41C3CA")
+      (psidium-light-blue                "#37b9c0")
       (psidium-blue                      "#2a4ad9")
       (psidium-deep-blue                 "#483d8b")
 
