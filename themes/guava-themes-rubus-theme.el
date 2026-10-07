@@ -336,7 +336,7 @@
    `(envrc-mode-line-on-face ((,rubus-class (:inherit success))))
 
    ;; devdocs
-   `(devdocs-code-block ((,rubus-class (:weight bold :background ,rubus-highlight))))
+   `(devdocs-code-block ((,rubus-class (:weight bold :background ,rubus-highlight :extend t))))
 
    ;; nerd-icons
    ;; nerd-icons-completion

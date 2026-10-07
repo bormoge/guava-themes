@@ -336,7 +336,7 @@
    `(envrc-mode-line-on-face ((,rhododendron-class (:inherit success))))
 
    ;; devdocs
-   `(devdocs-code-block ((,rhododendron-class (:weight bold :background ,rhododendron-highlight))))
+   `(devdocs-code-block ((,rhododendron-class (:weight bold :background ,rhododendron-highlight :extend t))))
 
    ;; nerd-icons
    ;; nerd-icons-completion

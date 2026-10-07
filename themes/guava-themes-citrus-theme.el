@@ -336,7 +336,7 @@
    `(envrc-mode-line-on-face ((,citrus-class (:inherit success))))
 
    ;; devdocs
-   `(devdocs-code-block ((,citrus-class (:weight bold :background ,citrus-highlight))))
+   `(devdocs-code-block ((,citrus-class (:weight bold :background ,citrus-highlight :extend t))))
 
    ;; nerd-icons
    ;; nerd-icons-completion

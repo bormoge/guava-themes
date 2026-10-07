@@ -333,7 +333,7 @@
    `(envrc-mode-line-on-face ((,cordyline-class (:inherit success))))
 
    ;; devdocs
-   `(devdocs-code-block ((,cordyline-class (:weight bold :background ,cordyline-highlight))))
+   `(devdocs-code-block ((,cordyline-class (:weight bold :background ,cordyline-highlight :extend t))))
 
    ;; nerd-icons
    ;; nerd-icons-completion

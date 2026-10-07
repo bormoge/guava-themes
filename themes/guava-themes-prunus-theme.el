@@ -335,7 +335,7 @@
    `(envrc-mode-line-on-face ((,prunus-class (:inherit success))))
 
    ;; devdocs
-   `(devdocs-code-block ((,prunus-class (:weight bold :background ,prunus-highlight))))
+   `(devdocs-code-block ((,prunus-class (:weight bold :background ,prunus-highlight :extend t))))
 
    ;; nerd-icons
    ;; nerd-icons-completion

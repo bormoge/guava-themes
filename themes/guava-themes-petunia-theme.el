@@ -332,7 +332,7 @@
    `(envrc-mode-line-on-face ((,petunia-class (:inherit success))))
 
    ;; devdocs
-   `(devdocs-code-block ((,petunia-class (:weight bold :background ,petunia-highlight))))
+   `(devdocs-code-block ((,petunia-class (:weight bold :background ,petunia-highlight :extend t))))
 
    ;; nerd-icons
    ;; nerd-icons-completion

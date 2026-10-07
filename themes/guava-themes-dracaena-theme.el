@@ -336,7 +336,7 @@
    `(envrc-mode-line-on-face ((,dracaena-class (:inherit success))))
 
    ;; devdocs
-   `(devdocs-code-block ((,dracaena-class (:weight bold :background ,dracaena-highlight))))
+   `(devdocs-code-block ((,dracaena-class (:weight bold :background ,dracaena-highlight :extend t))))
 
    ;; nerd-icons
    ;; nerd-icons-completion

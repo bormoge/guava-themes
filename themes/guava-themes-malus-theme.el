@@ -333,7 +333,7 @@
    `(envrc-mode-line-on-face ((,malus-class (:inherit success))))
 
    ;; devdocs
-   `(devdocs-code-block ((,malus-class (:weight bold :background ,malus-highlight))))
+   `(devdocs-code-block ((,malus-class (:weight bold :background ,malus-highlight :extend t))))
 
    ;; nerd-icons
    ;; nerd-icons-completion

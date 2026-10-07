@@ -334,7 +334,7 @@
    `(envrc-mode-line-on-face ((,eucalyptus-class (:inherit success))))
 
    ;; devdocs
-   `(devdocs-code-block ((,eucalyptus-class (:weight bold :background ,eucalyptus-highlight))))
+   `(devdocs-code-block ((,eucalyptus-class (:weight bold :background ,eucalyptus-highlight :extend t))))
 
    ;; nerd-icons
    ;; nerd-icons-completion

@@ -334,7 +334,7 @@
    `(envrc-mode-line-on-face ((,acer-class (:inherit success))))
 
    ;; devdocs
-   `(devdocs-code-block ((,acer-class (:weight bold :background ,acer-highlight))))
+   `(devdocs-code-block ((,acer-class (:weight bold :background ,acer-highlight :extend t))))
 
    ;; nerd-icons
    ;; nerd-icons-completion

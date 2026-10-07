@@ -334,7 +334,7 @@
    `(envrc-mode-line-on-face ((,solanum-class (:inherit success))))
 
    ;; devdocs
-   `(devdocs-code-block ((,solanum-class (:weight bold :background ,solanum-highlight))))
+   `(devdocs-code-block ((,solanum-class (:weight bold :background ,solanum-highlight :extend t))))
 
    ;; nerd-icons
    ;; nerd-icons-completion

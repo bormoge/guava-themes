@@ -334,7 +334,7 @@
    `(envrc-mode-line-on-face ((,pyrus-class (:inherit success))))
 
    ;; devdocs
-   `(devdocs-code-block ((,pyrus-class (:weight bold :background ,pyrus-highlight))))
+   `(devdocs-code-block ((,pyrus-class (:weight bold :background ,pyrus-highlight :extend t))))
 
    ;; nerd-icons
    ;; nerd-icons-completion

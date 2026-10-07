@@ -333,7 +333,7 @@
    `(envrc-mode-line-on-face ((,jacaranda-class (:inherit success))))
 
    ;; devdocs
-   `(devdocs-code-block ((,jacaranda-class (:weight bold :background ,jacaranda-highlight))))
+   `(devdocs-code-block ((,jacaranda-class (:weight bold :background ,jacaranda-highlight :extend t))))
 
    ;; nerd-icons
    ;; nerd-icons-completion

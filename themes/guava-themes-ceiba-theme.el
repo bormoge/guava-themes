@@ -338,7 +338,7 @@
    `(envrc-mode-line-on-face ((,ceiba-class (:inherit success))))
 
    ;; devdocs
-   `(devdocs-code-block ((,ceiba-class (:weight bold :background ,ceiba-highlight))))
+   `(devdocs-code-block ((,ceiba-class (:weight bold :background ,ceiba-highlight :extend t))))
 
    ;; nerd-icons
    ;; nerd-icons-completion

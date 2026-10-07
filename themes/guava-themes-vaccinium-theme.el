@@ -335,7 +335,7 @@
    `(envrc-mode-line-on-face ((,vaccinium-class (:inherit success))))
 
    ;; devdocs
-   `(devdocs-code-block ((,vaccinium-class (:weight bold :background ,vaccinium-highlight))))
+   `(devdocs-code-block ((,vaccinium-class (:weight bold :background ,vaccinium-highlight :extend t))))
 
    ;; nerd-icons
    ;; nerd-icons-completion

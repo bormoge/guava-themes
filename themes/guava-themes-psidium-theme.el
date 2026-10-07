@@ -331,7 +331,7 @@
    `(envrc-mode-line-on-face ((,psidium-class (:inherit success))))
 
    ;; devdocs
-   `(devdocs-code-block ((,psidium-class (:weight bold :background ,psidium-highlight))))
+   `(devdocs-code-block ((,psidium-class (:weight bold :background ,psidium-highlight :extend t))))
 
    ;; nerd-icons
    ;; nerd-icons-completion
