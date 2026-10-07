@@ -171,6 +171,8 @@
    ;; mode-line
    `(mode-line ((,dracaena-class (:foreground ,dracaena-white :background ,dracaena-mode-line))))
    `(mode-line-inactive ((,dracaena-class (:foreground ,dracaena-white :background ,dracaena-mode-line-inactive :inherit mode-line))))
+   `(mode-line-emphasis ((,dracaena-class (:weight bold))))
+   `(mode-line-highlight ((,dracaena-class (:foreground unspecified :background unspecified :box (:line-width 2 :color "grey40" :style released-button)))))
    `(guava-themes-visible-bell ((,dracaena-class (:foreground ,dracaena-white :background ,dracaena-bell))))
 
    ;; minibuffer

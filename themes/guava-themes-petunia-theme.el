@@ -167,6 +167,8 @@
    ;; mode-line
    `(mode-line ((,petunia-class (:foreground ,petunia-white :background ,petunia-mode-line))))
    `(mode-line-inactive ((,petunia-class (:foreground ,petunia-white :background ,petunia-mode-line-inactive :inherit mode-line))))
+   `(mode-line-emphasis ((,petunia-class (:weight bold))))
+   `(mode-line-highlight ((,petunia-class (:foreground unspecified :background unspecified :box (:line-width 2 :color "grey40" :style released-button)))))
    `(guava-themes-visible-bell ((,petunia-class (:foreground ,petunia-white :background ,petunia-bell))))
 
    ;; minibuffer

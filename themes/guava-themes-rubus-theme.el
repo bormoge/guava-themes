@@ -171,6 +171,8 @@
    ;; mode-line
    `(mode-line ((,rubus-class (:foreground ,rubus-white :background ,rubus-mode-line))))
    `(mode-line-inactive ((,rubus-class (:foreground ,rubus-white :background ,rubus-mode-line-inactive :inherit mode-line))))
+   `(mode-line-emphasis ((,rubus-class (:weight bold))))
+   `(mode-line-highlight ((,rubus-class (:foreground unspecified :background unspecified :box (:line-width 2 :color "grey40" :style released-button)))))
    `(guava-themes-visible-bell ((,rubus-class (:foreground ,rubus-white :background ,rubus-bell))))
 
    ;; minibuffer

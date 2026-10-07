@@ -169,6 +169,8 @@
    ;; mode-line
    `(mode-line ((,acer-class (:foreground ,acer-white :background ,acer-mode-line))))
    `(mode-line-inactive ((,acer-class (:foreground ,acer-white :background ,acer-mode-line-inactive :inherit mode-line))))
+   `(mode-line-emphasis ((,acer-class (:weight bold))))
+   `(mode-line-highlight ((,acer-class (:foreground unspecified :background unspecified :box (:line-width 2 :color "grey40" :style released-button)))))
    `(guava-themes-visible-bell ((,acer-class (:foreground ,acer-white :background ,acer-bell))))
 
    ;; minibuffer

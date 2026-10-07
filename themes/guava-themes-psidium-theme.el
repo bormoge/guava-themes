@@ -166,6 +166,8 @@
    ;; mode-line
    `(mode-line ((,psidium-class (:foreground ,psidium-white :background ,psidium-mode-line))))
    `(mode-line-inactive ((,psidium-class (:foreground ,psidium-white :background ,psidium-mode-line-inactive :inherit mode-line))))
+   `(mode-line-emphasis ((,psidium-class (:weight bold))))
+   `(mode-line-highlight ((,psidium-class (:foreground unspecified :background unspecified :box (:line-width 2 :color "grey40" :style released-button)))))
    `(guava-themes-visible-bell ((,psidium-class (:foreground ,psidium-white :background ,psidium-bell))))
 
    ;; minibuffer
