@@ -172,7 +172,7 @@
 
    ;; mode-line
    `(mode-line ((,citrus-class (:foreground ,citrus-white :background ,citrus-mode-line))))
-   `(mode-line-inactive ((,citrus-class (:foreground ,citrus-white :background ,citrus-mode-line-inactive :inherit mode-line))))
+   `(mode-line-inactive ((,citrus-class (:background ,citrus-mode-line-inactive :inherit mode-line))))
    `(mode-line-emphasis ((,citrus-class (:weight bold))))
    `(mode-line-highlight ((,citrus-class (:foreground unspecified :background unspecified :box (:line-width 2 :color "grey40" :style released-button)))))
    `(guava-themes-visible-bell ((,citrus-class (:foreground ,citrus-white :background ,citrus-bell))))

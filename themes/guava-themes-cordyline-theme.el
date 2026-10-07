@@ -168,7 +168,7 @@
 
    ;; mode-line
    `(mode-line ((,cordyline-class (:foreground ,cordyline-white :background ,cordyline-mode-line))))
-   `(mode-line-inactive ((,cordyline-class (:foreground ,cordyline-white :background ,cordyline-mode-line-inactive :inherit mode-line))))
+   `(mode-line-inactive ((,cordyline-class (:background ,cordyline-mode-line-inactive :inherit mode-line))))
    `(mode-line-emphasis ((,cordyline-class (:weight bold))))
    `(mode-line-highlight ((,cordyline-class (:foreground unspecified :background unspecified :box (:line-width 2 :color "grey40" :style released-button)))))
    `(guava-themes-visible-bell ((,cordyline-class (:foreground ,cordyline-white :background ,cordyline-bell))))

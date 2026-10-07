@@ -173,7 +173,7 @@
 
    ;; mode-line
    `(mode-line ((,ceiba-class (:foreground ,ceiba-white :background ,ceiba-mode-line))))
-   `(mode-line-inactive ((,ceiba-class (:foreground ,ceiba-white :background ,ceiba-mode-line-inactive :inherit mode-line))))
+   `(mode-line-inactive ((,ceiba-class (:background ,ceiba-mode-line-inactive :inherit mode-line))))
    `(mode-line-emphasis ((,ceiba-class (:weight bold))))
    `(mode-line-highlight ((,ceiba-class (:foreground unspecified :background unspecified :box (:line-width 2 :color "grey40" :style released-button)))))
    `(guava-themes-visible-bell ((,ceiba-class (:foreground ,ceiba-white :background ,ceiba-bell))))

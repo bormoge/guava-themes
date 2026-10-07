@@ -169,7 +169,7 @@
 
    ;; mode-line
    `(mode-line ((,solanum-class (:foreground ,solanum-white :background ,solanum-mode-line))))
-   `(mode-line-inactive ((,solanum-class (:foreground ,solanum-white :background ,solanum-mode-line-inactive :inherit mode-line))))
+   `(mode-line-inactive ((,solanum-class (:background ,solanum-mode-line-inactive :inherit mode-line))))
    `(mode-line-emphasis ((,solanum-class (:weight bold))))
    `(mode-line-highlight ((,solanum-class (:foreground unspecified :background unspecified :box (:line-width 2 :color "grey40" :style released-button)))))
    `(guava-themes-visible-bell ((,solanum-class (:foreground ,solanum-white :background ,solanum-bell))))

@@ -169,7 +169,7 @@
 
    ;; mode-line
    `(mode-line ((,pyrus-class (:foreground ,pyrus-white :background ,pyrus-mode-line))))
-   `(mode-line-inactive ((,pyrus-class (:foreground ,pyrus-white :background ,pyrus-mode-line-inactive :inherit mode-line))))
+   `(mode-line-inactive ((,pyrus-class (:background ,pyrus-mode-line-inactive :inherit mode-line))))
    `(mode-line-emphasis ((,pyrus-class (:weight bold))))
    `(mode-line-highlight ((,pyrus-class (:foreground unspecified :background unspecified :box (:line-width 2 :color "grey40" :style released-button)))))
    `(guava-themes-visible-bell ((,pyrus-class (:foreground ,pyrus-white :background ,pyrus-bell))))

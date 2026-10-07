@@ -171,7 +171,7 @@
 
    ;; mode-line
    `(mode-line ((,rhododendron-class (:foreground ,rhododendron-white :background ,rhododendron-mode-line))))
-   `(mode-line-inactive ((,rhododendron-class (:foreground ,rhododendron-white :background ,rhododendron-mode-line-inactive :inherit mode-line))))
+   `(mode-line-inactive ((,rhododendron-class (:background ,rhododendron-mode-line-inactive :inherit mode-line))))
    `(mode-line-emphasis ((,rhododendron-class (:weight bold))))
    `(mode-line-highlight ((,rhododendron-class (:foreground unspecified :background unspecified :box (:line-width 2 :color "grey40" :style released-button)))))
    `(guava-themes-visible-bell ((,rhododendron-class (:foreground ,rhododendron-white :background ,rhododendron-bell))))

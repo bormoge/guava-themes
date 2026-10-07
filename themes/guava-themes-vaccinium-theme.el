@@ -170,7 +170,7 @@
 
    ;; mode-line
    `(mode-line ((,vaccinium-class (:foreground ,vaccinium-white :background ,vaccinium-mode-line))))
-   `(mode-line-inactive ((,vaccinium-class (:foreground ,vaccinium-white :background ,vaccinium-mode-line-inactive :inherit mode-line))))
+   `(mode-line-inactive ((,vaccinium-class (:background ,vaccinium-mode-line-inactive :inherit mode-line))))
    `(mode-line-emphasis ((,vaccinium-class (:weight bold))))
    `(mode-line-highlight ((,vaccinium-class (:foreground unspecified :background unspecified :box (:line-width 2 :color "grey40" :style released-button)))))
    `(guava-themes-visible-bell ((,vaccinium-class (:foreground ,vaccinium-white :background ,vaccinium-bell))))

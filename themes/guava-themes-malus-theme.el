@@ -168,7 +168,7 @@
 
    ;; mode-line
    `(mode-line ((,malus-class (:foreground ,malus-white :background ,malus-mode-line))))
-   `(mode-line-inactive ((,malus-class (:foreground ,malus-white :background ,malus-mode-line-inactive :inherit mode-line))))
+   `(mode-line-inactive ((,malus-class (:background ,malus-mode-line-inactive :inherit mode-line))))
    `(mode-line-emphasis ((,malus-class (:weight bold))))
    `(mode-line-highlight ((,malus-class (:foreground unspecified :background unspecified :box (:line-width 2 :color "grey40" :style released-button)))))
    `(guava-themes-visible-bell ((,malus-class (:foreground ,malus-white :background ,malus-bell))))

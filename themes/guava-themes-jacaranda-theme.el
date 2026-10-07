@@ -168,7 +168,7 @@
 
    ;; mode-line
    `(mode-line ((,jacaranda-class (:foreground ,jacaranda-white :background ,jacaranda-mode-line))))
-   `(mode-line-inactive ((,jacaranda-class (:foreground ,jacaranda-white :background ,jacaranda-mode-line-inactive :inherit mode-line))))
+   `(mode-line-inactive ((,jacaranda-class (:background ,jacaranda-mode-line-inactive :inherit mode-line))))
    `(mode-line-emphasis ((,jacaranda-class (:weight bold))))
    `(mode-line-highlight ((,jacaranda-class (:foreground unspecified :background unspecified :box (:line-width 2 :color "grey40" :style released-button)))))
    `(guava-themes-visible-bell ((,jacaranda-class (:foreground ,jacaranda-white :background ,jacaranda-bell))))
