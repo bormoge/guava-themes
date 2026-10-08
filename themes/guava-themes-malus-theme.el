@@ -71,7 +71,7 @@
 
       (malus-mode-line                 "#cd5a5f")
       (malus-mode-line-inactive        "#49835f")
-      (malus-mode-line-modified        "#4548e3")
+      (malus-mode-line-modified        "#60CD5A")
       (malus-bell                      "#5A99CD")
 
       (malus-tab-1                     malus-mode-line)
