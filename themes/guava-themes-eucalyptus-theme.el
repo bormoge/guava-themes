@@ -63,8 +63,8 @@
       (eucalyptus-fg                        "#373c4b")
       (eucalyptus-fg-2                      "#737887")
       (eucalyptus-bg                        "#a5aa96")
-      (eucalyptus-highlight                 "#919682")
-      (eucalyptus-shadow                    "#7f7f7f")
+      (eucalyptus-highlight                 "#9ba08c")
+      (eucalyptus-shadow                    "#717171")
 
       (eucalyptus-error                     "#e10000")
       (eucalyptus-warning                   "#f6c911")
