@@ -42,8 +42,8 @@
       (eucalyptus-gray                      "#646464")
       (eucalyptus-gray-green                "#5a6450")
 
-      (eucalyptus-green                     "#50693c")
-      (eucalyptus-light-green               "#448223")
+      (eucalyptus-green                     "#465f32")
+      (eucalyptus-alt-green                 "#307d0f")
 
       (eucalyptus-deep-red                  "#82312e")
 
@@ -83,7 +83,7 @@
       (eucalyptus-fl-string                 eucalyptus-purple-red)
       (eucalyptus-fl-keyword                eucalyptus-deep-red)
       (eucalyptus-fl-builtin                eucalyptus-deep-blue)
-      (eucalyptus-fl-type                   eucalyptus-light-green)
+      (eucalyptus-fl-type                   eucalyptus-alt-green)
       (eucalyptus-fl-function-name          eucalyptus-brown-wood)
       (eucalyptus-fl-variable-name          eucalyptus-gray-green)
       (eucalyptus-fl-constant               eucalyptus-light-blue)
