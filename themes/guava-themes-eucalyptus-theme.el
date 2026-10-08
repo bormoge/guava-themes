@@ -73,7 +73,7 @@
       (eucalyptus-mode-line                 "#373c4b")
       (eucalyptus-mode-line-inactive        "#737887")
       (eucalyptus-mode-line-modified        "#aa5956")
-      (eucalyptus-bell                      "#464B37")
+      (eucalyptus-bell                      "#5a5f4b")
 
       (eucalyptus-tab-1                     eucalyptus-mode-line)
       (eucalyptus-tab-2                     eucalyptus-mode-line-inactive)
