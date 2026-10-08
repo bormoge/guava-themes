@@ -74,7 +74,7 @@
 
       (rhododendron-mode-line                 "#c00353")
       (rhododendron-mode-line-inactive        "#fd3aae")
-      (rhododendron-mode-line-modified        "#5346cc")
+      (rhododendron-mode-line-modified        "#3AAFFD")
       (rhododendron-bell                      "#03C013")
 
       (rhododendron-tab-1                     rhododendron-mode-line)
