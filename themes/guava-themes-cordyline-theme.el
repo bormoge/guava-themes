@@ -44,7 +44,7 @@
       (cordyline-deep-fuchsia              "#6e1551")
 
       (cordyline-light-blue                "#7387e1")
-      (cordyline-blue                      "#505ab9")
+      (cordyline-blue                      "#5064b9")
       (cordyline-deep-blue                 "#214bd5")
       (cordyline-steel-blue                "#4f94cd")
       (cordyline-cyan                      "#00ffff")
@@ -53,16 +53,16 @@
       (cordyline-light-green               "#afd2b9")
       (cordyline-green                     "#005f55")
 
-      (cordyline-light-purple              "#ac64db")
+      (cordyline-light-purple              "#b46ee6")
       (cordyline-alt-light-purple          "#a29cf1")
-      (cordyline-purple                    "#7a5ab9")
-      (cordyline-alt-purple                "#5a5064")
+      (cordyline-purple                    "#7d5ab9")
+      (cordyline-alt-purple                "#785a6e")
       (cordyline-purple-red                "#a03c5a")
 
       (cordyline-fg                        "#FFFFFF")
       (cordyline-fg-2                      "#c3c3c3")
       (cordyline-bg                        "#2f212e")
-      (cordyline-highlight                 "#433542")
+      (cordyline-highlight                 "#3e303d")
       (cordyline-shadow                    "#b3b3b3")
 
       (cordyline-error                     "#FF0000")
