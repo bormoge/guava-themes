@@ -51,7 +51,7 @@
       (cordyline-dark-cyan                 "#007d9b")
 
       (cordyline-light-green               "#afd2b9")
-      (cordyline-green                     "#005f55")
+      (cordyline-green                     "#00695f")
 
       (cordyline-light-purple              "#b46ee6")
       (cordyline-alt-light-purple          "#a29cf1")
