@@ -53,8 +53,7 @@
       (solanum-cyan                      "#00ffff")
 
       (solanum-light-purple              "#bec8ff")
-      (solanum-purple                    "#9c69e8")
-      (solanum-alt-purple                "#a394ff")
+      (solanum-purple                    "#786ed7")
       (solanum-purple-pink               "#915d93")
       (solanum-purple-blue               "#492b91")
       (solanum-dark-purple               "#672b5f")
@@ -293,10 +292,10 @@
 
    ;; elfeed
    `(elfeed-search-tag-face ((,solanum-class (:foreground ,solanum-light-blue))))
-   `(elfeed-search-date-face ((,solanum-class (:foreground ,solanum-orange))))
+   `(elfeed-search-date-face ((,solanum-class (:foreground ,solanum-red-tomato))))
    `(elfeed-search-feed-face ((,solanum-class (:foreground ,solanum-light-green))))
-   `(elfeed-search-title-face ((,solanum-class (:foreground ,solanum-yellow-potato))))
-   `(elfeed-search-unread-title-face ((,solanum-class (:weight bold :foreground ,solanum-red-tomato))))
+   `(elfeed-search-title-face ((,solanum-class (:foreground ,solanum-alt-dark-purple))))
+   `(elfeed-search-unread-title-face ((,solanum-class (:weight bold :foreground ,solanum-purple))))
    `(elfeed-search-filter-face ((,solanum-class (:weight bold :foreground ,solanum-light-purple))))
    `(elfeed-search-last-update-face ((,solanum-class (:weight bold :foreground ,solanum-light-purple))))
    `(elfeed-search-unread-count-face ((,solanum-class (:weight bold :foreground ,solanum-light-purple))))

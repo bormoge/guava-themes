@@ -50,15 +50,14 @@
       (dracaena-orange                    "#e6825f")
       (dracaena-orange-red                "#f06e6e")
       (dracaena-red                       "#c83c50")
-      (dracaena-alt-deep-red              "#883634")
-      (dracaena-deep-red                  "#792725")
+      (dracaena-deep-red                  "#883634")
       (dracaena-pink                      "#cd6eaf")
 
       (dracaena-light-brown               "#a89d92")
 
-      (dracaena-light-blue                "#5a8ce6")
+      (dracaena-light-blue                "#6496f0")
       (dracaena-blue                      "#2d50d5")
-      (dracaena-steel-blue                "#4f94cd")
+      (dracaena-steel-blue                "#4678d2")
       (dracaena-cyan                      "#00ffff")
       (dracaena-dark-cyan                 "#005f55")
 
@@ -135,7 +134,7 @@
    `(shadow ((,dracaena-class (:foreground ,dracaena-shadow))))
 
    ;; region
-   `(region ((,dracaena-class (:background ,dracaena-alt-deep-red :extend t))))
+   `(region ((,dracaena-class (:background ,dracaena-deep-red :extend t))))
    `(secondary-selection ((,dracaena-class (:background ,dracaena-dark-cyan :extend t))))
 
    ;; font-lock
@@ -294,11 +293,11 @@
    ;; external packages
 
    ;; elfeed
-   `(elfeed-search-tag-face ((,dracaena-class (:foreground ,dracaena-steel-blue))))
+   `(elfeed-search-tag-face ((,dracaena-class (:foreground ,dracaena-snakeplant-yellow))))
    `(elfeed-search-date-face ((,dracaena-class (:foreground ,dracaena-light-blue))))
-   `(elfeed-search-feed-face ((,dracaena-class (:foreground ,dracaena-pink))))
-   `(elfeed-search-title-face ((,dracaena-class (:foreground ,dracaena-snakeplant-yellow))))
-   `(elfeed-search-unread-title-face ((,dracaena-class (:weight bold :foreground ,dracaena-green))))
+   `(elfeed-search-feed-face ((,dracaena-class (:foreground ,dracaena-orange-red))))
+   `(elfeed-search-title-face ((,dracaena-class (:foreground ,dracaena-light-brown))))
+   `(elfeed-search-unread-title-face ((,dracaena-class (:weight bold :foreground ,dracaena-light-green))))
    `(elfeed-search-filter-face ((,dracaena-class (:weight bold :foreground ,dracaena-light-green))))
    `(elfeed-search-last-update-face ((,dracaena-class (:weight bold :foreground ,dracaena-light-green))))
    `(elfeed-search-unread-count-face ((,dracaena-class (:weight bold :foreground ,dracaena-light-green))))

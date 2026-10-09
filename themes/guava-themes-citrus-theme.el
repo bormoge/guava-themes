@@ -45,6 +45,7 @@
 
       (citrus-yellow                    "#f5d49b")
       (citrus-alt-yellow                "#e1b69b")
+      (citrus-deep-yellow               "#b99869")
 
       (citrus-red                       "#df352c")
       (citrus-deep-red                  "#a0352c")
@@ -61,7 +62,6 @@
       (citrus-light-purple              "#bec8ff")
       (citrus-deep-purple               "#6d4393")
       (citrus-purple-red                "#77003a")
-      (citrus-purple-blue               "#504993")
 
       (citrus-fg                        "#000000")
       (citrus-fg-2                      "#3c3c3c")
@@ -295,11 +295,11 @@
    ;; external packages
 
    ;; elfeed
-   `(elfeed-search-tag-face ((,citrus-class (:foreground ,citrus-deep-blue))))
-   `(elfeed-search-date-face ((,citrus-class (:foreground ,citrus-deep-orange))))
+   `(elfeed-search-tag-face ((,citrus-class (:foreground ,citrus-deep-yellow))))
+   `(elfeed-search-date-face ((,citrus-class (:foreground ,citrus-green-blue))))
    `(elfeed-search-feed-face ((,citrus-class (:foreground ,citrus-green-lime))))
    `(elfeed-search-title-face ((,citrus-class (:foreground ,citrus-brown))))
-   `(elfeed-search-unread-title-face ((,citrus-class (:weight bold :foreground ,citrus-green-blue))))
+   `(elfeed-search-unread-title-face ((,citrus-class (:weight bold :foreground ,citrus-deep-orange))))
    `(elfeed-search-filter-face ((,citrus-class (:weight bold :foreground ,citrus-yellow))))
    `(elfeed-search-last-update-face ((,citrus-class (:weight bold :foreground ,citrus-yellow))))
    `(elfeed-search-unread-count-face ((,citrus-class (:weight bold :foreground ,citrus-yellow))))

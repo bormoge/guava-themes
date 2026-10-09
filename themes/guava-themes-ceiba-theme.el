@@ -41,8 +41,8 @@
       ;; (ceiba-light-gray                "#bab49e")
       (ceiba-gray-blue                 "#798585")
 
-      (ceiba-light-green               "#61ff96")
-      (ceiba-green                     "#5b6452")
+      (ceiba-light-green               "#64786e")
+      (ceiba-green                     "#5a6450")
       (ceiba-deep-green                "#2b5535")
       (ceiba-green-forest              "#006441")
       (ceiba-green-blue                "#11645a")
@@ -297,9 +297,9 @@
 
    ;; elfeed
    `(elfeed-search-tag-face ((,ceiba-class (:foreground ,ceiba-alt-blue))))
-   `(elfeed-search-date-face ((,ceiba-class (:foreground ,ceiba-purple-red))))
+   `(elfeed-search-date-face ((,ceiba-class (:foreground ,ceiba-brown-wood))))
    `(elfeed-search-feed-face ((,ceiba-class (:foreground ,ceiba-green-blue))))
-   `(elfeed-search-title-face ((,ceiba-class (:foreground ,ceiba-brown))))
+   `(elfeed-search-title-face ((,ceiba-class (:foreground ,ceiba-light-green))))
    `(elfeed-search-unread-title-face ((,ceiba-class (:weight bold :foreground ,ceiba-deep-green))))
    `(elfeed-search-filter-face ((,ceiba-class (:weight bold :foreground ,ceiba-light-orange))))
    `(elfeed-search-last-update-face ((,ceiba-class (:weight bold :foreground ,ceiba-light-orange))))

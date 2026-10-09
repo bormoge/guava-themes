@@ -48,10 +48,10 @@
 
       (rubus-yellow                    "#fde8b9")
 
-      (rubus-light-green               "#4ed77f")
+      (rubus-light-green               "#4ecd75")
       (rubus-green                     "#1e8264")
-      (rubus-green-forest              "#007841")
-      (rubus-green-blue                "#5b8a8a")
+      (rubus-green-forest              "#00824b")
+      (rubus-green-blue                "#5b9696")
 
       (rubus-light-blue                "#5096f1")
       (rubus-blue                      "#1455f1")
@@ -295,17 +295,17 @@
 
    ;; elfeed
    `(elfeed-search-tag-face ((,rubus-class (:foreground ,rubus-green-blue))))
-   `(elfeed-search-date-face ((,rubus-class (:foreground ,rubus-pink-cream))))
-   `(elfeed-search-feed-face ((,rubus-class (:foreground ,rubus-raspberry))))
-   `(elfeed-search-title-face ((,rubus-class (:foreground ,rubus-orange))))
-   `(elfeed-search-unread-title-face ((,rubus-class (:weight bold :foreground ,rubus-green-forest))))
+   `(elfeed-search-date-face ((,rubus-class (:foreground ,rubus-green))))
+   `(elfeed-search-feed-face ((,rubus-class (:foreground ,rubus-light-blue))))
+   `(elfeed-search-title-face ((,rubus-class (:foreground ,rubus-green-forest))))
+   `(elfeed-search-unread-title-face ((,rubus-class (:weight bold :foreground ,rubus-light-green))))
    `(elfeed-search-filter-face ((,rubus-class (:weight bold :foreground ,rubus-yellow))))
    `(elfeed-search-last-update-face ((,rubus-class (:weight bold :foreground ,rubus-yellow))))
    `(elfeed-search-unread-count-face ((,rubus-class (:weight bold :foreground ,rubus-yellow))))
 
-   `(elfeed-show-header-face ((,rubus-class (:foreground ,rubus-purple))))
-   `(elfeed-show-author-face ((,rubus-class (:weight bold :foreground ,rubus-raspberry))))
-   `(elfeed-show-title-face ((,rubus-class (:weight bold :foreground ,rubus-raspberry))))
+   `(elfeed-show-header-face ((,rubus-class (:foreground ,rubus-pink-cream))))
+   `(elfeed-show-author-face ((,rubus-class (:weight bold :foreground ,rubus-green))))
+   `(elfeed-show-title-face ((,rubus-class (:weight bold :foreground ,rubus-green))))
    `(elfeed-show-date-face ((,rubus-class (:foreground ,rubus-green-blue))))
    `(elfeed-show-feed-face ((,rubus-class (:foreground ,rubus-green-blue))))
    `(elfeed-show-tags-face ((,rubus-class (:foreground ,rubus-orange))))

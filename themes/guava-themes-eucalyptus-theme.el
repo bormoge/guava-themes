@@ -45,7 +45,8 @@
       (eucalyptus-green                     "#465f32")
       (eucalyptus-alt-green                 "#307d0f")
 
-      (eucalyptus-deep-red                  "#82312e")
+      (eucalyptus-red                       "#82312e")
+      (eucalyptus-deep-red                  "#693c50")
 
       (eucalyptus-yellow                    "#e1e696")
 
@@ -81,7 +82,7 @@
 
       (eucalyptus-fl-comment                eucalyptus-green)
       (eucalyptus-fl-string                 eucalyptus-purple-red)
-      (eucalyptus-fl-keyword                eucalyptus-deep-red)
+      (eucalyptus-fl-keyword                eucalyptus-red)
       (eucalyptus-fl-builtin                eucalyptus-deep-blue)
       (eucalyptus-fl-type                   eucalyptus-alt-green)
       (eucalyptus-fl-function-name          eucalyptus-brown-wood)
@@ -213,7 +214,7 @@
    ;; outline
    `(outline-1 ((,eucalyptus-class (:foreground ,eucalyptus-deep-blue :weight medium))))
    `(outline-2 ((,eucalyptus-class (:foreground ,eucalyptus-brown-wood :weight medium))))
-   `(outline-3 ((,eucalyptus-class (:foreground ,eucalyptus-deep-red :weight medium))))
+   `(outline-3 ((,eucalyptus-class (:foreground ,eucalyptus-red :weight medium))))
    `(outline-4 ((,eucalyptus-class (:foreground ,eucalyptus-gray-green :weight medium))))
    `(outline-5 ((,eucalyptus-class (:inherit outline-1))))
    `(outline-6 ((,eucalyptus-class (:inherit outline-2))))
@@ -292,11 +293,11 @@
    ;; external packages
 
    ;; elfeed
-   `(elfeed-search-tag-face ((,eucalyptus-class (:foreground ,eucalyptus-brown-wood))))
+   `(elfeed-search-tag-face ((,eucalyptus-class (:foreground ,eucalyptus-gray-green))))
    `(elfeed-search-date-face ((,eucalyptus-class (:foreground ,eucalyptus-deep-blue))))
-   `(elfeed-search-feed-face ((,eucalyptus-class (:foreground ,eucalyptus-purple-red))))
-   `(elfeed-search-title-face ((,eucalyptus-class (:foreground ,eucalyptus-gray-green))))
-   `(elfeed-search-unread-title-face ((,eucalyptus-class (:weight bold :foreground ,eucalyptus-green))))
+   `(elfeed-search-feed-face ((,eucalyptus-class (:foreground ,eucalyptus-deep-red))))
+   `(elfeed-search-title-face ((,eucalyptus-class (:foreground ,eucalyptus-gray))))
+   `(elfeed-search-unread-title-face ((,eucalyptus-class (:weight bold :foreground ,eucalyptus-fg))))
    `(elfeed-search-filter-face ((,eucalyptus-class (:weight bold :foreground ,eucalyptus-light-blue))))
    `(elfeed-search-last-update-face ((,eucalyptus-class (:weight bold :foreground ,eucalyptus-light-blue))))
    `(elfeed-search-unread-count-face ((,eucalyptus-class (:weight bold :foreground ,eucalyptus-light-blue))))

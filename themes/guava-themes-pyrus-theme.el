@@ -292,11 +292,11 @@
    ;; external packages
 
    ;; elfeed
-   `(elfeed-search-tag-face ((,pyrus-class (:foreground ,pyrus-deep-orange))))
+   `(elfeed-search-tag-face ((,pyrus-class (:foreground ,pyrus-light-purple))))
    `(elfeed-search-date-face ((,pyrus-class (:foreground ,pyrus-deep-blue))))
-   `(elfeed-search-feed-face ((,pyrus-class (:foreground ,pyrus-green))))
+   `(elfeed-search-feed-face ((,pyrus-class (:foreground ,pyrus-cyan))))
    `(elfeed-search-title-face ((,pyrus-class (:foreground ,pyrus-green-subdued))))
-   `(elfeed-search-unread-title-face ((,pyrus-class (:weight bold :foreground ,pyrus-cyan))))
+   `(elfeed-search-unread-title-face ((,pyrus-class (:weight bold :foreground ,pyrus-green))))
    `(elfeed-search-filter-face ((,pyrus-class (:weight bold :foreground ,pyrus-light-blue))))
    `(elfeed-search-last-update-face ((,pyrus-class (:weight bold :foreground ,pyrus-light-blue))))
    `(elfeed-search-unread-count-face ((,pyrus-class (:weight bold :foreground ,pyrus-light-blue))))

@@ -56,7 +56,7 @@
       (rhododendron-deep-pink                 "#c00e88")
 
       (rhododendron-light-purple              "#e0bde7")
-      (rhododendron-purple                    "#a08ce8")
+      (rhododendron-purple                    "#826ec0")
       (rhododendron-purple-pink               "#ad20f0")
       (rhododendron-purple-blue               "#5346cc")
       (rhododendron-purple-red                "#a8206f")
@@ -294,11 +294,11 @@
    ;; external packages
 
    ;; elfeed
-   `(elfeed-search-tag-face ((,rhododendron-class (:foreground ,rhododendron-bright-pink))))
-   `(elfeed-search-date-face ((,rhododendron-class (:foreground ,rhododendron-forest-green))))
+   `(elfeed-search-tag-face ((,rhododendron-class (:foreground ,rhododendron-dark-purple-red))))
+   `(elfeed-search-date-face ((,rhododendron-class (:foreground ,rhododendron-purple-red))))
    `(elfeed-search-feed-face ((,rhododendron-class (:foreground ,rhododendron-purple-blue))))
-   `(elfeed-search-title-face ((,rhododendron-class (:foreground ,rhododendron-deep-blue))))
-   `(elfeed-search-unread-title-face ((,rhododendron-class (:weight bold :foreground ,rhododendron-purple-red))))
+   `(elfeed-search-title-face ((,rhododendron-class (:foreground ,rhododendron-purple))))
+   `(elfeed-search-unread-title-face ((,rhododendron-class (:weight bold :foreground ,rhododendron-deep-blue))))
    `(elfeed-search-filter-face ((,rhododendron-class (:weight bold :foreground ,rhododendron-light-purple))))
    `(elfeed-search-last-update-face ((,rhododendron-class (:weight bold :foreground ,rhododendron-light-purple))))
    `(elfeed-search-unread-count-face ((,rhododendron-class (:weight bold :foreground ,rhododendron-light-purple))))

@@ -49,6 +49,7 @@
       (prunus-green-subdued             "#2d5519")
       (prunus-oxidized-green            "#4e584e")
 
+      (prunus-light-red                 "#be3c32")
       (prunus-red                       "#a01e14")
       (prunus-deep-red                  "#781e14")
       (prunus-light-pink                "#cd7888")
@@ -293,11 +294,11 @@
    ;; external packages
 
    ;; elfeed
-   `(elfeed-search-tag-face ((,prunus-class (:foreground ,prunus-deep-blue))))
-   `(elfeed-search-date-face ((,prunus-class (:foreground ,prunus-red))))
-   `(elfeed-search-feed-face ((,prunus-class (:foreground ,prunus-purple-red))))
-   `(elfeed-search-title-face ((,prunus-class (:foreground ,prunus-oxidized-green))))
-   `(elfeed-search-unread-title-face ((,prunus-class (:weight bold :foreground ,prunus-green-forest))))
+   `(elfeed-search-tag-face ((,prunus-class (:foreground ,prunus-light-pink))))
+   `(elfeed-search-date-face ((,prunus-class (:foreground ,prunus-light-red))))
+   `(elfeed-search-feed-face ((,prunus-class (:foreground ,prunus-pink))))
+   `(elfeed-search-title-face ((,prunus-class (:foreground ,prunus-alt-brown))))
+   `(elfeed-search-unread-title-face ((,prunus-class (:weight bold :foreground ,prunus-alt-light-brown))))
    `(elfeed-search-filter-face ((,prunus-class (:weight bold :foreground ,prunus-light-pink))))
    `(elfeed-search-last-update-face ((,prunus-class (:weight bold :foreground ,prunus-light-pink))))
    `(elfeed-search-unread-count-face ((,prunus-class (:weight bold :foreground ,prunus-light-pink))))

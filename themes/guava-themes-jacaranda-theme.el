@@ -42,11 +42,10 @@
       (jacaranda-green                     "#8ec654")
       (jacaranda-deep-green                "#267a63")
       (jacaranda-oceanic-green             "#10a575")
+      (jacaranda-gray-green                "#646e64")
 
       (jacaranda-orange                    "#ff9f79")
       (jacaranda-red                       "#af2a36")
-
-      (jacaranda-brown                     "#8a7f74")
 
       (jacaranda-blue                      "#4534e3")
       (jacaranda-deep-blue                 "#655db0")
@@ -291,10 +290,10 @@
    ;; external packages
 
    ;; elfeed
-   `(elfeed-search-tag-face ((,jacaranda-class (:foreground ,jacaranda-oceanic-green))))
-   `(elfeed-search-date-face ((,jacaranda-class (:foreground ,jacaranda-purple-red))))
+   `(elfeed-search-tag-face ((,jacaranda-class (:foreground ,jacaranda-purple-red))))
+   `(elfeed-search-date-face ((,jacaranda-class (:foreground ,jacaranda-deep-blue))))
    `(elfeed-search-feed-face ((,jacaranda-class (:foreground ,jacaranda-deep-purple))))
-   `(elfeed-search-title-face ((,jacaranda-class (:foreground ,jacaranda-brown))))
+   `(elfeed-search-title-face ((,jacaranda-class (:foreground ,jacaranda-gray-green))))
    `(elfeed-search-unread-title-face ((,jacaranda-class (:weight bold :foreground ,jacaranda-deep-green))))
    `(elfeed-search-filter-face ((,jacaranda-class (:weight bold :foreground ,jacaranda-orange))))
    `(elfeed-search-last-update-face ((,jacaranda-class (:weight bold :foreground ,jacaranda-orange))))

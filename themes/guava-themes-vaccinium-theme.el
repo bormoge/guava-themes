@@ -293,7 +293,7 @@
    ;; external packages
 
    ;; elfeed
-   `(elfeed-search-tag-face ((,vaccinium-class (:foreground ,vaccinium-purple))))
+   `(elfeed-search-tag-face ((,vaccinium-class (:foreground ,vaccinium-light-purple))))
    `(elfeed-search-date-face ((,vaccinium-class (:foreground ,vaccinium-steel-blue))))
    `(elfeed-search-feed-face ((,vaccinium-class (:foreground ,vaccinium-blueberry))))
    `(elfeed-search-title-face ((,vaccinium-class (:foreground ,vaccinium-orange))))
