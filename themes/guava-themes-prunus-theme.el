@@ -40,7 +40,7 @@
 
       (prunus-light-brown               "#785a4b")
       (prunus-alt-light-brown           "#917364")
-      (prunus-brown                     "#5f4132")
+      (prunus-brown                     "#463c32")
       (prunus-alt-brown                 "#5a5046")
       (prunus-coffee                    "#b49687")
 
@@ -163,7 +163,7 @@
    `(diff-hl-delete ((,prunus-class (:foreground ,prunus-vc-delete :background ,prunus-vc-delete))))
 
    ;; line-number
-   `(line-number ((,prunus-class (:foreground ,prunus-purple-red :inherit default))))
+   `(line-number ((,prunus-class (:foreground ,prunus-fg :inherit default))))
    `(line-number-current-line ((,prunus-class (:foreground ,prunus-mode-line :weight bold :inherit (highlight line-number)))))
    `(line-number-minor-tick ((,prunus-class (:background ,prunus-tab-2 :inherit line-number))))
    `(line-number-major-tick ((,prunus-class (:background ,prunus-tab-3 :inherit line-number))))
