@@ -58,7 +58,6 @@
 
       (vaccinium-light-purple              "#8282af")
       (vaccinium-purple                    "#6464af")
-      (vaccinium-deep-purple               "#4b378c")
       (vaccinium-purple-pink               "#aa78cf")
 
       (vaccinium-fg                        "#FFFFFF")
@@ -310,8 +309,8 @@
    `(elfeed-show-tags-face ((,vaccinium-class (:foreground ,vaccinium-orange))))
 
    ;; doom-modeline
-   `(doom-modeline-project-name ((,vaccinium-class (:foreground ,vaccinium-deep-purple :inherit italic))))
-   `(doom-modeline-project-parent-dir ((,vaccinium-class (:foreground ,vaccinium-deep-purple))))
+   `(doom-modeline-project-name ((,vaccinium-class (:foreground ,vaccinium-deep-blue :inherit italic))))
+   `(doom-modeline-project-parent-dir ((,vaccinium-class (:foreground ,vaccinium-deep-blue))))
    `(doom-modeline-buffer-minor-mode ((,vaccinium-class (:foreground ,vaccinium-yellow))))
    `(doom-modeline-buffer-modified ((,vaccinium-class (:foreground ,vaccinium-mode-line-modified :inherit (doom-modeline warning bold)))))
 
