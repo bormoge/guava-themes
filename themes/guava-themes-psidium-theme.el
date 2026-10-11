@@ -285,6 +285,9 @@
    `(custom-button-pressed ((,psidium-class (:foreground ,psidium-white :background ,psidium-mode-line :box (:line-width 2 :style pressed-button)))))
    `(custom-button-mouse ((,psidium-class (:foreground ,psidium-white :background ,psidium-tab-3 :box (:line-width 2 :style released-button)))))
 
+   ;; package
+   `(package-status-dependency ((,psidium-class (:inherit (font-lock-string-face)))))
+
 
    ;; external packages
 

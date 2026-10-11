@@ -287,6 +287,9 @@
    `(custom-button-pressed ((,cordyline-class (:foreground ,cordyline-white :background ,cordyline-mode-line :box (:line-width 2 :style pressed-button)))))
    `(custom-button-mouse ((,cordyline-class (:foreground ,cordyline-white :background ,cordyline-tab-3 :box (:line-width 2 :style released-button)))))
 
+   ;; package
+   `(package-status-dependency ((,cordyline-class (:inherit (font-lock-string-face)))))
+
 
    ;; external packages
 

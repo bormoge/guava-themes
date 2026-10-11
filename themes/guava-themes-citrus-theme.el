@@ -291,6 +291,9 @@
    `(custom-button-pressed ((,citrus-class (:foreground ,citrus-white :background ,citrus-tab-1 :box (:line-width 2 :style pressed-button)))))
    `(custom-button-mouse ((,citrus-class (:foreground ,citrus-white :background ,citrus-tab-3 :box (:line-width 2 :style released-button)))))
 
+   ;; package
+   `(package-status-dependency ((,citrus-class (:inherit (font-lock-string-face)))))
+
 
    ;; external packages
 

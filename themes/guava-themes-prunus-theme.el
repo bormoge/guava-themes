@@ -290,6 +290,9 @@
    `(custom-button-pressed ((,prunus-class (:foreground ,prunus-white :background ,prunus-mode-line :box (:line-width 2 :style pressed-button)))))
    `(custom-button-mouse ((,prunus-class (:foreground ,prunus-white :background ,prunus-tab-3 :box (:line-width 2 :style released-button)))))
 
+   ;; package
+   `(package-status-dependency ((,prunus-class (:inherit (font-lock-string-face)))))
+
 
    ;; external packages
 

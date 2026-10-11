@@ -287,6 +287,9 @@
    `(custom-button-pressed ((,solanum-class (:foreground ,solanum-white :background ,solanum-mode-line :box (:line-width 2 :style pressed-button)))))
    `(custom-button-mouse ((,solanum-class (:foreground ,solanum-white :background ,solanum-tab-3 :box (:line-width 2 :style released-button)))))
 
+   ;; package
+   `(package-status-dependency ((,solanum-class (:inherit (font-lock-string-face)))))
+
 
    ;; external packages
 

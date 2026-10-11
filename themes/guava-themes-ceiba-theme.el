@@ -292,6 +292,9 @@
    `(custom-button-pressed ((,ceiba-class (:foreground ,ceiba-white :background ,ceiba-mode-line :box (:line-width 2 :style pressed-button)))))
    `(custom-button-mouse ((,ceiba-class (:foreground ,ceiba-white :background ,ceiba-tab-3 :box (:line-width 2 :style released-button)))))
 
+   ;; package
+   `(package-status-dependency ((,ceiba-class (:inherit (font-lock-string-face)))))
+
 
    ;; external packages
 

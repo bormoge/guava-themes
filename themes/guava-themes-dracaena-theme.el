@@ -289,6 +289,9 @@
    `(custom-button-pressed ((,dracaena-class (:foreground ,dracaena-white :background ,dracaena-mode-line :box (:line-width 2 :style pressed-button)))))
    `(custom-button-mouse ((,dracaena-class (:foreground ,dracaena-white :background ,dracaena-tab-3 :box (:line-width 2 :style released-button)))))
 
+   ;; package
+   `(package-status-dependency ((,dracaena-class (:inherit (font-lock-string-face)))))
+
 
    ;; external packages
 

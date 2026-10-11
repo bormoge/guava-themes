@@ -289,6 +289,9 @@
    `(custom-button-pressed ((,eucalyptus-class (:foreground ,eucalyptus-white :background ,eucalyptus-mode-line :box (:line-width 2 :style pressed-button)))))
    `(custom-button-mouse ((,eucalyptus-class (:foreground ,eucalyptus-white :background ,eucalyptus-tab-3 :box (:line-width 2 :style released-button)))))
 
+   ;; package
+   `(package-status-dependency ((,eucalyptus-class (:inherit (font-lock-string-face)))))
+
 
    ;; external packages
 
