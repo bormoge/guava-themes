@@ -314,9 +314,12 @@
    `(elfeed-show-tags-face ((,rhododendron-class (:foreground ,rhododendron-purple-pink))))
 
    ;; doom-modeline
-   `(doom-modeline-project-name ((,rhododendron-class (:foreground ,rhododendron-light-purple :inherit italic))))
-   `(doom-modeline-project-parent-dir ((,rhododendron-class (:foreground ,rhododendron-light-purple))))
-   `(doom-modeline-buffer-minor-mode ((,rhododendron-class (:foreground ,rhododendron-bright-orange))))
+   ;; doom-modeline-buffer-file-name-style
+   `(doom-modeline-project-name ((,rhododendron-class (:foreground ,rhododendron-light-purple :inherit (doom-modeline bold italic)))))
+   `(doom-modeline-project-dir ((,rhododendron-class (:foreground ,rhododendron-light-purple :inherit (doom-modeline bold)))))
+   `(doom-modeline-project-root-dir ((,rhododendron-class (:foreground ,rhododendron-bright-orange :inherit (doom-modeline bold)))))
+   `(doom-modeline-project-parent-dir ((,rhododendron-class (:foreground ,rhododendron-bright-orange :inherit (doom-modeline bold)))))
+   `(doom-modeline-buffer-minor-mode ((,rhododendron-class (:foreground ,rhododendron-bright-orange :inherit (doom-modeline)))))
    `(doom-modeline-buffer-modified ((,rhododendron-class (:foreground ,rhododendron-mode-line-modified :inherit (doom-modeline warning bold)))))
 
    ;; corfu

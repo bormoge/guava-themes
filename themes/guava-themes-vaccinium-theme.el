@@ -312,9 +312,12 @@
    `(elfeed-show-tags-face ((,vaccinium-class (:foreground ,vaccinium-orange))))
 
    ;; doom-modeline
-   `(doom-modeline-project-name ((,vaccinium-class (:foreground ,vaccinium-deep-blue :inherit italic))))
-   `(doom-modeline-project-parent-dir ((,vaccinium-class (:foreground ,vaccinium-deep-blue))))
-   `(doom-modeline-buffer-minor-mode ((,vaccinium-class (:foreground ,vaccinium-yellow))))
+   ;; doom-modeline-buffer-file-name-style
+   `(doom-modeline-project-name ((,vaccinium-class (:foreground ,vaccinium-deep-blue :inherit (doom-modeline bold italic)))))
+   `(doom-modeline-project-dir ((,vaccinium-class (:foreground ,vaccinium-deep-blue :inherit (doom-modeline bold)))))
+   `(doom-modeline-project-root-dir ((,vaccinium-class (:foreground ,vaccinium-yellow :inherit (doom-modeline bold)))))
+   `(doom-modeline-project-parent-dir ((,vaccinium-class (:foreground ,vaccinium-yellow :inherit (doom-modeline bold)))))
+   `(doom-modeline-buffer-minor-mode ((,vaccinium-class (:foreground ,vaccinium-yellow :inherit (doom-modeline)))))
    `(doom-modeline-buffer-modified ((,vaccinium-class (:foreground ,vaccinium-mode-line-modified :inherit (doom-modeline warning bold)))))
 
    ;; corfu

@@ -313,9 +313,12 @@
    `(elfeed-show-tags-face ((,dracaena-class (:foreground ,dracaena-snakeplant-yellow))))
 
    ;; doom-modeline
-   `(doom-modeline-project-name ((,dracaena-class (:foreground ,dracaena-snakeplant-yellow :inherit italic))))
-   `(doom-modeline-project-parent-dir ((,dracaena-class (:foreground ,dracaena-snakeplant-yellow))))
-   `(doom-modeline-buffer-minor-mode ((,dracaena-class (:foreground ,dracaena-green))))
+   ;; doom-modeline-buffer-file-name-style
+   `(doom-modeline-project-name ((,dracaena-class (:foreground ,dracaena-snakeplant-yellow :inherit (doom-modeline bold italic)))))
+   `(doom-modeline-project-dir ((,dracaena-class (:foreground ,dracaena-snakeplant-yellow :inherit (doom-modeline bold)))))
+   `(doom-modeline-project-root-dir ((,dracaena-class (:foreground ,dracaena-green :inherit (doom-modeline bold)))))
+   `(doom-modeline-project-parent-dir ((,dracaena-class (:foreground ,dracaena-green :inherit (doom-modeline bold)))))
+   `(doom-modeline-buffer-minor-mode ((,dracaena-class (:foreground ,dracaena-green :inherit (doom-modeline)))))
    `(doom-modeline-buffer-modified ((,dracaena-class (:foreground ,dracaena-mode-line-modified :inherit (doom-modeline warning bold)))))
 
    ;; corfu
