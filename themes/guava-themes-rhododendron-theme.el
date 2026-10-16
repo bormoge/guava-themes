@@ -340,8 +340,10 @@
 
    ;; envrc
    `(envrc-mode-line-error-face ((,rhododendron-class (:inherit error))))
-   `(envrc-mode-line-none-face ((,rhododendron-class (:inherit warning))))
+   `(envrc-mode-line-denied-face ((,rhododendron-class (:inherit warning))))
    `(envrc-mode-line-on-face ((,rhododendron-class (:inherit success))))
+   `(envrc-mode-line-none-face ((,rhododendron-class (:inherit warning))))
+   `(envrc-mode-line-running-face ((,rhododendron-class (:inherit warning))))
 
    ;; devdocs
    `(devdocs-code-block ((,rhododendron-class (:weight bold :background ,rhododendron-highlight :extend t))))

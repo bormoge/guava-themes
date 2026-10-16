@@ -339,8 +339,10 @@
 
    ;; envrc
    `(envrc-mode-line-error-face ((,eucalyptus-class (:inherit error))))
-   `(envrc-mode-line-none-face ((,eucalyptus-class (:inherit warning))))
+   `(envrc-mode-line-denied-face ((,eucalyptus-class (:inherit warning))))
    `(envrc-mode-line-on-face ((,eucalyptus-class (:inherit success))))
+   `(envrc-mode-line-none-face ((,eucalyptus-class (:inherit warning))))
+   `(envrc-mode-line-running-face ((,eucalyptus-class (:inherit warning))))
 
    ;; devdocs
    `(devdocs-code-block ((,eucalyptus-class (:weight bold :background ,eucalyptus-highlight :extend t))))

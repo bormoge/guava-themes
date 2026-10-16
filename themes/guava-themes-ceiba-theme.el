@@ -342,8 +342,10 @@
 
    ;; envrc
    `(envrc-mode-line-error-face ((,ceiba-class (:inherit error))))
-   `(envrc-mode-line-none-face ((,ceiba-class (:inherit warning))))
+   `(envrc-mode-line-denied-face ((,ceiba-class (:inherit warning))))
    `(envrc-mode-line-on-face ((,ceiba-class (:inherit success))))
+   `(envrc-mode-line-none-face ((,ceiba-class (:inherit warning))))
+   `(envrc-mode-line-running-face ((,ceiba-class (:inherit warning))))
 
    ;; devdocs
    `(devdocs-code-block ((,ceiba-class (:weight bold :background ,ceiba-highlight :extend t))))

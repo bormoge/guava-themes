@@ -340,8 +340,10 @@
 
    ;; envrc
    `(envrc-mode-line-error-face ((,prunus-class (:inherit error))))
-   `(envrc-mode-line-none-face ((,prunus-class (:inherit warning))))
+   `(envrc-mode-line-denied-face ((,prunus-class (:inherit warning))))
    `(envrc-mode-line-on-face ((,prunus-class (:inherit success))))
+   `(envrc-mode-line-none-face ((,prunus-class (:inherit warning))))
+   `(envrc-mode-line-running-face ((,prunus-class (:inherit warning))))
 
    ;; devdocs
    `(devdocs-code-block ((,prunus-class (:weight bold :background ,prunus-highlight :extend t))))

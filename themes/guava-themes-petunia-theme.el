@@ -336,8 +336,10 @@
 
    ;; envrc
    `(envrc-mode-line-error-face ((,petunia-class (:inherit error))))
-   `(envrc-mode-line-none-face ((,petunia-class (:inherit warning))))
+   `(envrc-mode-line-denied-face ((,petunia-class (:inherit warning))))
    `(envrc-mode-line-on-face ((,petunia-class (:inherit success))))
+   `(envrc-mode-line-none-face ((,petunia-class (:inherit warning))))
+   `(envrc-mode-line-running-face ((,petunia-class (:inherit warning))))
 
    ;; devdocs
    `(devdocs-code-block ((,petunia-class (:weight bold :background ,petunia-highlight :extend t))))

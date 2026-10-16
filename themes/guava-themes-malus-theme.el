@@ -337,8 +337,10 @@
 
    ;; envrc
    `(envrc-mode-line-error-face ((,malus-class (:inherit error))))
-   `(envrc-mode-line-none-face ((,malus-class (:inherit warning))))
+   `(envrc-mode-line-denied-face ((,malus-class (:inherit warning))))
    `(envrc-mode-line-on-face ((,malus-class (:inherit success))))
+   `(envrc-mode-line-none-face ((,malus-class (:inherit warning))))
+   `(envrc-mode-line-running-face ((,malus-class (:inherit warning))))
 
    ;; devdocs
    `(devdocs-code-block ((,malus-class (:weight bold :background ,malus-highlight :extend t))))

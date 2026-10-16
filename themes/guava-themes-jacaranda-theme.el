@@ -336,8 +336,10 @@
 
    ;; envrc
    `(envrc-mode-line-error-face ((,jacaranda-class (:inherit error))))
-   `(envrc-mode-line-none-face ((,jacaranda-class (:inherit warning))))
+   `(envrc-mode-line-denied-face ((,jacaranda-class (:inherit warning))))
    `(envrc-mode-line-on-face ((,jacaranda-class (:inherit success))))
+   `(envrc-mode-line-none-face ((,jacaranda-class (:inherit warning))))
+   `(envrc-mode-line-running-face ((,jacaranda-class (:inherit warning))))
 
    ;; devdocs
    `(devdocs-code-block ((,jacaranda-class (:weight bold :background ,jacaranda-highlight :extend t))))

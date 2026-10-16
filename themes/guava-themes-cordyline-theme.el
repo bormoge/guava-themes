@@ -337,8 +337,10 @@
 
    ;; envrc
    `(envrc-mode-line-error-face ((,cordyline-class (:inherit error))))
-   `(envrc-mode-line-none-face ((,cordyline-class (:inherit warning))))
+   `(envrc-mode-line-denied-face ((,cordyline-class (:inherit warning))))
    `(envrc-mode-line-on-face ((,cordyline-class (:inherit success))))
+   `(envrc-mode-line-none-face ((,cordyline-class (:inherit warning))))
+   `(envrc-mode-line-running-face ((,cordyline-class (:inherit warning))))
 
    ;; devdocs
    `(devdocs-code-block ((,cordyline-class (:weight bold :background ,cordyline-highlight :extend t))))

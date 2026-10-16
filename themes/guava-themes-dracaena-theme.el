@@ -339,8 +339,10 @@
 
    ;; envrc
    `(envrc-mode-line-error-face ((,dracaena-class (:inherit error))))
-   `(envrc-mode-line-none-face ((,dracaena-class (:inherit warning))))
+   `(envrc-mode-line-denied-face ((,dracaena-class (:inherit warning))))
    `(envrc-mode-line-on-face ((,dracaena-class (:inherit success))))
+   `(envrc-mode-line-none-face ((,dracaena-class (:inherit warning))))
+   `(envrc-mode-line-running-face ((,dracaena-class (:inherit warning))))
 
    ;; devdocs
    `(devdocs-code-block ((,dracaena-class (:weight bold :background ,dracaena-highlight :extend t))))

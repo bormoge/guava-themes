@@ -337,8 +337,10 @@
 
    ;; envrc
    `(envrc-mode-line-error-face ((,solanum-class (:inherit error))))
-   `(envrc-mode-line-none-face ((,solanum-class (:inherit warning))))
+   `(envrc-mode-line-denied-face ((,solanum-class (:inherit warning))))
    `(envrc-mode-line-on-face ((,solanum-class (:inherit success))))
+   `(envrc-mode-line-none-face ((,solanum-class (:inherit warning))))
+   `(envrc-mode-line-running-face ((,solanum-class (:inherit warning))))
 
    ;; devdocs
    `(devdocs-code-block ((,solanum-class (:weight bold :background ,solanum-highlight :extend t))))

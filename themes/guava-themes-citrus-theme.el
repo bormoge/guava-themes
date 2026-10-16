@@ -341,8 +341,10 @@
 
    ;; envrc
    `(envrc-mode-line-error-face ((,citrus-class (:inherit error))))
-   `(envrc-mode-line-none-face ((,citrus-class (:inherit warning))))
+   `(envrc-mode-line-denied-face ((,citrus-class (:inherit warning))))
    `(envrc-mode-line-on-face ((,citrus-class (:inherit success))))
+   `(envrc-mode-line-none-face ((,citrus-class (:inherit warning))))
+   `(envrc-mode-line-running-face ((,citrus-class (:inherit warning))))
 
    ;; devdocs
    `(devdocs-code-block ((,citrus-class (:weight bold :background ,citrus-highlight :extend t))))

@@ -338,8 +338,10 @@
 
    ;; envrc
    `(envrc-mode-line-error-face ((,pyrus-class (:inherit error))))
-   `(envrc-mode-line-none-face ((,pyrus-class (:inherit warning))))
+   `(envrc-mode-line-denied-face ((,pyrus-class (:inherit warning))))
    `(envrc-mode-line-on-face ((,pyrus-class (:inherit success))))
+   `(envrc-mode-line-none-face ((,pyrus-class (:inherit warning))))
+   `(envrc-mode-line-running-face ((,pyrus-class (:inherit warning))))
 
    ;; devdocs
    `(devdocs-code-block ((,pyrus-class (:weight bold :background ,pyrus-highlight :extend t))))

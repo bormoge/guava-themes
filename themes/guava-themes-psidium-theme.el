@@ -335,8 +335,10 @@
 
    ;; envrc
    `(envrc-mode-line-error-face ((,psidium-class (:inherit error))))
-   `(envrc-mode-line-none-face ((,psidium-class (:inherit warning))))
+   `(envrc-mode-line-denied-face ((,psidium-class (:inherit warning))))
    `(envrc-mode-line-on-face ((,psidium-class (:inherit success))))
+   `(envrc-mode-line-none-face ((,psidium-class (:inherit warning))))
+   `(envrc-mode-line-running-face ((,psidium-class (:inherit warning))))
 
    ;; devdocs
    `(devdocs-code-block ((,psidium-class (:weight bold :background ,psidium-highlight :extend t))))

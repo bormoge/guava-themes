@@ -338,8 +338,10 @@
 
    ;; envrc
    `(envrc-mode-line-error-face ((,vaccinium-class (:inherit error))))
-   `(envrc-mode-line-none-face ((,vaccinium-class (:inherit warning))))
+   `(envrc-mode-line-denied-face ((,vaccinium-class (:inherit warning))))
    `(envrc-mode-line-on-face ((,vaccinium-class (:inherit success))))
+   `(envrc-mode-line-none-face ((,vaccinium-class (:inherit warning))))
+   `(envrc-mode-line-running-face ((,vaccinium-class (:inherit warning))))
 
    ;; devdocs
    `(devdocs-code-block ((,vaccinium-class (:weight bold :background ,vaccinium-highlight :extend t))))

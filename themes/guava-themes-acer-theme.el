@@ -338,8 +338,10 @@
 
    ;; envrc
    `(envrc-mode-line-error-face ((,acer-class (:inherit error))))
-   `(envrc-mode-line-none-face ((,acer-class (:inherit warning))))
+   `(envrc-mode-line-denied-face ((,acer-class (:inherit warning))))
    `(envrc-mode-line-on-face ((,acer-class (:inherit success))))
+   `(envrc-mode-line-none-face ((,acer-class (:inherit warning))))
+   `(envrc-mode-line-running-face ((,acer-class (:inherit warning))))
 
    ;; devdocs
    `(devdocs-code-block ((,acer-class (:weight bold :background ,acer-highlight :extend t))))
