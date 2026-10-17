@@ -38,7 +38,7 @@ Originally conceived as a tribute to the [guava fruit](https://en.wikipedia.org/
 And so, the package name became an Artifact Title, as is known in the tropes community.  
 
 ## Installation
-- I recommend you use this Emacs code to automatically install **guava-themes** from [MELPA](https://melpa.org/#/getting-started).  
+- You can make use of the macro `use-package` to automatically install **guava-themes** from [MELPA](https://melpa.org/#/getting-started): 
 ```
 (use-package guava-themes
   :ensure t
@@ -50,26 +50,10 @@ And so, the package name became an Artifact Title, as is known in the tropes com
   )
 ```
 
-- You can also download this package directly from the source. This code should work on Emacs 30:  
-```
-(use-package guava-themes
-  :vc (:url "https://github.com/bormoge/guava-themes"
-            :rev :newest
-            :branch "main"
-            :vc-backend Git)
-  :ensure t
-  :custom
-  (ring-bell-function #'guava-themes-change-visible-bell)
-  (visible-bell t)
-  :config
-  (load-theme 'guava-themes-psidium t)
-  )
-```
-
-- If the above code doesn't work you can also try using this one:  
+- You can also install **guava-themes** with this code: 
 ```
 (unless (package-installed-p 'guava-themes)
-  (package-vc-install "https://github.com/bormoge/guava-themes" nil nil 'guava-themes))
+  (package-install 'guava-themes))
 
 (require 'guava-themes)
 
