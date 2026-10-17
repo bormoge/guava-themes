@@ -39,7 +39,7 @@
       (vaccinium-white                     "#FFFFFF")
 
       (vaccinium-red                       "#b92e33")
-      (vaccinium-pink                      "#e986f1")
+      (vaccinium-pink                      "#df7ce7")
       (vaccinium-orange                    "#ffa07a")
 
       (vaccinium-yellow                    "#fde8b9")
