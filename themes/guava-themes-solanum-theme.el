@@ -56,7 +56,7 @@
       (solanum-purple                    "#786ed7")
       (solanum-purple-pink               "#915d93")
       (solanum-purple-blue               "#492b91")
-      (solanum-dark-purple               "#672b5f")
+      (solanum-dark-purple               "#693c64")
       (solanum-alt-dark-purple           "#59536e")
 
       (solanum-fg                        "#FFFFFF")
@@ -69,7 +69,7 @@
       (solanum-warning                   "#f6d909")
       (solanum-success                   "#23a334")
 
-      (solanum-mode-line                 "#672b5f")
+      (solanum-mode-line                 "#693c64")
       (solanum-mode-line-inactive        "#3b3550")
       (solanum-mode-line-modified        "#cd151f")
       (solanum-bell                      "#41672B")
