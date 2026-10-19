@@ -63,15 +63,15 @@
 
       (dracaena-fg                        "#becee6")
       (dracaena-fg-2                      "#8292aa")
-      (dracaena-bg                        "#3e4441")
-      (dracaena-highlight                 "#2a302d")
+      (dracaena-bg                        "#343a37")
+      (dracaena-highlight                 "#202623")
       (dracaena-shadow                    "#b3b3b3")
 
       (dracaena-error                     "#FF0000")
       (dracaena-warning                   "#f6be14")
       (dracaena-success                   "#29d925")
 
-      (dracaena-mode-line                 "#792725")
+      (dracaena-mode-line                 "#883634")
       (dracaena-mode-line-inactive        "#353838")
       (dracaena-mode-line-modified        "#e6825f")
       (dracaena-bell                      "#257950")
