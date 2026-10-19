@@ -293,6 +293,10 @@
    ;; package
    `(package-status-dependency ((,rubus-class (:inherit (font-lock-string-face)))))
 
+   ;; icomplete
+   `(icomplete-selected-match ((,rubus-class (:weight bold :foreground ,rubus-mode-line :inherit (highlight)))))
+   `(icomplete-first-match ((,rubus-class (:weight bold :foreground ,rubus-mode-line :inherit (highlight)))))
+
 
    ;; external packages
 

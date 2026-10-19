@@ -293,6 +293,10 @@
    ;; package
    `(package-status-dependency ((,prunus-class (:inherit (font-lock-string-face)))))
 
+   ;; icomplete
+   `(icomplete-selected-match ((,prunus-class (:weight bold :foreground ,prunus-mode-line :inherit (highlight)))))
+   `(icomplete-first-match ((,prunus-class (:weight bold :foreground ,prunus-mode-line :inherit (highlight)))))
+
 
    ;; external packages
 

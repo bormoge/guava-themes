@@ -292,6 +292,10 @@
    ;; package
    `(package-status-dependency ((,eucalyptus-class (:inherit (font-lock-string-face)))))
 
+   ;; icomplete
+   `(icomplete-selected-match ((,eucalyptus-class (:weight bold :foreground ,eucalyptus-mode-line :inherit (highlight)))))
+   `(icomplete-first-match ((,eucalyptus-class (:weight bold :foreground ,eucalyptus-mode-line :inherit (highlight)))))
+
 
    ;; external packages
 

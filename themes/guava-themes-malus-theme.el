@@ -290,6 +290,10 @@
    ;; package
    `(package-status-dependency ((,malus-class (:inherit (font-lock-string-face)))))
 
+   ;; icomplete
+   `(icomplete-selected-match ((,malus-class (:weight bold :foreground ,malus-mode-line :inherit (highlight)))))
+   `(icomplete-first-match ((,malus-class (:weight bold :foreground ,malus-mode-line :inherit (highlight)))))
+
 
    ;; external packages
 

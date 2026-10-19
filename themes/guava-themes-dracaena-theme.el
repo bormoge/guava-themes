@@ -292,6 +292,10 @@
    ;; package
    `(package-status-dependency ((,dracaena-class (:inherit (font-lock-string-face)))))
 
+   ;; icomplete
+   `(icomplete-selected-match ((,dracaena-class (:weight bold :foreground ,dracaena-mode-line :inherit (highlight)))))
+   `(icomplete-first-match ((,dracaena-class (:weight bold :foreground ,dracaena-mode-line :inherit (highlight)))))
+
 
    ;; external packages
 

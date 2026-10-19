@@ -291,6 +291,10 @@
    ;; package
    `(package-status-dependency ((,vaccinium-class (:inherit (font-lock-string-face)))))
 
+   ;; icomplete
+   `(icomplete-selected-match ((,vaccinium-class (:weight bold :foreground ,vaccinium-mode-line :inherit (highlight)))))
+   `(icomplete-first-match ((,vaccinium-class (:weight bold :foreground ,vaccinium-mode-line :inherit (highlight)))))
+
 
    ;; external packages
 

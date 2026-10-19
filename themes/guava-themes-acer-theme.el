@@ -291,6 +291,10 @@
    ;; package
    `(package-status-dependency ((,acer-class (:inherit (font-lock-string-face)))))
 
+   ;; icomplete
+   `(icomplete-selected-match ((,acer-class (:weight bold :foreground ,acer-mode-line :inherit (highlight)))))
+   `(icomplete-first-match ((,acer-class (:weight bold :foreground ,acer-mode-line :inherit (highlight)))))
+
 
    ;; external packages
 

@@ -293,6 +293,10 @@
    ;; package
    `(package-status-dependency ((,rhododendron-class (:inherit (font-lock-string-face)))))
 
+   ;; icomplete
+   `(icomplete-selected-match ((,rhododendron-class (:weight bold :foreground ,rhododendron-mode-line :inherit (highlight)))))
+   `(icomplete-first-match ((,rhododendron-class (:weight bold :foreground ,rhododendron-mode-line :inherit (highlight)))))
+
 
    ;; external packages
 

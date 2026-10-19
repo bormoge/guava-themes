@@ -289,6 +289,10 @@
    ;; package
    `(package-status-dependency ((,jacaranda-class (:inherit (font-lock-string-face)))))
 
+   ;; icomplete
+   `(icomplete-selected-match ((,jacaranda-class (:weight bold :foreground ,jacaranda-mode-line :inherit (highlight)))))
+   `(icomplete-first-match ((,jacaranda-class (:weight bold :foreground ,jacaranda-mode-line :inherit (highlight)))))
+
 
    ;; external packages
 

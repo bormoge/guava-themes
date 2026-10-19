@@ -288,6 +288,10 @@
    ;; package
    `(package-status-dependency ((,psidium-class (:inherit (font-lock-string-face)))))
 
+   ;; icomplete
+   `(icomplete-selected-match ((,psidium-class (:weight bold :foreground ,psidium-mode-line :inherit (highlight)))))
+   `(icomplete-first-match ((,psidium-class (:weight bold :foreground ,psidium-mode-line :inherit (highlight)))))
+
 
    ;; external packages
 

@@ -295,6 +295,10 @@
    ;; package
    `(package-status-dependency ((,ceiba-class (:inherit (font-lock-string-face)))))
 
+   ;; icomplete
+   `(icomplete-selected-match ((,ceiba-class (:weight bold :foreground ,ceiba-mode-line :inherit (highlight)))))
+   `(icomplete-first-match ((,ceiba-class (:weight bold :foreground ,ceiba-mode-line :inherit (highlight)))))
+
 
    ;; external packages
 

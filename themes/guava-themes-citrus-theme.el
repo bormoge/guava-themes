@@ -294,6 +294,10 @@
    ;; package
    `(package-status-dependency ((,citrus-class (:inherit (font-lock-string-face)))))
 
+   ;; icomplete
+   `(icomplete-selected-match ((,citrus-class (:weight bold :foreground ,citrus-mode-line :inherit (highlight)))))
+   `(icomplete-first-match ((,citrus-class (:weight bold :foreground ,citrus-mode-line :inherit (highlight)))))
+
 
    ;; external packages
 

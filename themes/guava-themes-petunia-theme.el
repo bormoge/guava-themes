@@ -289,6 +289,10 @@
    ;; package
    `(package-status-dependency ((,petunia-class (:inherit (font-lock-string-face)))))
 
+   ;; icomplete
+   `(icomplete-selected-match ((,petunia-class (:weight bold :foreground ,petunia-mode-line :inherit (highlight)))))
+   `(icomplete-first-match ((,petunia-class (:weight bold :foreground ,petunia-mode-line :inherit (highlight)))))
+
 
    ;; external packages
 

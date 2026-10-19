@@ -290,6 +290,10 @@
    ;; package
    `(package-status-dependency ((,solanum-class (:inherit (font-lock-string-face)))))
 
+   ;; icomplete
+   `(icomplete-selected-match ((,solanum-class (:weight bold :foreground ,solanum-mode-line :inherit (highlight)))))
+   `(icomplete-first-match ((,solanum-class (:weight bold :foreground ,solanum-mode-line :inherit (highlight)))))
+
 
    ;; external packages
 

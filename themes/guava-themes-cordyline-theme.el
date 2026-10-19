@@ -290,6 +290,10 @@
    ;; package
    `(package-status-dependency ((,cordyline-class (:inherit (font-lock-string-face)))))
 
+   ;; icomplete
+   `(icomplete-selected-match ((,cordyline-class (:weight bold :foreground ,cordyline-mode-line :inherit (highlight)))))
+   `(icomplete-first-match ((,cordyline-class (:weight bold :foreground ,cordyline-mode-line :inherit (highlight)))))
+
 
    ;; external packages
 

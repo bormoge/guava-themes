@@ -291,6 +291,10 @@
    ;; package
    `(package-status-dependency ((,pyrus-class (:inherit (font-lock-string-face)))))
 
+   ;; icomplete
+   `(icomplete-selected-match ((,pyrus-class (:weight bold :foreground ,pyrus-mode-line :inherit (highlight)))))
+   `(icomplete-first-match ((,pyrus-class (:weight bold :foreground ,pyrus-mode-line :inherit (highlight)))))
+
 
    ;; external packages
 
