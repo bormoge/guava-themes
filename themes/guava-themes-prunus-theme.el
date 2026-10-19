@@ -43,6 +43,7 @@
       (prunus-brown                     "#50463c")
       (prunus-alt-brown                 "#645a50")
       (prunus-coffee                    "#bea091")
+      (prunus-deep-brown                "#3c3228")
 
       (prunus-light-green               "#50a05f")
       (prunus-green-forest              "#007341")
@@ -54,7 +55,6 @@
       (prunus-deep-red                  "#781e14")
       (prunus-light-pink                "#cd7888")
       (prunus-pink                      "#cd3c88")
-      (prunus-alt-pink                  "#875060")
 
       (prunus-blue                      "#4650e1")
       (prunus-deep-blue                 "#4650af")
@@ -136,7 +136,7 @@
    `(shadow ((,prunus-class (:foreground ,prunus-shadow))))
 
    ;; region
-   `(region ((,prunus-class (:background ,prunus-alt-pink :extend t))))
+   `(region ((,prunus-class (:background ,prunus-deep-brown :extend t))))
    `(secondary-selection ((,prunus-class (:background ,prunus-alt-brown :extend t))))
 
    ;; font-lock
