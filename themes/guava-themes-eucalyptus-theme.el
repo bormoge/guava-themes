@@ -176,7 +176,7 @@
    `(guava-themes-visible-bell ((,eucalyptus-class (:foreground ,eucalyptus-white :background ,eucalyptus-bell))))
 
    ;; minibuffer
-   `(minibuffer-prompt ((,eucalyptus-class (:foreground ,eucalyptus-deep-blue))))
+   `(minibuffer-prompt ((,eucalyptus-class (:weight bold :foreground ,eucalyptus-mode-line))))
 
    ;; borders
    `(vertical-border ((,eucalyptus-class (:foreground ,eucalyptus-mode-line))))

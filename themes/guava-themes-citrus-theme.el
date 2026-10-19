@@ -178,7 +178,7 @@
    `(guava-themes-visible-bell ((,citrus-class (:foreground ,citrus-white :background ,citrus-bell))))
 
    ;; minibuffer
-   `(minibuffer-prompt ((,citrus-class (:foreground ,citrus-black))))
+   `(minibuffer-prompt ((,citrus-class (:weight bold :foreground ,citrus-mode-line))))
 
    ;; borders
    `(vertical-border ((,citrus-class (:foreground ,citrus-mode-line))))

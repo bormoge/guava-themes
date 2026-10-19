@@ -175,7 +175,7 @@
    `(guava-themes-visible-bell ((,acer-class (:foreground ,acer-white :background ,acer-bell))))
 
    ;; minibuffer
-   `(minibuffer-prompt ((,acer-class (:foreground ,acer-black))))
+   `(minibuffer-prompt ((,acer-class (:weight bold :foreground ,acer-mode-line))))
 
    ;; borders
    `(vertical-border ((,acer-class (:foreground ,acer-mode-line))))

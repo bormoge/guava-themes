@@ -174,7 +174,7 @@
    `(guava-themes-visible-bell ((,solanum-class (:foreground ,solanum-white :background ,solanum-bell))))
 
    ;; minibuffer
-   `(minibuffer-prompt ((,solanum-class (:foreground ,solanum-yellow-potato))))
+   `(minibuffer-prompt ((,solanum-class (:weight bold :foreground ,solanum-mode-line))))
 
    ;; borders
    `(vertical-border ((,solanum-class (:foreground ,solanum-mode-line))))

@@ -175,7 +175,7 @@
    `(guava-themes-visible-bell ((,vaccinium-class (:foreground ,vaccinium-white :background ,vaccinium-bell))))
 
    ;; minibuffer
-   `(minibuffer-prompt ((,vaccinium-class (:foreground ,vaccinium-blueberry))))
+   `(minibuffer-prompt ((,vaccinium-class (:weight bold :foreground ,vaccinium-mode-line))))
 
    ;; borders
    `(vertical-border ((,vaccinium-class (:foreground ,vaccinium-mode-line))))

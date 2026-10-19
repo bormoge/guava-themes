@@ -177,7 +177,7 @@
    `(guava-themes-visible-bell ((,rhododendron-class (:foreground ,rhododendron-white :background ,rhododendron-bell))))
 
    ;; minibuffer
-   `(minibuffer-prompt ((,rhododendron-class (:foreground ,rhododendron-black))))
+   `(minibuffer-prompt ((,rhododendron-class (:weight bold :foreground ,rhododendron-mode-line))))
 
    ;; borders
    `(vertical-border ((,rhododendron-class (:foreground ,rhododendron-mode-line))))

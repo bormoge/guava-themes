@@ -179,7 +179,7 @@
    `(guava-themes-visible-bell ((,ceiba-class (:foreground ,ceiba-white :background ,ceiba-bell))))
 
    ;; minibuffer
-   `(minibuffer-prompt ((,ceiba-class (:foreground ,ceiba-black))))
+   `(minibuffer-prompt ((,ceiba-class (:weight bold :foreground ,ceiba-mode-line))))
 
    ;; borders
    `(vertical-border ((,ceiba-class (:foreground ,ceiba-mode-line))))

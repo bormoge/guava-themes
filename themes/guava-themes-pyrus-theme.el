@@ -175,7 +175,7 @@
    `(guava-themes-visible-bell ((,pyrus-class (:foreground ,pyrus-white :background ,pyrus-bell))))
 
    ;; minibuffer
-   `(minibuffer-prompt ((,pyrus-class (:foreground ,pyrus-deep-orange))))
+   `(minibuffer-prompt ((,pyrus-class (:weight bold :foreground ,pyrus-mode-line))))
 
    ;; borders
    `(vertical-border ((,pyrus-class (:foreground ,pyrus-mode-line))))

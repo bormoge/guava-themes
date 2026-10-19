@@ -178,7 +178,7 @@
    `(guava-themes-visible-bell ((,prunus-class (:foreground ,prunus-white :background ,prunus-bell))))
 
    ;; minibuffer
-   `(minibuffer-prompt ((,prunus-class (:foreground ,prunus-white))))
+   `(minibuffer-prompt ((,prunus-class (:weight bold :foreground ,prunus-mode-line))))
 
    ;; borders
    `(vertical-border ((,prunus-class (:foreground ,prunus-mode-line))))

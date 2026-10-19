@@ -174,7 +174,7 @@
    `(guava-themes-visible-bell ((,cordyline-class (:foreground ,cordyline-white :background ,cordyline-bell))))
 
    ;; minibuffer
-   `(minibuffer-prompt ((,cordyline-class (:foreground ,cordyline-white))))
+   `(minibuffer-prompt ((,cordyline-class (:weight bold :foreground ,cordyline-mode-line))))
 
    ;; borders
    `(vertical-border ((,cordyline-class (:foreground ,cordyline-mode-line))))

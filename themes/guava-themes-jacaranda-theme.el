@@ -173,7 +173,7 @@
    `(guava-themes-visible-bell ((,jacaranda-class (:foreground ,jacaranda-white :background ,jacaranda-bell))))
 
    ;; minibuffer
-   `(minibuffer-prompt ((,jacaranda-class (:foreground ,jacaranda-black))))
+   `(minibuffer-prompt ((,jacaranda-class (:weight bold :foreground ,jacaranda-mode-line))))
 
    ;; borders
    `(vertical-border ((,jacaranda-class (:foreground ,jacaranda-mode-line))))

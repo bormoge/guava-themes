@@ -173,7 +173,7 @@
    `(guava-themes-visible-bell ((,petunia-class (:foreground ,petunia-white :background ,petunia-bell))))
 
    ;; minibuffer
-   `(minibuffer-prompt ((,petunia-class (:foreground ,petunia-orange))))
+   `(minibuffer-prompt ((,petunia-class (:weight bold :foreground ,petunia-mode-line))))
 
    ;; borders
    `(vertical-border ((,petunia-class (:foreground ,petunia-mode-line))))

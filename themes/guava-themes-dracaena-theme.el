@@ -176,7 +176,7 @@
    `(guava-themes-visible-bell ((,dracaena-class (:foreground ,dracaena-white :background ,dracaena-bell))))
 
    ;; minibuffer
-   `(minibuffer-prompt ((,dracaena-class (:foreground ,dracaena-orange))))
+   `(minibuffer-prompt ((,dracaena-class (:weight bold :foreground ,dracaena-mode-line))))
 
    ;; borders
    `(vertical-border ((,dracaena-class (:foreground ,dracaena-mode-line))))

@@ -177,7 +177,7 @@
    `(guava-themes-visible-bell ((,rubus-class (:foreground ,rubus-white :background ,rubus-bell))))
 
    ;; minibuffer
-   `(minibuffer-prompt ((,rubus-class (:foreground ,rubus-red))))
+   `(minibuffer-prompt ((,rubus-class (:weight bold :foreground ,rubus-mode-line))))
 
    ;; borders
    `(vertical-border ((,rubus-class (:foreground ,rubus-mode-line))))

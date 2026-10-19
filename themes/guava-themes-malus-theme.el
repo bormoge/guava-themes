@@ -174,7 +174,7 @@
    `(guava-themes-visible-bell ((,malus-class (:foreground ,malus-white :background ,malus-bell))))
 
    ;; minibuffer
-   `(minibuffer-prompt ((,malus-class (:foreground ,malus-red-sweetango))))
+   `(minibuffer-prompt ((,malus-class (:weight bold :foreground ,malus-mode-line))))
 
    ;; borders
    `(vertical-border ((,malus-class (:foreground ,malus-mode-line))))

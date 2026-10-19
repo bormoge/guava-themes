@@ -172,7 +172,7 @@
    `(guava-themes-visible-bell ((,psidium-class (:foreground ,psidium-white :background ,psidium-bell))))
 
    ;; minibuffer
-   `(minibuffer-prompt ((,psidium-class (:foreground ,psidium-black))))
+   `(minibuffer-prompt ((,psidium-class (:weight bold :foreground ,psidium-mode-line))))
 
    ;; borders
    `(vertical-border ((,psidium-class (:foreground ,psidium-mode-line))))
