@@ -38,11 +38,11 @@
       ;;(prunus-black                     "#000000")
       (prunus-white                     "#FFFFFF")
 
-      (prunus-light-brown               "#785a4b")
-      (prunus-alt-light-brown           "#917364")
-      (prunus-brown                     "#463c32")
-      (prunus-alt-brown                 "#5a5046")
-      (prunus-coffee                    "#b49687")
+      (prunus-light-brown               "#826455")
+      (prunus-alt-light-brown           "#9b7d6e")
+      (prunus-brown                     "#50463c")
+      (prunus-alt-brown                 "#645a50")
+      (prunus-coffee                    "#bea091")
 
       (prunus-light-green               "#50a05f")
       (prunus-green-forest              "#007341")
@@ -54,6 +54,7 @@
       (prunus-deep-red                  "#781e14")
       (prunus-light-pink                "#cd7888")
       (prunus-pink                      "#cd3c88")
+      (prunus-alt-pink                  "#875060")
 
       (prunus-blue                      "#4650e1")
       (prunus-deep-blue                 "#4650af")
@@ -72,10 +73,10 @@
       (prunus-warning                   "#f6d911")
       (prunus-success                   "#23D734")
 
-      (prunus-mode-line                 "#463c32")
-      (prunus-mode-line-inactive        "#5a5046")
-      (prunus-mode-line-modified        "#cd3c88")
-      (prunus-bell                      "#324646")
+      (prunus-mode-line                 "#50463c")
+      (prunus-mode-line-inactive        "#645a50")
+      (prunus-mode-line-modified        "#d74692")
+      (prunus-bell                      "#465a5a")
 
       (prunus-tab-1                     prunus-mode-line)
       (prunus-tab-2                     prunus-mode-line-inactive)
@@ -135,7 +136,7 @@
    `(shadow ((,prunus-class (:foreground ,prunus-shadow))))
 
    ;; region
-   `(region ((,prunus-class (:background ,prunus-brown :extend t))))
+   `(region ((,prunus-class (:background ,prunus-alt-pink :extend t))))
    `(secondary-selection ((,prunus-class (:background ,prunus-alt-brown :extend t))))
 
    ;; font-lock
