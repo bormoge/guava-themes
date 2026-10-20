@@ -258,6 +258,7 @@
    `(org-done ((,cordyline-class (:foreground ,cordyline-vc-insert :weight bold))))
    `(org-hide ((,cordyline-class (:foreground ,cordyline-bg))))
    `(org-table ((,cordyline-class (:foreground ,cordyline-light-purple))))
+   `(org-table-header ((,cordyline-class (:inverse-video t :inherit org-table))))
    `(org-date ((,cordyline-class (:foreground ,cordyline-orange-red))))
    `(org-date-selected ((,cordyline-class (:foreground unspecified :inverse-video t :inherit org-date))))
    `(org-headline-todo ((,cordyline-class (:foreground ,cordyline-orderless-2))))

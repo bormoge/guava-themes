@@ -262,6 +262,7 @@
    `(org-done ((,prunus-class (:foreground ,prunus-vc-insert :weight bold))))
    `(org-hide ((,prunus-class (:foreground ,prunus-bg))))
    `(org-table ((,prunus-class (:foreground ,prunus-light-pink))))
+   `(org-table-header ((,prunus-class (:inverse-video t :inherit org-table))))
    `(org-date ((,prunus-class (:foreground ,prunus-deep-red))))
    `(org-date-selected ((,prunus-class (:foreground unspecified :inverse-video t :inherit org-date))))
    `(org-headline-todo ((,prunus-class (:foreground ,prunus-orderless-2))))

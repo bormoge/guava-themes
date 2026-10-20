@@ -259,6 +259,7 @@
    `(org-done ((,pyrus-class (:foreground ,pyrus-vc-insert :weight bold))))
    `(org-hide ((,pyrus-class (:foreground ,pyrus-bg))))
    `(org-table ((,pyrus-class (:foreground ,pyrus-green))))
+   `(org-table-header ((,pyrus-class (:inverse-video t :inherit org-table))))
    `(org-date ((,pyrus-class (:foreground ,pyrus-orange-subdued))))
    `(org-date-selected ((,pyrus-class (:foreground unspecified :inverse-video t :inherit org-date))))
    `(org-headline-todo ((,pyrus-class (:foreground ,pyrus-orderless-0))))

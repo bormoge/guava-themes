@@ -263,6 +263,7 @@
    `(org-done ((,ceiba-class (:foreground ,ceiba-vc-insert :weight bold))))
    `(org-hide ((,ceiba-class (:foreground ,ceiba-bg))))
    `(org-table ((,ceiba-class (:foreground ,ceiba-brown-wood))))
+   `(org-table-header ((,ceiba-class (:inverse-video t :inherit org-table))))
    `(org-date ((,ceiba-class (:foreground ,ceiba-orange))))
    `(org-date-selected ((,ceiba-class (:foreground unspecified :inverse-video t :inherit org-date))))
    `(org-headline-todo ((,ceiba-class (:foreground ,ceiba-orderless-2))))

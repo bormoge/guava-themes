@@ -262,6 +262,7 @@
    `(org-done ((,citrus-class (:foreground ,citrus-vc-insert :weight bold))))
    `(org-hide ((,citrus-class (:foreground ,citrus-bg))))
    `(org-table ((,citrus-class (:foreground ,citrus-orange-red))))
+   `(org-table-header ((,citrus-class (:inverse-video t :inherit org-table))))
    `(org-date ((,citrus-class (:foreground ,citrus-purple-red))))
    `(org-date-selected ((,citrus-class (:foreground unspecified :inverse-video t :inherit org-date))))
    `(org-headline-todo ((,citrus-class (:foreground ,citrus-orderless-2))))

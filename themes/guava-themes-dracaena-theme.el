@@ -260,6 +260,7 @@
    `(org-done ((,dracaena-class (:foreground ,dracaena-vc-insert :weight bold))))
    `(org-hide ((,dracaena-class (:foreground ,dracaena-bg))))
    `(org-table ((,dracaena-class (:foreground ,dracaena-light-orange))))
+   `(org-table-header ((,dracaena-class (:inverse-video t :inherit org-table))))
    `(org-date ((,dracaena-class (:foreground ,dracaena-orange))))
    `(org-date-selected ((,dracaena-class (:foreground unspecified :inverse-video t :inherit org-date))))
    `(org-headline-todo ((,dracaena-class (:foreground ,dracaena-orderless-2))))

@@ -261,6 +261,7 @@
    `(org-done ((,rhododendron-class (:foreground ,rhododendron-vc-insert :weight bold))))
    `(org-hide ((,rhododendron-class (:foreground ,rhododendron-bg))))
    `(org-table ((,rhododendron-class (:foreground ,rhododendron-red))))
+   `(org-table-header ((,rhododendron-class (:inverse-video t :inherit org-table))))
    `(org-date ((,rhododendron-class (:foreground ,rhododendron-red-orange))))
    `(org-date-selected ((,rhododendron-class (:foreground unspecified :inverse-video t :inherit org-date))))
    `(org-headline-todo ((,rhododendron-class (:foreground ,rhododendron-orderless-0))))

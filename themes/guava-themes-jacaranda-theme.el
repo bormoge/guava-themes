@@ -257,6 +257,7 @@
    `(org-done ((,jacaranda-class (:foreground ,jacaranda-vc-insert :weight bold))))
    `(org-hide ((,jacaranda-class (:foreground ,jacaranda-bg))))
    `(org-table ((,jacaranda-class (:foreground ,jacaranda-deep-blue))))
+   `(org-table-header ((,jacaranda-class (:inverse-video t :inherit org-table))))
    `(org-date ((,jacaranda-class (:foreground ,jacaranda-red))))
    `(org-date-selected ((,jacaranda-class (:foreground unspecified :inverse-video t :inherit org-date))))
    `(org-headline-todo ((,jacaranda-class (:foreground ,jacaranda-orderless-2))))

@@ -260,6 +260,7 @@
    `(org-done ((,eucalyptus-class (:foreground ,eucalyptus-vc-insert :weight bold))))
    `(org-hide ((,eucalyptus-class (:foreground ,eucalyptus-bg))))
    `(org-table ((,eucalyptus-class (:foreground ,eucalyptus-deep-blue))))
+   `(org-table-header ((,eucalyptus-class (:inverse-video t :inherit org-table))))
    `(org-date ((,eucalyptus-class (:foreground ,eucalyptus-purple-red))))
    `(org-date-selected ((,eucalyptus-class (:foreground unspecified :inverse-video t :inherit org-date))))
    `(org-headline-todo ((,eucalyptus-class (:foreground ,eucalyptus-orderless-2))))

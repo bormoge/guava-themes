@@ -259,6 +259,7 @@
    `(org-done ((,acer-class (:foreground ,acer-vc-insert :weight bold))))
    `(org-hide ((,acer-class (:foreground ,acer-bg))))
    `(org-table ((,acer-class (:foreground ,acer-deep-green))))
+   `(org-table-header ((,acer-class (:inverse-video t :inherit org-table))))
    `(org-date ((,acer-class (:foreground ,acer-light-blue))))
    `(org-date-selected ((,acer-class (:foreground unspecified :inverse-video t :inherit org-date))))
    `(org-headline-todo ((,acer-class (:foreground ,acer-orderless-0))))

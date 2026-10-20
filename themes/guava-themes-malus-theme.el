@@ -258,6 +258,7 @@
    `(org-done ((,malus-class (:foreground ,malus-vc-insert :weight bold))))
    `(org-hide ((,malus-class (:foreground ,malus-bg))))
    `(org-table ((,malus-class (:foreground ,malus-red-sweetango))))
+   `(org-table-header ((,malus-class (:inverse-video t :inherit org-table))))
    `(org-date ((,malus-class (:foreground ,malus-oceanic-blue))))
    `(org-date-selected ((,malus-class (:foreground unspecified :inverse-video t :inherit org-date))))
    `(org-headline-todo ((,malus-class (:foreground ,malus-orderless-2))))

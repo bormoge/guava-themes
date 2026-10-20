@@ -261,6 +261,7 @@
    `(org-done ((,rubus-class (:foreground ,rubus-vc-insert :weight bold))))
    `(org-hide ((,rubus-class (:foreground ,rubus-bg))))
    `(org-table ((,rubus-class (:foreground ,rubus-pink-cream))))
+   `(org-table-header ((,rubus-class (:inverse-video t :inherit org-table))))
    `(org-date ((,rubus-class (:foreground ,rubus-green-blue))))
    `(org-date-selected ((,rubus-class (:foreground unspecified :inverse-video t :inherit org-date))))
    `(org-headline-todo ((,rubus-class (:foreground ,rubus-orderless-2))))

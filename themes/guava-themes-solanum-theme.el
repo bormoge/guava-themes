@@ -258,6 +258,7 @@
    `(org-done ((,solanum-class (:foreground ,solanum-vc-insert :weight bold))))
    `(org-hide ((,solanum-class (:foreground ,solanum-bg))))
    `(org-table ((,solanum-class (:foreground ,solanum-yellow-potato))))
+   `(org-table-header ((,solanum-class (:inverse-video t :inherit org-table))))
    `(org-date ((,solanum-class (:foreground ,solanum-alt-light-green))))
    `(org-date-selected ((,solanum-class (:foreground unspecified :inverse-video t :inherit org-date))))
    `(org-headline-todo ((,solanum-class (:foreground ,solanum-orderless-2))))

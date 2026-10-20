@@ -259,6 +259,7 @@
    `(org-done ((,vaccinium-class (:foreground ,vaccinium-vc-insert :weight bold))))
    `(org-hide ((,vaccinium-class (:foreground ,vaccinium-bg))))
    `(org-table ((,vaccinium-class (:foreground ,vaccinium-blueberry))))
+   `(org-table-header ((,vaccinium-class (:inverse-video t :inherit org-table))))
    `(org-date ((,vaccinium-class (:foreground ,vaccinium-purple-pink))))
    `(org-date-selected ((,vaccinium-class (:foreground unspecified :inverse-video t :inherit org-date))))
    `(org-headline-todo ((,vaccinium-class (:foreground ,vaccinium-orderless-2))))

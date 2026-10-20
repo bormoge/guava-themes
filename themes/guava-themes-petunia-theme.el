@@ -257,6 +257,7 @@
    `(org-done ((,petunia-class (:foreground ,petunia-vc-insert :weight bold))))
    `(org-hide ((,petunia-class (:foreground ,petunia-bg))))
    `(org-table ((,petunia-class (:foreground ,petunia-green-forest))))
+   `(org-table-header ((,petunia-class (:inverse-video t :inherit org-table))))
    `(org-date ((,petunia-class (:foreground ,petunia-light-orange))))
    `(org-date-selected ((,petunia-class (:foreground unspecified :inverse-video t :inherit org-date))))
    `(org-headline-todo ((,petunia-class (:foreground ,petunia-orderless-0))))
