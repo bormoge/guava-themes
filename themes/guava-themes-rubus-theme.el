@@ -311,12 +311,12 @@
    `(elfeed-search-last-update-face ((,rubus-class (:weight bold :foreground ,rubus-yellow))))
    `(elfeed-search-unread-count-face ((,rubus-class (:weight bold :foreground ,rubus-yellow))))
 
-   `(elfeed-show-header-face ((,rubus-class (:foreground ,rubus-pink-cream))))
-   `(elfeed-show-author-face ((,rubus-class (:weight bold :foreground ,rubus-green))))
-   `(elfeed-show-title-face ((,rubus-class (:weight bold :foreground ,rubus-green))))
-   `(elfeed-show-date-face ((,rubus-class (:foreground ,rubus-green-blue))))
-   `(elfeed-show-feed-face ((,rubus-class (:foreground ,rubus-green-blue))))
-   `(elfeed-show-tags-face ((,rubus-class (:foreground ,rubus-orange))))
+   `(elfeed-show-header-face ((,rubus-class (:foreground ,rubus-green))))
+   `(elfeed-show-author-face ((,rubus-class (:weight bold :foreground ,rubus-light-green))))
+   `(elfeed-show-title-face ((,rubus-class (:weight bold :foreground ,rubus-light-green))))
+   `(elfeed-show-date-face ((,rubus-class (:foreground ,rubus-light-blue))))
+   `(elfeed-show-feed-face ((,rubus-class (:foreground ,rubus-light-blue))))
+   `(elfeed-show-tags-face ((,rubus-class (:foreground ,rubus-green-blue))))
 
    ;; doom-modeline
    ;; doom-modeline-buffer-file-name-style
