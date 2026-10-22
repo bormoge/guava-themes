@@ -48,6 +48,7 @@
 
       (petunia-light-green               "#78c878")
       (petunia-green-forest              "#008741")
+      (petunia-alt-green-forest          "#006941")
 
       (petunia-light-blue                "#00c3d7")
       (petunia-alt-light-blue            "#32a0cd")
@@ -55,8 +56,7 @@
       (petunia-deep-blue                 "#004b82")
       (petunia-cyan                      "#00ffff")
 
-      (petunia-light-purple              "#a88dac")
-      (petunia-purple                    "#8a5aff")
+      (petunia-purple                    "#8c6ecd")
 
       (petunia-fg                        "#FFFFFF")
       (petunia-fg-2                      "#c3c3c3")
@@ -68,14 +68,14 @@
       (petunia-warning                   "#ffff00")
       (petunia-success                   "#00ff00")
 
-      (petunia-mode-line                 "#8a5aff")
+      (petunia-mode-line                 "#8c6ecd")
       (petunia-mode-line-inactive        "#008741")
       (petunia-mode-line-modified        "#00c3d7")
       (petunia-bell                      "#FFDB5A")
 
       (petunia-tab-1                     petunia-mode-line)
       (petunia-tab-2                     petunia-mode-line-inactive)
-      (petunia-tab-3                     petunia-light-green)
+      (petunia-tab-3                     petunia-alt-green-forest)
 
       (petunia-fl-comment                petunia-light-green)
       (petunia-fl-string                 petunia-orange)
