@@ -180,7 +180,7 @@
 
    ;; header-line
    `(header-line ((,jacaranda-class (:inherit mode-line))))
-   `(which-func ((,jacaranda-class (:foreground ,jacaranda-white))))
+   `(which-func ((,jacaranda-class (:weight bold :foreground ,jacaranda-white))))
 
    ;; tab-bar
    `(tab-bar ((,jacaranda-class (:foreground ,jacaranda-white :background ,jacaranda-tab-2 :weight bold))))

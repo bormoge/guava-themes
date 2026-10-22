@@ -183,7 +183,7 @@
 
    ;; header-line
    `(header-line ((,dracaena-class (:inherit mode-line))))
-   `(which-func ((,dracaena-class (:foreground ,dracaena-white))))
+   `(which-func ((,dracaena-class (:weight bold :foreground ,dracaena-white))))
 
    ;; tab-bar
    `(tab-bar ((,dracaena-class (:foreground ,dracaena-white :background ,dracaena-tab-2 :weight bold))))

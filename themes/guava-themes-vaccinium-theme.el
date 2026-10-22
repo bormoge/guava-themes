@@ -182,7 +182,7 @@
 
    ;; header-line
    `(header-line ((,vaccinium-class (:inherit mode-line))))
-   `(which-func ((,vaccinium-class (:foreground ,vaccinium-white))))
+   `(which-func ((,vaccinium-class (:weight bold :foreground ,vaccinium-white))))
 
    ;; tab-bar
    `(tab-bar ((,vaccinium-class (:foreground ,vaccinium-white :background ,vaccinium-tab-2 :weight bold))))

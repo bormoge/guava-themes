@@ -181,7 +181,7 @@
 
    ;; header-line
    `(header-line ((,cordyline-class (:inherit mode-line))))
-   `(which-func ((,cordyline-class (:foreground ,cordyline-white))))
+   `(which-func ((,cordyline-class (:weight bold :foreground ,cordyline-white))))
 
    ;; tab-bar
    `(tab-bar ((,cordyline-class (:foreground ,cordyline-white :background ,cordyline-tab-2 :weight bold))))

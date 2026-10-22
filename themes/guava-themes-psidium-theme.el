@@ -179,7 +179,7 @@
 
    ;; header-line
    `(header-line ((,psidium-class (:inherit mode-line))))
-   `(which-func ((,psidium-class (:foreground ,psidium-white))))
+   `(which-func ((,psidium-class (:weight bold :foreground ,psidium-white))))
 
    ;; tab-bar
    `(tab-bar ((,psidium-class (:foreground ,psidium-white :background ,psidium-tab-2 :weight bold))))

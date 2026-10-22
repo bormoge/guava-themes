@@ -180,7 +180,7 @@
 
    ;; header-line
    `(header-line ((,petunia-class (:inherit mode-line))))
-   `(which-func ((,petunia-class (:foreground ,petunia-white))))
+   `(which-func ((,petunia-class (:weight bold :foreground ,petunia-white))))
 
    ;; tab-bar
    `(tab-bar ((,petunia-class (:foreground ,petunia-white :background ,petunia-tab-2 :weight bold))))

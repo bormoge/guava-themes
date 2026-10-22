@@ -181,7 +181,7 @@
 
    ;; header-line
    `(header-line ((,solanum-class (:inherit mode-line))))
-   `(which-func ((,solanum-class (:foreground ,solanum-white))))
+   `(which-func ((,solanum-class (:weight bold :foreground ,solanum-white))))
 
    ;; tab-bar
    `(tab-bar ((,solanum-class (:foreground ,solanum-white :background ,solanum-tab-2 :weight bold))))

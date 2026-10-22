@@ -182,7 +182,7 @@
 
    ;; header-line
    `(header-line ((,acer-class (:inherit mode-line))))
-   `(which-func ((,acer-class (:foreground ,acer-white))))
+   `(which-func ((,acer-class (:weight bold :foreground ,acer-white))))
 
    ;; tab-bar
    `(tab-bar ((,acer-class (:foreground ,acer-white :background ,acer-tab-2 :weight bold))))
