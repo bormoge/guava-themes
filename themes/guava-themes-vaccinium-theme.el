@@ -309,12 +309,12 @@
    `(elfeed-search-last-update-face ((,vaccinium-class (:weight bold :foreground ,vaccinium-deep-blue))))
    `(elfeed-search-unread-count-face ((,vaccinium-class (:weight bold :foreground ,vaccinium-deep-blue))))
 
-   `(elfeed-show-header-face ((,vaccinium-class (:foreground ,vaccinium-light-green))))
-   `(elfeed-show-author-face ((,vaccinium-class (:weight bold :foreground ,vaccinium-blueberry))))
-   `(elfeed-show-title-face ((,vaccinium-class (:weight bold :foreground ,vaccinium-blueberry))))
-   `(elfeed-show-date-face ((,vaccinium-class (:foreground ,vaccinium-steel-blue))))
-   `(elfeed-show-feed-face ((,vaccinium-class (:foreground ,vaccinium-steel-blue))))
-   `(elfeed-show-tags-face ((,vaccinium-class (:foreground ,vaccinium-orange))))
+   `(elfeed-show-header-face ((,vaccinium-class (:foreground ,vaccinium-steel-blue))))
+   `(elfeed-show-author-face ((,vaccinium-class (:weight bold :foreground ,vaccinium-light-green))))
+   `(elfeed-show-title-face ((,vaccinium-class (:weight bold :foreground ,vaccinium-light-green))))
+   `(elfeed-show-date-face ((,vaccinium-class (:foreground ,vaccinium-blueberry))))
+   `(elfeed-show-feed-face ((,vaccinium-class (:foreground ,vaccinium-blueberry))))
+   `(elfeed-show-tags-face ((,vaccinium-class (:foreground ,vaccinium-light-purple))))
 
    ;; doom-modeline
    ;; doom-modeline-buffer-file-name-style
