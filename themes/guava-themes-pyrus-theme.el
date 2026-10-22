@@ -309,12 +309,12 @@
    `(elfeed-search-last-update-face ((,pyrus-class (:weight bold :foreground ,pyrus-light-blue))))
    `(elfeed-search-unread-count-face ((,pyrus-class (:weight bold :foreground ,pyrus-light-blue))))
 
-   `(elfeed-show-header-face ((,pyrus-class (:foreground ,pyrus-green))))
-   `(elfeed-show-author-face ((,pyrus-class (:weight bold :foreground ,pyrus-cyan))))
-   `(elfeed-show-title-face ((,pyrus-class (:weight bold :foreground ,pyrus-cyan))))
-   `(elfeed-show-date-face ((,pyrus-class (:foreground ,pyrus-deep-blue))))
-   `(elfeed-show-feed-face ((,pyrus-class (:foreground ,pyrus-deep-blue))))
-   `(elfeed-show-tags-face ((,pyrus-class (:foreground ,pyrus-deep-orange))))
+   `(elfeed-show-header-face ((,pyrus-class (:foreground ,pyrus-deep-blue))))
+   `(elfeed-show-author-face ((,pyrus-class (:weight bold :foreground ,pyrus-green))))
+   `(elfeed-show-title-face ((,pyrus-class (:weight bold :foreground ,pyrus-green))))
+   `(elfeed-show-date-face ((,pyrus-class (:foreground ,pyrus-cyan))))
+   `(elfeed-show-feed-face ((,pyrus-class (:foreground ,pyrus-cyan))))
+   `(elfeed-show-tags-face ((,pyrus-class (:foreground ,pyrus-light-purple))))
 
    ;; doom-modeline
    ;; doom-modeline-buffer-file-name-style
