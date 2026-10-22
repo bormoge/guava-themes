@@ -300,20 +300,20 @@
 
    ;; elfeed
    `(elfeed-search-tag-face ((,solanum-class (:foreground ,solanum-light-blue))))
-   `(elfeed-search-date-face ((,solanum-class (:foreground ,solanum-red-tomato))))
+   `(elfeed-search-date-face ((,solanum-class (:foreground ,solanum-purple))))
    `(elfeed-search-feed-face ((,solanum-class (:foreground ,solanum-light-green))))
    `(elfeed-search-title-face ((,solanum-class (:foreground ,solanum-alt-dark-purple))))
-   `(elfeed-search-unread-title-face ((,solanum-class (:weight bold :foreground ,solanum-purple))))
+   `(elfeed-search-unread-title-face ((,solanum-class (:weight bold :foreground ,solanum-deep-green))))
    `(elfeed-search-filter-face ((,solanum-class (:weight bold :foreground ,solanum-light-purple))))
    `(elfeed-search-last-update-face ((,solanum-class (:weight bold :foreground ,solanum-light-purple))))
    `(elfeed-search-unread-count-face ((,solanum-class (:weight bold :foreground ,solanum-light-purple))))
 
-   `(elfeed-show-header-face ((,solanum-class (:foreground ,solanum-deep-green))))
-   `(elfeed-show-author-face ((,solanum-class (:weight bold :foreground ,solanum-red-tomato))))
-   `(elfeed-show-title-face ((,solanum-class (:weight bold :foreground ,solanum-red-tomato))))
-   `(elfeed-show-date-face ((,solanum-class (:foreground ,solanum-light-green))))
-   `(elfeed-show-feed-face ((,solanum-class (:foreground ,solanum-light-green))))
-   `(elfeed-show-tags-face ((,solanum-class (:foreground ,solanum-purple))))
+   `(elfeed-show-header-face ((,solanum-class (:foreground ,solanum-purple))))
+   `(elfeed-show-author-face ((,solanum-class (:weight bold :foreground ,solanum-light-green))))
+   `(elfeed-show-title-face ((,solanum-class (:weight bold :foreground ,solanum-light-green))))
+   `(elfeed-show-date-face ((,solanum-class (:foreground ,solanum-deep-green))))
+   `(elfeed-show-feed-face ((,solanum-class (:foreground ,solanum-deep-green))))
+   `(elfeed-show-tags-face ((,solanum-class (:foreground ,solanum-light-blue))))
 
    ;; doom-modeline
    ;; doom-modeline-buffer-file-name-style
