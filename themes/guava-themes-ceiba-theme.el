@@ -313,11 +313,11 @@
    `(elfeed-search-last-update-face ((,ceiba-class (:weight bold :foreground ,ceiba-light-orange))))
    `(elfeed-search-unread-count-face ((,ceiba-class (:weight bold :foreground ,ceiba-light-orange))))
 
-   `(elfeed-show-header-face ((,ceiba-class (:foreground ,ceiba-green-forest))))
-   `(elfeed-show-author-face ((,ceiba-class (:weight bold :foreground ,ceiba-purple-red))))
-   `(elfeed-show-title-face ((,ceiba-class (:weight bold :foreground ,ceiba-purple-red))))
-   `(elfeed-show-date-face ((,ceiba-class (:foreground ,ceiba-brown-sand))))
-   `(elfeed-show-feed-face ((,ceiba-class (:foreground ,ceiba-brown-sand))))
+   `(elfeed-show-header-face ((,ceiba-class (:foreground ,ceiba-brown-wood))))
+   `(elfeed-show-author-face ((,ceiba-class (:weight bold :foreground ,ceiba-deep-green))))
+   `(elfeed-show-title-face ((,ceiba-class (:weight bold :foreground ,ceiba-deep-green))))
+   `(elfeed-show-date-face ((,ceiba-class (:foreground ,ceiba-green-blue))))
+   `(elfeed-show-feed-face ((,ceiba-class (:foreground ,ceiba-green-blue))))
    `(elfeed-show-tags-face ((,ceiba-class (:foreground ,ceiba-alt-blue))))
 
    ;; doom-modeline
