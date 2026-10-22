@@ -314,9 +314,9 @@
    `(elfeed-show-header-face ((,rhododendron-class (:foreground ,rhododendron-purple-red))))
    `(elfeed-show-author-face ((,rhododendron-class (:weight bold :foreground ,rhododendron-deep-blue))))
    `(elfeed-show-title-face ((,rhododendron-class (:weight bold :foreground ,rhododendron-deep-blue))))
-   `(elfeed-show-date-face ((,rhododendron-class (:foreground ,rhododendron-forest-green))))
-   `(elfeed-show-feed-face ((,rhododendron-class (:foreground ,rhododendron-forest-green))))
-   `(elfeed-show-tags-face ((,rhododendron-class (:foreground ,rhododendron-purple-pink))))
+   `(elfeed-show-date-face ((,rhododendron-class (:foreground ,rhododendron-purple-blue))))
+   `(elfeed-show-feed-face ((,rhododendron-class (:foreground ,rhododendron-purple-blue))))
+   `(elfeed-show-tags-face ((,rhododendron-class (:foreground ,rhododendron-dark-purple-red))))
 
    ;; doom-modeline
    ;; doom-modeline-buffer-file-name-style
