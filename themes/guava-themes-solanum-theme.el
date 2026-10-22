@@ -309,10 +309,10 @@
    `(elfeed-search-unread-count-face ((,solanum-class (:weight bold :foreground ,solanum-light-purple))))
 
    `(elfeed-show-header-face ((,solanum-class (:foreground ,solanum-purple))))
-   `(elfeed-show-author-face ((,solanum-class (:weight bold :foreground ,solanum-light-green))))
-   `(elfeed-show-title-face ((,solanum-class (:weight bold :foreground ,solanum-light-green))))
-   `(elfeed-show-date-face ((,solanum-class (:foreground ,solanum-deep-green))))
-   `(elfeed-show-feed-face ((,solanum-class (:foreground ,solanum-deep-green))))
+   `(elfeed-show-author-face ((,solanum-class (:weight bold :foreground ,solanum-deep-green))))
+   `(elfeed-show-title-face ((,solanum-class (:weight bold :foreground ,solanum-deep-green))))
+   `(elfeed-show-date-face ((,solanum-class (:foreground ,solanum-light-green))))
+   `(elfeed-show-feed-face ((,solanum-class (:foreground ,solanum-light-green))))
    `(elfeed-show-tags-face ((,solanum-class (:foreground ,solanum-light-blue))))
 
    ;; doom-modeline
