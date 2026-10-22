@@ -313,7 +313,7 @@
    `(elfeed-show-title-face ((,cordyline-class (:weight bold :foreground ,cordyline-light-blue))))
    `(elfeed-show-date-face ((,cordyline-class (:foreground ,cordyline-dark-cyan))))
    `(elfeed-show-feed-face ((,cordyline-class (:foreground ,cordyline-dark-cyan))))
-   `(elfeed-show-tags-face ((,cordyline-class (:foreground ,cordyline-orange-red))))
+   `(elfeed-show-tags-face ((,cordyline-class (:foreground ,cordyline-green))))
 
    ;; doom-modeline
    ;; doom-modeline-buffer-file-name-style
