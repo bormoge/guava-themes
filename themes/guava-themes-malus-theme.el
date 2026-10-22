@@ -308,9 +308,9 @@
    `(elfeed-search-last-update-face ((,malus-class (:weight bold :foreground ,malus-blue))))
    `(elfeed-search-unread-count-face ((,malus-class (:weight bold :foreground ,malus-blue))))
 
-   `(elfeed-show-header-face ((,malus-class (:foreground ,malus-green-granny))))
-   `(elfeed-show-author-face ((,malus-class (:weight bold :foreground ,malus-purple))))
-   `(elfeed-show-title-face ((,malus-class (:weight bold :foreground ,malus-purple))))
+   `(elfeed-show-header-face ((,malus-class (:foreground ,malus-deep-red))))
+   `(elfeed-show-author-face ((,malus-class (:weight bold :foreground ,malus-green-forest))))
+   `(elfeed-show-title-face ((,malus-class (:weight bold :foreground ,malus-green-forest))))
    `(elfeed-show-date-face ((,malus-class (:foreground ,malus-red-sweetango))))
    `(elfeed-show-feed-face ((,malus-class (:foreground ,malus-red-sweetango))))
    `(elfeed-show-tags-face ((,malus-class (:foreground ,malus-yellow-subdued))))
