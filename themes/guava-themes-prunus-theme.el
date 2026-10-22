@@ -312,7 +312,7 @@
    `(elfeed-search-last-update-face ((,prunus-class (:weight bold :foreground ,prunus-light-pink))))
    `(elfeed-search-unread-count-face ((,prunus-class (:weight bold :foreground ,prunus-light-pink))))
 
-   `(elfeed-show-header-face ((,prunus-class (:foreground ,prunus-red))))
+   `(elfeed-show-header-face ((,prunus-class (:foreground ,prunus-light-red))))
    `(elfeed-show-author-face ((,prunus-class (:weight bold :foreground ,prunus-coffee))))
    `(elfeed-show-title-face ((,prunus-class (:weight bold :foreground ,prunus-coffee))))
    `(elfeed-show-date-face ((,prunus-class (:foreground ,prunus-pink))))
