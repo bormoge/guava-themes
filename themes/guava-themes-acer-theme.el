@@ -327,7 +327,7 @@
 
    ;; corfu
    `(corfu-default ((,acer-class (:foreground ,acer-fg :background ,acer-bg))))
-   `(corfu-current ((,acer-class (:foreground unspecified :background unspecified :inherit region))))
+   `(corfu-current ((,acer-class (:foreground unspecified :background unspecified :extend t :inherit highlight))))
    `(corfu-bar ((,acer-class (:background ,acer-shadow))))
    `(corfu-border ((,acer-class (:background ,acer-shadow))))
 

@@ -325,7 +325,7 @@
 
    ;; corfu
    `(corfu-default ((,jacaranda-class (:foreground ,jacaranda-fg :background ,jacaranda-bg))))
-   `(corfu-current ((,jacaranda-class (:foreground unspecified :background unspecified :inherit region))))
+   `(corfu-current ((,jacaranda-class (:foreground unspecified :background unspecified :extend t :inherit highlight))))
    `(corfu-bar ((,jacaranda-class (:background ,jacaranda-shadow))))
    `(corfu-border ((,jacaranda-class (:background ,jacaranda-shadow))))
 

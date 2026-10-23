@@ -329,7 +329,7 @@
 
    ;; corfu
    `(corfu-default ((,rubus-class (:foreground ,rubus-fg :background ,rubus-bg))))
-   `(corfu-current ((,rubus-class (:foreground unspecified :background unspecified :inherit region))))
+   `(corfu-current ((,rubus-class (:foreground unspecified :background unspecified :extend t :inherit highlight))))
    `(corfu-bar ((,rubus-class (:background ,rubus-shadow))))
    `(corfu-border ((,rubus-class (:background ,rubus-shadow))))
 

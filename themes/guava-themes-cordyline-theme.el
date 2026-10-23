@@ -326,7 +326,7 @@
 
    ;; corfu
    `(corfu-default ((,cordyline-class (:foreground ,cordyline-fg :background ,cordyline-bg))))
-   `(corfu-current ((,cordyline-class (:foreground unspecified :background unspecified :inherit region))))
+   `(corfu-current ((,cordyline-class (:foreground unspecified :background unspecified :extend t :inherit highlight))))
    `(corfu-bar ((,cordyline-class (:background ,cordyline-shadow))))
    `(corfu-border ((,cordyline-class (:background ,cordyline-shadow))))
 

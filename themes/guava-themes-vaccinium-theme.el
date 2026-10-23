@@ -327,7 +327,7 @@
 
    ;; corfu
    `(corfu-default ((,vaccinium-class (:foreground ,vaccinium-fg :background ,vaccinium-bg))))
-   `(corfu-current ((,vaccinium-class (:foreground unspecified :background unspecified :inherit region))))
+   `(corfu-current ((,vaccinium-class (:foreground unspecified :background unspecified :extend t :inherit highlight))))
    `(corfu-bar ((,vaccinium-class (:background ,vaccinium-shadow))))
    `(corfu-border ((,vaccinium-class (:background ,vaccinium-shadow))))
 

@@ -325,7 +325,7 @@
 
    ;; corfu
    `(corfu-default ((,petunia-class (:foreground ,petunia-fg :background ,petunia-bg))))
-   `(corfu-current ((,petunia-class (:foreground unspecified :background unspecified :inherit region))))
+   `(corfu-current ((,petunia-class (:foreground unspecified :background unspecified :extend t :inherit highlight))))
    `(corfu-bar ((,petunia-class (:background ,petunia-shadow))))
    `(corfu-border ((,petunia-class (:background ,petunia-shadow))))
 

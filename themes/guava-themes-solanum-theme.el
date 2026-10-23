@@ -326,7 +326,7 @@
 
    ;; corfu
    `(corfu-default ((,solanum-class (:foreground ,solanum-fg :background ,solanum-bg))))
-   `(corfu-current ((,solanum-class (:foreground unspecified :background unspecified :inherit region))))
+   `(corfu-current ((,solanum-class (:foreground unspecified :background unspecified :extend t :inherit highlight))))
    `(corfu-bar ((,solanum-class (:background ,solanum-shadow))))
    `(corfu-border ((,solanum-class (:background ,solanum-shadow))))
 

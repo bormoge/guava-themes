@@ -327,7 +327,7 @@
 
    ;; corfu
    `(corfu-default ((,pyrus-class (:foreground ,pyrus-fg :background ,pyrus-bg))))
-   `(corfu-current ((,pyrus-class (:foreground unspecified :background unspecified :inherit region))))
+   `(corfu-current ((,pyrus-class (:foreground unspecified :background unspecified :extend t :inherit highlight))))
    `(corfu-bar ((,pyrus-class (:background ,pyrus-shadow))))
    `(corfu-border ((,pyrus-class (:background ,pyrus-shadow))))
 

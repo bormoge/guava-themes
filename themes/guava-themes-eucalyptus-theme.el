@@ -328,7 +328,7 @@
 
    ;; corfu
    `(corfu-default ((,eucalyptus-class (:foreground ,eucalyptus-fg :background ,eucalyptus-bg))))
-   `(corfu-current ((,eucalyptus-class (:foreground unspecified :background unspecified :inherit region))))
+   `(corfu-current ((,eucalyptus-class (:foreground unspecified :background unspecified :extend t :inherit highlight))))
    `(corfu-bar ((,eucalyptus-class (:background ,eucalyptus-shadow))))
    `(corfu-border ((,eucalyptus-class (:background ,eucalyptus-shadow))))
 

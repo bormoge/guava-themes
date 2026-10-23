@@ -330,7 +330,7 @@
 
    ;; corfu
    `(corfu-default ((,citrus-class (:foreground ,citrus-fg :background ,citrus-bg))))
-   `(corfu-current ((,citrus-class (:foreground unspecified :background unspecified :inherit region))))
+   `(corfu-current ((,citrus-class (:foreground unspecified :background unspecified :extend t :inherit highlight))))
    `(corfu-bar ((,citrus-class (:background ,citrus-shadow))))
    `(corfu-border ((,citrus-class (:background ,citrus-shadow))))
 

@@ -328,7 +328,7 @@
 
    ;; corfu
    `(corfu-default ((,dracaena-class (:foreground ,dracaena-fg :background ,dracaena-bg))))
-   `(corfu-current ((,dracaena-class (:foreground unspecified :background unspecified :inherit region))))
+   `(corfu-current ((,dracaena-class (:foreground unspecified :background unspecified :extend t :inherit highlight))))
    `(corfu-bar ((,dracaena-class (:background ,dracaena-shadow))))
    `(corfu-border ((,dracaena-class (:background ,dracaena-shadow))))
 

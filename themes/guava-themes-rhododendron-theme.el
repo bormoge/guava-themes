@@ -329,7 +329,7 @@
 
    ;; corfu
    `(corfu-default ((,rhododendron-class (:foreground ,rhododendron-fg :background ,rhododendron-bg))))
-   `(corfu-current ((,rhododendron-class (:foreground unspecified :background unspecified :inherit region))))
+   `(corfu-current ((,rhododendron-class (:foreground unspecified :background unspecified :extend t :inherit highlight))))
    `(corfu-bar ((,rhododendron-class (:background ,rhododendron-shadow))))
    `(corfu-border ((,rhododendron-class (:background ,rhododendron-shadow))))
 

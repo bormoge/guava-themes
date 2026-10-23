@@ -324,7 +324,7 @@
 
    ;; corfu
    `(corfu-default ((,psidium-class (:foreground ,psidium-fg :background ,psidium-bg))))
-   `(corfu-current ((,psidium-class (:foreground unspecified :background unspecified :inherit region))))
+   `(corfu-current ((,psidium-class (:foreground unspecified :background unspecified :extend t :inherit highlight))))
    `(corfu-bar ((,psidium-class (:background ,psidium-shadow))))
    `(corfu-border ((,psidium-class (:background ,psidium-shadow))))
 

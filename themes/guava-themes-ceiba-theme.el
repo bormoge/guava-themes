@@ -331,7 +331,7 @@
 
    ;; corfu
    `(corfu-default ((,ceiba-class (:foreground ,ceiba-fg :background ,ceiba-bg))))
-   `(corfu-current ((,ceiba-class (:foreground unspecified :background unspecified :inherit region))))
+   `(corfu-current ((,ceiba-class (:foreground unspecified :background unspecified :extend t :inherit highlight))))
    `(corfu-bar ((,ceiba-class (:background ,ceiba-shadow))))
    `(corfu-border ((,ceiba-class (:background ,ceiba-shadow))))
 

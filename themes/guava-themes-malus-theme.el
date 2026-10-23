@@ -326,7 +326,7 @@
 
    ;; corfu
    `(corfu-default ((,malus-class (:foreground ,malus-fg :background ,malus-bg))))
-   `(corfu-current ((,malus-class (:foreground unspecified :background unspecified :inherit region))))
+   `(corfu-current ((,malus-class (:foreground unspecified :background unspecified :extend t :inherit highlight))))
    `(corfu-bar ((,malus-class (:background ,malus-shadow))))
    `(corfu-border ((,malus-class (:background ,malus-shadow))))
 
