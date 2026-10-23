@@ -350,6 +350,9 @@
    ;; devdocs
    `(devdocs-code-block ((,solanum-class (:weight bold :background ,solanum-highlight :extend t))))
 
+   ;; pdf-tools
+   `(pdf-view-region ((,solanum-class (:foreground ,solanum-white :background ,solanum-orderless-3 :inherit region))))
+
    ;; nerd-icons
    ;; nerd-icons-completion
    `(nerd-icons-completion-dir-face ((,solanum-class (:foreground unspecified :inherit font-lock-function-name-face))))))

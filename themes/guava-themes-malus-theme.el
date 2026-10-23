@@ -350,6 +350,9 @@
    ;; devdocs
    `(devdocs-code-block ((,malus-class (:weight bold :background ,malus-highlight :extend t))))
 
+   ;; pdf-tools
+   `(pdf-view-region ((,malus-class (:foreground ,malus-white :background ,malus-orderless-3 :inherit region))))
+
    ;; nerd-icons
    ;; nerd-icons-completion
    `(nerd-icons-completion-dir-face ((,malus-class (:foreground unspecified :inherit font-lock-function-name-face))))))

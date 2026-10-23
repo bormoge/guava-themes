@@ -355,6 +355,9 @@
    ;; devdocs
    `(devdocs-code-block ((,ceiba-class (:weight bold :background ,ceiba-highlight :extend t))))
 
+   ;; pdf-tools
+   `(pdf-view-region ((,ceiba-class (:foreground ,ceiba-white :background ,ceiba-orderless-3 :inherit region))))
+
    ;; nerd-icons
    ;; nerd-icons-completion
    `(nerd-icons-completion-dir-face ((,ceiba-class (:foreground unspecified :inherit font-lock-function-name-face))))))

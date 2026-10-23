@@ -353,6 +353,9 @@
    ;; devdocs
    `(devdocs-code-block ((,rhododendron-class (:weight bold :background ,rhododendron-highlight :extend t))))
 
+   ;; pdf-tools
+   `(pdf-view-region ((,rhododendron-class (:foreground ,rhododendron-white :background ,rhododendron-orderless-3 :inherit region))))
+
    ;; nerd-icons
    ;; nerd-icons-completion
    `(nerd-icons-completion-dir-face ((,rhododendron-class (:foreground unspecified :inherit font-lock-function-name-face))))))

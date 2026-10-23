@@ -354,6 +354,9 @@
    ;; devdocs
    `(devdocs-code-block ((,citrus-class (:weight bold :background ,citrus-highlight :extend t))))
 
+   ;; pdf-tools
+   `(pdf-view-region ((,citrus-class (:foreground ,citrus-white :background ,citrus-orderless-3 :inherit region))))
+
    ;; nerd-icons
    ;; nerd-icons-completion
    `(nerd-icons-completion-dir-face ((,citrus-class (:foreground unspecified :inherit font-lock-function-name-face))))))

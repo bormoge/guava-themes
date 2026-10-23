@@ -353,6 +353,9 @@
    ;; devdocs
    `(devdocs-code-block ((,rubus-class (:weight bold :background ,rubus-highlight :extend t))))
 
+   ;; pdf-tools
+   `(pdf-view-region ((,rubus-class (:foreground ,rubus-white :background ,rubus-orderless-3 :inherit region))))
+
    ;; nerd-icons
    ;; nerd-icons-completion
    `(nerd-icons-completion-dir-face ((,rubus-class (:foreground unspecified :inherit font-lock-function-name-face))))))

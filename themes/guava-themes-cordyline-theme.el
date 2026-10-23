@@ -350,6 +350,9 @@
    ;; devdocs
    `(devdocs-code-block ((,cordyline-class (:weight bold :background ,cordyline-highlight :extend t))))
 
+   ;; pdf-tools
+   `(pdf-view-region ((,cordyline-class (:foreground ,cordyline-white :background ,cordyline-orderless-3 :inherit region))))
+
    ;; nerd-icons
    ;; nerd-icons-completion
    `(nerd-icons-completion-dir-face ((,cordyline-class (:foreground unspecified :inherit font-lock-function-name-face))))))

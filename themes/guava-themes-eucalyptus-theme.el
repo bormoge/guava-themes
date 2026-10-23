@@ -352,6 +352,9 @@
    ;; devdocs
    `(devdocs-code-block ((,eucalyptus-class (:weight bold :background ,eucalyptus-highlight :extend t))))
 
+   ;; pdf-tools
+   `(pdf-view-region ((,eucalyptus-class (:foreground ,eucalyptus-white :background ,eucalyptus-orderless-3 :inherit region))))
+
    ;; nerd-icons
    ;; nerd-icons-completion
    `(nerd-icons-completion-dir-face ((,eucalyptus-class (:foreground unspecified :inherit font-lock-function-name-face))))))

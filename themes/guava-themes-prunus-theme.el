@@ -354,6 +354,9 @@
    ;; devdocs
    `(devdocs-code-block ((,prunus-class (:weight bold :background ,prunus-highlight :extend t))))
 
+   ;; pdf-tools
+   `(pdf-view-region ((,prunus-class (:foreground ,prunus-white :background ,prunus-orderless-3 :inherit region))))
+
    ;; nerd-icons
    ;; nerd-icons-completion
    `(nerd-icons-completion-dir-face ((,prunus-class (:foreground unspecified :inherit font-lock-function-name-face))))))

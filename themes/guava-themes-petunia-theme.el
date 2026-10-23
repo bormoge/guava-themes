@@ -349,6 +349,9 @@
    ;; devdocs
    `(devdocs-code-block ((,petunia-class (:weight bold :background ,petunia-highlight :extend t))))
 
+   ;; pdf-tools
+   `(pdf-view-region ((,petunia-class (:foreground ,petunia-white :background ,petunia-orderless-3 :inherit region))))
+
    ;; nerd-icons
    ;; nerd-icons-completion
    `(nerd-icons-completion-dir-face ((,petunia-class (:foreground unspecified :inherit font-lock-function-name-face))))))

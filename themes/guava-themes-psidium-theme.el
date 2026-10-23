@@ -348,6 +348,9 @@
    ;; devdocs
    `(devdocs-code-block ((,psidium-class (:weight bold :background ,psidium-highlight :extend t))))
 
+   ;; pdf-tools
+   `(pdf-view-region ((,psidium-class (:foreground ,psidium-white :background ,psidium-orderless-3 :inherit region))))
+
    ;; nerd-icons
    ;; nerd-icons-completion
    `(nerd-icons-completion-dir-face ((,psidium-class (:foreground unspecified :inherit font-lock-function-name-face))))))

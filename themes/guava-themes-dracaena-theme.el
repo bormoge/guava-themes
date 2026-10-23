@@ -352,6 +352,9 @@
    ;; devdocs
    `(devdocs-code-block ((,dracaena-class (:weight bold :background ,dracaena-highlight :extend t))))
 
+   ;; pdf-tools
+   `(pdf-view-region ((,dracaena-class (:foreground ,dracaena-white :background ,dracaena-orderless-3 :inherit region))))
+
    ;; nerd-icons
    ;; nerd-icons-completion
    `(nerd-icons-completion-dir-face ((,dracaena-class (:foreground unspecified :inherit font-lock-function-name-face))))))

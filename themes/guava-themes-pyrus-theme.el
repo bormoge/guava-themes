@@ -351,6 +351,9 @@
    ;; devdocs
    `(devdocs-code-block ((,pyrus-class (:weight bold :background ,pyrus-highlight :extend t))))
 
+   ;; pdf-tools
+   `(pdf-view-region ((,pyrus-class (:foreground ,pyrus-white :background ,pyrus-orderless-3 :inherit region))))
+
    ;; nerd-icons
    ;; nerd-icons-completion
    `(nerd-icons-completion-dir-face ((,pyrus-class (:foreground unspecified :inherit font-lock-function-name-face))))))

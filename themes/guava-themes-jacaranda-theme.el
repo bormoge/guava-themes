@@ -349,6 +349,9 @@
    ;; devdocs
    `(devdocs-code-block ((,jacaranda-class (:weight bold :background ,jacaranda-highlight :extend t))))
 
+   ;; pdf-tools
+   `(pdf-view-region ((,jacaranda-class (:foreground ,jacaranda-white :background ,jacaranda-orderless-3 :inherit region))))
+
    ;; nerd-icons
    ;; nerd-icons-completion
    `(nerd-icons-completion-dir-face ((,jacaranda-class (:foreground unspecified :inherit font-lock-function-name-face))))))

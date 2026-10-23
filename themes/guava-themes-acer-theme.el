@@ -351,6 +351,9 @@
    ;; devdocs
    `(devdocs-code-block ((,acer-class (:weight bold :background ,acer-highlight :extend t))))
 
+   ;; pdf-tools
+   `(pdf-view-region ((,acer-class (:foreground ,acer-white :background ,acer-orderless-3 :inherit region))))
+
    ;; nerd-icons
    ;; nerd-icons-completion
    `(nerd-icons-completion-dir-face ((,acer-class (:foreground unspecified :inherit font-lock-function-name-face))))))

@@ -351,6 +351,9 @@
    ;; devdocs
    `(devdocs-code-block ((,vaccinium-class (:weight bold :background ,vaccinium-highlight :extend t))))
 
+   ;; pdf-tools
+   `(pdf-view-region ((,vaccinium-class (:foreground ,vaccinium-white :background ,vaccinium-orderless-3 :inherit region))))
+
    ;; nerd-icons
    ;; nerd-icons-completion
    `(nerd-icons-completion-dir-face ((,vaccinium-class (:foreground unspecified :inherit font-lock-function-name-face))))))
