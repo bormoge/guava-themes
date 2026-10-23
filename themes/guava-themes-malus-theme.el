@@ -161,7 +161,7 @@
    `(diff-hl-delete ((,malus-class (:foreground ,malus-vc-delete :background ,malus-vc-delete))))
 
    ;; line-number
-   `(line-number ((,malus-class (:foreground ,malus-yellow-subdued :inherit default))))
+   `(line-number ((,malus-class (:foreground ,malus-fg :inherit default))))
    `(line-number-current-line ((,malus-class (:foreground ,malus-mode-line :weight bold :inherit (highlight line-number)))))
    `(line-number-minor-tick ((,malus-class (:background ,malus-tab-2 :inherit line-number))))
    `(line-number-major-tick ((,malus-class (:background ,malus-tab-3 :inherit line-number))))
