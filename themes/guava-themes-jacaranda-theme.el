@@ -160,7 +160,7 @@
    `(diff-hl-delete ((,jacaranda-class (:foreground ,jacaranda-vc-delete :background ,jacaranda-vc-delete))))
 
    ;; line-number
-   `(line-number ((,jacaranda-class (:foreground ,jacaranda-deep-blue :inherit default))))
+   `(line-number ((,jacaranda-class (:foreground ,jacaranda-fg :inherit default))))
    `(line-number-current-line ((,jacaranda-class (:foreground ,jacaranda-mode-line :weight bold :inherit (highlight line-number)))))
    `(line-number-minor-tick ((,jacaranda-class (:background ,jacaranda-tab-2 :inherit line-number))))
    `(line-number-major-tick ((,jacaranda-class (:background ,jacaranda-tab-3 :inherit line-number))))
