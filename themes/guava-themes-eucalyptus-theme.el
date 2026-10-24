@@ -40,7 +40,7 @@
 
       (eucalyptus-light-gray                "#9196a5")
       (eucalyptus-gray                      "#646464")
-      (eucalyptus-gray-green                "#5a6450")
+      (eucalyptus-gray-green                "#505a46")
 
       (eucalyptus-green                     "#465f32")
       (eucalyptus-alt-green                 "#307d0f")
@@ -58,8 +58,6 @@
       (eucalyptus-alt-cyan                  "#008cd2")
 
       (eucalyptus-purple-red                "#874164")
-
-      (eucalyptus-brown-wood                "#675951")
 
       (eucalyptus-fg                        "#373c4b")
       (eucalyptus-fg-2                      "#737887")
@@ -85,7 +83,7 @@
       (eucalyptus-fl-keyword                eucalyptus-red)
       (eucalyptus-fl-builtin                eucalyptus-deep-blue)
       (eucalyptus-fl-type                   eucalyptus-alt-green)
-      (eucalyptus-fl-function-name          eucalyptus-brown-wood)
+      (eucalyptus-fl-function-name          eucalyptus-gray)
       (eucalyptus-fl-variable-name          eucalyptus-gray-green)
       (eucalyptus-fl-constant               eucalyptus-light-blue)
       (eucalyptus-fl-warning                eucalyptus-warning)
@@ -213,7 +211,7 @@
 
    ;; outline
    `(outline-1 ((,eucalyptus-class (:foreground ,eucalyptus-deep-blue :weight medium))))
-   `(outline-2 ((,eucalyptus-class (:foreground ,eucalyptus-brown-wood :weight medium))))
+   `(outline-2 ((,eucalyptus-class (:foreground ,eucalyptus-gray :weight medium))))
    `(outline-3 ((,eucalyptus-class (:foreground ,eucalyptus-red :weight medium))))
    `(outline-4 ((,eucalyptus-class (:foreground ,eucalyptus-gray-green :weight medium))))
    `(outline-5 ((,eucalyptus-class (:inherit outline-1))))
@@ -315,7 +313,7 @@
    `(elfeed-show-title-face ((,eucalyptus-class (:weight bold :foreground ,eucalyptus-fg))))
    `(elfeed-show-date-face ((,eucalyptus-class (:foreground ,eucalyptus-deep-red))))
    `(elfeed-show-feed-face ((,eucalyptus-class (:foreground ,eucalyptus-deep-red))))
-   `(elfeed-show-tags-face ((,eucalyptus-class (:foreground ,eucalyptus-gray))))
+   `(elfeed-show-tags-face ((,eucalyptus-class (:foreground ,eucalyptus-gray-green))))
 
    ;; doom-modeline
    ;; doom-modeline-buffer-file-name-style
