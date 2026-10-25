@@ -72,6 +72,7 @@
       (prunus-error                     "#FF0000")
       (prunus-warning                   "#f6d911")
       (prunus-success                   "#23D734")
+      (prunus-change                    "#4650e1")
 
       (prunus-mode-line                 "#50463c")
       (prunus-mode-line-inactive        "#645a50")
@@ -109,11 +110,7 @@
       (prunus-orderless-3               "#3c82ff")
 
       (prunus-prescient-0               "#46C8A5")
-      (prunus-prescient-1               "#C84669")
-
-      (prunus-vc-change                 prunus-blue)
-      (prunus-vc-insert                 prunus-success)
-      (prunus-vc-delete                 prunus-error))
+      (prunus-prescient-1               "#C84669"))
 
   (custom-theme-set-faces
    'guava-themes-prunus
@@ -160,9 +157,9 @@
 
    ;; fringe
    `(fringe ((,prunus-class (:foreground ,prunus-cyan :background ,prunus-bg))))
-   `(diff-hl-change ((,prunus-class (:foreground ,prunus-vc-change :background ,prunus-vc-change))))
-   `(diff-hl-insert ((,prunus-class (:foreground ,prunus-vc-insert :background ,prunus-vc-insert))))
-   `(diff-hl-delete ((,prunus-class (:foreground ,prunus-vc-delete :background ,prunus-vc-delete))))
+   `(diff-hl-change ((,prunus-class (:foreground ,prunus-change :background ,prunus-change))))
+   `(diff-hl-insert ((,prunus-class (:foreground ,prunus-success :background ,prunus-success))))
+   `(diff-hl-delete ((,prunus-class (:foreground ,prunus-error :background ,prunus-error))))
 
    ;; line-number
    `(line-number ((,prunus-class (:foreground ,prunus-fg :inherit default))))
@@ -258,8 +255,8 @@
    `(completions-first-difference ((,prunus-class (:foreground ,prunus-error :weight bold))))
 
    ;; org-faces
-   `(org-todo ((,prunus-class (:foreground ,prunus-vc-delete :weight bold))))
-   `(org-done ((,prunus-class (:foreground ,prunus-vc-insert :weight bold))))
+   `(org-todo ((,prunus-class (:foreground ,prunus-error :weight bold))))
+   `(org-done ((,prunus-class (:foreground ,prunus-success :weight bold))))
    `(org-hide ((,prunus-class (:foreground ,prunus-bg))))
    `(org-table ((,prunus-class (:foreground ,prunus-light-pink))))
    `(org-table-header ((,prunus-class (:inverse-video t :inherit org-table))))

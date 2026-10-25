@@ -69,6 +69,7 @@
       (acer-error                     "#d70000")
       (acer-warning                   "#b4a000")
       (acer-success                   "#28823c")
+      (acer-change                    "#2134d5")
 
       (acer-mode-line                 "#e76144")
       (acer-mode-line-inactive        "#ff8c4e")
@@ -106,11 +107,7 @@
       (acer-orderless-3               "#6496d7")
 
       (acer-prescient-0               "#4680DE")
-      (acer-prescient-1               "#DE4680")
-
-      (acer-vc-change                 acer-blue)
-      (acer-vc-insert                 acer-success)
-      (acer-vc-delete                 acer-error))
+      (acer-prescient-1               "#DE4680"))
 
   (custom-theme-set-faces
    'guava-themes-acer
@@ -157,9 +154,9 @@
 
    ;; fringe
    `(fringe ((,acer-class (:foreground ,acer-deep-blue :background ,acer-bg))))
-   `(diff-hl-change ((,acer-class (:foreground ,acer-vc-change :background ,acer-vc-change))))
-   `(diff-hl-insert ((,acer-class (:foreground ,acer-vc-insert :background ,acer-vc-insert))))
-   `(diff-hl-delete ((,acer-class (:foreground ,acer-vc-delete :background ,acer-vc-delete))))
+   `(diff-hl-change ((,acer-class (:foreground ,acer-change :background ,acer-change))))
+   `(diff-hl-insert ((,acer-class (:foreground ,acer-success :background ,acer-success))))
+   `(diff-hl-delete ((,acer-class (:foreground ,acer-error :background ,acer-error))))
 
    ;; line-number
    `(line-number ((,acer-class (:foreground ,acer-fg :inherit default))))
@@ -251,12 +248,12 @@
    `(smerge-base ((,acer-class (:foreground ,acer-black :background ,acer-smerge-base :extend t))))
 
    ;; completions
-   `(completions-common-part ((,acer-class (:foreground ,acer-vc-change :weight bold))))
+   `(completions-common-part ((,acer-class (:foreground ,acer-change :weight bold))))
    `(completions-first-difference ((,acer-class (:foreground ,acer-error :weight bold))))
 
    ;; org-faces
-   `(org-todo ((,acer-class (:foreground ,acer-vc-delete :weight bold))))
-   `(org-done ((,acer-class (:foreground ,acer-vc-insert :weight bold))))
+   `(org-todo ((,acer-class (:foreground ,acer-error :weight bold))))
+   `(org-done ((,acer-class (:foreground ,acer-success :weight bold))))
    `(org-hide ((,acer-class (:foreground ,acer-bg))))
    `(org-table ((,acer-class (:foreground ,acer-deep-green))))
    `(org-table-header ((,acer-class (:inverse-video t :inherit org-table))))

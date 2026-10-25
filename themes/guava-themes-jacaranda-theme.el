@@ -67,6 +67,7 @@
       (jacaranda-error                     "#FF0000")
       (jacaranda-warning                   "#ebb515")
       (jacaranda-success                   "#00c200")
+      (jacaranda-change                    "#4534e3")
 
       (jacaranda-mode-line                 "#655db0")
       (jacaranda-mode-line-inactive        "#aa69e6")
@@ -104,11 +105,7 @@
       (jacaranda-orderless-3               "#3c82ff")
 
       (jacaranda-prescient-0               "#4680DE")
-      (jacaranda-prescient-1               "#DE4680")
-
-      (jacaranda-vc-change                 jacaranda-blue)
-      (jacaranda-vc-insert                 jacaranda-success)
-      (jacaranda-vc-delete                 jacaranda-error))
+      (jacaranda-prescient-1               "#DE4680"))
 
   (custom-theme-set-faces
    'guava-themes-jacaranda
@@ -155,9 +152,9 @@
 
    ;; fringe
    `(fringe ((,jacaranda-class (:foreground ,jacaranda-purple-red :background ,jacaranda-bg))))
-   `(diff-hl-change ((,jacaranda-class (:foreground ,jacaranda-vc-change :background ,jacaranda-vc-change))))
-   `(diff-hl-insert ((,jacaranda-class (:foreground ,jacaranda-vc-insert :background ,jacaranda-vc-insert))))
-   `(diff-hl-delete ((,jacaranda-class (:foreground ,jacaranda-vc-delete :background ,jacaranda-vc-delete))))
+   `(diff-hl-change ((,jacaranda-class (:foreground ,jacaranda-change :background ,jacaranda-change))))
+   `(diff-hl-insert ((,jacaranda-class (:foreground ,jacaranda-success :background ,jacaranda-success))))
+   `(diff-hl-delete ((,jacaranda-class (:foreground ,jacaranda-error :background ,jacaranda-error))))
 
    ;; line-number
    `(line-number ((,jacaranda-class (:foreground ,jacaranda-fg :inherit default))))
@@ -249,12 +246,12 @@
    `(smerge-base ((,jacaranda-class (:foreground ,jacaranda-black :background ,jacaranda-smerge-base :extend t))))
 
    ;; completions
-   `(completions-common-part ((,jacaranda-class (:foreground ,jacaranda-vc-change :weight bold))))
+   `(completions-common-part ((,jacaranda-class (:foreground ,jacaranda-change :weight bold))))
    `(completions-first-difference ((,jacaranda-class (:foreground ,jacaranda-error :weight bold))))
 
    ;; org-faces
-   `(org-todo ((,jacaranda-class (:foreground ,jacaranda-vc-delete :weight bold))))
-   `(org-done ((,jacaranda-class (:foreground ,jacaranda-vc-insert :weight bold))))
+   `(org-todo ((,jacaranda-class (:foreground ,jacaranda-error :weight bold))))
+   `(org-done ((,jacaranda-class (:foreground ,jacaranda-success :weight bold))))
    `(org-hide ((,jacaranda-class (:foreground ,jacaranda-bg))))
    `(org-table ((,jacaranda-class (:foreground ,jacaranda-deep-blue))))
    `(org-table-header ((,jacaranda-class (:inverse-video t :inherit org-table))))

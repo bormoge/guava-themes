@@ -68,6 +68,7 @@
       (eucalyptus-error                     "#e10000")
       (eucalyptus-warning                   "#f6c911")
       (eucalyptus-success                   "#1ea01e")
+      (eucalyptus-change                    "#2327dc")
 
       (eucalyptus-mode-line                 "#373c4b")
       (eucalyptus-mode-line-inactive        "#737887")
@@ -105,11 +106,7 @@
       (eucalyptus-orderless-3               "#3c82e6")
 
       (eucalyptus-prescient-0               "#4680DE")
-      (eucalyptus-prescient-1               "#DE4680")
-
-      (eucalyptus-vc-change                 eucalyptus-blue)
-      (eucalyptus-vc-insert                 eucalyptus-success)
-      (eucalyptus-vc-delete                 eucalyptus-error))
+      (eucalyptus-prescient-1               "#DE4680"))
 
   (custom-theme-set-faces
    'guava-themes-eucalyptus
@@ -156,9 +153,9 @@
 
    ;; fringe
    `(fringe ((,eucalyptus-class (:foreground ,eucalyptus-blue :background ,eucalyptus-bg))))
-   `(diff-hl-change ((,eucalyptus-class (:foreground ,eucalyptus-vc-change :background ,eucalyptus-vc-change))))
-   `(diff-hl-insert ((,eucalyptus-class (:foreground ,eucalyptus-vc-insert :background ,eucalyptus-vc-insert))))
-   `(diff-hl-delete ((,eucalyptus-class (:foreground ,eucalyptus-vc-delete :background ,eucalyptus-vc-delete))))
+   `(diff-hl-change ((,eucalyptus-class (:foreground ,eucalyptus-change :background ,eucalyptus-change))))
+   `(diff-hl-insert ((,eucalyptus-class (:foreground ,eucalyptus-success :background ,eucalyptus-success))))
+   `(diff-hl-delete ((,eucalyptus-class (:foreground ,eucalyptus-error :background ,eucalyptus-error))))
 
    ;; line-number
    `(line-number ((,eucalyptus-class (:foreground ,eucalyptus-fg :inherit default))))
@@ -250,12 +247,12 @@
    `(smerge-base ((,eucalyptus-class (:foreground ,eucalyptus-black :background ,eucalyptus-smerge-base :extend t))))
 
    ;; completions
-   `(completions-common-part ((,eucalyptus-class (:foreground ,eucalyptus-vc-change :weight bold))))
+   `(completions-common-part ((,eucalyptus-class (:foreground ,eucalyptus-change :weight bold))))
    `(completions-first-difference ((,eucalyptus-class (:foreground ,eucalyptus-error :weight bold))))
 
    ;; org-faces
-   `(org-todo ((,eucalyptus-class (:foreground ,eucalyptus-vc-delete :weight bold))))
-   `(org-done ((,eucalyptus-class (:foreground ,eucalyptus-vc-insert :weight bold))))
+   `(org-todo ((,eucalyptus-class (:foreground ,eucalyptus-error :weight bold))))
+   `(org-done ((,eucalyptus-class (:foreground ,eucalyptus-success :weight bold))))
    `(org-hide ((,eucalyptus-class (:foreground ,eucalyptus-bg))))
    `(org-table ((,eucalyptus-class (:foreground ,eucalyptus-deep-blue))))
    `(org-table-header ((,eucalyptus-class (:inverse-video t :inherit org-table))))

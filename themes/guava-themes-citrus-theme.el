@@ -72,6 +72,7 @@
       (citrus-error                     "#FF0000")
       (citrus-warning                   "#ffbe00")
       (citrus-success                   "#2bdc26")
+      (citrus-change                    "#2327dc")
 
       (citrus-mode-line                 "#589337")
       (citrus-mode-line-inactive        "#6ea56e")
@@ -109,11 +110,7 @@
       (citrus-orderless-3               "#3c82ff")
 
       (citrus-prescient-0               "#4680DE")
-      (citrus-prescient-1               "#DE4680")
-
-      (citrus-vc-change                 citrus-deep-blue)
-      (citrus-vc-insert                 citrus-success)
-      (citrus-vc-delete                 citrus-error))
+      (citrus-prescient-1               "#DE4680"))
 
   (custom-theme-set-faces
    'guava-themes-citrus
@@ -160,9 +157,9 @@
 
    ;; fringe
    `(fringe ((,citrus-class (:foreground ,citrus-red :background ,citrus-bg))))
-   `(diff-hl-change ((,citrus-class (:foreground ,citrus-vc-change :background ,citrus-vc-change))))
-   `(diff-hl-insert ((,citrus-class (:foreground ,citrus-vc-insert :background ,citrus-vc-insert))))
-   `(diff-hl-delete ((,citrus-class (:foreground ,citrus-vc-delete :background ,citrus-vc-delete))))
+   `(diff-hl-change ((,citrus-class (:foreground ,citrus-change :background ,citrus-change))))
+   `(diff-hl-insert ((,citrus-class (:foreground ,citrus-success :background ,citrus-success))))
+   `(diff-hl-delete ((,citrus-class (:foreground ,citrus-error :background ,citrus-error))))
 
    ;; line-number
    `(line-number ((,citrus-class (:foreground ,citrus-fg :inherit default))))
@@ -254,12 +251,12 @@
    `(smerge-base ((,citrus-class (:foreground ,citrus-black :background ,citrus-smerge-base :extend t))))
 
    ;; completions
-   `(completions-common-part ((,citrus-class (:foreground ,citrus-vc-change :weight bold))))
+   `(completions-common-part ((,citrus-class (:foreground ,citrus-change :weight bold))))
    `(completions-first-difference ((,citrus-class (:foreground ,citrus-error :weight bold))))
 
    ;; org-faces
-   `(org-todo ((,citrus-class (:foreground ,citrus-vc-delete :weight bold))))
-   `(org-done ((,citrus-class (:foreground ,citrus-vc-insert :weight bold))))
+   `(org-todo ((,citrus-class (:foreground ,citrus-error :weight bold))))
+   `(org-done ((,citrus-class (:foreground ,citrus-success :weight bold))))
    `(org-hide ((,citrus-class (:foreground ,citrus-bg))))
    `(org-table ((,citrus-class (:foreground ,citrus-orange-red))))
    `(org-table-header ((,citrus-class (:inverse-video t :inherit org-table))))

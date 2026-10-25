@@ -71,6 +71,7 @@
       (rubus-error                     "#ff1e00")
       (rubus-warning                   "#f6d909")
       (rubus-success                   "#1ebe1e")
+      (rubus-change                    "#1455f1")
 
       (rubus-mode-line                 "#aa3232")
       (rubus-mode-line-inactive        "#cd7378")
@@ -108,11 +109,7 @@
       (rubus-orderless-3               "#3c82ff")
 
       (rubus-prescient-0               "#46C8A5")
-      (rubus-prescient-1               "#C84669")
-
-      (rubus-vc-change                 rubus-blue)
-      (rubus-vc-insert                 rubus-success)
-      (rubus-vc-delete                 rubus-error))
+      (rubus-prescient-1               "#C84669"))
 
   (custom-theme-set-faces
    'guava-themes-rubus
@@ -159,9 +156,9 @@
 
    ;; fringe
    `(fringe ((,rubus-class (:foreground ,rubus-yellow :background ,rubus-bg))))
-   `(diff-hl-change ((,rubus-class (:foreground ,rubus-vc-change :background ,rubus-vc-change))))
-   `(diff-hl-insert ((,rubus-class (:foreground ,rubus-vc-insert :background ,rubus-vc-insert))))
-   `(diff-hl-delete ((,rubus-class (:foreground ,rubus-vc-delete :background ,rubus-vc-delete))))
+   `(diff-hl-change ((,rubus-class (:foreground ,rubus-change :background ,rubus-change))))
+   `(diff-hl-insert ((,rubus-class (:foreground ,rubus-success :background ,rubus-success))))
+   `(diff-hl-delete ((,rubus-class (:foreground ,rubus-error :background ,rubus-error))))
 
    ;; line-number
    `(line-number ((,rubus-class (:foreground ,rubus-fg :inherit default))))
@@ -257,8 +254,8 @@
    `(completions-first-difference ((,rubus-class (:foreground ,rubus-error :weight bold))))
 
    ;; org-faces
-   `(org-todo ((,rubus-class (:foreground ,rubus-vc-delete :weight bold))))
-   `(org-done ((,rubus-class (:foreground ,rubus-vc-insert :weight bold))))
+   `(org-todo ((,rubus-class (:foreground ,rubus-error :weight bold))))
+   `(org-done ((,rubus-class (:foreground ,rubus-success :weight bold))))
    `(org-hide ((,rubus-class (:foreground ,rubus-bg))))
    `(org-table ((,rubus-class (:foreground ,rubus-pink-cream))))
    `(org-table-header ((,rubus-class (:inverse-video t :inherit org-table))))

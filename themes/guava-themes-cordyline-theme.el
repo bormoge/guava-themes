@@ -68,6 +68,7 @@
       (cordyline-error                     "#FF0000")
       (cordyline-warning                   "#f6d909")
       (cordyline-success                   "#23a334")
+      (cordyline-change                    "#214bd5")
 
       (cordyline-mode-line                 "#a03c5a")
       (cordyline-mode-line-inactive        "#502d50")
@@ -105,11 +106,7 @@
       (cordyline-orderless-3               "#3c82ff")
 
       (cordyline-prescient-0               "#46C8A5")
-      (cordyline-prescient-1               "#C84669")
-
-      (cordyline-vc-change                 cordyline-deep-blue)
-      (cordyline-vc-insert                 cordyline-success)
-      (cordyline-vc-delete                 cordyline-error))
+      (cordyline-prescient-1               "#C84669"))
 
   (custom-theme-set-faces
    'guava-themes-cordyline
@@ -156,9 +153,9 @@
 
    ;; fringe
    `(fringe ((,cordyline-class (:foreground ,cordyline-cyan :background ,cordyline-bg))))
-   `(diff-hl-change ((,cordyline-class (:foreground ,cordyline-vc-change :background ,cordyline-vc-change))))
-   `(diff-hl-insert ((,cordyline-class (:foreground ,cordyline-vc-insert :background ,cordyline-vc-insert))))
-   `(diff-hl-delete ((,cordyline-class (:foreground ,cordyline-vc-delete :background ,cordyline-vc-delete))))
+   `(diff-hl-change ((,cordyline-class (:foreground ,cordyline-change :background ,cordyline-change))))
+   `(diff-hl-insert ((,cordyline-class (:foreground ,cordyline-success :background ,cordyline-success))))
+   `(diff-hl-delete ((,cordyline-class (:foreground ,cordyline-error :background ,cordyline-error))))
 
    ;; line-number
    `(line-number ((,cordyline-class (:foreground ,cordyline-fg :inherit default))))
@@ -254,8 +251,8 @@
    `(completions-first-difference ((,cordyline-class (:foreground ,cordyline-error :weight bold))))
 
    ;; org-faces
-   `(org-todo ((,cordyline-class (:foreground ,cordyline-vc-delete :weight bold))))
-   `(org-done ((,cordyline-class (:foreground ,cordyline-vc-insert :weight bold))))
+   `(org-todo ((,cordyline-class (:foreground ,cordyline-error :weight bold))))
+   `(org-done ((,cordyline-class (:foreground ,cordyline-success :weight bold))))
    `(org-hide ((,cordyline-class (:foreground ,cordyline-bg))))
    `(org-table ((,cordyline-class (:foreground ,cordyline-light-purple))))
    `(org-table-header ((,cordyline-class (:inverse-video t :inherit org-table))))

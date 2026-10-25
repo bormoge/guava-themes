@@ -73,6 +73,7 @@
       (ceiba-error                     "#ff0000")
       (ceiba-warning                   "#f6c911")
       (ceiba-success                   "#1ea01e")
+      (ceiba-change                    "#2327dc")
 
       (ceiba-mode-line                 "#5b6452")
       (ceiba-mode-line-inactive        "#826e51")
@@ -110,11 +111,7 @@
       (ceiba-orderless-3               "#3c82e6")
 
       (ceiba-prescient-0               "#4680DE")
-      (ceiba-prescient-1               "#DE4680")
-
-      (ceiba-vc-change                 ceiba-blue)
-      (ceiba-vc-insert                 ceiba-success)
-      (ceiba-vc-delete                 ceiba-error))
+      (ceiba-prescient-1               "#DE4680"))
 
   (custom-theme-set-faces
    'guava-themes-ceiba
@@ -161,9 +158,9 @@
 
    ;; fringe
    `(fringe ((,ceiba-class (:foreground ,ceiba-blue :background ,ceiba-bg))))
-   `(diff-hl-change ((,ceiba-class (:foreground ,ceiba-vc-change :background ,ceiba-vc-change))))
-   `(diff-hl-insert ((,ceiba-class (:foreground ,ceiba-vc-insert :background ,ceiba-vc-insert))))
-   `(diff-hl-delete ((,ceiba-class (:foreground ,ceiba-vc-delete :background ,ceiba-vc-delete))))
+   `(diff-hl-change ((,ceiba-class (:foreground ,ceiba-change :background ,ceiba-change))))
+   `(diff-hl-insert ((,ceiba-class (:foreground ,ceiba-success :background ,ceiba-success))))
+   `(diff-hl-delete ((,ceiba-class (:foreground ,ceiba-error :background ,ceiba-error))))
 
    ;; line-number
    `(line-number ((,ceiba-class (:foreground ,ceiba-fg :inherit default))))
@@ -255,12 +252,12 @@
    `(smerge-base ((,ceiba-class (:foreground ,ceiba-black :background ,ceiba-smerge-base :extend t))))
 
    ;; completions
-   `(completions-common-part ((,ceiba-class (:foreground ,ceiba-vc-change :weight bold))))
+   `(completions-common-part ((,ceiba-class (:foreground ,ceiba-change :weight bold))))
    `(completions-first-difference ((,ceiba-class (:foreground ,ceiba-error :weight bold))))
 
    ;; org-faces
-   `(org-todo ((,ceiba-class (:foreground ,ceiba-vc-delete :weight bold))))
-   `(org-done ((,ceiba-class (:foreground ,ceiba-vc-insert :weight bold))))
+   `(org-todo ((,ceiba-class (:foreground ,ceiba-error :weight bold))))
+   `(org-done ((,ceiba-class (:foreground ,ceiba-success :weight bold))))
    `(org-hide ((,ceiba-class (:foreground ,ceiba-bg))))
    `(org-table ((,ceiba-class (:foreground ,ceiba-brown-wood))))
    `(org-table-header ((,ceiba-class (:inverse-video t :inherit org-table))))

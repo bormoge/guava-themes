@@ -69,6 +69,7 @@
       (pyrus-error                     "#ff0000")
       (pyrus-warning                   "#ffd200")
       (pyrus-success                   "#228B22")
+      (pyrus-change                    "#2a4ad9")
 
       (pyrus-mode-line                 "#295323")
       (pyrus-mode-line-inactive        "#228b22")
@@ -106,11 +107,7 @@
       (pyrus-orderless-3               "#3c82ff")
 
       (pyrus-prescient-0               "#4680DE")
-      (pyrus-prescient-1               "#DE4680")
-
-      (pyrus-vc-change                 pyrus-blue)
-      (pyrus-vc-insert                 pyrus-success)
-      (pyrus-vc-delete                 pyrus-error))
+      (pyrus-prescient-1               "#DE4680"))
 
   (custom-theme-set-faces
    'guava-themes-pyrus
@@ -157,9 +154,9 @@
 
    ;; fringe
    `(fringe ((,pyrus-class (:foreground ,pyrus-blue :background ,pyrus-bg))))
-   `(diff-hl-change ((,pyrus-class (:foreground ,pyrus-vc-change :background ,pyrus-vc-change))))
-   `(diff-hl-insert ((,pyrus-class (:foreground ,pyrus-vc-insert :background ,pyrus-vc-insert))))
-   `(diff-hl-delete ((,pyrus-class (:foreground ,pyrus-vc-delete :background ,pyrus-vc-delete))))
+   `(diff-hl-change ((,pyrus-class (:foreground ,pyrus-change :background ,pyrus-change))))
+   `(diff-hl-insert ((,pyrus-class (:foreground ,pyrus-success :background ,pyrus-success))))
+   `(diff-hl-delete ((,pyrus-class (:foreground ,pyrus-error :background ,pyrus-error))))
 
    ;; line-number
    `(line-number ((,pyrus-class (:foreground ,pyrus-fg :inherit default))))
@@ -251,12 +248,12 @@
    `(smerge-base ((,pyrus-class (:foreground ,pyrus-black :background ,pyrus-smerge-base :extend t))))
 
    ;; completions
-   `(completions-common-part ((,pyrus-class (:foreground ,pyrus-vc-change :weight bold))))
+   `(completions-common-part ((,pyrus-class (:foreground ,pyrus-change :weight bold))))
    `(completions-first-difference ((,pyrus-class (:foreground ,pyrus-error :weight bold))))
 
    ;; org-faces
-   `(org-todo ((,pyrus-class (:foreground ,pyrus-vc-delete :weight bold))))
-   `(org-done ((,pyrus-class (:foreground ,pyrus-vc-insert :weight bold))))
+   `(org-todo ((,pyrus-class (:foreground ,pyrus-error :weight bold))))
+   `(org-done ((,pyrus-class (:foreground ,pyrus-success :weight bold))))
    `(org-hide ((,pyrus-class (:foreground ,pyrus-bg))))
    `(org-table ((,pyrus-class (:foreground ,pyrus-green))))
    `(org-table-header ((,pyrus-class (:inverse-video t :inherit org-table))))

@@ -68,6 +68,7 @@
       (malus-error                     "#d70000")
       (malus-warning                   "#f6d911")
       (malus-success                   "#23d723")
+      (malus-change                    "#4548e3")
 
       (malus-mode-line                 "#cd5a5f")
       (malus-mode-line-inactive        "#49835f")
@@ -105,11 +106,7 @@
       (malus-orderless-3               "#3c82ff")
 
       (malus-prescient-0               "#46C8A5")
-      (malus-prescient-1               "#C84669")
-
-      (malus-vc-change                 malus-blue)
-      (malus-vc-insert                 malus-success)
-      (malus-vc-delete                 malus-error))
+      (malus-prescient-1               "#C84669"))
 
   (custom-theme-set-faces
    'guava-themes-malus
@@ -156,9 +153,9 @@
 
    ;; fringe
    `(fringe ((,malus-class (:foreground ,malus-cyan :background ,malus-bg))))
-   `(diff-hl-change ((,malus-class (:foreground ,malus-vc-change :background ,malus-vc-change))))
-   `(diff-hl-insert ((,malus-class (:foreground ,malus-vc-insert :background ,malus-vc-insert))))
-   `(diff-hl-delete ((,malus-class (:foreground ,malus-vc-delete :background ,malus-vc-delete))))
+   `(diff-hl-change ((,malus-class (:foreground ,malus-change :background ,malus-change))))
+   `(diff-hl-insert ((,malus-class (:foreground ,malus-success :background ,malus-success))))
+   `(diff-hl-delete ((,malus-class (:foreground ,malus-error :background ,malus-error))))
 
    ;; line-number
    `(line-number ((,malus-class (:foreground ,malus-fg :inherit default))))
@@ -254,8 +251,8 @@
    `(completions-first-difference ((,malus-class (:foreground ,malus-error :weight bold))))
 
    ;; org-faces
-   `(org-todo ((,malus-class (:foreground ,malus-vc-delete :weight bold))))
-   `(org-done ((,malus-class (:foreground ,malus-vc-insert :weight bold))))
+   `(org-todo ((,malus-class (:foreground ,malus-error :weight bold))))
+   `(org-done ((,malus-class (:foreground ,malus-success :weight bold))))
    `(org-hide ((,malus-class (:foreground ,malus-bg))))
    `(org-table ((,malus-class (:foreground ,malus-red-sweetango))))
    `(org-table-header ((,malus-class (:inverse-video t :inherit org-table))))

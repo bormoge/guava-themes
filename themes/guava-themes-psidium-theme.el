@@ -66,6 +66,7 @@
       (psidium-error                     "#FF0000")
       (psidium-warning                   "#d6c800")
       (psidium-success                   "#228B22")
+      (psidium-change                    "#2a4ad9")
 
       (psidium-mode-line                 "#F8767C")
       (psidium-mode-line-inactive        "#aecd34")
@@ -103,11 +104,7 @@
       (psidium-orderless-3               "#3c82ff")
 
       (psidium-prescient-0               "#4680DE")
-      (psidium-prescient-1               "#DE4680")
-
-      (psidium-vc-change                 psidium-blue)
-      (psidium-vc-insert                 psidium-success)
-      (psidium-vc-delete                 psidium-error))
+      (psidium-prescient-1               "#DE4680"))
 
   (custom-theme-set-faces
    'guava-themes-psidium
@@ -154,9 +151,9 @@
 
    ;; fringe
    `(fringe ((,psidium-class (:foreground ,psidium-blue :background ,psidium-bg))))
-   `(diff-hl-change ((,psidium-class (:foreground ,psidium-vc-change :background ,psidium-vc-change))))
-   `(diff-hl-insert ((,psidium-class (:foreground ,psidium-vc-insert :background ,psidium-vc-insert))))
-   `(diff-hl-delete ((,psidium-class (:foreground ,psidium-vc-delete :background ,psidium-vc-delete))))
+   `(diff-hl-change ((,psidium-class (:foreground ,psidium-change :background ,psidium-change))))
+   `(diff-hl-insert ((,psidium-class (:foreground ,psidium-success :background ,psidium-success))))
+   `(diff-hl-delete ((,psidium-class (:foreground ,psidium-error :background ,psidium-error))))
 
    ;; line-number
    `(line-number ((,psidium-class (:foreground ,psidium-fg :inherit default))))
@@ -248,12 +245,12 @@
    `(smerge-base ((,psidium-class (:foreground ,psidium-black :background ,psidium-smerge-base :extend t))))
 
    ;; completions
-   `(completions-common-part ((,psidium-class (:foreground ,psidium-vc-change :weight bold))))
+   `(completions-common-part ((,psidium-class (:foreground ,psidium-change :weight bold))))
    `(completions-first-difference ((,psidium-class (:foreground ,psidium-error :weight bold))))
 
    ;; org-faces
-   `(org-todo ((,psidium-class (:foreground ,psidium-vc-delete :weight bold))))
-   `(org-done ((,psidium-class (:foreground ,psidium-vc-insert :weight bold))))
+   `(org-todo ((,psidium-class (:foreground ,psidium-error :weight bold))))
+   `(org-done ((,psidium-class (:foreground ,psidium-success :weight bold))))
    `(org-hide ((,psidium-class (:foreground ,psidium-bg))))
    `(org-table ((,psidium-class (:foreground ,psidium-deep-green))))
    `(org-table-header ((,psidium-class (:inverse-video t :inherit org-table))))

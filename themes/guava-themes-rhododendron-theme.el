@@ -71,6 +71,7 @@
       (rhododendron-error                     "#FF0000")
       (rhododendron-warning                   "#F68511")
       (rhododendron-success                   "#29b425")
+      (rhododendron-change                    "#3c3cee")
 
       (rhododendron-mode-line                 "#c00353")
       (rhododendron-mode-line-inactive        "#fd3aae")
@@ -108,11 +109,7 @@
       (rhododendron-orderless-3               "#3c82ff")
 
       (rhododendron-prescient-0               "#4680DE")
-      (rhododendron-prescient-1               "#DE4680")
-
-      (rhododendron-vc-change                 rhododendron-blue)
-      (rhododendron-vc-insert                 rhododendron-success)
-      (rhododendron-vc-delete                 rhododendron-error))
+      (rhododendron-prescient-1               "#DE4680"))
 
   (custom-theme-set-faces
    'guava-themes-rhododendron
@@ -159,9 +156,9 @@
 
    ;; fringe
    `(fringe ((,rhododendron-class (:foreground ,rhododendron-red :background ,rhododendron-bg))))
-   `(diff-hl-change ((,rhododendron-class (:foreground ,rhododendron-vc-change :background ,rhododendron-vc-change))))
-   `(diff-hl-insert ((,rhododendron-class (:foreground ,rhododendron-vc-insert :background ,rhododendron-vc-insert))))
-   `(diff-hl-delete ((,rhododendron-class (:foreground ,rhododendron-vc-delete :background ,rhododendron-vc-delete))))
+   `(diff-hl-change ((,rhododendron-class (:foreground ,rhododendron-change :background ,rhododendron-change))))
+   `(diff-hl-insert ((,rhododendron-class (:foreground ,rhododendron-success :background ,rhododendron-success))))
+   `(diff-hl-delete ((,rhododendron-class (:foreground ,rhododendron-error :background ,rhododendron-error))))
 
    ;; line-number
    `(line-number ((,rhododendron-class (:foreground ,rhododendron-fg :inherit default))))
@@ -253,12 +250,12 @@
    `(smerge-base ((,rhododendron-class (:foreground ,rhododendron-black :background ,rhododendron-smerge-base :extend t))))
 
    ;; completions
-   `(completions-common-part ((,rhododendron-class (:foreground ,rhododendron-vc-change :weight bold))))
+   `(completions-common-part ((,rhododendron-class (:foreground ,rhododendron-change :weight bold))))
    `(completions-first-difference ((,rhododendron-class (:foreground ,rhododendron-error :weight bold))))
 
    ;; org-faces
-   `(org-todo ((,rhododendron-class (:foreground ,rhododendron-vc-delete :weight bold))))
-   `(org-done ((,rhododendron-class (:foreground ,rhododendron-vc-insert :weight bold))))
+   `(org-todo ((,rhododendron-class (:foreground ,rhododendron-error :weight bold))))
+   `(org-done ((,rhododendron-class (:foreground ,rhododendron-success :weight bold))))
    `(org-hide ((,rhododendron-class (:foreground ,rhododendron-bg))))
    `(org-table ((,rhododendron-class (:foreground ,rhododendron-red))))
    `(org-table-header ((,rhododendron-class (:inverse-video t :inherit org-table))))

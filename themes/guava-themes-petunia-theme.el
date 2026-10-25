@@ -67,6 +67,7 @@
       (petunia-error                     "#FF0000")
       (petunia-warning                   "#ffff00")
       (petunia-success                   "#00ff00")
+      (petunia-change                    "#3246cd")
 
       (petunia-mode-line                 "#8c6ecd")
       (petunia-mode-line-inactive        "#008741")
@@ -104,11 +105,7 @@
       (petunia-orderless-3               "#009bff")
 
       (petunia-prescient-0               "#46C8A5")
-      (petunia-prescient-1               "#C84669")
-
-      (petunia-vc-change                 petunia-blue)
-      (petunia-vc-insert                 petunia-success)
-      (petunia-vc-delete                 petunia-error))
+      (petunia-prescient-1               "#C84669"))
 
   (custom-theme-set-faces
    'guava-themes-petunia
@@ -155,9 +152,9 @@
 
    ;; fringe
    `(fringe ((,petunia-class (:foreground ,petunia-red :background ,petunia-bg))))
-   `(diff-hl-change ((,petunia-class (:foreground ,petunia-vc-change :background ,petunia-vc-change))))
-   `(diff-hl-insert ((,petunia-class (:foreground ,petunia-vc-insert :background ,petunia-vc-insert))))
-   `(diff-hl-delete ((,petunia-class (:foreground ,petunia-vc-delete :background ,petunia-vc-delete))))
+   `(diff-hl-change ((,petunia-class (:foreground ,petunia-change :background ,petunia-change))))
+   `(diff-hl-insert ((,petunia-class (:foreground ,petunia-success :background ,petunia-success))))
+   `(diff-hl-delete ((,petunia-class (:foreground ,petunia-error :background ,petunia-error))))
 
    ;; line-number
    `(line-number ((,petunia-class (:foreground ,petunia-fg :inherit default))))
@@ -253,8 +250,8 @@
    `(completions-first-difference ((,petunia-class (:foreground ,petunia-error :weight bold))))
 
    ;; org-faces
-   `(org-todo ((,petunia-class (:foreground ,petunia-vc-delete :weight bold))))
-   `(org-done ((,petunia-class (:foreground ,petunia-vc-insert :weight bold))))
+   `(org-todo ((,petunia-class (:foreground ,petunia-error :weight bold))))
+   `(org-done ((,petunia-class (:foreground ,petunia-success :weight bold))))
    `(org-hide ((,petunia-class (:foreground ,petunia-bg))))
    `(org-table ((,petunia-class (:foreground ,petunia-green-forest))))
    `(org-table-header ((,petunia-class (:inverse-video t :inherit org-table))))

@@ -69,6 +69,7 @@
       (vaccinium-error                     "#FF0000")
       (vaccinium-warning                   "#f6d909")
       (vaccinium-success                   "#1ebe1e")
+      (vaccinium-change                    "#1455f1")
 
       (vaccinium-mode-line                 "#5582d7")
       (vaccinium-mode-line-inactive        "#6a7e98")
@@ -106,11 +107,7 @@
       (vaccinium-orderless-3               "#3c82ff")
 
       (vaccinium-prescient-0               "#46C8A5")
-      (vaccinium-prescient-1               "#C84669")
-
-      (vaccinium-vc-change                 vaccinium-alt-blue)
-      (vaccinium-vc-insert                 vaccinium-success)
-      (vaccinium-vc-delete                 vaccinium-error))
+      (vaccinium-prescient-1               "#C84669"))
 
   (custom-theme-set-faces
    'guava-themes-vaccinium
@@ -157,9 +154,9 @@
 
    ;; fringe
    `(fringe ((,vaccinium-class (:foreground ,vaccinium-red :background ,vaccinium-bg))))
-   `(diff-hl-change ((,vaccinium-class (:foreground ,vaccinium-vc-change :background ,vaccinium-vc-change))))
-   `(diff-hl-insert ((,vaccinium-class (:foreground ,vaccinium-vc-insert :background ,vaccinium-vc-insert))))
-   `(diff-hl-delete ((,vaccinium-class (:foreground ,vaccinium-vc-delete :background ,vaccinium-vc-delete))))
+   `(diff-hl-change ((,vaccinium-class (:foreground ,vaccinium-change :background ,vaccinium-change))))
+   `(diff-hl-insert ((,vaccinium-class (:foreground ,vaccinium-success :background ,vaccinium-success))))
+   `(diff-hl-delete ((,vaccinium-class (:foreground ,vaccinium-error :background ,vaccinium-error))))
 
    ;; line-number
    `(line-number ((,vaccinium-class (:foreground ,vaccinium-fg :inherit default))))
@@ -255,8 +252,8 @@
    `(completions-first-difference ((,vaccinium-class (:foreground ,vaccinium-error :weight bold))))
 
    ;; org-faces
-   `(org-todo ((,vaccinium-class (:foreground ,vaccinium-vc-delete :weight bold))))
-   `(org-done ((,vaccinium-class (:foreground ,vaccinium-vc-insert :weight bold))))
+   `(org-todo ((,vaccinium-class (:foreground ,vaccinium-error :weight bold))))
+   `(org-done ((,vaccinium-class (:foreground ,vaccinium-success :weight bold))))
    `(org-hide ((,vaccinium-class (:foreground ,vaccinium-bg))))
    `(org-table ((,vaccinium-class (:foreground ,vaccinium-blueberry))))
    `(org-table-header ((,vaccinium-class (:inverse-video t :inherit org-table))))

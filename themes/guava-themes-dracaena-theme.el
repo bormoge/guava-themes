@@ -70,6 +70,7 @@
       (dracaena-error                     "#FF0000")
       (dracaena-warning                   "#f6be14")
       (dracaena-success                   "#29d925")
+      (dracaena-change                    "#2d50d5")
 
       (dracaena-mode-line                 "#883634")
       (dracaena-mode-line-inactive        "#353838")
@@ -107,11 +108,7 @@
       (dracaena-orderless-3               "#3c82ff")
 
       (dracaena-prescient-0               "#46E6A6")
-      (dracaena-prescient-1               "#E64686")
-
-      (dracaena-vc-change                 dracaena-blue)
-      (dracaena-vc-insert                 dracaena-green)
-      (dracaena-vc-delete                 dracaena-error))
+      (dracaena-prescient-1               "#E64686"))
 
   (custom-theme-set-faces
    'guava-themes-dracaena
@@ -158,9 +155,9 @@
 
    ;; fringe
    `(fringe ((,dracaena-class (:foreground ,dracaena-light-orange :background ,dracaena-bg))))
-   `(diff-hl-change ((,dracaena-class (:foreground ,dracaena-vc-change :background ,dracaena-vc-change))))
-   `(diff-hl-insert ((,dracaena-class (:foreground ,dracaena-vc-insert :background ,dracaena-vc-insert))))
-   `(diff-hl-delete ((,dracaena-class (:foreground ,dracaena-vc-delete :background ,dracaena-vc-delete))))
+   `(diff-hl-change ((,dracaena-class (:foreground ,dracaena-change :background ,dracaena-change))))
+   `(diff-hl-insert ((,dracaena-class (:foreground ,dracaena-success :background ,dracaena-success))))
+   `(diff-hl-delete ((,dracaena-class (:foreground ,dracaena-error :background ,dracaena-error))))
 
    ;; line-number
    `(line-number ((,dracaena-class (:foreground ,dracaena-fg :inherit default))))
@@ -256,8 +253,8 @@
    `(completions-first-difference ((,dracaena-class (:foreground ,dracaena-error :weight bold))))
 
    ;; org-faces
-   `(org-todo ((,dracaena-class (:foreground ,dracaena-vc-delete :weight bold))))
-   `(org-done ((,dracaena-class (:foreground ,dracaena-vc-insert :weight bold))))
+   `(org-todo ((,dracaena-class (:foreground ,dracaena-error :weight bold))))
+   `(org-done ((,dracaena-class (:foreground ,dracaena-success :weight bold))))
    `(org-hide ((,dracaena-class (:foreground ,dracaena-bg))))
    `(org-table ((,dracaena-class (:foreground ,dracaena-light-orange))))
    `(org-table-header ((,dracaena-class (:inverse-video t :inherit org-table))))

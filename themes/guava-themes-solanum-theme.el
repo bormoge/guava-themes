@@ -68,6 +68,7 @@
       (solanum-error                     "#FF0000")
       (solanum-warning                   "#f6d909")
       (solanum-success                   "#23a334")
+      (solanum-change                    "#0d62b2")
 
       (solanum-mode-line                 "#693c64")
       (solanum-mode-line-inactive        "#3b3550")
@@ -105,11 +106,7 @@
       (solanum-orderless-3               "#3c82ff")
 
       (solanum-prescient-0               "#46C8A5")
-      (solanum-prescient-1               "#C84669")
-
-      (solanum-vc-change                 solanum-blue)
-      (solanum-vc-insert                 solanum-success)
-      (solanum-vc-delete                 solanum-error))
+      (solanum-prescient-1               "#C84669"))
 
   (custom-theme-set-faces
    'guava-themes-solanum
@@ -156,9 +153,9 @@
 
    ;; fringe
    `(fringe ((,solanum-class (:foreground ,solanum-red-tomato :background ,solanum-bg))))
-   `(diff-hl-change ((,solanum-class (:foreground ,solanum-vc-change :background ,solanum-vc-change))))
-   `(diff-hl-insert ((,solanum-class (:foreground ,solanum-vc-insert :background ,solanum-vc-insert))))
-   `(diff-hl-delete ((,solanum-class (:foreground ,solanum-vc-delete :background ,solanum-vc-delete))))
+   `(diff-hl-change ((,solanum-class (:foreground ,solanum-change :background ,solanum-change))))
+   `(diff-hl-insert ((,solanum-class (:foreground ,solanum-success :background ,solanum-success))))
+   `(diff-hl-delete ((,solanum-class (:foreground ,solanum-error :background ,solanum-error))))
 
    ;; line-number
    `(line-number ((,solanum-class (:foreground ,solanum-fg :inherit default))))
@@ -254,8 +251,8 @@
    `(completions-first-difference ((,solanum-class (:foreground ,solanum-error :weight bold))))
 
    ;; org-faces
-   `(org-todo ((,solanum-class (:foreground ,solanum-vc-delete :weight bold))))
-   `(org-done ((,solanum-class (:foreground ,solanum-vc-insert :weight bold))))
+   `(org-todo ((,solanum-class (:foreground ,solanum-error :weight bold))))
+   `(org-done ((,solanum-class (:foreground ,solanum-success :weight bold))))
    `(org-hide ((,solanum-class (:foreground ,solanum-bg))))
    `(org-table ((,solanum-class (:foreground ,solanum-yellow-potato))))
    `(org-table-header ((,solanum-class (:inverse-video t :inherit org-table))))
