@@ -38,8 +38,7 @@
       (dracaena-black                     "#000000")
       (dracaena-white                     "#FFFFFF")
 
-      (dracaena-gray                      "#4f4f4f")
-      (dracaena-dark-gray                 "#353838")
+      (dracaena-gray                      "#484e4b")
 
       (dracaena-light-green               "#78be78")
       (dracaena-green                     "#288c23")
@@ -64,7 +63,7 @@
       (dracaena-fg                        "#becee6")
       (dracaena-fg-2                      "#8292aa")
       (dracaena-bg                        "#343a37")
-      (dracaena-highlight                 "#202623")
+      (dracaena-highlight                 "#252b28")
       (dracaena-shadow                    "#b3b3b3")
 
       (dracaena-error                     "#FF0000")
@@ -73,7 +72,7 @@
       (dracaena-change                    "#2d50d5")
 
       (dracaena-mode-line                 "#883634")
-      (dracaena-mode-line-inactive        "#353838")
+      (dracaena-mode-line-inactive        "#5c625f")
       (dracaena-mode-line-modified        "#e6825f")
       (dracaena-bell                      "#257950")
 
