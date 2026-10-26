@@ -71,7 +71,7 @@
       (cordyline-change                    "#214bd5")
 
       (cordyline-mode-line                 "#a03c5a")
-      (cordyline-mode-line-inactive        "#502d50")
+      (cordyline-mode-line-inactive        "#5a375a")
       (cordyline-mode-line-modified        "#4f94cd")
       (cordyline-bell                      "#3C8CA0")
 
