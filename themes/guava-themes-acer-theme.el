@@ -72,7 +72,7 @@
       (acer-change                    "#2134d5")
 
       (acer-mode-line                 "#e76144")
-      (acer-mode-line-inactive        "#ff8c4e")
+      (acer-mode-line-inactive        "#eb8c4e")
       (acer-mode-line-modified        "#277a6a")
       (acer-bell                      "#4478E7")
 
