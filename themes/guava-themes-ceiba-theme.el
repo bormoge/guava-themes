@@ -38,7 +38,7 @@
       (ceiba-black                     "#000000")
       (ceiba-white                     "#FFFFFF")
 
-      ;; (ceiba-light-gray                "#bab49e")
+      (ceiba-light-gray                "#bab49e")
       (ceiba-gray-blue                 "#798585")
 
       (ceiba-light-green               "#64786e")
@@ -68,7 +68,7 @@
       (ceiba-fg-2                      "#3c3c3c")
       (ceiba-bg                        "#bab49e")
       (ceiba-highlight                 "#a6a08a")
-      (ceiba-shadow                    "#898989")
+      (ceiba-shadow                    "#7f7f7f")
 
       (ceiba-error                     "#ff0000")
       (ceiba-warning                   "#f6c911")
@@ -341,9 +341,9 @@
    ;; doom-modeline-buffer-file-name-style
    `(doom-modeline-project-name ((,ceiba-class (:foreground ,ceiba-steel-blue :inherit (doom-modeline bold italic)))))
    `(doom-modeline-project-dir ((,ceiba-class (:foreground ,ceiba-steel-blue :inherit (doom-modeline bold)))))
-   `(doom-modeline-project-root-dir ((,ceiba-class (:foreground ,ceiba-shadow :inherit (doom-modeline bold)))))
-   `(doom-modeline-project-parent-dir ((,ceiba-class (:foreground ,ceiba-shadow :inherit (doom-modeline bold)))))
-   `(doom-modeline-buffer-minor-mode ((,ceiba-class (:foreground ,ceiba-shadow :inherit (doom-modeline)))))
+   `(doom-modeline-project-root-dir ((,ceiba-class (:foreground ,ceiba-light-gray :inherit (doom-modeline bold)))))
+   `(doom-modeline-project-parent-dir ((,ceiba-class (:foreground ,ceiba-light-gray :inherit (doom-modeline bold)))))
+   `(doom-modeline-buffer-minor-mode ((,ceiba-class (:foreground ,ceiba-light-gray :inherit (doom-modeline)))))
    `(doom-modeline-buffer-modified ((,ceiba-class (:foreground ,ceiba-mode-line-modified :inherit (doom-modeline warning bold)))))
 
    ;; corfu
