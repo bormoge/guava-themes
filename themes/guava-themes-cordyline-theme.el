@@ -280,10 +280,21 @@
    `(query-replace ((,cordyline-class (:inherit isearch))))
    `(match ((,cordyline-class (:inherit lazy-highlight))))
 
-   ;; custom-button
+   ;; custom
+   ;; (progn (setopt custom-raised-buttons nil) (setq mouse-highlight t))
    `(custom-button ((,cordyline-class (:foreground ,cordyline-white :background ,cordyline-mode-line :box (:line-width 2 :style released-button)))))
    `(custom-button-pressed ((,cordyline-class (:foreground ,cordyline-white :background ,cordyline-mode-line :box (:line-width 2 :style pressed-button)))))
    `(custom-button-mouse ((,cordyline-class (:foreground ,cordyline-white :background ,cordyline-tab-3 :box (:line-width 2 :style released-button)))))
+   `(custom-button-unraised ((,cordyline-class (:foreground ,cordyline-mode-line :inherit underline))))
+   `(custom-button-pressed-unraised ((,cordyline-class (:foreground ,cordyline-bell :inherit custom-button-unraised))))
+   `(custom-comment ((,cordyline-class (:background ,cordyline-tab-3))))
+   `(custom-variable-tag ((,cordyline-class (:weight bold :foreground ,cordyline-tab-2))))
+   `(custom-group-tag ((,cordyline-class (:height 1.2 :inherit (custom-variable-tag variable-pitch)))))
+   `(custom-state ((,cordyline-class (:foreground ,cordyline-fl-keyword))))
+
+   ;; widget
+   `(widget-field ((,cordyline-class (:background ,cordyline-tab-3 :box (:line-width (1 . -1) :color "gray46") :extend t))))
+   `(widget-single-line-field ((,cordyline-class (:background ,cordyline-tab-3))))
 
    ;; package
    `(package-status-dependency ((,cordyline-class (:inherit (font-lock-string-face)))))

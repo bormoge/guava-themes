@@ -279,10 +279,21 @@
    `(query-replace ((,jacaranda-class (:inherit isearch))))
    `(match ((,jacaranda-class (:inherit lazy-highlight))))
 
-   ;; custom-button
+   ;; custom
+   ;; (progn (setopt custom-raised-buttons nil) (setq mouse-highlight t))
    `(custom-button ((,jacaranda-class (:foreground ,jacaranda-white :background ,jacaranda-mode-line :box (:line-width 2 :style released-button)))))
    `(custom-button-pressed ((,jacaranda-class (:foreground ,jacaranda-white :background ,jacaranda-mode-line :box (:line-width 2 :style pressed-button)))))
    `(custom-button-mouse ((,jacaranda-class (:foreground ,jacaranda-white :background ,jacaranda-tab-3 :box (:line-width 2 :style released-button)))))
+   `(custom-button-unraised ((,jacaranda-class (:foreground ,jacaranda-mode-line :inherit underline))))
+   `(custom-button-pressed-unraised ((,jacaranda-class (:foreground ,jacaranda-bell :inherit custom-button-unraised))))
+   `(custom-comment ((,jacaranda-class (:background ,jacaranda-tab-3))))
+   `(custom-variable-tag ((,jacaranda-class (:weight bold :foreground ,jacaranda-tab-2))))
+   `(custom-group-tag ((,jacaranda-class (:height 1.2 :inherit (custom-variable-tag variable-pitch)))))
+   `(custom-state ((,jacaranda-class (:foreground ,jacaranda-fl-keyword))))
+
+   ;; widget
+   `(widget-field ((,jacaranda-class (:background ,jacaranda-tab-3 :box (:line-width (1 . -1) :color "gray46") :extend t))))
+   `(widget-single-line-field ((,jacaranda-class (:background ,jacaranda-tab-3))))
 
    ;; package
    `(package-status-dependency ((,jacaranda-class (:inherit (font-lock-string-face)))))

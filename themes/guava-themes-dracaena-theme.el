@@ -281,10 +281,21 @@
    `(query-replace ((,dracaena-class (:inherit isearch))))
    `(match ((,dracaena-class (:inherit lazy-highlight))))
 
-   ;; custom-button
+   ;; custom
+   ;; (progn (setopt custom-raised-buttons nil) (setq mouse-highlight t))
    `(custom-button ((,dracaena-class (:foreground ,dracaena-white :background ,dracaena-mode-line :box (:line-width 2 :style released-button)))))
    `(custom-button-pressed ((,dracaena-class (:foreground ,dracaena-white :background ,dracaena-mode-line :box (:line-width 2 :style pressed-button)))))
    `(custom-button-mouse ((,dracaena-class (:foreground ,dracaena-white :background ,dracaena-tab-3 :box (:line-width 2 :style released-button)))))
+   `(custom-button-unraised ((,dracaena-class (:foreground ,dracaena-mode-line :inherit underline))))
+   `(custom-button-pressed-unraised ((,dracaena-class (:foreground ,dracaena-bell :inherit custom-button-unraised))))
+   `(custom-comment ((,dracaena-class (:background ,dracaena-tab-3))))
+   `(custom-variable-tag ((,dracaena-class (:weight bold :foreground ,dracaena-tab-2))))
+   `(custom-group-tag ((,dracaena-class (:height 1.2 :inherit (custom-variable-tag variable-pitch)))))
+   `(custom-state ((,dracaena-class (:foreground ,dracaena-fl-keyword))))
+
+   ;; widget
+   `(widget-field ((,dracaena-class (:background ,dracaena-tab-3 :box (:line-width (1 . -1) :color "gray46") :extend t))))
+   `(widget-single-line-field ((,dracaena-class (:background ,dracaena-tab-3))))
 
    ;; package
    `(package-status-dependency ((,dracaena-class (:inherit (font-lock-string-face)))))

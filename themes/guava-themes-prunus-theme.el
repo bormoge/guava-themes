@@ -284,10 +284,21 @@
    `(query-replace ((,prunus-class (:inherit isearch))))
    `(match ((,prunus-class (:inherit lazy-highlight))))
 
-   ;; custom-button
+   ;; custom
+   ;; (progn (setopt custom-raised-buttons nil) (setq mouse-highlight t))
    `(custom-button ((,prunus-class (:foreground ,prunus-white :background ,prunus-mode-line :box (:line-width 2 :style released-button)))))
    `(custom-button-pressed ((,prunus-class (:foreground ,prunus-white :background ,prunus-mode-line :box (:line-width 2 :style pressed-button)))))
    `(custom-button-mouse ((,prunus-class (:foreground ,prunus-white :background ,prunus-tab-3 :box (:line-width 2 :style released-button)))))
+   `(custom-button-unraised ((,prunus-class (:foreground ,prunus-mode-line :inherit underline))))
+   `(custom-button-pressed-unraised ((,prunus-class (:foreground ,prunus-bell :inherit custom-button-unraised))))
+   `(custom-comment ((,prunus-class (:background ,prunus-tab-3))))
+   `(custom-variable-tag ((,prunus-class (:weight bold :foreground ,prunus-tab-2))))
+   `(custom-group-tag ((,prunus-class (:height 1.2 :inherit (custom-variable-tag variable-pitch)))))
+   `(custom-state ((,prunus-class (:foreground ,prunus-fl-keyword))))
+
+   ;; widget
+   `(widget-field ((,prunus-class (:foreground ,prunus-white :background ,prunus-tab-3 :box (:line-width (1 . -1) :color "gray46") :extend t))))
+   `(widget-single-line-field ((,prunus-class (:foreground ,prunus-white :background ,prunus-tab-3))))
 
    ;; package
    `(package-status-dependency ((,prunus-class (:inherit (font-lock-string-face)))))

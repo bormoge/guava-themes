@@ -283,10 +283,21 @@
    `(query-replace ((,rhododendron-class (:inherit isearch))))
    `(match ((,rhododendron-class (:inherit lazy-highlight))))
 
-   ;; custom-button
+   ;; custom
+   ;; (progn (setopt custom-raised-buttons nil) (setq mouse-highlight t))
    `(custom-button ((,rhododendron-class (:foreground ,rhododendron-white :background ,rhododendron-mode-line :box (:line-width 2 :style released-button)))))
    `(custom-button-pressed ((,rhododendron-class (:foreground ,rhododendron-white :background ,rhododendron-mode-line :box (:line-width 2 :style pressed-button)))))
    `(custom-button-mouse ((,rhododendron-class (:foreground ,rhododendron-white :background ,rhododendron-tab-3 :box (:line-width 2 :style released-button)))))
+   `(custom-button-unraised ((,rhododendron-class (:foreground ,rhododendron-mode-line :inherit underline))))
+   `(custom-button-pressed-unraised ((,rhododendron-class (:foreground ,rhododendron-bell :inherit custom-button-unraised))))
+   `(custom-comment ((,rhododendron-class (:background ,rhododendron-tab-3))))
+   `(custom-variable-tag ((,rhododendron-class (:weight bold :foreground ,rhododendron-tab-2))))
+   `(custom-group-tag ((,rhododendron-class (:height 1.2 :inherit (custom-variable-tag variable-pitch)))))
+   `(custom-state ((,rhododendron-class (:foreground ,rhododendron-fl-keyword))))
+
+   ;; widget
+   `(widget-field ((,rhododendron-class (:background ,rhododendron-tab-3 :box (:line-width (1 . -1) :color "gray46") :extend t))))
+   `(widget-single-line-field ((,rhododendron-class (:background ,rhododendron-tab-3))))
 
    ;; package
    `(package-status-dependency ((,rhododendron-class (:inherit (font-lock-string-face)))))

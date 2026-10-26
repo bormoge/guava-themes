@@ -279,10 +279,21 @@
    `(query-replace ((,petunia-class (:inherit isearch))))
    `(match ((,petunia-class (:inherit lazy-highlight))))
 
-   ;; custom-button
+   ;; custom
+   ;; (progn (setopt custom-raised-buttons nil) (setq mouse-highlight t))
    `(custom-button ((,petunia-class (:foreground ,petunia-white :background ,petunia-mode-line :box (:line-width 2 :style released-button)))))
    `(custom-button-pressed ((,petunia-class (:foreground ,petunia-white :background ,petunia-mode-line :box (:line-width 2 :style pressed-button)))))
    `(custom-button-mouse ((,petunia-class (:foreground ,petunia-white :background ,petunia-tab-3 :box (:line-width 2 :style released-button)))))
+   `(custom-button-unraised ((,petunia-class (:foreground ,petunia-mode-line :inherit underline))))
+   `(custom-button-pressed-unraised ((,petunia-class (:foreground ,petunia-bell :inherit custom-button-unraised))))
+   `(custom-comment ((,petunia-class (:background ,petunia-tab-3))))
+   `(custom-variable-tag ((,petunia-class (:weight bold :foreground ,petunia-tab-2))))
+   `(custom-group-tag ((,petunia-class (:height 1.2 :inherit (custom-variable-tag variable-pitch)))))
+   `(custom-state ((,petunia-class (:foreground ,petunia-fl-keyword))))
+
+   ;; widget
+   `(widget-field ((,petunia-class (:background ,petunia-tab-3 :box (:line-width (1 . -1) :color "gray46") :extend t))))
+   `(widget-single-line-field ((,petunia-class (:background ,petunia-tab-3))))
 
    ;; package
    `(package-status-dependency ((,petunia-class (:inherit (font-lock-string-face)))))

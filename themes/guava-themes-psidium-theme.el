@@ -278,10 +278,21 @@
    `(query-replace ((,psidium-class (:inherit isearch))))
    `(match ((,psidium-class (:inherit lazy-highlight))))
 
-   ;; custom-button
+   ;; custom
+   ;; (progn (setopt custom-raised-buttons nil) (setq mouse-highlight t))
    `(custom-button ((,psidium-class (:foreground ,psidium-white :background ,psidium-mode-line :box (:line-width 2 :style released-button)))))
    `(custom-button-pressed ((,psidium-class (:foreground ,psidium-white :background ,psidium-mode-line :box (:line-width 2 :style pressed-button)))))
    `(custom-button-mouse ((,psidium-class (:foreground ,psidium-white :background ,psidium-tab-3 :box (:line-width 2 :style released-button)))))
+   `(custom-button-unraised ((,psidium-class (:foreground ,psidium-mode-line :inherit underline))))
+   `(custom-button-pressed-unraised ((,psidium-class (:foreground ,psidium-bell :inherit custom-button-unraised))))
+   `(custom-comment ((,psidium-class (:background ,psidium-tab-3))))
+   `(custom-variable-tag ((,psidium-class (:weight bold :foreground ,psidium-tab-2))))
+   `(custom-group-tag ((,psidium-class (:height 1.2 :inherit (custom-variable-tag variable-pitch)))))
+   `(custom-state ((,psidium-class (:foreground ,psidium-fl-keyword))))
+
+   ;; widget
+   `(widget-field ((,psidium-class (:background ,psidium-tab-3 :box (:line-width (1 . -1) :color "gray46") :extend t))))
+   `(widget-single-line-field ((,psidium-class (:background ,psidium-tab-3))))
 
    ;; package
    `(package-status-dependency ((,psidium-class (:inherit (font-lock-string-face)))))

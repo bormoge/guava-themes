@@ -284,10 +284,21 @@
    `(query-replace ((,citrus-class (:inherit isearch))))
    `(match ((,citrus-class (:inherit lazy-highlight))))
 
-   ;; custom-button
+   ;; custom
+   ;; (progn (setopt custom-raised-buttons nil) (setq mouse-highlight t))
    `(custom-button ((,citrus-class (:foreground ,citrus-white :background ,citrus-tab-1 :box (:line-width 2 :style released-button)))))
    `(custom-button-pressed ((,citrus-class (:foreground ,citrus-white :background ,citrus-tab-1 :box (:line-width 2 :style pressed-button)))))
    `(custom-button-mouse ((,citrus-class (:foreground ,citrus-white :background ,citrus-tab-3 :box (:line-width 2 :style released-button)))))
+   `(custom-button-unraised ((,citrus-class (:foreground ,citrus-mode-line :inherit underline))))
+   `(custom-button-pressed-unraised ((,citrus-class (:foreground ,citrus-bell :inherit custom-button-unraised))))
+   `(custom-comment ((,citrus-class (:background ,citrus-tab-3))))
+   `(custom-variable-tag ((,citrus-class (:weight bold :foreground ,citrus-tab-2))))
+   `(custom-group-tag ((,citrus-class (:height 1.2 :inherit (custom-variable-tag variable-pitch)))))
+   `(custom-state ((,citrus-class (:foreground ,citrus-fl-keyword))))
+
+   ;; widget
+   `(widget-field ((,citrus-class (:background ,citrus-tab-3 :box (:line-width (1 . -1) :color "gray46") :extend t))))
+   `(widget-single-line-field ((,citrus-class (:background ,citrus-tab-3))))
 
    ;; package
    `(package-status-dependency ((,citrus-class (:inherit (font-lock-string-face)))))

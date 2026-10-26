@@ -280,10 +280,21 @@
    `(query-replace ((,solanum-class (:inherit isearch))))
    `(match ((,solanum-class (:inherit lazy-highlight))))
 
-   ;; custom-button
+   ;; custom
+   ;; (progn (setopt custom-raised-buttons nil) (setq mouse-highlight t))
    `(custom-button ((,solanum-class (:foreground ,solanum-white :background ,solanum-mode-line :box (:line-width 2 :style released-button)))))
    `(custom-button-pressed ((,solanum-class (:foreground ,solanum-white :background ,solanum-mode-line :box (:line-width 2 :style pressed-button)))))
    `(custom-button-mouse ((,solanum-class (:foreground ,solanum-white :background ,solanum-tab-3 :box (:line-width 2 :style released-button)))))
+   `(custom-button-unraised ((,solanum-class (:foreground ,solanum-mode-line :inherit underline))))
+   `(custom-button-pressed-unraised ((,solanum-class (:foreground ,solanum-bell :inherit custom-button-unraised))))
+   `(custom-comment ((,solanum-class (:background ,solanum-tab-3))))
+   `(custom-variable-tag ((,solanum-class (:weight bold :foreground ,solanum-tab-2))))
+   `(custom-group-tag ((,solanum-class (:height 1.2 :inherit (custom-variable-tag variable-pitch)))))
+   `(custom-state ((,solanum-class (:foreground ,solanum-fl-keyword))))
+
+   ;; widget
+   `(widget-field ((,solanum-class (:background ,solanum-tab-3 :box (:line-width (1 . -1) :color "gray46") :extend t))))
+   `(widget-single-line-field ((,solanum-class (:background ,solanum-tab-3))))
 
    ;; package
    `(package-status-dependency ((,solanum-class (:inherit (font-lock-string-face)))))

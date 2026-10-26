@@ -285,10 +285,21 @@
    `(query-replace ((,ceiba-class (:inherit isearch))))
    `(match ((,ceiba-class (:inherit lazy-highlight))))
 
-   ;; custom-button
+   ;; custom
+   ;; (progn (setopt custom-raised-buttons nil) (setq mouse-highlight t))
    `(custom-button ((,ceiba-class (:foreground ,ceiba-white :background ,ceiba-mode-line :box (:line-width 2 :style released-button)))))
    `(custom-button-pressed ((,ceiba-class (:foreground ,ceiba-white :background ,ceiba-mode-line :box (:line-width 2 :style pressed-button)))))
    `(custom-button-mouse ((,ceiba-class (:foreground ,ceiba-white :background ,ceiba-tab-3 :box (:line-width 2 :style released-button)))))
+   `(custom-button-unraised ((,ceiba-class (:foreground ,ceiba-mode-line :inherit underline))))
+   `(custom-button-pressed-unraised ((,ceiba-class (:foreground ,ceiba-bell :inherit custom-button-unraised))))
+   `(custom-comment ((,ceiba-class (:background ,ceiba-tab-3))))
+   `(custom-variable-tag ((,ceiba-class (:weight bold :foreground ,ceiba-tab-2))))
+   `(custom-group-tag ((,ceiba-class (:height 1.2 :inherit (custom-variable-tag variable-pitch)))))
+   `(custom-state ((,ceiba-class (:foreground ,ceiba-fl-keyword))))
+
+   ;; widget
+   `(widget-field ((,ceiba-class (:background ,ceiba-tab-3 :box (:line-width (1 . -1) :color "gray46") :extend t))))
+   `(widget-single-line-field ((,ceiba-class (:background ,ceiba-tab-3))))
 
    ;; package
    `(package-status-dependency ((,ceiba-class (:inherit (font-lock-string-face)))))

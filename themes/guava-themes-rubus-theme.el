@@ -283,10 +283,21 @@
    `(query-replace ((,rubus-class (:inherit isearch))))
    `(match ((,rubus-class (:inherit lazy-highlight))))
 
-   ;; custom-button
+   ;; custom
+   ;; (progn (setopt custom-raised-buttons nil) (setq mouse-highlight t))
    `(custom-button ((,rubus-class (:foreground ,rubus-white :background ,rubus-mode-line :box (:line-width 2 :style released-button)))))
    `(custom-button-pressed ((,rubus-class (:foreground ,rubus-white :background ,rubus-mode-line :box (:line-width 2 :style pressed-button)))))
    `(custom-button-mouse ((,rubus-class (:foreground ,rubus-white :background ,rubus-tab-3 :box (:line-width 2 :style released-button)))))
+   `(custom-button-unraised ((,rubus-class (:foreground ,rubus-mode-line :inherit underline))))
+   `(custom-button-pressed-unraised ((,rubus-class (:foreground ,rubus-bell :inherit custom-button-unraised))))
+   `(custom-comment ((,rubus-class (:background ,rubus-tab-3))))
+   `(custom-variable-tag ((,rubus-class (:weight bold :foreground ,rubus-tab-2))))
+   `(custom-group-tag ((,rubus-class (:height 1.2 :inherit (custom-variable-tag variable-pitch)))))
+   `(custom-state ((,rubus-class (:foreground ,rubus-fl-keyword))))
+
+   ;; widget
+   `(widget-field ((,rubus-class (:background ,rubus-tab-3 :box (:line-width (1 . -1) :color "gray46") :extend t))))
+   `(widget-single-line-field ((,rubus-class (:background ,rubus-tab-3))))
 
    ;; package
    `(package-status-dependency ((,rubus-class (:inherit (font-lock-string-face)))))

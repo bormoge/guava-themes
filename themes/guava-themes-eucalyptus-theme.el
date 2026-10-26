@@ -280,10 +280,21 @@
    `(query-replace ((,eucalyptus-class (:inherit isearch))))
    `(match ((,eucalyptus-class (:inherit lazy-highlight))))
 
-   ;; custom-button
+   ;; custom
+   ;; (progn (setopt custom-raised-buttons nil) (setq mouse-highlight t))
    `(custom-button ((,eucalyptus-class (:foreground ,eucalyptus-white :background ,eucalyptus-mode-line :box (:line-width 2 :style released-button)))))
    `(custom-button-pressed ((,eucalyptus-class (:foreground ,eucalyptus-white :background ,eucalyptus-mode-line :box (:line-width 2 :style pressed-button)))))
    `(custom-button-mouse ((,eucalyptus-class (:foreground ,eucalyptus-white :background ,eucalyptus-tab-3 :box (:line-width 2 :style released-button)))))
+   `(custom-button-unraised ((,eucalyptus-class (:foreground ,eucalyptus-mode-line :inherit underline))))
+   `(custom-button-pressed-unraised ((,eucalyptus-class (:foreground ,eucalyptus-bell :inherit custom-button-unraised))))
+   `(custom-comment ((,eucalyptus-class (:background ,eucalyptus-tab-3))))
+   `(custom-variable-tag ((,eucalyptus-class (:weight bold :foreground ,eucalyptus-tab-2))))
+   `(custom-group-tag ((,eucalyptus-class (:height 1.2 :inherit (custom-variable-tag variable-pitch)))))
+   `(custom-state ((,eucalyptus-class (:foreground ,eucalyptus-fl-keyword))))
+
+   ;; widget
+   `(widget-field ((,eucalyptus-class (:background ,eucalyptus-tab-3 :box (:line-width (1 . -1) :color "gray46") :extend t))))
+   `(widget-single-line-field ((,eucalyptus-class (:background ,eucalyptus-tab-3))))
 
    ;; package
    `(package-status-dependency ((,eucalyptus-class (:inherit (font-lock-string-face)))))

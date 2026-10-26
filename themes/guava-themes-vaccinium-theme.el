@@ -281,10 +281,21 @@
    `(query-replace ((,vaccinium-class (:inherit isearch))))
    `(match ((,vaccinium-class (:inherit lazy-highlight))))
 
-   ;; custom-button
+   ;; custom
+   ;; (progn (setopt custom-raised-buttons nil) (setq mouse-highlight t))
    `(custom-button ((,vaccinium-class (:foreground ,vaccinium-white :background ,vaccinium-mode-line :box (:line-width 2 :style released-button)))))
    `(custom-button-pressed ((,vaccinium-class (:foreground ,vaccinium-white :background ,vaccinium-mode-line :box (:line-width 2 :style pressed-button)))))
    `(custom-button-mouse ((,vaccinium-class (:foreground ,vaccinium-white :background ,vaccinium-tab-3 :box (:line-width 2 :style released-button)))))
+   `(custom-button-unraised ((,vaccinium-class (:foreground ,vaccinium-mode-line :inherit underline))))
+   `(custom-button-pressed-unraised ((,vaccinium-class (:foreground ,vaccinium-bell :inherit custom-button-unraised))))
+   `(custom-comment ((,vaccinium-class (:background ,vaccinium-tab-3))))
+   `(custom-variable-tag ((,vaccinium-class (:weight bold :foreground ,vaccinium-tab-2))))
+   `(custom-group-tag ((,vaccinium-class (:height 1.2 :inherit (custom-variable-tag variable-pitch)))))
+   `(custom-state ((,vaccinium-class (:foreground ,vaccinium-fl-keyword))))
+
+   ;; widget
+   `(widget-field ((,vaccinium-class (:background ,vaccinium-tab-3 :box (:line-width (1 . -1) :color "gray46") :extend t))))
+   `(widget-single-line-field ((,vaccinium-class (:background ,vaccinium-tab-3))))
 
    ;; package
    `(package-status-dependency ((,vaccinium-class (:inherit (font-lock-string-face)))))

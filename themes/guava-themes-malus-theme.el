@@ -280,10 +280,21 @@
    `(query-replace ((,malus-class (:inherit isearch))))
    `(match ((,malus-class (:inherit lazy-highlight))))
 
-   ;; custom-button
+   ;; custom
+   ;; (progn (setopt custom-raised-buttons nil) (setq mouse-highlight t))
    `(custom-button ((,malus-class (:foreground ,malus-white :background ,malus-mode-line :box (:line-width 2 :style released-button)))))
    `(custom-button-pressed ((,malus-class (:foreground ,malus-white :background ,malus-mode-line :box (:line-width 2 :style pressed-button)))))
    `(custom-button-mouse ((,malus-class (:foreground ,malus-white :background ,malus-tab-3 :box (:line-width 2 :style released-button)))))
+   `(custom-button-unraised ((,malus-class (:foreground ,malus-mode-line :inherit underline))))
+   `(custom-button-pressed-unraised ((,malus-class (:foreground ,malus-bell :inherit custom-button-unraised))))
+   `(custom-comment ((,malus-class (:background ,malus-tab-3))))
+   `(custom-variable-tag ((,malus-class (:weight bold :foreground ,malus-tab-2))))
+   `(custom-group-tag ((,malus-class (:height 1.2 :inherit (custom-variable-tag variable-pitch)))))
+   `(custom-state ((,malus-class (:foreground ,malus-fl-keyword))))
+
+   ;; widget
+   `(widget-field ((,malus-class (:background ,malus-tab-3 :box (:line-width (1 . -1) :color "gray46") :extend t))))
+   `(widget-single-line-field ((,malus-class (:background ,malus-tab-3))))
 
    ;; package
    `(package-status-dependency ((,malus-class (:inherit (font-lock-string-face)))))

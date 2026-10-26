@@ -281,10 +281,21 @@
    `(query-replace ((,acer-class (:inherit isearch))))
    `(match ((,acer-class (:inherit lazy-highlight))))
 
-   ;; custom-button
+   ;; custom
+   ;; (progn (setopt custom-raised-buttons nil) (setq mouse-highlight t))
    `(custom-button ((,acer-class (:foreground ,acer-white :background ,acer-mode-line :box (:line-width 2 :style released-button)))))
    `(custom-button-pressed ((,acer-class (:foreground ,acer-white :background ,acer-mode-line :box (:line-width 2 :style pressed-button)))))
    `(custom-button-mouse ((,acer-class (:foreground ,acer-white :background ,acer-tab-3 :box (:line-width 2 :style released-button)))))
+   `(custom-button-unraised ((,acer-class (:foreground ,acer-mode-line :inherit underline))))
+   `(custom-button-pressed-unraised ((,acer-class (:foreground ,acer-bell :inherit custom-button-unraised))))
+   `(custom-comment ((,acer-class (:background ,acer-tab-3))))
+   `(custom-variable-tag ((,acer-class (:weight bold :foreground ,acer-tab-2))))
+   `(custom-group-tag ((,acer-class (:height 1.2 :inherit (custom-variable-tag variable-pitch)))))
+   `(custom-state ((,acer-class (:foreground ,acer-fl-keyword))))
+
+   ;; widget
+   `(widget-field ((,acer-class (:background ,acer-tab-3 :box (:line-width (1 . -1) :color "gray46") :extend t))))
+   `(widget-single-line-field ((,acer-class (:background ,acer-tab-3))))
 
    ;; package
    `(package-status-dependency ((,acer-class (:inherit (font-lock-string-face)))))
