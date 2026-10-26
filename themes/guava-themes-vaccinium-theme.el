@@ -308,6 +308,11 @@
    `(bookmark-face ((,vaccinium-class (:foreground ,vaccinium-mode-line :distant-foreground unspecified))))
    `(bookmark-menu-bookmark ((,vaccinium-class (:weight bold :inherit bookmark-face))))
 
+   ;; flymake
+   `(flymake-note ((,vaccinium-class (:underline (:style wave :color ,vaccinium-success)))))
+   `(flymake-warning ((,vaccinium-class (:underline (:style wave :color ,vaccinium-warning)))))
+   `(flymake-error ((,vaccinium-class (:underline (:style wave :color ,vaccinium-error)))))
+
 
    ;; external packages
 

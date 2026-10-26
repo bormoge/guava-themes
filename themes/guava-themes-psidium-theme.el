@@ -305,6 +305,11 @@
    `(bookmark-face ((,psidium-class (:foreground ,psidium-mode-line :distant-foreground unspecified))))
    `(bookmark-menu-bookmark ((,psidium-class (:weight bold :inherit bookmark-face))))
 
+   ;; flymake
+   `(flymake-note ((,psidium-class (:underline (:style wave :color ,psidium-success)))))
+   `(flymake-warning ((,psidium-class (:underline (:style wave :color ,psidium-warning)))))
+   `(flymake-error ((,psidium-class (:underline (:style wave :color ,psidium-error)))))
+
 
    ;; external packages
 

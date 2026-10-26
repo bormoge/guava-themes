@@ -306,6 +306,11 @@
    `(bookmark-face ((,petunia-class (:foreground ,petunia-mode-line :distant-foreground unspecified))))
    `(bookmark-menu-bookmark ((,petunia-class (:weight bold :inherit bookmark-face))))
 
+   ;; flymake
+   `(flymake-note ((,petunia-class (:underline (:style wave :color ,petunia-success)))))
+   `(flymake-warning ((,petunia-class (:underline (:style wave :color ,petunia-warning)))))
+   `(flymake-error ((,petunia-class (:underline (:style wave :color ,petunia-error)))))
+
 
    ;; external packages
 

@@ -307,6 +307,11 @@
    `(bookmark-face ((,cordyline-class (:foreground ,cordyline-mode-line :distant-foreground unspecified))))
    `(bookmark-menu-bookmark ((,cordyline-class (:weight bold :inherit bookmark-face))))
 
+   ;; flymake
+   `(flymake-note ((,cordyline-class (:underline (:style wave :color ,cordyline-success)))))
+   `(flymake-warning ((,cordyline-class (:underline (:style wave :color ,cordyline-warning)))))
+   `(flymake-error ((,cordyline-class (:underline (:style wave :color ,cordyline-error)))))
+
 
    ;; external packages
 

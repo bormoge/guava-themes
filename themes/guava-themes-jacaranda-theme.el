@@ -306,6 +306,11 @@
    `(bookmark-face ((,jacaranda-class (:foreground ,jacaranda-mode-line :distant-foreground unspecified))))
    `(bookmark-menu-bookmark ((,jacaranda-class (:weight bold :inherit bookmark-face))))
 
+   ;; flymake
+   `(flymake-note ((,jacaranda-class (:underline (:style wave :color ,jacaranda-success)))))
+   `(flymake-warning ((,jacaranda-class (:underline (:style wave :color ,jacaranda-warning)))))
+   `(flymake-error ((,jacaranda-class (:underline (:style wave :color ,jacaranda-error)))))
+
 
    ;; external packages
 

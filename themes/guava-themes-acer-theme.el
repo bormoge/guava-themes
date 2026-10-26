@@ -308,6 +308,11 @@
    `(bookmark-face ((,acer-class (:foreground ,acer-mode-line :distant-foreground unspecified))))
    `(bookmark-menu-bookmark ((,acer-class (:weight bold :inherit bookmark-face))))
 
+   ;; flymake
+   `(flymake-note ((,acer-class (:underline (:style wave :color ,acer-success)))))
+   `(flymake-warning ((,acer-class (:underline (:style wave :color ,acer-warning)))))
+   `(flymake-error ((,acer-class (:underline (:style wave :color ,acer-error)))))
+
 
    ;; external packages
 

@@ -307,6 +307,11 @@
    `(bookmark-face ((,eucalyptus-class (:foreground ,eucalyptus-mode-line :distant-foreground unspecified))))
    `(bookmark-menu-bookmark ((,eucalyptus-class (:weight bold :inherit bookmark-face))))
 
+   ;; flymake
+   `(flymake-note ((,eucalyptus-class (:underline (:style wave :color ,eucalyptus-success)))))
+   `(flymake-warning ((,eucalyptus-class (:underline (:style wave :color ,eucalyptus-warning)))))
+   `(flymake-error ((,eucalyptus-class (:underline (:style wave :color ,eucalyptus-error)))))
+
 
    ;; external packages
 

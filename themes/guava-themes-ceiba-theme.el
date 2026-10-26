@@ -312,6 +312,11 @@
    `(bookmark-face ((,ceiba-class (:foreground ,ceiba-mode-line :distant-foreground unspecified))))
    `(bookmark-menu-bookmark ((,ceiba-class (:weight bold :inherit bookmark-face))))
 
+   ;; flymake
+   `(flymake-note ((,ceiba-class (:underline (:style wave :color ,ceiba-success)))))
+   `(flymake-warning ((,ceiba-class (:underline (:style wave :color ,ceiba-warning)))))
+   `(flymake-error ((,ceiba-class (:underline (:style wave :color ,ceiba-error)))))
+
 
    ;; external packages
 

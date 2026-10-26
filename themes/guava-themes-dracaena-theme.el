@@ -308,6 +308,11 @@
    `(bookmark-face ((,dracaena-class (:foreground ,dracaena-mode-line :distant-foreground unspecified))))
    `(bookmark-menu-bookmark ((,dracaena-class (:weight bold :inherit bookmark-face))))
 
+   ;; flymake
+   `(flymake-note ((,dracaena-class (:underline (:style wave :color ,dracaena-success)))))
+   `(flymake-warning ((,dracaena-class (:underline (:style wave :color ,dracaena-warning)))))
+   `(flymake-error ((,dracaena-class (:underline (:style wave :color ,dracaena-error)))))
+
 
    ;; external packages
 

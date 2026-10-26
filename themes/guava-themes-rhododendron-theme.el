@@ -310,6 +310,11 @@
    `(bookmark-face ((,rhododendron-class (:foreground ,rhododendron-mode-line :distant-foreground unspecified))))
    `(bookmark-menu-bookmark ((,rhododendron-class (:weight bold :inherit bookmark-face))))
 
+   ;; flymake
+   `(flymake-note ((,rhododendron-class (:underline (:style wave :color ,rhododendron-success)))))
+   `(flymake-warning ((,rhododendron-class (:underline (:style wave :color ,rhododendron-warning)))))
+   `(flymake-error ((,rhododendron-class (:underline (:style wave :color ,rhododendron-error)))))
+
 
    ;; external packages
 

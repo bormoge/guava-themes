@@ -311,6 +311,11 @@
    `(bookmark-face ((,citrus-class (:foreground ,citrus-mode-line :distant-foreground unspecified))))
    `(bookmark-menu-bookmark ((,citrus-class (:weight bold :inherit bookmark-face))))
 
+   ;; flymake
+   `(flymake-note ((,citrus-class (:underline (:style wave :color ,citrus-success)))))
+   `(flymake-warning ((,citrus-class (:underline (:style wave :color ,citrus-warning)))))
+   `(flymake-error ((,citrus-class (:underline (:style wave :color ,citrus-error)))))
+
 
    ;; external packages
 

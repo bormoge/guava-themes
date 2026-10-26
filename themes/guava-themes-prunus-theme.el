@@ -311,6 +311,11 @@
    `(bookmark-face ((,prunus-class (:foreground ,prunus-mode-line :distant-foreground unspecified))))
    `(bookmark-menu-bookmark ((,prunus-class (:weight bold :inherit bookmark-face))))
 
+   ;; flymake
+   `(flymake-note ((,prunus-class (:underline (:style wave :color ,prunus-success)))))
+   `(flymake-warning ((,prunus-class (:underline (:style wave :color ,prunus-warning)))))
+   `(flymake-error ((,prunus-class (:underline (:style wave :color ,prunus-error)))))
+
 
    ;; external packages
 

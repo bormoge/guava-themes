@@ -307,6 +307,11 @@
    `(bookmark-face ((,solanum-class (:foreground ,solanum-mode-line :distant-foreground unspecified))))
    `(bookmark-menu-bookmark ((,solanum-class (:weight bold :inherit bookmark-face))))
 
+   ;; flymake
+   `(flymake-note ((,solanum-class (:underline (:style wave :color ,solanum-success)))))
+   `(flymake-warning ((,solanum-class (:underline (:style wave :color ,solanum-warning)))))
+   `(flymake-error ((,solanum-class (:underline (:style wave :color ,solanum-error)))))
+
 
    ;; external packages
 

@@ -308,6 +308,11 @@
    `(bookmark-face ((,pyrus-class (:foreground ,pyrus-mode-line :distant-foreground unspecified))))
    `(bookmark-menu-bookmark ((,pyrus-class (:weight bold :inherit bookmark-face))))
 
+   ;; flymake
+   `(flymake-note ((,pyrus-class (:underline (:style wave :color ,pyrus-success)))))
+   `(flymake-warning ((,pyrus-class (:underline (:style wave :color ,pyrus-warning)))))
+   `(flymake-error ((,pyrus-class (:underline (:style wave :color ,pyrus-error)))))
+
 
    ;; external packages
 

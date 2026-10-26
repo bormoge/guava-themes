@@ -307,6 +307,11 @@
    `(bookmark-face ((,malus-class (:foreground ,malus-mode-line :distant-foreground unspecified))))
    `(bookmark-menu-bookmark ((,malus-class (:weight bold :inherit bookmark-face))))
 
+   ;; flymake
+   `(flymake-note ((,malus-class (:underline (:style wave :color ,malus-success)))))
+   `(flymake-warning ((,malus-class (:underline (:style wave :color ,malus-warning)))))
+   `(flymake-error ((,malus-class (:underline (:style wave :color ,malus-error)))))
+
 
    ;; external packages
 

@@ -310,6 +310,11 @@
    `(bookmark-face ((,rubus-class (:foreground ,rubus-mode-line :distant-foreground unspecified))))
    `(bookmark-menu-bookmark ((,rubus-class (:weight bold :inherit bookmark-face))))
 
+   ;; flymake
+   `(flymake-note ((,rubus-class (:underline (:style wave :color ,rubus-success)))))
+   `(flymake-warning ((,rubus-class (:underline (:style wave :color ,rubus-warning)))))
+   `(flymake-error ((,rubus-class (:underline (:style wave :color ,rubus-error)))))
+
 
    ;; external packages
 
