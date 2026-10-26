@@ -311,6 +311,23 @@
    `(flymake-warning ((,jacaranda-class (:underline (:style wave :color ,jacaranda-warning)))))
    `(flymake-error ((,jacaranda-class (:underline (:style wave :color ,jacaranda-error)))))
 
+   ;; eww
+   `(eww-valid-certificate ((,jacaranda-class (:weight bold :foreground ,jacaranda-success))))
+   `(eww-invalid-certificate ((,jacaranda-class (:weight bold :foreground ,jacaranda-error))))
+   ;; Example of eww-form-text: https://en.wikipedia.org/wiki/Main_Page
+   `(eww-form-text ((,jacaranda-class (:foreground ,jacaranda-fg :background ,jacaranda-tab-3 :box (:line-width 1)))))
+   ;; Example of eww-form-file: https://html.com/input-type-file/
+   `(eww-form-file ((,jacaranda-class (:foreground ,jacaranda-fg :background ,jacaranda-tab-2 :box (:line-width 2 :style released-button)))))
+   ;; Example of eww-form-select: http://savannah.gnu.org/projects/emacs/
+   ;; Example of eww-form-select: https://git.kernel.org/pub/scm/editors/uemacs/uemacs.git/
+   `(eww-form-select ((,jacaranda-class (:foreground ,jacaranda-white :background ,jacaranda-tab-1 :box (:line-width 2 :style released-button)))))
+   ;; Example of eww-form-submit: https://en.wikipedia.org/wiki/Main_Page
+   `(eww-form-submit ((,jacaranda-class (:foreground ,jacaranda-fg :background ,jacaranda-tab-2 :box (:line-width 2 :style released-button)))))
+   ;; Example of eww-form-checkbox: https://en.wikipedia.org/wiki/Main_Page
+   `(eww-form-checkbox ((,jacaranda-class (:foreground ,jacaranda-white :background ,jacaranda-tab-1 :box (:line-width 2 :style released-button)))))
+   ;; Example of eww-form-textarea: https://en.wikipedia.org/w/index.php?title=Main_Page&action=edit
+   `(eww-form-textarea ((,jacaranda-class (:foreground ,jacaranda-fg :background ,jacaranda-tab-3 :box (:line-width 1 :color ,jacaranda-tab-1)))))
+
 
    ;; external packages
 

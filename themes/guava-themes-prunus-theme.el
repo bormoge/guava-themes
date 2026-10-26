@@ -316,6 +316,23 @@
    `(flymake-warning ((,prunus-class (:underline (:style wave :color ,prunus-warning)))))
    `(flymake-error ((,prunus-class (:underline (:style wave :color ,prunus-error)))))
 
+   ;; eww
+   `(eww-valid-certificate ((,prunus-class (:weight bold :foreground ,prunus-success))))
+   `(eww-invalid-certificate ((,prunus-class (:weight bold :foreground ,prunus-error))))
+   ;; Example of eww-form-text: https://en.wikipedia.org/wiki/Main_Page
+   `(eww-form-text ((,prunus-class (:foreground ,prunus-fg :background ,prunus-tab-3 :box (:line-width 1)))))
+   ;; Example of eww-form-file: https://html.com/input-type-file/
+   `(eww-form-file ((,prunus-class (:foreground ,prunus-fg :background ,prunus-tab-2 :box (:line-width 2 :style released-button)))))
+   ;; Example of eww-form-select: http://savannah.gnu.org/projects/emacs/
+   ;; Example of eww-form-select: https://git.kernel.org/pub/scm/editors/uemacs/uemacs.git/
+   `(eww-form-select ((,prunus-class (:foreground ,prunus-fg :background ,prunus-tab-1 :box (:line-width 2 :style released-button)))))
+   ;; Example of eww-form-submit: https://en.wikipedia.org/wiki/Main_Page
+   `(eww-form-submit ((,prunus-class (:foreground ,prunus-fg :background ,prunus-tab-2 :box (:line-width 2 :style released-button)))))
+   ;; Example of eww-form-checkbox: https://en.wikipedia.org/wiki/Main_Page
+   `(eww-form-checkbox ((,prunus-class (:foreground ,prunus-fg :background ,prunus-tab-1 :box (:line-width 2 :style released-button)))))
+   ;; Example of eww-form-textarea: https://en.wikipedia.org/w/index.php?title=Main_Page&action=edit
+   `(eww-form-textarea ((,prunus-class (:foreground ,prunus-fg :background ,prunus-tab-3 :box (:line-width 1 :color ,prunus-tab-1)))))
+
 
    ;; external packages
 

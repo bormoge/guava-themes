@@ -312,6 +312,23 @@
    `(flymake-warning ((,eucalyptus-class (:underline (:style wave :color ,eucalyptus-warning)))))
    `(flymake-error ((,eucalyptus-class (:underline (:style wave :color ,eucalyptus-error)))))
 
+   ;; eww
+   `(eww-valid-certificate ((,eucalyptus-class (:weight bold :foreground ,eucalyptus-success))))
+   `(eww-invalid-certificate ((,eucalyptus-class (:weight bold :foreground ,eucalyptus-error))))
+   ;; Example of eww-form-text: https://en.wikipedia.org/wiki/Main_Page
+   `(eww-form-text ((,eucalyptus-class (:foreground ,eucalyptus-fg :background ,eucalyptus-tab-3 :box (:line-width 1)))))
+   ;; Example of eww-form-file: https://html.com/input-type-file/
+   `(eww-form-file ((,eucalyptus-class (:foreground ,eucalyptus-fg :background ,eucalyptus-tab-2 :box (:line-width 2 :style released-button)))))
+   ;; Example of eww-form-select: http://savannah.gnu.org/projects/emacs/
+   ;; Example of eww-form-select: https://git.kernel.org/pub/scm/editors/uemacs/uemacs.git/
+   `(eww-form-select ((,eucalyptus-class (:foreground ,eucalyptus-white :background ,eucalyptus-tab-1 :box (:line-width 2 :style released-button)))))
+   ;; Example of eww-form-submit: https://en.wikipedia.org/wiki/Main_Page
+   `(eww-form-submit ((,eucalyptus-class (:foreground ,eucalyptus-fg :background ,eucalyptus-tab-2 :box (:line-width 2 :style released-button)))))
+   ;; Example of eww-form-checkbox: https://en.wikipedia.org/wiki/Main_Page
+   `(eww-form-checkbox ((,eucalyptus-class (:foreground ,eucalyptus-white :background ,eucalyptus-tab-1 :box (:line-width 2 :style released-button)))))
+   ;; Example of eww-form-textarea: https://en.wikipedia.org/w/index.php?title=Main_Page&action=edit
+   `(eww-form-textarea ((,eucalyptus-class (:foreground ,eucalyptus-fg :background ,eucalyptus-tab-3 :box (:line-width 1 :color ,eucalyptus-tab-1)))))
+
 
    ;; external packages
 

@@ -316,6 +316,23 @@
    `(flymake-warning ((,citrus-class (:underline (:style wave :color ,citrus-warning)))))
    `(flymake-error ((,citrus-class (:underline (:style wave :color ,citrus-error)))))
 
+   ;; eww
+   `(eww-valid-certificate ((,citrus-class (:weight bold :foreground ,citrus-success))))
+   `(eww-invalid-certificate ((,citrus-class (:weight bold :foreground ,citrus-error))))
+   ;; Example of eww-form-text: https://en.wikipedia.org/wiki/Main_Page
+   `(eww-form-text ((,citrus-class (:foreground ,citrus-fg :background ,citrus-tab-3 :box (:line-width 1)))))
+   ;; Example of eww-form-file: https://html.com/input-type-file/
+   `(eww-form-file ((,citrus-class (:foreground ,citrus-fg :background ,citrus-tab-2 :box (:line-width 2 :style released-button)))))
+   ;; Example of eww-form-select: http://savannah.gnu.org/projects/emacs/
+   ;; Example of eww-form-select: https://git.kernel.org/pub/scm/editors/uemacs/uemacs.git/
+   `(eww-form-select ((,citrus-class (:foreground ,citrus-fg :background ,citrus-tab-1 :box (:line-width 2 :style released-button)))))
+   ;; Example of eww-form-submit: https://en.wikipedia.org/wiki/Main_Page
+   `(eww-form-submit ((,citrus-class (:foreground ,citrus-fg :background ,citrus-tab-2 :box (:line-width 2 :style released-button)))))
+   ;; Example of eww-form-checkbox: https://en.wikipedia.org/wiki/Main_Page
+   `(eww-form-checkbox ((,citrus-class (:foreground ,citrus-fg :background ,citrus-tab-1 :box (:line-width 2 :style released-button)))))
+   ;; Example of eww-form-textarea: https://en.wikipedia.org/w/index.php?title=Main_Page&action=edit
+   `(eww-form-textarea ((,citrus-class (:foreground ,citrus-fg :background ,citrus-tab-3 :box (:line-width 1 :color ,citrus-tab-1)))))
+
 
    ;; external packages
 

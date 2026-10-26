@@ -312,6 +312,23 @@
    `(flymake-warning ((,cordyline-class (:underline (:style wave :color ,cordyline-warning)))))
    `(flymake-error ((,cordyline-class (:underline (:style wave :color ,cordyline-error)))))
 
+   ;; eww
+   `(eww-valid-certificate ((,cordyline-class (:weight bold :foreground ,cordyline-success))))
+   `(eww-invalid-certificate ((,cordyline-class (:weight bold :foreground ,cordyline-error))))
+   ;; Example of eww-form-text: https://en.wikipedia.org/wiki/Main_Page
+   `(eww-form-text ((,cordyline-class (:foreground ,cordyline-fg :background ,cordyline-tab-3 :box (:line-width 1)))))
+   ;; Example of eww-form-file: https://html.com/input-type-file/
+   `(eww-form-file ((,cordyline-class (:foreground ,cordyline-fg :background ,cordyline-tab-2 :box (:line-width 2 :style released-button)))))
+   ;; Example of eww-form-select: http://savannah.gnu.org/projects/emacs/
+   ;; Example of eww-form-select: https://git.kernel.org/pub/scm/editors/uemacs/uemacs.git/
+   `(eww-form-select ((,cordyline-class (:foreground ,cordyline-fg :background ,cordyline-tab-1 :box (:line-width 2 :style released-button)))))
+   ;; Example of eww-form-submit: https://en.wikipedia.org/wiki/Main_Page
+   `(eww-form-submit ((,cordyline-class (:foreground ,cordyline-fg :background ,cordyline-tab-2 :box (:line-width 2 :style released-button)))))
+   ;; Example of eww-form-checkbox: https://en.wikipedia.org/wiki/Main_Page
+   `(eww-form-checkbox ((,cordyline-class (:foreground ,cordyline-fg :background ,cordyline-tab-1 :box (:line-width 2 :style released-button)))))
+   ;; Example of eww-form-textarea: https://en.wikipedia.org/w/index.php?title=Main_Page&action=edit
+   `(eww-form-textarea ((,cordyline-class (:foreground ,cordyline-fg :background ,cordyline-tab-3 :box (:line-width 1 :color ,cordyline-tab-1)))))
+
 
    ;; external packages
 
