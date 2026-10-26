@@ -295,6 +295,10 @@
    `(icomplete-selected-match ((,rhododendron-class (:weight bold :foreground ,rhododendron-mode-line :inherit (highlight)))))
    `(icomplete-first-match ((,rhododendron-class (:weight bold :foreground ,rhododendron-mode-line :inherit (highlight)))))
 
+   ;; bookmark
+   `(bookmark-face ((,rhododendron-class (:foreground ,rhododendron-mode-line :distant-foreground unspecified))))
+   `(bookmark-menu-bookmark ((,rhododendron-class (:weight bold :inherit bookmark-face))))
+
 
    ;; external packages
 

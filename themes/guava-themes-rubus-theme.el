@@ -295,6 +295,10 @@
    `(icomplete-selected-match ((,rubus-class (:weight bold :foreground ,rubus-mode-line :inherit (highlight)))))
    `(icomplete-first-match ((,rubus-class (:weight bold :foreground ,rubus-mode-line :inherit (highlight)))))
 
+   ;; bookmark
+   `(bookmark-face ((,rubus-class (:foreground ,rubus-mode-line :distant-foreground unspecified))))
+   `(bookmark-menu-bookmark ((,rubus-class (:weight bold :inherit bookmark-face))))
+
 
    ;; external packages
 

@@ -293,6 +293,10 @@
    `(icomplete-selected-match ((,pyrus-class (:weight bold :foreground ,pyrus-mode-line :inherit (highlight)))))
    `(icomplete-first-match ((,pyrus-class (:weight bold :foreground ,pyrus-mode-line :inherit (highlight)))))
 
+   ;; bookmark
+   `(bookmark-face ((,pyrus-class (:foreground ,pyrus-mode-line :distant-foreground unspecified))))
+   `(bookmark-menu-bookmark ((,pyrus-class (:weight bold :inherit bookmark-face))))
+
 
    ;; external packages
 

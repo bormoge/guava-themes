@@ -290,6 +290,10 @@
    `(icomplete-selected-match ((,psidium-class (:weight bold :foreground ,psidium-mode-line :inherit (highlight)))))
    `(icomplete-first-match ((,psidium-class (:weight bold :foreground ,psidium-mode-line :inherit (highlight)))))
 
+   ;; bookmark
+   `(bookmark-face ((,psidium-class (:foreground ,psidium-mode-line :distant-foreground unspecified))))
+   `(bookmark-menu-bookmark ((,psidium-class (:weight bold :inherit bookmark-face))))
+
 
    ;; external packages
 

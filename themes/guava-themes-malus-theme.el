@@ -292,6 +292,10 @@
    `(icomplete-selected-match ((,malus-class (:weight bold :foreground ,malus-mode-line :inherit (highlight)))))
    `(icomplete-first-match ((,malus-class (:weight bold :foreground ,malus-mode-line :inherit (highlight)))))
 
+   ;; bookmark
+   `(bookmark-face ((,malus-class (:foreground ,malus-mode-line :distant-foreground unspecified))))
+   `(bookmark-menu-bookmark ((,malus-class (:weight bold :inherit bookmark-face))))
+
 
    ;; external packages
 

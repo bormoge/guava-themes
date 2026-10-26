@@ -296,6 +296,10 @@
    `(icomplete-selected-match ((,prunus-class (:weight bold :foreground ,prunus-mode-line :inherit (highlight)))))
    `(icomplete-first-match ((,prunus-class (:weight bold :foreground ,prunus-mode-line :inherit (highlight)))))
 
+   ;; bookmark
+   `(bookmark-face ((,prunus-class (:foreground ,prunus-mode-line :distant-foreground unspecified))))
+   `(bookmark-menu-bookmark ((,prunus-class (:weight bold :inherit bookmark-face))))
+
 
    ;; external packages
 

@@ -294,6 +294,10 @@
    `(icomplete-selected-match ((,dracaena-class (:weight bold :foreground ,dracaena-mode-line :inherit (highlight)))))
    `(icomplete-first-match ((,dracaena-class (:weight bold :foreground ,dracaena-mode-line :inherit (highlight)))))
 
+   ;; bookmark
+   `(bookmark-face ((,dracaena-class (:foreground ,dracaena-mode-line :distant-foreground unspecified))))
+   `(bookmark-menu-bookmark ((,dracaena-class (:weight bold :inherit bookmark-face))))
+
 
    ;; external packages
 

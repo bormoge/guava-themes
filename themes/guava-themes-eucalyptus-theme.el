@@ -292,6 +292,10 @@
    `(icomplete-selected-match ((,eucalyptus-class (:weight bold :foreground ,eucalyptus-mode-line :inherit (highlight)))))
    `(icomplete-first-match ((,eucalyptus-class (:weight bold :foreground ,eucalyptus-mode-line :inherit (highlight)))))
 
+   ;; bookmark
+   `(bookmark-face ((,eucalyptus-class (:foreground ,eucalyptus-mode-line :distant-foreground unspecified))))
+   `(bookmark-menu-bookmark ((,eucalyptus-class (:weight bold :inherit bookmark-face))))
+
 
    ;; external packages
 

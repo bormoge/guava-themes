@@ -297,6 +297,10 @@
    `(icomplete-selected-match ((,ceiba-class (:weight bold :foreground ,ceiba-mode-line :inherit (highlight)))))
    `(icomplete-first-match ((,ceiba-class (:weight bold :foreground ,ceiba-mode-line :inherit (highlight)))))
 
+   ;; bookmark
+   `(bookmark-face ((,ceiba-class (:foreground ,ceiba-mode-line :distant-foreground unspecified))))
+   `(bookmark-menu-bookmark ((,ceiba-class (:weight bold :inherit bookmark-face))))
+
 
    ;; external packages
 

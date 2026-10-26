@@ -291,6 +291,10 @@
    `(icomplete-selected-match ((,jacaranda-class (:weight bold :foreground ,jacaranda-mode-line :inherit (highlight)))))
    `(icomplete-first-match ((,jacaranda-class (:weight bold :foreground ,jacaranda-mode-line :inherit (highlight)))))
 
+   ;; bookmark
+   `(bookmark-face ((,jacaranda-class (:foreground ,jacaranda-mode-line :distant-foreground unspecified))))
+   `(bookmark-menu-bookmark ((,jacaranda-class (:weight bold :inherit bookmark-face))))
+
 
    ;; external packages
 

@@ -296,6 +296,10 @@
    `(icomplete-selected-match ((,citrus-class (:weight bold :foreground ,citrus-mode-line :inherit (highlight)))))
    `(icomplete-first-match ((,citrus-class (:weight bold :foreground ,citrus-mode-line :inherit (highlight)))))
 
+   ;; bookmark
+   `(bookmark-face ((,citrus-class (:foreground ,citrus-mode-line :distant-foreground unspecified))))
+   `(bookmark-menu-bookmark ((,citrus-class (:weight bold :inherit bookmark-face))))
+
 
    ;; external packages
 

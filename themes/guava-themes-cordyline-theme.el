@@ -292,6 +292,10 @@
    `(icomplete-selected-match ((,cordyline-class (:weight bold :foreground ,cordyline-mode-line :inherit (highlight)))))
    `(icomplete-first-match ((,cordyline-class (:weight bold :foreground ,cordyline-mode-line :inherit (highlight)))))
 
+   ;; bookmark
+   `(bookmark-face ((,cordyline-class (:foreground ,cordyline-mode-line :distant-foreground unspecified))))
+   `(bookmark-menu-bookmark ((,cordyline-class (:weight bold :inherit bookmark-face))))
+
 
    ;; external packages
 

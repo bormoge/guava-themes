@@ -291,6 +291,10 @@
    `(icomplete-selected-match ((,petunia-class (:weight bold :foreground ,petunia-mode-line :inherit (highlight)))))
    `(icomplete-first-match ((,petunia-class (:weight bold :foreground ,petunia-mode-line :inherit (highlight)))))
 
+   ;; bookmark
+   `(bookmark-face ((,petunia-class (:foreground ,petunia-mode-line :distant-foreground unspecified))))
+   `(bookmark-menu-bookmark ((,petunia-class (:weight bold :inherit bookmark-face))))
+
 
    ;; external packages
 

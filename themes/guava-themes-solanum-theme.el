@@ -292,6 +292,10 @@
    `(icomplete-selected-match ((,solanum-class (:weight bold :foreground ,solanum-mode-line :inherit (highlight)))))
    `(icomplete-first-match ((,solanum-class (:weight bold :foreground ,solanum-mode-line :inherit (highlight)))))
 
+   ;; bookmark
+   `(bookmark-face ((,solanum-class (:foreground ,solanum-mode-line :distant-foreground unspecified))))
+   `(bookmark-menu-bookmark ((,solanum-class (:weight bold :inherit bookmark-face))))
+
 
    ;; external packages
 

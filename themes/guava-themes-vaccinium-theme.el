@@ -293,6 +293,10 @@
    `(icomplete-selected-match ((,vaccinium-class (:weight bold :foreground ,vaccinium-mode-line :inherit (highlight)))))
    `(icomplete-first-match ((,vaccinium-class (:weight bold :foreground ,vaccinium-mode-line :inherit (highlight)))))
 
+   ;; bookmark
+   `(bookmark-face ((,vaccinium-class (:foreground ,vaccinium-mode-line :distant-foreground unspecified))))
+   `(bookmark-menu-bookmark ((,vaccinium-class (:weight bold :inherit bookmark-face))))
+
 
    ;; external packages
 

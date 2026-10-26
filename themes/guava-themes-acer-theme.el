@@ -293,6 +293,10 @@
    `(icomplete-selected-match ((,acer-class (:weight bold :foreground ,acer-mode-line :inherit (highlight)))))
    `(icomplete-first-match ((,acer-class (:weight bold :foreground ,acer-mode-line :inherit (highlight)))))
 
+   ;; bookmark
+   `(bookmark-face ((,acer-class (:foreground ,acer-mode-line :distant-foreground unspecified))))
+   `(bookmark-menu-bookmark ((,acer-class (:weight bold :inherit bookmark-face))))
+
 
    ;; external packages
 
