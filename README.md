@@ -38,8 +38,12 @@ Originally conceived as a tribute to the [guava fruit](https://en.wikipedia.org/
 And so, the package name became an Artifact Title, as is known in the tropes community.  
 
 ## Installation
-- You can make use of the macro `use-package` to automatically install **guava-themes** from [MELPA](https://melpa.org/#/getting-started): 
-```
+You can install **guava-themes** from [MELPA](https://melpa.org/#/getting-started) using **one** of the following methods: 
+
+<details>
+<summary><b>use-package</b></summary>
+
+```elisp
 (use-package guava-themes
   :ensure t
   :custom
@@ -50,8 +54,12 @@ And so, the package name became an Artifact Title, as is known in the tropes com
   )
 ```
 
-- You can also install **guava-themes** with this code: 
-```
+</details>
+
+<details>
+<summary><b>package-install</b></summary>
+
+```elisp
 (unless (package-installed-p 'guava-themes)
   (package-install 'guava-themes))
 
@@ -61,6 +69,8 @@ And so, the package name became an Artifact Title, as is known in the tropes com
 (setopt visible-bell t)
 (load-theme 'guava-themes-psidium t)
 ```
+
+</details>
 
 ## Screenshots
 - Guava Psidium Theme  
