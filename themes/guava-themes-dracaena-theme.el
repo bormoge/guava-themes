@@ -101,13 +101,13 @@
       (dracaena-diff-context              "#828282")
       (dracaena-smerge-base               "#5A5AA0")
 
-      (dracaena-orderless-0               "#af50b9")
-      (dracaena-orderless-1               "#28a03c")
-      (dracaena-orderless-2               "#ff6400")
-      (dracaena-orderless-3               "#3c82ff")
+      (dracaena-square-a-0                "#af50b9")
+      (dracaena-square-a-1                "#28a03c")
+      (dracaena-square-a-2                "#ff6400")
+      (dracaena-square-a-3                "#3c82ff")
 
-      (dracaena-prescient-0               "#46E6A6")
-      (dracaena-prescient-1               "#E64686"))
+      (dracaena-complementary-a-0         "#46E6A6")
+      (dracaena-complementary-a-1         "#E64686"))
 
   (custom-theme-set-faces
    'guava-themes-dracaena
@@ -259,8 +259,8 @@
    `(org-table-header ((,dracaena-class (:inverse-video t :inherit org-table))))
    `(org-date ((,dracaena-class (:foreground ,dracaena-orange))))
    `(org-date-selected ((,dracaena-class (:foreground unspecified :inverse-video t :inherit org-date))))
-   `(org-headline-todo ((,dracaena-class (:foreground ,dracaena-orderless-2))))
-   `(org-headline-done ((,dracaena-class (:foreground ,dracaena-orderless-1))))
+   `(org-headline-todo ((,dracaena-class (:foreground ,dracaena-square-a-2))))
+   `(org-headline-done ((,dracaena-class (:foreground ,dracaena-square-a-1))))
    `(org-document-title ((,dracaena-class (:inherit font-lock-keyword-face))))
    `(org-document-info-keyword ((,dracaena-class (:inherit shadow))))
    `(org-meta-line ((,dracaena-class (:inherit font-lock-comment-face))))
@@ -271,11 +271,11 @@
    `(window-divider-last-pixel ((,dracaena-class (:inherit window-divider))))
 
    ;; isearch (use "M-x isearch-forward-regexp foo-\([0-9]+\)\([a-z]+\)" to check the group faces)
-   `(isearch ((,dracaena-class (:foreground ,dracaena-white :background ,dracaena-orderless-2))))
+   `(isearch ((,dracaena-class (:foreground ,dracaena-white :background ,dracaena-square-a-2))))
    `(isearch-fail ((,dracaena-class (:foreground ,dracaena-white :background ,dracaena-error))))
-   `(lazy-highlight ((,dracaena-class (:foreground ,dracaena-white :background ,dracaena-orderless-3))))
-   `(isearch-group-1 ((,dracaena-class (:foreground ,dracaena-white :background ,dracaena-orderless-0))))
-   `(isearch-group-2 ((,dracaena-class (:foreground ,dracaena-white :background ,dracaena-orderless-1))))
+   `(lazy-highlight ((,dracaena-class (:foreground ,dracaena-white :background ,dracaena-square-a-3))))
+   `(isearch-group-1 ((,dracaena-class (:foreground ,dracaena-white :background ,dracaena-square-a-0))))
+   `(isearch-group-2 ((,dracaena-class (:foreground ,dracaena-white :background ,dracaena-square-a-1))))
 
    ;; replace (use "M-x occur" to check the match face)
    `(query-replace ((,dracaena-class (:inherit isearch))))
@@ -366,14 +366,14 @@
    `(corfu-border ((,dracaena-class (:background ,dracaena-shadow))))
 
    ;; orderless
-   `(orderless-match-face-0 ((,dracaena-class (:foreground ,dracaena-orderless-0 :weight bold))))
-   `(orderless-match-face-1 ((,dracaena-class (:foreground ,dracaena-orderless-1 :weight bold))))
-   `(orderless-match-face-2 ((,dracaena-class (:foreground ,dracaena-orderless-2 :weight bold))))
-   `(orderless-match-face-3 ((,dracaena-class (:foreground ,dracaena-orderless-3 :weight bold))))
+   `(orderless-match-face-0 ((,dracaena-class (:foreground ,dracaena-square-a-0 :weight bold))))
+   `(orderless-match-face-1 ((,dracaena-class (:foreground ,dracaena-square-a-1 :weight bold))))
+   `(orderless-match-face-2 ((,dracaena-class (:foreground ,dracaena-square-a-2 :weight bold))))
+   `(orderless-match-face-3 ((,dracaena-class (:foreground ,dracaena-square-a-3 :weight bold))))
 
    ;; prescient (vertico-prescient-enable-filtering, corfu-prescient-enable-filtering)
-   `(prescient-primary-highlight ((,dracaena-class (:foreground ,dracaena-prescient-0 :weight bold))))
-   `(prescient-secondary-highlight ((,dracaena-class (:foreground ,dracaena-prescient-1 :underline t :weight bold))))
+   `(prescient-primary-highlight ((,dracaena-class (:foreground ,dracaena-complementary-a-0 :weight bold))))
+   `(prescient-secondary-highlight ((,dracaena-class (:foreground ,dracaena-complementary-a-1 :underline t :weight bold))))
 
    ;; envrc
    `(envrc-mode-line-error-face ((,dracaena-class (:inherit error))))
@@ -386,7 +386,7 @@
    `(devdocs-code-block ((,dracaena-class (:weight bold :background ,dracaena-highlight :extend t))))
 
    ;; pdf-tools
-   `(pdf-view-region ((,dracaena-class (:foreground ,dracaena-white :background ,dracaena-orderless-3 :inherit region))))
+   `(pdf-view-region ((,dracaena-class (:foreground ,dracaena-white :background ,dracaena-square-a-3 :inherit region))))
 
    ;; nerd-icons
    ;; nerd-icons-completion

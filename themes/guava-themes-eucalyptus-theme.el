@@ -100,13 +100,13 @@
       (eucalyptus-diff-context              "#dcdcdc")
       (eucalyptus-smerge-base               "#C8C8F0")
 
-      (eucalyptus-orderless-0               "#af37b9")
-      (eucalyptus-orderless-1               "#147828")
-      (eucalyptus-orderless-2               "#b45a00")
-      (eucalyptus-orderless-3               "#3c82e6")
+      (eucalyptus-square-a-0                "#af37b9")
+      (eucalyptus-square-a-1                "#147828")
+      (eucalyptus-square-a-2                "#b45a00")
+      (eucalyptus-square-a-3                "#3c82e6")
 
-      (eucalyptus-prescient-0               "#4680DE")
-      (eucalyptus-prescient-1               "#DE4680"))
+      (eucalyptus-complementary-a-0         "#4680DE")
+      (eucalyptus-complementary-a-1         "#DE4680"))
 
   (custom-theme-set-faces
    'guava-themes-eucalyptus
@@ -258,8 +258,8 @@
    `(org-table-header ((,eucalyptus-class (:inverse-video t :inherit org-table))))
    `(org-date ((,eucalyptus-class (:foreground ,eucalyptus-purple-red))))
    `(org-date-selected ((,eucalyptus-class (:foreground unspecified :inverse-video t :inherit org-date))))
-   `(org-headline-todo ((,eucalyptus-class (:foreground ,eucalyptus-orderless-2))))
-   `(org-headline-done ((,eucalyptus-class (:foreground ,eucalyptus-orderless-1))))
+   `(org-headline-todo ((,eucalyptus-class (:foreground ,eucalyptus-square-a-2))))
+   `(org-headline-done ((,eucalyptus-class (:foreground ,eucalyptus-square-a-1))))
    `(org-document-title ((,eucalyptus-class (:inherit font-lock-keyword-face))))
    `(org-document-info-keyword ((,eucalyptus-class (:inherit shadow))))
    `(org-meta-line ((,eucalyptus-class (:inherit font-lock-comment-face))))
@@ -270,11 +270,11 @@
    `(window-divider-last-pixel ((,eucalyptus-class (:inherit window-divider))))
 
    ;; isearch (use "M-x isearch-forward-regexp foo-\([0-9]+\)\([a-z]+\)" to check the group faces)
-   `(isearch ((,eucalyptus-class (:foreground ,eucalyptus-white :background ,eucalyptus-orderless-2))))
+   `(isearch ((,eucalyptus-class (:foreground ,eucalyptus-white :background ,eucalyptus-square-a-2))))
    `(isearch-fail ((,eucalyptus-class (:foreground ,eucalyptus-white :background ,eucalyptus-error))))
-   `(lazy-highlight ((,eucalyptus-class (:foreground ,eucalyptus-white :background ,eucalyptus-orderless-3))))
-   `(isearch-group-1 ((,eucalyptus-class (:foreground ,eucalyptus-white :background ,eucalyptus-orderless-0))))
-   `(isearch-group-2 ((,eucalyptus-class (:foreground ,eucalyptus-white :background ,eucalyptus-orderless-1))))
+   `(lazy-highlight ((,eucalyptus-class (:foreground ,eucalyptus-white :background ,eucalyptus-square-a-3))))
+   `(isearch-group-1 ((,eucalyptus-class (:foreground ,eucalyptus-white :background ,eucalyptus-square-a-0))))
+   `(isearch-group-2 ((,eucalyptus-class (:foreground ,eucalyptus-white :background ,eucalyptus-square-a-1))))
 
    ;; replace (use "M-x occur" to check the match face)
    `(query-replace ((,eucalyptus-class (:inherit isearch))))
@@ -365,14 +365,14 @@
    `(corfu-border ((,eucalyptus-class (:background ,eucalyptus-shadow))))
 
    ;; orderless
-   `(orderless-match-face-0 ((,eucalyptus-class (:foreground ,eucalyptus-orderless-0 :weight bold))))
-   `(orderless-match-face-1 ((,eucalyptus-class (:foreground ,eucalyptus-orderless-1 :weight bold))))
-   `(orderless-match-face-2 ((,eucalyptus-class (:foreground ,eucalyptus-orderless-2 :weight bold))))
-   `(orderless-match-face-3 ((,eucalyptus-class (:foreground ,eucalyptus-orderless-3 :weight bold))))
+   `(orderless-match-face-0 ((,eucalyptus-class (:foreground ,eucalyptus-square-a-0 :weight bold))))
+   `(orderless-match-face-1 ((,eucalyptus-class (:foreground ,eucalyptus-square-a-1 :weight bold))))
+   `(orderless-match-face-2 ((,eucalyptus-class (:foreground ,eucalyptus-square-a-2 :weight bold))))
+   `(orderless-match-face-3 ((,eucalyptus-class (:foreground ,eucalyptus-square-a-3 :weight bold))))
 
    ;; prescient (vertico-prescient-enable-filtering, corfu-prescient-enable-filtering)
-   `(prescient-primary-highlight ((,eucalyptus-class (:foreground ,eucalyptus-prescient-0 :weight bold))))
-   `(prescient-secondary-highlight ((,eucalyptus-class (:foreground ,eucalyptus-prescient-1 :underline t :weight bold))))
+   `(prescient-primary-highlight ((,eucalyptus-class (:foreground ,eucalyptus-complementary-a-0 :weight bold))))
+   `(prescient-secondary-highlight ((,eucalyptus-class (:foreground ,eucalyptus-complementary-a-1 :underline t :weight bold))))
 
    ;; envrc
    `(envrc-mode-line-error-face ((,eucalyptus-class (:inherit error))))
@@ -385,7 +385,7 @@
    `(devdocs-code-block ((,eucalyptus-class (:weight bold :background ,eucalyptus-highlight :extend t))))
 
    ;; pdf-tools
-   `(pdf-view-region ((,eucalyptus-class (:foreground ,eucalyptus-white :background ,eucalyptus-orderless-3 :inherit region))))
+   `(pdf-view-region ((,eucalyptus-class (:foreground ,eucalyptus-white :background ,eucalyptus-square-a-3 :inherit region))))
 
    ;; nerd-icons
    ;; nerd-icons-completion

@@ -99,13 +99,13 @@
       (jacaranda-diff-context              "#dcdcdc")
       (jacaranda-smerge-base               "#C8C8F0")
 
-      (jacaranda-orderless-0               "#af50b9")
-      (jacaranda-orderless-1               "#28a03c")
-      (jacaranda-orderless-2               "#ff6400")
-      (jacaranda-orderless-3               "#3c82ff")
+      (jacaranda-square-a-0                "#af50b9")
+      (jacaranda-square-a-1                "#28a03c")
+      (jacaranda-square-a-2                "#ff6400")
+      (jacaranda-square-a-3                "#3c82ff")
 
-      (jacaranda-prescient-0               "#4680DE")
-      (jacaranda-prescient-1               "#DE4680"))
+      (jacaranda-complementary-a-0         "#4680DE")
+      (jacaranda-complementary-a-1         "#DE4680"))
 
   (custom-theme-set-faces
    'guava-themes-jacaranda
@@ -257,8 +257,8 @@
    `(org-table-header ((,jacaranda-class (:inverse-video t :inherit org-table))))
    `(org-date ((,jacaranda-class (:foreground ,jacaranda-red))))
    `(org-date-selected ((,jacaranda-class (:foreground unspecified :inverse-video t :inherit org-date))))
-   `(org-headline-todo ((,jacaranda-class (:foreground ,jacaranda-orderless-2))))
-   `(org-headline-done ((,jacaranda-class (:foreground ,jacaranda-orderless-1))))
+   `(org-headline-todo ((,jacaranda-class (:foreground ,jacaranda-square-a-2))))
+   `(org-headline-done ((,jacaranda-class (:foreground ,jacaranda-square-a-1))))
    `(org-document-title ((,jacaranda-class (:inherit font-lock-keyword-face))))
    `(org-document-info-keyword ((,jacaranda-class (:inherit shadow))))
    `(org-meta-line ((,jacaranda-class (:inherit font-lock-comment-face))))
@@ -269,11 +269,11 @@
    `(window-divider-last-pixel ((,jacaranda-class (:inherit window-divider))))
 
    ;; isearch (use "M-x isearch-forward-regexp foo-\([0-9]+\)\([a-z]+\)" to check the group faces)
-   `(isearch ((,jacaranda-class (:foreground ,jacaranda-white :background ,jacaranda-orderless-2))))
+   `(isearch ((,jacaranda-class (:foreground ,jacaranda-white :background ,jacaranda-square-a-2))))
    `(isearch-fail ((,jacaranda-class (:foreground ,jacaranda-white :background ,jacaranda-error))))
-   `(lazy-highlight ((,jacaranda-class (:foreground ,jacaranda-white :background ,jacaranda-orderless-3))))
-   `(isearch-group-1 ((,jacaranda-class (:foreground ,jacaranda-white :background ,jacaranda-orderless-0))))
-   `(isearch-group-2 ((,jacaranda-class (:foreground ,jacaranda-white :background ,jacaranda-orderless-1))))
+   `(lazy-highlight ((,jacaranda-class (:foreground ,jacaranda-white :background ,jacaranda-square-a-3))))
+   `(isearch-group-1 ((,jacaranda-class (:foreground ,jacaranda-white :background ,jacaranda-square-a-0))))
+   `(isearch-group-2 ((,jacaranda-class (:foreground ,jacaranda-white :background ,jacaranda-square-a-1))))
 
    ;; replace (use "M-x occur" to check the match face)
    `(query-replace ((,jacaranda-class (:inherit isearch))))
@@ -364,14 +364,14 @@
    `(corfu-border ((,jacaranda-class (:background ,jacaranda-shadow))))
 
    ;; orderless
-   `(orderless-match-face-0 ((,jacaranda-class (:foreground ,jacaranda-orderless-0 :weight bold))))
-   `(orderless-match-face-1 ((,jacaranda-class (:foreground ,jacaranda-orderless-1 :weight bold))))
-   `(orderless-match-face-2 ((,jacaranda-class (:foreground ,jacaranda-orderless-2 :weight bold))))
-   `(orderless-match-face-3 ((,jacaranda-class (:foreground ,jacaranda-orderless-3 :weight bold))))
+   `(orderless-match-face-0 ((,jacaranda-class (:foreground ,jacaranda-square-a-0 :weight bold))))
+   `(orderless-match-face-1 ((,jacaranda-class (:foreground ,jacaranda-square-a-1 :weight bold))))
+   `(orderless-match-face-2 ((,jacaranda-class (:foreground ,jacaranda-square-a-2 :weight bold))))
+   `(orderless-match-face-3 ((,jacaranda-class (:foreground ,jacaranda-square-a-3 :weight bold))))
 
    ;; prescient (vertico-prescient-enable-filtering, corfu-prescient-enable-filtering)
-   `(prescient-primary-highlight ((,jacaranda-class (:foreground ,jacaranda-prescient-0 :weight bold))))
-   `(prescient-secondary-highlight ((,jacaranda-class (:foreground ,jacaranda-prescient-1 :underline t :weight bold))))
+   `(prescient-primary-highlight ((,jacaranda-class (:foreground ,jacaranda-complementary-a-0 :weight bold))))
+   `(prescient-secondary-highlight ((,jacaranda-class (:foreground ,jacaranda-complementary-a-1 :underline t :weight bold))))
 
    ;; envrc
    `(envrc-mode-line-error-face ((,jacaranda-class (:inherit error))))
@@ -384,7 +384,7 @@
    `(devdocs-code-block ((,jacaranda-class (:weight bold :background ,jacaranda-highlight :extend t))))
 
    ;; pdf-tools
-   `(pdf-view-region ((,jacaranda-class (:foreground ,jacaranda-white :background ,jacaranda-orderless-3 :inherit region))))
+   `(pdf-view-region ((,jacaranda-class (:foreground ,jacaranda-white :background ,jacaranda-square-a-3 :inherit region))))
 
    ;; nerd-icons
    ;; nerd-icons-completion

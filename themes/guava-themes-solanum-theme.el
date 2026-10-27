@@ -100,13 +100,13 @@
       (solanum-diff-context              "#828282")
       (solanum-smerge-base               "#5A5AA0")
 
-      (solanum-orderless-0               "#af50c8")
-      (solanum-orderless-1               "#28a03c")
-      (solanum-orderless-2               "#ff6400")
-      (solanum-orderless-3               "#3c82ff")
+      (solanum-square-a-0                "#af50c8")
+      (solanum-square-a-1                "#28a03c")
+      (solanum-square-a-2                "#ff6400")
+      (solanum-square-a-3                "#3c82ff")
 
-      (solanum-prescient-0               "#46C8A5")
-      (solanum-prescient-1               "#C84669"))
+      (solanum-complementary-a-0         "#46C8A5")
+      (solanum-complementary-a-1         "#C84669"))
 
   (custom-theme-set-faces
    'guava-themes-solanum
@@ -258,8 +258,8 @@
    `(org-table-header ((,solanum-class (:inverse-video t :inherit org-table))))
    `(org-date ((,solanum-class (:foreground ,solanum-alt-light-green))))
    `(org-date-selected ((,solanum-class (:foreground unspecified :inverse-video t :inherit org-date))))
-   `(org-headline-todo ((,solanum-class (:foreground ,solanum-orderless-2))))
-   `(org-headline-done ((,solanum-class (:foreground ,solanum-orderless-1))))
+   `(org-headline-todo ((,solanum-class (:foreground ,solanum-square-a-2))))
+   `(org-headline-done ((,solanum-class (:foreground ,solanum-square-a-1))))
    `(org-document-title ((,solanum-class (:inherit font-lock-keyword-face))))
    `(org-document-info-keyword ((,solanum-class (:inherit shadow))))
    `(org-meta-line ((,solanum-class (:inherit font-lock-comment-face))))
@@ -270,11 +270,11 @@
    `(window-divider-last-pixel ((,solanum-class (:inherit window-divider))))
 
    ;; isearch (use "M-x isearch-forward-regexp foo-\([0-9]+\)\([a-z]+\)" to check the group faces)
-   `(isearch ((,solanum-class (:foreground ,solanum-white :background ,solanum-orderless-2))))
+   `(isearch ((,solanum-class (:foreground ,solanum-white :background ,solanum-square-a-2))))
    `(isearch-fail ((,solanum-class (:foreground ,solanum-white :background ,solanum-error))))
-   `(lazy-highlight ((,solanum-class (:foreground ,solanum-white :background ,solanum-orderless-3))))
-   `(isearch-group-1 ((,solanum-class (:foreground ,solanum-white :background ,solanum-orderless-0))))
-   `(isearch-group-2 ((,solanum-class (:foreground ,solanum-white :background ,solanum-orderless-1))))
+   `(lazy-highlight ((,solanum-class (:foreground ,solanum-white :background ,solanum-square-a-3))))
+   `(isearch-group-1 ((,solanum-class (:foreground ,solanum-white :background ,solanum-square-a-0))))
+   `(isearch-group-2 ((,solanum-class (:foreground ,solanum-white :background ,solanum-square-a-1))))
 
    ;; replace (use "M-x occur" to check the match face)
    `(query-replace ((,solanum-class (:inherit isearch))))
@@ -365,14 +365,14 @@
    `(corfu-border ((,solanum-class (:background ,solanum-shadow))))
 
    ;; orderless
-   `(orderless-match-face-0 ((,solanum-class (:foreground ,solanum-orderless-0 :weight bold))))
-   `(orderless-match-face-1 ((,solanum-class (:foreground ,solanum-orderless-1 :weight bold))))
-   `(orderless-match-face-2 ((,solanum-class (:foreground ,solanum-orderless-2 :weight bold))))
-   `(orderless-match-face-3 ((,solanum-class (:foreground ,solanum-orderless-3 :weight bold))))
+   `(orderless-match-face-0 ((,solanum-class (:foreground ,solanum-square-a-0 :weight bold))))
+   `(orderless-match-face-1 ((,solanum-class (:foreground ,solanum-square-a-1 :weight bold))))
+   `(orderless-match-face-2 ((,solanum-class (:foreground ,solanum-square-a-2 :weight bold))))
+   `(orderless-match-face-3 ((,solanum-class (:foreground ,solanum-square-a-3 :weight bold))))
 
    ;; prescient (vertico-prescient-enable-filtering, corfu-prescient-enable-filtering)
-   `(prescient-primary-highlight ((,solanum-class (:foreground ,solanum-prescient-0 :weight bold))))
-   `(prescient-secondary-highlight ((,solanum-class (:foreground ,solanum-prescient-1 :underline t :weight bold))))
+   `(prescient-primary-highlight ((,solanum-class (:foreground ,solanum-complementary-a-0 :weight bold))))
+   `(prescient-secondary-highlight ((,solanum-class (:foreground ,solanum-complementary-a-1 :underline t :weight bold))))
 
    ;; envrc
    `(envrc-mode-line-error-face ((,solanum-class (:inherit error))))
@@ -385,7 +385,7 @@
    `(devdocs-code-block ((,solanum-class (:weight bold :background ,solanum-highlight :extend t))))
 
    ;; pdf-tools
-   `(pdf-view-region ((,solanum-class (:foreground ,solanum-white :background ,solanum-orderless-3 :inherit region))))
+   `(pdf-view-region ((,solanum-class (:foreground ,solanum-white :background ,solanum-square-a-3 :inherit region))))
 
    ;; nerd-icons
    ;; nerd-icons-completion

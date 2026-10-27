@@ -101,13 +101,13 @@
       (acer-diff-context              "#dcdcdc")
       (acer-smerge-base               "#C8C8F0")
 
-      (acer-orderless-0               "#af2ab9")
-      (acer-orderless-1               "#28823c")
-      (acer-orderless-2               "#d44400")
-      (acer-orderless-3               "#6496d7")
+      (acer-square-a-0                "#af2ab9")
+      (acer-square-a-1                "#28823c")
+      (acer-square-a-2                "#d44400")
+      (acer-square-a-3                "#6496d7")
 
-      (acer-prescient-0               "#4680DE")
-      (acer-prescient-1               "#DE4680"))
+      (acer-complementary-a-0         "#4680DE")
+      (acer-complementary-a-1         "#DE4680"))
 
   (custom-theme-set-faces
    'guava-themes-acer
@@ -259,8 +259,8 @@
    `(org-table-header ((,acer-class (:inverse-video t :inherit org-table))))
    `(org-date ((,acer-class (:foreground ,acer-light-blue))))
    `(org-date-selected ((,acer-class (:foreground unspecified :inverse-video t :inherit org-date))))
-   `(org-headline-todo ((,acer-class (:foreground ,acer-orderless-0))))
-   `(org-headline-done ((,acer-class (:foreground ,acer-orderless-3))))
+   `(org-headline-todo ((,acer-class (:foreground ,acer-square-a-0))))
+   `(org-headline-done ((,acer-class (:foreground ,acer-square-a-3))))
    `(org-document-title ((,acer-class (:inherit font-lock-keyword-face))))
    `(org-document-info-keyword ((,acer-class (:inherit shadow))))
    `(org-meta-line ((,acer-class (:inherit font-lock-comment-face))))
@@ -271,11 +271,11 @@
    `(window-divider-last-pixel ((,acer-class (:inherit window-divider))))
 
    ;; isearch (use "M-x isearch-forward-regexp foo-\([0-9]+\)\([a-z]+\)" to check the group faces)
-   `(isearch ((,acer-class (:foreground ,acer-white :background ,acer-orderless-2))))
+   `(isearch ((,acer-class (:foreground ,acer-white :background ,acer-square-a-2))))
    `(isearch-fail ((,acer-class (:foreground ,acer-white :background ,acer-error))))
-   `(lazy-highlight ((,acer-class (:foreground ,acer-white :background ,acer-orderless-3))))
-   `(isearch-group-1 ((,acer-class (:foreground ,acer-white :background ,acer-orderless-0))))
-   `(isearch-group-2 ((,acer-class (:foreground ,acer-white :background ,acer-orderless-1))))
+   `(lazy-highlight ((,acer-class (:foreground ,acer-white :background ,acer-square-a-3))))
+   `(isearch-group-1 ((,acer-class (:foreground ,acer-white :background ,acer-square-a-0))))
+   `(isearch-group-2 ((,acer-class (:foreground ,acer-white :background ,acer-square-a-1))))
 
    ;; replace (use "M-x occur" to check the match face)
    `(query-replace ((,acer-class (:inherit isearch))))
@@ -366,14 +366,14 @@
    `(corfu-border ((,acer-class (:background ,acer-shadow))))
 
    ;; orderless
-   `(orderless-match-face-0 ((,acer-class (:foreground ,acer-orderless-0 :weight bold))))
-   `(orderless-match-face-1 ((,acer-class (:foreground ,acer-orderless-1 :weight bold))))
-   `(orderless-match-face-2 ((,acer-class (:foreground ,acer-orderless-2 :weight bold))))
-   `(orderless-match-face-3 ((,acer-class (:foreground ,acer-orderless-3 :weight bold))))
+   `(orderless-match-face-0 ((,acer-class (:foreground ,acer-square-a-0 :weight bold))))
+   `(orderless-match-face-1 ((,acer-class (:foreground ,acer-square-a-1 :weight bold))))
+   `(orderless-match-face-2 ((,acer-class (:foreground ,acer-square-a-2 :weight bold))))
+   `(orderless-match-face-3 ((,acer-class (:foreground ,acer-square-a-3 :weight bold))))
 
    ;; prescient (vertico-prescient-enable-filtering, corfu-prescient-enable-filtering)
-   `(prescient-primary-highlight ((,acer-class (:foreground ,acer-prescient-0 :weight bold))))
-   `(prescient-secondary-highlight ((,acer-class (:foreground ,acer-prescient-1 :underline t :weight bold))))
+   `(prescient-primary-highlight ((,acer-class (:foreground ,acer-complementary-a-0 :weight bold))))
+   `(prescient-secondary-highlight ((,acer-class (:foreground ,acer-complementary-a-1 :underline t :weight bold))))
 
    ;; envrc
    `(envrc-mode-line-error-face ((,acer-class (:inherit error))))
@@ -386,7 +386,7 @@
    `(devdocs-code-block ((,acer-class (:weight bold :background ,acer-highlight :extend t))))
 
    ;; pdf-tools
-   `(pdf-view-region ((,acer-class (:foreground ,acer-white :background ,acer-orderless-3 :inherit region))))
+   `(pdf-view-region ((,acer-class (:foreground ,acer-white :background ,acer-square-a-3 :inherit region))))
 
    ;; nerd-icons
    ;; nerd-icons-completion

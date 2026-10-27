@@ -103,13 +103,13 @@
       (rhododendron-diff-context              "#dcdcdc")
       (rhododendron-smerge-base               "#C8C8F0")
 
-      (rhododendron-orderless-0               "#af50c8")
-      (rhododendron-orderless-1               "#28a03c")
-      (rhododendron-orderless-2               "#ff6400")
-      (rhododendron-orderless-3               "#3c82ff")
+      (rhododendron-square-a-0                "#af50c8")
+      (rhododendron-square-a-1                "#28a03c")
+      (rhododendron-square-a-2                "#ff6400")
+      (rhododendron-square-a-3                "#3c82ff")
 
-      (rhododendron-prescient-0               "#4680DE")
-      (rhododendron-prescient-1               "#DE4680"))
+      (rhododendron-complementary-a-0         "#4680DE")
+      (rhododendron-complementary-a-1         "#DE4680"))
 
   (custom-theme-set-faces
    'guava-themes-rhododendron
@@ -261,8 +261,8 @@
    `(org-table-header ((,rhododendron-class (:inverse-video t :inherit org-table))))
    `(org-date ((,rhododendron-class (:foreground ,rhododendron-red-orange))))
    `(org-date-selected ((,rhododendron-class (:foreground unspecified :inverse-video t :inherit org-date))))
-   `(org-headline-todo ((,rhododendron-class (:foreground ,rhododendron-orderless-0))))
-   `(org-headline-done ((,rhododendron-class (:foreground ,rhododendron-orderless-3))))
+   `(org-headline-todo ((,rhododendron-class (:foreground ,rhododendron-square-a-0))))
+   `(org-headline-done ((,rhododendron-class (:foreground ,rhododendron-square-a-3))))
    `(org-document-title ((,rhododendron-class (:inherit font-lock-keyword-face))))
    `(org-document-info-keyword ((,rhododendron-class (:inherit shadow))))
    `(org-meta-line ((,rhododendron-class (:inherit font-lock-comment-face))))
@@ -273,11 +273,11 @@
    `(window-divider-last-pixel ((,rhododendron-class (:inherit window-divider))))
 
    ;; isearch (use "M-x isearch-forward-regexp foo-\([0-9]+\)\([a-z]+\)" to check the group faces)
-   `(isearch ((,rhododendron-class (:foreground ,rhododendron-white :background ,rhododendron-orderless-2))))
+   `(isearch ((,rhododendron-class (:foreground ,rhododendron-white :background ,rhododendron-square-a-2))))
    `(isearch-fail ((,rhododendron-class (:foreground ,rhododendron-white :background ,rhododendron-error))))
-   `(lazy-highlight ((,rhododendron-class (:foreground ,rhododendron-white :background ,rhododendron-orderless-3))))
-   `(isearch-group-1 ((,rhododendron-class (:foreground ,rhododendron-white :background ,rhododendron-orderless-0))))
-   `(isearch-group-2 ((,rhododendron-class (:foreground ,rhododendron-white :background ,rhododendron-orderless-1))))
+   `(lazy-highlight ((,rhododendron-class (:foreground ,rhododendron-white :background ,rhododendron-square-a-3))))
+   `(isearch-group-1 ((,rhododendron-class (:foreground ,rhododendron-white :background ,rhododendron-square-a-0))))
+   `(isearch-group-2 ((,rhododendron-class (:foreground ,rhododendron-white :background ,rhododendron-square-a-1))))
 
    ;; replace (use "M-x occur" to check the match face)
    `(query-replace ((,rhododendron-class (:inherit isearch))))
@@ -368,14 +368,14 @@
    `(corfu-border ((,rhododendron-class (:background ,rhododendron-shadow))))
 
    ;; orderless
-   `(orderless-match-face-0 ((,rhododendron-class (:foreground ,rhododendron-orderless-0 :weight bold))))
-   `(orderless-match-face-1 ((,rhododendron-class (:foreground ,rhododendron-orderless-1 :weight bold))))
-   `(orderless-match-face-2 ((,rhododendron-class (:foreground ,rhododendron-orderless-2 :weight bold))))
-   `(orderless-match-face-3 ((,rhododendron-class (:foreground ,rhododendron-orderless-3 :weight bold))))
+   `(orderless-match-face-0 ((,rhododendron-class (:foreground ,rhododendron-square-a-0 :weight bold))))
+   `(orderless-match-face-1 ((,rhododendron-class (:foreground ,rhododendron-square-a-1 :weight bold))))
+   `(orderless-match-face-2 ((,rhododendron-class (:foreground ,rhododendron-square-a-2 :weight bold))))
+   `(orderless-match-face-3 ((,rhododendron-class (:foreground ,rhododendron-square-a-3 :weight bold))))
 
    ;; prescient (vertico-prescient-enable-filtering, corfu-prescient-enable-filtering)
-   `(prescient-primary-highlight ((,rhododendron-class (:foreground ,rhododendron-prescient-0 :weight bold))))
-   `(prescient-secondary-highlight ((,rhododendron-class (:foreground ,rhododendron-prescient-1 :underline t :weight bold))))
+   `(prescient-primary-highlight ((,rhododendron-class (:foreground ,rhododendron-complementary-a-0 :weight bold))))
+   `(prescient-secondary-highlight ((,rhododendron-class (:foreground ,rhododendron-complementary-a-1 :underline t :weight bold))))
 
    ;; envrc
    `(envrc-mode-line-error-face ((,rhododendron-class (:inherit error))))
@@ -388,7 +388,7 @@
    `(devdocs-code-block ((,rhododendron-class (:weight bold :background ,rhododendron-highlight :extend t))))
 
    ;; pdf-tools
-   `(pdf-view-region ((,rhododendron-class (:foreground ,rhododendron-white :background ,rhododendron-orderless-3 :inherit region))))
+   `(pdf-view-region ((,rhododendron-class (:foreground ,rhododendron-white :background ,rhododendron-square-a-3 :inherit region))))
 
    ;; nerd-icons
    ;; nerd-icons-completion

@@ -99,13 +99,13 @@
       (petunia-diff-context              "#828282")
       (petunia-smerge-base               "#5A5AA0")
 
-      (petunia-orderless-0               "#c878dc")
-      (petunia-orderless-1               "#28b43c")
-      (petunia-orderless-2               "#ff7300")
-      (petunia-orderless-3               "#009bff")
+      (petunia-square-a-0                "#c878dc")
+      (petunia-square-a-1                "#28b43c")
+      (petunia-square-a-2                "#ff7300")
+      (petunia-square-a-3                "#009bff")
 
-      (petunia-prescient-0               "#46C8A5")
-      (petunia-prescient-1               "#C84669"))
+      (petunia-complementary-a-0         "#46C8A5")
+      (petunia-complementary-a-1         "#C84669"))
 
   (custom-theme-set-faces
    'guava-themes-petunia
@@ -257,8 +257,8 @@
    `(org-table-header ((,petunia-class (:inverse-video t :inherit org-table))))
    `(org-date ((,petunia-class (:foreground ,petunia-light-orange))))
    `(org-date-selected ((,petunia-class (:foreground unspecified :inverse-video t :inherit org-date))))
-   `(org-headline-todo ((,petunia-class (:foreground ,petunia-orderless-0))))
-   `(org-headline-done ((,petunia-class (:foreground ,petunia-orderless-1))))
+   `(org-headline-todo ((,petunia-class (:foreground ,petunia-square-a-0))))
+   `(org-headline-done ((,petunia-class (:foreground ,petunia-square-a-1))))
    `(org-document-title ((,petunia-class (:inherit font-lock-keyword-face))))
    `(org-document-info-keyword ((,petunia-class (:inherit shadow))))
    `(org-meta-line ((,petunia-class (:inherit font-lock-comment-face))))
@@ -269,11 +269,11 @@
    `(window-divider-last-pixel ((,petunia-class (:inherit window-divider))))
 
    ;; isearch (use "M-x isearch-forward-regexp foo-\([0-9]+\)\([a-z]+\)" to check the group faces)
-   `(isearch ((,petunia-class (:foreground ,petunia-white :background ,petunia-orderless-2))))
+   `(isearch ((,petunia-class (:foreground ,petunia-white :background ,petunia-square-a-2))))
    `(isearch-fail ((,petunia-class (:foreground ,petunia-white :background ,petunia-error))))
-   `(lazy-highlight ((,petunia-class (:foreground ,petunia-white :background ,petunia-orderless-3))))
-   `(isearch-group-1 ((,petunia-class (:foreground ,petunia-white :background ,petunia-orderless-0))))
-   `(isearch-group-2 ((,petunia-class (:foreground ,petunia-white :background ,petunia-orderless-1))))
+   `(lazy-highlight ((,petunia-class (:foreground ,petunia-white :background ,petunia-square-a-3))))
+   `(isearch-group-1 ((,petunia-class (:foreground ,petunia-white :background ,petunia-square-a-0))))
+   `(isearch-group-2 ((,petunia-class (:foreground ,petunia-white :background ,petunia-square-a-1))))
 
    ;; replace (use "M-x occur" to check the match face)
    `(query-replace ((,petunia-class (:inherit isearch))))
@@ -364,14 +364,14 @@
    `(corfu-border ((,petunia-class (:background ,petunia-shadow))))
 
    ;; orderless
-   `(orderless-match-face-0 ((,petunia-class (:foreground ,petunia-orderless-0 :weight bold))))
-   `(orderless-match-face-1 ((,petunia-class (:foreground ,petunia-orderless-1 :weight bold))))
-   `(orderless-match-face-2 ((,petunia-class (:foreground ,petunia-orderless-2 :weight bold))))
-   `(orderless-match-face-3 ((,petunia-class (:foreground ,petunia-orderless-3 :weight bold))))
+   `(orderless-match-face-0 ((,petunia-class (:foreground ,petunia-square-a-0 :weight bold))))
+   `(orderless-match-face-1 ((,petunia-class (:foreground ,petunia-square-a-1 :weight bold))))
+   `(orderless-match-face-2 ((,petunia-class (:foreground ,petunia-square-a-2 :weight bold))))
+   `(orderless-match-face-3 ((,petunia-class (:foreground ,petunia-square-a-3 :weight bold))))
 
    ;; prescient (vertico-prescient-enable-filtering, corfu-prescient-enable-filtering)
-   `(prescient-primary-highlight ((,petunia-class (:foreground ,petunia-prescient-0 :weight bold))))
-   `(prescient-secondary-highlight ((,petunia-class (:foreground ,petunia-prescient-1 :underline t :weight bold))))
+   `(prescient-primary-highlight ((,petunia-class (:foreground ,petunia-complementary-a-0 :weight bold))))
+   `(prescient-secondary-highlight ((,petunia-class (:foreground ,petunia-complementary-a-1 :underline t :weight bold))))
 
    ;; envrc
    `(envrc-mode-line-error-face ((,petunia-class (:inherit error))))
@@ -384,7 +384,7 @@
    `(devdocs-code-block ((,petunia-class (:weight bold :background ,petunia-highlight :extend t))))
 
    ;; pdf-tools
-   `(pdf-view-region ((,petunia-class (:foreground ,petunia-white :background ,petunia-orderless-3 :inherit region))))
+   `(pdf-view-region ((,petunia-class (:foreground ,petunia-white :background ,petunia-square-a-3 :inherit region))))
 
    ;; nerd-icons
    ;; nerd-icons-completion

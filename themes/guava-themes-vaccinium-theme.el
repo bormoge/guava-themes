@@ -101,13 +101,13 @@
       (vaccinium-diff-context              "#828282")
       (vaccinium-smerge-base               "#5A5AA0")
 
-      (vaccinium-orderless-0               "#af50c8")
-      (vaccinium-orderless-1               "#28a03c")
-      (vaccinium-orderless-2               "#ff6400")
-      (vaccinium-orderless-3               "#3c82ff")
+      (vaccinium-square-a-0                "#af50c8")
+      (vaccinium-square-a-1                "#28a03c")
+      (vaccinium-square-a-2                "#ff6400")
+      (vaccinium-square-a-3                "#3c82ff")
 
-      (vaccinium-prescient-0               "#46C8A5")
-      (vaccinium-prescient-1               "#C84669"))
+      (vaccinium-complementary-a-0         "#46C8A5")
+      (vaccinium-complementary-a-1         "#C84669"))
 
   (custom-theme-set-faces
    'guava-themes-vaccinium
@@ -259,8 +259,8 @@
    `(org-table-header ((,vaccinium-class (:inverse-video t :inherit org-table))))
    `(org-date ((,vaccinium-class (:foreground ,vaccinium-purple-pink))))
    `(org-date-selected ((,vaccinium-class (:foreground unspecified :inverse-video t :inherit org-date))))
-   `(org-headline-todo ((,vaccinium-class (:foreground ,vaccinium-orderless-2))))
-   `(org-headline-done ((,vaccinium-class (:foreground ,vaccinium-orderless-1))))
+   `(org-headline-todo ((,vaccinium-class (:foreground ,vaccinium-square-a-2))))
+   `(org-headline-done ((,vaccinium-class (:foreground ,vaccinium-square-a-1))))
    `(org-document-title ((,vaccinium-class (:inherit font-lock-keyword-face))))
    `(org-document-info-keyword ((,vaccinium-class (:inherit shadow))))
    `(org-meta-line ((,vaccinium-class (:inherit font-lock-comment-face))))
@@ -271,11 +271,11 @@
    `(window-divider-last-pixel ((,vaccinium-class (:inherit window-divider))))
 
    ;; isearch (use "M-x isearch-forward-regexp foo-\([0-9]+\)\([a-z]+\)" to check the group faces)
-   `(isearch ((,vaccinium-class (:foreground ,vaccinium-white :background ,vaccinium-orderless-2))))
+   `(isearch ((,vaccinium-class (:foreground ,vaccinium-white :background ,vaccinium-square-a-2))))
    `(isearch-fail ((,vaccinium-class (:foreground ,vaccinium-white :background ,vaccinium-error))))
-   `(lazy-highlight ((,vaccinium-class (:foreground ,vaccinium-white :background ,vaccinium-orderless-3))))
-   `(isearch-group-1 ((,vaccinium-class (:foreground ,vaccinium-white :background ,vaccinium-orderless-0))))
-   `(isearch-group-2 ((,vaccinium-class (:foreground ,vaccinium-white :background ,vaccinium-orderless-1))))
+   `(lazy-highlight ((,vaccinium-class (:foreground ,vaccinium-white :background ,vaccinium-square-a-3))))
+   `(isearch-group-1 ((,vaccinium-class (:foreground ,vaccinium-white :background ,vaccinium-square-a-0))))
+   `(isearch-group-2 ((,vaccinium-class (:foreground ,vaccinium-white :background ,vaccinium-square-a-1))))
 
    ;; replace (use "M-x occur" to check the match face)
    `(query-replace ((,vaccinium-class (:inherit isearch))))
@@ -366,14 +366,14 @@
    `(corfu-border ((,vaccinium-class (:background ,vaccinium-shadow))))
 
    ;; orderless
-   `(orderless-match-face-0 ((,vaccinium-class (:foreground ,vaccinium-orderless-0 :weight bold))))
-   `(orderless-match-face-1 ((,vaccinium-class (:foreground ,vaccinium-orderless-1 :weight bold))))
-   `(orderless-match-face-2 ((,vaccinium-class (:foreground ,vaccinium-orderless-2 :weight bold))))
-   `(orderless-match-face-3 ((,vaccinium-class (:foreground ,vaccinium-orderless-3 :weight bold))))
+   `(orderless-match-face-0 ((,vaccinium-class (:foreground ,vaccinium-square-a-0 :weight bold))))
+   `(orderless-match-face-1 ((,vaccinium-class (:foreground ,vaccinium-square-a-1 :weight bold))))
+   `(orderless-match-face-2 ((,vaccinium-class (:foreground ,vaccinium-square-a-2 :weight bold))))
+   `(orderless-match-face-3 ((,vaccinium-class (:foreground ,vaccinium-square-a-3 :weight bold))))
 
    ;; prescient (vertico-prescient-enable-filtering, corfu-prescient-enable-filtering)
-   `(prescient-primary-highlight ((,vaccinium-class (:foreground ,vaccinium-prescient-0 :weight bold))))
-   `(prescient-secondary-highlight ((,vaccinium-class (:foreground ,vaccinium-prescient-1 :underline t :weight bold))))
+   `(prescient-primary-highlight ((,vaccinium-class (:foreground ,vaccinium-complementary-a-0 :weight bold))))
+   `(prescient-secondary-highlight ((,vaccinium-class (:foreground ,vaccinium-complementary-a-1 :underline t :weight bold))))
 
    ;; envrc
    `(envrc-mode-line-error-face ((,vaccinium-class (:inherit error))))
@@ -386,7 +386,7 @@
    `(devdocs-code-block ((,vaccinium-class (:weight bold :background ,vaccinium-highlight :extend t))))
 
    ;; pdf-tools
-   `(pdf-view-region ((,vaccinium-class (:foreground ,vaccinium-white :background ,vaccinium-orderless-3 :inherit region))))
+   `(pdf-view-region ((,vaccinium-class (:foreground ,vaccinium-white :background ,vaccinium-square-a-3 :inherit region))))
 
    ;; nerd-icons
    ;; nerd-icons-completion

@@ -105,13 +105,13 @@
       (ceiba-diff-context              "#dcdcdc")
       (ceiba-smerge-base               "#C8C8F0")
 
-      (ceiba-orderless-0               "#af37b9")
-      (ceiba-orderless-1               "#147828")
-      (ceiba-orderless-2               "#b45a00")
-      (ceiba-orderless-3               "#3c82e6")
+      (ceiba-square-a-0                "#af37b9")
+      (ceiba-square-a-1                "#147828")
+      (ceiba-square-a-2                "#b45a00")
+      (ceiba-square-a-3                "#3c82e6")
 
-      (ceiba-prescient-0               "#4680DE")
-      (ceiba-prescient-1               "#DE4680"))
+      (ceiba-complementary-a-0         "#4680DE")
+      (ceiba-complementary-a-1         "#DE4680"))
 
   (custom-theme-set-faces
    'guava-themes-ceiba
@@ -263,8 +263,8 @@
    `(org-table-header ((,ceiba-class (:inverse-video t :inherit org-table))))
    `(org-date ((,ceiba-class (:foreground ,ceiba-orange))))
    `(org-date-selected ((,ceiba-class (:foreground unspecified :inverse-video t :inherit org-date))))
-   `(org-headline-todo ((,ceiba-class (:foreground ,ceiba-orderless-2))))
-   `(org-headline-done ((,ceiba-class (:foreground ,ceiba-orderless-1))))
+   `(org-headline-todo ((,ceiba-class (:foreground ,ceiba-square-a-2))))
+   `(org-headline-done ((,ceiba-class (:foreground ,ceiba-square-a-1))))
    `(org-document-title ((,ceiba-class (:inherit font-lock-keyword-face))))
    `(org-document-info-keyword ((,ceiba-class (:inherit shadow))))
    `(org-meta-line ((,ceiba-class (:inherit font-lock-comment-face))))
@@ -275,11 +275,11 @@
    `(window-divider-last-pixel ((,ceiba-class (:inherit window-divider))))
 
    ;; isearch (use "M-x isearch-forward-regexp foo-\([0-9]+\)\([a-z]+\)" to check the group faces)
-   `(isearch ((,ceiba-class (:foreground ,ceiba-white :background ,ceiba-orderless-2))))
+   `(isearch ((,ceiba-class (:foreground ,ceiba-white :background ,ceiba-square-a-2))))
    `(isearch-fail ((,ceiba-class (:foreground ,ceiba-white :background ,ceiba-error))))
-   `(lazy-highlight ((,ceiba-class (:foreground ,ceiba-white :background ,ceiba-orderless-3))))
-   `(isearch-group-1 ((,ceiba-class (:foreground ,ceiba-white :background ,ceiba-orderless-0))))
-   `(isearch-group-2 ((,ceiba-class (:foreground ,ceiba-white :background ,ceiba-orderless-1))))
+   `(lazy-highlight ((,ceiba-class (:foreground ,ceiba-white :background ,ceiba-square-a-3))))
+   `(isearch-group-1 ((,ceiba-class (:foreground ,ceiba-white :background ,ceiba-square-a-0))))
+   `(isearch-group-2 ((,ceiba-class (:foreground ,ceiba-white :background ,ceiba-square-a-1))))
 
    ;; replace (use "M-x occur" to check the match face)
    `(query-replace ((,ceiba-class (:inherit isearch))))
@@ -370,14 +370,14 @@
    `(corfu-border ((,ceiba-class (:background ,ceiba-shadow))))
 
    ;; orderless
-   `(orderless-match-face-0 ((,ceiba-class (:foreground ,ceiba-orderless-0 :weight bold))))
-   `(orderless-match-face-1 ((,ceiba-class (:foreground ,ceiba-orderless-1 :weight bold))))
-   `(orderless-match-face-2 ((,ceiba-class (:foreground ,ceiba-orderless-2 :weight bold))))
-   `(orderless-match-face-3 ((,ceiba-class (:foreground ,ceiba-orderless-3 :weight bold))))
+   `(orderless-match-face-0 ((,ceiba-class (:foreground ,ceiba-square-a-0 :weight bold))))
+   `(orderless-match-face-1 ((,ceiba-class (:foreground ,ceiba-square-a-1 :weight bold))))
+   `(orderless-match-face-2 ((,ceiba-class (:foreground ,ceiba-square-a-2 :weight bold))))
+   `(orderless-match-face-3 ((,ceiba-class (:foreground ,ceiba-square-a-3 :weight bold))))
 
    ;; prescient (vertico-prescient-enable-filtering, corfu-prescient-enable-filtering)
-   `(prescient-primary-highlight ((,ceiba-class (:foreground ,ceiba-prescient-0 :weight bold))))
-   `(prescient-secondary-highlight ((,ceiba-class (:foreground ,ceiba-prescient-1 :underline t :weight bold))))
+   `(prescient-primary-highlight ((,ceiba-class (:foreground ,ceiba-complementary-a-0 :weight bold))))
+   `(prescient-secondary-highlight ((,ceiba-class (:foreground ,ceiba-complementary-a-1 :underline t :weight bold))))
 
    ;; envrc
    `(envrc-mode-line-error-face ((,ceiba-class (:inherit error))))
@@ -390,7 +390,7 @@
    `(devdocs-code-block ((,ceiba-class (:weight bold :background ,ceiba-highlight :extend t))))
 
    ;; pdf-tools
-   `(pdf-view-region ((,ceiba-class (:foreground ,ceiba-white :background ,ceiba-orderless-3 :inherit region))))
+   `(pdf-view-region ((,ceiba-class (:foreground ,ceiba-white :background ,ceiba-square-a-3 :inherit region))))
 
    ;; nerd-icons
    ;; nerd-icons-completion

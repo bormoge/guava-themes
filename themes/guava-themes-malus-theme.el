@@ -100,13 +100,13 @@
       (malus-diff-context              "#828282")
       (malus-smerge-base               "#5A5AA0")
 
-      (malus-orderless-0               "#af50c8")
-      (malus-orderless-1               "#28a03c")
-      (malus-orderless-2               "#ff6400")
-      (malus-orderless-3               "#3c82ff")
+      (malus-square-a-0                "#af50c8")
+      (malus-square-a-1                "#28a03c")
+      (malus-square-a-2                "#ff6400")
+      (malus-square-a-3                "#3c82ff")
 
-      (malus-prescient-0               "#46C8A5")
-      (malus-prescient-1               "#C84669"))
+      (malus-complementary-a-0         "#46C8A5")
+      (malus-complementary-a-1         "#C84669"))
 
   (custom-theme-set-faces
    'guava-themes-malus
@@ -258,8 +258,8 @@
    `(org-table-header ((,malus-class (:inverse-video t :inherit org-table))))
    `(org-date ((,malus-class (:foreground ,malus-oceanic-blue))))
    `(org-date-selected ((,malus-class (:foreground unspecified :inverse-video t :inherit org-date))))
-   `(org-headline-todo ((,malus-class (:foreground ,malus-orderless-2))))
-   `(org-headline-done ((,malus-class (:foreground ,malus-orderless-1))))
+   `(org-headline-todo ((,malus-class (:foreground ,malus-square-a-2))))
+   `(org-headline-done ((,malus-class (:foreground ,malus-square-a-1))))
    `(org-document-title ((,malus-class (:inherit font-lock-keyword-face))))
    `(org-document-info-keyword ((,malus-class (:inherit shadow))))
    `(org-meta-line ((,malus-class (:inherit font-lock-comment-face))))
@@ -270,11 +270,11 @@
    `(window-divider-last-pixel ((,malus-class (:inherit window-divider))))
 
    ;; isearch (use "M-x isearch-forward-regexp foo-\([0-9]+\)\([a-z]+\)" to check the group faces)
-   `(isearch ((,malus-class (:foreground ,malus-white :background ,malus-orderless-2))))
+   `(isearch ((,malus-class (:foreground ,malus-white :background ,malus-square-a-2))))
    `(isearch-fail ((,malus-class (:foreground ,malus-white :background ,malus-error))))
-   `(lazy-highlight ((,malus-class (:foreground ,malus-white :background ,malus-orderless-3))))
-   `(isearch-group-1 ((,malus-class (:foreground ,malus-white :background ,malus-orderless-0))))
-   `(isearch-group-2 ((,malus-class (:foreground ,malus-white :background ,malus-orderless-1))))
+   `(lazy-highlight ((,malus-class (:foreground ,malus-white :background ,malus-square-a-3))))
+   `(isearch-group-1 ((,malus-class (:foreground ,malus-white :background ,malus-square-a-0))))
+   `(isearch-group-2 ((,malus-class (:foreground ,malus-white :background ,malus-square-a-1))))
 
    ;; replace (use "M-x occur" to check the match face)
    `(query-replace ((,malus-class (:inherit isearch))))
@@ -365,14 +365,14 @@
    `(corfu-border ((,malus-class (:background ,malus-shadow))))
 
    ;; orderless
-   `(orderless-match-face-0 ((,malus-class (:foreground ,malus-orderless-0 :weight bold))))
-   `(orderless-match-face-1 ((,malus-class (:foreground ,malus-orderless-1 :weight bold))))
-   `(orderless-match-face-2 ((,malus-class (:foreground ,malus-orderless-2 :weight bold))))
-   `(orderless-match-face-3 ((,malus-class (:foreground ,malus-orderless-3 :weight bold))))
+   `(orderless-match-face-0 ((,malus-class (:foreground ,malus-square-a-0 :weight bold))))
+   `(orderless-match-face-1 ((,malus-class (:foreground ,malus-square-a-1 :weight bold))))
+   `(orderless-match-face-2 ((,malus-class (:foreground ,malus-square-a-2 :weight bold))))
+   `(orderless-match-face-3 ((,malus-class (:foreground ,malus-square-a-3 :weight bold))))
 
    ;; prescient (vertico-prescient-enable-filtering, corfu-prescient-enable-filtering)
-   `(prescient-primary-highlight ((,malus-class (:foreground ,malus-prescient-0 :weight bold))))
-   `(prescient-secondary-highlight ((,malus-class (:foreground ,malus-prescient-1 :underline t :weight bold))))
+   `(prescient-primary-highlight ((,malus-class (:foreground ,malus-complementary-a-0 :weight bold))))
+   `(prescient-secondary-highlight ((,malus-class (:foreground ,malus-complementary-a-1 :underline t :weight bold))))
 
    ;; envrc
    `(envrc-mode-line-error-face ((,malus-class (:inherit error))))
@@ -385,7 +385,7 @@
    `(devdocs-code-block ((,malus-class (:weight bold :background ,malus-highlight :extend t))))
 
    ;; pdf-tools
-   `(pdf-view-region ((,malus-class (:foreground ,malus-white :background ,malus-orderless-3 :inherit region))))
+   `(pdf-view-region ((,malus-class (:foreground ,malus-white :background ,malus-square-a-3 :inherit region))))
 
    ;; nerd-icons
    ;; nerd-icons-completion

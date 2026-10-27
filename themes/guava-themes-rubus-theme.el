@@ -103,13 +103,13 @@
       (rubus-diff-context              "#828282")
       (rubus-smerge-base               "#5A5AA0")
 
-      (rubus-orderless-0               "#af50c8")
-      (rubus-orderless-1               "#28a03c")
-      (rubus-orderless-2               "#ff6400")
-      (rubus-orderless-3               "#3c82ff")
+      (rubus-square-a-0                "#af50c8")
+      (rubus-square-a-1                "#28a03c")
+      (rubus-square-a-2                "#ff6400")
+      (rubus-square-a-3                "#3c82ff")
 
-      (rubus-prescient-0               "#46C8A5")
-      (rubus-prescient-1               "#C84669"))
+      (rubus-complementary-a-0         "#46C8A5")
+      (rubus-complementary-a-1         "#C84669"))
 
   (custom-theme-set-faces
    'guava-themes-rubus
@@ -261,8 +261,8 @@
    `(org-table-header ((,rubus-class (:inverse-video t :inherit org-table))))
    `(org-date ((,rubus-class (:foreground ,rubus-green-blue))))
    `(org-date-selected ((,rubus-class (:foreground unspecified :inverse-video t :inherit org-date))))
-   `(org-headline-todo ((,rubus-class (:foreground ,rubus-orderless-2))))
-   `(org-headline-done ((,rubus-class (:foreground ,rubus-orderless-1))))
+   `(org-headline-todo ((,rubus-class (:foreground ,rubus-square-a-2))))
+   `(org-headline-done ((,rubus-class (:foreground ,rubus-square-a-1))))
    `(org-document-title ((,rubus-class (:inherit font-lock-keyword-face))))
    `(org-document-info-keyword ((,rubus-class (:inherit shadow))))
    `(org-meta-line ((,rubus-class (:inherit font-lock-comment-face))))
@@ -273,11 +273,11 @@
    `(window-divider-last-pixel ((,rubus-class (:inherit window-divider))))
 
    ;; isearch (use "M-x isearch-forward-regexp foo-\([0-9]+\)\([a-z]+\)" to check the group faces)
-   `(isearch ((,rubus-class (:foreground ,rubus-white :background ,rubus-orderless-2))))
+   `(isearch ((,rubus-class (:foreground ,rubus-white :background ,rubus-square-a-2))))
    `(isearch-fail ((,rubus-class (:foreground ,rubus-white :background ,rubus-error))))
-   `(lazy-highlight ((,rubus-class (:foreground ,rubus-white :background ,rubus-orderless-3))))
-   `(isearch-group-1 ((,rubus-class (:foreground ,rubus-white :background ,rubus-orderless-0))))
-   `(isearch-group-2 ((,rubus-class (:foreground ,rubus-white :background ,rubus-orderless-1))))
+   `(lazy-highlight ((,rubus-class (:foreground ,rubus-white :background ,rubus-square-a-3))))
+   `(isearch-group-1 ((,rubus-class (:foreground ,rubus-white :background ,rubus-square-a-0))))
+   `(isearch-group-2 ((,rubus-class (:foreground ,rubus-white :background ,rubus-square-a-1))))
 
    ;; replace (use "M-x occur" to check the match face)
    `(query-replace ((,rubus-class (:inherit isearch))))
@@ -368,14 +368,14 @@
    `(corfu-border ((,rubus-class (:background ,rubus-shadow))))
 
    ;; orderless
-   `(orderless-match-face-0 ((,rubus-class (:foreground ,rubus-orderless-0 :weight bold))))
-   `(orderless-match-face-1 ((,rubus-class (:foreground ,rubus-orderless-1 :weight bold))))
-   `(orderless-match-face-2 ((,rubus-class (:foreground ,rubus-orderless-2 :weight bold))))
-   `(orderless-match-face-3 ((,rubus-class (:foreground ,rubus-orderless-3 :weight bold))))
+   `(orderless-match-face-0 ((,rubus-class (:foreground ,rubus-square-a-0 :weight bold))))
+   `(orderless-match-face-1 ((,rubus-class (:foreground ,rubus-square-a-1 :weight bold))))
+   `(orderless-match-face-2 ((,rubus-class (:foreground ,rubus-square-a-2 :weight bold))))
+   `(orderless-match-face-3 ((,rubus-class (:foreground ,rubus-square-a-3 :weight bold))))
 
    ;; prescient (vertico-prescient-enable-filtering, corfu-prescient-enable-filtering)
-   `(prescient-primary-highlight ((,rubus-class (:foreground ,rubus-prescient-0 :weight bold))))
-   `(prescient-secondary-highlight ((,rubus-class (:foreground ,rubus-prescient-1 :underline t :weight bold))))
+   `(prescient-primary-highlight ((,rubus-class (:foreground ,rubus-complementary-a-0 :weight bold))))
+   `(prescient-secondary-highlight ((,rubus-class (:foreground ,rubus-complementary-a-1 :underline t :weight bold))))
 
    ;; envrc
    `(envrc-mode-line-error-face ((,rubus-class (:inherit error))))
@@ -388,7 +388,7 @@
    `(devdocs-code-block ((,rubus-class (:weight bold :background ,rubus-highlight :extend t))))
 
    ;; pdf-tools
-   `(pdf-view-region ((,rubus-class (:foreground ,rubus-white :background ,rubus-orderless-3 :inherit region))))
+   `(pdf-view-region ((,rubus-class (:foreground ,rubus-white :background ,rubus-square-a-3 :inherit region))))
 
    ;; nerd-icons
    ;; nerd-icons-completion

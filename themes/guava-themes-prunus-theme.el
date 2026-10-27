@@ -104,13 +104,13 @@
       (prunus-diff-context              "#828282")
       (prunus-smerge-base               "#5A5AA0")
 
-      (prunus-orderless-0               "#af50c8")
-      (prunus-orderless-1               "#28a03c")
-      (prunus-orderless-2               "#ff6400")
-      (prunus-orderless-3               "#3c82ff")
+      (prunus-square-a-0                "#af50c8")
+      (prunus-square-a-1                "#28a03c")
+      (prunus-square-a-2                "#ff6400")
+      (prunus-square-a-3                "#3c82ff")
 
-      (prunus-prescient-0               "#46C8A5")
-      (prunus-prescient-1               "#C84669"))
+      (prunus-complementary-a-0         "#46C8A5")
+      (prunus-complementary-a-1         "#C84669"))
 
   (custom-theme-set-faces
    'guava-themes-prunus
@@ -262,8 +262,8 @@
    `(org-table-header ((,prunus-class (:inverse-video t :inherit org-table))))
    `(org-date ((,prunus-class (:foreground ,prunus-deep-red))))
    `(org-date-selected ((,prunus-class (:foreground unspecified :inverse-video t :inherit org-date))))
-   `(org-headline-todo ((,prunus-class (:foreground ,prunus-orderless-2))))
-   `(org-headline-done ((,prunus-class (:foreground ,prunus-orderless-3))))
+   `(org-headline-todo ((,prunus-class (:foreground ,prunus-square-a-2))))
+   `(org-headline-done ((,prunus-class (:foreground ,prunus-square-a-3))))
    `(org-document-title ((,prunus-class (:inherit font-lock-keyword-face))))
    `(org-document-info-keyword ((,prunus-class (:inherit shadow))))
    `(org-meta-line ((,prunus-class (:inherit font-lock-comment-face))))
@@ -274,11 +274,11 @@
    `(window-divider-last-pixel ((,prunus-class (:inherit window-divider))))
 
    ;; isearch (use "M-x isearch-forward-regexp foo-\([0-9]+\)\([a-z]+\)" to check the group faces)
-   `(isearch ((,prunus-class (:foreground ,prunus-white :background ,prunus-orderless-2))))
+   `(isearch ((,prunus-class (:foreground ,prunus-white :background ,prunus-square-a-2))))
    `(isearch-fail ((,prunus-class (:foreground ,prunus-white :background ,prunus-error))))
-   `(lazy-highlight ((,prunus-class (:foreground ,prunus-white :background ,prunus-orderless-3))))
-   `(isearch-group-1 ((,prunus-class (:foreground ,prunus-white :background ,prunus-orderless-0))))
-   `(isearch-group-2 ((,prunus-class (:foreground ,prunus-white :background ,prunus-orderless-1))))
+   `(lazy-highlight ((,prunus-class (:foreground ,prunus-white :background ,prunus-square-a-3))))
+   `(isearch-group-1 ((,prunus-class (:foreground ,prunus-white :background ,prunus-square-a-0))))
+   `(isearch-group-2 ((,prunus-class (:foreground ,prunus-white :background ,prunus-square-a-1))))
 
    ;; replace (use "M-x occur" to check the match face)
    `(query-replace ((,prunus-class (:inherit isearch))))
@@ -369,14 +369,14 @@
    `(corfu-border ((,prunus-class (:background ,prunus-shadow))))
 
    ;; orderless
-   `(orderless-match-face-0 ((,prunus-class (:foreground ,prunus-orderless-0 :weight bold))))
-   `(orderless-match-face-1 ((,prunus-class (:foreground ,prunus-orderless-1 :weight bold))))
-   `(orderless-match-face-2 ((,prunus-class (:foreground ,prunus-orderless-2 :weight bold))))
-   `(orderless-match-face-3 ((,prunus-class (:foreground ,prunus-orderless-3 :weight bold))))
+   `(orderless-match-face-0 ((,prunus-class (:foreground ,prunus-square-a-0 :weight bold))))
+   `(orderless-match-face-1 ((,prunus-class (:foreground ,prunus-square-a-1 :weight bold))))
+   `(orderless-match-face-2 ((,prunus-class (:foreground ,prunus-square-a-2 :weight bold))))
+   `(orderless-match-face-3 ((,prunus-class (:foreground ,prunus-square-a-3 :weight bold))))
 
    ;; prescient (vertico-prescient-enable-filtering, corfu-prescient-enable-filtering)
-   `(prescient-primary-highlight ((,prunus-class (:foreground ,prunus-prescient-0 :weight bold))))
-   `(prescient-secondary-highlight ((,prunus-class (:foreground ,prunus-prescient-1 :underline t :weight bold))))
+   `(prescient-primary-highlight ((,prunus-class (:foreground ,prunus-complementary-a-0 :weight bold))))
+   `(prescient-secondary-highlight ((,prunus-class (:foreground ,prunus-complementary-a-1 :underline t :weight bold))))
 
    ;; envrc
    `(envrc-mode-line-error-face ((,prunus-class (:inherit error))))
@@ -389,7 +389,7 @@
    `(devdocs-code-block ((,prunus-class (:weight bold :background ,prunus-highlight :extend t))))
 
    ;; pdf-tools
-   `(pdf-view-region ((,prunus-class (:foreground ,prunus-white :background ,prunus-orderless-3 :inherit region))))
+   `(pdf-view-region ((,prunus-class (:foreground ,prunus-white :background ,prunus-square-a-3 :inherit region))))
 
    ;; nerd-icons
    ;; nerd-icons-completion

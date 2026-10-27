@@ -104,13 +104,13 @@
       (citrus-diff-context              "#dcdcdc")
       (citrus-smerge-base               "#C8C8F0")
 
-      (citrus-orderless-0               "#af28b9")
-      (citrus-orderless-1               "#28a03c")
-      (citrus-orderless-2               "#ff6400")
-      (citrus-orderless-3               "#3c82ff")
+      (citrus-square-a-0                "#af28b9")
+      (citrus-square-a-1                "#28a03c")
+      (citrus-square-a-2                "#ff6400")
+      (citrus-square-a-3                "#3c82ff")
 
-      (citrus-prescient-0               "#4680DE")
-      (citrus-prescient-1               "#DE4680"))
+      (citrus-complementary-a-0         "#4680DE")
+      (citrus-complementary-a-1         "#DE4680"))
 
   (custom-theme-set-faces
    'guava-themes-citrus
@@ -262,8 +262,8 @@
    `(org-table-header ((,citrus-class (:inverse-video t :inherit org-table))))
    `(org-date ((,citrus-class (:foreground ,citrus-purple-red))))
    `(org-date-selected ((,citrus-class (:foreground unspecified :inverse-video t :inherit org-date))))
-   `(org-headline-todo ((,citrus-class (:foreground ,citrus-orderless-2))))
-   `(org-headline-done ((,citrus-class (:foreground ,citrus-orderless-1))))
+   `(org-headline-todo ((,citrus-class (:foreground ,citrus-square-a-2))))
+   `(org-headline-done ((,citrus-class (:foreground ,citrus-square-a-1))))
    `(org-document-title ((,citrus-class (:inherit font-lock-keyword-face))))
    `(org-document-info-keyword ((,citrus-class (:inherit shadow))))
    `(org-meta-line ((,citrus-class (:inherit font-lock-comment-face))))
@@ -274,11 +274,11 @@
    `(window-divider-last-pixel ((,citrus-class (:inherit window-divider))))
 
    ;; isearch (use "M-x isearch-forward-regexp foo-\([0-9]+\)\([a-z]+\)" to check the group faces)
-   `(isearch ((,citrus-class (:foreground ,citrus-white :background ,citrus-orderless-2))))
+   `(isearch ((,citrus-class (:foreground ,citrus-white :background ,citrus-square-a-2))))
    `(isearch-fail ((,citrus-class (:foreground ,citrus-white :background ,citrus-error))))
-   `(lazy-highlight ((,citrus-class (:foreground ,citrus-white :background ,citrus-orderless-3))))
-   `(isearch-group-1 ((,citrus-class (:foreground ,citrus-white :background ,citrus-orderless-0))))
-   `(isearch-group-2 ((,citrus-class (:foreground ,citrus-white :background ,citrus-orderless-1))))
+   `(lazy-highlight ((,citrus-class (:foreground ,citrus-white :background ,citrus-square-a-3))))
+   `(isearch-group-1 ((,citrus-class (:foreground ,citrus-white :background ,citrus-square-a-0))))
+   `(isearch-group-2 ((,citrus-class (:foreground ,citrus-white :background ,citrus-square-a-1))))
 
    ;; replace (use "M-x occur" to check the match face)
    `(query-replace ((,citrus-class (:inherit isearch))))
@@ -369,14 +369,14 @@
    `(corfu-border ((,citrus-class (:background ,citrus-shadow))))
 
    ;; orderless
-   `(orderless-match-face-0 ((,citrus-class (:foreground ,citrus-orderless-0 :weight bold))))
-   `(orderless-match-face-1 ((,citrus-class (:foreground ,citrus-orderless-1 :weight bold))))
-   `(orderless-match-face-2 ((,citrus-class (:foreground ,citrus-orderless-2 :weight bold))))
-   `(orderless-match-face-3 ((,citrus-class (:foreground ,citrus-orderless-3 :weight bold))))
+   `(orderless-match-face-0 ((,citrus-class (:foreground ,citrus-square-a-0 :weight bold))))
+   `(orderless-match-face-1 ((,citrus-class (:foreground ,citrus-square-a-1 :weight bold))))
+   `(orderless-match-face-2 ((,citrus-class (:foreground ,citrus-square-a-2 :weight bold))))
+   `(orderless-match-face-3 ((,citrus-class (:foreground ,citrus-square-a-3 :weight bold))))
 
    ;; prescient (vertico-prescient-enable-filtering, corfu-prescient-enable-filtering)
-   `(prescient-primary-highlight ((,citrus-class (:foreground ,citrus-prescient-0 :weight bold))))
-   `(prescient-secondary-highlight ((,citrus-class (:foreground ,citrus-prescient-1 :underline t :weight bold))))
+   `(prescient-primary-highlight ((,citrus-class (:foreground ,citrus-complementary-a-0 :weight bold))))
+   `(prescient-secondary-highlight ((,citrus-class (:foreground ,citrus-complementary-a-1 :underline t :weight bold))))
 
    ;; envrc
    `(envrc-mode-line-error-face ((,citrus-class (:inherit error))))
@@ -389,7 +389,7 @@
    `(devdocs-code-block ((,citrus-class (:weight bold :background ,citrus-highlight :extend t))))
 
    ;; pdf-tools
-   `(pdf-view-region ((,citrus-class (:foreground ,citrus-white :background ,citrus-orderless-3 :inherit region))))
+   `(pdf-view-region ((,citrus-class (:foreground ,citrus-white :background ,citrus-square-a-3 :inherit region))))
 
    ;; nerd-icons
    ;; nerd-icons-completion
