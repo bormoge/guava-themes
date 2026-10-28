@@ -387,6 +387,9 @@
    ;; pdf-tools
    `(pdf-view-region ((,cordyline-class (:foreground ,cordyline-white :background ,cordyline-square-a-3 :inherit region))))
 
+   ;; idle-highlight
+   `(idle-highlight ((,cordyline-class (:foreground ,cordyline-white :background ,cordyline-fl-builtin :inherit region))))
+
    ;; nerd-icons
    ;; nerd-icons-completion
    `(nerd-icons-completion-dir-face ((,cordyline-class (:foreground unspecified :inherit font-lock-function-name-face))))))

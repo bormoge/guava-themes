@@ -388,6 +388,9 @@
    ;; pdf-tools
    `(pdf-view-region ((,vaccinium-class (:foreground ,vaccinium-white :background ,vaccinium-square-a-3 :inherit region))))
 
+   ;; idle-highlight
+   `(idle-highlight ((,vaccinium-class (:foreground ,vaccinium-white :background ,vaccinium-fl-builtin :inherit region))))
+
    ;; nerd-icons
    ;; nerd-icons-completion
    `(nerd-icons-completion-dir-face ((,vaccinium-class (:foreground unspecified :inherit font-lock-function-name-face))))))

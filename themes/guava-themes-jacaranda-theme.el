@@ -386,6 +386,9 @@
    ;; pdf-tools
    `(pdf-view-region ((,jacaranda-class (:foreground ,jacaranda-white :background ,jacaranda-square-a-3 :inherit region))))
 
+   ;; idle-highlight
+   `(idle-highlight ((,jacaranda-class (:foreground ,jacaranda-white :background ,jacaranda-fl-builtin :inherit region))))
+
    ;; nerd-icons
    ;; nerd-icons-completion
    `(nerd-icons-completion-dir-face ((,jacaranda-class (:foreground unspecified :inherit font-lock-function-name-face))))))

@@ -390,6 +390,9 @@
    ;; pdf-tools
    `(pdf-view-region ((,rhododendron-class (:foreground ,rhododendron-white :background ,rhododendron-square-a-3 :inherit region))))
 
+   ;; idle-highlight
+   `(idle-highlight ((,rhododendron-class (:foreground ,rhododendron-white :background ,rhododendron-fl-builtin :inherit region))))
+
    ;; nerd-icons
    ;; nerd-icons-completion
    `(nerd-icons-completion-dir-face ((,rhododendron-class (:foreground unspecified :inherit font-lock-function-name-face))))))

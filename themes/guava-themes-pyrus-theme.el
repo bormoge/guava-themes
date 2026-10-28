@@ -388,6 +388,9 @@
    ;; pdf-tools
    `(pdf-view-region ((,pyrus-class (:foreground ,pyrus-white :background ,pyrus-square-a-3 :inherit region))))
 
+   ;; idle-highlight
+   `(idle-highlight ((,pyrus-class (:foreground ,pyrus-white :background ,pyrus-fl-builtin :inherit region))))
+
    ;; nerd-icons
    ;; nerd-icons-completion
    `(nerd-icons-completion-dir-face ((,pyrus-class (:foreground unspecified :inherit font-lock-function-name-face))))))

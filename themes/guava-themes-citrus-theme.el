@@ -391,6 +391,9 @@
    ;; pdf-tools
    `(pdf-view-region ((,citrus-class (:foreground ,citrus-white :background ,citrus-square-a-3 :inherit region))))
 
+   ;; idle-highlight
+   `(idle-highlight ((,citrus-class (:foreground ,citrus-white :background ,citrus-fl-builtin :inherit region))))
+
    ;; nerd-icons
    ;; nerd-icons-completion
    `(nerd-icons-completion-dir-face ((,citrus-class (:foreground unspecified :inherit font-lock-function-name-face))))))

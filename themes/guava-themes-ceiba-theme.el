@@ -392,6 +392,9 @@
    ;; pdf-tools
    `(pdf-view-region ((,ceiba-class (:foreground ,ceiba-white :background ,ceiba-square-a-3 :inherit region))))
 
+   ;; idle-highlight
+   `(idle-highlight ((,ceiba-class (:foreground ,ceiba-white :background ,ceiba-fl-builtin :inherit region))))
+
    ;; nerd-icons
    ;; nerd-icons-completion
    `(nerd-icons-completion-dir-face ((,ceiba-class (:foreground unspecified :inherit font-lock-function-name-face))))))

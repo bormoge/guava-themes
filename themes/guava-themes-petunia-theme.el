@@ -386,6 +386,9 @@
    ;; pdf-tools
    `(pdf-view-region ((,petunia-class (:foreground ,petunia-white :background ,petunia-square-a-3 :inherit region))))
 
+   ;; idle-highlight
+   `(idle-highlight ((,petunia-class (:foreground ,petunia-black :background ,petunia-fl-builtin :inherit region))))
+
    ;; nerd-icons
    ;; nerd-icons-completion
    `(nerd-icons-completion-dir-face ((,petunia-class (:foreground unspecified :inherit font-lock-function-name-face))))))

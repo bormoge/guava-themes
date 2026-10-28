@@ -390,6 +390,9 @@
    ;; pdf-tools
    `(pdf-view-region ((,rubus-class (:foreground ,rubus-white :background ,rubus-square-a-3 :inherit region))))
 
+   ;; idle-highlight
+   `(idle-highlight ((,rubus-class (:foreground ,rubus-white :background ,rubus-fl-builtin :inherit region))))
+
    ;; nerd-icons
    ;; nerd-icons-completion
    `(nerd-icons-completion-dir-face ((,rubus-class (:foreground unspecified :inherit font-lock-function-name-face))))))

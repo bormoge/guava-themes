@@ -387,6 +387,9 @@
    ;; pdf-tools
    `(pdf-view-region ((,eucalyptus-class (:foreground ,eucalyptus-white :background ,eucalyptus-square-a-3 :inherit region))))
 
+   ;; idle-highlight
+   `(idle-highlight ((,eucalyptus-class (:foreground ,eucalyptus-white :background ,eucalyptus-fl-builtin :inherit region))))
+
    ;; nerd-icons
    ;; nerd-icons-completion
    `(nerd-icons-completion-dir-face ((,eucalyptus-class (:foreground unspecified :inherit font-lock-function-name-face))))))

@@ -387,6 +387,9 @@
    ;; pdf-tools
    `(pdf-view-region ((,solanum-class (:foreground ,solanum-white :background ,solanum-square-a-3 :inherit region))))
 
+   ;; idle-highlight
+   `(idle-highlight ((,solanum-class (:foreground ,solanum-black :background ,solanum-fl-builtin :inherit region))))
+
    ;; nerd-icons
    ;; nerd-icons-completion
    `(nerd-icons-completion-dir-face ((,solanum-class (:foreground unspecified :inherit font-lock-function-name-face))))))

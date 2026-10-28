@@ -37,6 +37,7 @@
       (malus-class '((class color) (min-colors 257)))
       ;; (malus-black                     "#000000")
       (malus-white                     "#FFFFFF")
+      (malus-black                     "#000000")
 
       (malus-brown                     "#826e5a")
 
@@ -386,6 +387,9 @@
 
    ;; pdf-tools
    `(pdf-view-region ((,malus-class (:foreground ,malus-white :background ,malus-square-a-3 :inherit region))))
+
+   ;; idle-highlight
+   `(idle-highlight ((,malus-class (:foreground ,malus-black :background ,malus-fl-builtin :inherit region))))
 
    ;; nerd-icons
    ;; nerd-icons-completion

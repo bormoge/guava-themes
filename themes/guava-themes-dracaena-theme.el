@@ -388,6 +388,9 @@
    ;; pdf-tools
    `(pdf-view-region ((,dracaena-class (:foreground ,dracaena-white :background ,dracaena-square-a-3 :inherit region))))
 
+   ;; idle-highlight
+   `(idle-highlight ((,dracaena-class (:foreground ,dracaena-white :background ,dracaena-fl-builtin :inherit region))))
+
    ;; nerd-icons
    ;; nerd-icons-completion
    `(nerd-icons-completion-dir-face ((,dracaena-class (:foreground unspecified :inherit font-lock-function-name-face))))))

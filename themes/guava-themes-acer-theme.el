@@ -388,6 +388,9 @@
    ;; pdf-tools
    `(pdf-view-region ((,acer-class (:foreground ,acer-white :background ,acer-square-a-3 :inherit region))))
 
+   ;; idle-highlight
+   `(idle-highlight ((,acer-class (:foreground ,acer-white :background ,acer-fl-builtin :inherit region))))
+
    ;; nerd-icons
    ;; nerd-icons-completion
    `(nerd-icons-completion-dir-face ((,acer-class (:foreground unspecified :inherit font-lock-function-name-face))))))
