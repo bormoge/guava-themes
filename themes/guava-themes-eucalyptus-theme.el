@@ -64,6 +64,7 @@
       (eucalyptus-bg                        "#a5aa96")
       (eucalyptus-highlight                 "#9ba08c")
       (eucalyptus-shadow                    "#717171")
+      (eucalyptus-tooltip                   "#ffffe0")
 
       (eucalyptus-error                     "#e10000")
       (eucalyptus-warning                   "#f6c911")
@@ -127,6 +128,9 @@
 
    ;; shadow
    `(shadow ((,eucalyptus-class (:foreground ,eucalyptus-shadow))))
+
+   ;; tooltip
+   `(tooltip ((,eucalyptus-class (:weight bold :foreground ,eucalyptus-black :background ,eucalyptus-tooltip :inherit variable-pitch))))
 
    ;; region
    `(region ((,eucalyptus-class (:background ,eucalyptus-yellow :extend t))))

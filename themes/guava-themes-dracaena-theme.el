@@ -65,6 +65,7 @@
       (dracaena-bg                        "#343a37")
       (dracaena-highlight                 "#252b28")
       (dracaena-shadow                    "#b3b3b3")
+      (dracaena-tooltip                   "#ffffe0")
 
       (dracaena-error                     "#FF0000")
       (dracaena-warning                   "#f6be14")
@@ -128,6 +129,9 @@
 
    ;; shadow
    `(shadow ((,dracaena-class (:foreground ,dracaena-shadow))))
+
+   ;; tooltip
+   `(tooltip ((,dracaena-class (:weight bold :foreground ,dracaena-black :background ,dracaena-tooltip :inherit variable-pitch))))
 
    ;; region
    `(region ((,dracaena-class (:background ,dracaena-deep-red :extend t))))

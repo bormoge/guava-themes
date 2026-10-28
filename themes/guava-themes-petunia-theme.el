@@ -63,6 +63,7 @@
       (petunia-bg                        "#000000")
       (petunia-highlight                 "#1e1e1e")
       (petunia-shadow                    "#b3b3b3")
+      (petunia-tooltip                   "#ffffe0")
 
       (petunia-error                     "#FF0000")
       (petunia-warning                   "#ffff00")
@@ -126,6 +127,9 @@
 
    ;; shadow
    `(shadow ((,petunia-class (:foreground ,petunia-shadow))))
+
+   ;; tooltip
+   `(tooltip ((,petunia-class (:weight bold :foreground ,petunia-black :background ,petunia-tooltip :inherit variable-pitch))))
 
    ;; region
    `(region ((,petunia-class (:background ,petunia-blue :extend t))))

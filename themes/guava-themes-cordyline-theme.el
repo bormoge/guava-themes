@@ -35,7 +35,7 @@
 
 (let* (
       (cordyline-class '((class color) (min-colors 257)))
-      ;; (cordyline-black                     "#000000")
+      (cordyline-black                     "#000000")
       (cordyline-white                     "#FFFFFF")
 
       (cordyline-orange-red                "#ce462c")
@@ -64,6 +64,7 @@
       (cordyline-bg                        "#2f212e")
       (cordyline-highlight                 "#3e303d")
       (cordyline-shadow                    "#b3b3b3")
+      (cordyline-tooltip                   "#ffffe0")
 
       (cordyline-error                     "#FF0000")
       (cordyline-warning                   "#f6d909")
@@ -127,6 +128,9 @@
 
    ;; shadow
    `(shadow ((,cordyline-class (:foreground ,cordyline-shadow))))
+
+   ;; tooltip
+   `(tooltip ((,cordyline-class (:weight bold :foreground ,cordyline-black :background ,cordyline-tooltip :inherit variable-pitch))))
 
    ;; region
    `(region ((,cordyline-class (:background ,cordyline-deep-fuchsia :extend t))))

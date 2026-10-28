@@ -63,6 +63,7 @@
       (jacaranda-bg                        "#e9d9f9")
       (jacaranda-highlight                 "#d5c5e5")
       (jacaranda-shadow                    "#898989")
+      (jacaranda-tooltip                   "#ffffe0")
 
       (jacaranda-error                     "#FF0000")
       (jacaranda-warning                   "#ebb515")
@@ -126,6 +127,9 @@
 
    ;; shadow
    `(shadow ((,jacaranda-class (:foreground ,jacaranda-shadow))))
+
+   ;; tooltip
+   `(tooltip ((,jacaranda-class (:weight bold :foreground ,jacaranda-black :background ,jacaranda-tooltip :inherit variable-pitch))))
 
    ;; region
    `(region ((,jacaranda-class (:background ,jacaranda-light-purple :extend t))))

@@ -65,6 +65,7 @@
       (malus-bg                        "#1e0910")
       (malus-highlight                 "#321d24")
       (malus-shadow                    "#b3b3b3")
+      (malus-tooltip                   "#ffffe0")
 
       (malus-error                     "#d70000")
       (malus-warning                   "#f6d911")
@@ -128,6 +129,9 @@
 
    ;; shadow
    `(shadow ((,malus-class (:foreground ,malus-shadow))))
+
+   ;; tooltip
+   `(tooltip ((,malus-class (:weight bold :foreground ,malus-black :background ,malus-tooltip :inherit variable-pitch))))
 
    ;; region
    `(region ((,malus-class (:background ,malus-green-subdued :extend t))))

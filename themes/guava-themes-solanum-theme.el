@@ -64,6 +64,7 @@
       (solanum-bg                        "#130d1a")
       (solanum-highlight                 "#27212e")
       (solanum-shadow                    "#b3b3b3")
+      (solanum-tooltip                   "#ffffe0")
 
       (solanum-error                     "#FF0000")
       (solanum-warning                   "#f6d909")
@@ -127,6 +128,9 @@
 
    ;; shadow
    `(shadow ((,solanum-class (:foreground ,solanum-shadow))))
+
+   ;; tooltip
+   `(tooltip ((,solanum-class (:weight bold :foreground ,solanum-black :background ,solanum-tooltip :inherit variable-pitch))))
 
    ;; region
    `(region ((,solanum-class (:background ,solanum-purple-blue :extend t))))

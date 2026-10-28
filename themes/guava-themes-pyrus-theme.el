@@ -65,6 +65,7 @@
       (pyrus-bg                        "#f9fefd")
       (pyrus-highlight                 "#e5eae9")
       (pyrus-shadow                    "#898989")
+      (pyrus-tooltip                   "#ffffe0")
 
       (pyrus-error                     "#ff0000")
       (pyrus-warning                   "#ffd200")
@@ -128,6 +129,9 @@
 
    ;; shadow
    `(shadow ((,pyrus-class (:foreground ,pyrus-shadow))))
+
+   ;; tooltip
+   `(tooltip ((,pyrus-class (:weight bold :foreground ,pyrus-black :background ,pyrus-tooltip :inherit variable-pitch))))
 
    ;; region
    `(region ((,pyrus-class (:background ,pyrus-alt-yellow-green :extend t))))

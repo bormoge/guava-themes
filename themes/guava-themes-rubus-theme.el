@@ -67,6 +67,7 @@
       (rubus-bg                        "#0e1216")
       (rubus-highlight                 "#22262a")
       (rubus-shadow                    "#b3b3b3")
+      (rubus-tooltip                   "#ffffe0")
 
       (rubus-error                     "#ff1e00")
       (rubus-warning                   "#f6d909")
@@ -130,6 +131,9 @@
 
    ;; shadow
    `(shadow ((,rubus-class (:foreground ,rubus-shadow))))
+
+   ;; tooltip
+   `(tooltip ((,rubus-class (:weight bold :foreground ,rubus-black :background ,rubus-tooltip :inherit variable-pitch))))
 
    ;; region
    `(region ((,rubus-class (:background ,rubus-deep-raspberry :extend t))))

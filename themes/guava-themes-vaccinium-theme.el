@@ -65,6 +65,7 @@
       (vaccinium-bg                        "#1c1c26")
       (vaccinium-highlight                 "#30303a")
       (vaccinium-shadow                    "#b3b3b3")
+      (vaccinium-tooltip                   "#ffffe0")
 
       (vaccinium-error                     "#FF0000")
       (vaccinium-warning                   "#f6d909")
@@ -128,6 +129,9 @@
 
    ;; shadow
    `(shadow ((,vaccinium-class (:foreground ,vaccinium-shadow))))
+
+   ;; tooltip
+   `(tooltip ((,vaccinium-class (:weight bold :foreground ,vaccinium-black :background ,vaccinium-tooltip :inherit variable-pitch))))
 
    ;; region
    `(region ((,vaccinium-class (:background ,vaccinium-deep-blue :extend t))))

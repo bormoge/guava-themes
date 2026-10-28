@@ -65,6 +65,7 @@
       (acer-bg                        "#f7bb78")
       (acer-highlight                 "#e3a764")
       (acer-shadow                    "#717171")
+      (acer-tooltip                   "#ffffe0")
 
       (acer-error                     "#d70000")
       (acer-warning                   "#b4a000")
@@ -128,6 +129,9 @@
 
    ;; shadow
    `(shadow ((,acer-class (:foreground ,acer-shadow))))
+
+   ;; tooltip
+   `(tooltip ((,acer-class (:weight bold :foreground ,acer-black :background ,acer-tooltip :inherit variable-pitch))))
 
    ;; region
    `(region ((,acer-class (:background ,acer-brown :extend t))))

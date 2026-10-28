@@ -68,6 +68,7 @@
       (citrus-bg                        "#edf2ed")
       (citrus-highlight                 "#d9ded9")
       (citrus-shadow                    "#6b6b6b")
+      (citrus-tooltip                   "#ffffe0")
 
       (citrus-error                     "#FF0000")
       (citrus-warning                   "#ffbe00")
@@ -131,6 +132,9 @@
 
    ;; shadow
    `(shadow ((,citrus-class (:foreground ,citrus-shadow))))
+
+   ;; tooltip
+   `(tooltip ((,citrus-class (:weight bold :foreground ,citrus-black :background ,citrus-tooltip :inherit variable-pitch))))
 
    ;; region
    `(region ((,citrus-class (:background ,citrus-yellow :extend t))))

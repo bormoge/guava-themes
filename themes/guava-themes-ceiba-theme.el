@@ -69,6 +69,7 @@
       (ceiba-bg                        "#bab49e")
       (ceiba-highlight                 "#a6a08a")
       (ceiba-shadow                    "#7f7f7f")
+      (ceiba-tooltip                   "#ffffe0")
 
       (ceiba-error                     "#ff0000")
       (ceiba-warning                   "#f6c911")
@@ -132,6 +133,9 @@
 
    ;; shadow
    `(shadow ((,ceiba-class (:foreground ,ceiba-shadow))))
+
+   ;; tooltip
+   `(tooltip ((,ceiba-class (:weight bold :foreground ,ceiba-black :background ,ceiba-tooltip :inherit variable-pitch))))
 
    ;; region
    `(region ((,ceiba-class (:background ,ceiba-gray-blue :extend t))))

@@ -35,7 +35,7 @@
 
 (let* (
       (prunus-class '((class color) (min-colors 257)))
-      ;;(prunus-black                     "#000000")
+      (prunus-black                     "#000000")
       (prunus-white                     "#FFFFFF")
 
       (prunus-light-brown               "#826455")
@@ -68,6 +68,7 @@
       (prunus-bg                        "#190f05")
       (prunus-highlight                 "#2d2319")
       (prunus-shadow                    "#b3b3b3")
+      (prunus-tooltip                   "#ffffe0")
 
       (prunus-error                     "#FF0000")
       (prunus-warning                   "#f6d911")
@@ -131,6 +132,9 @@
 
    ;; shadow
    `(shadow ((,prunus-class (:foreground ,prunus-shadow))))
+
+   ;; tooltip
+   `(tooltip ((,prunus-class (:weight bold :foreground ,prunus-black :background ,prunus-tooltip :inherit variable-pitch))))
 
    ;; region
    `(region ((,prunus-class (:background ,prunus-deep-brown :extend t))))

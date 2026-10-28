@@ -62,6 +62,7 @@
       (psidium-bg                        "#F1EECE")
       (psidium-highlight                 "#dddaba")
       (psidium-shadow                    "#7f7f7f")
+      (psidium-tooltip                   "#ffffe0")
 
       (psidium-error                     "#FF0000")
       (psidium-warning                   "#d6c800")
@@ -125,6 +126,9 @@
 
    ;; shadow
    `(shadow ((,psidium-class (:foreground ,psidium-shadow))))
+
+   ;; tooltip
+   `(tooltip ((,psidium-class (:weight bold :foreground ,psidium-black :background ,psidium-tooltip :inherit variable-pitch))))
 
    ;; region
    `(region ((,psidium-class (:background ,psidium-light-orange :extend t))))

@@ -67,6 +67,7 @@
       (rhododendron-bg                        "#e8c7e3")
       (rhododendron-highlight                 "#d4b3cf")
       (rhododendron-shadow                    "#898989")
+      (rhododendron-tooltip                   "#ffffe0")
 
       (rhododendron-error                     "#FF0000")
       (rhododendron-warning                   "#F68511")
@@ -130,6 +131,9 @@
 
    ;; shadow
    `(shadow ((,rhododendron-class (:foreground ,rhododendron-shadow))))
+
+   ;; tooltip
+   `(tooltip ((,rhododendron-class (:weight bold :foreground ,rhododendron-black :background ,rhododendron-tooltip :inherit variable-pitch))))
 
    ;; region
    `(region ((,rhododendron-class (:background ,rhododendron-alt-bright-pink :extend t))))
