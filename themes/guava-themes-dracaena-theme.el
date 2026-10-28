@@ -48,7 +48,7 @@
       (dracaena-light-orange              "#ffb38f")
       (dracaena-orange                    "#e6825f")
       (dracaena-orange-red                "#f06e6e")
-      (dracaena-red                       "#c83c50")
+      (dracaena-red                       "#b43c50")
       (dracaena-deep-red                  "#883634")
       (dracaena-pink                      "#cd6eaf")
 
@@ -72,10 +72,10 @@
       (dracaena-success                   "#29d925")
       (dracaena-change                    "#2d50d5")
 
-      (dracaena-mode-line                 "#883634")
+      (dracaena-mode-line                 "#b43c50")
       (dracaena-mode-line-inactive        "#5c625f")
       (dracaena-mode-line-modified        "#e6825f")
-      (dracaena-bell                      "#257950")
+      (dracaena-bell                      "#3CB464")
 
       (dracaena-tab-1                     dracaena-mode-line)
       (dracaena-tab-2                     dracaena-mode-line-inactive)
@@ -208,7 +208,7 @@
    `(trailing-whitespace ((,dracaena-class (:background ,dracaena-error))))
 
    ;; links
-   `(link ((,dracaena-class (:foreground ,dracaena-red :underline t :weight bold))))
+   `(link ((,dracaena-class (:foreground ,dracaena-snakeplant-yellow :underline t :weight bold))))
    `(link-visited ((,dracaena-class (:foreground ,dracaena-orange :underline t :weight bold))))
 
    ;; outline
@@ -358,9 +358,9 @@
    ;; doom-modeline-buffer-file-name-style
    `(doom-modeline-project-name ((,dracaena-class (:foreground ,dracaena-snakeplant-yellow :inherit (doom-modeline bold italic)))))
    `(doom-modeline-project-dir ((,dracaena-class (:foreground ,dracaena-snakeplant-yellow :inherit (doom-modeline bold)))))
-   `(doom-modeline-project-root-dir ((,dracaena-class (:foreground ,dracaena-green :inherit (doom-modeline bold)))))
-   `(doom-modeline-project-parent-dir ((,dracaena-class (:foreground ,dracaena-green :inherit (doom-modeline bold)))))
-   `(doom-modeline-buffer-minor-mode ((,dracaena-class (:foreground ,dracaena-green :inherit (doom-modeline)))))
+   `(doom-modeline-project-root-dir ((,dracaena-class (:foreground ,dracaena-light-green :inherit (doom-modeline bold)))))
+   `(doom-modeline-project-parent-dir ((,dracaena-class (:foreground ,dracaena-light-green :inherit (doom-modeline bold)))))
+   `(doom-modeline-buffer-minor-mode ((,dracaena-class (:foreground ,dracaena-light-green :inherit (doom-modeline)))))
    `(doom-modeline-buffer-modified ((,dracaena-class (:foreground ,dracaena-mode-line-modified :inherit (doom-modeline warning bold)))))
 
    ;; corfu
