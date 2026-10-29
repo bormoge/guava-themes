@@ -73,7 +73,7 @@
 
       (solanum-mode-line                 "#693c64")
       (solanum-mode-line-inactive        "#3b3550")
-      (solanum-mode-line-modified        "#cd151f")
+      (solanum-mode-line-modified        "#3C8CA0")
       (solanum-bell                      "#4b7337")
 
       (solanum-tab-1                     solanum-mode-line)
