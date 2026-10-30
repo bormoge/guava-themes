@@ -59,8 +59,8 @@
 
       (eucalyptus-purple-red                "#874164")
 
-      (eucalyptus-fg                        "#373c4b")
-      (eucalyptus-fg-2                      "#737887")
+      (eucalyptus-fg                        "#2d3241")
+      (eucalyptus-fg-2                      "#696e7d")
       (eucalyptus-bg                        "#a5aa96")
       (eucalyptus-highlight                 "#9ba08c")
       (eucalyptus-shadow                    "#717171")
