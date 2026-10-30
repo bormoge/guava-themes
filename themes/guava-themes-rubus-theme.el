@@ -76,7 +76,7 @@
 
       (rubus-mode-line                 "#aa3232")
       (rubus-mode-line-inactive        "#cd7378")
-      (rubus-mode-line-modified        "#826ee6")
+      (rubus-mode-line-modified        "#9682fa")
       (rubus-bell                      "#326EAA")
 
       (rubus-tab-1                     rubus-mode-line)
