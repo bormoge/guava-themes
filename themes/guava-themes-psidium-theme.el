@@ -166,7 +166,10 @@
    `(line-number-major-tick ((,psidium-class (:background ,psidium-tab-3 :inherit line-number))))
 
    ;; mode-line
-   `(mode-line ((,psidium-class (:foreground ,psidium-white :background ,psidium-mode-line))))
+   `(mode-line ((,psidium-class (:foreground ,psidium-white :background ,psidium-mode-line
+                                             :box ,(if guava-themes-boxed-mode-line
+                                                       '(:line-width -1 :style released-button)
+                                                     'unspecified)))))
    `(mode-line-inactive ((,psidium-class (:background ,psidium-mode-line-inactive :inherit mode-line))))
    `(mode-line-emphasis ((,psidium-class (:weight bold))))
    `(mode-line-highlight ((,psidium-class (:foreground unspecified :background unspecified :box (:line-width 2 :color "grey40" :style released-button)))))
@@ -183,12 +186,12 @@
    `(which-func ((,psidium-class (:weight bold :foreground ,psidium-mode-line-modified))))
 
    ;; tab-bar
-   `(tab-bar ((,psidium-class (:foreground ,psidium-white :background ,psidium-tab-2 :weight bold))))
+   `(tab-bar ((,psidium-class (:foreground ,psidium-white :background ,psidium-tab-2 :weight bold :inherit mode-line))))
    `(tab-bar-tab ((,psidium-class (:foreground ,psidium-white :background ,psidium-tab-1 :inherit tab-bar))))
    `(tab-bar-tab-inactive ((,psidium-class (:foreground ,psidium-white :background ,psidium-tab-2 :inherit tab-bar-tab))))
 
    ;; tab-line
-   `(tab-line ((,psidium-class (:foreground ,psidium-white :background ,psidium-tab-2 :weight bold))))
+   `(tab-line ((,psidium-class (:foreground ,psidium-white :background ,psidium-tab-2 :weight bold :inherit mode-line))))
    `(tab-line-tab ((,psidium-class (:foreground ,psidium-white :background ,psidium-tab-2 :inherit tab-line))))
    `(tab-line-tab-current ((,psidium-class (:foreground ,psidium-white :background ,psidium-tab-1 :inherit tab-line-tab))))
    `(tab-line-tab-inactive ((,psidium-class (:foreground ,psidium-white :background ,psidium-tab-2 :inherit tab-line-tab))))

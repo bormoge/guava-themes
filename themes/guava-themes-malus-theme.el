@@ -169,7 +169,10 @@
    `(line-number-major-tick ((,malus-class (:background ,malus-tab-3 :inherit line-number))))
 
    ;; mode-line
-   `(mode-line ((,malus-class (:foreground ,malus-white :background ,malus-mode-line))))
+   `(mode-line ((,malus-class (:foreground ,malus-white :background ,malus-mode-line
+                                           :box ,(if guava-themes-boxed-mode-line
+                                                     '(:line-width -1 :style released-button)
+                                                   'unspecified)))))
    `(mode-line-inactive ((,malus-class (:background ,malus-mode-line-inactive :inherit mode-line))))
    `(mode-line-emphasis ((,malus-class (:weight bold))))
    `(mode-line-highlight ((,malus-class (:foreground unspecified :background unspecified :box (:line-width 2 :color "grey40" :style released-button)))))
@@ -186,12 +189,12 @@
    `(which-func ((,malus-class (:weight bold :foreground ,malus-mode-line-modified))))
 
    ;; tab-bar
-   `(tab-bar ((,malus-class (:foreground ,malus-white :background ,malus-tab-2 :weight bold))))
+   `(tab-bar ((,malus-class (:foreground ,malus-white :background ,malus-tab-2 :weight bold :inherit mode-line))))
    `(tab-bar-tab ((,malus-class (:foreground ,malus-white :background ,malus-tab-1 :inherit tab-bar))))
    `(tab-bar-tab-inactive ((,malus-class (:foreground ,malus-white :background ,malus-tab-2 :inherit tab-bar-tab))))
 
    ;; tab-line
-   `(tab-line ((,malus-class (:foreground ,malus-white :background ,malus-tab-2 :weight bold))))
+   `(tab-line ((,malus-class (:foreground ,malus-white :background ,malus-tab-2 :weight bold :inherit mode-line))))
    `(tab-line-tab ((,malus-class (:foreground ,malus-white :background ,malus-tab-2 :inherit tab-line))))
    `(tab-line-tab-current ((,malus-class (:foreground ,malus-white :background ,malus-tab-1 :inherit tab-line-tab))))
    `(tab-line-tab-inactive ((,malus-class (:foreground ,malus-white :background ,malus-tab-2 :inherit tab-line-tab))))

@@ -167,7 +167,10 @@
    `(line-number-major-tick ((,jacaranda-class (:background ,jacaranda-tab-3 :inherit line-number))))
 
    ;; mode-line
-   `(mode-line ((,jacaranda-class (:foreground ,jacaranda-white :background ,jacaranda-mode-line))))
+   `(mode-line ((,jacaranda-class (:foreground ,jacaranda-white :background ,jacaranda-mode-line
+                                               :box ,(if guava-themes-boxed-mode-line
+                                                         '(:line-width -1 :style released-button)
+                                                       'unspecified)))))
    `(mode-line-inactive ((,jacaranda-class (:background ,jacaranda-mode-line-inactive :inherit mode-line))))
    `(mode-line-emphasis ((,jacaranda-class (:weight bold))))
    `(mode-line-highlight ((,jacaranda-class (:foreground unspecified :background unspecified :box (:line-width 2 :color "grey40" :style released-button)))))
@@ -184,12 +187,12 @@
    `(which-func ((,jacaranda-class (:weight bold :foreground ,jacaranda-mode-line-modified))))
 
    ;; tab-bar
-   `(tab-bar ((,jacaranda-class (:foreground ,jacaranda-white :background ,jacaranda-tab-2 :weight bold))))
+   `(tab-bar ((,jacaranda-class (:foreground ,jacaranda-white :background ,jacaranda-tab-2 :weight bold :inherit mode-line))))
    `(tab-bar-tab ((,jacaranda-class (:foreground ,jacaranda-white :background ,jacaranda-tab-1 :inherit tab-bar))))
    `(tab-bar-tab-inactive ((,jacaranda-class (:foreground ,jacaranda-white :background ,jacaranda-tab-2 :inherit tab-bar-tab))))
 
    ;; tab-line
-   `(tab-line ((,jacaranda-class (:foreground ,jacaranda-white :background ,jacaranda-tab-2 :weight bold))))
+   `(tab-line ((,jacaranda-class (:foreground ,jacaranda-white :background ,jacaranda-tab-2 :weight bold :inherit mode-line))))
    `(tab-line-tab ((,jacaranda-class (:foreground ,jacaranda-white :background ,jacaranda-tab-2 :inherit tab-line))))
    `(tab-line-tab-current ((,jacaranda-class (:foreground ,jacaranda-white :background ,jacaranda-tab-1 :inherit tab-line-tab))))
    `(tab-line-tab-inactive ((,jacaranda-class (:foreground ,jacaranda-white :background ,jacaranda-tab-2 :inherit tab-line-tab))))

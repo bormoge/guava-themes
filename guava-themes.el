@@ -59,6 +59,17 @@ is still called but does not display `guava-themes-visible-bell'."
   :group 'guava-themes
   :type 'float)
 
+(defcustom guava-themes-boxed-mode-line nil
+  "Add a box attribute to the `mode-line' face.
+
+Note that any faces that inherit from `mode-line' are also affected.
+
+Non-exhaustive list of affected faces: `mode-line',`header-line',
+`tab-line', `tab-bar'."
+  :group 'guava-themes
+  :type '(choice (const :tag "Don't add a box attribute to the `mode-line' face" nil)
+                 (const :tag "Add a box attribute to the `mode-line' face" t)))
+
 (defcustom guava-themes-visible-bell-faces-list (if (>= emacs-major-version 29) '(mode-line-active) '(mode-line))
   "List of faces modified when `guava-themes-change-visible-bell' is called.
 

@@ -173,7 +173,10 @@
    `(line-number-major-tick ((,ceiba-class (:background ,ceiba-tab-3 :inherit line-number))))
 
    ;; mode-line
-   `(mode-line ((,ceiba-class (:foreground ,ceiba-white :background ,ceiba-mode-line))))
+   `(mode-line ((,ceiba-class (:foreground ,ceiba-white :background ,ceiba-mode-line
+                                           :box ,(if guava-themes-boxed-mode-line
+                                                     '(:line-width -1 :style released-button)
+                                                   'unspecified)))))
    `(mode-line-inactive ((,ceiba-class (:background ,ceiba-mode-line-inactive :inherit mode-line))))
    `(mode-line-emphasis ((,ceiba-class (:weight bold))))
    `(mode-line-highlight ((,ceiba-class (:foreground unspecified :background unspecified :box (:line-width 2 :color "grey40" :style released-button)))))
@@ -190,12 +193,12 @@
    `(which-func ((,ceiba-class (:weight bold :foreground ,ceiba-mode-line-modified))))
 
    ;; tab-bar
-   `(tab-bar ((,ceiba-class (:foreground ,ceiba-white :background ,ceiba-tab-2 :weight bold))))
+   `(tab-bar ((,ceiba-class (:foreground ,ceiba-white :background ,ceiba-tab-2 :weight bold :inherit mode-line))))
    `(tab-bar-tab ((,ceiba-class (:foreground ,ceiba-white :background ,ceiba-tab-1 :inherit tab-bar))))
    `(tab-bar-tab-inactive ((,ceiba-class (:foreground ,ceiba-white :background ,ceiba-tab-2 :inherit tab-bar-tab))))
 
    ;; tab-line
-   `(tab-line ((,ceiba-class (:foreground ,ceiba-white :background ,ceiba-tab-2 :weight bold))))
+   `(tab-line ((,ceiba-class (:foreground ,ceiba-white :background ,ceiba-tab-2 :weight bold :inherit mode-line))))
    `(tab-line-tab ((,ceiba-class (:foreground ,ceiba-white :background ,ceiba-tab-2 :inherit tab-line))))
    `(tab-line-tab-current ((,ceiba-class (:foreground ,ceiba-white :background ,ceiba-tab-1 :inherit tab-line-tab))))
    `(tab-line-tab-inactive ((,ceiba-class (:foreground ,ceiba-white :background ,ceiba-tab-2 :inherit tab-line-tab))))

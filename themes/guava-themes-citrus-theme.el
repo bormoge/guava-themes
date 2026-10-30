@@ -172,7 +172,10 @@
    `(line-number-major-tick ((,citrus-class (:background ,citrus-tab-3 :inherit line-number))))
 
    ;; mode-line
-   `(mode-line ((,citrus-class (:foreground ,citrus-white :background ,citrus-mode-line))))
+   `(mode-line ((,citrus-class (:foreground ,citrus-white :background ,citrus-mode-line
+                                            :box ,(if guava-themes-boxed-mode-line
+                                                      '(:line-width -1 :style released-button)
+                                                    'unspecified)))))
    `(mode-line-inactive ((,citrus-class (:background ,citrus-mode-line-inactive :inherit mode-line))))
    `(mode-line-emphasis ((,citrus-class (:weight bold))))
    `(mode-line-highlight ((,citrus-class (:foreground unspecified :background unspecified :box (:line-width 2 :color "grey40" :style released-button)))))
@@ -189,12 +192,12 @@
    `(which-func ((,citrus-class (:weight bold :foreground ,citrus-mode-line-modified))))
 
    ;; tab-bar
-   `(tab-bar ((,citrus-class (:foreground ,citrus-white :background ,citrus-tab-2 :weight bold))))
+   `(tab-bar ((,citrus-class (:foreground ,citrus-white :background ,citrus-tab-2 :weight bold :inherit mode-line))))
    `(tab-bar-tab ((,citrus-class (:foreground ,citrus-white :background ,citrus-tab-1 :inherit tab-bar))))
    `(tab-bar-tab-inactive ((,citrus-class (:foreground ,citrus-white :background ,citrus-tab-2 :inherit tab-bar-tab))))
 
    ;; tab-line
-   `(tab-line ((,citrus-class (:foreground ,citrus-white :background ,citrus-tab-2 :weight bold))))
+   `(tab-line ((,citrus-class (:foreground ,citrus-white :background ,citrus-tab-2 :weight bold :inherit mode-line))))
    `(tab-line-tab ((,citrus-class (:foreground ,citrus-white :background ,citrus-tab-2 :inherit tab-line))))
    `(tab-line-tab-current ((,citrus-class (:foreground ,citrus-white :background ,citrus-tab-1 :inherit tab-line-tab))))
    `(tab-line-tab-inactive ((,citrus-class (:foreground ,citrus-white :background ,citrus-tab-2 :inherit tab-line-tab))))

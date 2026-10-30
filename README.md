@@ -47,6 +47,9 @@ You can install **guava-themes** from [MELPA](https://melpa.org/#/getting-starte
 (use-package guava-themes
   :ensure t
   :custom
+  (guava-themes-visible-bell-duration 0.15)
+  (guava-themes-visible-bell-idle-delay 0.0)
+  (guava-themes-boxed-mode-line nil)
   (ring-bell-function #'guava-themes-change-visible-bell)
   (visible-bell t)
   :config
@@ -65,8 +68,12 @@ You can install **guava-themes** from [MELPA](https://melpa.org/#/getting-starte
 
 (require 'guava-themes)
 
+(setopt guava-themes-visible-bell-duration 0.15)
+(setopt guava-themes-visible-bell-idle-delay 0.0)
+(setopt guava-themes-boxed-mode-line nil)
 (setopt ring-bell-function #'guava-themes-change-visible-bell)
 (setopt visible-bell t)
+
 (load-theme 'guava-themes-psidium t)
 ```
 

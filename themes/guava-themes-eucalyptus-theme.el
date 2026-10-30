@@ -168,7 +168,10 @@
    `(line-number-major-tick ((,eucalyptus-class (:background ,eucalyptus-tab-3 :inherit line-number))))
 
    ;; mode-line
-   `(mode-line ((,eucalyptus-class (:foreground ,eucalyptus-white :background ,eucalyptus-mode-line))))
+   `(mode-line ((,eucalyptus-class (:foreground ,eucalyptus-white :background ,eucalyptus-mode-line
+                                                :box ,(if guava-themes-boxed-mode-line
+                                                          '(:line-width -1 :style released-button)
+                                                        'unspecified)))))
    `(mode-line-inactive ((,eucalyptus-class (:background ,eucalyptus-mode-line-inactive :inherit mode-line))))
    `(mode-line-emphasis ((,eucalyptus-class (:weight bold))))
    `(mode-line-highlight ((,eucalyptus-class (:foreground unspecified :background unspecified :box (:line-width 2 :color "grey40" :style released-button)))))
@@ -185,12 +188,12 @@
    `(which-func ((,eucalyptus-class (:weight bold :foreground ,eucalyptus-mode-line-modified))))
 
    ;; tab-bar
-   `(tab-bar ((,eucalyptus-class (:foreground ,eucalyptus-white :background ,eucalyptus-tab-2 :weight bold))))
+   `(tab-bar ((,eucalyptus-class (:foreground ,eucalyptus-white :background ,eucalyptus-tab-2 :weight bold :inherit mode-line))))
    `(tab-bar-tab ((,eucalyptus-class (:foreground ,eucalyptus-white :background ,eucalyptus-tab-1 :inherit tab-bar))))
    `(tab-bar-tab-inactive ((,eucalyptus-class (:foreground ,eucalyptus-white :background ,eucalyptus-tab-2 :inherit tab-bar-tab))))
 
    ;; tab-line
-   `(tab-line ((,eucalyptus-class (:foreground ,eucalyptus-white :background ,eucalyptus-tab-2 :weight bold))))
+   `(tab-line ((,eucalyptus-class (:foreground ,eucalyptus-white :background ,eucalyptus-tab-2 :weight bold :inherit mode-line))))
    `(tab-line-tab ((,eucalyptus-class (:foreground ,eucalyptus-white :background ,eucalyptus-tab-2 :inherit tab-line))))
    `(tab-line-tab-current ((,eucalyptus-class (:foreground ,eucalyptus-white :background ,eucalyptus-tab-1 :inherit tab-line-tab))))
    `(tab-line-tab-inactive ((,eucalyptus-class (:foreground ,eucalyptus-white :background ,eucalyptus-tab-2 :inherit tab-line-tab))))

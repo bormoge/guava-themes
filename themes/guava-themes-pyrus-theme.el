@@ -169,7 +169,10 @@
    `(line-number-major-tick ((,pyrus-class (:background ,pyrus-tab-3 :inherit line-number))))
 
    ;; mode-line
-   `(mode-line ((,pyrus-class (:foreground ,pyrus-white :background ,pyrus-mode-line))))
+   `(mode-line ((,pyrus-class (:foreground ,pyrus-white :background ,pyrus-mode-line
+                                           :box ,(if guava-themes-boxed-mode-line
+                                                     '(:line-width -1 :style released-button)
+                                                   'unspecified)))))
    `(mode-line-inactive ((,pyrus-class (:background ,pyrus-mode-line-inactive :inherit mode-line))))
    `(mode-line-emphasis ((,pyrus-class (:weight bold))))
    `(mode-line-highlight ((,pyrus-class (:foreground unspecified :background unspecified :box (:line-width 2 :color "grey40" :style released-button)))))
@@ -186,12 +189,12 @@
    `(which-func ((,pyrus-class (:weight bold :foreground ,pyrus-mode-line-modified))))
 
    ;; tab-bar
-   `(tab-bar ((,pyrus-class (:foreground ,pyrus-white :background ,pyrus-tab-2 :weight bold))))
+   `(tab-bar ((,pyrus-class (:foreground ,pyrus-white :background ,pyrus-tab-2 :weight bold :inherit mode-line))))
    `(tab-bar-tab ((,pyrus-class (:foreground ,pyrus-white :background ,pyrus-tab-1 :inherit tab-bar))))
    `(tab-bar-tab-inactive ((,pyrus-class (:foreground ,pyrus-white :background ,pyrus-tab-2 :inherit tab-bar-tab))))
 
    ;; tab-line
-   `(tab-line ((,pyrus-class (:foreground ,pyrus-white :background ,pyrus-tab-2 :weight bold))))
+   `(tab-line ((,pyrus-class (:foreground ,pyrus-white :background ,pyrus-tab-2 :weight bold :inherit mode-line))))
    `(tab-line-tab ((,pyrus-class (:foreground ,pyrus-white :background ,pyrus-tab-2 :inherit tab-line))))
    `(tab-line-tab-current ((,pyrus-class (:foreground ,pyrus-white :background ,pyrus-tab-1 :inherit tab-line-tab))))
    `(tab-line-tab-inactive ((,pyrus-class (:foreground ,pyrus-white :background ,pyrus-tab-2 :inherit tab-line-tab))))

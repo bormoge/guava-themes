@@ -169,7 +169,10 @@
    `(line-number-major-tick ((,dracaena-class (:background ,dracaena-tab-3 :inherit line-number))))
 
    ;; mode-line
-   `(mode-line ((,dracaena-class (:foreground ,dracaena-white :background ,dracaena-mode-line))))
+   `(mode-line ((,dracaena-class (:foreground ,dracaena-white :background ,dracaena-mode-line
+                                              :box ,(if guava-themes-boxed-mode-line
+                                                        '(:line-width -1 :style released-button)
+                                                      'unspecified)))))
    `(mode-line-inactive ((,dracaena-class (:background ,dracaena-mode-line-inactive :inherit mode-line))))
    `(mode-line-emphasis ((,dracaena-class (:weight bold))))
    `(mode-line-highlight ((,dracaena-class (:foreground unspecified :background unspecified :box (:line-width 2 :color "grey40" :style released-button)))))
@@ -186,12 +189,12 @@
    `(which-func ((,dracaena-class (:weight bold :foreground ,dracaena-mode-line-modified))))
 
    ;; tab-bar
-   `(tab-bar ((,dracaena-class (:foreground ,dracaena-white :background ,dracaena-tab-2 :weight bold))))
+   `(tab-bar ((,dracaena-class (:foreground ,dracaena-white :background ,dracaena-tab-2 :weight bold :inherit mode-line))))
    `(tab-bar-tab ((,dracaena-class (:foreground ,dracaena-white :background ,dracaena-tab-1 :inherit tab-bar))))
    `(tab-bar-tab-inactive ((,dracaena-class (:foreground ,dracaena-white :background ,dracaena-tab-2 :inherit tab-bar-tab))))
 
    ;; tab-line
-   `(tab-line ((,dracaena-class (:foreground ,dracaena-white :background ,dracaena-tab-2 :weight bold))))
+   `(tab-line ((,dracaena-class (:foreground ,dracaena-white :background ,dracaena-tab-2 :weight bold :inherit mode-line))))
    `(tab-line-tab ((,dracaena-class (:foreground ,dracaena-white :background ,dracaena-tab-2 :inherit tab-line))))
    `(tab-line-tab-current ((,dracaena-class (:foreground ,dracaena-white :background ,dracaena-tab-1 :inherit tab-line-tab))))
    `(tab-line-tab-inactive ((,dracaena-class (:foreground ,dracaena-white :background ,dracaena-tab-2 :inherit tab-line-tab))))

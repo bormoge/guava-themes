@@ -168,7 +168,10 @@
    `(line-number-major-tick ((,solanum-class (:background ,solanum-tab-3 :inherit line-number))))
 
    ;; mode-line
-   `(mode-line ((,solanum-class (:foreground ,solanum-white :background ,solanum-mode-line))))
+   `(mode-line ((,solanum-class (:foreground ,solanum-white :background ,solanum-mode-line
+                                             :box ,(if guava-themes-boxed-mode-line
+                                                       '(:line-width -1 :style released-button)
+                                                     'unspecified)))))
    `(mode-line-inactive ((,solanum-class (:background ,solanum-mode-line-inactive :inherit mode-line))))
    `(mode-line-emphasis ((,solanum-class (:weight bold))))
    `(mode-line-highlight ((,solanum-class (:foreground unspecified :background unspecified :box (:line-width 2 :color "grey40" :style released-button)))))
@@ -185,12 +188,12 @@
    `(which-func ((,solanum-class (:weight bold :foreground ,solanum-mode-line-modified))))
 
    ;; tab-bar
-   `(tab-bar ((,solanum-class (:foreground ,solanum-white :background ,solanum-tab-2 :weight bold))))
+   `(tab-bar ((,solanum-class (:foreground ,solanum-white :background ,solanum-tab-2 :weight bold :inherit mode-line))))
    `(tab-bar-tab ((,solanum-class (:foreground ,solanum-white :background ,solanum-tab-1 :inherit tab-bar))))
    `(tab-bar-tab-inactive ((,solanum-class (:foreground ,solanum-white :background ,solanum-tab-2 :inherit tab-bar-tab))))
 
    ;; tab-line
-   `(tab-line ((,solanum-class (:foreground ,solanum-white :background ,solanum-tab-2 :weight bold))))
+   `(tab-line ((,solanum-class (:foreground ,solanum-white :background ,solanum-tab-2 :weight bold :inherit mode-line))))
    `(tab-line-tab ((,solanum-class (:foreground ,solanum-white :background ,solanum-tab-2 :inherit tab-line))))
    `(tab-line-tab-current ((,solanum-class (:foreground ,solanum-white :background ,solanum-tab-1 :inherit tab-line-tab))))
    `(tab-line-tab-inactive ((,solanum-class (:foreground ,solanum-white :background ,solanum-tab-2 :inherit tab-line-tab))))

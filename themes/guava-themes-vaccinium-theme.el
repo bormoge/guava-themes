@@ -169,7 +169,10 @@
    `(line-number-major-tick ((,vaccinium-class (:background ,vaccinium-tab-3 :inherit line-number))))
 
    ;; mode-line
-   `(mode-line ((,vaccinium-class (:foreground ,vaccinium-white :background ,vaccinium-mode-line))))
+   `(mode-line ((,vaccinium-class (:foreground ,vaccinium-white :background ,vaccinium-mode-line
+                                               :box ,(if guava-themes-boxed-mode-line
+                                                         '(:line-width -1 :style released-button)
+                                                       'unspecified)))))
    `(mode-line-inactive ((,vaccinium-class (:background ,vaccinium-mode-line-inactive :inherit mode-line))))
    `(mode-line-emphasis ((,vaccinium-class (:weight bold))))
    `(mode-line-highlight ((,vaccinium-class (:foreground unspecified :background unspecified :box (:line-width 2 :color "grey40" :style released-button)))))
@@ -186,12 +189,12 @@
    `(which-func ((,vaccinium-class (:weight bold :foreground ,vaccinium-mode-line-modified))))
 
    ;; tab-bar
-   `(tab-bar ((,vaccinium-class (:foreground ,vaccinium-white :background ,vaccinium-tab-2 :weight bold))))
+   `(tab-bar ((,vaccinium-class (:foreground ,vaccinium-white :background ,vaccinium-tab-2 :weight bold :inherit mode-line))))
    `(tab-bar-tab ((,vaccinium-class (:foreground ,vaccinium-white :background ,vaccinium-tab-1 :inherit tab-bar))))
    `(tab-bar-tab-inactive ((,vaccinium-class (:foreground ,vaccinium-white :background ,vaccinium-tab-2 :inherit tab-bar-tab))))
 
    ;; tab-line
-   `(tab-line ((,vaccinium-class (:foreground ,vaccinium-white :background ,vaccinium-tab-2 :weight bold))))
+   `(tab-line ((,vaccinium-class (:foreground ,vaccinium-white :background ,vaccinium-tab-2 :weight bold :inherit mode-line))))
    `(tab-line-tab ((,vaccinium-class (:foreground ,vaccinium-white :background ,vaccinium-tab-2 :inherit tab-line))))
    `(tab-line-tab-current ((,vaccinium-class (:foreground ,vaccinium-white :background ,vaccinium-tab-1 :inherit tab-line-tab))))
    `(tab-line-tab-inactive ((,vaccinium-class (:foreground ,vaccinium-white :background ,vaccinium-tab-2 :inherit tab-line-tab))))

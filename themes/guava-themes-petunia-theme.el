@@ -167,7 +167,10 @@
    `(line-number-major-tick ((,petunia-class (:background ,petunia-tab-3 :inherit line-number))))
 
    ;; mode-line
-   `(mode-line ((,petunia-class (:foreground ,petunia-white :background ,petunia-mode-line))))
+   `(mode-line ((,petunia-class (:foreground ,petunia-white :background ,petunia-mode-line
+                                             :box ,(if guava-themes-boxed-mode-line
+                                                       '(:line-width -1 :style released-button)
+                                                     'unspecified)))))
    `(mode-line-inactive ((,petunia-class (:background ,petunia-mode-line-inactive :inherit mode-line))))
    `(mode-line-emphasis ((,petunia-class (:weight bold))))
    `(mode-line-highlight ((,petunia-class (:foreground unspecified :background unspecified :box (:line-width 2 :color "grey40" :style released-button)))))
@@ -184,12 +187,12 @@
    `(which-func ((,petunia-class (:weight bold :foreground ,petunia-mode-line-modified))))
 
    ;; tab-bar
-   `(tab-bar ((,petunia-class (:foreground ,petunia-white :background ,petunia-tab-2 :weight bold))))
+   `(tab-bar ((,petunia-class (:foreground ,petunia-white :background ,petunia-tab-2 :weight bold :inherit mode-line))))
    `(tab-bar-tab ((,petunia-class (:foreground ,petunia-white :background ,petunia-tab-1 :inherit tab-bar))))
    `(tab-bar-tab-inactive ((,petunia-class (:foreground ,petunia-white :background ,petunia-tab-2 :inherit tab-bar-tab))))
 
    ;; tab-line
-   `(tab-line ((,petunia-class (:foreground ,petunia-white :background ,petunia-tab-2 :weight bold))))
+   `(tab-line ((,petunia-class (:foreground ,petunia-white :background ,petunia-tab-2 :weight bold :inherit mode-line))))
    `(tab-line-tab ((,petunia-class (:foreground ,petunia-white :background ,petunia-tab-2 :inherit tab-line))))
    `(tab-line-tab-current ((,petunia-class (:foreground ,petunia-white :background ,petunia-tab-1 :inherit tab-line-tab))))
    `(tab-line-tab-inactive ((,petunia-class (:foreground ,petunia-white :background ,petunia-tab-2 :inherit tab-line-tab))))

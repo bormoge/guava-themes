@@ -171,7 +171,10 @@
    `(line-number-major-tick ((,rubus-class (:background ,rubus-tab-3 :inherit line-number))))
 
    ;; mode-line
-   `(mode-line ((,rubus-class (:foreground ,rubus-white :background ,rubus-mode-line))))
+   `(mode-line ((,rubus-class (:foreground ,rubus-white :background ,rubus-mode-line
+                                           :box ,(if guava-themes-boxed-mode-line
+                                                     '(:line-width -1 :style released-button)
+                                                   'unspecified)))))
    `(mode-line-inactive ((,rubus-class (:background ,rubus-mode-line-inactive :inherit mode-line))))
    `(mode-line-emphasis ((,rubus-class (:weight bold))))
    `(mode-line-highlight ((,rubus-class (:foreground unspecified :background unspecified :box (:line-width 2 :color "grey40" :style released-button)))))
@@ -188,12 +191,12 @@
    `(which-func ((,rubus-class (:weight bold :foreground ,rubus-mode-line-modified))))
 
    ;; tab-bar
-   `(tab-bar ((,rubus-class (:foreground ,rubus-white :background ,rubus-tab-2 :weight bold))))
+   `(tab-bar ((,rubus-class (:foreground ,rubus-white :background ,rubus-tab-2 :weight bold :inherit mode-line))))
    `(tab-bar-tab ((,rubus-class (:foreground ,rubus-white :background ,rubus-tab-1 :inherit tab-bar))))
    `(tab-bar-tab-inactive ((,rubus-class (:foreground ,rubus-white :background ,rubus-tab-2 :inherit tab-bar-tab))))
 
    ;; tab-line
-   `(tab-line ((,rubus-class (:foreground ,rubus-white :background ,rubus-tab-2 :weight bold))))
+   `(tab-line ((,rubus-class (:foreground ,rubus-white :background ,rubus-tab-2 :weight bold :inherit mode-line))))
    `(tab-line-tab ((,rubus-class (:foreground ,rubus-white :background ,rubus-tab-2 :inherit tab-line))))
    `(tab-line-tab-current ((,rubus-class (:foreground ,rubus-white :background ,rubus-tab-1 :inherit tab-line-tab))))
    `(tab-line-tab-inactive ((,rubus-class (:foreground ,rubus-white :background ,rubus-tab-2 :inherit tab-line-tab))))

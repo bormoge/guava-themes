@@ -172,7 +172,10 @@
    `(line-number-major-tick ((,prunus-class (:background ,prunus-tab-3 :inherit line-number))))
 
    ;; mode-line
-   `(mode-line ((,prunus-class (:foreground ,prunus-white :background ,prunus-mode-line))))
+   `(mode-line ((,prunus-class (:foreground ,prunus-white :background ,prunus-mode-line
+                                            :box ,(if guava-themes-boxed-mode-line
+                                                      '(:line-width -1 :style released-button)
+                                                    'unspecified)))))
    `(mode-line-inactive ((,prunus-class (:background ,prunus-mode-line-inactive :inherit mode-line))))
    `(mode-line-emphasis ((,prunus-class (:weight bold))))
    `(mode-line-highlight ((,prunus-class (:foreground unspecified :background unspecified :box (:line-width 2 :color "grey40" :style released-button)))))
@@ -189,12 +192,12 @@
    `(which-func ((,prunus-class (:weight bold :foreground ,prunus-mode-line-modified))))
 
    ;; tab-bar
-   `(tab-bar ((,prunus-class (:foreground ,prunus-white :background ,prunus-tab-2 :weight bold))))
+   `(tab-bar ((,prunus-class (:foreground ,prunus-white :background ,prunus-tab-2 :weight bold :inherit mode-line))))
    `(tab-bar-tab ((,prunus-class (:foreground ,prunus-white :background ,prunus-tab-1 :inherit tab-bar))))
    `(tab-bar-tab-inactive ((,prunus-class (:foreground ,prunus-white :background ,prunus-tab-2 :inherit tab-bar))))
 
    ;; tab-line
-   `(tab-line ((,prunus-class (:foreground ,prunus-white :background ,prunus-tab-2 :weight bold))))
+   `(tab-line ((,prunus-class (:foreground ,prunus-white :background ,prunus-tab-2 :weight bold :inherit mode-line))))
    `(tab-line-tab ((,prunus-class (:foreground ,prunus-white :background ,prunus-tab-2 :inherit tab-line))))
    `(tab-line-tab-current ((,prunus-class (:foreground ,prunus-white :background ,prunus-tab-1 :inherit tab-line-tab))))
    `(tab-line-tab-inactive ((,prunus-class (:foreground ,prunus-white :background ,prunus-tab-2 :inherit tab-line-tab))))

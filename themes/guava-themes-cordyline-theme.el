@@ -168,7 +168,10 @@
    `(line-number-major-tick ((,cordyline-class (:background ,cordyline-tab-3 :inherit line-number))))
 
    ;; mode-line
-   `(mode-line ((,cordyline-class (:foreground ,cordyline-white :background ,cordyline-mode-line))))
+   `(mode-line ((,cordyline-class (:foreground ,cordyline-white :background ,cordyline-mode-line
+                                               :box ,(if guava-themes-boxed-mode-line
+                                                         '(:line-width -1 :style released-button)
+                                                       'unspecified)))))
    `(mode-line-inactive ((,cordyline-class (:background ,cordyline-mode-line-inactive :inherit mode-line))))
    `(mode-line-emphasis ((,cordyline-class (:weight bold))))
    `(mode-line-highlight ((,cordyline-class (:foreground unspecified :background unspecified :box (:line-width 2 :color "grey40" :style released-button)))))
@@ -185,12 +188,12 @@
    `(which-func ((,cordyline-class (:weight bold :foreground ,cordyline-mode-line-modified))))
 
    ;; tab-bar
-   `(tab-bar ((,cordyline-class (:foreground ,cordyline-white :background ,cordyline-tab-2 :weight bold))))
+   `(tab-bar ((,cordyline-class (:foreground ,cordyline-white :background ,cordyline-tab-2 :weight bold :inherit mode-line))))
    `(tab-bar-tab ((,cordyline-class (:foreground ,cordyline-white :background ,cordyline-tab-1 :inherit tab-bar))))
    `(tab-bar-tab-inactive ((,cordyline-class (:foreground ,cordyline-white :background ,cordyline-tab-2 :inherit tab-bar-tab))))
 
    ;; tab-line
-   `(tab-line ((,cordyline-class (:foreground ,cordyline-white :background ,cordyline-tab-2 :weight bold))))
+   `(tab-line ((,cordyline-class (:foreground ,cordyline-white :background ,cordyline-tab-2 :weight bold :inherit mode-line))))
    `(tab-line-tab ((,cordyline-class (:foreground ,cordyline-white :background ,cordyline-tab-2 :inherit tab-line))))
    `(tab-line-tab-current ((,cordyline-class (:foreground ,cordyline-white :background ,cordyline-tab-1 :inherit tab-line-tab))))
    `(tab-line-tab-inactive ((,cordyline-class (:foreground ,cordyline-white :background ,cordyline-tab-2 :inherit tab-line-tab))))

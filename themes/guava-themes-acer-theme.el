@@ -169,7 +169,10 @@
    `(line-number-major-tick ((,acer-class (:background ,acer-tab-3 :inherit line-number))))
 
    ;; mode-line
-   `(mode-line ((,acer-class (:foreground ,acer-white :background ,acer-mode-line))))
+   `(mode-line ((,acer-class (:foreground ,acer-white :background ,acer-mode-line
+                                          :box ,(if guava-themes-boxed-mode-line
+                                                    '(:line-width -1 :style released-button)
+                                                  'unspecified)))))
    `(mode-line-inactive ((,acer-class (:background ,acer-mode-line-inactive :inherit mode-line))))
    `(mode-line-emphasis ((,acer-class (:weight bold))))
    `(mode-line-highlight ((,acer-class (:foreground unspecified :background unspecified :box (:line-width 2 :color "grey40" :style released-button)))))
@@ -186,12 +189,12 @@
    `(which-func ((,acer-class (:weight bold :foreground ,acer-mode-line-modified))))
 
    ;; tab-bar
-   `(tab-bar ((,acer-class (:foreground ,acer-white :background ,acer-tab-2 :weight bold))))
+   `(tab-bar ((,acer-class (:foreground ,acer-white :background ,acer-tab-2 :weight bold :inherit mode-line))))
    `(tab-bar-tab ((,acer-class (:foreground ,acer-white :background ,acer-tab-1 :inherit tab-bar))))
    `(tab-bar-tab-inactive ((,acer-class (:foreground ,acer-white :background ,acer-tab-2 :inherit tab-bar-tab))))
 
    ;; tab-line
-   `(tab-line ((,acer-class (:foreground ,acer-white :background ,acer-tab-2 :weight bold))))
+   `(tab-line ((,acer-class (:foreground ,acer-white :background ,acer-tab-2 :weight bold :inherit mode-line))))
    `(tab-line-tab ((,acer-class (:foreground ,acer-white :background ,acer-tab-2 :inherit tab-line))))
    `(tab-line-tab-current ((,acer-class (:foreground ,acer-white :background ,acer-tab-1 :inherit tab-line-tab))))
    `(tab-line-tab-inactive ((,acer-class (:foreground ,acer-white :background ,acer-tab-2 :inherit tab-line-tab))))
