@@ -185,7 +185,7 @@
 
    ;; header-line
    `(header-line ((,rhododendron-class (:inherit mode-line))))
-   `(which-func ((,rhododendron-class (:weight bold :foreground ,rhododendron-white))))
+   `(which-func ((,rhododendron-class (:weight bold :foreground ,rhododendron-mode-line-modified))))
 
    ;; tab-bar
    `(tab-bar ((,rhododendron-class (:foreground ,rhododendron-white :background ,rhododendron-tab-2 :weight bold))))

@@ -185,7 +185,7 @@
 
    ;; header-line
    `(header-line ((,rubus-class (:inherit mode-line))))
-   `(which-func ((,rubus-class (:weight bold :foreground ,rubus-white))))
+   `(which-func ((,rubus-class (:weight bold :foreground ,rubus-mode-line-modified))))
 
    ;; tab-bar
    `(tab-bar ((,rubus-class (:foreground ,rubus-white :background ,rubus-tab-2 :weight bold))))

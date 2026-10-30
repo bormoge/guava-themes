@@ -182,7 +182,7 @@
 
    ;; header-line
    `(header-line ((,eucalyptus-class (:inherit mode-line))))
-   `(which-func ((,eucalyptus-class (:weight bold :foreground ,eucalyptus-white))))
+   `(which-func ((,eucalyptus-class (:weight bold :foreground ,eucalyptus-mode-line-modified))))
 
    ;; tab-bar
    `(tab-bar ((,eucalyptus-class (:foreground ,eucalyptus-white :background ,eucalyptus-tab-2 :weight bold))))

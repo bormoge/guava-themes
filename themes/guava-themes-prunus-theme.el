@@ -186,7 +186,7 @@
 
    ;; header-line
    `(header-line ((,prunus-class (:inherit mode-line))))
-   `(which-func ((,prunus-class (:weight bold :foreground ,prunus-white))))
+   `(which-func ((,prunus-class (:weight bold :foreground ,prunus-mode-line-modified))))
 
    ;; tab-bar
    `(tab-bar ((,prunus-class (:foreground ,prunus-white :background ,prunus-tab-2 :weight bold))))

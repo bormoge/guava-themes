@@ -183,7 +183,7 @@
 
    ;; header-line
    `(header-line ((,pyrus-class (:inherit mode-line))))
-   `(which-func ((,pyrus-class (:weight bold :foreground ,pyrus-white))))
+   `(which-func ((,pyrus-class (:weight bold :foreground ,pyrus-mode-line-modified))))
 
    ;; tab-bar
    `(tab-bar ((,pyrus-class (:foreground ,pyrus-white :background ,pyrus-tab-2 :weight bold))))

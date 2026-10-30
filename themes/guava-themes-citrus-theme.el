@@ -186,7 +186,7 @@
 
    ;; header-line
    `(header-line ((,citrus-class (:background ,citrus-tab-1 :inherit mode-line))))
-   `(which-func ((,citrus-class (:weight bold :foreground ,citrus-white))))
+   `(which-func ((,citrus-class (:weight bold :foreground ,citrus-mode-line-modified))))
 
    ;; tab-bar
    `(tab-bar ((,citrus-class (:foreground ,citrus-white :background ,citrus-tab-2 :weight bold))))

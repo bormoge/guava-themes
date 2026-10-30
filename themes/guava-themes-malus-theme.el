@@ -183,7 +183,7 @@
 
    ;; header-line
    `(header-line ((,malus-class (:inherit mode-line))))
-   `(which-func ((,malus-class (:weight bold :foreground ,malus-white))))
+   `(which-func ((,malus-class (:weight bold :foreground ,malus-mode-line-modified))))
 
    ;; tab-bar
    `(tab-bar ((,malus-class (:foreground ,malus-white :background ,malus-tab-2 :weight bold))))

@@ -187,7 +187,7 @@
 
    ;; header-line
    `(header-line ((,ceiba-class (:inherit mode-line))))
-   `(which-func ((,ceiba-class (:weight bold :foreground ,ceiba-white))))
+   `(which-func ((,ceiba-class (:weight bold :foreground ,ceiba-mode-line-modified))))
 
    ;; tab-bar
    `(tab-bar ((,ceiba-class (:foreground ,ceiba-white :background ,ceiba-tab-2 :weight bold))))
