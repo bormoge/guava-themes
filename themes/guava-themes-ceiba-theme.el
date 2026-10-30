@@ -78,7 +78,7 @@
 
       (ceiba-mode-line                 "#5b6452")
       (ceiba-mode-line-inactive        "#826e51")
-      (ceiba-mode-line-modified        "#b287b2")
+      (ceiba-mode-line-modified        "#aa98aa")
       (ceiba-bell                      "#786678")
 
       (ceiba-tab-1                     ceiba-mode-line)
