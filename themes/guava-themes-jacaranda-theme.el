@@ -345,12 +345,12 @@
    `(elfeed-search-last-update-face ((,jacaranda-class (:weight bold :foreground ,jacaranda-orange))))
    `(elfeed-search-unread-count-face ((,jacaranda-class (:weight bold :foreground ,jacaranda-orange))))
 
-   `(elfeed-show-header-face ((,jacaranda-class (:foreground ,jacaranda-deep-blue))))
-   `(elfeed-show-author-face ((,jacaranda-class (:weight bold :foreground ,jacaranda-deep-green))))
-   `(elfeed-show-title-face ((,jacaranda-class (:weight bold :foreground ,jacaranda-deep-green))))
-   `(elfeed-show-date-face ((,jacaranda-class (:foreground ,jacaranda-deep-purple))))
-   `(elfeed-show-feed-face ((,jacaranda-class (:foreground ,jacaranda-deep-purple))))
-   `(elfeed-show-tags-face ((,jacaranda-class (:foreground ,jacaranda-purple-red))))
+   `(elfeed-show-header-face ((,jacaranda-class (:inherit elfeed-search-date-face))))
+   `(elfeed-show-author-face ((,jacaranda-class (:inherit elfeed-search-unread-title-face))))
+   `(elfeed-show-title-face ((,jacaranda-class (:inherit elfeed-search-unread-title-face))))
+   `(elfeed-show-date-face ((,jacaranda-class (:inherit elfeed-search-feed-face))))
+   `(elfeed-show-feed-face ((,jacaranda-class (:inherit elfeed-search-feed-face))))
+   `(elfeed-show-tags-face ((,jacaranda-class (:inherit elfeed-search-tag-face))))
 
    ;; doom-modeline
    ;; doom-modeline-buffer-file-name-style

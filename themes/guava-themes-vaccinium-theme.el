@@ -347,12 +347,12 @@
    `(elfeed-search-last-update-face ((,vaccinium-class (:weight bold :foreground ,vaccinium-deep-blue))))
    `(elfeed-search-unread-count-face ((,vaccinium-class (:weight bold :foreground ,vaccinium-deep-blue))))
 
-   `(elfeed-show-header-face ((,vaccinium-class (:foreground ,vaccinium-steel-blue))))
-   `(elfeed-show-author-face ((,vaccinium-class (:weight bold :foreground ,vaccinium-light-green))))
-   `(elfeed-show-title-face ((,vaccinium-class (:weight bold :foreground ,vaccinium-light-green))))
-   `(elfeed-show-date-face ((,vaccinium-class (:foreground ,vaccinium-blueberry))))
-   `(elfeed-show-feed-face ((,vaccinium-class (:foreground ,vaccinium-blueberry))))
-   `(elfeed-show-tags-face ((,vaccinium-class (:foreground ,vaccinium-light-purple))))
+   `(elfeed-show-header-face ((,vaccinium-class (:inherit elfeed-search-date-face))))
+   `(elfeed-show-author-face ((,vaccinium-class (:inherit elfeed-search-unread-title-face))))
+   `(elfeed-show-title-face ((,vaccinium-class (:inherit elfeed-search-unread-title-face))))
+   `(elfeed-show-date-face ((,vaccinium-class (:inherit elfeed-search-feed-face))))
+   `(elfeed-show-feed-face ((,vaccinium-class (:inherit elfeed-search-feed-face))))
+   `(elfeed-show-tags-face ((,vaccinium-class (:inherit elfeed-search-tag-face))))
 
    ;; doom-modeline
    ;; doom-modeline-buffer-file-name-style

@@ -351,12 +351,12 @@
    `(elfeed-search-last-update-face ((,ceiba-class (:weight bold :foreground ,ceiba-light-orange))))
    `(elfeed-search-unread-count-face ((,ceiba-class (:weight bold :foreground ,ceiba-light-orange))))
 
-   `(elfeed-show-header-face ((,ceiba-class (:foreground ,ceiba-brown-wood))))
-   `(elfeed-show-author-face ((,ceiba-class (:weight bold :foreground ,ceiba-deep-green))))
-   `(elfeed-show-title-face ((,ceiba-class (:weight bold :foreground ,ceiba-deep-green))))
-   `(elfeed-show-date-face ((,ceiba-class (:foreground ,ceiba-green-blue))))
-   `(elfeed-show-feed-face ((,ceiba-class (:foreground ,ceiba-green-blue))))
-   `(elfeed-show-tags-face ((,ceiba-class (:foreground ,ceiba-alt-blue))))
+   `(elfeed-show-header-face ((,ceiba-class (:inherit elfeed-search-date-face))))
+   `(elfeed-show-author-face ((,ceiba-class (:inherit elfeed-search-unread-title-face))))
+   `(elfeed-show-title-face ((,ceiba-class (:inherit elfeed-search-unread-title-face))))
+   `(elfeed-show-date-face ((,ceiba-class (:inherit elfeed-search-feed-face))))
+   `(elfeed-show-feed-face ((,ceiba-class (:inherit elfeed-search-feed-face))))
+   `(elfeed-show-tags-face ((,ceiba-class (:inherit elfeed-search-tag-face))))
 
    ;; doom-modeline
    ;; doom-modeline-buffer-file-name-style

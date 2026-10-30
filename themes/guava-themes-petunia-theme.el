@@ -345,12 +345,12 @@
    `(elfeed-search-last-update-face ((,petunia-class (:weight bold :foreground ,petunia-light-orange))))
    `(elfeed-search-unread-count-face ((,petunia-class (:weight bold :foreground ,petunia-light-orange))))
 
-   `(elfeed-show-header-face ((,petunia-class (:foreground ,petunia-light-blue))))
-   `(elfeed-show-author-face ((,petunia-class (:weight bold :foreground ,petunia-green-forest))))
-   `(elfeed-show-title-face ((,petunia-class (:weight bold :foreground ,petunia-green-forest))))
-   `(elfeed-show-date-face ((,petunia-class (:foreground ,petunia-orange))))
-   `(elfeed-show-feed-face ((,petunia-class (:foreground ,petunia-orange))))
-   `(elfeed-show-tags-face ((,petunia-class (:foreground ,petunia-pink))))
+   `(elfeed-show-header-face ((,petunia-class (:inherit elfeed-search-date-face))))
+   `(elfeed-show-author-face ((,petunia-class (:inherit elfeed-search-unread-title-face))))
+   `(elfeed-show-title-face ((,petunia-class (:inherit elfeed-search-unread-title-face))))
+   `(elfeed-show-date-face ((,petunia-class (:inherit elfeed-search-feed-face))))
+   `(elfeed-show-feed-face ((,petunia-class (:inherit elfeed-search-feed-face))))
+   `(elfeed-show-tags-face ((,petunia-class (:inherit elfeed-search-tag-face))))
 
    ;; doom-modeline
    ;; doom-modeline-buffer-file-name-style

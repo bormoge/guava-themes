@@ -350,12 +350,12 @@
    `(elfeed-search-last-update-face ((,prunus-class (:weight bold :foreground ,prunus-light-pink))))
    `(elfeed-search-unread-count-face ((,prunus-class (:weight bold :foreground ,prunus-light-pink))))
 
-   `(elfeed-show-header-face ((,prunus-class (:foreground ,prunus-light-red))))
-   `(elfeed-show-author-face ((,prunus-class (:weight bold :foreground ,prunus-coffee))))
-   `(elfeed-show-title-face ((,prunus-class (:weight bold :foreground ,prunus-coffee))))
-   `(elfeed-show-date-face ((,prunus-class (:foreground ,prunus-pink))))
-   `(elfeed-show-feed-face ((,prunus-class (:foreground ,prunus-pink))))
-   `(elfeed-show-tags-face ((,prunus-class (:foreground ,prunus-light-pink))))
+   `(elfeed-show-header-face ((,prunus-class (:inherit elfeed-search-date-face))))
+   `(elfeed-show-author-face ((,prunus-class (:inherit elfeed-search-unread-title-face))))
+   `(elfeed-show-title-face ((,prunus-class (:inherit elfeed-search-unread-title-face))))
+   `(elfeed-show-date-face ((,prunus-class (:inherit elfeed-search-feed-face))))
+   `(elfeed-show-feed-face ((,prunus-class (:inherit elfeed-search-feed-face))))
+   `(elfeed-show-tags-face ((,prunus-class (:inherit elfeed-search-tag-face))))
 
    ;; doom-modeline
    ;; doom-modeline-buffer-file-name-style

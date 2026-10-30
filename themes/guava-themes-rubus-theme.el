@@ -349,12 +349,12 @@
    `(elfeed-search-last-update-face ((,rubus-class (:weight bold :foreground ,rubus-yellow))))
    `(elfeed-search-unread-count-face ((,rubus-class (:weight bold :foreground ,rubus-yellow))))
 
-   `(elfeed-show-header-face ((,rubus-class (:foreground ,rubus-green))))
-   `(elfeed-show-author-face ((,rubus-class (:weight bold :foreground ,rubus-light-green))))
-   `(elfeed-show-title-face ((,rubus-class (:weight bold :foreground ,rubus-light-green))))
-   `(elfeed-show-date-face ((,rubus-class (:foreground ,rubus-light-blue))))
-   `(elfeed-show-feed-face ((,rubus-class (:foreground ,rubus-light-blue))))
-   `(elfeed-show-tags-face ((,rubus-class (:foreground ,rubus-green-blue))))
+   `(elfeed-show-header-face ((,rubus-class (:inherit elfeed-search-date-face))))
+   `(elfeed-show-author-face ((,rubus-class (:inherit elfeed-search-unread-title-face))))
+   `(elfeed-show-title-face ((,rubus-class (:inherit elfeed-search-unread-title-face))))
+   `(elfeed-show-date-face ((,rubus-class (:inherit elfeed-search-feed-face))))
+   `(elfeed-show-feed-face ((,rubus-class (:inherit elfeed-search-feed-face))))
+   `(elfeed-show-tags-face ((,rubus-class (:inherit elfeed-search-tag-face))))
 
    ;; doom-modeline
    ;; doom-modeline-buffer-file-name-style

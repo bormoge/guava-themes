@@ -347,12 +347,12 @@
    `(elfeed-search-last-update-face ((,dracaena-class (:weight bold :foreground ,dracaena-light-green))))
    `(elfeed-search-unread-count-face ((,dracaena-class (:weight bold :foreground ,dracaena-light-green))))
 
-   `(elfeed-show-header-face ((,dracaena-class (:foreground ,dracaena-light-blue))))
-   `(elfeed-show-author-face ((,dracaena-class (:weight bold :foreground ,dracaena-light-green))))
-   `(elfeed-show-title-face ((,dracaena-class (:weight bold :foreground ,dracaena-light-green))))
-   `(elfeed-show-date-face ((,dracaena-class (:foreground ,dracaena-orange-red))))
-   `(elfeed-show-feed-face ((,dracaena-class (:foreground ,dracaena-orange-red))))
-   `(elfeed-show-tags-face ((,dracaena-class (:foreground ,dracaena-snakeplant-yellow))))
+   `(elfeed-show-header-face ((,dracaena-class (:inherit elfeed-search-date-face))))
+   `(elfeed-show-author-face ((,dracaena-class (:inherit elfeed-search-unread-title-face))))
+   `(elfeed-show-title-face ((,dracaena-class (:inherit elfeed-search-unread-title-face))))
+   `(elfeed-show-date-face ((,dracaena-class (:inherit elfeed-search-feed-face))))
+   `(elfeed-show-feed-face ((,dracaena-class (:inherit elfeed-search-feed-face))))
+   `(elfeed-show-tags-face ((,dracaena-class (:inherit elfeed-search-tag-face))))
 
    ;; doom-modeline
    ;; doom-modeline-buffer-file-name-style

@@ -349,12 +349,12 @@
    `(elfeed-search-last-update-face ((,rhododendron-class (:weight bold :foreground ,rhododendron-light-purple))))
    `(elfeed-search-unread-count-face ((,rhododendron-class (:weight bold :foreground ,rhododendron-light-purple))))
 
-   `(elfeed-show-header-face ((,rhododendron-class (:foreground ,rhododendron-purple-red))))
-   `(elfeed-show-author-face ((,rhododendron-class (:weight bold :foreground ,rhododendron-deep-blue))))
-   `(elfeed-show-title-face ((,rhododendron-class (:weight bold :foreground ,rhododendron-deep-blue))))
-   `(elfeed-show-date-face ((,rhododendron-class (:foreground ,rhododendron-purple-blue))))
-   `(elfeed-show-feed-face ((,rhododendron-class (:foreground ,rhododendron-purple-blue))))
-   `(elfeed-show-tags-face ((,rhododendron-class (:foreground ,rhododendron-dark-purple-red))))
+   `(elfeed-show-header-face ((,rhododendron-class (:inherit elfeed-search-date-face))))
+   `(elfeed-show-author-face ((,rhododendron-class (:inherit elfeed-search-unread-title-face))))
+   `(elfeed-show-title-face ((,rhododendron-class (:inherit elfeed-search-unread-title-face))))
+   `(elfeed-show-date-face ((,rhododendron-class (:inherit elfeed-search-feed-face))))
+   `(elfeed-show-feed-face ((,rhododendron-class (:inherit elfeed-search-feed-face))))
+   `(elfeed-show-tags-face ((,rhododendron-class (:inherit elfeed-search-tag-face))))
 
    ;; doom-modeline
    ;; doom-modeline-buffer-file-name-style
