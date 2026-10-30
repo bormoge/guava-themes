@@ -74,7 +74,7 @@
 
       (dracaena-mode-line                 "#b43c50")
       (dracaena-mode-line-inactive        "#5c625f")
-      (dracaena-mode-line-modified        "#e6825f")
+      (dracaena-mode-line-modified        "#e6965f")
       (dracaena-bell                      "#3CB464")
 
       (dracaena-tab-1                     dracaena-mode-line)
