@@ -43,13 +43,12 @@
       (acer-deep-green                "#006041")
 
       (acer-orange                    "#e76144")
-      (acer-deep-orange               "#d44400")
+      ;; (acer-deep-orange               "#d44400")
       (acer-orange-pink               "#cd475f")
       (acer-autumn                    "#ff8c4e")
 
       (acer-cream                     "#dca56e")
-      (acer-brown                     "#c88550")
-      (acer-deep-brown                "#8c6950")
+      (acer-deep-brown                "#8c695a")
 
       (acer-light-blue                "#3a9187")
       (acer-blue                      "#2134d5")
@@ -60,12 +59,14 @@
       (acer-purple-red                "#9b234b")
       (acer-purple-pink               "#5f2258")
 
-      (acer-fg                        "#000000")
+      (acer-fg-1                      "#000000")
       (acer-fg-2                      "#3c3c3c")
       (acer-bg                        "#f7bb78")
       (acer-highlight                 "#e3a764")
       (acer-shadow                    "#717171")
       (acer-tooltip                   "#ffffe0")
+      (acer-region-1                  "#c88550")
+      (acer-region-2                  "#a07150")
 
       (acer-error                     "#d70000")
       (acer-warning                   "#b4a000")
@@ -82,9 +83,9 @@
       (acer-tab-3                     acer-cream)
 
       (acer-fl-comment                acer-deep-green)
-      (acer-fl-string                 acer-deep-orange)
+      (acer-fl-string                 acer-deep-brown)
       (acer-fl-keyword                acer-deep-purple)
-      (acer-fl-builtin                acer-purple)
+      (acer-fl-builtin                acer-orange)
       (acer-fl-type                   acer-green)
       (acer-fl-function-name          acer-purple-red)
       (acer-fl-variable-name          acer-orange-pink)
@@ -117,7 +118,7 @@
    ;; with unique colors
 
    ;; default
-   `(default ((,acer-class (:foreground ,acer-fg :background ,acer-bg))))
+   `(default ((,acer-class (:foreground ,acer-fg-1 :background ,acer-bg))))
 
    ;; error, warning, success
    `(error ((,acer-class (:foreground ,acer-error :weight bold))))
@@ -134,8 +135,8 @@
    `(tooltip ((,acer-class (:weight bold :foreground ,acer-black :background ,acer-tooltip :inherit variable-pitch))))
 
    ;; region
-   `(region ((,acer-class (:background ,acer-brown :extend t))))
-   `(secondary-selection ((,acer-class (:background ,acer-orange :extend t))))
+   `(region ((,acer-class (:background ,acer-region-1 :extend t))))
+   `(secondary-selection ((,acer-class (:background ,acer-region-2 :extend t))))
 
    ;; font-lock
    `(font-lock-comment-face ((,acer-class (:foreground ,acer-fl-comment :weight medium))))
@@ -163,7 +164,7 @@
    `(diff-hl-delete ((,acer-class (:foreground ,acer-error :background ,acer-error))))
 
    ;; line-number
-   `(line-number ((,acer-class (:foreground ,acer-fg :inherit default))))
+   `(line-number ((,acer-class (:foreground ,acer-fg-1 :inherit default))))
    `(line-number-current-line ((,acer-class (:foreground ,acer-mode-line :weight bold :inherit (highlight line-number)))))
    `(line-number-minor-tick ((,acer-class (:background ,acer-tab-2 :inherit line-number))))
    `(line-number-major-tick ((,acer-class (:background ,acer-tab-3 :inherit line-number))))
@@ -324,18 +325,18 @@
    `(eww-valid-certificate ((,acer-class (:weight bold :foreground ,acer-success))))
    `(eww-invalid-certificate ((,acer-class (:weight bold :foreground ,acer-error))))
    ;; Example of eww-form-text: https://en.wikipedia.org/wiki/Main_Page
-   `(eww-form-text ((,acer-class (:foreground ,acer-fg :background ,acer-tab-3 :box (:line-width 1)))))
+   `(eww-form-text ((,acer-class (:foreground ,acer-fg-1 :background ,acer-tab-3 :box (:line-width 1)))))
    ;; Example of eww-form-file: https://html.com/input-type-file/
-   `(eww-form-file ((,acer-class (:foreground ,acer-fg :background ,acer-tab-2 :box (:line-width 2 :style released-button)))))
+   `(eww-form-file ((,acer-class (:foreground ,acer-fg-1 :background ,acer-tab-2 :box (:line-width 2 :style released-button)))))
    ;; Example of eww-form-select: http://savannah.gnu.org/projects/emacs/
    ;; Example of eww-form-select: https://git.kernel.org/pub/scm/editors/uemacs/uemacs.git/
-   `(eww-form-select ((,acer-class (:foreground ,acer-fg :background ,acer-tab-1 :box (:line-width 2 :style released-button)))))
+   `(eww-form-select ((,acer-class (:foreground ,acer-fg-1 :background ,acer-tab-1 :box (:line-width 2 :style released-button)))))
    ;; Example of eww-form-submit: https://en.wikipedia.org/wiki/Main_Page
-   `(eww-form-submit ((,acer-class (:foreground ,acer-fg :background ,acer-tab-2 :box (:line-width 2 :style released-button)))))
+   `(eww-form-submit ((,acer-class (:foreground ,acer-fg-1 :background ,acer-tab-2 :box (:line-width 2 :style released-button)))))
    ;; Example of eww-form-checkbox: https://en.wikipedia.org/wiki/Main_Page
-   `(eww-form-checkbox ((,acer-class (:foreground ,acer-fg :background ,acer-tab-1 :box (:line-width 2 :style released-button)))))
+   `(eww-form-checkbox ((,acer-class (:foreground ,acer-fg-1 :background ,acer-tab-1 :box (:line-width 2 :style released-button)))))
    ;; Example of eww-form-textarea: https://en.wikipedia.org/w/index.php?title=Main_Page&action=edit
-   `(eww-form-textarea ((,acer-class (:foreground ,acer-fg :background ,acer-tab-3 :box (:line-width 1 :color ,acer-tab-1)))))
+   `(eww-form-textarea ((,acer-class (:foreground ,acer-fg-1 :background ,acer-tab-3 :box (:line-width 1 :color ,acer-tab-1)))))
 
 
    ;; external packages
@@ -367,7 +368,7 @@
    `(doom-modeline-buffer-modified ((,acer-class (:foreground ,acer-mode-line-modified :inherit (doom-modeline warning bold)))))
 
    ;; corfu
-   `(corfu-default ((,acer-class (:foreground ,acer-fg :background ,acer-bg))))
+   `(corfu-default ((,acer-class (:foreground ,acer-fg-1 :background ,acer-bg))))
    `(corfu-current ((,acer-class (:foreground unspecified :background unspecified :extend t :inherit highlight))))
    `(corfu-bar ((,acer-class (:background ,acer-shadow))))
    `(corfu-border ((,acer-class (:background ,acer-shadow))))
