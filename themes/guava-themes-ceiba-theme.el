@@ -39,7 +39,6 @@
       (ceiba-white                     "#FFFFFF")
 
       (ceiba-light-gray                "#bab49e")
-      (ceiba-gray-blue                 "#798585")
 
       (ceiba-light-green               "#64786e")
       (ceiba-green                     "#5a6450")
@@ -61,15 +60,16 @@
 
       (ceiba-light-brown               "#a08c6e")
       (ceiba-brown                     "#6d4b30")
-      (ceiba-brown-sand                "#826e51")
       (ceiba-brown-wood                "#53453d")
 
-      (ceiba-fg                        "#000000")
+      (ceiba-fg-1                      "#000000")
       (ceiba-fg-2                      "#3c3c3c")
       (ceiba-bg                        "#bab49e")
       (ceiba-highlight                 "#a6a08a")
       (ceiba-shadow                    "#7f7f7f")
       (ceiba-tooltip                   "#ffffe0")
+      (ceiba-region-1                  "#798585")
+      (ceiba-region-2                  "#826e51")
 
       (ceiba-error                     "#ff0000")
       (ceiba-warning                   "#f6c911")
@@ -121,7 +121,7 @@
    ;; with unique colors
 
    ;; default
-   `(default ((,ceiba-class (:foreground ,ceiba-fg :background ,ceiba-bg))))
+   `(default ((,ceiba-class (:foreground ,ceiba-fg-1 :background ,ceiba-bg))))
 
    ;; error, warning, success
    `(error ((,ceiba-class (:foreground ,ceiba-error :weight bold))))
@@ -138,8 +138,8 @@
    `(tooltip ((,ceiba-class (:weight bold :foreground ,ceiba-black :background ,ceiba-tooltip :inherit variable-pitch))))
 
    ;; region
-   `(region ((,ceiba-class (:background ,ceiba-gray-blue :extend t))))
-   `(secondary-selection ((,ceiba-class (:background ,ceiba-brown-sand :extend t))))
+   `(region ((,ceiba-class (:background ,ceiba-region-1 :extend t))))
+   `(secondary-selection ((,ceiba-class (:background ,ceiba-region-2 :extend t))))
 
    ;; font-lock
    `(font-lock-comment-face ((,ceiba-class (:foreground ,ceiba-fl-comment :weight medium))))
@@ -167,7 +167,7 @@
    `(diff-hl-delete ((,ceiba-class (:foreground ,ceiba-error :background ,ceiba-error))))
 
    ;; line-number
-   `(line-number ((,ceiba-class (:foreground ,ceiba-fg :inherit default))))
+   `(line-number ((,ceiba-class (:foreground ,ceiba-fg-1 :inherit default))))
    `(line-number-current-line ((,ceiba-class (:foreground ,ceiba-mode-line :weight bold :inherit (highlight line-number)))))
    `(line-number-minor-tick ((,ceiba-class (:background ,ceiba-tab-2 :inherit line-number))))
    `(line-number-major-tick ((,ceiba-class (:background ,ceiba-tab-3 :inherit line-number))))
@@ -328,18 +328,18 @@
    `(eww-valid-certificate ((,ceiba-class (:weight bold :foreground ,ceiba-success))))
    `(eww-invalid-certificate ((,ceiba-class (:weight bold :foreground ,ceiba-error))))
    ;; Example of eww-form-text: https://en.wikipedia.org/wiki/Main_Page
-   `(eww-form-text ((,ceiba-class (:foreground ,ceiba-fg :background ,ceiba-tab-3 :box (:line-width 1)))))
+   `(eww-form-text ((,ceiba-class (:foreground ,ceiba-fg-1 :background ,ceiba-tab-3 :box (:line-width 1)))))
    ;; Example of eww-form-file: https://html.com/input-type-file/
-   `(eww-form-file ((,ceiba-class (:foreground ,ceiba-fg :background ,ceiba-tab-2 :box (:line-width 2 :style released-button)))))
+   `(eww-form-file ((,ceiba-class (:foreground ,ceiba-fg-1 :background ,ceiba-tab-2 :box (:line-width 2 :style released-button)))))
    ;; Example of eww-form-select: http://savannah.gnu.org/projects/emacs/
    ;; Example of eww-form-select: https://git.kernel.org/pub/scm/editors/uemacs/uemacs.git/
-   `(eww-form-select ((,ceiba-class (:foreground ,ceiba-fg :background ,ceiba-tab-1 :box (:line-width 2 :style released-button)))))
+   `(eww-form-select ((,ceiba-class (:foreground ,ceiba-fg-1 :background ,ceiba-tab-1 :box (:line-width 2 :style released-button)))))
    ;; Example of eww-form-submit: https://en.wikipedia.org/wiki/Main_Page
-   `(eww-form-submit ((,ceiba-class (:foreground ,ceiba-fg :background ,ceiba-tab-2 :box (:line-width 2 :style released-button)))))
+   `(eww-form-submit ((,ceiba-class (:foreground ,ceiba-fg-1 :background ,ceiba-tab-2 :box (:line-width 2 :style released-button)))))
    ;; Example of eww-form-checkbox: https://en.wikipedia.org/wiki/Main_Page
-   `(eww-form-checkbox ((,ceiba-class (:foreground ,ceiba-fg :background ,ceiba-tab-1 :box (:line-width 2 :style released-button)))))
+   `(eww-form-checkbox ((,ceiba-class (:foreground ,ceiba-fg-1 :background ,ceiba-tab-1 :box (:line-width 2 :style released-button)))))
    ;; Example of eww-form-textarea: https://en.wikipedia.org/w/index.php?title=Main_Page&action=edit
-   `(eww-form-textarea ((,ceiba-class (:foreground ,ceiba-fg :background ,ceiba-tab-3 :box (:line-width 1 :color ,ceiba-tab-1)))))
+   `(eww-form-textarea ((,ceiba-class (:foreground ,ceiba-fg-1 :background ,ceiba-tab-3 :box (:line-width 1 :color ,ceiba-tab-1)))))
 
 
    ;; external packages
@@ -371,7 +371,7 @@
    `(doom-modeline-buffer-modified ((,ceiba-class (:foreground ,ceiba-mode-line-modified :inherit (doom-modeline warning bold)))))
 
    ;; corfu
-   `(corfu-default ((,ceiba-class (:foreground ,ceiba-fg :background ,ceiba-bg))))
+   `(corfu-default ((,ceiba-class (:foreground ,ceiba-fg-1 :background ,ceiba-bg))))
    `(corfu-current ((,ceiba-class (:foreground unspecified :background unspecified :extend t :inherit highlight))))
    `(corfu-bar ((,ceiba-class (:background ,ceiba-shadow))))
    `(corfu-border ((,ceiba-class (:background ,ceiba-shadow))))

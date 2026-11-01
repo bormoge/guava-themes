@@ -45,7 +45,6 @@
 
       (solanum-light-green               "#4ec9b0")
       (solanum-alt-light-green           "#61ff96")
-      (solanum-green                     "#3a6b43")
       (solanum-deep-green                "#007d37")
 
       (solanum-light-blue                "#8ec4de")
@@ -55,16 +54,17 @@
       (solanum-light-purple              "#bec8ff")
       (solanum-purple                    "#786ed7")
       (solanum-purple-pink               "#915d93")
-      (solanum-purple-blue               "#492b87")
       (solanum-dark-purple               "#693c64")
       (solanum-alt-dark-purple           "#59536e")
 
-      (solanum-fg                        "#FFFFFF")
+      (solanum-fg-1                      "#FFFFFF")
       (solanum-fg-2                      "#c3c3c3")
       (solanum-bg                        "#130d1a")
       (solanum-highlight                 "#27212e")
       (solanum-shadow                    "#b3b3b3")
       (solanum-tooltip                   "#ffffe0")
+      (solanum-region-1                  "#492b87")
+      (solanum-region-2                  "#3a6b43")
 
       (solanum-error                     "#FF0000")
       (solanum-warning                   "#f6d909")
@@ -116,7 +116,7 @@
    ;; with unique colors
 
    ;; default
-   `(default ((,solanum-class (:foreground ,solanum-fg :background ,solanum-bg))))
+   `(default ((,solanum-class (:foreground ,solanum-fg-1 :background ,solanum-bg))))
 
    ;; error, warning, success
    `(error ((,solanum-class (:foreground ,solanum-error :weight bold))))
@@ -133,8 +133,8 @@
    `(tooltip ((,solanum-class (:weight bold :foreground ,solanum-black :background ,solanum-tooltip :inherit variable-pitch))))
 
    ;; region
-   `(region ((,solanum-class (:background ,solanum-purple-blue :extend t))))
-   `(secondary-selection ((,solanum-class (:background ,solanum-green :extend t))))
+   `(region ((,solanum-class (:background ,solanum-region-1 :extend t))))
+   `(secondary-selection ((,solanum-class (:background ,solanum-region-2 :extend t))))
 
    ;; font-lock
    `(font-lock-comment-face ((,solanum-class (:foreground ,solanum-fl-comment :weight medium))))
@@ -162,7 +162,7 @@
    `(diff-hl-delete ((,solanum-class (:foreground ,solanum-error :background ,solanum-error))))
 
    ;; line-number
-   `(line-number ((,solanum-class (:foreground ,solanum-fg :inherit default))))
+   `(line-number ((,solanum-class (:foreground ,solanum-fg-1 :inherit default))))
    `(line-number-current-line ((,solanum-class (:foreground ,solanum-mode-line :weight bold :inherit (highlight line-number)))))
    `(line-number-minor-tick ((,solanum-class (:background ,solanum-tab-2 :inherit line-number))))
    `(line-number-major-tick ((,solanum-class (:background ,solanum-tab-3 :inherit line-number))))
@@ -323,18 +323,18 @@
    `(eww-valid-certificate ((,solanum-class (:weight bold :foreground ,solanum-success))))
    `(eww-invalid-certificate ((,solanum-class (:weight bold :foreground ,solanum-error))))
    ;; Example of eww-form-text: https://en.wikipedia.org/wiki/Main_Page
-   `(eww-form-text ((,solanum-class (:foreground ,solanum-fg :background ,solanum-tab-3 :box (:line-width 1)))))
+   `(eww-form-text ((,solanum-class (:foreground ,solanum-fg-1 :background ,solanum-tab-3 :box (:line-width 1)))))
    ;; Example of eww-form-file: https://html.com/input-type-file/
-   `(eww-form-file ((,solanum-class (:foreground ,solanum-fg :background ,solanum-tab-2 :box (:line-width 2 :style released-button)))))
+   `(eww-form-file ((,solanum-class (:foreground ,solanum-fg-1 :background ,solanum-tab-2 :box (:line-width 2 :style released-button)))))
    ;; Example of eww-form-select: http://savannah.gnu.org/projects/emacs/
    ;; Example of eww-form-select: https://git.kernel.org/pub/scm/editors/uemacs/uemacs.git/
-   `(eww-form-select ((,solanum-class (:foreground ,solanum-fg :background ,solanum-tab-1 :box (:line-width 2 :style released-button)))))
+   `(eww-form-select ((,solanum-class (:foreground ,solanum-fg-1 :background ,solanum-tab-1 :box (:line-width 2 :style released-button)))))
    ;; Example of eww-form-submit: https://en.wikipedia.org/wiki/Main_Page
-   `(eww-form-submit ((,solanum-class (:foreground ,solanum-fg :background ,solanum-tab-2 :box (:line-width 2 :style released-button)))))
+   `(eww-form-submit ((,solanum-class (:foreground ,solanum-fg-1 :background ,solanum-tab-2 :box (:line-width 2 :style released-button)))))
    ;; Example of eww-form-checkbox: https://en.wikipedia.org/wiki/Main_Page
-   `(eww-form-checkbox ((,solanum-class (:foreground ,solanum-fg :background ,solanum-tab-1 :box (:line-width 2 :style released-button)))))
+   `(eww-form-checkbox ((,solanum-class (:foreground ,solanum-fg-1 :background ,solanum-tab-1 :box (:line-width 2 :style released-button)))))
    ;; Example of eww-form-textarea: https://en.wikipedia.org/w/index.php?title=Main_Page&action=edit
-   `(eww-form-textarea ((,solanum-class (:foreground ,solanum-fg :background ,solanum-tab-3 :box (:line-width 1 :color ,solanum-tab-1)))))
+   `(eww-form-textarea ((,solanum-class (:foreground ,solanum-fg-1 :background ,solanum-tab-3 :box (:line-width 1 :color ,solanum-tab-1)))))
 
 
    ;; external packages
@@ -366,7 +366,7 @@
    `(doom-modeline-buffer-modified ((,solanum-class (:foreground ,solanum-mode-line-modified :inherit (doom-modeline warning bold)))))
 
    ;; corfu
-   `(corfu-default ((,solanum-class (:foreground ,solanum-fg :background ,solanum-bg))))
+   `(corfu-default ((,solanum-class (:foreground ,solanum-fg-1 :background ,solanum-bg))))
    `(corfu-current ((,solanum-class (:foreground unspecified :background unspecified :extend t :inherit highlight))))
    `(corfu-bar ((,solanum-class (:background ,solanum-shadow))))
    `(corfu-border ((,solanum-class (:background ,solanum-shadow))))

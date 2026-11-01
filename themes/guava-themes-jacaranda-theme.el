@@ -58,12 +58,14 @@
       (jacaranda-deep-purple               "#640cbe")
       (jacaranda-purple-red                "#8b2252")
 
-      (jacaranda-fg                        "#000000")
+      (jacaranda-fg-1                      "#000000")
       (jacaranda-fg-2                      "#3c3c3c")
       (jacaranda-bg                        "#e9d9f9")
       (jacaranda-highlight                 "#d5c5e5")
       (jacaranda-shadow                    "#898989")
       (jacaranda-tooltip                   "#ffffe0")
+      (jacaranda-region-1                  "#be87e6")
+      (jacaranda-region-2                  "#ff9f79")
 
       (jacaranda-error                     "#FF0000")
       (jacaranda-warning                   "#ebb515")
@@ -115,7 +117,7 @@
    ;; with unique colors
 
    ;; default
-   `(default ((,jacaranda-class (:foreground ,jacaranda-fg :background ,jacaranda-bg))))
+   `(default ((,jacaranda-class (:foreground ,jacaranda-fg-1 :background ,jacaranda-bg))))
 
    ;; error, warning, success
    `(error ((,jacaranda-class (:foreground ,jacaranda-error :weight bold))))
@@ -132,8 +134,8 @@
    `(tooltip ((,jacaranda-class (:weight bold :foreground ,jacaranda-black :background ,jacaranda-tooltip :inherit variable-pitch))))
 
    ;; region
-   `(region ((,jacaranda-class (:background ,jacaranda-light-purple :extend t))))
-   `(secondary-selection ((,jacaranda-class (:background ,jacaranda-orange :extend t))))
+   `(region ((,jacaranda-class (:background ,jacaranda-region-1 :extend t))))
+   `(secondary-selection ((,jacaranda-class (:background ,jacaranda-region-2 :extend t))))
 
    ;; font-lock
    `(font-lock-comment-face ((,jacaranda-class (:foreground ,jacaranda-fl-comment :weight medium))))
@@ -161,7 +163,7 @@
    `(diff-hl-delete ((,jacaranda-class (:foreground ,jacaranda-error :background ,jacaranda-error))))
 
    ;; line-number
-   `(line-number ((,jacaranda-class (:foreground ,jacaranda-fg :inherit default))))
+   `(line-number ((,jacaranda-class (:foreground ,jacaranda-fg-1 :inherit default))))
    `(line-number-current-line ((,jacaranda-class (:foreground ,jacaranda-mode-line :weight bold :inherit (highlight line-number)))))
    `(line-number-minor-tick ((,jacaranda-class (:background ,jacaranda-tab-2 :inherit line-number))))
    `(line-number-major-tick ((,jacaranda-class (:background ,jacaranda-tab-3 :inherit line-number))))
@@ -322,18 +324,18 @@
    `(eww-valid-certificate ((,jacaranda-class (:weight bold :foreground ,jacaranda-success))))
    `(eww-invalid-certificate ((,jacaranda-class (:weight bold :foreground ,jacaranda-error))))
    ;; Example of eww-form-text: https://en.wikipedia.org/wiki/Main_Page
-   `(eww-form-text ((,jacaranda-class (:foreground ,jacaranda-fg :background ,jacaranda-tab-3 :box (:line-width 1)))))
+   `(eww-form-text ((,jacaranda-class (:foreground ,jacaranda-fg-1 :background ,jacaranda-tab-3 :box (:line-width 1)))))
    ;; Example of eww-form-file: https://html.com/input-type-file/
-   `(eww-form-file ((,jacaranda-class (:foreground ,jacaranda-fg :background ,jacaranda-tab-2 :box (:line-width 2 :style released-button)))))
+   `(eww-form-file ((,jacaranda-class (:foreground ,jacaranda-fg-1 :background ,jacaranda-tab-2 :box (:line-width 2 :style released-button)))))
    ;; Example of eww-form-select: http://savannah.gnu.org/projects/emacs/
    ;; Example of eww-form-select: https://git.kernel.org/pub/scm/editors/uemacs/uemacs.git/
    `(eww-form-select ((,jacaranda-class (:foreground ,jacaranda-white :background ,jacaranda-tab-1 :box (:line-width 2 :style released-button)))))
    ;; Example of eww-form-submit: https://en.wikipedia.org/wiki/Main_Page
-   `(eww-form-submit ((,jacaranda-class (:foreground ,jacaranda-fg :background ,jacaranda-tab-2 :box (:line-width 2 :style released-button)))))
+   `(eww-form-submit ((,jacaranda-class (:foreground ,jacaranda-fg-1 :background ,jacaranda-tab-2 :box (:line-width 2 :style released-button)))))
    ;; Example of eww-form-checkbox: https://en.wikipedia.org/wiki/Main_Page
    `(eww-form-checkbox ((,jacaranda-class (:foreground ,jacaranda-white :background ,jacaranda-tab-1 :box (:line-width 2 :style released-button)))))
    ;; Example of eww-form-textarea: https://en.wikipedia.org/w/index.php?title=Main_Page&action=edit
-   `(eww-form-textarea ((,jacaranda-class (:foreground ,jacaranda-fg :background ,jacaranda-tab-3 :box (:line-width 1 :color ,jacaranda-tab-1)))))
+   `(eww-form-textarea ((,jacaranda-class (:foreground ,jacaranda-fg-1 :background ,jacaranda-tab-3 :box (:line-width 1 :color ,jacaranda-tab-1)))))
 
 
    ;; external packages
@@ -365,7 +367,7 @@
    `(doom-modeline-buffer-modified ((,jacaranda-class (:foreground ,jacaranda-mode-line-modified :inherit (doom-modeline warning bold)))))
 
    ;; corfu
-   `(corfu-default ((,jacaranda-class (:foreground ,jacaranda-fg :background ,jacaranda-bg))))
+   `(corfu-default ((,jacaranda-class (:foreground ,jacaranda-fg-1 :background ,jacaranda-bg))))
    `(corfu-current ((,jacaranda-class (:foreground unspecified :background unspecified :extend t :inherit highlight))))
    `(corfu-bar ((,jacaranda-class (:background ,jacaranda-shadow))))
    `(corfu-border ((,jacaranda-class (:background ,jacaranda-shadow))))

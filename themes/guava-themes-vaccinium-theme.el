@@ -48,7 +48,6 @@
       (vaccinium-green-forest              "#006e41")
 
       (vaccinium-blueberry                 "#5582d7")
-      (vaccinium-alt-blueberry             "#3755a0")
       (vaccinium-blue                      "#0f69b4")
       (vaccinium-alt-blue                  "#1455f1")
       (vaccinium-deep-blue                 "#1c5367")
@@ -60,12 +59,14 @@
       (vaccinium-purple                    "#6464af")
       (vaccinium-purple-pink               "#aa78cf")
 
-      (vaccinium-fg                        "#FFFFFF")
+      (vaccinium-fg-1                      "#FFFFFF")
       (vaccinium-fg-2                      "#c3c3c3")
       (vaccinium-bg                        "#1c1c26")
       (vaccinium-highlight                 "#30303a")
       (vaccinium-shadow                    "#b3b3b3")
       (vaccinium-tooltip                   "#ffffe0")
+      (vaccinium-region-1                  "#1c5367")
+      (vaccinium-region-2                  "#3755a0")
 
       (vaccinium-error                     "#FF0000")
       (vaccinium-warning                   "#f6d909")
@@ -117,7 +118,7 @@
    ;; with unique colors
 
    ;; default
-   `(default ((,vaccinium-class (:foreground ,vaccinium-fg :background ,vaccinium-bg))))
+   `(default ((,vaccinium-class (:foreground ,vaccinium-fg-1 :background ,vaccinium-bg))))
 
    ;; error, warning, success
    `(error ((,vaccinium-class (:foreground ,vaccinium-error :weight bold))))
@@ -134,8 +135,8 @@
    `(tooltip ((,vaccinium-class (:weight bold :foreground ,vaccinium-black :background ,vaccinium-tooltip :inherit variable-pitch))))
 
    ;; region
-   `(region ((,vaccinium-class (:background ,vaccinium-deep-blue :extend t))))
-   `(secondary-selection ((,vaccinium-class (:background ,vaccinium-alt-blueberry :extend t))))
+   `(region ((,vaccinium-class (:background ,vaccinium-region-1 :extend t))))
+   `(secondary-selection ((,vaccinium-class (:background ,vaccinium-region-2 :extend t))))
 
    ;; font-lock
    `(font-lock-comment-face ((,vaccinium-class (:foreground ,vaccinium-fl-comment :weight medium))))
@@ -163,7 +164,7 @@
    `(diff-hl-delete ((,vaccinium-class (:foreground ,vaccinium-error :background ,vaccinium-error))))
 
    ;; line-number
-   `(line-number ((,vaccinium-class (:foreground ,vaccinium-fg :inherit default))))
+   `(line-number ((,vaccinium-class (:foreground ,vaccinium-fg-1 :inherit default))))
    `(line-number-current-line ((,vaccinium-class (:foreground ,vaccinium-mode-line :weight bold :inherit (highlight line-number)))))
    `(line-number-minor-tick ((,vaccinium-class (:background ,vaccinium-tab-2 :inherit line-number))))
    `(line-number-major-tick ((,vaccinium-class (:background ,vaccinium-tab-3 :inherit line-number))))
@@ -324,18 +325,18 @@
    `(eww-valid-certificate ((,vaccinium-class (:weight bold :foreground ,vaccinium-success))))
    `(eww-invalid-certificate ((,vaccinium-class (:weight bold :foreground ,vaccinium-error))))
    ;; Example of eww-form-text: https://en.wikipedia.org/wiki/Main_Page
-   `(eww-form-text ((,vaccinium-class (:foreground ,vaccinium-fg :background ,vaccinium-tab-3 :box (:line-width 1)))))
+   `(eww-form-text ((,vaccinium-class (:foreground ,vaccinium-fg-1 :background ,vaccinium-tab-3 :box (:line-width 1)))))
    ;; Example of eww-form-file: https://html.com/input-type-file/
-   `(eww-form-file ((,vaccinium-class (:foreground ,vaccinium-fg :background ,vaccinium-tab-2 :box (:line-width 2 :style released-button)))))
+   `(eww-form-file ((,vaccinium-class (:foreground ,vaccinium-fg-1 :background ,vaccinium-tab-2 :box (:line-width 2 :style released-button)))))
    ;; Example of eww-form-select: http://savannah.gnu.org/projects/emacs/
    ;; Example of eww-form-select: https://git.kernel.org/pub/scm/editors/uemacs/uemacs.git/
-   `(eww-form-select ((,vaccinium-class (:foreground ,vaccinium-fg :background ,vaccinium-tab-1 :box (:line-width 2 :style released-button)))))
+   `(eww-form-select ((,vaccinium-class (:foreground ,vaccinium-fg-1 :background ,vaccinium-tab-1 :box (:line-width 2 :style released-button)))))
    ;; Example of eww-form-submit: https://en.wikipedia.org/wiki/Main_Page
-   `(eww-form-submit ((,vaccinium-class (:foreground ,vaccinium-fg :background ,vaccinium-tab-2 :box (:line-width 2 :style released-button)))))
+   `(eww-form-submit ((,vaccinium-class (:foreground ,vaccinium-fg-1 :background ,vaccinium-tab-2 :box (:line-width 2 :style released-button)))))
    ;; Example of eww-form-checkbox: https://en.wikipedia.org/wiki/Main_Page
-   `(eww-form-checkbox ((,vaccinium-class (:foreground ,vaccinium-fg :background ,vaccinium-tab-1 :box (:line-width 2 :style released-button)))))
+   `(eww-form-checkbox ((,vaccinium-class (:foreground ,vaccinium-fg-1 :background ,vaccinium-tab-1 :box (:line-width 2 :style released-button)))))
    ;; Example of eww-form-textarea: https://en.wikipedia.org/w/index.php?title=Main_Page&action=edit
-   `(eww-form-textarea ((,vaccinium-class (:foreground ,vaccinium-fg :background ,vaccinium-tab-3 :box (:line-width 1 :color ,vaccinium-tab-1)))))
+   `(eww-form-textarea ((,vaccinium-class (:foreground ,vaccinium-fg-1 :background ,vaccinium-tab-3 :box (:line-width 1 :color ,vaccinium-tab-1)))))
 
 
    ;; external packages
@@ -367,7 +368,7 @@
    `(doom-modeline-buffer-modified ((,vaccinium-class (:foreground ,vaccinium-mode-line-modified :inherit (doom-modeline warning bold)))))
 
    ;; corfu
-   `(corfu-default ((,vaccinium-class (:foreground ,vaccinium-fg :background ,vaccinium-bg))))
+   `(corfu-default ((,vaccinium-class (:foreground ,vaccinium-fg-1 :background ,vaccinium-bg))))
    `(corfu-current ((,vaccinium-class (:foreground unspecified :background unspecified :extend t :inherit highlight))))
    `(corfu-bar ((,vaccinium-class (:background ,vaccinium-shadow))))
    `(corfu-border ((,vaccinium-class (:background ,vaccinium-shadow))))

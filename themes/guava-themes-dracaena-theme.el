@@ -49,7 +49,6 @@
       (dracaena-orange                    "#e6825f")
       (dracaena-orange-red                "#f06e6e")
       (dracaena-red                       "#b43c50")
-      (dracaena-deep-red                  "#883634")
       (dracaena-pink                      "#cd6eaf")
 
       (dracaena-light-brown               "#a89d92")
@@ -58,14 +57,15 @@
       (dracaena-blue                      "#2d50d5")
       (dracaena-steel-blue                "#4678d2")
       (dracaena-cyan                      "#00ffff")
-      (dracaena-dark-cyan                 "#005f55")
 
-      (dracaena-fg                        "#becee6")
+      (dracaena-fg-1                      "#becee6")
       (dracaena-fg-2                      "#8292aa")
       (dracaena-bg                        "#343a37")
       (dracaena-highlight                 "#252b28")
       (dracaena-shadow                    "#b3b3b3")
       (dracaena-tooltip                   "#ffffe0")
+      (dracaena-region-1                  "#883634")
+      (dracaena-region-2                  "#005f55")
 
       (dracaena-error                     "#FF0000")
       (dracaena-warning                   "#f6be14")
@@ -117,7 +117,7 @@
    ;; with unique colors
 
    ;; default
-   `(default ((,dracaena-class (:foreground ,dracaena-fg :background ,dracaena-bg))))
+   `(default ((,dracaena-class (:foreground ,dracaena-fg-1 :background ,dracaena-bg))))
 
    ;; error, warning, success
    `(error ((,dracaena-class (:foreground ,dracaena-error :weight bold))))
@@ -134,8 +134,8 @@
    `(tooltip ((,dracaena-class (:weight bold :foreground ,dracaena-black :background ,dracaena-tooltip :inherit variable-pitch))))
 
    ;; region
-   `(region ((,dracaena-class (:background ,dracaena-deep-red :extend t))))
-   `(secondary-selection ((,dracaena-class (:background ,dracaena-dark-cyan :extend t))))
+   `(region ((,dracaena-class (:background ,dracaena-region-1 :extend t))))
+   `(secondary-selection ((,dracaena-class (:background ,dracaena-region-2 :extend t))))
 
    ;; font-lock
    `(font-lock-comment-face ((,dracaena-class (:foreground ,dracaena-fl-comment :weight medium))))
@@ -163,7 +163,7 @@
    `(diff-hl-delete ((,dracaena-class (:foreground ,dracaena-error :background ,dracaena-error))))
 
    ;; line-number
-   `(line-number ((,dracaena-class (:foreground ,dracaena-fg :inherit default))))
+   `(line-number ((,dracaena-class (:foreground ,dracaena-fg-1 :inherit default))))
    `(line-number-current-line ((,dracaena-class (:foreground ,dracaena-mode-line :weight bold :inherit (highlight line-number)))))
    `(line-number-minor-tick ((,dracaena-class (:background ,dracaena-tab-2 :inherit line-number))))
    `(line-number-major-tick ((,dracaena-class (:background ,dracaena-tab-3 :inherit line-number))))
@@ -324,18 +324,18 @@
    `(eww-valid-certificate ((,dracaena-class (:weight bold :foreground ,dracaena-success))))
    `(eww-invalid-certificate ((,dracaena-class (:weight bold :foreground ,dracaena-error))))
    ;; Example of eww-form-text: https://en.wikipedia.org/wiki/Main_Page
-   `(eww-form-text ((,dracaena-class (:foreground ,dracaena-fg :background ,dracaena-tab-3 :box (:line-width 1)))))
+   `(eww-form-text ((,dracaena-class (:foreground ,dracaena-fg-1 :background ,dracaena-tab-3 :box (:line-width 1)))))
    ;; Example of eww-form-file: https://html.com/input-type-file/
-   `(eww-form-file ((,dracaena-class (:foreground ,dracaena-fg :background ,dracaena-tab-2 :box (:line-width 2 :style released-button)))))
+   `(eww-form-file ((,dracaena-class (:foreground ,dracaena-fg-1 :background ,dracaena-tab-2 :box (:line-width 2 :style released-button)))))
    ;; Example of eww-form-select: http://savannah.gnu.org/projects/emacs/
    ;; Example of eww-form-select: https://git.kernel.org/pub/scm/editors/uemacs/uemacs.git/
-   `(eww-form-select ((,dracaena-class (:foreground ,dracaena-fg :background ,dracaena-tab-1 :box (:line-width 2 :style released-button)))))
+   `(eww-form-select ((,dracaena-class (:foreground ,dracaena-fg-1 :background ,dracaena-tab-1 :box (:line-width 2 :style released-button)))))
    ;; Example of eww-form-submit: https://en.wikipedia.org/wiki/Main_Page
-   `(eww-form-submit ((,dracaena-class (:foreground ,dracaena-fg :background ,dracaena-tab-2 :box (:line-width 2 :style released-button)))))
+   `(eww-form-submit ((,dracaena-class (:foreground ,dracaena-fg-1 :background ,dracaena-tab-2 :box (:line-width 2 :style released-button)))))
    ;; Example of eww-form-checkbox: https://en.wikipedia.org/wiki/Main_Page
-   `(eww-form-checkbox ((,dracaena-class (:foreground ,dracaena-fg :background ,dracaena-tab-1 :box (:line-width 2 :style released-button)))))
+   `(eww-form-checkbox ((,dracaena-class (:foreground ,dracaena-fg-1 :background ,dracaena-tab-1 :box (:line-width 2 :style released-button)))))
    ;; Example of eww-form-textarea: https://en.wikipedia.org/w/index.php?title=Main_Page&action=edit
-   `(eww-form-textarea ((,dracaena-class (:foreground ,dracaena-fg :background ,dracaena-tab-3 :box (:line-width 1 :color ,dracaena-tab-1)))))
+   `(eww-form-textarea ((,dracaena-class (:foreground ,dracaena-fg-1 :background ,dracaena-tab-3 :box (:line-width 1 :color ,dracaena-tab-1)))))
 
 
    ;; external packages
@@ -367,7 +367,7 @@
    `(doom-modeline-buffer-modified ((,dracaena-class (:foreground ,dracaena-mode-line-modified :inherit (doom-modeline warning bold)))))
 
    ;; corfu
-   `(corfu-default ((,dracaena-class (:foreground ,dracaena-fg :background ,dracaena-bg))))
+   `(corfu-default ((,dracaena-class (:foreground ,dracaena-fg-1 :background ,dracaena-bg))))
    `(corfu-current ((,dracaena-class (:foreground unspecified :background unspecified :extend t :inherit highlight))))
    `(corfu-bar ((,dracaena-class (:background ,dracaena-shadow))))
    `(corfu-border ((,dracaena-class (:background ,dracaena-shadow))))

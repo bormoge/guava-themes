@@ -43,7 +43,6 @@
       (psidium-guava-green               "#aecd34")
       (psidium-deep-green                "#097d2c")
 
-      (psidium-light-orange              "#ffbe9b")
       (psidium-red-orange                "#cd605f")
       (psidium-red                       "#c1153b")
       (psidium-pink                      "#F8767C")
@@ -54,15 +53,16 @@
       (psidium-blue                      "#2a4ad9")
       (psidium-deep-blue                 "#483d8b")
 
-      (psidium-light-purple              "#8cb4d1")
       (psidium-purple                    "#812db2")
 
-      (psidium-fg                        "#000000")
+      (psidium-fg-1                      "#000000")
       (psidium-fg-2                      "#3c3c3c")
       (psidium-bg                        "#F1EECE")
       (psidium-highlight                 "#dddaba")
       (psidium-shadow                    "#7f7f7f")
       (psidium-tooltip                   "#ffffe0")
+      (psidium-region-1                  "#ffbe9b")
+      (psidium-region-2                  "#8cb4d1")
 
       (psidium-error                     "#FF0000")
       (psidium-warning                   "#d6c800")
@@ -114,7 +114,7 @@
    ;; with unique colors
 
    ;; default
-   `(default ((,psidium-class (:foreground ,psidium-fg :background ,psidium-bg))))
+   `(default ((,psidium-class (:foreground ,psidium-fg-1 :background ,psidium-bg))))
 
    ;; error, warning, success
    `(error ((,psidium-class (:foreground ,psidium-error :weight bold))))
@@ -131,8 +131,8 @@
    `(tooltip ((,psidium-class (:weight bold :foreground ,psidium-black :background ,psidium-tooltip :inherit variable-pitch))))
 
    ;; region
-   `(region ((,psidium-class (:background ,psidium-light-orange :extend t))))
-   `(secondary-selection ((,psidium-class (:background ,psidium-light-purple :extend t))))
+   `(region ((,psidium-class (:background ,psidium-region-1 :extend t))))
+   `(secondary-selection ((,psidium-class (:background ,psidium-region-2 :extend t))))
 
    ;; font-lock
    `(font-lock-comment-face ((,psidium-class (:foreground ,psidium-fl-comment :weight medium))))
@@ -160,7 +160,7 @@
    `(diff-hl-delete ((,psidium-class (:foreground ,psidium-error :background ,psidium-error))))
 
    ;; line-number
-   `(line-number ((,psidium-class (:foreground ,psidium-fg :inherit default))))
+   `(line-number ((,psidium-class (:foreground ,psidium-fg-1 :inherit default))))
    `(line-number-current-line ((,psidium-class (:foreground ,psidium-mode-line :weight bold :inherit (highlight line-number)))))
    `(line-number-minor-tick ((,psidium-class (:background ,psidium-tab-2 :inherit line-number))))
    `(line-number-major-tick ((,psidium-class (:background ,psidium-tab-3 :inherit line-number))))
@@ -321,18 +321,18 @@
    `(eww-valid-certificate ((,psidium-class (:weight bold :foreground ,psidium-success))))
    `(eww-invalid-certificate ((,psidium-class (:weight bold :foreground ,psidium-error))))
    ;; Example of eww-form-text: https://en.wikipedia.org/wiki/Main_Page
-   `(eww-form-text ((,psidium-class (:foreground ,psidium-fg :background ,psidium-tab-3 :box (:line-width 1)))))
+   `(eww-form-text ((,psidium-class (:foreground ,psidium-fg-1 :background ,psidium-tab-3 :box (:line-width 1)))))
    ;; Example of eww-form-file: https://html.com/input-type-file/
-   `(eww-form-file ((,psidium-class (:foreground ,psidium-fg :background ,psidium-tab-2 :box (:line-width 2 :style released-button)))))
+   `(eww-form-file ((,psidium-class (:foreground ,psidium-fg-1 :background ,psidium-tab-2 :box (:line-width 2 :style released-button)))))
    ;; Example of eww-form-select: http://savannah.gnu.org/projects/emacs/
    ;; Example of eww-form-select: https://git.kernel.org/pub/scm/editors/uemacs/uemacs.git/
-   `(eww-form-select ((,psidium-class (:foreground ,psidium-fg :background ,psidium-tab-1 :box (:line-width 2 :style released-button)))))
+   `(eww-form-select ((,psidium-class (:foreground ,psidium-fg-1 :background ,psidium-tab-1 :box (:line-width 2 :style released-button)))))
    ;; Example of eww-form-submit: https://en.wikipedia.org/wiki/Main_Page
-   `(eww-form-submit ((,psidium-class (:foreground ,psidium-fg :background ,psidium-tab-2 :box (:line-width 2 :style released-button)))))
+   `(eww-form-submit ((,psidium-class (:foreground ,psidium-fg-1 :background ,psidium-tab-2 :box (:line-width 2 :style released-button)))))
    ;; Example of eww-form-checkbox: https://en.wikipedia.org/wiki/Main_Page
-   `(eww-form-checkbox ((,psidium-class (:foreground ,psidium-fg :background ,psidium-tab-1 :box (:line-width 2 :style released-button)))))
+   `(eww-form-checkbox ((,psidium-class (:foreground ,psidium-fg-1 :background ,psidium-tab-1 :box (:line-width 2 :style released-button)))))
    ;; Example of eww-form-textarea: https://en.wikipedia.org/w/index.php?title=Main_Page&action=edit
-   `(eww-form-textarea ((,psidium-class (:foreground ,psidium-fg :background ,psidium-tab-3 :box (:line-width 1 :color ,psidium-tab-1)))))
+   `(eww-form-textarea ((,psidium-class (:foreground ,psidium-fg-1 :background ,psidium-tab-3 :box (:line-width 1 :color ,psidium-tab-1)))))
 
 
    ;; external packages
@@ -364,7 +364,7 @@
    `(doom-modeline-buffer-modified ((,psidium-class (:foreground ,psidium-mode-line-modified :inherit (doom-modeline warning bold)))))
 
    ;; corfu
-   `(corfu-default ((,psidium-class (:foreground ,psidium-fg :background ,psidium-bg))))
+   `(corfu-default ((,psidium-class (:foreground ,psidium-fg-1 :background ,psidium-bg))))
    `(corfu-current ((,psidium-class (:foreground unspecified :background unspecified :extend t :inherit highlight))))
    `(corfu-bar ((,psidium-class (:background ,psidium-shadow))))
    `(corfu-border ((,psidium-class (:background ,psidium-shadow))))

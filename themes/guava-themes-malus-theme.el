@@ -43,8 +43,6 @@
 
       (malus-yellow-subdued            "#d2c864")
 
-      (malus-green-subdued             "#788250")
-      (malus-alt-green-subdued         "#8c9632")
       (malus-green-granny              "#96dc50")
       (malus-green-forest              "#27ab50")
 
@@ -60,12 +58,14 @@
 
       (malus-purple                    "#8468ed")
 
-      (malus-fg                        "#fafbb7")
+      (malus-fg-1                      "#fafbb7")
       (malus-fg-2                      "#bebf7b")
       (malus-bg                        "#1e0910")
       (malus-highlight                 "#321d24")
       (malus-shadow                    "#b3b3b3")
       (malus-tooltip                   "#ffffe0")
+      (malus-region-1                  "#788250")
+      (malus-region-2                  "#8c9632")
 
       (malus-error                     "#d70000")
       (malus-warning                   "#f6d911")
@@ -117,7 +117,7 @@
    ;; with unique colors
 
    ;; default
-   `(default ((,malus-class (:foreground ,malus-fg :background ,malus-bg))))
+   `(default ((,malus-class (:foreground ,malus-fg-1 :background ,malus-bg))))
 
    ;; error, warning, success
    `(error ((,malus-class (:foreground ,malus-error :weight bold))))
@@ -134,8 +134,8 @@
    `(tooltip ((,malus-class (:weight bold :foreground ,malus-black :background ,malus-tooltip :inherit variable-pitch))))
 
    ;; region
-   `(region ((,malus-class (:background ,malus-green-subdued :extend t))))
-   `(secondary-selection ((,malus-class (:background ,malus-alt-green-subdued :extend t))))
+   `(region ((,malus-class (:background ,malus-region-1 :extend t))))
+   `(secondary-selection ((,malus-class (:background ,malus-region-2 :extend t))))
 
    ;; font-lock
    `(font-lock-comment-face ((,malus-class (:foreground ,malus-fl-comment :weight medium))))
@@ -163,7 +163,7 @@
    `(diff-hl-delete ((,malus-class (:foreground ,malus-error :background ,malus-error))))
 
    ;; line-number
-   `(line-number ((,malus-class (:foreground ,malus-fg :inherit default))))
+   `(line-number ((,malus-class (:foreground ,malus-fg-1 :inherit default))))
    `(line-number-current-line ((,malus-class (:foreground ,malus-mode-line :weight bold :inherit (highlight line-number)))))
    `(line-number-minor-tick ((,malus-class (:background ,malus-tab-2 :inherit line-number))))
    `(line-number-major-tick ((,malus-class (:background ,malus-tab-3 :inherit line-number))))
@@ -324,18 +324,18 @@
    `(eww-valid-certificate ((,malus-class (:weight bold :foreground ,malus-success))))
    `(eww-invalid-certificate ((,malus-class (:weight bold :foreground ,malus-error))))
    ;; Example of eww-form-text: https://en.wikipedia.org/wiki/Main_Page
-   `(eww-form-text ((,malus-class (:foreground ,malus-fg :background ,malus-tab-3 :box (:line-width 1)))))
+   `(eww-form-text ((,malus-class (:foreground ,malus-fg-1 :background ,malus-tab-3 :box (:line-width 1)))))
    ;; Example of eww-form-file: https://html.com/input-type-file/
-   `(eww-form-file ((,malus-class (:foreground ,malus-fg :background ,malus-tab-2 :box (:line-width 2 :style released-button)))))
+   `(eww-form-file ((,malus-class (:foreground ,malus-fg-1 :background ,malus-tab-2 :box (:line-width 2 :style released-button)))))
    ;; Example of eww-form-select: http://savannah.gnu.org/projects/emacs/
    ;; Example of eww-form-select: https://git.kernel.org/pub/scm/editors/uemacs/uemacs.git/
-   `(eww-form-select ((,malus-class (:foreground ,malus-fg :background ,malus-tab-1 :box (:line-width 2 :style released-button)))))
+   `(eww-form-select ((,malus-class (:foreground ,malus-fg-1 :background ,malus-tab-1 :box (:line-width 2 :style released-button)))))
    ;; Example of eww-form-submit: https://en.wikipedia.org/wiki/Main_Page
-   `(eww-form-submit ((,malus-class (:foreground ,malus-fg :background ,malus-tab-2 :box (:line-width 2 :style released-button)))))
+   `(eww-form-submit ((,malus-class (:foreground ,malus-fg-1 :background ,malus-tab-2 :box (:line-width 2 :style released-button)))))
    ;; Example of eww-form-checkbox: https://en.wikipedia.org/wiki/Main_Page
-   `(eww-form-checkbox ((,malus-class (:foreground ,malus-fg :background ,malus-tab-1 :box (:line-width 2 :style released-button)))))
+   `(eww-form-checkbox ((,malus-class (:foreground ,malus-fg-1 :background ,malus-tab-1 :box (:line-width 2 :style released-button)))))
    ;; Example of eww-form-textarea: https://en.wikipedia.org/w/index.php?title=Main_Page&action=edit
-   `(eww-form-textarea ((,malus-class (:foreground ,malus-fg :background ,malus-tab-3 :box (:line-width 1 :color ,malus-tab-1)))))
+   `(eww-form-textarea ((,malus-class (:foreground ,malus-fg-1 :background ,malus-tab-3 :box (:line-width 1 :color ,malus-tab-1)))))
 
 
    ;; external packages
@@ -367,7 +367,7 @@
    `(doom-modeline-buffer-modified ((,malus-class (:foreground ,malus-mode-line-modified :inherit (doom-modeline warning bold)))))
 
    ;; corfu
-   `(corfu-default ((,malus-class (:foreground ,malus-fg :background ,malus-bg))))
+   `(corfu-default ((,malus-class (:foreground ,malus-fg-1 :background ,malus-bg))))
    `(corfu-current ((,malus-class (:foreground unspecified :background unspecified :extend t :inherit highlight))))
    `(corfu-bar ((,malus-class (:background ,malus-shadow))))
    `(corfu-border ((,malus-class (:background ,malus-shadow))))

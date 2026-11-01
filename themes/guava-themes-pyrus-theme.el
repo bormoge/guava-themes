@@ -38,9 +38,6 @@
       (pyrus-black                     "#000000")
       (pyrus-white                     "#FFFFFF")
 
-      (pyrus-yellow-green              "#e5e73b")
-      (pyrus-alt-yellow-green          "#c8c887")
-
       (pyrus-light-green               "#97ad24")
       (pyrus-green                     "#228b22")
       (pyrus-green-subdued             "#316355")
@@ -60,12 +57,14 @@
       (pyrus-purple                    "#874be1")
       (pyrus-deep-magenta              "#642864")
 
-      (pyrus-fg                        "#780000")
+      (pyrus-fg-1                      "#780000")
       (pyrus-fg-2                      "#b43c3c")
       (pyrus-bg                        "#f9fefd")
       (pyrus-highlight                 "#e5eae9")
       (pyrus-shadow                    "#898989")
       (pyrus-tooltip                   "#ffffe0")
+      (pyrus-region-1                  "#c8c887")
+      (pyrus-region-2                  "#e5e73b")
 
       (pyrus-error                     "#ff0000")
       (pyrus-warning                   "#ffd200")
@@ -117,7 +116,7 @@
    ;; with unique colors
 
    ;; default
-   `(default ((,pyrus-class (:foreground ,pyrus-fg :background ,pyrus-bg))))
+   `(default ((,pyrus-class (:foreground ,pyrus-fg-1 :background ,pyrus-bg))))
 
    ;; error, warning, success
    `(error ((,pyrus-class (:foreground ,pyrus-error :weight bold))))
@@ -134,8 +133,8 @@
    `(tooltip ((,pyrus-class (:weight bold :foreground ,pyrus-black :background ,pyrus-tooltip :inherit variable-pitch))))
 
    ;; region
-   `(region ((,pyrus-class (:background ,pyrus-alt-yellow-green :extend t))))
-   `(secondary-selection ((,pyrus-class (:background ,pyrus-yellow-green :extend t))))
+   `(region ((,pyrus-class (:background ,pyrus-region-1 :extend t))))
+   `(secondary-selection ((,pyrus-class (:background ,pyrus-region-2 :extend t))))
 
    ;; font-lock
    `(font-lock-comment-face ((,pyrus-class (:foreground ,pyrus-fl-comment :weight medium))))
@@ -163,7 +162,7 @@
    `(diff-hl-delete ((,pyrus-class (:foreground ,pyrus-error :background ,pyrus-error))))
 
    ;; line-number
-   `(line-number ((,pyrus-class (:foreground ,pyrus-fg :inherit default))))
+   `(line-number ((,pyrus-class (:foreground ,pyrus-fg-1 :inherit default))))
    `(line-number-current-line ((,pyrus-class (:foreground ,pyrus-mode-line :weight bold :inherit (highlight line-number)))))
    `(line-number-minor-tick ((,pyrus-class (:background ,pyrus-tab-2 :inherit line-number))))
    `(line-number-major-tick ((,pyrus-class (:background ,pyrus-tab-3 :inherit line-number))))
@@ -367,7 +366,7 @@
    `(doom-modeline-buffer-modified ((,pyrus-class (:foreground ,pyrus-mode-line-modified :inherit (doom-modeline warning bold)))))
 
    ;; corfu
-   `(corfu-default ((,pyrus-class (:foreground ,pyrus-fg :background ,pyrus-bg))))
+   `(corfu-default ((,pyrus-class (:foreground ,pyrus-fg-1 :background ,pyrus-bg))))
    `(corfu-current ((,pyrus-class (:foreground unspecified :background unspecified :extend t :inherit highlight))))
    `(corfu-bar ((,pyrus-class (:background ,pyrus-shadow))))
    `(corfu-border ((,pyrus-class (:background ,pyrus-shadow))))

@@ -43,7 +43,6 @@
       (prunus-brown                     "#50463c")
       (prunus-alt-brown                 "#645a50")
       (prunus-coffee                    "#bea091")
-      (prunus-deep-brown                "#3c3228")
 
       (prunus-light-green               "#50a05f")
       (prunus-green-forest              "#007341")
@@ -63,12 +62,14 @@
       (prunus-purple                    "#7350a0")
       (prunus-purple-red                "#8B2252")
 
-      (prunus-fg                        "#ebafc8")
+      (prunus-fg-1                      "#ebafc8")
       (prunus-fg-2                      "#af738c")
       (prunus-bg                        "#190f05")
       (prunus-highlight                 "#2d2319")
       (prunus-shadow                    "#b3b3b3")
       (prunus-tooltip                   "#ffffe0")
+      (prunus-region-1                  "#3c3228")
+      (prunus-region-2                  "#645a50")
 
       (prunus-error                     "#FF0000")
       (prunus-warning                   "#f6d911")
@@ -120,7 +121,7 @@
    ;; with unique colors
 
    ;; default
-   `(default ((,prunus-class (:foreground ,prunus-fg :background ,prunus-bg))))
+   `(default ((,prunus-class (:foreground ,prunus-fg-1 :background ,prunus-bg))))
 
    ;; error, warning, success
    `(error ((,prunus-class (:foreground ,prunus-error :weight bold))))
@@ -137,8 +138,8 @@
    `(tooltip ((,prunus-class (:weight bold :foreground ,prunus-black :background ,prunus-tooltip :inherit variable-pitch))))
 
    ;; region
-   `(region ((,prunus-class (:background ,prunus-deep-brown :extend t))))
-   `(secondary-selection ((,prunus-class (:background ,prunus-alt-brown :extend t))))
+   `(region ((,prunus-class (:background ,prunus-region-1 :extend t))))
+   `(secondary-selection ((,prunus-class (:background ,prunus-region-2 :extend t))))
 
    ;; font-lock
    `(font-lock-comment-face ((,prunus-class (:foreground ,prunus-fl-comment :weight medium))))
@@ -166,7 +167,7 @@
    `(diff-hl-delete ((,prunus-class (:foreground ,prunus-error :background ,prunus-error))))
 
    ;; line-number
-   `(line-number ((,prunus-class (:foreground ,prunus-fg :inherit default))))
+   `(line-number ((,prunus-class (:foreground ,prunus-fg-1 :inherit default))))
    `(line-number-current-line ((,prunus-class (:foreground ,prunus-mode-line :weight bold :inherit (highlight line-number)))))
    `(line-number-minor-tick ((,prunus-class (:background ,prunus-tab-2 :inherit line-number))))
    `(line-number-major-tick ((,prunus-class (:background ,prunus-tab-3 :inherit line-number))))
@@ -327,18 +328,18 @@
    `(eww-valid-certificate ((,prunus-class (:weight bold :foreground ,prunus-success))))
    `(eww-invalid-certificate ((,prunus-class (:weight bold :foreground ,prunus-error))))
    ;; Example of eww-form-text: https://en.wikipedia.org/wiki/Main_Page
-   `(eww-form-text ((,prunus-class (:foreground ,prunus-fg :background ,prunus-tab-3 :box (:line-width 1)))))
+   `(eww-form-text ((,prunus-class (:foreground ,prunus-fg-1 :background ,prunus-tab-3 :box (:line-width 1)))))
    ;; Example of eww-form-file: https://html.com/input-type-file/
-   `(eww-form-file ((,prunus-class (:foreground ,prunus-fg :background ,prunus-tab-2 :box (:line-width 2 :style released-button)))))
+   `(eww-form-file ((,prunus-class (:foreground ,prunus-fg-1 :background ,prunus-tab-2 :box (:line-width 2 :style released-button)))))
    ;; Example of eww-form-select: http://savannah.gnu.org/projects/emacs/
    ;; Example of eww-form-select: https://git.kernel.org/pub/scm/editors/uemacs/uemacs.git/
-   `(eww-form-select ((,prunus-class (:foreground ,prunus-fg :background ,prunus-tab-1 :box (:line-width 2 :style released-button)))))
+   `(eww-form-select ((,prunus-class (:foreground ,prunus-fg-1 :background ,prunus-tab-1 :box (:line-width 2 :style released-button)))))
    ;; Example of eww-form-submit: https://en.wikipedia.org/wiki/Main_Page
-   `(eww-form-submit ((,prunus-class (:foreground ,prunus-fg :background ,prunus-tab-2 :box (:line-width 2 :style released-button)))))
+   `(eww-form-submit ((,prunus-class (:foreground ,prunus-fg-1 :background ,prunus-tab-2 :box (:line-width 2 :style released-button)))))
    ;; Example of eww-form-checkbox: https://en.wikipedia.org/wiki/Main_Page
-   `(eww-form-checkbox ((,prunus-class (:foreground ,prunus-fg :background ,prunus-tab-1 :box (:line-width 2 :style released-button)))))
+   `(eww-form-checkbox ((,prunus-class (:foreground ,prunus-fg-1 :background ,prunus-tab-1 :box (:line-width 2 :style released-button)))))
    ;; Example of eww-form-textarea: https://en.wikipedia.org/w/index.php?title=Main_Page&action=edit
-   `(eww-form-textarea ((,prunus-class (:foreground ,prunus-fg :background ,prunus-tab-3 :box (:line-width 1 :color ,prunus-tab-1)))))
+   `(eww-form-textarea ((,prunus-class (:foreground ,prunus-fg-1 :background ,prunus-tab-3 :box (:line-width 1 :color ,prunus-tab-1)))))
 
 
    ;; external packages
@@ -370,7 +371,7 @@
    `(doom-modeline-buffer-modified ((,prunus-class (:foreground ,prunus-mode-line-modified :inherit (doom-modeline warning bold)))))
 
    ;; corfu
-   `(corfu-default ((,prunus-class (:foreground ,prunus-fg :background ,prunus-bg))))
+   `(corfu-default ((,prunus-class (:foreground ,prunus-fg-1 :background ,prunus-bg))))
    `(corfu-current ((,prunus-class (:foreground unspecified :background unspecified :extend t :inherit highlight))))
    `(corfu-bar ((,prunus-class (:background ,prunus-shadow))))
    `(corfu-border ((,prunus-class (:background ,prunus-shadow))))

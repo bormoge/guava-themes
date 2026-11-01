@@ -63,12 +63,14 @@
       (citrus-deep-purple               "#6d4393")
       (citrus-purple-red                "#77003a")
 
-      (citrus-fg                        "#000000")
+      (citrus-fg-1                      "#000000")
       (citrus-fg-2                      "#3c3c3c")
       (citrus-bg                        "#edf2ed")
       (citrus-highlight                 "#d9ded9")
       (citrus-shadow                    "#6b6b6b")
       (citrus-tooltip                   "#ffffe0")
+      (citrus-region-1                  "#f5d49b")
+      (citrus-region-2                  "#f29a43")
 
       (citrus-error                     "#FF0000")
       (citrus-warning                   "#ffbe00")
@@ -120,7 +122,7 @@
    ;; with unique colors
 
    ;; default
-   `(default ((,citrus-class (:foreground ,citrus-fg :background ,citrus-bg))))
+   `(default ((,citrus-class (:foreground ,citrus-fg-1 :background ,citrus-bg))))
 
    ;; error, warning, success
    `(error ((,citrus-class (:foreground ,citrus-error :weight bold))))
@@ -137,8 +139,8 @@
    `(tooltip ((,citrus-class (:weight bold :foreground ,citrus-black :background ,citrus-tooltip :inherit variable-pitch))))
 
    ;; region
-   `(region ((,citrus-class (:background ,citrus-yellow :extend t))))
-   `(secondary-selection ((,citrus-class (:background ,citrus-orange-orange :extend t))))
+   `(region ((,citrus-class (:background ,citrus-region-1 :extend t))))
+   `(secondary-selection ((,citrus-class (:background ,citrus-region-2 :extend t))))
 
    ;; font-lock
    `(font-lock-comment-face ((,citrus-class (:foreground ,citrus-fl-comment :weight medium))))
@@ -166,7 +168,7 @@
    `(diff-hl-delete ((,citrus-class (:foreground ,citrus-error :background ,citrus-error))))
 
    ;; line-number
-   `(line-number ((,citrus-class (:foreground ,citrus-fg :inherit default))))
+   `(line-number ((,citrus-class (:foreground ,citrus-fg-1 :inherit default))))
    `(line-number-current-line ((,citrus-class (:foreground ,citrus-tab-1 :weight bold :inherit (highlight line-number)))))
    `(line-number-minor-tick ((,citrus-class (:background ,citrus-tab-2 :inherit line-number))))
    `(line-number-major-tick ((,citrus-class (:background ,citrus-tab-3 :inherit line-number))))
@@ -327,18 +329,18 @@
    `(eww-valid-certificate ((,citrus-class (:weight bold :foreground ,citrus-success))))
    `(eww-invalid-certificate ((,citrus-class (:weight bold :foreground ,citrus-error))))
    ;; Example of eww-form-text: https://en.wikipedia.org/wiki/Main_Page
-   `(eww-form-text ((,citrus-class (:foreground ,citrus-fg :background ,citrus-tab-3 :box (:line-width 1)))))
+   `(eww-form-text ((,citrus-class (:foreground ,citrus-fg-1 :background ,citrus-tab-3 :box (:line-width 1)))))
    ;; Example of eww-form-file: https://html.com/input-type-file/
-   `(eww-form-file ((,citrus-class (:foreground ,citrus-fg :background ,citrus-tab-2 :box (:line-width 2 :style released-button)))))
+   `(eww-form-file ((,citrus-class (:foreground ,citrus-fg-1 :background ,citrus-tab-2 :box (:line-width 2 :style released-button)))))
    ;; Example of eww-form-select: http://savannah.gnu.org/projects/emacs/
    ;; Example of eww-form-select: https://git.kernel.org/pub/scm/editors/uemacs/uemacs.git/
-   `(eww-form-select ((,citrus-class (:foreground ,citrus-fg :background ,citrus-tab-1 :box (:line-width 2 :style released-button)))))
+   `(eww-form-select ((,citrus-class (:foreground ,citrus-fg-1 :background ,citrus-tab-1 :box (:line-width 2 :style released-button)))))
    ;; Example of eww-form-submit: https://en.wikipedia.org/wiki/Main_Page
-   `(eww-form-submit ((,citrus-class (:foreground ,citrus-fg :background ,citrus-tab-2 :box (:line-width 2 :style released-button)))))
+   `(eww-form-submit ((,citrus-class (:foreground ,citrus-fg-1 :background ,citrus-tab-2 :box (:line-width 2 :style released-button)))))
    ;; Example of eww-form-checkbox: https://en.wikipedia.org/wiki/Main_Page
-   `(eww-form-checkbox ((,citrus-class (:foreground ,citrus-fg :background ,citrus-tab-1 :box (:line-width 2 :style released-button)))))
+   `(eww-form-checkbox ((,citrus-class (:foreground ,citrus-fg-1 :background ,citrus-tab-1 :box (:line-width 2 :style released-button)))))
    ;; Example of eww-form-textarea: https://en.wikipedia.org/w/index.php?title=Main_Page&action=edit
-   `(eww-form-textarea ((,citrus-class (:foreground ,citrus-fg :background ,citrus-tab-3 :box (:line-width 1 :color ,citrus-tab-1)))))
+   `(eww-form-textarea ((,citrus-class (:foreground ,citrus-fg-1 :background ,citrus-tab-3 :box (:line-width 1 :color ,citrus-tab-1)))))
 
 
    ;; external packages
@@ -370,7 +372,7 @@
    `(doom-modeline-buffer-modified ((,citrus-class (:foreground ,citrus-mode-line-modified :inherit (doom-modeline warning bold)))))
 
    ;; corfu
-   `(corfu-default ((,citrus-class (:foreground ,citrus-fg :background ,citrus-bg))))
+   `(corfu-default ((,citrus-class (:foreground ,citrus-fg-1 :background ,citrus-bg))))
    `(corfu-current ((,citrus-class (:foreground unspecified :background unspecified :extend t :inherit highlight))))
    `(corfu-bar ((,citrus-class (:background ,citrus-shadow))))
    `(corfu-border ((,citrus-class (:background ,citrus-shadow))))

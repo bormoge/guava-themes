@@ -48,10 +48,7 @@
       (eucalyptus-red                       "#82312e")
       (eucalyptus-deep-red                  "#693c50")
 
-      (eucalyptus-yellow                    "#e1e696")
-
       (eucalyptus-light-blue                "#2d8296")
-      (eucalyptus-alt-light-blue            "#96B9E6")
       (eucalyptus-blue                      "#2327dc")
       (eucalyptus-deep-blue                 "#46466e")
       (eucalyptus-cyan                      "#00ffff")
@@ -59,12 +56,14 @@
 
       (eucalyptus-purple-red                "#874164")
 
-      (eucalyptus-fg                        "#2d3241")
+      (eucalyptus-fg-1                      "#2d3241")
       (eucalyptus-fg-2                      "#696e7d")
       (eucalyptus-bg                        "#a5aa96")
       (eucalyptus-highlight                 "#9ba08c")
       (eucalyptus-shadow                    "#717171")
       (eucalyptus-tooltip                   "#ffffe0")
+      (eucalyptus-region-1                  "#e1e696")
+      (eucalyptus-region-2                  "#96B9E6")
 
       (eucalyptus-error                     "#e10000")
       (eucalyptus-warning                   "#f6c911")
@@ -116,7 +115,7 @@
    ;; with unique colors
 
    ;; default
-   `(default ((,eucalyptus-class (:foreground ,eucalyptus-fg :background ,eucalyptus-bg))))
+   `(default ((,eucalyptus-class (:foreground ,eucalyptus-fg-1 :background ,eucalyptus-bg))))
 
    ;; error, warning, success
    `(error ((,eucalyptus-class (:foreground ,eucalyptus-error :weight bold))))
@@ -133,8 +132,8 @@
    `(tooltip ((,eucalyptus-class (:weight bold :foreground ,eucalyptus-black :background ,eucalyptus-tooltip :inherit variable-pitch))))
 
    ;; region
-   `(region ((,eucalyptus-class (:background ,eucalyptus-yellow :extend t))))
-   `(secondary-selection ((,eucalyptus-class (:background ,eucalyptus-alt-light-blue :extend t))))
+   `(region ((,eucalyptus-class (:background ,eucalyptus-region-1 :extend t))))
+   `(secondary-selection ((,eucalyptus-class (:background ,eucalyptus-region-2 :extend t))))
 
    ;; font-lock
    `(font-lock-comment-face ((,eucalyptus-class (:foreground ,eucalyptus-fl-comment :weight medium))))
@@ -162,7 +161,7 @@
    `(diff-hl-delete ((,eucalyptus-class (:foreground ,eucalyptus-error :background ,eucalyptus-error))))
 
    ;; line-number
-   `(line-number ((,eucalyptus-class (:foreground ,eucalyptus-fg :inherit default))))
+   `(line-number ((,eucalyptus-class (:foreground ,eucalyptus-fg-1 :inherit default))))
    `(line-number-current-line ((,eucalyptus-class (:foreground ,eucalyptus-mode-line :weight bold :inherit (highlight line-number)))))
    `(line-number-minor-tick ((,eucalyptus-class (:background ,eucalyptus-tab-2 :inherit line-number))))
    `(line-number-major-tick ((,eucalyptus-class (:background ,eucalyptus-tab-3 :inherit line-number))))
@@ -323,18 +322,18 @@
    `(eww-valid-certificate ((,eucalyptus-class (:weight bold :foreground ,eucalyptus-success))))
    `(eww-invalid-certificate ((,eucalyptus-class (:weight bold :foreground ,eucalyptus-error))))
    ;; Example of eww-form-text: https://en.wikipedia.org/wiki/Main_Page
-   `(eww-form-text ((,eucalyptus-class (:foreground ,eucalyptus-fg :background ,eucalyptus-tab-3 :box (:line-width 1)))))
+   `(eww-form-text ((,eucalyptus-class (:foreground ,eucalyptus-fg-1 :background ,eucalyptus-tab-3 :box (:line-width 1)))))
    ;; Example of eww-form-file: https://html.com/input-type-file/
-   `(eww-form-file ((,eucalyptus-class (:foreground ,eucalyptus-fg :background ,eucalyptus-tab-2 :box (:line-width 2 :style released-button)))))
+   `(eww-form-file ((,eucalyptus-class (:foreground ,eucalyptus-fg-1 :background ,eucalyptus-tab-2 :box (:line-width 2 :style released-button)))))
    ;; Example of eww-form-select: http://savannah.gnu.org/projects/emacs/
    ;; Example of eww-form-select: https://git.kernel.org/pub/scm/editors/uemacs/uemacs.git/
    `(eww-form-select ((,eucalyptus-class (:foreground ,eucalyptus-white :background ,eucalyptus-tab-1 :box (:line-width 2 :style released-button)))))
    ;; Example of eww-form-submit: https://en.wikipedia.org/wiki/Main_Page
-   `(eww-form-submit ((,eucalyptus-class (:foreground ,eucalyptus-fg :background ,eucalyptus-tab-2 :box (:line-width 2 :style released-button)))))
+   `(eww-form-submit ((,eucalyptus-class (:foreground ,eucalyptus-fg-1 :background ,eucalyptus-tab-2 :box (:line-width 2 :style released-button)))))
    ;; Example of eww-form-checkbox: https://en.wikipedia.org/wiki/Main_Page
    `(eww-form-checkbox ((,eucalyptus-class (:foreground ,eucalyptus-white :background ,eucalyptus-tab-1 :box (:line-width 2 :style released-button)))))
    ;; Example of eww-form-textarea: https://en.wikipedia.org/w/index.php?title=Main_Page&action=edit
-   `(eww-form-textarea ((,eucalyptus-class (:foreground ,eucalyptus-fg :background ,eucalyptus-tab-3 :box (:line-width 1 :color ,eucalyptus-tab-1)))))
+   `(eww-form-textarea ((,eucalyptus-class (:foreground ,eucalyptus-fg-1 :background ,eucalyptus-tab-3 :box (:line-width 1 :color ,eucalyptus-tab-1)))))
 
 
    ;; external packages
@@ -344,7 +343,7 @@
    `(elfeed-search-date-face ((,eucalyptus-class (:foreground ,eucalyptus-deep-blue))))
    `(elfeed-search-feed-face ((,eucalyptus-class (:foreground ,eucalyptus-deep-red))))
    `(elfeed-search-title-face ((,eucalyptus-class (:foreground ,eucalyptus-gray))))
-   `(elfeed-search-unread-title-face ((,eucalyptus-class (:weight bold :foreground ,eucalyptus-fg))))
+   `(elfeed-search-unread-title-face ((,eucalyptus-class (:weight bold :foreground ,eucalyptus-fg-1))))
    `(elfeed-search-filter-face ((,eucalyptus-class (:weight bold :foreground ,eucalyptus-light-blue))))
    `(elfeed-search-last-update-face ((,eucalyptus-class (:weight bold :foreground ,eucalyptus-light-blue))))
    `(elfeed-search-unread-count-face ((,eucalyptus-class (:weight bold :foreground ,eucalyptus-light-blue))))
@@ -366,7 +365,7 @@
    `(doom-modeline-buffer-modified ((,eucalyptus-class (:foreground ,eucalyptus-mode-line-modified :inherit (doom-modeline warning bold)))))
 
    ;; corfu
-   `(corfu-default ((,eucalyptus-class (:foreground ,eucalyptus-fg :background ,eucalyptus-bg))))
+   `(corfu-default ((,eucalyptus-class (:foreground ,eucalyptus-fg-1 :background ,eucalyptus-bg))))
    `(corfu-current ((,eucalyptus-class (:foreground unspecified :background unspecified :extend t :inherit highlight))))
    `(corfu-bar ((,eucalyptus-class (:background ,eucalyptus-shadow))))
    `(corfu-border ((,eucalyptus-class (:background ,eucalyptus-shadow))))

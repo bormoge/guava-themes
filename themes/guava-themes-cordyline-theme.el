@@ -41,7 +41,6 @@
       (cordyline-orange-red                "#ce462c")
       (cordyline-pink-red                  "#df7882")
       (cordyline-pink-purple               "#da70d6")
-      (cordyline-deep-fuchsia              "#6e1551")
 
       (cordyline-light-blue                "#7387e1")
       (cordyline-blue                      "#5064b9")
@@ -59,12 +58,14 @@
       (cordyline-alt-purple                "#785a6e")
       (cordyline-purple-red                "#a03c5a")
 
-      (cordyline-fg                        "#FFFFFF")
+      (cordyline-fg-1                      "#FFFFFF")
       (cordyline-fg-2                      "#c3c3c3")
       (cordyline-bg                        "#2f212e")
       (cordyline-highlight                 "#3e303d")
       (cordyline-shadow                    "#b3b3b3")
       (cordyline-tooltip                   "#ffffe0")
+      (cordyline-region-1                  "#6e1551")
+      (cordyline-region-2                  "#00695f")
 
       (cordyline-error                     "#FF0000")
       (cordyline-warning                   "#f6d909")
@@ -116,7 +117,7 @@
    ;; with unique colors
 
    ;; default
-   `(default ((,cordyline-class (:foreground ,cordyline-fg :background ,cordyline-bg))))
+   `(default ((,cordyline-class (:foreground ,cordyline-fg-1 :background ,cordyline-bg))))
 
    ;; error, warning, success
    `(error ((,cordyline-class (:foreground ,cordyline-error :weight bold))))
@@ -133,8 +134,8 @@
    `(tooltip ((,cordyline-class (:weight bold :foreground ,cordyline-black :background ,cordyline-tooltip :inherit variable-pitch))))
 
    ;; region
-   `(region ((,cordyline-class (:background ,cordyline-deep-fuchsia :extend t))))
-   `(secondary-selection ((,cordyline-class (:background ,cordyline-green :extend t))))
+   `(region ((,cordyline-class (:background ,cordyline-region-1 :extend t))))
+   `(secondary-selection ((,cordyline-class (:background ,cordyline-region-2 :extend t))))
 
    ;; font-lock
    `(font-lock-comment-face ((,cordyline-class (:foreground ,cordyline-fl-comment :weight medium))))
@@ -162,7 +163,7 @@
    `(diff-hl-delete ((,cordyline-class (:foreground ,cordyline-error :background ,cordyline-error))))
 
    ;; line-number
-   `(line-number ((,cordyline-class (:foreground ,cordyline-fg :inherit default))))
+   `(line-number ((,cordyline-class (:foreground ,cordyline-fg-1 :inherit default))))
    `(line-number-current-line ((,cordyline-class (:foreground ,cordyline-mode-line :weight bold :inherit (highlight line-number)))))
    `(line-number-minor-tick ((,cordyline-class (:background ,cordyline-tab-2 :inherit line-number))))
    `(line-number-major-tick ((,cordyline-class (:background ,cordyline-tab-3 :inherit line-number))))
@@ -323,18 +324,18 @@
    `(eww-valid-certificate ((,cordyline-class (:weight bold :foreground ,cordyline-success))))
    `(eww-invalid-certificate ((,cordyline-class (:weight bold :foreground ,cordyline-error))))
    ;; Example of eww-form-text: https://en.wikipedia.org/wiki/Main_Page
-   `(eww-form-text ((,cordyline-class (:foreground ,cordyline-fg :background ,cordyline-tab-3 :box (:line-width 1)))))
+   `(eww-form-text ((,cordyline-class (:foreground ,cordyline-fg-1 :background ,cordyline-tab-3 :box (:line-width 1)))))
    ;; Example of eww-form-file: https://html.com/input-type-file/
-   `(eww-form-file ((,cordyline-class (:foreground ,cordyline-fg :background ,cordyline-tab-2 :box (:line-width 2 :style released-button)))))
+   `(eww-form-file ((,cordyline-class (:foreground ,cordyline-fg-1 :background ,cordyline-tab-2 :box (:line-width 2 :style released-button)))))
    ;; Example of eww-form-select: http://savannah.gnu.org/projects/emacs/
    ;; Example of eww-form-select: https://git.kernel.org/pub/scm/editors/uemacs/uemacs.git/
-   `(eww-form-select ((,cordyline-class (:foreground ,cordyline-fg :background ,cordyline-tab-1 :box (:line-width 2 :style released-button)))))
+   `(eww-form-select ((,cordyline-class (:foreground ,cordyline-fg-1 :background ,cordyline-tab-1 :box (:line-width 2 :style released-button)))))
    ;; Example of eww-form-submit: https://en.wikipedia.org/wiki/Main_Page
-   `(eww-form-submit ((,cordyline-class (:foreground ,cordyline-fg :background ,cordyline-tab-2 :box (:line-width 2 :style released-button)))))
+   `(eww-form-submit ((,cordyline-class (:foreground ,cordyline-fg-1 :background ,cordyline-tab-2 :box (:line-width 2 :style released-button)))))
    ;; Example of eww-form-checkbox: https://en.wikipedia.org/wiki/Main_Page
-   `(eww-form-checkbox ((,cordyline-class (:foreground ,cordyline-fg :background ,cordyline-tab-1 :box (:line-width 2 :style released-button)))))
+   `(eww-form-checkbox ((,cordyline-class (:foreground ,cordyline-fg-1 :background ,cordyline-tab-1 :box (:line-width 2 :style released-button)))))
    ;; Example of eww-form-textarea: https://en.wikipedia.org/w/index.php?title=Main_Page&action=edit
-   `(eww-form-textarea ((,cordyline-class (:foreground ,cordyline-fg :background ,cordyline-tab-3 :box (:line-width 1 :color ,cordyline-tab-1)))))
+   `(eww-form-textarea ((,cordyline-class (:foreground ,cordyline-fg-1 :background ,cordyline-tab-3 :box (:line-width 1 :color ,cordyline-tab-1)))))
 
 
    ;; external packages
@@ -366,7 +367,7 @@
    `(doom-modeline-buffer-modified ((,cordyline-class (:foreground ,cordyline-mode-line-modified :inherit (doom-modeline warning bold)))))
 
    ;; corfu
-   `(corfu-default ((,cordyline-class (:foreground ,cordyline-fg :background ,cordyline-bg))))
+   `(corfu-default ((,cordyline-class (:foreground ,cordyline-fg-1 :background ,cordyline-bg))))
    `(corfu-current ((,cordyline-class (:foreground unspecified :background unspecified :extend t :inherit highlight))))
    `(corfu-bar ((,cordyline-class (:background ,cordyline-shadow))))
    `(corfu-border ((,cordyline-class (:background ,cordyline-shadow))))

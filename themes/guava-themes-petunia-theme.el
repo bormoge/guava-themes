@@ -51,19 +51,19 @@
       (petunia-alt-green-forest          "#006941")
 
       (petunia-light-blue                "#00c3d7")
-      (petunia-alt-light-blue            "#32a0cd")
-      (petunia-blue                      "#3246cd")
       (petunia-deep-blue                 "#004b82")
       (petunia-cyan                      "#00ffff")
 
       (petunia-purple                    "#8c6ecd")
 
-      (petunia-fg                        "#FFFFFF")
+      (petunia-fg-1                      "#FFFFFF")
       (petunia-fg-2                      "#c3c3c3")
       (petunia-bg                        "#000000")
       (petunia-highlight                 "#1e1e1e")
       (petunia-shadow                    "#b3b3b3")
       (petunia-tooltip                   "#ffffe0")
+      (petunia-region-1                  "#3246cd")
+      (petunia-region-2                  "#32a0cd")
 
       (petunia-error                     "#FF0000")
       (petunia-warning                   "#ffff00")
@@ -115,7 +115,7 @@
    ;; with unique colors
 
    ;; default
-   `(default ((,petunia-class (:foreground ,petunia-fg :background ,petunia-bg))))
+   `(default ((,petunia-class (:foreground ,petunia-fg-1 :background ,petunia-bg))))
 
    ;; error, warning, success
    `(error ((,petunia-class (:foreground ,petunia-error :weight bold))))
@@ -132,8 +132,8 @@
    `(tooltip ((,petunia-class (:weight bold :foreground ,petunia-black :background ,petunia-tooltip :inherit variable-pitch))))
 
    ;; region
-   `(region ((,petunia-class (:background ,petunia-blue :extend t))))
-   `(secondary-selection ((,petunia-class (:background ,petunia-alt-light-blue :extend t))))
+   `(region ((,petunia-class (:background ,petunia-region-1 :extend t))))
+   `(secondary-selection ((,petunia-class (:background ,petunia-region-2 :extend t))))
 
    ;; font-lock
    `(font-lock-comment-face ((,petunia-class (:foreground ,petunia-fl-comment :weight medium))))
@@ -161,7 +161,7 @@
    `(diff-hl-delete ((,petunia-class (:foreground ,petunia-error :background ,petunia-error))))
 
    ;; line-number
-   `(line-number ((,petunia-class (:foreground ,petunia-fg :inherit default))))
+   `(line-number ((,petunia-class (:foreground ,petunia-fg-1 :inherit default))))
    `(line-number-current-line ((,petunia-class (:foreground ,petunia-mode-line :weight bold :inherit (highlight line-number)))))
    `(line-number-minor-tick ((,petunia-class (:background ,petunia-tab-2 :inherit line-number))))
    `(line-number-major-tick ((,petunia-class (:background ,petunia-tab-3 :inherit line-number))))
@@ -322,18 +322,18 @@
    `(eww-valid-certificate ((,petunia-class (:weight bold :foreground ,petunia-success))))
    `(eww-invalid-certificate ((,petunia-class (:weight bold :foreground ,petunia-error))))
    ;; Example of eww-form-text: https://en.wikipedia.org/wiki/Main_Page
-   `(eww-form-text ((,petunia-class (:foreground ,petunia-fg :background ,petunia-tab-3 :box (:line-width 1)))))
+   `(eww-form-text ((,petunia-class (:foreground ,petunia-fg-1 :background ,petunia-tab-3 :box (:line-width 1)))))
    ;; Example of eww-form-file: https://html.com/input-type-file/
-   `(eww-form-file ((,petunia-class (:foreground ,petunia-fg :background ,petunia-tab-2 :box (:line-width 2 :style released-button)))))
+   `(eww-form-file ((,petunia-class (:foreground ,petunia-fg-1 :background ,petunia-tab-2 :box (:line-width 2 :style released-button)))))
    ;; Example of eww-form-select: http://savannah.gnu.org/projects/emacs/
    ;; Example of eww-form-select: https://git.kernel.org/pub/scm/editors/uemacs/uemacs.git/
-   `(eww-form-select ((,petunia-class (:foreground ,petunia-fg :background ,petunia-tab-1 :box (:line-width 2 :style released-button)))))
+   `(eww-form-select ((,petunia-class (:foreground ,petunia-fg-1 :background ,petunia-tab-1 :box (:line-width 2 :style released-button)))))
    ;; Example of eww-form-submit: https://en.wikipedia.org/wiki/Main_Page
-   `(eww-form-submit ((,petunia-class (:foreground ,petunia-fg :background ,petunia-tab-2 :box (:line-width 2 :style released-button)))))
+   `(eww-form-submit ((,petunia-class (:foreground ,petunia-fg-1 :background ,petunia-tab-2 :box (:line-width 2 :style released-button)))))
    ;; Example of eww-form-checkbox: https://en.wikipedia.org/wiki/Main_Page
-   `(eww-form-checkbox ((,petunia-class (:foreground ,petunia-fg :background ,petunia-tab-1 :box (:line-width 2 :style released-button)))))
+   `(eww-form-checkbox ((,petunia-class (:foreground ,petunia-fg-1 :background ,petunia-tab-1 :box (:line-width 2 :style released-button)))))
    ;; Example of eww-form-textarea: https://en.wikipedia.org/w/index.php?title=Main_Page&action=edit
-   `(eww-form-textarea ((,petunia-class (:foreground ,petunia-fg :background ,petunia-tab-3 :box (:line-width 1 :color ,petunia-tab-1)))))
+   `(eww-form-textarea ((,petunia-class (:foreground ,petunia-fg-1 :background ,petunia-tab-3 :box (:line-width 1 :color ,petunia-tab-1)))))
 
 
    ;; external packages
@@ -365,7 +365,7 @@
    `(doom-modeline-buffer-modified ((,petunia-class (:foreground ,petunia-mode-line-modified :inherit (doom-modeline warning bold)))))
 
    ;; corfu
-   `(corfu-default ((,petunia-class (:foreground ,petunia-fg :background ,petunia-bg))))
+   `(corfu-default ((,petunia-class (:foreground ,petunia-fg-1 :background ,petunia-bg))))
    `(corfu-current ((,petunia-class (:foreground unspecified :background unspecified :extend t :inherit highlight))))
    `(corfu-bar ((,petunia-class (:background ,petunia-shadow))))
    `(corfu-border ((,petunia-class (:background ,petunia-shadow))))

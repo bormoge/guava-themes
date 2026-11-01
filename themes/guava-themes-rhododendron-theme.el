@@ -38,7 +38,6 @@
       (rhododendron-black                     "#000000")
       (rhododendron-white                     "#FFFFFF")
 
-      (rhododendron-light-green               "#64d264")
       (rhododendron-forest-green              "#228b22")
       (rhododendron-deep-green                "#3e7411")
 
@@ -62,12 +61,14 @@
       (rhododendron-purple-red                "#a8206f")
       (rhododendron-dark-purple-red           "#7d2061")
 
-      (rhododendron-fg                        "#000000")
+      (rhododendron-fg-1                      "#000000")
       (rhododendron-fg-2                      "#3c3c3c")
       (rhododendron-bg                        "#e8c7e3")
       (rhododendron-highlight                 "#d4b3cf")
       (rhododendron-shadow                    "#898989")
       (rhododendron-tooltip                   "#ffffe0")
+      (rhododendron-region-1                  "#e78deb")
+      (rhododendron-region-2                  "#64d264")
 
       (rhododendron-error                     "#FF0000")
       (rhododendron-warning                   "#F68511")
@@ -119,7 +120,7 @@
    ;; with unique colors
 
    ;; default
-   `(default ((,rhododendron-class (:foreground ,rhododendron-fg :background ,rhododendron-bg))))
+   `(default ((,rhododendron-class (:foreground ,rhododendron-fg-1 :background ,rhododendron-bg))))
 
    ;; error, warning, success
    `(error ((,rhododendron-class (:foreground ,rhododendron-error :weight bold))))
@@ -136,8 +137,8 @@
    `(tooltip ((,rhododendron-class (:weight bold :foreground ,rhododendron-black :background ,rhododendron-tooltip :inherit variable-pitch))))
 
    ;; region
-   `(region ((,rhododendron-class (:background ,rhododendron-alt-bright-pink :extend t))))
-   `(secondary-selection ((,rhododendron-class (:background ,rhododendron-light-green :extend t))))
+   `(region ((,rhododendron-class (:background ,rhododendron-region-1 :extend t))))
+   `(secondary-selection ((,rhododendron-class (:background ,rhododendron-region-2 :extend t))))
 
    ;; font-lock
    `(font-lock-comment-face ((,rhododendron-class (:foreground ,rhododendron-fl-comment :weight medium))))
@@ -165,7 +166,7 @@
    `(diff-hl-delete ((,rhododendron-class (:foreground ,rhododendron-error :background ,rhododendron-error))))
 
    ;; line-number
-   `(line-number ((,rhododendron-class (:foreground ,rhododendron-fg :inherit default))))
+   `(line-number ((,rhododendron-class (:foreground ,rhododendron-fg-1 :inherit default))))
    `(line-number-current-line ((,rhododendron-class (:foreground ,rhododendron-mode-line :weight bold :inherit (highlight line-number)))))
    `(line-number-minor-tick ((,rhododendron-class (:background ,rhododendron-tab-2 :inherit line-number))))
    `(line-number-major-tick ((,rhododendron-class (:background ,rhododendron-tab-3 :inherit line-number))))
@@ -326,18 +327,18 @@
    `(eww-valid-certificate ((,rhododendron-class (:weight bold :foreground ,rhododendron-success))))
    `(eww-invalid-certificate ((,rhododendron-class (:weight bold :foreground ,rhododendron-error))))
    ;; Example of eww-form-text: https://en.wikipedia.org/wiki/Main_Page
-   `(eww-form-text ((,rhododendron-class (:foreground ,rhododendron-fg :background ,rhododendron-tab-3 :box (:line-width 1)))))
+   `(eww-form-text ((,rhododendron-class (:foreground ,rhododendron-fg-1 :background ,rhododendron-tab-3 :box (:line-width 1)))))
    ;; Example of eww-form-file: https://html.com/input-type-file/
-   `(eww-form-file ((,rhododendron-class (:foreground ,rhododendron-fg :background ,rhododendron-tab-2 :box (:line-width 2 :style released-button)))))
+   `(eww-form-file ((,rhododendron-class (:foreground ,rhododendron-fg-1 :background ,rhododendron-tab-2 :box (:line-width 2 :style released-button)))))
    ;; Example of eww-form-select: http://savannah.gnu.org/projects/emacs/
    ;; Example of eww-form-select: https://git.kernel.org/pub/scm/editors/uemacs/uemacs.git/
    `(eww-form-select ((,rhododendron-class (:foreground ,rhododendron-white :background ,rhododendron-tab-1 :box (:line-width 2 :style released-button)))))
    ;; Example of eww-form-submit: https://en.wikipedia.org/wiki/Main_Page
-   `(eww-form-submit ((,rhododendron-class (:foreground ,rhododendron-fg :background ,rhododendron-tab-2 :box (:line-width 2 :style released-button)))))
+   `(eww-form-submit ((,rhododendron-class (:foreground ,rhododendron-fg-1 :background ,rhododendron-tab-2 :box (:line-width 2 :style released-button)))))
    ;; Example of eww-form-checkbox: https://en.wikipedia.org/wiki/Main_Page
    `(eww-form-checkbox ((,rhododendron-class (:foreground ,rhododendron-white :background ,rhododendron-tab-1 :box (:line-width 2 :style released-button)))))
    ;; Example of eww-form-textarea: https://en.wikipedia.org/w/index.php?title=Main_Page&action=edit
-   `(eww-form-textarea ((,rhododendron-class (:foreground ,rhododendron-fg :background ,rhododendron-tab-3 :box (:line-width 1 :color ,rhododendron-tab-1)))))
+   `(eww-form-textarea ((,rhododendron-class (:foreground ,rhododendron-fg-1 :background ,rhododendron-tab-3 :box (:line-width 1 :color ,rhododendron-tab-1)))))
 
 
    ;; external packages
@@ -369,7 +370,7 @@
    `(doom-modeline-buffer-modified ((,rhododendron-class (:foreground ,rhododendron-mode-line-modified :inherit (doom-modeline warning bold)))))
 
    ;; corfu
-   `(corfu-default ((,rhododendron-class (:foreground ,rhododendron-fg :background ,rhododendron-bg))))
+   `(corfu-default ((,rhododendron-class (:foreground ,rhododendron-fg-1 :background ,rhododendron-bg))))
    `(corfu-current ((,rhododendron-class (:foreground unspecified :background unspecified :extend t :inherit highlight))))
    `(corfu-bar ((,rhododendron-class (:background ,rhododendron-shadow))))
    `(corfu-border ((,rhododendron-class (:background ,rhododendron-shadow))))

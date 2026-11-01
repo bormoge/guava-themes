@@ -39,8 +39,6 @@
       (rubus-white                     "#FFFFFF")
 
       (rubus-raspberry                 "#aa3232")
-      (rubus-alt-raspberry             "#6e504b")
-      (rubus-deep-raspberry            "#663a43")
       (rubus-red                       "#c23f39")
       (rubus-pink-cream                "#c87873")
       (rubus-alt-pink-cream            "#aa5550")
@@ -62,12 +60,14 @@
       (rubus-purple                    "#8c78dc")
       (rubus-purple-pink               "#aa649b")
 
-      (rubus-fg                        "#FFFFFF")
+      (rubus-fg-1                      "#FFFFFF")
       (rubus-fg-2                      "#c3c3c3")
       (rubus-bg                        "#0e1216")
       (rubus-highlight                 "#22262a")
       (rubus-shadow                    "#b3b3b3")
       (rubus-tooltip                   "#ffffe0")
+      (rubus-region-1                  "#663a43")
+      (rubus-region-2                  "#6e504b")
 
       (rubus-error                     "#ff1e00")
       (rubus-warning                   "#f6d909")
@@ -119,7 +119,7 @@
    ;; with unique colors
 
    ;; default
-   `(default ((,rubus-class (:foreground ,rubus-fg :background ,rubus-bg))))
+   `(default ((,rubus-class (:foreground ,rubus-fg-1 :background ,rubus-bg))))
 
    ;; error, warning, success
    `(error ((,rubus-class (:foreground ,rubus-error :weight bold))))
@@ -136,8 +136,8 @@
    `(tooltip ((,rubus-class (:weight bold :foreground ,rubus-black :background ,rubus-tooltip :inherit variable-pitch))))
 
    ;; region
-   `(region ((,rubus-class (:background ,rubus-deep-raspberry :extend t))))
-   `(secondary-selection ((,rubus-class (:background ,rubus-alt-raspberry :extend t))))
+   `(region ((,rubus-class (:background ,rubus-region-1 :extend t))))
+   `(secondary-selection ((,rubus-class (:background ,rubus-region-2 :extend t))))
 
    ;; font-lock
    `(font-lock-comment-face ((,rubus-class (:foreground ,rubus-fl-comment :weight medium))))
@@ -165,7 +165,7 @@
    `(diff-hl-delete ((,rubus-class (:foreground ,rubus-error :background ,rubus-error))))
 
    ;; line-number
-   `(line-number ((,rubus-class (:foreground ,rubus-fg :inherit default))))
+   `(line-number ((,rubus-class (:foreground ,rubus-fg-1 :inherit default))))
    `(line-number-current-line ((,rubus-class (:foreground ,rubus-mode-line :weight bold :inherit (highlight line-number)))))
    `(line-number-minor-tick ((,rubus-class (:background ,rubus-tab-2 :inherit line-number))))
    `(line-number-major-tick ((,rubus-class (:background ,rubus-tab-3 :inherit line-number))))
@@ -326,18 +326,18 @@
    `(eww-valid-certificate ((,rubus-class (:weight bold :foreground ,rubus-success))))
    `(eww-invalid-certificate ((,rubus-class (:weight bold :foreground ,rubus-error))))
    ;; Example of eww-form-text: https://en.wikipedia.org/wiki/Main_Page
-   `(eww-form-text ((,rubus-class (:foreground ,rubus-fg :background ,rubus-tab-3 :box (:line-width 1)))))
+   `(eww-form-text ((,rubus-class (:foreground ,rubus-fg-1 :background ,rubus-tab-3 :box (:line-width 1)))))
    ;; Example of eww-form-file: https://html.com/input-type-file/
-   `(eww-form-file ((,rubus-class (:foreground ,rubus-fg :background ,rubus-tab-2 :box (:line-width 2 :style released-button)))))
+   `(eww-form-file ((,rubus-class (:foreground ,rubus-fg-1 :background ,rubus-tab-2 :box (:line-width 2 :style released-button)))))
    ;; Example of eww-form-select: http://savannah.gnu.org/projects/emacs/
    ;; Example of eww-form-select: https://git.kernel.org/pub/scm/editors/uemacs/uemacs.git/
-   `(eww-form-select ((,rubus-class (:foreground ,rubus-fg :background ,rubus-tab-1 :box (:line-width 2 :style released-button)))))
+   `(eww-form-select ((,rubus-class (:foreground ,rubus-fg-1 :background ,rubus-tab-1 :box (:line-width 2 :style released-button)))))
    ;; Example of eww-form-submit: https://en.wikipedia.org/wiki/Main_Page
-   `(eww-form-submit ((,rubus-class (:foreground ,rubus-fg :background ,rubus-tab-2 :box (:line-width 2 :style released-button)))))
+   `(eww-form-submit ((,rubus-class (:foreground ,rubus-fg-1 :background ,rubus-tab-2 :box (:line-width 2 :style released-button)))))
    ;; Example of eww-form-checkbox: https://en.wikipedia.org/wiki/Main_Page
-   `(eww-form-checkbox ((,rubus-class (:foreground ,rubus-fg :background ,rubus-tab-1 :box (:line-width 2 :style released-button)))))
+   `(eww-form-checkbox ((,rubus-class (:foreground ,rubus-fg-1 :background ,rubus-tab-1 :box (:line-width 2 :style released-button)))))
    ;; Example of eww-form-textarea: https://en.wikipedia.org/w/index.php?title=Main_Page&action=edit
-   `(eww-form-textarea ((,rubus-class (:foreground ,rubus-fg :background ,rubus-tab-3 :box (:line-width 1 :color ,rubus-tab-1)))))
+   `(eww-form-textarea ((,rubus-class (:foreground ,rubus-fg-1 :background ,rubus-tab-3 :box (:line-width 1 :color ,rubus-tab-1)))))
 
 
    ;; external packages
@@ -369,7 +369,7 @@
    `(doom-modeline-buffer-modified ((,rubus-class (:foreground ,rubus-mode-line-modified :inherit (doom-modeline warning bold)))))
 
    ;; corfu
-   `(corfu-default ((,rubus-class (:foreground ,rubus-fg :background ,rubus-bg))))
+   `(corfu-default ((,rubus-class (:foreground ,rubus-fg-1 :background ,rubus-bg))))
    `(corfu-current ((,rubus-class (:foreground unspecified :background unspecified :extend t :inherit highlight))))
    `(corfu-bar ((,rubus-class (:background ,rubus-shadow))))
    `(corfu-border ((,rubus-class (:background ,rubus-shadow))))
