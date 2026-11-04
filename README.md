@@ -81,126 +81,126 @@ You can install **guava-themes** from [MELPA](https://melpa.org/#/getting-starte
 
 ## Screenshots
 
-<details>
+<details open>
 <summary><b>Guava Psidium Theme</b></summary>
 
 <img src="https://lh3.googleusercontent.com/d/1ykm8H0cdf1H0UpX7-MDKDeEuQhI0yQRe=s2000?authuser=0" width="750" height="400" alt="guava-psidium-screenshot">
 
 </details>
 
-<details>
+<details open>
 <summary><b>Guava Jacaranda Theme</b></summary>
 
 <img src="https://lh3.googleusercontent.com/d/1octScAHQ47_zoy3XXTCkKof3KR3NMQvE=s2000?authuser=0" width="750" height="400" alt="guava-jacaranda-screenshot">
 
 </details>
 
-<details>
+<details open>
 <summary><b>Guava Prunus Theme</b></summary>
 
 <img src="https://lh3.googleusercontent.com/d/1NNyjqsytRehGJ5BFUGsXZXybXvmLc_qJ=s2000?authuser=0" width="750" height="400" alt="guava-prunus-screenshot">
 
 </details>
 
-<details>
+<details open>
 <summary><b>Guava Dracaena Theme</b></summary>
 
 <img src="https://lh3.googleusercontent.com/d/1c3p_b42m0FtHZloJJ8IJvGxMumCPau1e=s2000?authuser=0" width="750" height="400" alt="guava-dracaena-screenshot">
 
 </details>
 
-<details>
+<details open>
 <summary><b>Guava Acer Theme</b></summary>
 
 <img src="https://lh3.googleusercontent.com/d/1JnokQqBAMOIyc7MunBOoZwn2TJb5Rrzi=s2000?authuser=0" width="750" height="400" alt="guava-acer-screenshot">
 
 </details>
 
-<details>
+<details open>
 <summary><b>Guava Cordyline Theme</b></summary>
 
 <img src="https://lh3.googleusercontent.com/d/18Baux3zKoEHT24bFYyZKnuEsmLz-RMUJ=s2000?authuser=0" width="750" height="400" alt="guava-cordyline-screenshot">
 
 </details>
 
-<details>
+<details open>
 <summary><b>Guava Rhododendron Theme</b></summary>
 
 <img src="https://lh3.googleusercontent.com/d/1alzV2hSyH76TWPRj5Jc8FyQQHIBXz95w=s2000?authuser=0" width="750" height="400" alt="guava-rhododendron-screenshot">
 
 </details>
 
-<details>
+<details open>
 <summary><b>Guava Ceiba Theme</b></summary>
 
 <img src="https://lh3.googleusercontent.com/d/1uS1miftlRp0vIxSn-MtsF40GGnvZSisd=s2000?authuser=0" width="750" height="400" alt="guava-ceiba-screenshot">
 
 </details>
 
-<details>
+<details open>
 <summary><b>Guava Citrus Theme</b></summary>
 
 <img src="https://lh3.googleusercontent.com/d/1iIsPQfWQzUuQ75XnTiDSfQpOvwIu4M9w=s2000?authuser=0" width="750" height="400" alt="guava-citrus-screenshot">
 
 </details>
 
-<details>
+<details open>
 <summary><b>Guava Solanum Theme</b></summary>
 
 <img src="https://lh3.googleusercontent.com/d/1f_omb1anTtt4iNMN8lhV6akPNOI84ll8=s2000?authuser=0" width="750" height="400" alt="guava-solanum-screenshot">
 
 </details>
 
-<details>
+<details open>
 <summary><b>Guava Vaccinium Theme</b></summary>
 
 <img src="https://lh3.googleusercontent.com/d/1TKTxGWS3e2Mg5J6WL1UHBZo-NBE60RAp=s2000?authuser=0" width="750" height="400" alt="guava-vaccinium-screenshot">
 
 </details>
 
-<details>
+<details open>
 <summary><b>Guava Rubus Theme</b></summary>
 
 <img src="https://lh3.googleusercontent.com/d/1b4t9y1O5vja0U9GSB3e7oTYItnl00cN5=s2000?authuser=0" width="750" height="400" alt="guava-rubus-screenshot">
 
 </details>
 
-<details>
+<details open>
 <summary><b>Guava Pyrus Theme</b></summary>
 
 <img src="https://lh3.googleusercontent.com/d/1Rc82va4RKvgqxZxgdpUXzDnLO2-43gde=s2000?authuser=0" width="750" height="400" alt="guava-pyrus-screenshot">
 
 </details>
 
-<details>
+<details open>
 <summary><b>Guava Petunia Theme</b></summary>
 
 <img src="https://lh3.googleusercontent.com/d/1bnJaOBC0XdLO1yYEUHN_jpXM-r5ZeBgz=s2000?authuser=0" width="750" height="400" alt="guava-petunia-screenshot">
 
 </details>
 
-<details>
+<details open>
 <summary><b>Guava Malus Theme</b></summary>
 
 <img src="https://lh3.googleusercontent.com/d/1_MeYYcKl2kzVWSnCz_ZMVUa6QmjhUGcb=s2000?authuser=0" width="750" height="400" alt="guava-malus-screenshot">
 
 </details>
 
-<details>
+<details open>
 <summary><b>Guava Eucalyptus Theme</b></summary>
 
 <img src="https://lh3.googleusercontent.com/d/17ea7XbvMFhIZ940tU3GtuYbqwKsh45pi=s2000?authuser=0" width="750" height="400" alt="guava-eucalyptus-screenshot">
 
 </details>
 
-<details>
+<details open>
 <summary><b>Guava Ficus Theme</b></summary>
 
 <img src="https://lh3.googleusercontent.com/d/1MTD_S07XRjo4nNc9nQNt7qPVi3hBMXLG=s2000?authuser=0" width="750" height="400" alt="guava-ficus-screenshot">
 
 </details>
 
-<details>
+<details open>
 <summary><b>Guava Lavandula Theme</b></summary>
 
 <img src="https://lh3.googleusercontent.com/d/1qk6g2DyqHGOHBoh16npaQxq0NLhw2C8_=s2000?authuser=0" width="750" height="400" alt="guava-lavandula-screenshot">
