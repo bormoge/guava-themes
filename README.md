@@ -83,6 +83,7 @@ You can install **guava-themes** from [MELPA](https://melpa.org/#/getting-starte
 </details>
 
 ## Screenshots
+**Note**: these screenshots were taken in tag v0.19.0 / commit 29f3188
 
 <details open>
 <summary><b>Guava Psidium Theme</b></summary>
