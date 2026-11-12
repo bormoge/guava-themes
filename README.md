@@ -211,6 +211,7 @@ You can install **guava-themes** from [MELPA](https://melpa.org/#/getting-starte
 </details>
 
 ## TODO
+- Rework guava prunus theme.
 - (Emacs 31) Add header-line-active and header-line-inactive faces
 - (Emacs 31) Add tab-line-active and tab-line-inactive faces
 
