@@ -347,9 +347,9 @@
    `(elfeed-search-feed-face ((,malus-class (:foreground ,malus-green-forest))))
    `(elfeed-search-title-face ((,malus-class (:foreground ,malus-alt-red-sweetango))))
    `(elfeed-search-unread-title-face ((,malus-class (:weight bold :foreground ,malus-red-sweetango))))
-   `(elfeed-search-filter-face ((,malus-class (:weight bold :foreground ,malus-blue))))
-   `(elfeed-search-last-update-face ((,malus-class (:weight bold :foreground ,malus-blue))))
-   `(elfeed-search-unread-count-face ((,malus-class (:weight bold :foreground ,malus-blue))))
+   `(elfeed-search-filter-face ((,malus-class (:weight bold :foreground ,malus-blue-subdued))))
+   `(elfeed-search-last-update-face ((,malus-class (:weight bold :foreground ,malus-blue-subdued))))
+   `(elfeed-search-unread-count-face ((,malus-class (:weight bold :foreground ,malus-blue-subdued))))
 
    `(elfeed-show-header-face ((,malus-class (:inherit elfeed-search-date-face))))
    `(elfeed-show-author-face ((,malus-class (:inherit elfeed-search-unread-title-face))))
