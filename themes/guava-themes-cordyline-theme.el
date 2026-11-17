@@ -47,10 +47,10 @@
       (cordyline-deep-blue                 "#214bd5")
       (cordyline-steel-blue                "#4f94cd")
       (cordyline-cyan                      "#00ffff")
-      (cordyline-dark-cyan                 "#007d9b")
+      (cordyline-dark-cyan                 "#0091af")
 
       (cordyline-light-green               "#afd2b9")
-      (cordyline-green                     "#00695f")
+      (cordyline-green                     "#007d5f")
 
       (cordyline-light-purple              "#b46ee6")
       (cordyline-alt-light-purple          "#a29cf1")
