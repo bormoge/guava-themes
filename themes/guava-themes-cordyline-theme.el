@@ -74,7 +74,7 @@
 
       (cordyline-mode-line                 "#a03c5a")
       (cordyline-mode-line-inactive        "#5a375a")
-      (cordyline-mode-line-modified        "#649ECD")
+      (cordyline-mode-line-modified        "#78A8CD")
       (cordyline-bell                      "#3C8CA0")
 
       (cordyline-tab-1                     cordyline-mode-line)
@@ -111,9 +111,9 @@
       (cordyline-complementary-a-1         "#C84669")
 
       (cordyline-tetradic-a-0              cordyline-mode-line-modified)
-      (cordyline-tetradic-a-1              "#c864cd")
-      (cordyline-tetradic-a-2              "#CD9364")
-      (cordyline-tetradic-a-3              "#69CD64"))
+      (cordyline-tetradic-a-1              "#C778CD")
+      (cordyline-tetradic-a-2              "#7ECD78")
+      (cordyline-tetradic-a-3              "#CD9D78"))
 
   (custom-theme-set-faces
    'guava-themes-cordyline
