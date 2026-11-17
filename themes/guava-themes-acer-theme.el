@@ -75,7 +75,7 @@
 
       (acer-mode-line                 "#e76144")
       (acer-mode-line-inactive        "#eb8c4e")
-      (acer-mode-line-modified        "#277a6a")
+      (acer-mode-line-modified        "#CEB2D7")
       (acer-bell                      "#4478E7")
 
       (acer-tab-1                     acer-mode-line)
@@ -112,9 +112,9 @@
       (acer-complementary-a-1         "#DE4680")
 
       (acer-tetradic-a-0              acer-mode-line-modified)
-      (acer-tetradic-a-1              "#40277A")
-      (acer-tetradic-a-2              "#7A2738")
-      (acer-tetradic-a-3              "#617A27"))
+      (acer-tetradic-a-1              "#D7BBB2")
+      (acer-tetradic-a-2              "#B2CED7")
+      (acer-tetradic-a-3              "#BBD7B2"))
 
   (custom-theme-set-faces
    'guava-themes-acer
