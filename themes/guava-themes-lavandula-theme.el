@@ -74,7 +74,7 @@
 
       (lavandula-mode-line                 "#8061b8")
       (lavandula-mode-line-inactive        "#3a3a3a")
-      (lavandula-mode-line-modified        "#ff9f79")
+      (lavandula-mode-line-modified        "#FFAE97")
       (lavandula-bell                      "#6EB861")
 
       (lavandula-tab-1                     lavandula-mode-line)
@@ -111,9 +111,9 @@
       (lavandula-complementary-a-1         "#DE4680")
 
       (lavandula-tetradic-a-0              lavandula-mode-line-modified)
-      (lavandula-tetradic-a-1              "#96FF79")
-      (lavandula-tetradic-a-2              "#E279FF")
-      (lavandula-tetradic-a-3              "#79D9FF"))
+      (lavandula-tetradic-a-1              "#E297FF")
+      (lavandula-tetradic-a-2              "#B4FF97")
+      (lavandula-tetradic-a-3              "#97E8FF"))
 
   (custom-theme-set-faces
    'guava-themes-lavandula
