@@ -75,7 +75,7 @@
 
       (vaccinium-mode-line                 "#5582d7")
       (vaccinium-mode-line-inactive        "#6a7e98")
-      (vaccinium-mode-line-modified        "#ffaa84")
+      (vaccinium-mode-line-modified        "#F5BBAC")
       (vaccinium-bell                      "#D76955")
 
       (vaccinium-tab-1                     vaccinium-mode-line)
@@ -112,9 +112,9 @@
       (vaccinium-complementary-a-1         "#C84669")
 
       (vaccinium-tetradic-a-0              vaccinium-mode-line-modified)
-      (vaccinium-tetradic-a-1              "#9BFF84")
-      (vaccinium-tetradic-a-2              "#E884FF")
-      (vaccinium-tetradic-a-3              "#84D8FF"))
+      (vaccinium-tetradic-a-1              "#C2F5AC")
+      (vaccinium-tetradic-a-2              "#DFACF5")
+      (vaccinium-tetradic-a-3              "#ACE6F5"))
 
   (custom-theme-set-faces
    'guava-themes-vaccinium
