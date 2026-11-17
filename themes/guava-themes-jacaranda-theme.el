@@ -74,7 +74,7 @@
 
       (jacaranda-mode-line                 "#655db0")
       (jacaranda-mode-line-inactive        "#aa69e6")
-      (jacaranda-mode-line-modified        "#ff9f79")
+      (jacaranda-mode-line-modified        "#FFAA8D")
       (jacaranda-bell                      "#7EB05D")
 
       (jacaranda-tab-1                     jacaranda-mode-line)
@@ -111,9 +111,9 @@
       (jacaranda-complementary-a-1         "#DE4680")
 
       (jacaranda-tetradic-a-0              jacaranda-mode-line-modified)
-      (jacaranda-tetradic-a-1              "#96FF79")
-      (jacaranda-tetradic-a-2              "#79D9FF")
-      (jacaranda-tetradic-a-3              "#E279FF"))
+      (jacaranda-tetradic-a-1              "#8DE3FF")
+      (jacaranda-tetradic-a-2              "#AAFF8D")
+      (jacaranda-tetradic-a-3              "#E38DFF"))
 
   (custom-theme-set-faces
    'guava-themes-jacaranda
