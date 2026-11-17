@@ -351,9 +351,9 @@
    `(elfeed-search-feed-face ((,lavandula-class (:foreground ,lavandula-purple))))
    `(elfeed-search-title-face ((,lavandula-class (:foreground ,lavandula-gray-black))))
    `(elfeed-search-unread-title-face ((,lavandula-class (:weight bold :foreground ,lavandula-green))))
-   `(elfeed-search-filter-face ((,lavandula-class (:weight bold :foreground ,lavandula-orange))))
-   `(elfeed-search-last-update-face ((,lavandula-class (:weight bold :foreground ,lavandula-orange))))
-   `(elfeed-search-unread-count-face ((,lavandula-class (:weight bold :foreground ,lavandula-orange))))
+   `(elfeed-search-filter-face ((,lavandula-class (:weight bold :foreground ,lavandula-tetradic-a-1))))
+   `(elfeed-search-last-update-face ((,lavandula-class (:weight bold :foreground ,lavandula-tetradic-a-1))))
+   `(elfeed-search-unread-count-face ((,lavandula-class (:weight bold :foreground ,lavandula-tetradic-a-1))))
 
    `(elfeed-show-header-face ((,lavandula-class (:inherit elfeed-search-date-face))))
    `(elfeed-show-author-face ((,lavandula-class (:inherit elfeed-search-unread-title-face))))

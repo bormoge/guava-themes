@@ -353,9 +353,9 @@
    `(elfeed-search-feed-face ((,rubus-class (:foreground ,rubus-light-blue))))
    `(elfeed-search-title-face ((,rubus-class (:foreground ,rubus-green-forest))))
    `(elfeed-search-unread-title-face ((,rubus-class (:weight bold :foreground ,rubus-light-green))))
-   `(elfeed-search-filter-face ((,rubus-class (:weight bold :foreground ,rubus-yellow))))
-   `(elfeed-search-last-update-face ((,rubus-class (:weight bold :foreground ,rubus-yellow))))
-   `(elfeed-search-unread-count-face ((,rubus-class (:weight bold :foreground ,rubus-yellow))))
+   `(elfeed-search-filter-face ((,rubus-class (:weight bold :foreground ,rubus-tetradic-a-1))))
+   `(elfeed-search-last-update-face ((,rubus-class (:weight bold :foreground ,rubus-tetradic-a-1))))
+   `(elfeed-search-unread-count-face ((,rubus-class (:weight bold :foreground ,rubus-tetradic-a-1))))
 
    `(elfeed-show-header-face ((,rubus-class (:inherit elfeed-search-date-face))))
    `(elfeed-show-author-face ((,rubus-class (:inherit elfeed-search-unread-title-face))))

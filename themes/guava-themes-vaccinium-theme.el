@@ -352,9 +352,9 @@
    `(elfeed-search-feed-face ((,vaccinium-class (:foreground ,vaccinium-blueberry))))
    `(elfeed-search-title-face ((,vaccinium-class (:foreground ,vaccinium-orange))))
    `(elfeed-search-unread-title-face ((,vaccinium-class (:weight bold :foreground ,vaccinium-light-green))))
-   `(elfeed-search-filter-face ((,vaccinium-class (:weight bold :foreground ,vaccinium-deep-blue))))
-   `(elfeed-search-last-update-face ((,vaccinium-class (:weight bold :foreground ,vaccinium-deep-blue))))
-   `(elfeed-search-unread-count-face ((,vaccinium-class (:weight bold :foreground ,vaccinium-deep-blue))))
+   `(elfeed-search-filter-face ((,vaccinium-class (:weight bold :foreground ,vaccinium-tetradic-a-1))))
+   `(elfeed-search-last-update-face ((,vaccinium-class (:weight bold :foreground ,vaccinium-tetradic-a-1))))
+   `(elfeed-search-unread-count-face ((,vaccinium-class (:weight bold :foreground ,vaccinium-tetradic-a-1))))
 
    `(elfeed-show-header-face ((,vaccinium-class (:inherit elfeed-search-date-face))))
    `(elfeed-show-author-face ((,vaccinium-class (:inherit elfeed-search-unread-title-face))))

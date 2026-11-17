@@ -351,9 +351,9 @@
    `(elfeed-search-feed-face ((,dracaena-class (:foreground ,dracaena-orange-red))))
    `(elfeed-search-title-face ((,dracaena-class (:foreground ,dracaena-light-brown))))
    `(elfeed-search-unread-title-face ((,dracaena-class (:weight bold :foreground ,dracaena-light-green))))
-   `(elfeed-search-filter-face ((,dracaena-class (:weight bold :foreground ,dracaena-light-green))))
-   `(elfeed-search-last-update-face ((,dracaena-class (:weight bold :foreground ,dracaena-light-green))))
-   `(elfeed-search-unread-count-face ((,dracaena-class (:weight bold :foreground ,dracaena-light-green))))
+   `(elfeed-search-filter-face ((,dracaena-class (:weight bold :foreground ,dracaena-tetradic-a-1))))
+   `(elfeed-search-last-update-face ((,dracaena-class (:weight bold :foreground ,dracaena-tetradic-a-1))))
+   `(elfeed-search-unread-count-face ((,dracaena-class (:weight bold :foreground ,dracaena-tetradic-a-1))))
 
    `(elfeed-show-header-face ((,dracaena-class (:inherit elfeed-search-date-face))))
    `(elfeed-show-author-face ((,dracaena-class (:inherit elfeed-search-unread-title-face))))

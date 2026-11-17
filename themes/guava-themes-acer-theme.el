@@ -352,9 +352,9 @@
    `(elfeed-search-feed-face ((,acer-class (:foreground ,acer-purple))))
    `(elfeed-search-title-face ((,acer-class (:foreground ,acer-deep-brown))))
    `(elfeed-search-unread-title-face ((,acer-class (:weight bold :foreground ,acer-deep-purple))))
-   `(elfeed-search-filter-face ((,acer-class (:weight bold :foreground ,acer-purple-pink))))
-   `(elfeed-search-last-update-face ((,acer-class (:weight bold :foreground ,acer-purple-pink))))
-   `(elfeed-search-unread-count-face ((,acer-class (:weight bold :foreground ,acer-purple-pink))))
+   `(elfeed-search-filter-face ((,acer-class (:weight bold :foreground ,acer-tetradic-a-1))))
+   `(elfeed-search-last-update-face ((,acer-class (:weight bold :foreground ,acer-tetradic-a-1))))
+   `(elfeed-search-unread-count-face ((,acer-class (:weight bold :foreground ,acer-tetradic-a-1))))
 
    `(elfeed-show-header-face ((,acer-class (:inherit elfeed-search-date-face))))
    `(elfeed-show-author-face ((,acer-class (:inherit elfeed-search-unread-title-face))))

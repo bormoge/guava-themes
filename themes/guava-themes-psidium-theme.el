@@ -348,9 +348,9 @@
    `(elfeed-search-feed-face ((,psidium-class (:foreground ,psidium-deep-green))))
    `(elfeed-search-title-face ((,psidium-class (:foreground ,psidium-brown))))
    `(elfeed-search-unread-title-face ((,psidium-class (:weight bold :foreground ,psidium-red))))
-   `(elfeed-search-filter-face ((,psidium-class (:weight bold :foreground ,psidium-deep-blue))))
-   `(elfeed-search-last-update-face ((,psidium-class (:weight bold :foreground ,psidium-deep-blue))))
-   `(elfeed-search-unread-count-face ((,psidium-class (:weight bold :foreground ,psidium-deep-blue))))
+   `(elfeed-search-filter-face ((,psidium-class (:weight bold :foreground ,psidium-tetradic-a-1))))
+   `(elfeed-search-last-update-face ((,psidium-class (:weight bold :foreground ,psidium-tetradic-a-1))))
+   `(elfeed-search-unread-count-face ((,psidium-class (:weight bold :foreground ,psidium-tetradic-a-1))))
 
    `(elfeed-show-header-face ((,psidium-class (:inherit elfeed-search-date-face))))
    `(elfeed-show-author-face ((,psidium-class (:inherit elfeed-search-unread-title-face))))

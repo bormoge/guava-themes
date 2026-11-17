@@ -349,9 +349,9 @@
    `(elfeed-search-feed-face ((,petunia-class (:foreground ,petunia-orange))))
    `(elfeed-search-title-face ((,petunia-class (:foreground ,petunia-deep-blue))))
    `(elfeed-search-unread-title-face ((,petunia-class (:weight bold :foreground ,petunia-green-forest))))
-   `(elfeed-search-filter-face ((,petunia-class (:weight bold :foreground ,petunia-light-orange))))
-   `(elfeed-search-last-update-face ((,petunia-class (:weight bold :foreground ,petunia-light-orange))))
-   `(elfeed-search-unread-count-face ((,petunia-class (:weight bold :foreground ,petunia-light-orange))))
+   `(elfeed-search-filter-face ((,petunia-class (:weight bold :foreground ,petunia-tetradic-a-1))))
+   `(elfeed-search-last-update-face ((,petunia-class (:weight bold :foreground ,petunia-tetradic-a-1))))
+   `(elfeed-search-unread-count-face ((,petunia-class (:weight bold :foreground ,petunia-tetradic-a-1))))
 
    `(elfeed-show-header-face ((,petunia-class (:inherit elfeed-search-date-face))))
    `(elfeed-show-author-face ((,petunia-class (:inherit elfeed-search-unread-title-face))))
