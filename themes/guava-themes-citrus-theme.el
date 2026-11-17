@@ -44,7 +44,7 @@
       (citrus-green-blue                "#197d5a")
 
       (citrus-yellow                    "#f5d49b")
-      (citrus-alt-yellow                "#e1b69b")
+      ;; (citrus-alt-yellow                "#e1b69b")
       (citrus-deep-yellow               "#b99869")
 
       (citrus-red                       "#df352c")
@@ -79,7 +79,7 @@
 
       (citrus-mode-line                 "#589337")
       (citrus-mode-line-inactive        "#6ea56e")
-      (citrus-mode-line-modified        "#43F29B")
+      (citrus-mode-line-modified        "#E6F0B4")
       (citrus-bell                      "#933787")
 
       (citrus-tab-1                     citrus-orange-red)
@@ -113,7 +113,12 @@
       (citrus-square-a-3                "#3c82ff")
 
       (citrus-complementary-a-0         "#4680DE")
-      (citrus-complementary-a-1         "#DE4680"))
+      (citrus-complementary-a-1         "#DE4680")
+
+      (citrus-tetradic-a-0              citrus-mode-line-modified)
+      (citrus-tetradic-a-1              "#B4F0DC")
+      (citrus-tetradic-a-2              "#BEB4F0")
+      (citrus-tetradic-a-3              "#F0B4C8"))
 
   (custom-theme-set-faces
    'guava-themes-citrus
@@ -364,12 +369,12 @@
 
    ;; doom-modeline
    ;; doom-modeline-buffer-file-name-style
-   `(doom-modeline-project-name ((,citrus-class (:foreground ,citrus-yellow :inherit (doom-modeline bold italic)))))
-   `(doom-modeline-project-dir ((,citrus-class (:foreground ,citrus-yellow :inherit (doom-modeline bold)))))
-   `(doom-modeline-project-root-dir ((,citrus-class (:foreground ,citrus-alt-yellow :inherit (doom-modeline bold)))))
-   `(doom-modeline-project-parent-dir ((,citrus-class (:foreground ,citrus-alt-yellow :inherit (doom-modeline bold)))))
-   `(doom-modeline-buffer-minor-mode ((,citrus-class (:foreground ,citrus-alt-yellow :inherit (doom-modeline)))))
-   `(doom-modeline-buffer-modified ((,citrus-class (:foreground ,citrus-mode-line-modified :inherit (doom-modeline warning bold)))))
+   `(doom-modeline-project-name ((,citrus-class (:foreground ,citrus-tetradic-a-3 :inherit (doom-modeline bold italic)))))
+   `(doom-modeline-project-dir ((,citrus-class (:foreground ,citrus-tetradic-a-3 :inherit (doom-modeline bold)))))
+   `(doom-modeline-project-root-dir ((,citrus-class (:foreground ,citrus-tetradic-a-2 :inherit (doom-modeline bold)))))
+   `(doom-modeline-project-parent-dir ((,citrus-class (:foreground ,citrus-tetradic-a-2 :inherit (doom-modeline bold)))))
+   `(doom-modeline-buffer-minor-mode ((,citrus-class (:foreground ,citrus-tetradic-a-1 :inherit (doom-modeline)))))
+   `(doom-modeline-buffer-modified ((,citrus-class (:foreground ,citrus-tetradic-a-0 :inherit (doom-modeline warning bold)))))
 
    ;; corfu
    `(corfu-default ((,citrus-class (:foreground ,citrus-fg-1 :background ,citrus-bg))))

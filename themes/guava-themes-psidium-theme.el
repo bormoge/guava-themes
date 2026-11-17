@@ -71,7 +71,7 @@
 
       (psidium-mode-line                 "#F8767C")
       (psidium-mode-line-inactive        "#aecd34")
-      (psidium-mode-line-modified        "#483d8b")
+      (psidium-mode-line-modified        "#F8EDC6")
       (psidium-bell                      "#76BEF8")
 
       (psidium-tab-1                     psidium-mode-line)
@@ -105,7 +105,12 @@
       (psidium-square-a-3                "#3c82ff")
 
       (psidium-complementary-a-0         "#4680DE")
-      (psidium-complementary-a-1         "#DE4680"))
+      (psidium-complementary-a-1         "#DE4680")
+
+      (psidium-tetradic-a-0              psidium-mode-line-modified)
+      (psidium-tetradic-a-1              "#F8C6EA")
+      (psidium-tetradic-a-2              "#C6D1F8")
+      (psidium-tetradic-a-3              "#C6F8D4"))
 
   (custom-theme-set-faces
    'guava-themes-psidium
@@ -356,12 +361,12 @@
 
    ;; doom-modeline
    ;; doom-modeline-buffer-file-name-style
-   `(doom-modeline-project-name ((,psidium-class (:foreground ,psidium-deep-blue :inherit (doom-modeline bold italic)))))
-   `(doom-modeline-project-dir ((,psidium-class (:foreground ,psidium-deep-blue :inherit (doom-modeline bold)))))
-   `(doom-modeline-project-root-dir ((,psidium-class (:foreground ,psidium-shadow :inherit (doom-modeline bold)))))
-   `(doom-modeline-project-parent-dir ((,psidium-class (:foreground ,psidium-shadow :inherit (doom-modeline bold)))))
-   `(doom-modeline-buffer-minor-mode ((,psidium-class (:foreground ,psidium-shadow :inherit (doom-modeline)))))
-   `(doom-modeline-buffer-modified ((,psidium-class (:foreground ,psidium-mode-line-modified :inherit (doom-modeline warning bold)))))
+   `(doom-modeline-project-name ((,psidium-class (:foreground ,psidium-tetradic-a-3 :inherit (doom-modeline bold italic)))))
+   `(doom-modeline-project-dir ((,psidium-class (:foreground ,psidium-tetradic-a-3 :inherit (doom-modeline bold)))))
+   `(doom-modeline-project-root-dir ((,psidium-class (:foreground ,psidium-tetradic-a-2 :inherit (doom-modeline bold)))))
+   `(doom-modeline-project-parent-dir ((,psidium-class (:foreground ,psidium-tetradic-a-2 :inherit (doom-modeline bold)))))
+   `(doom-modeline-buffer-minor-mode ((,psidium-class (:foreground ,psidium-tetradic-a-1 :inherit (doom-modeline)))))
+   `(doom-modeline-buffer-modified ((,psidium-class (:foreground ,psidium-tetradic-a-0 :inherit (doom-modeline warning bold)))))
 
    ;; corfu
    `(corfu-default ((,psidium-class (:foreground ,psidium-fg-1 :background ,psidium-bg))))

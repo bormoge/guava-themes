@@ -109,7 +109,12 @@
       (acer-square-a-3                "#6496d7")
 
       (acer-complementary-a-0         "#4680DE")
-      (acer-complementary-a-1         "#DE4680"))
+      (acer-complementary-a-1         "#DE4680")
+
+      (acer-tetradic-a-0              acer-mode-line-modified)
+      (acer-tetradic-a-1              "#40277A")
+      (acer-tetradic-a-2              "#7A2738")
+      (acer-tetradic-a-3              "#617A27"))
 
   (custom-theme-set-faces
    'guava-themes-acer
@@ -360,12 +365,12 @@
 
    ;; doom-modeline
    ;; doom-modeline-buffer-file-name-style
-   `(doom-modeline-project-name ((,acer-class (:foreground ,acer-deep-purple :inherit (doom-modeline bold italic)))))
-   `(doom-modeline-project-dir ((,acer-class (:foreground ,acer-deep-purple :inherit (doom-modeline bold)))))
-   `(doom-modeline-project-root-dir ((,acer-class (:foreground ,acer-purple :inherit (doom-modeline bold)))))
-   `(doom-modeline-project-parent-dir ((,acer-class (:foreground ,acer-purple :inherit (doom-modeline bold)))))
-   `(doom-modeline-buffer-minor-mode ((,acer-class (:foreground ,acer-purple :inherit (doom-modeline)))))
-   `(doom-modeline-buffer-modified ((,acer-class (:foreground ,acer-mode-line-modified :inherit (doom-modeline warning bold)))))
+   `(doom-modeline-project-name ((,acer-class (:foreground ,acer-tetradic-a-3 :inherit (doom-modeline bold italic)))))
+   `(doom-modeline-project-dir ((,acer-class (:foreground ,acer-tetradic-a-3 :inherit (doom-modeline bold)))))
+   `(doom-modeline-project-root-dir ((,acer-class (:foreground ,acer-tetradic-a-2 :inherit (doom-modeline bold)))))
+   `(doom-modeline-project-parent-dir ((,acer-class (:foreground ,acer-tetradic-a-2 :inherit (doom-modeline bold)))))
+   `(doom-modeline-buffer-minor-mode ((,acer-class (:foreground ,acer-tetradic-a-1 :inherit (doom-modeline)))))
+   `(doom-modeline-buffer-modified ((,acer-class (:foreground ,acer-tetradic-a-0 :inherit (doom-modeline warning bold)))))
 
    ;; corfu
    `(corfu-default ((,acer-class (:foreground ,acer-fg-1 :background ,acer-bg))))

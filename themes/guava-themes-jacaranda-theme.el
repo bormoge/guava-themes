@@ -49,7 +49,7 @@
 
       (jacaranda-blue                      "#4534e3")
       (jacaranda-deep-blue                 "#655db0")
-      (jacaranda-antarctic-blue            "#8cb2e6")
+      ;; (jacaranda-antarctic-blue            "#8cb2e6")
       (jacaranda-light-cyan                "#60a1ba")
       (jacaranda-cyan                      "#00778b")
 
@@ -108,7 +108,12 @@
       (jacaranda-square-a-3                "#3c82ff")
 
       (jacaranda-complementary-a-0         "#4680DE")
-      (jacaranda-complementary-a-1         "#DE4680"))
+      (jacaranda-complementary-a-1         "#DE4680")
+
+      (jacaranda-tetradic-a-0              jacaranda-mode-line-modified)
+      (jacaranda-tetradic-a-1              "#96FF79")
+      (jacaranda-tetradic-a-2              "#79D9FF")
+      (jacaranda-tetradic-a-3              "#E279FF"))
 
   (custom-theme-set-faces
    'guava-themes-jacaranda
@@ -359,12 +364,12 @@
 
    ;; doom-modeline
    ;; doom-modeline-buffer-file-name-style
-   `(doom-modeline-project-name ((,jacaranda-class (:foreground ,jacaranda-light-green :inherit (doom-modeline bold italic)))))
-   `(doom-modeline-project-dir ((,jacaranda-class (:foreground ,jacaranda-light-green :inherit (doom-modeline bold)))))
-   `(doom-modeline-project-root-dir ((,jacaranda-class (:foreground ,jacaranda-antarctic-blue :inherit (doom-modeline bold)))))
-   `(doom-modeline-project-parent-dir ((,jacaranda-class (:foreground ,jacaranda-antarctic-blue :inherit (doom-modeline bold)))))
-   `(doom-modeline-buffer-minor-mode ((,jacaranda-class (:foreground ,jacaranda-antarctic-blue :inherit (doom-modeline)))))
-   `(doom-modeline-buffer-modified ((,jacaranda-class (:foreground ,jacaranda-mode-line-modified :inherit (doom-modeline warning bold)))))
+   `(doom-modeline-project-name ((,jacaranda-class (:foreground ,jacaranda-tetradic-a-3 :inherit (doom-modeline bold italic)))))
+   `(doom-modeline-project-dir ((,jacaranda-class (:foreground ,jacaranda-tetradic-a-3 :inherit (doom-modeline bold)))))
+   `(doom-modeline-project-root-dir ((,jacaranda-class (:foreground ,jacaranda-tetradic-a-2 :inherit (doom-modeline bold)))))
+   `(doom-modeline-project-parent-dir ((,jacaranda-class (:foreground ,jacaranda-tetradic-a-2 :inherit (doom-modeline bold)))))
+   `(doom-modeline-buffer-minor-mode ((,jacaranda-class (:foreground ,jacaranda-tetradic-a-1 :inherit (doom-modeline)))))
+   `(doom-modeline-buffer-modified ((,jacaranda-class (:foreground ,jacaranda-tetradic-a-0 :inherit (doom-modeline warning bold)))))
 
    ;; corfu
    `(corfu-default ((,jacaranda-class (:foreground ,jacaranda-fg-1 :background ,jacaranda-bg))))

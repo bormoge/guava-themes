@@ -41,7 +41,7 @@
       (lavandula-gray-black                "#626262")
 
       (lavandula-light-green               "#64a464")
-      (lavandula-alt-light-green           "#78c278")
+      ;; (lavandula-alt-light-green           "#78c278")
       (lavandula-green                     "#1e8246")
       (lavandula-deep-green                "#0a6432")
 
@@ -50,7 +50,7 @@
       (lavandula-red                       "#e01e50")
       (lavandula-deep-red                  "#ae1e50")
 
-      (lavandula-alt-light-blue            "#b1c6c0")
+      ;; (lavandula-alt-light-blue            "#b1c6c0")
       (lavandula-blue                      "#1e9be0")
       (lavandula-deep-blue                 "#2862b0")
       (lavandula-light-cyan                "#00cfcf")
@@ -108,7 +108,12 @@
       (lavandula-square-a-3                "#3c82ff")
 
       (lavandula-complementary-a-0         "#4680DE")
-      (lavandula-complementary-a-1         "#DE4680"))
+      (lavandula-complementary-a-1         "#DE4680")
+
+      (lavandula-tetradic-a-0              lavandula-mode-line-modified)
+      (lavandula-tetradic-a-1              "#96FF79")
+      (lavandula-tetradic-a-2              "#E279FF")
+      (lavandula-tetradic-a-3              "#79D9FF"))
 
   (custom-theme-set-faces
    'guava-themes-lavandula
@@ -359,12 +364,12 @@
 
    ;; doom-modeline
    ;; doom-modeline-buffer-file-name-style
-   `(doom-modeline-project-name ((,lavandula-class (:foreground ,lavandula-alt-light-green :inherit (doom-modeline bold italic)))))
-   `(doom-modeline-project-dir ((,lavandula-class (:foreground ,lavandula-alt-light-green :inherit (doom-modeline bold)))))
-   `(doom-modeline-project-root-dir ((,lavandula-class (:foreground ,lavandula-alt-light-blue :inherit (doom-modeline bold)))))
-   `(doom-modeline-project-parent-dir ((,lavandula-class (:foreground ,lavandula-alt-light-blue :inherit (doom-modeline bold)))))
-   `(doom-modeline-buffer-minor-mode ((,lavandula-class (:foreground ,lavandula-alt-light-blue :inherit (doom-modeline)))))
-   `(doom-modeline-buffer-modified ((,lavandula-class (:foreground ,lavandula-mode-line-modified :inherit (doom-modeline warning bold)))))
+   `(doom-modeline-project-name ((,lavandula-class (:foreground ,lavandula-tetradic-a-3 :inherit (doom-modeline bold italic)))))
+   `(doom-modeline-project-dir ((,lavandula-class (:foreground ,lavandula-tetradic-a-3 :inherit (doom-modeline bold)))))
+   `(doom-modeline-project-root-dir ((,lavandula-class (:foreground ,lavandula-tetradic-a-2 :inherit (doom-modeline bold)))))
+   `(doom-modeline-project-parent-dir ((,lavandula-class (:foreground ,lavandula-tetradic-a-2 :inherit (doom-modeline bold)))))
+   `(doom-modeline-buffer-minor-mode ((,lavandula-class (:foreground ,lavandula-tetradic-a-1 :inherit (doom-modeline)))))
+   `(doom-modeline-buffer-modified ((,lavandula-class (:foreground ,lavandula-tetradic-a-0 :inherit (doom-modeline warning bold)))))
 
    ;; corfu
    `(corfu-default ((,lavandula-class (:foreground ,lavandula-fg-1 :background ,lavandula-bg))))

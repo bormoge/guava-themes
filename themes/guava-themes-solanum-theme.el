@@ -73,7 +73,7 @@
 
       (solanum-mode-line                 "#73466e")
       (solanum-mode-line-inactive        "#3b3550")
-      (solanum-mode-line-modified        "#3C8CA0")
+      (solanum-mode-line-modified        "#AAA0DC")
       (solanum-bell                      "#4b7337")
 
       (solanum-tab-1                     solanum-mode-line)
@@ -107,7 +107,12 @@
       (solanum-square-a-3                "#3c82ff")
 
       (solanum-complementary-a-0         "#46C8A5")
-      (solanum-complementary-a-1         "#C84669"))
+      (solanum-complementary-a-1         "#C84669")
+
+      (solanum-tetradic-a-0              solanum-mode-line-modified)
+      (solanum-tetradic-a-1              "#DCA0B4")
+      (solanum-tetradic-a-2              "#A0DCC8")
+      (solanum-tetradic-a-3              "#D2DCA0"))
 
   (custom-theme-set-faces
    'guava-themes-solanum
@@ -358,12 +363,12 @@
 
    ;; doom-modeline
    ;; doom-modeline-buffer-file-name-style
-   `(doom-modeline-project-name ((,solanum-class (:foreground ,solanum-red-tomato :inherit (doom-modeline bold italic)))))
-   `(doom-modeline-project-dir ((,solanum-class (:foreground ,solanum-red-tomato :inherit (doom-modeline bold)))))
-   `(doom-modeline-project-root-dir ((,solanum-class (:foreground ,solanum-yellow-potato :inherit (doom-modeline bold)))))
-   `(doom-modeline-project-parent-dir ((,solanum-class (:foreground ,solanum-yellow-potato :inherit (doom-modeline bold)))))
-   `(doom-modeline-buffer-minor-mode ((,solanum-class (:foreground ,solanum-yellow-potato :inherit (doom-modeline)))))
-   `(doom-modeline-buffer-modified ((,solanum-class (:foreground ,solanum-mode-line-modified :inherit (doom-modeline warning bold)))))
+   `(doom-modeline-project-name ((,solanum-class (:foreground ,solanum-tetradic-a-3 :inherit (doom-modeline bold italic)))))
+   `(doom-modeline-project-dir ((,solanum-class (:foreground ,solanum-tetradic-a-3 :inherit (doom-modeline bold)))))
+   `(doom-modeline-project-root-dir ((,solanum-class (:foreground ,solanum-tetradic-a-2 :inherit (doom-modeline bold)))))
+   `(doom-modeline-project-parent-dir ((,solanum-class (:foreground ,solanum-tetradic-a-2 :inherit (doom-modeline bold)))))
+   `(doom-modeline-buffer-minor-mode ((,solanum-class (:foreground ,solanum-tetradic-a-1 :inherit (doom-modeline)))))
+   `(doom-modeline-buffer-modified ((,solanum-class (:foreground ,solanum-tetradic-a-0 :inherit (doom-modeline warning bold)))))
 
    ;; corfu
    `(corfu-default ((,solanum-class (:foreground ,solanum-fg-1 :background ,solanum-bg))))

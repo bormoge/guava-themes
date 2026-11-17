@@ -107,7 +107,12 @@
       (eucalyptus-square-a-3                "#3c82e6")
 
       (eucalyptus-complementary-a-0         "#4680DE")
-      (eucalyptus-complementary-a-1         "#DE4680"))
+      (eucalyptus-complementary-a-1         "#DE4680")
+
+      (eucalyptus-tetradic-a-0              eucalyptus-mode-line-modified)
+      (eucalyptus-tetradic-a-1              "#7DAA56")
+      (eucalyptus-tetradic-a-2              "#8356AA")
+      (eucalyptus-tetradic-a-3              "#56A7AA"))
 
   (custom-theme-set-faces
    'guava-themes-eucalyptus
@@ -358,12 +363,12 @@
 
    ;; doom-modeline
    ;; doom-modeline-buffer-file-name-style
-   `(doom-modeline-project-name ((,eucalyptus-class (:foreground ,eucalyptus-light-blue :inherit (doom-modeline bold italic)))))
-   `(doom-modeline-project-dir ((,eucalyptus-class (:foreground ,eucalyptus-light-blue :inherit (doom-modeline bold)))))
-   `(doom-modeline-project-root-dir ((,eucalyptus-class (:foreground ,eucalyptus-light-gray :inherit (doom-modeline bold)))))
-   `(doom-modeline-project-parent-dir ((,eucalyptus-class (:foreground ,eucalyptus-light-gray :inherit (doom-modeline bold)))))
-   `(doom-modeline-buffer-minor-mode ((,eucalyptus-class (:foreground ,eucalyptus-light-gray :inherit (doom-modeline)))))
-   `(doom-modeline-buffer-modified ((,eucalyptus-class (:foreground ,eucalyptus-mode-line-modified :inherit (doom-modeline warning bold)))))
+   `(doom-modeline-project-name ((,eucalyptus-class (:foreground ,eucalyptus-tetradic-a-3 :inherit (doom-modeline bold italic)))))
+   `(doom-modeline-project-dir ((,eucalyptus-class (:foreground ,eucalyptus-tetradic-a-3 :inherit (doom-modeline bold)))))
+   `(doom-modeline-project-root-dir ((,eucalyptus-class (:foreground ,eucalyptus-tetradic-a-2 :inherit (doom-modeline bold)))))
+   `(doom-modeline-project-parent-dir ((,eucalyptus-class (:foreground ,eucalyptus-tetradic-a-2 :inherit (doom-modeline bold)))))
+   `(doom-modeline-buffer-minor-mode ((,eucalyptus-class (:foreground ,eucalyptus-tetradic-a-1 :inherit (doom-modeline)))))
+   `(doom-modeline-buffer-modified ((,eucalyptus-class (:foreground ,eucalyptus-tetradic-a-0 :inherit (doom-modeline warning bold)))))
 
    ;; corfu
    `(corfu-default ((,eucalyptus-class (:foreground ,eucalyptus-fg-1 :background ,eucalyptus-bg))))

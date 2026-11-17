@@ -75,7 +75,7 @@
 
       (malus-mode-line                 "#cd5a5f")
       (malus-mode-line-inactive        "#49835f")
-      (malus-mode-line-modified        "#60CD5A")
+      (malus-mode-line-modified        "#D2DCA0")
       (malus-bell                      "#5A99CD")
 
       (malus-tab-1                     malus-mode-line)
@@ -109,7 +109,12 @@
       (malus-square-a-3                "#3c82ff")
 
       (malus-complementary-a-0         "#46C8A5")
-      (malus-complementary-a-1         "#C84669"))
+      (malus-complementary-a-1         "#C84669")
+
+      (malus-tetradic-a-0              malus-mode-line-modified)
+      (malus-tetradic-a-1              "#A0DCC8")
+      (malus-tetradic-a-2              "#AAA0DC")
+      (malus-tetradic-a-3              "#DCA0B4"))
 
   (custom-theme-set-faces
    'guava-themes-malus
@@ -360,12 +365,12 @@
 
    ;; doom-modeline
    ;; doom-modeline-buffer-file-name-style
-   `(doom-modeline-project-name ((,malus-class (:foreground ,malus-green-granny :inherit (doom-modeline bold italic)))))
-   `(doom-modeline-project-dir ((,malus-class (:foreground ,malus-green-granny :inherit (doom-modeline bold)))))
-   `(doom-modeline-project-root-dir ((,malus-class (:foreground ,malus-shadow :inherit (doom-modeline bold)))))
-   `(doom-modeline-project-parent-dir ((,malus-class (:foreground ,malus-shadow :inherit (doom-modeline bold)))))
-   `(doom-modeline-buffer-minor-mode ((,malus-class (:foreground ,malus-shadow :inherit (doom-modeline)))))
-   `(doom-modeline-buffer-modified ((,malus-class (:foreground ,malus-mode-line-modified :inherit (doom-modeline warning bold)))))
+   `(doom-modeline-project-name ((,malus-class (:foreground ,malus-tetradic-a-3 :inherit (doom-modeline bold italic)))))
+   `(doom-modeline-project-dir ((,malus-class (:foreground ,malus-tetradic-a-3 :inherit (doom-modeline bold)))))
+   `(doom-modeline-project-root-dir ((,malus-class (:foreground ,malus-tetradic-a-2 :inherit (doom-modeline bold)))))
+   `(doom-modeline-project-parent-dir ((,malus-class (:foreground ,malus-tetradic-a-2 :inherit (doom-modeline bold)))))
+   `(doom-modeline-buffer-minor-mode ((,malus-class (:foreground ,malus-tetradic-a-1 :inherit (doom-modeline)))))
+   `(doom-modeline-buffer-modified ((,malus-class (:foreground ,malus-tetradic-a-0 :inherit (doom-modeline warning bold)))))
 
    ;; corfu
    `(corfu-default ((,malus-class (:foreground ,malus-fg-1 :background ,malus-bg))))

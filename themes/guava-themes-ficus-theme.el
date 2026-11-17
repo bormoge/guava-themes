@@ -38,7 +38,7 @@
       (ficus-black                     "#000000")
       (ficus-white                     "#FFFFFF")
 
-      (ficus-light-gray                "#9196a5")
+      ;; (ficus-light-gray                "#9196a5")
       (ficus-gray                      "#646464")
 
       (ficus-light-green               "#6e7d64")
@@ -77,7 +77,7 @@
 
       (ficus-mode-line                 "#b05051")
       (ficus-mode-line-inactive        "#967f79")
-      (ficus-mode-line-modified        "#46cee0")
+      (ficus-mode-line-modified        "#8CF4ED")
       (ficus-bell                      "#5082B0")
 
 
@@ -112,7 +112,12 @@
       (ficus-square-a-3                "#3c82ff")
 
       (ficus-complementary-a-0         "#4680DE")
-      (ficus-complementary-a-1         "#DE4680"))
+      (ficus-complementary-a-1         "#DE4680")
+
+      (ficus-tetradic-a-0              ficus-mode-line-modified)
+      (ficus-tetradic-a-1              "#F48C93")
+      (ficus-tetradic-a-2              "#b98cf4")
+      (ficus-tetradic-a-3              "#C7F48C"))
 
   (custom-theme-set-faces
    'guava-themes-ficus
@@ -363,12 +368,12 @@
 
    ;; doom-modeline
    ;; doom-modeline-buffer-file-name-style
-   `(doom-modeline-project-name ((,ficus-class (:foreground ,ficus-deep-blue :inherit (doom-modeline bold italic)))))
-   `(doom-modeline-project-dir ((,ficus-class (:foreground ,ficus-deep-blue :inherit (doom-modeline bold)))))
-   `(doom-modeline-project-root-dir ((,ficus-class (:foreground ,ficus-light-gray :inherit (doom-modeline bold)))))
-   `(doom-modeline-project-parent-dir ((,ficus-class (:foreground ,ficus-light-gray :inherit (doom-modeline bold)))))
-   `(doom-modeline-buffer-minor-mode ((,ficus-class (:foreground ,ficus-light-gray :inherit (doom-modeline)))))
-   `(doom-modeline-buffer-modified ((,ficus-class (:foreground ,ficus-mode-line-modified :inherit (doom-modeline warning bold)))))
+   `(doom-modeline-project-name ((,ficus-class (:foreground ,ficus-tetradic-a-3 :inherit (doom-modeline bold italic)))))
+   `(doom-modeline-project-dir ((,ficus-class (:foreground ,ficus-tetradic-a-3 :inherit (doom-modeline bold)))))
+   `(doom-modeline-project-root-dir ((,ficus-class (:foreground ,ficus-tetradic-a-2 :inherit (doom-modeline bold)))))
+   `(doom-modeline-project-parent-dir ((,ficus-class (:foreground ,ficus-tetradic-a-2 :inherit (doom-modeline bold)))))
+   `(doom-modeline-buffer-minor-mode ((,ficus-class (:foreground ,ficus-tetradic-a-1 :inherit (doom-modeline)))))
+   `(doom-modeline-buffer-modified ((,ficus-class (:foreground ,ficus-tetradic-a-0 :inherit (doom-modeline warning bold)))))
 
    ;; corfu
    `(corfu-default ((,ficus-class (:foreground ,ficus-fg-1 :background ,ficus-bg))))

@@ -72,7 +72,7 @@
 
       (petunia-mode-line                 "#8c6ecd")
       (petunia-mode-line-inactive        "#008741")
-      (petunia-mode-line-modified        "#00c3d7")
+      (petunia-mode-line-modified        "#a9c9d7")
       (petunia-bell                      "#FFDB5A")
 
       (petunia-tab-1                     petunia-mode-line)
@@ -106,7 +106,12 @@
       (petunia-square-a-3                "#009bff")
 
       (petunia-complementary-a-0         "#46C8A5")
-      (petunia-complementary-a-1         "#C84669"))
+      (petunia-complementary-a-1         "#C84669")
+
+      (petunia-tetradic-a-0              petunia-mode-line-modified)
+      (petunia-tetradic-a-1              "#CEA9D7")
+      (petunia-tetradic-a-2              "#D7B7A9")
+      (petunia-tetradic-a-3              "#B2D7A9"))
 
   (custom-theme-set-faces
    'guava-themes-petunia
@@ -357,12 +362,12 @@
 
    ;; doom-modeline
    ;; doom-modeline-buffer-file-name-style
-   `(doom-modeline-project-name ((,petunia-class (:foreground ,petunia-light-green :inherit (doom-modeline bold italic)))))
-   `(doom-modeline-project-dir ((,petunia-class (:foreground ,petunia-light-green :inherit (doom-modeline bold)))))
-   `(doom-modeline-project-root-dir ((,petunia-class (:foreground ,petunia-yellow :inherit (doom-modeline bold)))))
-   `(doom-modeline-project-parent-dir ((,petunia-class (:foreground ,petunia-yellow :inherit (doom-modeline bold)))))
-   `(doom-modeline-buffer-minor-mode ((,petunia-class (:foreground ,petunia-yellow :inherit (doom-modeline)))))
-   `(doom-modeline-buffer-modified ((,petunia-class (:foreground ,petunia-mode-line-modified :inherit (doom-modeline warning bold)))))
+   `(doom-modeline-project-name ((,petunia-class (:foreground ,petunia-tetradic-a-3 :inherit (doom-modeline bold italic)))))
+   `(doom-modeline-project-dir ((,petunia-class (:foreground ,petunia-tetradic-a-3 :inherit (doom-modeline bold)))))
+   `(doom-modeline-project-root-dir ((,petunia-class (:foreground ,petunia-tetradic-a-2 :inherit (doom-modeline bold)))))
+   `(doom-modeline-project-parent-dir ((,petunia-class (:foreground ,petunia-tetradic-a-2 :inherit (doom-modeline bold)))))
+   `(doom-modeline-buffer-minor-mode ((,petunia-class (:foreground ,petunia-tetradic-a-1 :inherit (doom-modeline)))))
+   `(doom-modeline-buffer-modified ((,petunia-class (:foreground ,petunia-tetradic-a-0 :inherit (doom-modeline warning bold)))))
 
    ;; corfu
    `(corfu-default ((,petunia-class (:foreground ,petunia-fg-1 :background ,petunia-bg))))

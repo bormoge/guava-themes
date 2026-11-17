@@ -74,7 +74,7 @@
 
       (pyrus-mode-line                 "#295323")
       (pyrus-mode-line-inactive        "#228b22")
-      (pyrus-mode-line-modified        "#f38866")
+      (pyrus-mode-line-modified        "#F3A5A2")
       (pyrus-bell                      "#532341")
 
       (pyrus-tab-1                     pyrus-mode-line)
@@ -108,7 +108,12 @@
       (pyrus-square-a-3                "#3c82ff")
 
       (pyrus-complementary-a-0         "#4680DE")
-      (pyrus-complementary-a-1         "#DE4680"))
+      (pyrus-complementary-a-1         "#DE4680")
+
+      (pyrus-tetradic-a-0              pyrus-mode-line-modified)
+      (pyrus-tetradic-a-1              "#C8F3A2")
+      (pyrus-tetradic-a-2              "#CDA2F3")
+      (pyrus-tetradic-a-3              "#A2F0F3"))
 
   (custom-theme-set-faces
    'guava-themes-pyrus
@@ -359,12 +364,12 @@
 
    ;; doom-modeline
    ;; doom-modeline-buffer-file-name-style
-   `(doom-modeline-project-name ((,pyrus-class (:foreground ,pyrus-light-green :inherit (doom-modeline bold italic)))))
-   `(doom-modeline-project-dir ((,pyrus-class (:foreground ,pyrus-light-green :inherit (doom-modeline bold)))))
-   `(doom-modeline-project-root-dir ((,pyrus-class (:foreground ,pyrus-orange-pink :inherit (doom-modeline bold)))))
-   `(doom-modeline-project-parent-dir ((,pyrus-class (:foreground ,pyrus-orange-pink :inherit (doom-modeline bold)))))
-   `(doom-modeline-buffer-minor-mode ((,pyrus-class (:foreground ,pyrus-orange-pink :inherit (doom-modeline)))))
-   `(doom-modeline-buffer-modified ((,pyrus-class (:foreground ,pyrus-mode-line-modified :inherit (doom-modeline warning bold)))))
+   `(doom-modeline-project-name ((,pyrus-class (:foreground ,pyrus-tetradic-a-3 :inherit (doom-modeline bold italic)))))
+   `(doom-modeline-project-dir ((,pyrus-class (:foreground ,pyrus-tetradic-a-3 :inherit (doom-modeline bold)))))
+   `(doom-modeline-project-root-dir ((,pyrus-class (:foreground ,pyrus-tetradic-a-2 :inherit (doom-modeline bold)))))
+   `(doom-modeline-project-parent-dir ((,pyrus-class (:foreground ,pyrus-tetradic-a-2 :inherit (doom-modeline bold)))))
+   `(doom-modeline-buffer-minor-mode ((,pyrus-class (:foreground ,pyrus-tetradic-a-1 :inherit (doom-modeline)))))
+   `(doom-modeline-buffer-modified ((,pyrus-class (:foreground ,pyrus-tetradic-a-0 :inherit (doom-modeline warning bold)))))
 
    ;; corfu
    `(corfu-default ((,pyrus-class (:foreground ,pyrus-fg-1 :background ,pyrus-bg))))

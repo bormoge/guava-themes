@@ -74,7 +74,7 @@
 
       (cordyline-mode-line                 "#a03c5a")
       (cordyline-mode-line-inactive        "#5a375a")
-      (cordyline-mode-line-modified        "#4fa8cd")
+      (cordyline-mode-line-modified        "#649ECD")
       (cordyline-bell                      "#3C8CA0")
 
       (cordyline-tab-1                     cordyline-mode-line)
@@ -108,7 +108,12 @@
       (cordyline-square-a-3                "#3c82ff")
 
       (cordyline-complementary-a-0         "#46C8A5")
-      (cordyline-complementary-a-1         "#C84669"))
+      (cordyline-complementary-a-1         "#C84669")
+
+      (cordyline-tetradic-a-0              cordyline-mode-line-modified)
+      (cordyline-tetradic-a-1              "#c864cd")
+      (cordyline-tetradic-a-2              "#CD9364")
+      (cordyline-tetradic-a-3              "#69CD64"))
 
   (custom-theme-set-faces
    'guava-themes-cordyline
@@ -359,12 +364,12 @@
 
    ;; doom-modeline
    ;; doom-modeline-buffer-file-name-style
-   `(doom-modeline-project-name ((,cordyline-class (:foreground ,cordyline-steel-blue :inherit (doom-modeline bold italic)))))
-   `(doom-modeline-project-dir ((,cordyline-class (:foreground ,cordyline-steel-blue :inherit (doom-modeline bold)))))
-   `(doom-modeline-project-root-dir ((,cordyline-class (:foreground ,cordyline-pink-red :inherit (doom-modeline bold)))))
-   `(doom-modeline-project-parent-dir ((,cordyline-class (:foreground ,cordyline-pink-red :inherit (doom-modeline bold)))))
-   `(doom-modeline-buffer-minor-mode ((,cordyline-class (:foreground ,cordyline-pink-red :inherit (doom-modeline)))))
-   `(doom-modeline-buffer-modified ((,cordyline-class (:foreground ,cordyline-mode-line-modified :inherit (doom-modeline warning bold)))))
+   `(doom-modeline-project-name ((,cordyline-class (:foreground ,cordyline-tetradic-a-3 :inherit (doom-modeline bold italic)))))
+   `(doom-modeline-project-dir ((,cordyline-class (:foreground ,cordyline-tetradic-a-3 :inherit (doom-modeline bold)))))
+   `(doom-modeline-project-root-dir ((,cordyline-class (:foreground ,cordyline-tetradic-a-2 :inherit (doom-modeline bold)))))
+   `(doom-modeline-project-parent-dir ((,cordyline-class (:foreground ,cordyline-tetradic-a-2 :inherit (doom-modeline bold)))))
+   `(doom-modeline-buffer-minor-mode ((,cordyline-class (:foreground ,cordyline-tetradic-a-1 :inherit (doom-modeline)))))
+   `(doom-modeline-buffer-modified ((,cordyline-class (:foreground ,cordyline-tetradic-a-0 :inherit (doom-modeline warning bold)))))
 
    ;; corfu
    `(corfu-default ((,cordyline-class (:foreground ,cordyline-fg-1 :background ,cordyline-bg))))

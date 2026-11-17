@@ -78,7 +78,7 @@
 
       (prunus-mode-line                 "#50463c")
       (prunus-mode-line-inactive        "#645a50")
-      (prunus-mode-line-modified        "#d74692")
+      (prunus-mode-line-modified        "#D2DCA0")
       (prunus-bell                      "#465a5a")
 
       (prunus-tab-1                     prunus-mode-line)
@@ -112,7 +112,12 @@
       (prunus-square-a-3                "#3c82ff")
 
       (prunus-complementary-a-0         "#46C8A5")
-      (prunus-complementary-a-1         "#C84669"))
+      (prunus-complementary-a-1         "#C84669")
+
+      (prunus-tetradic-a-0              prunus-mode-line-modified)
+      (prunus-tetradic-a-1              "#A0DCC8")
+      (prunus-tetradic-a-2              "#AAA0DC")
+      (prunus-tetradic-a-3              "#DCA0B4"))
 
   (custom-theme-set-faces
    'guava-themes-prunus
@@ -363,12 +368,12 @@
 
    ;; doom-modeline
    ;; doom-modeline-buffer-file-name-style
-   `(doom-modeline-project-name ((,prunus-class (:foreground ,prunus-green-forest :inherit (doom-modeline bold italic)))))
-   `(doom-modeline-project-dir ((,prunus-class (:foreground ,prunus-green-forest :inherit (doom-modeline bold)))))
-   `(doom-modeline-project-root-dir ((,prunus-class (:foreground ,prunus-shadow :inherit (doom-modeline bold)))))
-   `(doom-modeline-project-parent-dir ((,prunus-class (:foreground ,prunus-shadow :inherit (doom-modeline bold)))))
-   `(doom-modeline-buffer-minor-mode ((,prunus-class (:foreground ,prunus-shadow :inherit (doom-modeline)))))
-   `(doom-modeline-buffer-modified ((,prunus-class (:foreground ,prunus-mode-line-modified :inherit (doom-modeline warning bold)))))
+   `(doom-modeline-project-name ((,prunus-class (:foreground ,prunus-tetradic-a-3 :inherit (doom-modeline bold italic)))))
+   `(doom-modeline-project-dir ((,prunus-class (:foreground ,prunus-tetradic-a-3 :inherit (doom-modeline bold)))))
+   `(doom-modeline-project-root-dir ((,prunus-class (:foreground ,prunus-tetradic-a-2 :inherit (doom-modeline bold)))))
+   `(doom-modeline-project-parent-dir ((,prunus-class (:foreground ,prunus-tetradic-a-2 :inherit (doom-modeline bold)))))
+   `(doom-modeline-buffer-minor-mode ((,prunus-class (:foreground ,prunus-tetradic-a-1 :inherit (doom-modeline)))))
+   `(doom-modeline-buffer-modified ((,prunus-class (:foreground ,prunus-tetradic-a-0 :inherit (doom-modeline warning bold)))))
 
    ;; corfu
    `(corfu-default ((,prunus-class (:foreground ,prunus-fg-1 :background ,prunus-bg))))

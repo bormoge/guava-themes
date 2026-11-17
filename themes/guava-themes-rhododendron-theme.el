@@ -77,7 +77,7 @@
 
       (rhododendron-mode-line                 "#c00353")
       (rhododendron-mode-line-inactive        "#fd3aae")
-      (rhododendron-mode-line-modified        "#3AAFFD")
+      (rhododendron-mode-line-modified        "#94DCFD")
       (rhododendron-bell                      "#03C013")
 
       (rhododendron-tab-1                     rhododendron-mode-line)
@@ -111,7 +111,12 @@
       (rhododendron-square-a-3                "#3c82ff")
 
       (rhododendron-complementary-a-0         "#4680DE")
-      (rhododendron-complementary-a-1         "#DE4680"))
+      (rhododendron-complementary-a-1         "#DE4680")
+
+      (rhododendron-tetradic-a-0              rhododendron-mode-line-modified)
+      (rhododendron-tetradic-a-1              "#EA94FD")
+      (rhododendron-tetradic-a-2              "#A7FD94")
+      (rhododendron-tetradic-a-3              "#FDB594"))
 
   (custom-theme-set-faces
    'guava-themes-rhododendron
@@ -362,12 +367,12 @@
 
    ;; doom-modeline
    ;; doom-modeline-buffer-file-name-style
-   `(doom-modeline-project-name ((,rhododendron-class (:foreground ,rhododendron-light-purple :inherit (doom-modeline bold italic)))))
-   `(doom-modeline-project-dir ((,rhododendron-class (:foreground ,rhododendron-light-purple :inherit (doom-modeline bold)))))
-   `(doom-modeline-project-root-dir ((,rhododendron-class (:foreground ,rhododendron-bright-orange :inherit (doom-modeline bold)))))
-   `(doom-modeline-project-parent-dir ((,rhododendron-class (:foreground ,rhododendron-bright-orange :inherit (doom-modeline bold)))))
-   `(doom-modeline-buffer-minor-mode ((,rhododendron-class (:foreground ,rhododendron-bright-orange :inherit (doom-modeline)))))
-   `(doom-modeline-buffer-modified ((,rhododendron-class (:foreground ,rhododendron-mode-line-modified :inherit (doom-modeline warning bold)))))
+   `(doom-modeline-project-name ((,rhododendron-class (:foreground ,rhododendron-tetradic-a-3 :inherit (doom-modeline bold italic)))))
+   `(doom-modeline-project-dir ((,rhododendron-class (:foreground ,rhododendron-tetradic-a-3 :inherit (doom-modeline bold)))))
+   `(doom-modeline-project-root-dir ((,rhododendron-class (:foreground ,rhododendron-tetradic-a-2 :inherit (doom-modeline bold)))))
+   `(doom-modeline-project-parent-dir ((,rhododendron-class (:foreground ,rhododendron-tetradic-a-2 :inherit (doom-modeline bold)))))
+   `(doom-modeline-buffer-minor-mode ((,rhododendron-class (:foreground ,rhododendron-tetradic-a-1 :inherit (doom-modeline)))))
+   `(doom-modeline-buffer-modified ((,rhododendron-class (:foreground ,rhododendron-tetradic-a-0 :inherit (doom-modeline warning bold)))))
 
    ;; corfu
    `(corfu-default ((,rhododendron-class (:foreground ,rhododendron-fg-1 :background ,rhododendron-bg))))

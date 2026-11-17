@@ -76,7 +76,7 @@
 
       (rubus-mode-line                 "#aa3232")
       (rubus-mode-line-inactive        "#cd7378")
-      (rubus-mode-line-modified        "#9682fa")
+      (rubus-mode-line-modified        "#A0DCC8")
       (rubus-bell                      "#326EAA")
 
       (rubus-tab-1                     rubus-mode-line)
@@ -110,7 +110,12 @@
       (rubus-square-a-3                "#3c82ff")
 
       (rubus-complementary-a-0         "#46C8A5")
-      (rubus-complementary-a-1         "#C84669"))
+      (rubus-complementary-a-1         "#C84669")
+
+      (rubus-tetradic-a-0              rubus-mode-line-modified)
+      (rubus-tetradic-a-1              "#DCA0B4")
+      (rubus-tetradic-a-2              "#AAA0DC")
+      (rubus-tetradic-a-3              "#D2DCA0"))
 
   (custom-theme-set-faces
    'guava-themes-rubus
@@ -361,12 +366,12 @@
 
    ;; doom-modeline
    ;; doom-modeline-buffer-file-name-style
-   `(doom-modeline-project-name ((,rubus-class (:foreground ,rubus-light-purple :inherit (doom-modeline bold italic)))))
-   `(doom-modeline-project-dir ((,rubus-class (:foreground ,rubus-light-purple :inherit (doom-modeline bold)))))
-   `(doom-modeline-project-root-dir ((,rubus-class (:foreground ,rubus-orange :inherit (doom-modeline bold)))))
-   `(doom-modeline-project-parent-dir ((,rubus-class (:foreground ,rubus-orange :inherit (doom-modeline bold)))))
-   `(doom-modeline-buffer-minor-mode ((,rubus-class (:foreground ,rubus-orange :inherit (doom-modeline)))))
-   `(doom-modeline-buffer-modified ((,rubus-class (:foreground ,rubus-mode-line-modified :inherit (doom-modeline warning bold)))))
+   `(doom-modeline-project-name ((,rubus-class (:foreground ,rubus-tetradic-a-3 :inherit (doom-modeline bold italic)))))
+   `(doom-modeline-project-dir ((,rubus-class (:foreground ,rubus-tetradic-a-3 :inherit (doom-modeline bold)))))
+   `(doom-modeline-project-root-dir ((,rubus-class (:foreground ,rubus-tetradic-a-2 :inherit (doom-modeline bold)))))
+   `(doom-modeline-project-parent-dir ((,rubus-class (:foreground ,rubus-tetradic-a-2 :inherit (doom-modeline bold)))))
+   `(doom-modeline-buffer-minor-mode ((,rubus-class (:foreground ,rubus-tetradic-a-1 :inherit (doom-modeline)))))
+   `(doom-modeline-buffer-modified ((,rubus-class (:foreground ,rubus-tetradic-a-0 :inherit (doom-modeline warning bold)))))
 
    ;; corfu
    `(corfu-default ((,rubus-class (:foreground ,rubus-fg-1 :background ,rubus-bg))))
