@@ -161,7 +161,7 @@
    `(cursor ((,eucalyptus-class (:foreground ,eucalyptus-white :background ,eucalyptus-mode-line))))
 
    ;; fringe
-   `(fringe ((,eucalyptus-class (:foreground ,eucalyptus-blue :background ,eucalyptus-bg))))
+   `(fringe ((,eucalyptus-class (:foreground ,eucalyptus-fl-builtin :background ,eucalyptus-bg))))
    `(diff-hl-change ((,eucalyptus-class (:foreground ,eucalyptus-change :background ,eucalyptus-change))))
    `(diff-hl-insert ((,eucalyptus-class (:foreground ,eucalyptus-success :background ,eucalyptus-success))))
    `(diff-hl-delete ((,eucalyptus-class (:foreground ,eucalyptus-error :background ,eucalyptus-error))))

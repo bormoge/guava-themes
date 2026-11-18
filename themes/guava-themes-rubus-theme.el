@@ -164,7 +164,7 @@
    `(cursor ((,rubus-class (:foreground ,rubus-white :background ,rubus-mode-line))))
 
    ;; fringe
-   `(fringe ((,rubus-class (:foreground ,rubus-yellow :background ,rubus-bg))))
+   `(fringe ((,rubus-class (:foreground ,rubus-fl-builtin :background ,rubus-bg))))
    `(diff-hl-change ((,rubus-class (:foreground ,rubus-change :background ,rubus-change))))
    `(diff-hl-insert ((,rubus-class (:foreground ,rubus-success :background ,rubus-success))))
    `(diff-hl-delete ((,rubus-class (:foreground ,rubus-error :background ,rubus-error))))

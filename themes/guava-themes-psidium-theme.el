@@ -159,7 +159,7 @@
    `(cursor ((,psidium-class (:foreground ,psidium-black :background ,psidium-mode-line))))
 
    ;; fringe
-   `(fringe ((,psidium-class (:foreground ,psidium-blue :background ,psidium-bg))))
+   `(fringe ((,psidium-class (:foreground ,psidium-fl-builtin :background ,psidium-bg))))
    `(diff-hl-change ((,psidium-class (:foreground ,psidium-change :background ,psidium-change))))
    `(diff-hl-insert ((,psidium-class (:foreground ,psidium-success :background ,psidium-success))))
    `(diff-hl-delete ((,psidium-class (:foreground ,psidium-error :background ,psidium-error))))

@@ -166,7 +166,7 @@
    `(cursor ((,ficus-class (:foreground ,ficus-white :background ,ficus-mode-line))))
 
    ;; fringe
-   `(fringe ((,ficus-class (:foreground ,ficus-light-red :background ,ficus-bg))))
+   `(fringe ((,ficus-class (:foreground ,ficus-fl-builtin :background ,ficus-bg))))
    `(diff-hl-change ((,ficus-class (:foreground ,ficus-change :background ,ficus-change))))
    `(diff-hl-insert ((,ficus-class (:foreground ,ficus-success :background ,ficus-success))))
    `(diff-hl-delete ((,ficus-class (:foreground ,ficus-error :background ,ficus-error))))

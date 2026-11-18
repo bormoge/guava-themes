@@ -162,7 +162,7 @@
    `(cursor ((,jacaranda-class (:foreground ,jacaranda-white :background ,jacaranda-mode-line))))
 
    ;; fringe
-   `(fringe ((,jacaranda-class (:foreground ,jacaranda-purple-red :background ,jacaranda-bg))))
+   `(fringe ((,jacaranda-class (:foreground ,jacaranda-fl-builtin :background ,jacaranda-bg))))
    `(diff-hl-change ((,jacaranda-class (:foreground ,jacaranda-change :background ,jacaranda-change))))
    `(diff-hl-insert ((,jacaranda-class (:foreground ,jacaranda-success :background ,jacaranda-success))))
    `(diff-hl-delete ((,jacaranda-class (:foreground ,jacaranda-error :background ,jacaranda-error))))

@@ -162,7 +162,7 @@
    `(cursor ((,cordyline-class (:foreground ,cordyline-white :background ,cordyline-mode-line))))
 
    ;; fringe
-   `(fringe ((,cordyline-class (:foreground ,cordyline-cyan :background ,cordyline-bg))))
+   `(fringe ((,cordyline-class (:foreground ,cordyline-fl-builtin :background ,cordyline-bg))))
    `(diff-hl-change ((,cordyline-class (:foreground ,cordyline-change :background ,cordyline-change))))
    `(diff-hl-insert ((,cordyline-class (:foreground ,cordyline-success :background ,cordyline-success))))
    `(diff-hl-delete ((,cordyline-class (:foreground ,cordyline-error :background ,cordyline-error))))

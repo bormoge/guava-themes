@@ -165,7 +165,7 @@
    `(cursor ((,rhododendron-class (:foreground ,rhododendron-black :background ,rhododendron-mode-line))))
 
    ;; fringe
-   `(fringe ((,rhododendron-class (:foreground ,rhododendron-red :background ,rhododendron-bg))))
+   `(fringe ((,rhododendron-class (:foreground ,rhododendron-fl-builtin :background ,rhododendron-bg))))
    `(diff-hl-change ((,rhododendron-class (:foreground ,rhododendron-change :background ,rhododendron-change))))
    `(diff-hl-insert ((,rhododendron-class (:foreground ,rhododendron-success :background ,rhododendron-success))))
    `(diff-hl-delete ((,rhododendron-class (:foreground ,rhododendron-error :background ,rhododendron-error))))

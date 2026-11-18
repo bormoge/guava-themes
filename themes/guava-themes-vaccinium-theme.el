@@ -163,7 +163,7 @@
    `(cursor ((,vaccinium-class (:foreground ,vaccinium-white :background ,vaccinium-mode-line))))
 
    ;; fringe
-   `(fringe ((,vaccinium-class (:foreground ,vaccinium-red :background ,vaccinium-bg))))
+   `(fringe ((,vaccinium-class (:foreground ,vaccinium-fl-builtin :background ,vaccinium-bg))))
    `(diff-hl-change ((,vaccinium-class (:foreground ,vaccinium-change :background ,vaccinium-change))))
    `(diff-hl-insert ((,vaccinium-class (:foreground ,vaccinium-success :background ,vaccinium-success))))
    `(diff-hl-delete ((,vaccinium-class (:foreground ,vaccinium-error :background ,vaccinium-error))))

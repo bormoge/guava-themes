@@ -163,7 +163,7 @@
    `(cursor ((,acer-class (:foreground ,acer-black :background ,acer-mode-line))))
 
    ;; fringe
-   `(fringe ((,acer-class (:foreground ,acer-deep-blue :background ,acer-bg))))
+   `(fringe ((,acer-class (:foreground ,acer-fl-builtin :background ,acer-bg))))
    `(diff-hl-change ((,acer-class (:foreground ,acer-change :background ,acer-change))))
    `(diff-hl-insert ((,acer-class (:foreground ,acer-success :background ,acer-success))))
    `(diff-hl-delete ((,acer-class (:foreground ,acer-error :background ,acer-error))))

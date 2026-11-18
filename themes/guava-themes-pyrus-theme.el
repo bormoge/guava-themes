@@ -162,7 +162,7 @@
    `(cursor ((,pyrus-class (:foreground ,pyrus-white :background ,pyrus-mode-line))))
 
    ;; fringe
-   `(fringe ((,pyrus-class (:foreground ,pyrus-blue :background ,pyrus-bg))))
+   `(fringe ((,pyrus-class (:foreground ,pyrus-fl-builtin :background ,pyrus-bg))))
    `(diff-hl-change ((,pyrus-class (:foreground ,pyrus-change :background ,pyrus-change))))
    `(diff-hl-insert ((,pyrus-class (:foreground ,pyrus-success :background ,pyrus-success))))
    `(diff-hl-delete ((,pyrus-class (:foreground ,pyrus-error :background ,pyrus-error))))

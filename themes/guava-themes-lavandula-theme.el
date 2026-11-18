@@ -162,7 +162,7 @@
    `(cursor ((,lavandula-class (:foreground ,lavandula-white :background ,lavandula-mode-line))))
 
    ;; fringe
-   `(fringe ((,lavandula-class (:foreground ,lavandula-deep-blue :background ,lavandula-bg))))
+   `(fringe ((,lavandula-class (:foreground ,lavandula-fl-builtin :background ,lavandula-bg))))
    `(diff-hl-change ((,lavandula-class (:foreground ,lavandula-change :background ,lavandula-change))))
    `(diff-hl-insert ((,lavandula-class (:foreground ,lavandula-success :background ,lavandula-success))))
    `(diff-hl-delete ((,lavandula-class (:foreground ,lavandula-error :background ,lavandula-error))))

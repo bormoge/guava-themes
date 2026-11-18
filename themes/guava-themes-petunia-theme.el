@@ -160,7 +160,7 @@
    `(cursor ((,petunia-class (:foreground ,petunia-white :background ,petunia-mode-line))))
 
    ;; fringe
-   `(fringe ((,petunia-class (:foreground ,petunia-red :background ,petunia-bg))))
+   `(fringe ((,petunia-class (:foreground ,petunia-fl-builtin :background ,petunia-bg))))
    `(diff-hl-change ((,petunia-class (:foreground ,petunia-change :background ,petunia-change))))
    `(diff-hl-insert ((,petunia-class (:foreground ,petunia-success :background ,petunia-success))))
    `(diff-hl-delete ((,petunia-class (:foreground ,petunia-error :background ,petunia-error))))

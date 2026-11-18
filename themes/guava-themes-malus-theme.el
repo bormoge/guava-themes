@@ -163,7 +163,7 @@
    `(cursor ((,malus-class (:foreground ,malus-white :background ,malus-mode-line))))
 
    ;; fringe
-   `(fringe ((,malus-class (:foreground ,malus-cyan :background ,malus-bg))))
+   `(fringe ((,malus-class (:foreground ,malus-fl-builtin :background ,malus-bg))))
    `(diff-hl-change ((,malus-class (:foreground ,malus-change :background ,malus-change))))
    `(diff-hl-insert ((,malus-class (:foreground ,malus-success :background ,malus-success))))
    `(diff-hl-delete ((,malus-class (:foreground ,malus-error :background ,malus-error))))

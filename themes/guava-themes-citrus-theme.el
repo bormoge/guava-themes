@@ -167,7 +167,7 @@
    `(cursor ((,citrus-class (:foreground ,citrus-white :background ,citrus-mode-line))))
 
    ;; fringe
-   `(fringe ((,citrus-class (:foreground ,citrus-red :background ,citrus-bg))))
+   `(fringe ((,citrus-class (:foreground ,citrus-fl-builtin :background ,citrus-bg))))
    `(diff-hl-change ((,citrus-class (:foreground ,citrus-change :background ,citrus-change))))
    `(diff-hl-insert ((,citrus-class (:foreground ,citrus-success :background ,citrus-success))))
    `(diff-hl-delete ((,citrus-class (:foreground ,citrus-error :background ,citrus-error))))

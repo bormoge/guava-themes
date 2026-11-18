@@ -166,7 +166,7 @@
    `(cursor ((,ceiba-class (:foreground ,ceiba-white :background ,ceiba-mode-line))))
 
    ;; fringe
-   `(fringe ((,ceiba-class (:foreground ,ceiba-blue :background ,ceiba-bg))))
+   `(fringe ((,ceiba-class (:foreground ,ceiba-fl-builtin :background ,ceiba-bg))))
    `(diff-hl-change ((,ceiba-class (:foreground ,ceiba-change :background ,ceiba-change))))
    `(diff-hl-insert ((,ceiba-class (:foreground ,ceiba-success :background ,ceiba-success))))
    `(diff-hl-delete ((,ceiba-class (:foreground ,ceiba-error :background ,ceiba-error))))

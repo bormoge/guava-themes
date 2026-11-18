@@ -166,7 +166,7 @@
    `(cursor ((,prunus-class (:foreground ,prunus-white :background ,prunus-mode-line))))
 
    ;; fringe
-   `(fringe ((,prunus-class (:foreground ,prunus-cyan :background ,prunus-bg))))
+   `(fringe ((,prunus-class (:foreground ,prunus-fl-builtin :background ,prunus-bg))))
    `(diff-hl-change ((,prunus-class (:foreground ,prunus-change :background ,prunus-change))))
    `(diff-hl-insert ((,prunus-class (:foreground ,prunus-success :background ,prunus-success))))
    `(diff-hl-delete ((,prunus-class (:foreground ,prunus-error :background ,prunus-error))))

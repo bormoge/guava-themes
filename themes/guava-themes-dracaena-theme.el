@@ -162,7 +162,7 @@
    `(cursor ((,dracaena-class (:foreground ,dracaena-white :background ,dracaena-mode-line))))
 
    ;; fringe
-   `(fringe ((,dracaena-class (:foreground ,dracaena-light-orange :background ,dracaena-bg))))
+   `(fringe ((,dracaena-class (:foreground ,dracaena-fl-builtin :background ,dracaena-bg))))
    `(diff-hl-change ((,dracaena-class (:foreground ,dracaena-change :background ,dracaena-change))))
    `(diff-hl-insert ((,dracaena-class (:foreground ,dracaena-success :background ,dracaena-success))))
    `(diff-hl-delete ((,dracaena-class (:foreground ,dracaena-error :background ,dracaena-error))))

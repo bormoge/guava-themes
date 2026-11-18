@@ -161,7 +161,7 @@
    `(cursor ((,solanum-class (:foreground ,solanum-white :background ,solanum-mode-line))))
 
    ;; fringe
-   `(fringe ((,solanum-class (:foreground ,solanum-red-tomato :background ,solanum-bg))))
+   `(fringe ((,solanum-class (:foreground ,solanum-fl-builtin :background ,solanum-bg))))
    `(diff-hl-change ((,solanum-class (:foreground ,solanum-change :background ,solanum-change))))
    `(diff-hl-insert ((,solanum-class (:foreground ,solanum-success :background ,solanum-success))))
    `(diff-hl-delete ((,solanum-class (:foreground ,solanum-error :background ,solanum-error))))
