@@ -291,6 +291,12 @@
    `(query-replace ((,petunia-class (:inherit isearch))))
    `(match ((,petunia-class (:inherit lazy-highlight))))
 
+   ;; re-builder
+   `(reb-match-0 ((,petunia-class (:background ,petunia-square-a-0 :foreground ,petunia-white))))
+   `(reb-match-1 ((,petunia-class (:background ,petunia-square-a-1 :foreground ,petunia-white))))
+   `(reb-match-2 ((,petunia-class (:background ,petunia-square-a-2 :foreground ,petunia-white))))
+   `(reb-match-3 ((,petunia-class (:background ,petunia-square-a-3 :foreground ,petunia-white))))
+
    ;; custom
    ;; (progn (setopt custom-raised-buttons nil) (setq mouse-highlight t))
    `(custom-button ((,petunia-class (:foreground ,petunia-white :background ,petunia-mode-line :box (:line-width 2 :style released-button)))))

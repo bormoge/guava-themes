@@ -296,6 +296,12 @@
    `(query-replace ((,rhododendron-class (:inherit isearch))))
    `(match ((,rhododendron-class (:inherit lazy-highlight))))
 
+   ;; re-builder
+   `(reb-match-0 ((,rhododendron-class (:background ,rhododendron-square-a-0 :foreground ,rhododendron-white))))
+   `(reb-match-1 ((,rhododendron-class (:background ,rhododendron-square-a-1 :foreground ,rhododendron-white))))
+   `(reb-match-2 ((,rhododendron-class (:background ,rhododendron-square-a-2 :foreground ,rhododendron-white))))
+   `(reb-match-3 ((,rhododendron-class (:background ,rhododendron-square-a-3 :foreground ,rhododendron-white))))
+
    ;; custom
    ;; (progn (setopt custom-raised-buttons nil) (setq mouse-highlight t))
    `(custom-button ((,rhododendron-class (:foreground ,rhododendron-white :background ,rhododendron-mode-line :box (:line-width 2 :style released-button)))))

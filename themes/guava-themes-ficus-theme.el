@@ -297,6 +297,12 @@
    `(query-replace ((,ficus-class (:inherit isearch))))
    `(match ((,ficus-class (:inherit lazy-highlight))))
 
+   ;; re-builder
+   `(reb-match-0 ((,ficus-class (:background ,ficus-square-a-0 :foreground ,ficus-white))))
+   `(reb-match-1 ((,ficus-class (:background ,ficus-square-a-1 :foreground ,ficus-white))))
+   `(reb-match-2 ((,ficus-class (:background ,ficus-square-a-2 :foreground ,ficus-white))))
+   `(reb-match-3 ((,ficus-class (:background ,ficus-square-a-3 :foreground ,ficus-white))))
+
    ;; custom
    ;; (progn (setopt custom-raised-buttons nil) (setq mouse-highlight t))
    `(custom-button ((,ficus-class (:foreground ,ficus-white :background ,ficus-mode-line :box (:line-width 2 :style released-button)))))

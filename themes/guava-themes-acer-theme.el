@@ -294,6 +294,12 @@
    `(query-replace ((,acer-class (:inherit isearch))))
    `(match ((,acer-class (:inherit lazy-highlight))))
 
+   ;; re-builder
+   `(reb-match-0 ((,acer-class (:background ,acer-square-a-0 :foreground ,acer-white))))
+   `(reb-match-1 ((,acer-class (:background ,acer-square-a-1 :foreground ,acer-white))))
+   `(reb-match-2 ((,acer-class (:background ,acer-square-a-2 :foreground ,acer-white))))
+   `(reb-match-3 ((,acer-class (:background ,acer-square-a-3 :foreground ,acer-white))))
+
    ;; custom
    ;; (progn (setopt custom-raised-buttons nil) (setq mouse-highlight t))
    `(custom-button ((,acer-class (:foreground ,acer-white :background ,acer-mode-line :box (:line-width 2 :style released-button)))))

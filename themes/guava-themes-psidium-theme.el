@@ -290,6 +290,12 @@
    `(query-replace ((,psidium-class (:inherit isearch))))
    `(match ((,psidium-class (:inherit lazy-highlight))))
 
+   ;; re-builder
+   `(reb-match-0 ((,psidium-class (:background ,psidium-square-a-0 :foreground ,psidium-white))))
+   `(reb-match-1 ((,psidium-class (:background ,psidium-square-a-1 :foreground ,psidium-white))))
+   `(reb-match-2 ((,psidium-class (:background ,psidium-square-a-2 :foreground ,psidium-white))))
+   `(reb-match-3 ((,psidium-class (:background ,psidium-square-a-3 :foreground ,psidium-white))))
+
    ;; custom
    ;; (progn (setopt custom-raised-buttons nil) (setq mouse-highlight t))
    `(custom-button ((,psidium-class (:foreground ,psidium-white :background ,psidium-mode-line :box (:line-width 2 :style released-button)))))

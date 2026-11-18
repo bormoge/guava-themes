@@ -292,6 +292,12 @@
    `(query-replace ((,solanum-class (:inherit isearch))))
    `(match ((,solanum-class (:inherit lazy-highlight))))
 
+   ;; re-builder
+   `(reb-match-0 ((,solanum-class (:background ,solanum-square-a-0 :foreground ,solanum-white))))
+   `(reb-match-1 ((,solanum-class (:background ,solanum-square-a-1 :foreground ,solanum-white))))
+   `(reb-match-2 ((,solanum-class (:background ,solanum-square-a-2 :foreground ,solanum-white))))
+   `(reb-match-3 ((,solanum-class (:background ,solanum-square-a-3 :foreground ,solanum-white))))
+
    ;; custom
    ;; (progn (setopt custom-raised-buttons nil) (setq mouse-highlight t))
    `(custom-button ((,solanum-class (:foreground ,solanum-white :background ,solanum-mode-line :box (:line-width 2 :style released-button)))))

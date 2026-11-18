@@ -294,6 +294,12 @@
    `(query-replace ((,vaccinium-class (:inherit isearch))))
    `(match ((,vaccinium-class (:inherit lazy-highlight))))
 
+   ;; re-builder
+   `(reb-match-0 ((,vaccinium-class (:background ,vaccinium-square-a-0 :foreground ,vaccinium-white))))
+   `(reb-match-1 ((,vaccinium-class (:background ,vaccinium-square-a-1 :foreground ,vaccinium-white))))
+   `(reb-match-2 ((,vaccinium-class (:background ,vaccinium-square-a-2 :foreground ,vaccinium-white))))
+   `(reb-match-3 ((,vaccinium-class (:background ,vaccinium-square-a-3 :foreground ,vaccinium-white))))
+
    ;; custom
    ;; (progn (setopt custom-raised-buttons nil) (setq mouse-highlight t))
    `(custom-button ((,vaccinium-class (:foreground ,vaccinium-white :background ,vaccinium-mode-line :box (:line-width 2 :style released-button)))))

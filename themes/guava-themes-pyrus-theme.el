@@ -293,6 +293,12 @@
    `(query-replace ((,pyrus-class (:inherit isearch))))
    `(match ((,pyrus-class (:inherit lazy-highlight))))
 
+   ;; re-builder
+   `(reb-match-0 ((,pyrus-class (:background ,pyrus-square-a-0 :foreground ,pyrus-white))))
+   `(reb-match-1 ((,pyrus-class (:background ,pyrus-square-a-1 :foreground ,pyrus-white))))
+   `(reb-match-2 ((,pyrus-class (:background ,pyrus-square-a-2 :foreground ,pyrus-white))))
+   `(reb-match-3 ((,pyrus-class (:background ,pyrus-square-a-3 :foreground ,pyrus-white))))
+
    ;; custom
    ;; (progn (setopt custom-raised-buttons nil) (setq mouse-highlight t))
    `(custom-button ((,pyrus-class (:foreground ,pyrus-white :background ,pyrus-mode-line :box (:line-width 2 :style released-button)))))

@@ -293,6 +293,12 @@
    `(query-replace ((,lavandula-class (:inherit isearch))))
    `(match ((,lavandula-class (:inherit lazy-highlight))))
 
+   ;; re-builder
+   `(reb-match-0 ((,lavandula-class (:background ,lavandula-square-a-0 :foreground ,lavandula-white))))
+   `(reb-match-1 ((,lavandula-class (:background ,lavandula-square-a-1 :foreground ,lavandula-white))))
+   `(reb-match-2 ((,lavandula-class (:background ,lavandula-square-a-2 :foreground ,lavandula-white))))
+   `(reb-match-3 ((,lavandula-class (:background ,lavandula-square-a-3 :foreground ,lavandula-white))))
+
    ;; custom
    ;; (progn (setopt custom-raised-buttons nil) (setq mouse-highlight t))
    `(custom-button ((,lavandula-class (:foreground ,lavandula-white :background ,lavandula-mode-line :box (:line-width 2 :style released-button)))))

@@ -298,6 +298,12 @@
    `(query-replace ((,citrus-class (:inherit isearch))))
    `(match ((,citrus-class (:inherit lazy-highlight))))
 
+   ;; re-builder
+   `(reb-match-0 ((,citrus-class (:background ,citrus-square-a-0 :foreground ,citrus-white))))
+   `(reb-match-1 ((,citrus-class (:background ,citrus-square-a-1 :foreground ,citrus-white))))
+   `(reb-match-2 ((,citrus-class (:background ,citrus-square-a-2 :foreground ,citrus-white))))
+   `(reb-match-3 ((,citrus-class (:background ,citrus-square-a-3 :foreground ,citrus-white))))
+
    ;; custom
    ;; (progn (setopt custom-raised-buttons nil) (setq mouse-highlight t))
    `(custom-button ((,citrus-class (:foreground ,citrus-white :background ,citrus-tab-1 :box (:line-width 2 :style released-button)))))

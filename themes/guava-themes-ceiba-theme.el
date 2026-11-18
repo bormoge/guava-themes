@@ -297,6 +297,12 @@
    `(query-replace ((,ceiba-class (:inherit isearch))))
    `(match ((,ceiba-class (:inherit lazy-highlight))))
 
+   ;; re-builder
+   `(reb-match-0 ((,ceiba-class (:background ,ceiba-square-a-0 :foreground ,ceiba-white))))
+   `(reb-match-1 ((,ceiba-class (:background ,ceiba-square-a-1 :foreground ,ceiba-white))))
+   `(reb-match-2 ((,ceiba-class (:background ,ceiba-square-a-2 :foreground ,ceiba-white))))
+   `(reb-match-3 ((,ceiba-class (:background ,ceiba-square-a-3 :foreground ,ceiba-white))))
+
    ;; custom
    ;; (progn (setopt custom-raised-buttons nil) (setq mouse-highlight t))
    `(custom-button ((,ceiba-class (:foreground ,ceiba-white :background ,ceiba-mode-line :box (:line-width 2 :style released-button)))))

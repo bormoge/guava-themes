@@ -295,6 +295,12 @@
    `(query-replace ((,rubus-class (:inherit isearch))))
    `(match ((,rubus-class (:inherit lazy-highlight))))
 
+   ;; re-builder
+   `(reb-match-0 ((,rubus-class (:background ,rubus-square-a-0 :foreground ,rubus-white))))
+   `(reb-match-1 ((,rubus-class (:background ,rubus-square-a-1 :foreground ,rubus-white))))
+   `(reb-match-2 ((,rubus-class (:background ,rubus-square-a-2 :foreground ,rubus-white))))
+   `(reb-match-3 ((,rubus-class (:background ,rubus-square-a-3 :foreground ,rubus-white))))
+
    ;; custom
    ;; (progn (setopt custom-raised-buttons nil) (setq mouse-highlight t))
    `(custom-button ((,rubus-class (:foreground ,rubus-white :background ,rubus-mode-line :box (:line-width 2 :style released-button)))))

@@ -292,6 +292,12 @@
    `(query-replace ((,eucalyptus-class (:inherit isearch))))
    `(match ((,eucalyptus-class (:inherit lazy-highlight))))
 
+   ;; re-builder
+   `(reb-match-0 ((,eucalyptus-class (:background ,eucalyptus-square-a-0 :foreground ,eucalyptus-white))))
+   `(reb-match-1 ((,eucalyptus-class (:background ,eucalyptus-square-a-1 :foreground ,eucalyptus-white))))
+   `(reb-match-2 ((,eucalyptus-class (:background ,eucalyptus-square-a-2 :foreground ,eucalyptus-white))))
+   `(reb-match-3 ((,eucalyptus-class (:background ,eucalyptus-square-a-3 :foreground ,eucalyptus-white))))
+
    ;; custom
    ;; (progn (setopt custom-raised-buttons nil) (setq mouse-highlight t))
    `(custom-button ((,eucalyptus-class (:foreground ,eucalyptus-white :background ,eucalyptus-mode-line :box (:line-width 2 :style released-button)))))
