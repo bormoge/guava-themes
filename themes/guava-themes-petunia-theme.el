@@ -405,7 +405,7 @@
    `(pdf-view-region ((,petunia-class (:foreground ,petunia-white :background ,petunia-square-a-3 :inherit region))))
 
    ;; idle-highlight
-   `(idle-highlight ((,petunia-class (:foreground ,petunia-black :background ,petunia-fl-builtin :inherit region))))
+   `(idle-highlight ((,petunia-class (:foreground ,petunia-white :background ,petunia-fl-builtin :inherit region))))
 
    ;; keycast
    `(keycast-command ((,petunia-class (:weight bold))))
