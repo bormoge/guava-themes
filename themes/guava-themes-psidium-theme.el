@@ -187,7 +187,7 @@
    `(vertical-border ((,psidium-class (:foreground ,psidium-mode-line))))
 
    ;; header-line
-   `(header-line ((,psidium-class (:inherit mode-line))))
+   `(header-line ((,psidium-class (:background ,psidium-tab-1 :inherit mode-line))))
    `(which-func ((,psidium-class (:weight bold :foreground ,psidium-mode-line-modified))))
 
    ;; tab-bar

@@ -189,7 +189,7 @@
    `(vertical-border ((,eucalyptus-class (:foreground ,eucalyptus-mode-line))))
 
    ;; header-line
-   `(header-line ((,eucalyptus-class (:inherit mode-line))))
+   `(header-line ((,eucalyptus-class (:background ,eucalyptus-tab-1 :inherit mode-line))))
    `(which-func ((,eucalyptus-class (:weight bold :foreground ,eucalyptus-mode-line-modified))))
 
    ;; tab-bar

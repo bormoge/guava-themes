@@ -192,7 +192,7 @@
    `(vertical-border ((,rubus-class (:foreground ,rubus-mode-line))))
 
    ;; header-line
-   `(header-line ((,rubus-class (:inherit mode-line))))
+   `(header-line ((,rubus-class (:background ,rubus-tab-1 :inherit mode-line))))
    `(which-func ((,rubus-class (:weight bold :foreground ,rubus-mode-line-modified))))
 
    ;; tab-bar

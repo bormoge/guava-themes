@@ -189,7 +189,7 @@
    `(vertical-border ((,solanum-class (:foreground ,solanum-mode-line))))
 
    ;; header-line
-   `(header-line ((,solanum-class (:inherit mode-line))))
+   `(header-line ((,solanum-class (:background ,solanum-tab-1 :inherit mode-line))))
    `(which-func ((,solanum-class (:weight bold :foreground ,solanum-mode-line-modified))))
 
    ;; tab-bar

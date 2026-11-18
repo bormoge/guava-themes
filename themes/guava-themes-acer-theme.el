@@ -191,7 +191,7 @@
    `(vertical-border ((,acer-class (:foreground ,acer-mode-line))))
 
    ;; header-line
-   `(header-line ((,acer-class (:inherit mode-line))))
+   `(header-line ((,acer-class (:background ,acer-tab-1 :inherit mode-line))))
    `(which-func ((,acer-class (:weight bold :foreground ,acer-mode-line-modified))))
 
    ;; tab-bar

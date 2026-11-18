@@ -194,7 +194,7 @@
    `(vertical-border ((,ceiba-class (:foreground ,ceiba-mode-line))))
 
    ;; header-line
-   `(header-line ((,ceiba-class (:inherit mode-line))))
+   `(header-line ((,ceiba-class (:background ,ceiba-tab-1 :inherit mode-line))))
    `(which-func ((,ceiba-class (:weight bold :foreground ,ceiba-mode-line-modified))))
 
    ;; tab-bar

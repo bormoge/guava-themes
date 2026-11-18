@@ -194,7 +194,7 @@
    `(vertical-border ((,prunus-class (:foreground ,prunus-mode-line))))
 
    ;; header-line
-   `(header-line ((,prunus-class (:inherit mode-line))))
+   `(header-line ((,prunus-class (:background ,prunus-tab-1 :inherit mode-line))))
    `(which-func ((,prunus-class (:weight bold :foreground ,prunus-mode-line-modified))))
 
    ;; tab-bar

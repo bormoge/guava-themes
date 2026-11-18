@@ -194,7 +194,7 @@
    `(vertical-border ((,ficus-class (:foreground ,ficus-mode-line))))
 
    ;; header-line
-   `(header-line ((,ficus-class (:inherit mode-line))))
+   `(header-line ((,ficus-class (:background ,ficus-tab-1 :inherit mode-line))))
    `(which-func ((,ficus-class (:weight bold :foreground ,ficus-mode-line-modified))))
 
    ;; tab-bar

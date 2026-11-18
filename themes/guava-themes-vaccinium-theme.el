@@ -191,7 +191,7 @@
    `(vertical-border ((,vaccinium-class (:foreground ,vaccinium-mode-line))))
 
    ;; header-line
-   `(header-line ((,vaccinium-class (:inherit mode-line))))
+   `(header-line ((,vaccinium-class (:background ,vaccinium-tab-1 :inherit mode-line))))
    `(which-func ((,vaccinium-class (:weight bold :foreground ,vaccinium-mode-line-modified))))
 
    ;; tab-bar

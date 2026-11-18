@@ -191,7 +191,7 @@
    `(vertical-border ((,malus-class (:foreground ,malus-mode-line))))
 
    ;; header-line
-   `(header-line ((,malus-class (:inherit mode-line))))
+   `(header-line ((,malus-class (:background ,malus-tab-1 :inherit mode-line))))
    `(which-func ((,malus-class (:weight bold :foreground ,malus-mode-line-modified))))
 
    ;; tab-bar

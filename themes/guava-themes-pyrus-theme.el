@@ -190,7 +190,7 @@
    `(vertical-border ((,pyrus-class (:foreground ,pyrus-mode-line))))
 
    ;; header-line
-   `(header-line ((,pyrus-class (:inherit mode-line))))
+   `(header-line ((,pyrus-class (:background ,pyrus-tab-1 :inherit mode-line))))
    `(which-func ((,pyrus-class (:weight bold :foreground ,pyrus-mode-line-modified))))
 
    ;; tab-bar

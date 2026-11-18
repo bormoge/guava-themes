@@ -190,7 +190,7 @@
    `(vertical-border ((,dracaena-class (:foreground ,dracaena-mode-line))))
 
    ;; header-line
-   `(header-line ((,dracaena-class (:inherit mode-line))))
+   `(header-line ((,dracaena-class (:background ,dracaena-tab-1 :inherit mode-line))))
    `(which-func ((,dracaena-class (:weight bold :foreground ,dracaena-mode-line-modified))))
 
    ;; tab-bar

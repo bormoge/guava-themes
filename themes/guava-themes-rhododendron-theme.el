@@ -193,7 +193,7 @@
    `(vertical-border ((,rhododendron-class (:foreground ,rhododendron-mode-line))))
 
    ;; header-line
-   `(header-line ((,rhododendron-class (:inherit mode-line))))
+   `(header-line ((,rhododendron-class (:background ,rhododendron-tab-1 :inherit mode-line))))
    `(which-func ((,rhododendron-class (:weight bold :foreground ,rhododendron-mode-line-modified))))
 
    ;; tab-bar

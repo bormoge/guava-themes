@@ -188,7 +188,7 @@
    `(vertical-border ((,petunia-class (:foreground ,petunia-mode-line))))
 
    ;; header-line
-   `(header-line ((,petunia-class (:inherit mode-line))))
+   `(header-line ((,petunia-class (:background ,petunia-tab-1 :inherit mode-line))))
    `(which-func ((,petunia-class (:weight bold :foreground ,petunia-mode-line-modified))))
 
    ;; tab-bar

@@ -190,7 +190,7 @@
    `(vertical-border ((,lavandula-class (:foreground ,lavandula-mode-line))))
 
    ;; header-line
-   `(header-line ((,lavandula-class (:inherit mode-line))))
+   `(header-line ((,lavandula-class (:background ,lavandula-tab-1 :inherit mode-line))))
    `(which-func ((,lavandula-class (:weight bold :foreground ,lavandula-mode-line-modified))))
 
    ;; tab-bar

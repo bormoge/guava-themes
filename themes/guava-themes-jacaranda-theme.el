@@ -190,7 +190,7 @@
    `(vertical-border ((,jacaranda-class (:foreground ,jacaranda-mode-line))))
 
    ;; header-line
-   `(header-line ((,jacaranda-class (:inherit mode-line))))
+   `(header-line ((,jacaranda-class (:background ,jacaranda-tab-1 :inherit mode-line))))
    `(which-func ((,jacaranda-class (:weight bold :foreground ,jacaranda-mode-line-modified))))
 
    ;; tab-bar

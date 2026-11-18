@@ -190,7 +190,7 @@
    `(vertical-border ((,cordyline-class (:foreground ,cordyline-mode-line))))
 
    ;; header-line
-   `(header-line ((,cordyline-class (:inherit mode-line))))
+   `(header-line ((,cordyline-class (:background ,cordyline-tab-1 :inherit mode-line))))
    `(which-func ((,cordyline-class (:weight bold :foreground ,cordyline-mode-line-modified))))
 
    ;; tab-bar
