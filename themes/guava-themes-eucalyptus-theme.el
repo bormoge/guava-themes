@@ -367,6 +367,11 @@
    `(elfeed-show-feed-face ((,eucalyptus-class (:inherit elfeed-search-feed-face))))
    `(elfeed-show-tags-face ((,eucalyptus-class (:inherit elfeed-search-tag-face))))
 
+   `(elfeed-log-info-level-face ((,eucalyptus-class (:foreground ,eucalyptus-success))))
+   `(elfeed-log-debug-level-face ((,eucalyptus-class (:foreground ,eucalyptus-change))))
+   `(elfeed-log-warn-level-face ((,eucalyptus-class (:foreground ,eucalyptus-warning))))
+   `(elfeed-log-error-level-face ((,eucalyptus-class (:foreground ,eucalyptus-error))))
+
    ;; doom-modeline
    ;; doom-modeline-buffer-file-name-style
    `(doom-modeline-project-name ((,eucalyptus-class (:foreground ,eucalyptus-tetradic-a-3 :inherit (doom-modeline bold italic)))))

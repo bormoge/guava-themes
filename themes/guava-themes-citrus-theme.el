@@ -373,6 +373,11 @@
    `(elfeed-show-feed-face ((,citrus-class (:inherit elfeed-search-feed-face))))
    `(elfeed-show-tags-face ((,citrus-class (:inherit elfeed-search-tag-face))))
 
+   `(elfeed-log-info-level-face ((,citrus-class (:foreground ,citrus-success))))
+   `(elfeed-log-debug-level-face ((,citrus-class (:foreground ,citrus-change))))
+   `(elfeed-log-warn-level-face ((,citrus-class (:foreground ,citrus-warning))))
+   `(elfeed-log-error-level-face ((,citrus-class (:foreground ,citrus-error))))
+
    ;; doom-modeline
    ;; doom-modeline-buffer-file-name-style
    `(doom-modeline-project-name ((,citrus-class (:foreground ,citrus-tetradic-a-3 :inherit (doom-modeline bold italic)))))

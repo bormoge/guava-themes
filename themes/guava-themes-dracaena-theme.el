@@ -368,6 +368,11 @@
    `(elfeed-show-feed-face ((,dracaena-class (:inherit elfeed-search-feed-face))))
    `(elfeed-show-tags-face ((,dracaena-class (:inherit elfeed-search-tag-face))))
 
+   `(elfeed-log-info-level-face ((,dracaena-class (:foreground ,dracaena-success))))
+   `(elfeed-log-debug-level-face ((,dracaena-class (:foreground ,dracaena-change))))
+   `(elfeed-log-warn-level-face ((,dracaena-class (:foreground ,dracaena-warning))))
+   `(elfeed-log-error-level-face ((,dracaena-class (:foreground ,dracaena-error))))
+
    ;; doom-modeline
    ;; doom-modeline-buffer-file-name-style
    `(doom-modeline-project-name ((,dracaena-class (:foreground ,dracaena-tetradic-a-3 :inherit (doom-modeline bold italic)))))

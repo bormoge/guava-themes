@@ -367,6 +367,11 @@
    `(elfeed-show-feed-face ((,solanum-class (:inherit elfeed-search-feed-face))))
    `(elfeed-show-tags-face ((,solanum-class (:inherit elfeed-search-tag-face))))
 
+   `(elfeed-log-info-level-face ((,solanum-class (:foreground ,solanum-success))))
+   `(elfeed-log-debug-level-face ((,solanum-class (:foreground ,solanum-change))))
+   `(elfeed-log-warn-level-face ((,solanum-class (:foreground ,solanum-warning))))
+   `(elfeed-log-error-level-face ((,solanum-class (:foreground ,solanum-error))))
+
    ;; doom-modeline
    ;; doom-modeline-buffer-file-name-style
    `(doom-modeline-project-name ((,solanum-class (:foreground ,solanum-tetradic-a-3 :inherit (doom-modeline bold italic)))))

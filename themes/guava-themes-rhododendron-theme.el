@@ -371,6 +371,11 @@
    `(elfeed-show-feed-face ((,rhododendron-class (:inherit elfeed-search-feed-face))))
    `(elfeed-show-tags-face ((,rhododendron-class (:inherit elfeed-search-tag-face))))
 
+   `(elfeed-log-info-level-face ((,rhododendron-class (:foreground ,rhododendron-success))))
+   `(elfeed-log-debug-level-face ((,rhododendron-class (:foreground ,rhododendron-change))))
+   `(elfeed-log-warn-level-face ((,rhododendron-class (:foreground ,rhododendron-warning))))
+   `(elfeed-log-error-level-face ((,rhododendron-class (:foreground ,rhododendron-error))))
+
    ;; doom-modeline
    ;; doom-modeline-buffer-file-name-style
    `(doom-modeline-project-name ((,rhododendron-class (:foreground ,rhododendron-tetradic-a-3 :inherit (doom-modeline bold italic)))))

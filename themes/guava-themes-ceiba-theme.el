@@ -372,6 +372,11 @@
    `(elfeed-show-feed-face ((,ceiba-class (:inherit elfeed-search-feed-face))))
    `(elfeed-show-tags-face ((,ceiba-class (:inherit elfeed-search-tag-face))))
 
+   `(elfeed-log-info-level-face ((,ceiba-class (:foreground ,ceiba-success))))
+   `(elfeed-log-debug-level-face ((,ceiba-class (:foreground ,ceiba-change))))
+   `(elfeed-log-warn-level-face ((,ceiba-class (:foreground ,ceiba-warning))))
+   `(elfeed-log-error-level-face ((,ceiba-class (:foreground ,ceiba-error))))
+
    ;; doom-modeline
    ;; doom-modeline-buffer-file-name-style
    `(doom-modeline-project-name ((,ceiba-class (:foreground ,ceiba-tetradic-a-3 :inherit (doom-modeline bold italic)))))

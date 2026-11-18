@@ -369,6 +369,11 @@
    `(elfeed-show-feed-face ((,acer-class (:inherit elfeed-search-feed-face))))
    `(elfeed-show-tags-face ((,acer-class (:inherit elfeed-search-tag-face))))
 
+   `(elfeed-log-info-level-face ((,acer-class (:foreground ,acer-success))))
+   `(elfeed-log-debug-level-face ((,acer-class (:foreground ,acer-change))))
+   `(elfeed-log-warn-level-face ((,acer-class (:foreground ,acer-warning))))
+   `(elfeed-log-error-level-face ((,acer-class (:foreground ,acer-error))))
+
    ;; doom-modeline
    ;; doom-modeline-buffer-file-name-style
    `(doom-modeline-project-name ((,acer-class (:foreground ,acer-tetradic-a-3 :inherit (doom-modeline bold italic)))))

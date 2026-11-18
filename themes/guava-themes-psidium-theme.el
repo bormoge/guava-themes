@@ -365,6 +365,11 @@
    `(elfeed-show-feed-face ((,psidium-class (:inherit elfeed-search-feed-face))))
    `(elfeed-show-tags-face ((,psidium-class (:inherit elfeed-search-tag-face))))
 
+   `(elfeed-log-info-level-face ((,psidium-class (:foreground ,psidium-success))))
+   `(elfeed-log-debug-level-face ((,psidium-class (:foreground ,psidium-change))))
+   `(elfeed-log-warn-level-face ((,psidium-class (:foreground ,psidium-warning))))
+   `(elfeed-log-error-level-face ((,psidium-class (:foreground ,psidium-error))))
+
    ;; doom-modeline
    ;; doom-modeline-buffer-file-name-style
    `(doom-modeline-project-name ((,psidium-class (:foreground ,psidium-tetradic-a-3 :inherit (doom-modeline bold italic)))))

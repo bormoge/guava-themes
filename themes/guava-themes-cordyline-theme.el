@@ -368,6 +368,11 @@
    `(elfeed-show-feed-face ((,cordyline-class (:inherit elfeed-search-feed-face))))
    `(elfeed-show-tags-face ((,cordyline-class (:inherit elfeed-search-tag-face))))
 
+   `(elfeed-log-info-level-face ((,cordyline-class (:foreground ,cordyline-success))))
+   `(elfeed-log-debug-level-face ((,cordyline-class (:foreground ,cordyline-change))))
+   `(elfeed-log-warn-level-face ((,cordyline-class (:foreground ,cordyline-warning))))
+   `(elfeed-log-error-level-face ((,cordyline-class (:foreground ,cordyline-error))))
+
    ;; doom-modeline
    ;; doom-modeline-buffer-file-name-style
    `(doom-modeline-project-name ((,cordyline-class (:foreground ,cordyline-tetradic-a-3 :inherit (doom-modeline bold italic)))))

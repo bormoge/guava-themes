@@ -370,6 +370,11 @@
    `(elfeed-show-feed-face ((,rubus-class (:inherit elfeed-search-feed-face))))
    `(elfeed-show-tags-face ((,rubus-class (:inherit elfeed-search-tag-face))))
 
+   `(elfeed-log-info-level-face ((,rubus-class (:foreground ,rubus-success))))
+   `(elfeed-log-debug-level-face ((,rubus-class (:foreground ,rubus-change))))
+   `(elfeed-log-warn-level-face ((,rubus-class (:foreground ,rubus-warning))))
+   `(elfeed-log-error-level-face ((,rubus-class (:foreground ,rubus-error))))
+
    ;; doom-modeline
    ;; doom-modeline-buffer-file-name-style
    `(doom-modeline-project-name ((,rubus-class (:foreground ,rubus-tetradic-a-3 :inherit (doom-modeline bold italic)))))

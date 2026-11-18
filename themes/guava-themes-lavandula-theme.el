@@ -368,6 +368,11 @@
    `(elfeed-show-feed-face ((,lavandula-class (:inherit elfeed-search-feed-face))))
    `(elfeed-show-tags-face ((,lavandula-class (:inherit elfeed-search-tag-face))))
 
+   `(elfeed-log-info-level-face ((,lavandula-class (:foreground ,lavandula-success))))
+   `(elfeed-log-debug-level-face ((,lavandula-class (:foreground ,lavandula-change))))
+   `(elfeed-log-warn-level-face ((,lavandula-class (:foreground ,lavandula-warning))))
+   `(elfeed-log-error-level-face ((,lavandula-class (:foreground ,lavandula-error))))
+
    ;; doom-modeline
    ;; doom-modeline-buffer-file-name-style
    `(doom-modeline-project-name ((,lavandula-class (:foreground ,lavandula-tetradic-a-3 :inherit (doom-modeline bold italic)))))

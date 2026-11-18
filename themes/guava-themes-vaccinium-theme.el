@@ -369,6 +369,11 @@
    `(elfeed-show-feed-face ((,vaccinium-class (:inherit elfeed-search-feed-face))))
    `(elfeed-show-tags-face ((,vaccinium-class (:inherit elfeed-search-tag-face))))
 
+   `(elfeed-log-info-level-face ((,vaccinium-class (:foreground ,vaccinium-success))))
+   `(elfeed-log-debug-level-face ((,vaccinium-class (:foreground ,vaccinium-change))))
+   `(elfeed-log-warn-level-face ((,vaccinium-class (:foreground ,vaccinium-warning))))
+   `(elfeed-log-error-level-face ((,vaccinium-class (:foreground ,vaccinium-error))))
+
    ;; doom-modeline
    ;; doom-modeline-buffer-file-name-style
    `(doom-modeline-project-name ((,vaccinium-class (:foreground ,vaccinium-tetradic-a-3 :inherit (doom-modeline bold italic)))))

@@ -369,6 +369,11 @@
    `(elfeed-show-feed-face ((,malus-class (:inherit elfeed-search-feed-face))))
    `(elfeed-show-tags-face ((,malus-class (:inherit elfeed-search-tag-face))))
 
+   `(elfeed-log-info-level-face ((,malus-class (:foreground ,malus-success))))
+   `(elfeed-log-debug-level-face ((,malus-class (:foreground ,malus-change))))
+   `(elfeed-log-warn-level-face ((,malus-class (:foreground ,malus-warning))))
+   `(elfeed-log-error-level-face ((,malus-class (:foreground ,malus-error))))
+
    ;; doom-modeline
    ;; doom-modeline-buffer-file-name-style
    `(doom-modeline-project-name ((,malus-class (:foreground ,malus-tetradic-a-3 :inherit (doom-modeline bold italic)))))

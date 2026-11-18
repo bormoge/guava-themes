@@ -372,6 +372,11 @@
    `(elfeed-show-feed-face ((,ficus-class (:inherit elfeed-search-feed-face))))
    `(elfeed-show-tags-face ((,ficus-class (:inherit elfeed-search-tag-face))))
 
+   `(elfeed-log-info-level-face ((,ficus-class (:foreground ,ficus-success))))
+   `(elfeed-log-debug-level-face ((,ficus-class (:foreground ,ficus-change))))
+   `(elfeed-log-warn-level-face ((,ficus-class (:foreground ,ficus-warning))))
+   `(elfeed-log-error-level-face ((,ficus-class (:foreground ,ficus-error))))
+
    ;; doom-modeline
    ;; doom-modeline-buffer-file-name-style
    `(doom-modeline-project-name ((,ficus-class (:foreground ,ficus-tetradic-a-3 :inherit (doom-modeline bold italic)))))

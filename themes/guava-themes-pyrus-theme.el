@@ -368,6 +368,11 @@
    `(elfeed-show-feed-face ((,pyrus-class (:inherit elfeed-search-feed-face))))
    `(elfeed-show-tags-face ((,pyrus-class (:inherit elfeed-search-tag-face))))
 
+   `(elfeed-log-info-level-face ((,pyrus-class (:foreground ,pyrus-success))))
+   `(elfeed-log-debug-level-face ((,pyrus-class (:foreground ,pyrus-change))))
+   `(elfeed-log-warn-level-face ((,pyrus-class (:foreground ,pyrus-warning))))
+   `(elfeed-log-error-level-face ((,pyrus-class (:foreground ,pyrus-error))))
+
    ;; doom-modeline
    ;; doom-modeline-buffer-file-name-style
    `(doom-modeline-project-name ((,pyrus-class (:foreground ,pyrus-tetradic-a-3 :inherit (doom-modeline bold italic)))))
