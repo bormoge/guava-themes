@@ -61,7 +61,7 @@
 
       (malus-fg-1                      "#fafbb7")
       (malus-fg-2                      "#bebf7b")
-      (malus-bg                        "#1e0910")
+      (malus-bg-1                      "#1e0910")
       (malus-highlight                 "#321d24")
       (malus-shadow                    "#b3b3b3")
       (malus-tooltip                   "#ffffe0")
@@ -123,7 +123,7 @@
    ;; with unique colors
 
    ;; default
-   `(default ((,malus-class (:foreground ,malus-fg-1 :background ,malus-bg))))
+   `(default ((,malus-class (:foreground ,malus-fg-1 :background ,malus-bg-1))))
 
    ;; error, warning, success
    `(error ((,malus-class (:foreground ,malus-error :weight bold))))
@@ -163,7 +163,7 @@
    `(cursor ((,malus-class (:foreground ,malus-white :background ,malus-mode-line))))
 
    ;; fringe
-   `(fringe ((,malus-class (:foreground ,malus-fl-builtin :background ,malus-bg))))
+   `(fringe ((,malus-class (:foreground ,malus-fl-builtin :background ,malus-bg-1))))
    `(diff-hl-change ((,malus-class (:foreground ,malus-change :background ,malus-change))))
    `(diff-hl-insert ((,malus-class (:foreground ,malus-success :background ,malus-success))))
    `(diff-hl-delete ((,malus-class (:foreground ,malus-error :background ,malus-error))))
@@ -267,7 +267,7 @@
    ;; org-faces
    `(org-todo ((,malus-class (:foreground ,malus-error :weight bold))))
    `(org-done ((,malus-class (:foreground ,malus-success :weight bold))))
-   `(org-hide ((,malus-class (:foreground ,malus-bg))))
+   `(org-hide ((,malus-class (:foreground ,malus-bg-1))))
    `(org-table ((,malus-class (:foreground ,malus-red-sweetango))))
    `(org-table-header ((,malus-class (:inverse-video t :inherit org-table))))
    `(org-date ((,malus-class (:foreground ,malus-oceanic-blue))))
@@ -384,7 +384,7 @@
    `(doom-modeline-buffer-modified ((,malus-class (:foreground ,malus-tetradic-a-0 :inherit (doom-modeline warning bold)))))
 
    ;; corfu
-   `(corfu-default ((,malus-class (:foreground ,malus-fg-1 :background ,malus-bg))))
+   `(corfu-default ((,malus-class (:foreground ,malus-fg-1 :background ,malus-bg-1))))
    `(corfu-current ((,malus-class (:foreground unspecified :background unspecified :extend t :inherit highlight))))
    `(corfu-bar ((,malus-class (:background ,malus-shadow))))
    `(corfu-border ((,malus-class (:background ,malus-shadow))))

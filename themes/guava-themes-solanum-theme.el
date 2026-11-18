@@ -59,7 +59,7 @@
 
       (solanum-fg-1                      "#FFFFFF")
       (solanum-fg-2                      "#c3c3c3")
-      (solanum-bg                        "#130d1a")
+      (solanum-bg-1                      "#130d1a")
       (solanum-highlight                 "#27212e")
       (solanum-shadow                    "#b3b3b3")
       (solanum-tooltip                   "#ffffe0")
@@ -121,7 +121,7 @@
    ;; with unique colors
 
    ;; default
-   `(default ((,solanum-class (:foreground ,solanum-fg-1 :background ,solanum-bg))))
+   `(default ((,solanum-class (:foreground ,solanum-fg-1 :background ,solanum-bg-1))))
 
    ;; error, warning, success
    `(error ((,solanum-class (:foreground ,solanum-error :weight bold))))
@@ -161,7 +161,7 @@
    `(cursor ((,solanum-class (:foreground ,solanum-white :background ,solanum-mode-line))))
 
    ;; fringe
-   `(fringe ((,solanum-class (:foreground ,solanum-fl-builtin :background ,solanum-bg))))
+   `(fringe ((,solanum-class (:foreground ,solanum-fl-builtin :background ,solanum-bg-1))))
    `(diff-hl-change ((,solanum-class (:foreground ,solanum-change :background ,solanum-change))))
    `(diff-hl-insert ((,solanum-class (:foreground ,solanum-success :background ,solanum-success))))
    `(diff-hl-delete ((,solanum-class (:foreground ,solanum-error :background ,solanum-error))))
@@ -265,7 +265,7 @@
    ;; org-faces
    `(org-todo ((,solanum-class (:foreground ,solanum-error :weight bold))))
    `(org-done ((,solanum-class (:foreground ,solanum-success :weight bold))))
-   `(org-hide ((,solanum-class (:foreground ,solanum-bg))))
+   `(org-hide ((,solanum-class (:foreground ,solanum-bg-1))))
    `(org-table ((,solanum-class (:foreground ,solanum-yellow-potato))))
    `(org-table-header ((,solanum-class (:inverse-video t :inherit org-table))))
    `(org-date ((,solanum-class (:foreground ,solanum-alt-light-green))))
@@ -382,7 +382,7 @@
    `(doom-modeline-buffer-modified ((,solanum-class (:foreground ,solanum-tetradic-a-0 :inherit (doom-modeline warning bold)))))
 
    ;; corfu
-   `(corfu-default ((,solanum-class (:foreground ,solanum-fg-1 :background ,solanum-bg))))
+   `(corfu-default ((,solanum-class (:foreground ,solanum-fg-1 :background ,solanum-bg-1))))
    `(corfu-current ((,solanum-class (:foreground unspecified :background unspecified :extend t :inherit highlight))))
    `(corfu-bar ((,solanum-class (:background ,solanum-shadow))))
    `(corfu-border ((,solanum-class (:background ,solanum-shadow))))

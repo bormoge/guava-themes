@@ -60,7 +60,7 @@
 
       (dracaena-fg-1                      "#becee6")
       (dracaena-fg-2                      "#8292aa")
-      (dracaena-bg                        "#343a37")
+      (dracaena-bg-1                      "#343a37")
       (dracaena-highlight                 "#252b28")
       (dracaena-shadow                    "#b3b3b3")
       (dracaena-tooltip                   "#ffffe0")
@@ -122,7 +122,7 @@
    ;; with unique colors
 
    ;; default
-   `(default ((,dracaena-class (:foreground ,dracaena-fg-1 :background ,dracaena-bg))))
+   `(default ((,dracaena-class (:foreground ,dracaena-fg-1 :background ,dracaena-bg-1))))
 
    ;; error, warning, success
    `(error ((,dracaena-class (:foreground ,dracaena-error :weight bold))))
@@ -162,7 +162,7 @@
    `(cursor ((,dracaena-class (:foreground ,dracaena-white :background ,dracaena-mode-line))))
 
    ;; fringe
-   `(fringe ((,dracaena-class (:foreground ,dracaena-fl-builtin :background ,dracaena-bg))))
+   `(fringe ((,dracaena-class (:foreground ,dracaena-fl-builtin :background ,dracaena-bg-1))))
    `(diff-hl-change ((,dracaena-class (:foreground ,dracaena-change :background ,dracaena-change))))
    `(diff-hl-insert ((,dracaena-class (:foreground ,dracaena-success :background ,dracaena-success))))
    `(diff-hl-delete ((,dracaena-class (:foreground ,dracaena-error :background ,dracaena-error))))
@@ -266,7 +266,7 @@
    ;; org-faces
    `(org-todo ((,dracaena-class (:foreground ,dracaena-error :weight bold))))
    `(org-done ((,dracaena-class (:foreground ,dracaena-success :weight bold))))
-   `(org-hide ((,dracaena-class (:foreground ,dracaena-bg))))
+   `(org-hide ((,dracaena-class (:foreground ,dracaena-bg-1))))
    `(org-table ((,dracaena-class (:foreground ,dracaena-light-orange))))
    `(org-table-header ((,dracaena-class (:inverse-video t :inherit org-table))))
    `(org-date ((,dracaena-class (:foreground ,dracaena-orange))))
@@ -383,7 +383,7 @@
    `(doom-modeline-buffer-modified ((,dracaena-class (:foreground ,dracaena-tetradic-a-0 :inherit (doom-modeline warning bold)))))
 
    ;; corfu
-   `(corfu-default ((,dracaena-class (:foreground ,dracaena-fg-1 :background ,dracaena-bg))))
+   `(corfu-default ((,dracaena-class (:foreground ,dracaena-fg-1 :background ,dracaena-bg-1))))
    `(corfu-current ((,dracaena-class (:foreground unspecified :background unspecified :extend t :inherit highlight))))
    `(corfu-bar ((,dracaena-class (:background ,dracaena-shadow))))
    `(corfu-border ((,dracaena-class (:background ,dracaena-shadow))))

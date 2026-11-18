@@ -61,7 +61,7 @@
 
       (acer-fg-1                      "#000000")
       (acer-fg-2                      "#3c3c3c")
-      (acer-bg                        "#f7bb78")
+      (acer-bg-1                      "#f7bb78")
       (acer-highlight                 "#e3a764")
       (acer-shadow                    "#717171")
       (acer-tooltip                   "#ffffe0")
@@ -123,7 +123,7 @@
    ;; with unique colors
 
    ;; default
-   `(default ((,acer-class (:foreground ,acer-fg-1 :background ,acer-bg))))
+   `(default ((,acer-class (:foreground ,acer-fg-1 :background ,acer-bg-1))))
 
    ;; error, warning, success
    `(error ((,acer-class (:foreground ,acer-error :weight bold))))
@@ -163,7 +163,7 @@
    `(cursor ((,acer-class (:foreground ,acer-black :background ,acer-mode-line))))
 
    ;; fringe
-   `(fringe ((,acer-class (:foreground ,acer-fl-builtin :background ,acer-bg))))
+   `(fringe ((,acer-class (:foreground ,acer-fl-builtin :background ,acer-bg-1))))
    `(diff-hl-change ((,acer-class (:foreground ,acer-change :background ,acer-change))))
    `(diff-hl-insert ((,acer-class (:foreground ,acer-success :background ,acer-success))))
    `(diff-hl-delete ((,acer-class (:foreground ,acer-error :background ,acer-error))))
@@ -267,7 +267,7 @@
    ;; org-faces
    `(org-todo ((,acer-class (:foreground ,acer-error :weight bold))))
    `(org-done ((,acer-class (:foreground ,acer-success :weight bold))))
-   `(org-hide ((,acer-class (:foreground ,acer-bg))))
+   `(org-hide ((,acer-class (:foreground ,acer-bg-1))))
    `(org-table ((,acer-class (:foreground ,acer-deep-green))))
    `(org-table-header ((,acer-class (:inverse-video t :inherit org-table))))
    `(org-date ((,acer-class (:foreground ,acer-light-blue))))
@@ -384,7 +384,7 @@
    `(doom-modeline-buffer-modified ((,acer-class (:foreground ,acer-tetradic-a-0 :inherit (doom-modeline warning bold)))))
 
    ;; corfu
-   `(corfu-default ((,acer-class (:foreground ,acer-fg-1 :background ,acer-bg))))
+   `(corfu-default ((,acer-class (:foreground ,acer-fg-1 :background ,acer-bg-1))))
    `(corfu-current ((,acer-class (:foreground unspecified :background unspecified :extend t :inherit highlight))))
    `(corfu-bar ((,acer-class (:background ,acer-shadow))))
    `(corfu-border ((,acer-class (:background ,acer-shadow))))

@@ -60,7 +60,7 @@
 
       (cordyline-fg-1                      "#FFFFFF")
       (cordyline-fg-2                      "#c3c3c3")
-      (cordyline-bg                        "#2f212e")
+      (cordyline-bg-1                      "#2f212e")
       (cordyline-highlight                 "#3e303d")
       (cordyline-shadow                    "#b3b3b3")
       (cordyline-tooltip                   "#ffffe0")
@@ -122,7 +122,7 @@
    ;; with unique colors
 
    ;; default
-   `(default ((,cordyline-class (:foreground ,cordyline-fg-1 :background ,cordyline-bg))))
+   `(default ((,cordyline-class (:foreground ,cordyline-fg-1 :background ,cordyline-bg-1))))
 
    ;; error, warning, success
    `(error ((,cordyline-class (:foreground ,cordyline-error :weight bold))))
@@ -162,7 +162,7 @@
    `(cursor ((,cordyline-class (:foreground ,cordyline-white :background ,cordyline-mode-line))))
 
    ;; fringe
-   `(fringe ((,cordyline-class (:foreground ,cordyline-fl-builtin :background ,cordyline-bg))))
+   `(fringe ((,cordyline-class (:foreground ,cordyline-fl-builtin :background ,cordyline-bg-1))))
    `(diff-hl-change ((,cordyline-class (:foreground ,cordyline-change :background ,cordyline-change))))
    `(diff-hl-insert ((,cordyline-class (:foreground ,cordyline-success :background ,cordyline-success))))
    `(diff-hl-delete ((,cordyline-class (:foreground ,cordyline-error :background ,cordyline-error))))
@@ -266,7 +266,7 @@
    ;; org-faces
    `(org-todo ((,cordyline-class (:foreground ,cordyline-error :weight bold))))
    `(org-done ((,cordyline-class (:foreground ,cordyline-success :weight bold))))
-   `(org-hide ((,cordyline-class (:foreground ,cordyline-bg))))
+   `(org-hide ((,cordyline-class (:foreground ,cordyline-bg-1))))
    `(org-table ((,cordyline-class (:foreground ,cordyline-light-purple))))
    `(org-table-header ((,cordyline-class (:inverse-video t :inherit org-table))))
    `(org-date ((,cordyline-class (:foreground ,cordyline-orange-red))))
@@ -383,7 +383,7 @@
    `(doom-modeline-buffer-modified ((,cordyline-class (:foreground ,cordyline-tetradic-a-0 :inherit (doom-modeline warning bold)))))
 
    ;; corfu
-   `(corfu-default ((,cordyline-class (:foreground ,cordyline-fg-1 :background ,cordyline-bg))))
+   `(corfu-default ((,cordyline-class (:foreground ,cordyline-fg-1 :background ,cordyline-bg-1))))
    `(corfu-current ((,cordyline-class (:foreground unspecified :background unspecified :extend t :inherit highlight))))
    `(corfu-bar ((,cordyline-class (:background ,cordyline-shadow))))
    `(corfu-border ((,cordyline-class (:background ,cordyline-shadow))))

@@ -63,7 +63,7 @@
 
       (rhododendron-fg-1                      "#000000")
       (rhododendron-fg-2                      "#3c3c3c")
-      (rhododendron-bg                        "#e8c7e3")
+      (rhododendron-bg-1                      "#e8c7e3")
       (rhododendron-highlight                 "#d4b3cf")
       (rhododendron-shadow                    "#898989")
       (rhododendron-tooltip                   "#ffffe0")
@@ -125,7 +125,7 @@
    ;; with unique colors
 
    ;; default
-   `(default ((,rhododendron-class (:foreground ,rhododendron-fg-1 :background ,rhododendron-bg))))
+   `(default ((,rhododendron-class (:foreground ,rhododendron-fg-1 :background ,rhododendron-bg-1))))
 
    ;; error, warning, success
    `(error ((,rhododendron-class (:foreground ,rhododendron-error :weight bold))))
@@ -165,7 +165,7 @@
    `(cursor ((,rhododendron-class (:foreground ,rhododendron-black :background ,rhododendron-mode-line))))
 
    ;; fringe
-   `(fringe ((,rhododendron-class (:foreground ,rhododendron-fl-builtin :background ,rhododendron-bg))))
+   `(fringe ((,rhododendron-class (:foreground ,rhododendron-fl-builtin :background ,rhododendron-bg-1))))
    `(diff-hl-change ((,rhododendron-class (:foreground ,rhododendron-change :background ,rhododendron-change))))
    `(diff-hl-insert ((,rhododendron-class (:foreground ,rhododendron-success :background ,rhododendron-success))))
    `(diff-hl-delete ((,rhododendron-class (:foreground ,rhododendron-error :background ,rhododendron-error))))
@@ -269,7 +269,7 @@
    ;; org-faces
    `(org-todo ((,rhododendron-class (:foreground ,rhododendron-error :weight bold))))
    `(org-done ((,rhododendron-class (:foreground ,rhododendron-success :weight bold))))
-   `(org-hide ((,rhododendron-class (:foreground ,rhododendron-bg))))
+   `(org-hide ((,rhododendron-class (:foreground ,rhododendron-bg-1))))
    `(org-table ((,rhododendron-class (:foreground ,rhododendron-red))))
    `(org-table-header ((,rhododendron-class (:inverse-video t :inherit org-table))))
    `(org-date ((,rhododendron-class (:foreground ,rhododendron-red-orange))))
@@ -386,7 +386,7 @@
    `(doom-modeline-buffer-modified ((,rhododendron-class (:foreground ,rhododendron-tetradic-a-0 :inherit (doom-modeline warning bold)))))
 
    ;; corfu
-   `(corfu-default ((,rhododendron-class (:foreground ,rhododendron-fg-1 :background ,rhododendron-bg))))
+   `(corfu-default ((,rhododendron-class (:foreground ,rhododendron-fg-1 :background ,rhododendron-bg-1))))
    `(corfu-current ((,rhododendron-class (:foreground unspecified :background unspecified :extend t :inherit highlight))))
    `(corfu-bar ((,rhododendron-class (:background ,rhododendron-shadow))))
    `(corfu-border ((,rhododendron-class (:background ,rhododendron-shadow))))

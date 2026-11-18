@@ -60,7 +60,7 @@
 
       (lavandula-fg-1                      "#505050")
       (lavandula-fg-2                      "#a5a5a5")
-      (lavandula-bg                        "#eee8d9")
+      (lavandula-bg-1                      "#eee8d9")
       (lavandula-highlight                 "#dad4c5")
       (lavandula-shadow                    "#898989")
       (lavandula-tooltip                   "#ffffe0")
@@ -122,7 +122,7 @@
    ;; with unique colors
 
    ;; default
-   `(default ((,lavandula-class (:foreground ,lavandula-fg-1 :background ,lavandula-bg))))
+   `(default ((,lavandula-class (:foreground ,lavandula-fg-1 :background ,lavandula-bg-1))))
 
    ;; error, warning, success
    `(error ((,lavandula-class (:foreground ,lavandula-error :weight bold))))
@@ -162,7 +162,7 @@
    `(cursor ((,lavandula-class (:foreground ,lavandula-white :background ,lavandula-mode-line))))
 
    ;; fringe
-   `(fringe ((,lavandula-class (:foreground ,lavandula-fl-builtin :background ,lavandula-bg))))
+   `(fringe ((,lavandula-class (:foreground ,lavandula-fl-builtin :background ,lavandula-bg-1))))
    `(diff-hl-change ((,lavandula-class (:foreground ,lavandula-change :background ,lavandula-change))))
    `(diff-hl-insert ((,lavandula-class (:foreground ,lavandula-success :background ,lavandula-success))))
    `(diff-hl-delete ((,lavandula-class (:foreground ,lavandula-error :background ,lavandula-error))))
@@ -266,7 +266,7 @@
    ;; org-faces
    `(org-todo ((,lavandula-class (:foreground ,lavandula-error :weight bold))))
    `(org-done ((,lavandula-class (:foreground ,lavandula-success :weight bold))))
-   `(org-hide ((,lavandula-class (:foreground ,lavandula-bg))))
+   `(org-hide ((,lavandula-class (:foreground ,lavandula-bg-1))))
    `(org-table ((,lavandula-class (:foreground ,lavandula-lavender))))
    `(org-table-header ((,lavandula-class (:inverse-video t :inherit org-table))))
    `(org-date ((,lavandula-class (:foreground ,lavandula-red))))
@@ -383,7 +383,7 @@
    `(doom-modeline-buffer-modified ((,lavandula-class (:foreground ,lavandula-tetradic-a-0 :inherit (doom-modeline warning bold)))))
 
    ;; corfu
-   `(corfu-default ((,lavandula-class (:foreground ,lavandula-fg-1 :background ,lavandula-bg))))
+   `(corfu-default ((,lavandula-class (:foreground ,lavandula-fg-1 :background ,lavandula-bg-1))))
    `(corfu-current ((,lavandula-class (:foreground unspecified :background unspecified :extend t :inherit highlight))))
    `(corfu-bar ((,lavandula-class (:background ,lavandula-shadow))))
    `(corfu-border ((,lavandula-class (:background ,lavandula-shadow))))

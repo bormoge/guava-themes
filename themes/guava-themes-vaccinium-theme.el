@@ -61,7 +61,7 @@
 
       (vaccinium-fg-1                      "#FFFFFF")
       (vaccinium-fg-2                      "#c3c3c3")
-      (vaccinium-bg                        "#1c1c26")
+      (vaccinium-bg-1                      "#1c1c26")
       (vaccinium-highlight                 "#30303a")
       (vaccinium-shadow                    "#b3b3b3")
       (vaccinium-tooltip                   "#ffffe0")
@@ -123,7 +123,7 @@
    ;; with unique colors
 
    ;; default
-   `(default ((,vaccinium-class (:foreground ,vaccinium-fg-1 :background ,vaccinium-bg))))
+   `(default ((,vaccinium-class (:foreground ,vaccinium-fg-1 :background ,vaccinium-bg-1))))
 
    ;; error, warning, success
    `(error ((,vaccinium-class (:foreground ,vaccinium-error :weight bold))))
@@ -163,7 +163,7 @@
    `(cursor ((,vaccinium-class (:foreground ,vaccinium-white :background ,vaccinium-mode-line))))
 
    ;; fringe
-   `(fringe ((,vaccinium-class (:foreground ,vaccinium-fl-builtin :background ,vaccinium-bg))))
+   `(fringe ((,vaccinium-class (:foreground ,vaccinium-fl-builtin :background ,vaccinium-bg-1))))
    `(diff-hl-change ((,vaccinium-class (:foreground ,vaccinium-change :background ,vaccinium-change))))
    `(diff-hl-insert ((,vaccinium-class (:foreground ,vaccinium-success :background ,vaccinium-success))))
    `(diff-hl-delete ((,vaccinium-class (:foreground ,vaccinium-error :background ,vaccinium-error))))
@@ -267,7 +267,7 @@
    ;; org-faces
    `(org-todo ((,vaccinium-class (:foreground ,vaccinium-error :weight bold))))
    `(org-done ((,vaccinium-class (:foreground ,vaccinium-success :weight bold))))
-   `(org-hide ((,vaccinium-class (:foreground ,vaccinium-bg))))
+   `(org-hide ((,vaccinium-class (:foreground ,vaccinium-bg-1))))
    `(org-table ((,vaccinium-class (:foreground ,vaccinium-blueberry))))
    `(org-table-header ((,vaccinium-class (:inverse-video t :inherit org-table))))
    `(org-date ((,vaccinium-class (:foreground ,vaccinium-purple-pink))))
@@ -384,7 +384,7 @@
    `(doom-modeline-buffer-modified ((,vaccinium-class (:foreground ,vaccinium-tetradic-a-0 :inherit (doom-modeline warning bold)))))
 
    ;; corfu
-   `(corfu-default ((,vaccinium-class (:foreground ,vaccinium-fg-1 :background ,vaccinium-bg))))
+   `(corfu-default ((,vaccinium-class (:foreground ,vaccinium-fg-1 :background ,vaccinium-bg-1))))
    `(corfu-current ((,vaccinium-class (:foreground unspecified :background unspecified :extend t :inherit highlight))))
    `(corfu-bar ((,vaccinium-class (:background ,vaccinium-shadow))))
    `(corfu-border ((,vaccinium-class (:background ,vaccinium-shadow))))

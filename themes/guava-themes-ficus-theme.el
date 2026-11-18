@@ -63,7 +63,7 @@
 
       (ficus-fg-1                      "#d7d7d7")
       (ficus-fg-2                      "#878787")
-      (ficus-bg                        "#232020")
+      (ficus-bg-1                      "#232020")
       (ficus-highlight                 "#322f2f")
       (ficus-shadow                    "#7b7b7b")
       (ficus-tooltip                   "#ffffe0")
@@ -126,7 +126,7 @@
    ;; with unique colors
 
    ;; default
-   `(default ((,ficus-class (:foreground ,ficus-fg-1 :background ,ficus-bg))))
+   `(default ((,ficus-class (:foreground ,ficus-fg-1 :background ,ficus-bg-1))))
 
    ;; error, warning, success
    `(error ((,ficus-class (:foreground ,ficus-error :weight bold))))
@@ -166,7 +166,7 @@
    `(cursor ((,ficus-class (:foreground ,ficus-white :background ,ficus-mode-line))))
 
    ;; fringe
-   `(fringe ((,ficus-class (:foreground ,ficus-fl-builtin :background ,ficus-bg))))
+   `(fringe ((,ficus-class (:foreground ,ficus-fl-builtin :background ,ficus-bg-1))))
    `(diff-hl-change ((,ficus-class (:foreground ,ficus-change :background ,ficus-change))))
    `(diff-hl-insert ((,ficus-class (:foreground ,ficus-success :background ,ficus-success))))
    `(diff-hl-delete ((,ficus-class (:foreground ,ficus-error :background ,ficus-error))))
@@ -270,7 +270,7 @@
    ;; org-faces
    `(org-todo ((,ficus-class (:foreground ,ficus-error :weight bold))))
    `(org-done ((,ficus-class (:foreground ,ficus-success :weight bold))))
-   `(org-hide ((,ficus-class (:foreground ,ficus-bg))))
+   `(org-hide ((,ficus-class (:foreground ,ficus-bg-1))))
    `(org-table ((,ficus-class (:foreground ,ficus-light-red))))
    `(org-table-header ((,ficus-class (:inverse-video t :inherit org-table))))
    `(org-date ((,ficus-class (:foreground ,ficus-purple-red))))
@@ -387,7 +387,7 @@
    `(doom-modeline-buffer-modified ((,ficus-class (:foreground ,ficus-tetradic-a-0 :inherit (doom-modeline warning bold)))))
 
    ;; corfu
-   `(corfu-default ((,ficus-class (:foreground ,ficus-fg-1 :background ,ficus-bg))))
+   `(corfu-default ((,ficus-class (:foreground ,ficus-fg-1 :background ,ficus-bg-1))))
    `(corfu-current ((,ficus-class (:foreground unspecified :background unspecified :extend t :inherit highlight))))
    `(corfu-bar ((,ficus-class (:background ,ficus-shadow))))
    `(corfu-border ((,ficus-class (:background ,ficus-shadow))))

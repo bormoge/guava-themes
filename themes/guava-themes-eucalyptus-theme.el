@@ -59,7 +59,7 @@
 
       (eucalyptus-fg-1                      "#2d3241")
       (eucalyptus-fg-2                      "#696e7d")
-      (eucalyptus-bg                        "#a5aa96")
+      (eucalyptus-bg-1                      "#a5aa96")
       (eucalyptus-highlight                 "#9ba08c")
       (eucalyptus-shadow                    "#717171")
       (eucalyptus-tooltip                   "#ffffe0")
@@ -121,7 +121,7 @@
    ;; with unique colors
 
    ;; default
-   `(default ((,eucalyptus-class (:foreground ,eucalyptus-fg-1 :background ,eucalyptus-bg))))
+   `(default ((,eucalyptus-class (:foreground ,eucalyptus-fg-1 :background ,eucalyptus-bg-1))))
 
    ;; error, warning, success
    `(error ((,eucalyptus-class (:foreground ,eucalyptus-error :weight bold))))
@@ -161,7 +161,7 @@
    `(cursor ((,eucalyptus-class (:foreground ,eucalyptus-white :background ,eucalyptus-mode-line))))
 
    ;; fringe
-   `(fringe ((,eucalyptus-class (:foreground ,eucalyptus-fl-builtin :background ,eucalyptus-bg))))
+   `(fringe ((,eucalyptus-class (:foreground ,eucalyptus-fl-builtin :background ,eucalyptus-bg-1))))
    `(diff-hl-change ((,eucalyptus-class (:foreground ,eucalyptus-change :background ,eucalyptus-change))))
    `(diff-hl-insert ((,eucalyptus-class (:foreground ,eucalyptus-success :background ,eucalyptus-success))))
    `(diff-hl-delete ((,eucalyptus-class (:foreground ,eucalyptus-error :background ,eucalyptus-error))))
@@ -265,7 +265,7 @@
    ;; org-faces
    `(org-todo ((,eucalyptus-class (:foreground ,eucalyptus-error :weight bold))))
    `(org-done ((,eucalyptus-class (:foreground ,eucalyptus-success :weight bold))))
-   `(org-hide ((,eucalyptus-class (:foreground ,eucalyptus-bg))))
+   `(org-hide ((,eucalyptus-class (:foreground ,eucalyptus-bg-1))))
    `(org-table ((,eucalyptus-class (:foreground ,eucalyptus-alt-deep-blue))))
    `(org-table-header ((,eucalyptus-class (:inverse-video t :inherit org-table))))
    `(org-date ((,eucalyptus-class (:foreground ,eucalyptus-purple-red))))
@@ -382,7 +382,7 @@
    `(doom-modeline-buffer-modified ((,eucalyptus-class (:foreground ,eucalyptus-tetradic-a-0 :inherit (doom-modeline warning bold)))))
 
    ;; corfu
-   `(corfu-default ((,eucalyptus-class (:foreground ,eucalyptus-fg-1 :background ,eucalyptus-bg))))
+   `(corfu-default ((,eucalyptus-class (:foreground ,eucalyptus-fg-1 :background ,eucalyptus-bg-1))))
    `(corfu-current ((,eucalyptus-class (:foreground unspecified :background unspecified :extend t :inherit highlight))))
    `(corfu-bar ((,eucalyptus-class (:background ,eucalyptus-shadow))))
    `(corfu-border ((,eucalyptus-class (:background ,eucalyptus-shadow))))

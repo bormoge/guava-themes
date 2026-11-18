@@ -60,7 +60,7 @@
 
       (jacaranda-fg-1                      "#000000")
       (jacaranda-fg-2                      "#3c3c3c")
-      (jacaranda-bg                        "#e9d9f9")
+      (jacaranda-bg-1                      "#e9d9f9")
       (jacaranda-highlight                 "#d5c5e5")
       (jacaranda-shadow                    "#898989")
       (jacaranda-tooltip                   "#ffffe0")
@@ -122,7 +122,7 @@
    ;; with unique colors
 
    ;; default
-   `(default ((,jacaranda-class (:foreground ,jacaranda-fg-1 :background ,jacaranda-bg))))
+   `(default ((,jacaranda-class (:foreground ,jacaranda-fg-1 :background ,jacaranda-bg-1))))
 
    ;; error, warning, success
    `(error ((,jacaranda-class (:foreground ,jacaranda-error :weight bold))))
@@ -162,7 +162,7 @@
    `(cursor ((,jacaranda-class (:foreground ,jacaranda-white :background ,jacaranda-mode-line))))
 
    ;; fringe
-   `(fringe ((,jacaranda-class (:foreground ,jacaranda-fl-builtin :background ,jacaranda-bg))))
+   `(fringe ((,jacaranda-class (:foreground ,jacaranda-fl-builtin :background ,jacaranda-bg-1))))
    `(diff-hl-change ((,jacaranda-class (:foreground ,jacaranda-change :background ,jacaranda-change))))
    `(diff-hl-insert ((,jacaranda-class (:foreground ,jacaranda-success :background ,jacaranda-success))))
    `(diff-hl-delete ((,jacaranda-class (:foreground ,jacaranda-error :background ,jacaranda-error))))
@@ -266,7 +266,7 @@
    ;; org-faces
    `(org-todo ((,jacaranda-class (:foreground ,jacaranda-error :weight bold))))
    `(org-done ((,jacaranda-class (:foreground ,jacaranda-success :weight bold))))
-   `(org-hide ((,jacaranda-class (:foreground ,jacaranda-bg))))
+   `(org-hide ((,jacaranda-class (:foreground ,jacaranda-bg-1))))
    `(org-table ((,jacaranda-class (:foreground ,jacaranda-deep-blue))))
    `(org-table-header ((,jacaranda-class (:inverse-video t :inherit org-table))))
    `(org-date ((,jacaranda-class (:foreground ,jacaranda-red))))
@@ -383,7 +383,7 @@
    `(doom-modeline-buffer-modified ((,jacaranda-class (:foreground ,jacaranda-tetradic-a-0 :inherit (doom-modeline warning bold)))))
 
    ;; corfu
-   `(corfu-default ((,jacaranda-class (:foreground ,jacaranda-fg-1 :background ,jacaranda-bg))))
+   `(corfu-default ((,jacaranda-class (:foreground ,jacaranda-fg-1 :background ,jacaranda-bg-1))))
    `(corfu-current ((,jacaranda-class (:foreground unspecified :background unspecified :extend t :inherit highlight))))
    `(corfu-bar ((,jacaranda-class (:background ,jacaranda-shadow))))
    `(corfu-border ((,jacaranda-class (:background ,jacaranda-shadow))))

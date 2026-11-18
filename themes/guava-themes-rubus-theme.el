@@ -62,7 +62,7 @@
 
       (rubus-fg-1                      "#FFFFFF")
       (rubus-fg-2                      "#c3c3c3")
-      (rubus-bg                        "#0e1216")
+      (rubus-bg-1                      "#0e1216")
       (rubus-highlight                 "#22262a")
       (rubus-shadow                    "#b3b3b3")
       (rubus-tooltip                   "#ffffe0")
@@ -124,7 +124,7 @@
    ;; with unique colors
 
    ;; default
-   `(default ((,rubus-class (:foreground ,rubus-fg-1 :background ,rubus-bg))))
+   `(default ((,rubus-class (:foreground ,rubus-fg-1 :background ,rubus-bg-1))))
 
    ;; error, warning, success
    `(error ((,rubus-class (:foreground ,rubus-error :weight bold))))
@@ -164,7 +164,7 @@
    `(cursor ((,rubus-class (:foreground ,rubus-white :background ,rubus-mode-line))))
 
    ;; fringe
-   `(fringe ((,rubus-class (:foreground ,rubus-fl-builtin :background ,rubus-bg))))
+   `(fringe ((,rubus-class (:foreground ,rubus-fl-builtin :background ,rubus-bg-1))))
    `(diff-hl-change ((,rubus-class (:foreground ,rubus-change :background ,rubus-change))))
    `(diff-hl-insert ((,rubus-class (:foreground ,rubus-success :background ,rubus-success))))
    `(diff-hl-delete ((,rubus-class (:foreground ,rubus-error :background ,rubus-error))))
@@ -268,7 +268,7 @@
    ;; org-faces
    `(org-todo ((,rubus-class (:foreground ,rubus-error :weight bold))))
    `(org-done ((,rubus-class (:foreground ,rubus-success :weight bold))))
-   `(org-hide ((,rubus-class (:foreground ,rubus-bg))))
+   `(org-hide ((,rubus-class (:foreground ,rubus-bg-1))))
    `(org-table ((,rubus-class (:foreground ,rubus-pink-cream))))
    `(org-table-header ((,rubus-class (:inverse-video t :inherit org-table))))
    `(org-date ((,rubus-class (:foreground ,rubus-green-blue))))
@@ -385,7 +385,7 @@
    `(doom-modeline-buffer-modified ((,rubus-class (:foreground ,rubus-tetradic-a-0 :inherit (doom-modeline warning bold)))))
 
    ;; corfu
-   `(corfu-default ((,rubus-class (:foreground ,rubus-fg-1 :background ,rubus-bg))))
+   `(corfu-default ((,rubus-class (:foreground ,rubus-fg-1 :background ,rubus-bg-1))))
    `(corfu-current ((,rubus-class (:foreground unspecified :background unspecified :extend t :inherit highlight))))
    `(corfu-bar ((,rubus-class (:background ,rubus-shadow))))
    `(corfu-border ((,rubus-class (:background ,rubus-shadow))))

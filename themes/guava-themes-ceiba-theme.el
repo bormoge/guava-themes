@@ -64,7 +64,7 @@
 
       (ceiba-fg-1                      "#000000")
       (ceiba-fg-2                      "#3c3c3c")
-      (ceiba-bg                        "#bab49e")
+      (ceiba-bg-1                      "#bab49e")
       (ceiba-highlight                 "#a6a08a")
       (ceiba-shadow                    "#7f7f7f")
       (ceiba-tooltip                   "#ffffe0")
@@ -126,7 +126,7 @@
    ;; with unique colors
 
    ;; default
-   `(default ((,ceiba-class (:foreground ,ceiba-fg-1 :background ,ceiba-bg))))
+   `(default ((,ceiba-class (:foreground ,ceiba-fg-1 :background ,ceiba-bg-1))))
 
    ;; error, warning, success
    `(error ((,ceiba-class (:foreground ,ceiba-error :weight bold))))
@@ -166,7 +166,7 @@
    `(cursor ((,ceiba-class (:foreground ,ceiba-white :background ,ceiba-mode-line))))
 
    ;; fringe
-   `(fringe ((,ceiba-class (:foreground ,ceiba-fl-builtin :background ,ceiba-bg))))
+   `(fringe ((,ceiba-class (:foreground ,ceiba-fl-builtin :background ,ceiba-bg-1))))
    `(diff-hl-change ((,ceiba-class (:foreground ,ceiba-change :background ,ceiba-change))))
    `(diff-hl-insert ((,ceiba-class (:foreground ,ceiba-success :background ,ceiba-success))))
    `(diff-hl-delete ((,ceiba-class (:foreground ,ceiba-error :background ,ceiba-error))))
@@ -270,7 +270,7 @@
    ;; org-faces
    `(org-todo ((,ceiba-class (:foreground ,ceiba-error :weight bold))))
    `(org-done ((,ceiba-class (:foreground ,ceiba-success :weight bold))))
-   `(org-hide ((,ceiba-class (:foreground ,ceiba-bg))))
+   `(org-hide ((,ceiba-class (:foreground ,ceiba-bg-1))))
    `(org-table ((,ceiba-class (:foreground ,ceiba-brown-wood))))
    `(org-table-header ((,ceiba-class (:inverse-video t :inherit org-table))))
    `(org-date ((,ceiba-class (:foreground ,ceiba-orange))))
@@ -387,7 +387,7 @@
    `(doom-modeline-buffer-modified ((,ceiba-class (:foreground ,ceiba-tetradic-a-0 :inherit (doom-modeline warning bold)))))
 
    ;; corfu
-   `(corfu-default ((,ceiba-class (:foreground ,ceiba-fg-1 :background ,ceiba-bg))))
+   `(corfu-default ((,ceiba-class (:foreground ,ceiba-fg-1 :background ,ceiba-bg-1))))
    `(corfu-current ((,ceiba-class (:foreground unspecified :background unspecified :extend t :inherit highlight))))
    `(corfu-bar ((,ceiba-class (:background ,ceiba-shadow))))
    `(corfu-border ((,ceiba-class (:background ,ceiba-shadow))))

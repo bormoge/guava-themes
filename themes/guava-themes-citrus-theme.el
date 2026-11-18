@@ -65,7 +65,7 @@
 
       (citrus-fg-1                      "#000000")
       (citrus-fg-2                      "#3c3c3c")
-      (citrus-bg                        "#edf2ed")
+      (citrus-bg-1                      "#edf2ed")
       (citrus-highlight                 "#d9ded9")
       (citrus-shadow                    "#6b6b6b")
       (citrus-tooltip                   "#ffffe0")
@@ -127,7 +127,7 @@
    ;; with unique colors
 
    ;; default
-   `(default ((,citrus-class (:foreground ,citrus-fg-1 :background ,citrus-bg))))
+   `(default ((,citrus-class (:foreground ,citrus-fg-1 :background ,citrus-bg-1))))
 
    ;; error, warning, success
    `(error ((,citrus-class (:foreground ,citrus-error :weight bold))))
@@ -167,7 +167,7 @@
    `(cursor ((,citrus-class (:foreground ,citrus-white :background ,citrus-mode-line))))
 
    ;; fringe
-   `(fringe ((,citrus-class (:foreground ,citrus-fl-builtin :background ,citrus-bg))))
+   `(fringe ((,citrus-class (:foreground ,citrus-fl-builtin :background ,citrus-bg-1))))
    `(diff-hl-change ((,citrus-class (:foreground ,citrus-change :background ,citrus-change))))
    `(diff-hl-insert ((,citrus-class (:foreground ,citrus-success :background ,citrus-success))))
    `(diff-hl-delete ((,citrus-class (:foreground ,citrus-error :background ,citrus-error))))
@@ -271,7 +271,7 @@
    ;; org-faces
    `(org-todo ((,citrus-class (:foreground ,citrus-error :weight bold))))
    `(org-done ((,citrus-class (:foreground ,citrus-success :weight bold))))
-   `(org-hide ((,citrus-class (:foreground ,citrus-bg))))
+   `(org-hide ((,citrus-class (:foreground ,citrus-bg-1))))
    `(org-table ((,citrus-class (:foreground ,citrus-orange-red))))
    `(org-table-header ((,citrus-class (:inverse-video t :inherit org-table))))
    `(org-date ((,citrus-class (:foreground ,citrus-purple-red))))
@@ -388,7 +388,7 @@
    `(doom-modeline-buffer-modified ((,citrus-class (:foreground ,citrus-tetradic-a-0 :inherit (doom-modeline warning bold)))))
 
    ;; corfu
-   `(corfu-default ((,citrus-class (:foreground ,citrus-fg-1 :background ,citrus-bg))))
+   `(corfu-default ((,citrus-class (:foreground ,citrus-fg-1 :background ,citrus-bg-1))))
    `(corfu-current ((,citrus-class (:foreground unspecified :background unspecified :extend t :inherit highlight))))
    `(corfu-bar ((,citrus-class (:background ,citrus-shadow))))
    `(corfu-border ((,citrus-class (:background ,citrus-shadow))))

@@ -64,7 +64,7 @@
 
       (prunus-fg-1                      "#ebafc8")
       (prunus-fg-2                      "#af738c")
-      (prunus-bg                        "#190f05")
+      (prunus-bg-1                      "#190f05")
       (prunus-highlight                 "#2d2319")
       (prunus-shadow                    "#b3b3b3")
       (prunus-tooltip                   "#ffffe0")
@@ -126,7 +126,7 @@
    ;; with unique colors
 
    ;; default
-   `(default ((,prunus-class (:foreground ,prunus-fg-1 :background ,prunus-bg))))
+   `(default ((,prunus-class (:foreground ,prunus-fg-1 :background ,prunus-bg-1))))
 
    ;; error, warning, success
    `(error ((,prunus-class (:foreground ,prunus-error :weight bold))))
@@ -166,7 +166,7 @@
    `(cursor ((,prunus-class (:foreground ,prunus-white :background ,prunus-mode-line))))
 
    ;; fringe
-   `(fringe ((,prunus-class (:foreground ,prunus-fl-builtin :background ,prunus-bg))))
+   `(fringe ((,prunus-class (:foreground ,prunus-fl-builtin :background ,prunus-bg-1))))
    `(diff-hl-change ((,prunus-class (:foreground ,prunus-change :background ,prunus-change))))
    `(diff-hl-insert ((,prunus-class (:foreground ,prunus-success :background ,prunus-success))))
    `(diff-hl-delete ((,prunus-class (:foreground ,prunus-error :background ,prunus-error))))
@@ -270,7 +270,7 @@
    ;; org-faces
    `(org-todo ((,prunus-class (:foreground ,prunus-error :weight bold))))
    `(org-done ((,prunus-class (:foreground ,prunus-success :weight bold))))
-   `(org-hide ((,prunus-class (:foreground ,prunus-bg))))
+   `(org-hide ((,prunus-class (:foreground ,prunus-bg-1))))
    `(org-table ((,prunus-class (:foreground ,prunus-light-pink))))
    `(org-table-header ((,prunus-class (:inverse-video t :inherit org-table))))
    `(org-date ((,prunus-class (:foreground ,prunus-deep-red))))
@@ -387,7 +387,7 @@
    `(doom-modeline-buffer-modified ((,prunus-class (:foreground ,prunus-tetradic-a-0 :inherit (doom-modeline warning bold)))))
 
    ;; corfu
-   `(corfu-default ((,prunus-class (:foreground ,prunus-fg-1 :background ,prunus-bg))))
+   `(corfu-default ((,prunus-class (:foreground ,prunus-fg-1 :background ,prunus-bg-1))))
    `(corfu-current ((,prunus-class (:foreground unspecified :background unspecified :extend t :inherit highlight))))
    `(corfu-bar ((,prunus-class (:background ,prunus-shadow))))
    `(corfu-border ((,prunus-class (:background ,prunus-shadow))))

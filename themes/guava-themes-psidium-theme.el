@@ -57,7 +57,7 @@
 
       (psidium-fg-1                      "#000000")
       (psidium-fg-2                      "#3c3c3c")
-      (psidium-bg                        "#F1EECE")
+      (psidium-bg-1                      "#F1EECE")
       (psidium-highlight                 "#dddaba")
       (psidium-shadow                    "#7f7f7f")
       (psidium-tooltip                   "#ffffe0")
@@ -119,7 +119,7 @@
    ;; with unique colors
 
    ;; default
-   `(default ((,psidium-class (:foreground ,psidium-fg-1 :background ,psidium-bg))))
+   `(default ((,psidium-class (:foreground ,psidium-fg-1 :background ,psidium-bg-1))))
 
    ;; error, warning, success
    `(error ((,psidium-class (:foreground ,psidium-error :weight bold))))
@@ -159,7 +159,7 @@
    `(cursor ((,psidium-class (:foreground ,psidium-black :background ,psidium-mode-line))))
 
    ;; fringe
-   `(fringe ((,psidium-class (:foreground ,psidium-fl-builtin :background ,psidium-bg))))
+   `(fringe ((,psidium-class (:foreground ,psidium-fl-builtin :background ,psidium-bg-1))))
    `(diff-hl-change ((,psidium-class (:foreground ,psidium-change :background ,psidium-change))))
    `(diff-hl-insert ((,psidium-class (:foreground ,psidium-success :background ,psidium-success))))
    `(diff-hl-delete ((,psidium-class (:foreground ,psidium-error :background ,psidium-error))))
@@ -263,7 +263,7 @@
    ;; org-faces
    `(org-todo ((,psidium-class (:foreground ,psidium-error :weight bold))))
    `(org-done ((,psidium-class (:foreground ,psidium-success :weight bold))))
-   `(org-hide ((,psidium-class (:foreground ,psidium-bg))))
+   `(org-hide ((,psidium-class (:foreground ,psidium-bg-1))))
    `(org-table ((,psidium-class (:foreground ,psidium-deep-green))))
    `(org-table-header ((,psidium-class (:inverse-video t :inherit org-table))))
    `(org-date ((,psidium-class (:foreground ,psidium-pink))))
@@ -380,7 +380,7 @@
    `(doom-modeline-buffer-modified ((,psidium-class (:foreground ,psidium-tetradic-a-0 :inherit (doom-modeline warning bold)))))
 
    ;; corfu
-   `(corfu-default ((,psidium-class (:foreground ,psidium-fg-1 :background ,psidium-bg))))
+   `(corfu-default ((,psidium-class (:foreground ,psidium-fg-1 :background ,psidium-bg-1))))
    `(corfu-current ((,psidium-class (:foreground unspecified :background unspecified :extend t :inherit highlight))))
    `(corfu-bar ((,psidium-class (:background ,psidium-shadow))))
    `(corfu-border ((,psidium-class (:background ,psidium-shadow))))

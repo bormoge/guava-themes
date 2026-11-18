@@ -60,7 +60,7 @@
 
       (pyrus-fg-1                      "#780000")
       (pyrus-fg-2                      "#b43c3c")
-      (pyrus-bg                        "#f9fefd")
+      (pyrus-bg-1                      "#f9fefd")
       (pyrus-highlight                 "#e5eae9")
       (pyrus-shadow                    "#898989")
       (pyrus-tooltip                   "#ffffe0")
@@ -122,7 +122,7 @@
    ;; with unique colors
 
    ;; default
-   `(default ((,pyrus-class (:foreground ,pyrus-fg-1 :background ,pyrus-bg))))
+   `(default ((,pyrus-class (:foreground ,pyrus-fg-1 :background ,pyrus-bg-1))))
 
    ;; error, warning, success
    `(error ((,pyrus-class (:foreground ,pyrus-error :weight bold))))
@@ -162,7 +162,7 @@
    `(cursor ((,pyrus-class (:foreground ,pyrus-white :background ,pyrus-mode-line))))
 
    ;; fringe
-   `(fringe ((,pyrus-class (:foreground ,pyrus-fl-builtin :background ,pyrus-bg))))
+   `(fringe ((,pyrus-class (:foreground ,pyrus-fl-builtin :background ,pyrus-bg-1))))
    `(diff-hl-change ((,pyrus-class (:foreground ,pyrus-change :background ,pyrus-change))))
    `(diff-hl-insert ((,pyrus-class (:foreground ,pyrus-success :background ,pyrus-success))))
    `(diff-hl-delete ((,pyrus-class (:foreground ,pyrus-error :background ,pyrus-error))))
@@ -266,7 +266,7 @@
    ;; org-faces
    `(org-todo ((,pyrus-class (:foreground ,pyrus-error :weight bold))))
    `(org-done ((,pyrus-class (:foreground ,pyrus-success :weight bold))))
-   `(org-hide ((,pyrus-class (:foreground ,pyrus-bg))))
+   `(org-hide ((,pyrus-class (:foreground ,pyrus-bg-1))))
    `(org-table ((,pyrus-class (:foreground ,pyrus-green))))
    `(org-table-header ((,pyrus-class (:inverse-video t :inherit org-table))))
    `(org-date ((,pyrus-class (:foreground ,pyrus-orange-subdued))))
@@ -383,7 +383,7 @@
    `(doom-modeline-buffer-modified ((,pyrus-class (:foreground ,pyrus-tetradic-a-0 :inherit (doom-modeline warning bold)))))
 
    ;; corfu
-   `(corfu-default ((,pyrus-class (:foreground ,pyrus-fg-1 :background ,pyrus-bg))))
+   `(corfu-default ((,pyrus-class (:foreground ,pyrus-fg-1 :background ,pyrus-bg-1))))
    `(corfu-current ((,pyrus-class (:foreground unspecified :background unspecified :extend t :inherit highlight))))
    `(corfu-bar ((,pyrus-class (:background ,pyrus-shadow))))
    `(corfu-border ((,pyrus-class (:background ,pyrus-shadow))))

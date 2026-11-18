@@ -58,7 +58,7 @@
 
       (petunia-fg-1                      "#FFFFFF")
       (petunia-fg-2                      "#c3c3c3")
-      (petunia-bg                        "#000000")
+      (petunia-bg-1                      "#000000")
       (petunia-highlight                 "#1e1e1e")
       (petunia-shadow                    "#b3b3b3")
       (petunia-tooltip                   "#ffffe0")
@@ -120,7 +120,7 @@
    ;; with unique colors
 
    ;; default
-   `(default ((,petunia-class (:foreground ,petunia-fg-1 :background ,petunia-bg))))
+   `(default ((,petunia-class (:foreground ,petunia-fg-1 :background ,petunia-bg-1))))
 
    ;; error, warning, success
    `(error ((,petunia-class (:foreground ,petunia-error :weight bold))))
@@ -160,7 +160,7 @@
    `(cursor ((,petunia-class (:foreground ,petunia-white :background ,petunia-mode-line))))
 
    ;; fringe
-   `(fringe ((,petunia-class (:foreground ,petunia-fl-builtin :background ,petunia-bg))))
+   `(fringe ((,petunia-class (:foreground ,petunia-fl-builtin :background ,petunia-bg-1))))
    `(diff-hl-change ((,petunia-class (:foreground ,petunia-change :background ,petunia-change))))
    `(diff-hl-insert ((,petunia-class (:foreground ,petunia-success :background ,petunia-success))))
    `(diff-hl-delete ((,petunia-class (:foreground ,petunia-error :background ,petunia-error))))
@@ -264,7 +264,7 @@
    ;; org-faces
    `(org-todo ((,petunia-class (:foreground ,petunia-error :weight bold))))
    `(org-done ((,petunia-class (:foreground ,petunia-success :weight bold))))
-   `(org-hide ((,petunia-class (:foreground ,petunia-bg))))
+   `(org-hide ((,petunia-class (:foreground ,petunia-bg-1))))
    `(org-table ((,petunia-class (:foreground ,petunia-green-forest))))
    `(org-table-header ((,petunia-class (:inverse-video t :inherit org-table))))
    `(org-date ((,petunia-class (:foreground ,petunia-light-orange))))
@@ -381,7 +381,7 @@
    `(doom-modeline-buffer-modified ((,petunia-class (:foreground ,petunia-tetradic-a-0 :inherit (doom-modeline warning bold)))))
 
    ;; corfu
-   `(corfu-default ((,petunia-class (:foreground ,petunia-fg-1 :background ,petunia-bg))))
+   `(corfu-default ((,petunia-class (:foreground ,petunia-fg-1 :background ,petunia-bg-1))))
    `(corfu-current ((,petunia-class (:foreground unspecified :background unspecified :extend t :inherit highlight))))
    `(corfu-bar ((,petunia-class (:background ,petunia-shadow))))
    `(corfu-border ((,petunia-class (:background ,petunia-shadow))))
