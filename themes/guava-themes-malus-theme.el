@@ -408,7 +408,7 @@
    `(pdf-view-region ((,malus-class (:foreground ,malus-white :background ,malus-square-a-3 :inherit region))))
 
    ;; idle-highlight
-   `(idle-highlight ((,malus-class (:foreground ,malus-black :background ,malus-fl-builtin :inherit region))))
+   `(idle-highlight ((,malus-class (:foreground ,malus-white :background ,malus-fl-builtin :inherit region))))
 
    ;; keycast
    `(keycast-command ((,malus-class (:weight bold))))
