@@ -406,7 +406,7 @@
    `(pdf-view-region ((,solanum-class (:foreground ,solanum-white :background ,solanum-square-a-3 :inherit region))))
 
    ;; idle-highlight
-   `(idle-highlight ((,solanum-class (:foreground ,solanum-black :background ,solanum-fl-builtin :inherit region))))
+   `(idle-highlight ((,solanum-class (:foreground ,solanum-white :background ,solanum-fl-builtin :inherit region))))
 
    ;; keycast
    `(keycast-command ((,solanum-class (:weight bold))))
