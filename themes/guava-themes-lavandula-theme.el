@@ -170,8 +170,8 @@
    ;; line-number
    `(line-number ((,lavandula-class (:foreground ,lavandula-fg-1 :inherit default))))
    `(line-number-current-line ((,lavandula-class (:foreground ,lavandula-mode-line :weight bold :inherit (highlight line-number)))))
-   `(line-number-minor-tick ((,lavandula-class (:foreground ,lavandula-white :background ,lavandula-tab-3 :inherit line-number))))
-   `(line-number-major-tick ((,lavandula-class (:foreground ,lavandula-white :background ,lavandula-tab-2 :inherit line-number))))
+   `(line-number-minor-tick ((,lavandula-class (:foreground ,lavandula-white :background ,lavandula-tab-2 :inherit line-number))))
+   `(line-number-major-tick ((,lavandula-class (:foreground ,lavandula-white :background ,lavandula-tab-3 :inherit line-number))))
 
    ;; mode-line
    `(mode-line ((,lavandula-class (:foreground ,lavandula-white :background ,lavandula-mode-line

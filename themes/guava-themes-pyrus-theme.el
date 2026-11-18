@@ -170,8 +170,8 @@
    ;; line-number
    `(line-number ((,pyrus-class (:foreground ,pyrus-fg-1 :inherit default))))
    `(line-number-current-line ((,pyrus-class (:foreground ,pyrus-mode-line :weight bold :inherit (highlight line-number)))))
-   `(line-number-minor-tick ((,pyrus-class (:background ,pyrus-tab-2 :inherit line-number))))
-   `(line-number-major-tick ((,pyrus-class (:background ,pyrus-tab-3 :inherit line-number))))
+   `(line-number-minor-tick ((,pyrus-class (:foreground ,pyrus-white :background ,pyrus-tab-2 :inherit line-number))))
+   `(line-number-major-tick ((,pyrus-class (:foreground ,pyrus-white :background ,pyrus-tab-3 :inherit line-number))))
 
    ;; mode-line
    `(mode-line ((,pyrus-class (:foreground ,pyrus-white :background ,pyrus-mode-line

@@ -170,8 +170,8 @@
    ;; line-number
    `(line-number ((,dracaena-class (:foreground ,dracaena-fg-1 :inherit default))))
    `(line-number-current-line ((,dracaena-class (:foreground ,dracaena-mode-line :weight bold :inherit (highlight line-number)))))
-   `(line-number-minor-tick ((,dracaena-class (:background ,dracaena-tab-2 :inherit line-number))))
-   `(line-number-major-tick ((,dracaena-class (:background ,dracaena-tab-3 :inherit line-number))))
+   `(line-number-minor-tick ((,dracaena-class (:foreground ,dracaena-white :background ,dracaena-tab-2 :inherit line-number))))
+   `(line-number-major-tick ((,dracaena-class (:foreground ,dracaena-white :background ,dracaena-tab-3 :inherit line-number))))
 
    ;; mode-line
    `(mode-line ((,dracaena-class (:foreground ,dracaena-white :background ,dracaena-mode-line

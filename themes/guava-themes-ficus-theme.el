@@ -174,8 +174,8 @@
    ;; line-number
    `(line-number ((,ficus-class (:foreground ,ficus-fg-1 :inherit default))))
    `(line-number-current-line ((,ficus-class (:foreground ,ficus-mode-line :weight bold :inherit (highlight line-number)))))
-   `(line-number-minor-tick ((,ficus-class (:background ,ficus-tab-2 :inherit line-number))))
-   `(line-number-major-tick ((,ficus-class (:background ,ficus-tab-3 :inherit line-number))))
+   `(line-number-minor-tick ((,ficus-class (:foreground ,ficus-white :background ,ficus-tab-2 :inherit line-number))))
+   `(line-number-major-tick ((,ficus-class (:foreground ,ficus-white :background ,ficus-tab-3 :inherit line-number))))
 
    ;; mode-line
    `(mode-line ((,ficus-class (:foreground ,ficus-white :background ,ficus-mode-line
