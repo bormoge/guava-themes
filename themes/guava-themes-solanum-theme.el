@@ -68,7 +68,7 @@
 
       (solanum-error                     "#FF0000")
       (solanum-warning                   "#f6d909")
-      (solanum-success                   "#23a334")
+      (solanum-success                   "#23b734")
       (solanum-change                    "#0d62b2")
 
       (solanum-mode-line                 "#73466e")
@@ -90,7 +90,7 @@
       (solanum-fl-constant               solanum-light-blue)
       (solanum-fl-warning                solanum-warning)
       (solanum-fl-punctuation            solanum-fg-2)
-      (solanum-fl-negation-char          solanum-alt-light-green)
+      (solanum-fl-negation-char          solanum-blue)
 
       (solanum-diff-added                "#5aa05a")
       (solanum-diff-removed              "#a05a5a")
