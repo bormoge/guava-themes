@@ -38,12 +38,12 @@
       (solanum-black                     "#000000")
       (solanum-white                     "#FFFFFF")
 
-      (solanum-red-tomato                "#cd151f")
+      (solanum-red-tomato                "#b91f29")
       (solanum-orange                    "#e98c85")
 
       (solanum-yellow-potato             "#fde8b9")
 
-      (solanum-light-green               "#4ec9b0")
+      (solanum-light-green               "#39b982")
       (solanum-alt-light-green           "#61ff96")
       (solanum-deep-green                "#007d37")
 
@@ -80,9 +80,9 @@
       (solanum-tab-2                     solanum-mode-line-inactive)
       (solanum-tab-3                     solanum-alt-dark-purple)
 
-      (solanum-fl-comment                solanum-red-tomato)
+      (solanum-fl-comment                solanum-deep-green)
       (solanum-fl-string                 solanum-yellow-potato)
-      (solanum-fl-keyword                solanum-deep-green)
+      (solanum-fl-keyword                solanum-red-tomato)
       (solanum-fl-builtin                solanum-dark-purple)
       (solanum-fl-type                   solanum-orange)
       (solanum-fl-function-name          solanum-purple)
