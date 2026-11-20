@@ -102,18 +102,18 @@
       (lavandula-diff-context              "#dcdcdc")
       (lavandula-smerge-base               "#C8C8F0")
 
-      (lavandula-square-a-0                "#af50b9")
-      (lavandula-square-a-1                "#28a03c")
-      (lavandula-square-a-2                "#f55a00")
-      (lavandula-square-a-3                "#3c82ff")
-
       (lavandula-complementary-a-0         "#4680DE")
       (lavandula-complementary-a-1         "#DE4680")
 
       (lavandula-tetradic-a-0              lavandula-mode-line-modified)
       (lavandula-tetradic-a-1              "#E297FF")
       (lavandula-tetradic-a-2              "#B4FF97")
-      (lavandula-tetradic-a-3              "#97E8FF"))
+      (lavandula-tetradic-a-3              "#97E8FF")
+
+      (lavandula-tetradic-b-0              "#9D50B4")
+      (lavandula-tetradic-b-1              "#67B450")
+      (lavandula-tetradic-b-2              "#B46B50")
+      (lavandula-tetradic-b-3              "#5099B4"))
 
   (custom-theme-set-faces
    'guava-themes-lavandula
@@ -271,8 +271,8 @@
    `(org-table-header ((,lavandula-class (:inverse-video t :inherit org-table))))
    `(org-date ((,lavandula-class (:foreground ,lavandula-red))))
    `(org-date-selected ((,lavandula-class (:foreground unspecified :inverse-video t :inherit org-date))))
-   `(org-headline-todo ((,lavandula-class (:foreground ,lavandula-square-a-2))))
-   `(org-headline-done ((,lavandula-class (:foreground ,lavandula-square-a-1))))
+   `(org-headline-todo ((,lavandula-class (:foreground ,lavandula-tetradic-b-2))))
+   `(org-headline-done ((,lavandula-class (:foreground ,lavandula-tetradic-b-1))))
    `(org-document-title ((,lavandula-class (:inherit font-lock-keyword-face))))
    `(org-document-info-keyword ((,lavandula-class (:inherit shadow))))
    `(org-meta-line ((,lavandula-class (:inherit font-lock-comment-face))))
@@ -282,22 +282,22 @@
    `(window-divider-first-pixel ((,lavandula-class (:inherit window-divider))))
    `(window-divider-last-pixel ((,lavandula-class (:inherit window-divider))))
 
-   ;; isearch (use "M-x isearch-forward-regexp foo-\([0-9]+\)\([a-z]+\)" to check the group faces)
-   `(isearch ((,lavandula-class (:foreground ,lavandula-white :background ,lavandula-square-a-2))))
+   ;; isearch (use "M-x isearch-forward-regexp foo-\([0-9]+\)\([a-z]+\)\([0-9]+\)" to check the group faces)
+   `(isearch ((,lavandula-class (:foreground ,lavandula-white :background ,lavandula-tetradic-b-2))))
    `(isearch-fail ((,lavandula-class (:foreground ,lavandula-white :background ,lavandula-error))))
-   `(lazy-highlight ((,lavandula-class (:foreground ,lavandula-white :background ,lavandula-square-a-3))))
-   `(isearch-group-1 ((,lavandula-class (:foreground ,lavandula-white :background ,lavandula-square-a-0))))
-   `(isearch-group-2 ((,lavandula-class (:foreground ,lavandula-white :background ,lavandula-square-a-1))))
+   `(lazy-highlight ((,lavandula-class (:foreground ,lavandula-white :background ,lavandula-tetradic-b-3))))
+   `(isearch-group-1 ((,lavandula-class (:foreground ,lavandula-white :background ,lavandula-tetradic-b-0))))
+   `(isearch-group-2 ((,lavandula-class (:foreground ,lavandula-white :background ,lavandula-tetradic-b-1))))
 
    ;; replace (use "M-x occur" to check the match face)
    `(query-replace ((,lavandula-class (:inherit isearch))))
    `(match ((,lavandula-class (:inherit lazy-highlight))))
 
    ;; re-builder
-   `(reb-match-0 ((,lavandula-class (:background ,lavandula-square-a-0 :foreground ,lavandula-white))))
-   `(reb-match-1 ((,lavandula-class (:background ,lavandula-square-a-1 :foreground ,lavandula-white))))
-   `(reb-match-2 ((,lavandula-class (:background ,lavandula-square-a-2 :foreground ,lavandula-white))))
-   `(reb-match-3 ((,lavandula-class (:background ,lavandula-square-a-3 :foreground ,lavandula-white))))
+   `(reb-match-0 ((,lavandula-class (:background ,lavandula-tetradic-b-0 :foreground ,lavandula-white))))
+   `(reb-match-1 ((,lavandula-class (:background ,lavandula-tetradic-b-1 :foreground ,lavandula-white))))
+   `(reb-match-2 ((,lavandula-class (:background ,lavandula-tetradic-b-2 :foreground ,lavandula-white))))
+   `(reb-match-3 ((,lavandula-class (:background ,lavandula-tetradic-b-3 :foreground ,lavandula-white))))
 
    ;; custom
    ;; (progn (setopt custom-raised-buttons nil) (setq mouse-highlight t))
@@ -389,10 +389,10 @@
    `(corfu-border ((,lavandula-class (:background ,lavandula-shadow))))
 
    ;; orderless
-   `(orderless-match-face-0 ((,lavandula-class (:foreground ,lavandula-square-a-0 :weight bold))))
-   `(orderless-match-face-1 ((,lavandula-class (:foreground ,lavandula-square-a-1 :weight bold))))
-   `(orderless-match-face-2 ((,lavandula-class (:foreground ,lavandula-square-a-2 :weight bold))))
-   `(orderless-match-face-3 ((,lavandula-class (:foreground ,lavandula-square-a-3 :weight bold))))
+   `(orderless-match-face-0 ((,lavandula-class (:foreground ,lavandula-tetradic-b-0 :weight bold))))
+   `(orderless-match-face-1 ((,lavandula-class (:foreground ,lavandula-tetradic-b-1 :weight bold))))
+   `(orderless-match-face-2 ((,lavandula-class (:foreground ,lavandula-tetradic-b-2 :weight bold))))
+   `(orderless-match-face-3 ((,lavandula-class (:foreground ,lavandula-tetradic-b-3 :weight bold))))
 
    ;; prescient (vertico-prescient-enable-filtering, corfu-prescient-enable-filtering)
    `(prescient-primary-highlight ((,lavandula-class (:foreground ,lavandula-complementary-a-0 :weight bold))))
@@ -409,7 +409,7 @@
    `(devdocs-code-block ((,lavandula-class (:weight bold :background ,lavandula-highlight :extend t))))
 
    ;; pdf-tools
-   `(pdf-view-region ((,lavandula-class (:foreground ,lavandula-white :background ,lavandula-square-a-3 :inherit region))))
+   `(pdf-view-region ((,lavandula-class (:foreground ,lavandula-white :background ,lavandula-tetradic-b-3 :inherit region))))
 
    ;; idle-highlight
    `(idle-highlight ((,lavandula-class (:foreground ,lavandula-white :background ,lavandula-fl-builtin :inherit region))))

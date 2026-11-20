@@ -103,18 +103,18 @@
       (acer-diff-context              "#dcdcdc")
       (acer-smerge-base               "#C8C8F0")
 
-      (acer-square-a-0                "#af2ab9")
-      (acer-square-a-1                "#28823c")
-      (acer-square-a-2                "#d44400")
-      (acer-square-a-3                "#6496d7")
-
       (acer-complementary-a-0         "#4680DE")
       (acer-complementary-a-1         "#DE4680")
 
       (acer-tetradic-a-0              acer-mode-line-modified)
       (acer-tetradic-a-1              "#D7BBB2")
       (acer-tetradic-a-2              "#B2CED7")
-      (acer-tetradic-a-3              "#BBD7B2"))
+      (acer-tetradic-a-3              "#BBD7B2")
+
+      (acer-tetradic-b-0              "#9D50B4")
+      (acer-tetradic-b-1              "#67B450")
+      (acer-tetradic-b-2              "#B46B50")
+      (acer-tetradic-b-3              "#5099B4"))
 
   (custom-theme-set-faces
    'guava-themes-acer
@@ -272,8 +272,8 @@
    `(org-table-header ((,acer-class (:inverse-video t :inherit org-table))))
    `(org-date ((,acer-class (:foreground ,acer-light-blue))))
    `(org-date-selected ((,acer-class (:foreground unspecified :inverse-video t :inherit org-date))))
-   `(org-headline-todo ((,acer-class (:foreground ,acer-square-a-0))))
-   `(org-headline-done ((,acer-class (:foreground ,acer-square-a-3))))
+   `(org-headline-todo ((,acer-class (:foreground ,acer-tetradic-b-0))))
+   `(org-headline-done ((,acer-class (:foreground ,acer-tetradic-b-3))))
    `(org-document-title ((,acer-class (:inherit font-lock-keyword-face))))
    `(org-document-info-keyword ((,acer-class (:inherit shadow))))
    `(org-meta-line ((,acer-class (:inherit font-lock-comment-face))))
@@ -283,22 +283,22 @@
    `(window-divider-first-pixel ((,acer-class (:inherit window-divider))))
    `(window-divider-last-pixel ((,acer-class (:inherit window-divider))))
 
-   ;; isearch (use "M-x isearch-forward-regexp foo-\([0-9]+\)\([a-z]+\)" to check the group faces)
-   `(isearch ((,acer-class (:foreground ,acer-white :background ,acer-square-a-2))))
+   ;; isearch (use "M-x isearch-forward-regexp foo-\([0-9]+\)\([a-z]+\)\([0-9]+\)" to check the group faces)
+   `(isearch ((,acer-class (:foreground ,acer-white :background ,acer-tetradic-b-2))))
    `(isearch-fail ((,acer-class (:foreground ,acer-white :background ,acer-error))))
-   `(lazy-highlight ((,acer-class (:foreground ,acer-white :background ,acer-square-a-3))))
-   `(isearch-group-1 ((,acer-class (:foreground ,acer-white :background ,acer-square-a-0))))
-   `(isearch-group-2 ((,acer-class (:foreground ,acer-white :background ,acer-square-a-1))))
+   `(lazy-highlight ((,acer-class (:foreground ,acer-white :background ,acer-tetradic-b-3))))
+   `(isearch-group-1 ((,acer-class (:foreground ,acer-white :background ,acer-tetradic-b-0))))
+   `(isearch-group-2 ((,acer-class (:foreground ,acer-white :background ,acer-tetradic-b-1))))
 
    ;; replace (use "M-x occur" to check the match face)
    `(query-replace ((,acer-class (:inherit isearch))))
    `(match ((,acer-class (:inherit lazy-highlight))))
 
    ;; re-builder
-   `(reb-match-0 ((,acer-class (:background ,acer-square-a-0 :foreground ,acer-white))))
-   `(reb-match-1 ((,acer-class (:background ,acer-square-a-1 :foreground ,acer-white))))
-   `(reb-match-2 ((,acer-class (:background ,acer-square-a-2 :foreground ,acer-white))))
-   `(reb-match-3 ((,acer-class (:background ,acer-square-a-3 :foreground ,acer-white))))
+   `(reb-match-0 ((,acer-class (:background ,acer-tetradic-b-0 :foreground ,acer-white))))
+   `(reb-match-1 ((,acer-class (:background ,acer-tetradic-b-1 :foreground ,acer-white))))
+   `(reb-match-2 ((,acer-class (:background ,acer-tetradic-b-2 :foreground ,acer-white))))
+   `(reb-match-3 ((,acer-class (:background ,acer-tetradic-b-3 :foreground ,acer-white))))
 
    ;; custom
    ;; (progn (setopt custom-raised-buttons nil) (setq mouse-highlight t))
@@ -390,10 +390,10 @@
    `(corfu-border ((,acer-class (:background ,acer-shadow))))
 
    ;; orderless
-   `(orderless-match-face-0 ((,acer-class (:foreground ,acer-square-a-0 :weight bold))))
-   `(orderless-match-face-1 ((,acer-class (:foreground ,acer-square-a-1 :weight bold))))
-   `(orderless-match-face-2 ((,acer-class (:foreground ,acer-square-a-2 :weight bold))))
-   `(orderless-match-face-3 ((,acer-class (:foreground ,acer-square-a-3 :weight bold))))
+   `(orderless-match-face-0 ((,acer-class (:foreground ,acer-tetradic-b-0 :weight bold))))
+   `(orderless-match-face-1 ((,acer-class (:foreground ,acer-tetradic-b-1 :weight bold))))
+   `(orderless-match-face-2 ((,acer-class (:foreground ,acer-tetradic-b-2 :weight bold))))
+   `(orderless-match-face-3 ((,acer-class (:foreground ,acer-tetradic-b-3 :weight bold))))
 
    ;; prescient (vertico-prescient-enable-filtering, corfu-prescient-enable-filtering)
    `(prescient-primary-highlight ((,acer-class (:foreground ,acer-complementary-a-0 :weight bold))))
@@ -410,7 +410,7 @@
    `(devdocs-code-block ((,acer-class (:weight bold :background ,acer-highlight :extend t))))
 
    ;; pdf-tools
-   `(pdf-view-region ((,acer-class (:foreground ,acer-white :background ,acer-square-a-3 :inherit region))))
+   `(pdf-view-region ((,acer-class (:foreground ,acer-white :background ,acer-tetradic-b-3 :inherit region))))
 
    ;; idle-highlight
    `(idle-highlight ((,acer-class (:foreground ,acer-white :background ,acer-fl-builtin :inherit region))))

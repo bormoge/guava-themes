@@ -99,18 +99,18 @@
       (psidium-diff-context              "#dcdcdc")
       (psidium-smerge-base               "#C8C8F0")
 
-      (psidium-square-a-0                "#af50c8")
-      (psidium-square-a-1                "#28a03c")
-      (psidium-square-a-2                "#ff6400")
-      (psidium-square-a-3                "#3c82ff")
-
       (psidium-complementary-a-0         "#4680DE")
       (psidium-complementary-a-1         "#DE4680")
 
       (psidium-tetradic-a-0              psidium-mode-line-modified)
       (psidium-tetradic-a-1              "#F8C6EA")
       (psidium-tetradic-a-2              "#C6D1F8")
-      (psidium-tetradic-a-3              "#C6F8D4"))
+      (psidium-tetradic-a-3              "#C6F8D4")
+
+      (psidium-tetradic-b-0              "#C94ED0")
+      (psidium-tetradic-b-1              "#55D04E")
+      (psidium-tetradic-b-2              "#D0894E")
+      (psidium-tetradic-b-3              "#4E96D0"))
 
   (custom-theme-set-faces
    'guava-themes-psidium
@@ -268,8 +268,8 @@
    `(org-table-header ((,psidium-class (:inverse-video t :inherit org-table))))
    `(org-date ((,psidium-class (:foreground ,psidium-pink))))
    `(org-date-selected ((,psidium-class (:foreground unspecified :inverse-video t :inherit org-date))))
-   `(org-headline-todo ((,psidium-class (:foreground ,psidium-square-a-2))))
-   `(org-headline-done ((,psidium-class (:foreground ,psidium-square-a-3))))
+   `(org-headline-todo ((,psidium-class (:foreground ,psidium-tetradic-b-2))))
+   `(org-headline-done ((,psidium-class (:foreground ,psidium-tetradic-b-3))))
    `(org-document-title ((,psidium-class (:inherit font-lock-keyword-face))))
    `(org-document-info-keyword ((,psidium-class (:inherit shadow))))
    `(org-meta-line ((,psidium-class (:inherit font-lock-comment-face))))
@@ -279,22 +279,22 @@
    `(window-divider-first-pixel ((,psidium-class (:inherit window-divider))))
    `(window-divider-last-pixel ((,psidium-class (:inherit window-divider))))
 
-   ;; isearch (use "M-x isearch-forward-regexp foo-\([0-9]+\)\([a-z]+\)" to check the group faces)
-   `(isearch ((,psidium-class (:foreground ,psidium-white :background ,psidium-square-a-2))))
+   ;; isearch (use "M-x isearch-forward-regexp foo-\([0-9]+\)\([a-z]+\)\([0-9]+\)" to check the group faces)
+   `(isearch ((,psidium-class (:foreground ,psidium-white :background ,psidium-tetradic-b-2))))
    `(isearch-fail ((,psidium-class (:foreground ,psidium-white :background ,psidium-error))))
-   `(lazy-highlight ((,psidium-class (:foreground ,psidium-white :background ,psidium-square-a-3))))
-   `(isearch-group-1 ((,psidium-class (:foreground ,psidium-white :background ,psidium-square-a-0))))
-   `(isearch-group-2 ((,psidium-class (:foreground ,psidium-white :background ,psidium-square-a-1))))
+   `(lazy-highlight ((,psidium-class (:foreground ,psidium-white :background ,psidium-tetradic-b-3))))
+   `(isearch-group-1 ((,psidium-class (:foreground ,psidium-white :background ,psidium-tetradic-b-0))))
+   `(isearch-group-2 ((,psidium-class (:foreground ,psidium-white :background ,psidium-tetradic-b-1))))
 
    ;; replace (use "M-x occur" to check the match face)
    `(query-replace ((,psidium-class (:inherit isearch))))
    `(match ((,psidium-class (:inherit lazy-highlight))))
 
    ;; re-builder
-   `(reb-match-0 ((,psidium-class (:background ,psidium-square-a-0 :foreground ,psidium-white))))
-   `(reb-match-1 ((,psidium-class (:background ,psidium-square-a-1 :foreground ,psidium-white))))
-   `(reb-match-2 ((,psidium-class (:background ,psidium-square-a-2 :foreground ,psidium-white))))
-   `(reb-match-3 ((,psidium-class (:background ,psidium-square-a-3 :foreground ,psidium-white))))
+   `(reb-match-0 ((,psidium-class (:background ,psidium-tetradic-b-0 :foreground ,psidium-white))))
+   `(reb-match-1 ((,psidium-class (:background ,psidium-tetradic-b-1 :foreground ,psidium-white))))
+   `(reb-match-2 ((,psidium-class (:background ,psidium-tetradic-b-2 :foreground ,psidium-white))))
+   `(reb-match-3 ((,psidium-class (:background ,psidium-tetradic-b-3 :foreground ,psidium-white))))
 
    ;; custom
    ;; (progn (setopt custom-raised-buttons nil) (setq mouse-highlight t))
@@ -386,10 +386,10 @@
    `(corfu-border ((,psidium-class (:background ,psidium-shadow))))
 
    ;; orderless
-   `(orderless-match-face-0 ((,psidium-class (:foreground ,psidium-square-a-0 :weight bold))))
-   `(orderless-match-face-1 ((,psidium-class (:foreground ,psidium-square-a-1 :weight bold))))
-   `(orderless-match-face-2 ((,psidium-class (:foreground ,psidium-square-a-2 :weight bold))))
-   `(orderless-match-face-3 ((,psidium-class (:foreground ,psidium-square-a-3 :weight bold))))
+   `(orderless-match-face-0 ((,psidium-class (:foreground ,psidium-tetradic-b-0 :weight bold))))
+   `(orderless-match-face-1 ((,psidium-class (:foreground ,psidium-tetradic-b-1 :weight bold))))
+   `(orderless-match-face-2 ((,psidium-class (:foreground ,psidium-tetradic-b-2 :weight bold))))
+   `(orderless-match-face-3 ((,psidium-class (:foreground ,psidium-tetradic-b-3 :weight bold))))
 
    ;; prescient (vertico-prescient-enable-filtering, corfu-prescient-enable-filtering)
    `(prescient-primary-highlight ((,psidium-class (:foreground ,psidium-complementary-a-0 :weight bold))))
@@ -406,7 +406,7 @@
    `(devdocs-code-block ((,psidium-class (:weight bold :background ,psidium-highlight :extend t))))
 
    ;; pdf-tools
-   `(pdf-view-region ((,psidium-class (:foreground ,psidium-white :background ,psidium-square-a-3 :inherit region))))
+   `(pdf-view-region ((,psidium-class (:foreground ,psidium-white :background ,psidium-tetradic-b-3 :inherit region))))
 
    ;; idle-highlight
    `(idle-highlight ((,psidium-class (:foreground ,psidium-white :background ,psidium-fl-builtin :inherit region))))

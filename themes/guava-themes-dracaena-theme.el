@@ -102,18 +102,18 @@
       (dracaena-diff-context              "#828282")
       (dracaena-smerge-base               "#5A5AA0")
 
-      (dracaena-square-a-0                "#af50b9")
-      (dracaena-square-a-1                "#28a03c")
-      (dracaena-square-a-2                "#ff6400")
-      (dracaena-square-a-3                "#3c82ff")
-
       (dracaena-complementary-a-0         "#46E6A6")
       (dracaena-complementary-a-1         "#E64686")
 
       (dracaena-tetradic-a-0              dracaena-mode-line-modified)
       (dracaena-tetradic-a-1              "#8AD27D")
       (dracaena-tetradic-a-2              "#c57dd2")
-      (dracaena-tetradic-a-3              "#7DB4D2"))
+      (dracaena-tetradic-a-3              "#7DB4D2")
+
+      (dracaena-tetradic-b-0              "#BA5ACD")
+      (dracaena-tetradic-b-1              "#6DCD5A")
+      (dracaena-tetradic-b-2              "#CD805A")
+      (dracaena-tetradic-b-3              "#5AA7CD"))
 
   (custom-theme-set-faces
    'guava-themes-dracaena
@@ -271,8 +271,8 @@
    `(org-table-header ((,dracaena-class (:inverse-video t :inherit org-table))))
    `(org-date ((,dracaena-class (:foreground ,dracaena-orange))))
    `(org-date-selected ((,dracaena-class (:foreground unspecified :inverse-video t :inherit org-date))))
-   `(org-headline-todo ((,dracaena-class (:foreground ,dracaena-square-a-2))))
-   `(org-headline-done ((,dracaena-class (:foreground ,dracaena-square-a-1))))
+   `(org-headline-todo ((,dracaena-class (:foreground ,dracaena-tetradic-b-2))))
+   `(org-headline-done ((,dracaena-class (:foreground ,dracaena-tetradic-b-1))))
    `(org-document-title ((,dracaena-class (:inherit font-lock-keyword-face))))
    `(org-document-info-keyword ((,dracaena-class (:inherit shadow))))
    `(org-meta-line ((,dracaena-class (:inherit font-lock-comment-face))))
@@ -282,22 +282,22 @@
    `(window-divider-first-pixel ((,dracaena-class (:inherit window-divider))))
    `(window-divider-last-pixel ((,dracaena-class (:inherit window-divider))))
 
-   ;; isearch (use "M-x isearch-forward-regexp foo-\([0-9]+\)\([a-z]+\)" to check the group faces)
-   `(isearch ((,dracaena-class (:foreground ,dracaena-white :background ,dracaena-square-a-2))))
+   ;; isearch (use "M-x isearch-forward-regexp foo-\([0-9]+\)\([a-z]+\)\([0-9]+\)" to check the group faces)
+   `(isearch ((,dracaena-class (:foreground ,dracaena-white :background ,dracaena-tetradic-b-2))))
    `(isearch-fail ((,dracaena-class (:foreground ,dracaena-white :background ,dracaena-error))))
-   `(lazy-highlight ((,dracaena-class (:foreground ,dracaena-white :background ,dracaena-square-a-3))))
-   `(isearch-group-1 ((,dracaena-class (:foreground ,dracaena-white :background ,dracaena-square-a-0))))
-   `(isearch-group-2 ((,dracaena-class (:foreground ,dracaena-white :background ,dracaena-square-a-1))))
+   `(lazy-highlight ((,dracaena-class (:foreground ,dracaena-white :background ,dracaena-tetradic-b-3))))
+   `(isearch-group-1 ((,dracaena-class (:foreground ,dracaena-white :background ,dracaena-tetradic-b-0))))
+   `(isearch-group-2 ((,dracaena-class (:foreground ,dracaena-white :background ,dracaena-tetradic-b-1))))
 
    ;; replace (use "M-x occur" to check the match face)
    `(query-replace ((,dracaena-class (:inherit isearch))))
    `(match ((,dracaena-class (:inherit lazy-highlight))))
 
    ;; re-builder
-   `(reb-match-0 ((,dracaena-class (:background ,dracaena-square-a-0 :foreground ,dracaena-white))))
-   `(reb-match-1 ((,dracaena-class (:background ,dracaena-square-a-1 :foreground ,dracaena-white))))
-   `(reb-match-2 ((,dracaena-class (:background ,dracaena-square-a-2 :foreground ,dracaena-white))))
-   `(reb-match-3 ((,dracaena-class (:background ,dracaena-square-a-3 :foreground ,dracaena-white))))
+   `(reb-match-0 ((,dracaena-class (:background ,dracaena-tetradic-b-0 :foreground ,dracaena-white))))
+   `(reb-match-1 ((,dracaena-class (:background ,dracaena-tetradic-b-1 :foreground ,dracaena-white))))
+   `(reb-match-2 ((,dracaena-class (:background ,dracaena-tetradic-b-2 :foreground ,dracaena-white))))
+   `(reb-match-3 ((,dracaena-class (:background ,dracaena-tetradic-b-3 :foreground ,dracaena-white))))
 
    ;; custom
    ;; (progn (setopt custom-raised-buttons nil) (setq mouse-highlight t))
@@ -389,10 +389,10 @@
    `(corfu-border ((,dracaena-class (:background ,dracaena-shadow))))
 
    ;; orderless
-   `(orderless-match-face-0 ((,dracaena-class (:foreground ,dracaena-square-a-0 :weight bold))))
-   `(orderless-match-face-1 ((,dracaena-class (:foreground ,dracaena-square-a-1 :weight bold))))
-   `(orderless-match-face-2 ((,dracaena-class (:foreground ,dracaena-square-a-2 :weight bold))))
-   `(orderless-match-face-3 ((,dracaena-class (:foreground ,dracaena-square-a-3 :weight bold))))
+   `(orderless-match-face-0 ((,dracaena-class (:foreground ,dracaena-tetradic-b-0 :weight bold))))
+   `(orderless-match-face-1 ((,dracaena-class (:foreground ,dracaena-tetradic-b-1 :weight bold))))
+   `(orderless-match-face-2 ((,dracaena-class (:foreground ,dracaena-tetradic-b-2 :weight bold))))
+   `(orderless-match-face-3 ((,dracaena-class (:foreground ,dracaena-tetradic-b-3 :weight bold))))
 
    ;; prescient (vertico-prescient-enable-filtering, corfu-prescient-enable-filtering)
    `(prescient-primary-highlight ((,dracaena-class (:foreground ,dracaena-complementary-a-0 :weight bold))))
@@ -409,7 +409,7 @@
    `(devdocs-code-block ((,dracaena-class (:weight bold :background ,dracaena-highlight :extend t))))
 
    ;; pdf-tools
-   `(pdf-view-region ((,dracaena-class (:foreground ,dracaena-white :background ,dracaena-square-a-3 :inherit region))))
+   `(pdf-view-region ((,dracaena-class (:foreground ,dracaena-white :background ,dracaena-tetradic-b-3 :inherit region))))
 
    ;; idle-highlight
    `(idle-highlight ((,dracaena-class (:foreground ,dracaena-white :background ,dracaena-fl-builtin :inherit region))))

@@ -104,18 +104,18 @@
       (rubus-diff-context              "#828282")
       (rubus-smerge-base               "#5A5AA0")
 
-      (rubus-square-a-0                "#af50c8")
-      (rubus-square-a-1                "#28a03c")
-      (rubus-square-a-2                "#ff6400")
-      (rubus-square-a-3                "#3c82ff")
-
       (rubus-complementary-a-0         "#46C8A5")
       (rubus-complementary-a-1         "#C84669")
 
       (rubus-tetradic-a-0              rubus-mode-line-modified)
       (rubus-tetradic-a-1              "#DCA0B4")
       (rubus-tetradic-a-2              "#AAA0DC")
-      (rubus-tetradic-a-3              "#D2DCA0"))
+      (rubus-tetradic-a-3              "#D2DCA0")
+
+      (rubus-tetradic-b-0              "#BA5ACD")
+      (rubus-tetradic-b-1              "#6DCD5A")
+      (rubus-tetradic-b-2              "#CD805A")
+      (rubus-tetradic-b-3              "#5AA7CD"))
 
   (custom-theme-set-faces
    'guava-themes-rubus
@@ -273,8 +273,8 @@
    `(org-table-header ((,rubus-class (:inverse-video t :inherit org-table))))
    `(org-date ((,rubus-class (:foreground ,rubus-green-blue))))
    `(org-date-selected ((,rubus-class (:foreground unspecified :inverse-video t :inherit org-date))))
-   `(org-headline-todo ((,rubus-class (:foreground ,rubus-square-a-2))))
-   `(org-headline-done ((,rubus-class (:foreground ,rubus-square-a-1))))
+   `(org-headline-todo ((,rubus-class (:foreground ,rubus-tetradic-b-2))))
+   `(org-headline-done ((,rubus-class (:foreground ,rubus-tetradic-b-1))))
    `(org-document-title ((,rubus-class (:inherit font-lock-keyword-face))))
    `(org-document-info-keyword ((,rubus-class (:inherit shadow))))
    `(org-meta-line ((,rubus-class (:inherit font-lock-comment-face))))
@@ -284,22 +284,22 @@
    `(window-divider-first-pixel ((,rubus-class (:inherit window-divider))))
    `(window-divider-last-pixel ((,rubus-class (:inherit window-divider))))
 
-   ;; isearch (use "M-x isearch-forward-regexp foo-\([0-9]+\)\([a-z]+\)" to check the group faces)
-   `(isearch ((,rubus-class (:foreground ,rubus-white :background ,rubus-square-a-2))))
+   ;; isearch (use "M-x isearch-forward-regexp foo-\([0-9]+\)\([a-z]+\)\([0-9]+\)" to check the group faces)
+   `(isearch ((,rubus-class (:foreground ,rubus-white :background ,rubus-tetradic-b-2))))
    `(isearch-fail ((,rubus-class (:foreground ,rubus-white :background ,rubus-error))))
-   `(lazy-highlight ((,rubus-class (:foreground ,rubus-white :background ,rubus-square-a-3))))
-   `(isearch-group-1 ((,rubus-class (:foreground ,rubus-white :background ,rubus-square-a-0))))
-   `(isearch-group-2 ((,rubus-class (:foreground ,rubus-white :background ,rubus-square-a-1))))
+   `(lazy-highlight ((,rubus-class (:foreground ,rubus-white :background ,rubus-tetradic-b-3))))
+   `(isearch-group-1 ((,rubus-class (:foreground ,rubus-white :background ,rubus-tetradic-b-0))))
+   `(isearch-group-2 ((,rubus-class (:foreground ,rubus-white :background ,rubus-tetradic-b-1))))
 
    ;; replace (use "M-x occur" to check the match face)
    `(query-replace ((,rubus-class (:inherit isearch))))
    `(match ((,rubus-class (:inherit lazy-highlight))))
 
    ;; re-builder
-   `(reb-match-0 ((,rubus-class (:background ,rubus-square-a-0 :foreground ,rubus-white))))
-   `(reb-match-1 ((,rubus-class (:background ,rubus-square-a-1 :foreground ,rubus-white))))
-   `(reb-match-2 ((,rubus-class (:background ,rubus-square-a-2 :foreground ,rubus-white))))
-   `(reb-match-3 ((,rubus-class (:background ,rubus-square-a-3 :foreground ,rubus-white))))
+   `(reb-match-0 ((,rubus-class (:background ,rubus-tetradic-b-0 :foreground ,rubus-white))))
+   `(reb-match-1 ((,rubus-class (:background ,rubus-tetradic-b-1 :foreground ,rubus-white))))
+   `(reb-match-2 ((,rubus-class (:background ,rubus-tetradic-b-2 :foreground ,rubus-white))))
+   `(reb-match-3 ((,rubus-class (:background ,rubus-tetradic-b-3 :foreground ,rubus-white))))
 
    ;; custom
    ;; (progn (setopt custom-raised-buttons nil) (setq mouse-highlight t))
@@ -391,10 +391,10 @@
    `(corfu-border ((,rubus-class (:background ,rubus-shadow))))
 
    ;; orderless
-   `(orderless-match-face-0 ((,rubus-class (:foreground ,rubus-square-a-0 :weight bold))))
-   `(orderless-match-face-1 ((,rubus-class (:foreground ,rubus-square-a-1 :weight bold))))
-   `(orderless-match-face-2 ((,rubus-class (:foreground ,rubus-square-a-2 :weight bold))))
-   `(orderless-match-face-3 ((,rubus-class (:foreground ,rubus-square-a-3 :weight bold))))
+   `(orderless-match-face-0 ((,rubus-class (:foreground ,rubus-tetradic-b-0 :weight bold))))
+   `(orderless-match-face-1 ((,rubus-class (:foreground ,rubus-tetradic-b-1 :weight bold))))
+   `(orderless-match-face-2 ((,rubus-class (:foreground ,rubus-tetradic-b-2 :weight bold))))
+   `(orderless-match-face-3 ((,rubus-class (:foreground ,rubus-tetradic-b-3 :weight bold))))
 
    ;; prescient (vertico-prescient-enable-filtering, corfu-prescient-enable-filtering)
    `(prescient-primary-highlight ((,rubus-class (:foreground ,rubus-complementary-a-0 :weight bold))))
@@ -411,7 +411,7 @@
    `(devdocs-code-block ((,rubus-class (:weight bold :background ,rubus-highlight :extend t))))
 
    ;; pdf-tools
-   `(pdf-view-region ((,rubus-class (:foreground ,rubus-white :background ,rubus-square-a-3 :inherit region))))
+   `(pdf-view-region ((,rubus-class (:foreground ,rubus-white :background ,rubus-tetradic-b-3 :inherit region))))
 
    ;; idle-highlight
    `(idle-highlight ((,rubus-class (:foreground ,rubus-white :background ,rubus-fl-builtin :inherit region))))

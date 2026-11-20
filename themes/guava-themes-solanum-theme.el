@@ -101,18 +101,18 @@
       (solanum-diff-context              "#828282")
       (solanum-smerge-base               "#5A5AA0")
 
-      (solanum-square-a-0                "#af50c8")
-      (solanum-square-a-1                "#28a03c")
-      (solanum-square-a-2                "#ff6400")
-      (solanum-square-a-3                "#3c82ff")
-
       (solanum-complementary-a-0         "#46C8A5")
       (solanum-complementary-a-1         "#C84669")
 
       (solanum-tetradic-a-0              solanum-mode-line-modified)
       (solanum-tetradic-a-1              "#DCA0B4")
       (solanum-tetradic-a-2              "#A0DCC8")
-      (solanum-tetradic-a-3              "#D2DCA0"))
+      (solanum-tetradic-a-3              "#D2DCA0")
+
+      (solanum-tetradic-b-0              "#BA5ACD")
+      (solanum-tetradic-b-1              "#6DCD5A")
+      (solanum-tetradic-b-2              "#CD805A")
+      (solanum-tetradic-b-3              "#5AA7CD"))
 
   (custom-theme-set-faces
    'guava-themes-solanum
@@ -270,8 +270,8 @@
    `(org-table-header ((,solanum-class (:inverse-video t :inherit org-table))))
    `(org-date ((,solanum-class (:foreground ,solanum-alt-light-green))))
    `(org-date-selected ((,solanum-class (:foreground unspecified :inverse-video t :inherit org-date))))
-   `(org-headline-todo ((,solanum-class (:foreground ,solanum-square-a-2))))
-   `(org-headline-done ((,solanum-class (:foreground ,solanum-square-a-1))))
+   `(org-headline-todo ((,solanum-class (:foreground ,solanum-tetradic-b-2))))
+   `(org-headline-done ((,solanum-class (:foreground ,solanum-tetradic-b-1))))
    `(org-document-title ((,solanum-class (:inherit font-lock-keyword-face))))
    `(org-document-info-keyword ((,solanum-class (:inherit shadow))))
    `(org-meta-line ((,solanum-class (:inherit font-lock-comment-face))))
@@ -281,22 +281,22 @@
    `(window-divider-first-pixel ((,solanum-class (:inherit window-divider))))
    `(window-divider-last-pixel ((,solanum-class (:inherit window-divider))))
 
-   ;; isearch (use "M-x isearch-forward-regexp foo-\([0-9]+\)\([a-z]+\)" to check the group faces)
-   `(isearch ((,solanum-class (:foreground ,solanum-white :background ,solanum-square-a-2))))
+   ;; isearch (use "M-x isearch-forward-regexp foo-\([0-9]+\)\([a-z]+\)\([0-9]+\)" to check the group faces)
+   `(isearch ((,solanum-class (:foreground ,solanum-white :background ,solanum-tetradic-b-2))))
    `(isearch-fail ((,solanum-class (:foreground ,solanum-white :background ,solanum-error))))
-   `(lazy-highlight ((,solanum-class (:foreground ,solanum-white :background ,solanum-square-a-3))))
-   `(isearch-group-1 ((,solanum-class (:foreground ,solanum-white :background ,solanum-square-a-0))))
-   `(isearch-group-2 ((,solanum-class (:foreground ,solanum-white :background ,solanum-square-a-1))))
+   `(lazy-highlight ((,solanum-class (:foreground ,solanum-white :background ,solanum-tetradic-b-3))))
+   `(isearch-group-1 ((,solanum-class (:foreground ,solanum-white :background ,solanum-tetradic-b-0))))
+   `(isearch-group-2 ((,solanum-class (:foreground ,solanum-white :background ,solanum-tetradic-b-1))))
 
    ;; replace (use "M-x occur" to check the match face)
    `(query-replace ((,solanum-class (:inherit isearch))))
    `(match ((,solanum-class (:inherit lazy-highlight))))
 
    ;; re-builder
-   `(reb-match-0 ((,solanum-class (:background ,solanum-square-a-0 :foreground ,solanum-white))))
-   `(reb-match-1 ((,solanum-class (:background ,solanum-square-a-1 :foreground ,solanum-white))))
-   `(reb-match-2 ((,solanum-class (:background ,solanum-square-a-2 :foreground ,solanum-white))))
-   `(reb-match-3 ((,solanum-class (:background ,solanum-square-a-3 :foreground ,solanum-white))))
+   `(reb-match-0 ((,solanum-class (:background ,solanum-tetradic-b-0 :foreground ,solanum-white))))
+   `(reb-match-1 ((,solanum-class (:background ,solanum-tetradic-b-1 :foreground ,solanum-white))))
+   `(reb-match-2 ((,solanum-class (:background ,solanum-tetradic-b-2 :foreground ,solanum-white))))
+   `(reb-match-3 ((,solanum-class (:background ,solanum-tetradic-b-3 :foreground ,solanum-white))))
 
    ;; custom
    ;; (progn (setopt custom-raised-buttons nil) (setq mouse-highlight t))
@@ -388,10 +388,10 @@
    `(corfu-border ((,solanum-class (:background ,solanum-shadow))))
 
    ;; orderless
-   `(orderless-match-face-0 ((,solanum-class (:foreground ,solanum-square-a-0 :weight bold))))
-   `(orderless-match-face-1 ((,solanum-class (:foreground ,solanum-square-a-1 :weight bold))))
-   `(orderless-match-face-2 ((,solanum-class (:foreground ,solanum-square-a-2 :weight bold))))
-   `(orderless-match-face-3 ((,solanum-class (:foreground ,solanum-square-a-3 :weight bold))))
+   `(orderless-match-face-0 ((,solanum-class (:foreground ,solanum-tetradic-b-0 :weight bold))))
+   `(orderless-match-face-1 ((,solanum-class (:foreground ,solanum-tetradic-b-1 :weight bold))))
+   `(orderless-match-face-2 ((,solanum-class (:foreground ,solanum-tetradic-b-2 :weight bold))))
+   `(orderless-match-face-3 ((,solanum-class (:foreground ,solanum-tetradic-b-3 :weight bold))))
 
    ;; prescient (vertico-prescient-enable-filtering, corfu-prescient-enable-filtering)
    `(prescient-primary-highlight ((,solanum-class (:foreground ,solanum-complementary-a-0 :weight bold))))
@@ -408,7 +408,7 @@
    `(devdocs-code-block ((,solanum-class (:weight bold :background ,solanum-highlight :extend t))))
 
    ;; pdf-tools
-   `(pdf-view-region ((,solanum-class (:foreground ,solanum-white :background ,solanum-square-a-3 :inherit region))))
+   `(pdf-view-region ((,solanum-class (:foreground ,solanum-white :background ,solanum-tetradic-b-3 :inherit region))))
 
    ;; idle-highlight
    `(idle-highlight ((,solanum-class (:foreground ,solanum-white :background ,solanum-fl-builtin :inherit region))))

@@ -102,18 +102,18 @@
       (pyrus-diff-context              "#dcdcdc")
       (pyrus-smerge-base               "#C8C8F0")
 
-      (pyrus-square-a-0                "#c846e6")
-      (pyrus-square-a-1                "#28a03c")
-      (pyrus-square-a-2                "#ff6400")
-      (pyrus-square-a-3                "#3c82ff")
-
       (pyrus-complementary-a-0         "#4680DE")
       (pyrus-complementary-a-1         "#DE4680")
 
       (pyrus-tetradic-a-0              pyrus-mode-line-modified)
       (pyrus-tetradic-a-1              "#C8F3A2")
       (pyrus-tetradic-a-2              "#CDA2F3")
-      (pyrus-tetradic-a-3              "#A2F0F3"))
+      (pyrus-tetradic-a-3              "#A2F0F3")
+
+      (pyrus-tetradic-b-0              "#8F82BE")
+      (pyrus-tetradic-b-1              "#B1BE82")
+      (pyrus-tetradic-b-2              "#BE8293")
+      (pyrus-tetradic-b-3              "#82BEAD"))
 
   (custom-theme-set-faces
    'guava-themes-pyrus
@@ -271,8 +271,8 @@
    `(org-table-header ((,pyrus-class (:inverse-video t :inherit org-table))))
    `(org-date ((,pyrus-class (:foreground ,pyrus-orange-subdued))))
    `(org-date-selected ((,pyrus-class (:foreground unspecified :inverse-video t :inherit org-date))))
-   `(org-headline-todo ((,pyrus-class (:foreground ,pyrus-square-a-0))))
-   `(org-headline-done ((,pyrus-class (:foreground ,pyrus-square-a-3))))
+   `(org-headline-todo ((,pyrus-class (:foreground ,pyrus-tetradic-b-0))))
+   `(org-headline-done ((,pyrus-class (:foreground ,pyrus-tetradic-b-3))))
    `(org-document-title ((,pyrus-class (:inherit font-lock-keyword-face))))
    `(org-document-info-keyword ((,pyrus-class (:inherit shadow))))
    `(org-meta-line ((,pyrus-class (:inherit font-lock-comment-face))))
@@ -282,22 +282,22 @@
    `(window-divider-first-pixel ((,pyrus-class (:inherit window-divider))))
    `(window-divider-last-pixel ((,pyrus-class (:inherit window-divider))))
 
-   ;; isearch (use "M-x isearch-forward-regexp foo-\([0-9]+\)\([a-z]+\)" to check the group faces)
-   `(isearch ((,pyrus-class (:foreground ,pyrus-white :background ,pyrus-square-a-2))))
+   ;; isearch (use "M-x isearch-forward-regexp foo-\([0-9]+\)\([a-z]+\)\([0-9]+\)" to check the group faces)
+   `(isearch ((,pyrus-class (:foreground ,pyrus-white :background ,pyrus-tetradic-b-2))))
    `(isearch-fail ((,pyrus-class (:foreground ,pyrus-white :background ,pyrus-error))))
-   `(lazy-highlight ((,pyrus-class (:foreground ,pyrus-white :background ,pyrus-square-a-3))))
-   `(isearch-group-1 ((,pyrus-class (:foreground ,pyrus-white :background ,pyrus-square-a-0))))
-   `(isearch-group-2 ((,pyrus-class (:foreground ,pyrus-white :background ,pyrus-square-a-1))))
+   `(lazy-highlight ((,pyrus-class (:foreground ,pyrus-white :background ,pyrus-tetradic-b-3))))
+   `(isearch-group-1 ((,pyrus-class (:foreground ,pyrus-white :background ,pyrus-tetradic-b-0))))
+   `(isearch-group-2 ((,pyrus-class (:foreground ,pyrus-white :background ,pyrus-tetradic-b-1))))
 
    ;; replace (use "M-x occur" to check the match face)
    `(query-replace ((,pyrus-class (:inherit isearch))))
    `(match ((,pyrus-class (:inherit lazy-highlight))))
 
    ;; re-builder
-   `(reb-match-0 ((,pyrus-class (:background ,pyrus-square-a-0 :foreground ,pyrus-white))))
-   `(reb-match-1 ((,pyrus-class (:background ,pyrus-square-a-1 :foreground ,pyrus-white))))
-   `(reb-match-2 ((,pyrus-class (:background ,pyrus-square-a-2 :foreground ,pyrus-white))))
-   `(reb-match-3 ((,pyrus-class (:background ,pyrus-square-a-3 :foreground ,pyrus-white))))
+   `(reb-match-0 ((,pyrus-class (:background ,pyrus-tetradic-b-0 :foreground ,pyrus-white))))
+   `(reb-match-1 ((,pyrus-class (:background ,pyrus-tetradic-b-1 :foreground ,pyrus-white))))
+   `(reb-match-2 ((,pyrus-class (:background ,pyrus-tetradic-b-2 :foreground ,pyrus-white))))
+   `(reb-match-3 ((,pyrus-class (:background ,pyrus-tetradic-b-3 :foreground ,pyrus-white))))
 
    ;; custom
    ;; (progn (setopt custom-raised-buttons nil) (setq mouse-highlight t))
@@ -389,10 +389,10 @@
    `(corfu-border ((,pyrus-class (:background ,pyrus-shadow))))
 
    ;; orderless
-   `(orderless-match-face-0 ((,pyrus-class (:foreground ,pyrus-square-a-0 :weight bold))))
-   `(orderless-match-face-1 ((,pyrus-class (:foreground ,pyrus-square-a-1 :weight bold))))
-   `(orderless-match-face-2 ((,pyrus-class (:foreground ,pyrus-square-a-2 :weight bold))))
-   `(orderless-match-face-3 ((,pyrus-class (:foreground ,pyrus-square-a-3 :weight bold))))
+   `(orderless-match-face-0 ((,pyrus-class (:foreground ,pyrus-tetradic-b-0 :weight bold))))
+   `(orderless-match-face-1 ((,pyrus-class (:foreground ,pyrus-tetradic-b-1 :weight bold))))
+   `(orderless-match-face-2 ((,pyrus-class (:foreground ,pyrus-tetradic-b-2 :weight bold))))
+   `(orderless-match-face-3 ((,pyrus-class (:foreground ,pyrus-tetradic-b-3 :weight bold))))
 
    ;; prescient (vertico-prescient-enable-filtering, corfu-prescient-enable-filtering)
    `(prescient-primary-highlight ((,pyrus-class (:foreground ,pyrus-complementary-a-0 :weight bold))))
@@ -409,7 +409,7 @@
    `(devdocs-code-block ((,pyrus-class (:weight bold :background ,pyrus-highlight :extend t))))
 
    ;; pdf-tools
-   `(pdf-view-region ((,pyrus-class (:foreground ,pyrus-white :background ,pyrus-square-a-3 :inherit region))))
+   `(pdf-view-region ((,pyrus-class (:foreground ,pyrus-white :background ,pyrus-tetradic-b-3 :inherit region))))
 
    ;; idle-highlight
    `(idle-highlight ((,pyrus-class (:foreground ,pyrus-white :background ,pyrus-fl-builtin :inherit region))))

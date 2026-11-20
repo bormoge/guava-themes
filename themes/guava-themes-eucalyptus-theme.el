@@ -101,18 +101,18 @@
       (eucalyptus-diff-context              "#dcdcdc")
       (eucalyptus-smerge-base               "#C8C8F0")
 
-      (eucalyptus-square-a-0                "#af37b9")
-      (eucalyptus-square-a-1                "#147828")
-      (eucalyptus-square-a-2                "#b45a00")
-      (eucalyptus-square-a-3                "#3c82e6")
-
       (eucalyptus-complementary-a-0         "#4680DE")
       (eucalyptus-complementary-a-1         "#DE4680")
 
       (eucalyptus-tetradic-a-0              eucalyptus-mode-line-modified)
       (eucalyptus-tetradic-a-1              "#7DAA56")
       (eucalyptus-tetradic-a-2              "#8356AA")
-      (eucalyptus-tetradic-a-3              "#56A7AA"))
+      (eucalyptus-tetradic-a-3              "#56A7AA")
+
+      (eucalyptus-tetradic-b-0              "#803C96")
+      (eucalyptus-tetradic-b-1              "#53963C")
+      (eucalyptus-tetradic-b-2              "#96533C")
+      (eucalyptus-tetradic-b-3              "#3C8096"))
 
   (custom-theme-set-faces
    'guava-themes-eucalyptus
@@ -270,8 +270,8 @@
    `(org-table-header ((,eucalyptus-class (:inverse-video t :inherit org-table))))
    `(org-date ((,eucalyptus-class (:foreground ,eucalyptus-purple-red))))
    `(org-date-selected ((,eucalyptus-class (:foreground unspecified :inverse-video t :inherit org-date))))
-   `(org-headline-todo ((,eucalyptus-class (:foreground ,eucalyptus-square-a-2))))
-   `(org-headline-done ((,eucalyptus-class (:foreground ,eucalyptus-square-a-1))))
+   `(org-headline-todo ((,eucalyptus-class (:foreground ,eucalyptus-tetradic-b-2))))
+   `(org-headline-done ((,eucalyptus-class (:foreground ,eucalyptus-tetradic-b-1))))
    `(org-document-title ((,eucalyptus-class (:inherit font-lock-keyword-face))))
    `(org-document-info-keyword ((,eucalyptus-class (:inherit shadow))))
    `(org-meta-line ((,eucalyptus-class (:inherit font-lock-comment-face))))
@@ -281,22 +281,22 @@
    `(window-divider-first-pixel ((,eucalyptus-class (:inherit window-divider))))
    `(window-divider-last-pixel ((,eucalyptus-class (:inherit window-divider))))
 
-   ;; isearch (use "M-x isearch-forward-regexp foo-\([0-9]+\)\([a-z]+\)" to check the group faces)
-   `(isearch ((,eucalyptus-class (:foreground ,eucalyptus-white :background ,eucalyptus-square-a-2))))
+   ;; isearch (use "M-x isearch-forward-regexp foo-\([0-9]+\)\([a-z]+\)\([0-9]+\)" to check the group faces)
+   `(isearch ((,eucalyptus-class (:foreground ,eucalyptus-white :background ,eucalyptus-tetradic-b-2))))
    `(isearch-fail ((,eucalyptus-class (:foreground ,eucalyptus-white :background ,eucalyptus-error))))
-   `(lazy-highlight ((,eucalyptus-class (:foreground ,eucalyptus-white :background ,eucalyptus-square-a-3))))
-   `(isearch-group-1 ((,eucalyptus-class (:foreground ,eucalyptus-white :background ,eucalyptus-square-a-0))))
-   `(isearch-group-2 ((,eucalyptus-class (:foreground ,eucalyptus-white :background ,eucalyptus-square-a-1))))
+   `(lazy-highlight ((,eucalyptus-class (:foreground ,eucalyptus-white :background ,eucalyptus-tetradic-b-3))))
+   `(isearch-group-1 ((,eucalyptus-class (:foreground ,eucalyptus-white :background ,eucalyptus-tetradic-b-0))))
+   `(isearch-group-2 ((,eucalyptus-class (:foreground ,eucalyptus-white :background ,eucalyptus-tetradic-b-1))))
 
    ;; replace (use "M-x occur" to check the match face)
    `(query-replace ((,eucalyptus-class (:inherit isearch))))
    `(match ((,eucalyptus-class (:inherit lazy-highlight))))
 
    ;; re-builder
-   `(reb-match-0 ((,eucalyptus-class (:background ,eucalyptus-square-a-0 :foreground ,eucalyptus-white))))
-   `(reb-match-1 ((,eucalyptus-class (:background ,eucalyptus-square-a-1 :foreground ,eucalyptus-white))))
-   `(reb-match-2 ((,eucalyptus-class (:background ,eucalyptus-square-a-2 :foreground ,eucalyptus-white))))
-   `(reb-match-3 ((,eucalyptus-class (:background ,eucalyptus-square-a-3 :foreground ,eucalyptus-white))))
+   `(reb-match-0 ((,eucalyptus-class (:background ,eucalyptus-tetradic-b-0 :foreground ,eucalyptus-white))))
+   `(reb-match-1 ((,eucalyptus-class (:background ,eucalyptus-tetradic-b-1 :foreground ,eucalyptus-white))))
+   `(reb-match-2 ((,eucalyptus-class (:background ,eucalyptus-tetradic-b-2 :foreground ,eucalyptus-white))))
+   `(reb-match-3 ((,eucalyptus-class (:background ,eucalyptus-tetradic-b-3 :foreground ,eucalyptus-white))))
 
    ;; custom
    ;; (progn (setopt custom-raised-buttons nil) (setq mouse-highlight t))
@@ -388,10 +388,10 @@
    `(corfu-border ((,eucalyptus-class (:background ,eucalyptus-shadow))))
 
    ;; orderless
-   `(orderless-match-face-0 ((,eucalyptus-class (:foreground ,eucalyptus-square-a-0 :weight bold))))
-   `(orderless-match-face-1 ((,eucalyptus-class (:foreground ,eucalyptus-square-a-1 :weight bold))))
-   `(orderless-match-face-2 ((,eucalyptus-class (:foreground ,eucalyptus-square-a-2 :weight bold))))
-   `(orderless-match-face-3 ((,eucalyptus-class (:foreground ,eucalyptus-square-a-3 :weight bold))))
+   `(orderless-match-face-0 ((,eucalyptus-class (:foreground ,eucalyptus-tetradic-b-0 :weight bold))))
+   `(orderless-match-face-1 ((,eucalyptus-class (:foreground ,eucalyptus-tetradic-b-1 :weight bold))))
+   `(orderless-match-face-2 ((,eucalyptus-class (:foreground ,eucalyptus-tetradic-b-2 :weight bold))))
+   `(orderless-match-face-3 ((,eucalyptus-class (:foreground ,eucalyptus-tetradic-b-3 :weight bold))))
 
    ;; prescient (vertico-prescient-enable-filtering, corfu-prescient-enable-filtering)
    `(prescient-primary-highlight ((,eucalyptus-class (:foreground ,eucalyptus-complementary-a-0 :weight bold))))
@@ -408,7 +408,7 @@
    `(devdocs-code-block ((,eucalyptus-class (:weight bold :background ,eucalyptus-highlight :extend t))))
 
    ;; pdf-tools
-   `(pdf-view-region ((,eucalyptus-class (:foreground ,eucalyptus-white :background ,eucalyptus-square-a-3 :inherit region))))
+   `(pdf-view-region ((,eucalyptus-class (:foreground ,eucalyptus-white :background ,eucalyptus-tetradic-b-3 :inherit region))))
 
    ;; idle-highlight
    `(idle-highlight ((,eucalyptus-class (:foreground ,eucalyptus-white :background ,eucalyptus-fl-builtin :inherit region))))

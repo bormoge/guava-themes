@@ -103,18 +103,18 @@
       (vaccinium-diff-context              "#828282")
       (vaccinium-smerge-base               "#5A5AA0")
 
-      (vaccinium-square-a-0                "#af50c8")
-      (vaccinium-square-a-1                "#28a03c")
-      (vaccinium-square-a-2                "#ff6400")
-      (vaccinium-square-a-3                "#3c82ff")
-
       (vaccinium-complementary-a-0         "#46C8A5")
       (vaccinium-complementary-a-1         "#C84669")
 
       (vaccinium-tetradic-a-0              vaccinium-mode-line-modified)
       (vaccinium-tetradic-a-1              "#C2F5AC")
       (vaccinium-tetradic-a-2              "#DFACF5")
-      (vaccinium-tetradic-a-3              "#ACE6F5"))
+      (vaccinium-tetradic-a-3              "#ACE6F5")
+
+      (vaccinium-tetradic-b-0              "#BA5ACD")
+      (vaccinium-tetradic-b-1              "#6DCD5A")
+      (vaccinium-tetradic-b-2              "#CD805A")
+      (vaccinium-tetradic-b-3              "#5AA7CD"))
 
   (custom-theme-set-faces
    'guava-themes-vaccinium
@@ -272,8 +272,8 @@
    `(org-table-header ((,vaccinium-class (:inverse-video t :inherit org-table))))
    `(org-date ((,vaccinium-class (:foreground ,vaccinium-purple-pink))))
    `(org-date-selected ((,vaccinium-class (:foreground unspecified :inverse-video t :inherit org-date))))
-   `(org-headline-todo ((,vaccinium-class (:foreground ,vaccinium-square-a-2))))
-   `(org-headline-done ((,vaccinium-class (:foreground ,vaccinium-square-a-1))))
+   `(org-headline-todo ((,vaccinium-class (:foreground ,vaccinium-tetradic-b-2))))
+   `(org-headline-done ((,vaccinium-class (:foreground ,vaccinium-tetradic-b-1))))
    `(org-document-title ((,vaccinium-class (:inherit font-lock-keyword-face))))
    `(org-document-info-keyword ((,vaccinium-class (:inherit shadow))))
    `(org-meta-line ((,vaccinium-class (:inherit font-lock-comment-face))))
@@ -283,22 +283,22 @@
    `(window-divider-first-pixel ((,vaccinium-class (:inherit window-divider))))
    `(window-divider-last-pixel ((,vaccinium-class (:inherit window-divider))))
 
-   ;; isearch (use "M-x isearch-forward-regexp foo-\([0-9]+\)\([a-z]+\)" to check the group faces)
-   `(isearch ((,vaccinium-class (:foreground ,vaccinium-white :background ,vaccinium-square-a-2))))
+   ;; isearch (use "M-x isearch-forward-regexp foo-\([0-9]+\)\([a-z]+\)\([0-9]+\)" to check the group faces)
+   `(isearch ((,vaccinium-class (:foreground ,vaccinium-white :background ,vaccinium-tetradic-b-2))))
    `(isearch-fail ((,vaccinium-class (:foreground ,vaccinium-white :background ,vaccinium-error))))
-   `(lazy-highlight ((,vaccinium-class (:foreground ,vaccinium-white :background ,vaccinium-square-a-3))))
-   `(isearch-group-1 ((,vaccinium-class (:foreground ,vaccinium-white :background ,vaccinium-square-a-0))))
-   `(isearch-group-2 ((,vaccinium-class (:foreground ,vaccinium-white :background ,vaccinium-square-a-1))))
+   `(lazy-highlight ((,vaccinium-class (:foreground ,vaccinium-white :background ,vaccinium-tetradic-b-3))))
+   `(isearch-group-1 ((,vaccinium-class (:foreground ,vaccinium-white :background ,vaccinium-tetradic-b-0))))
+   `(isearch-group-2 ((,vaccinium-class (:foreground ,vaccinium-white :background ,vaccinium-tetradic-b-1))))
 
    ;; replace (use "M-x occur" to check the match face)
    `(query-replace ((,vaccinium-class (:inherit isearch))))
    `(match ((,vaccinium-class (:inherit lazy-highlight))))
 
    ;; re-builder
-   `(reb-match-0 ((,vaccinium-class (:background ,vaccinium-square-a-0 :foreground ,vaccinium-white))))
-   `(reb-match-1 ((,vaccinium-class (:background ,vaccinium-square-a-1 :foreground ,vaccinium-white))))
-   `(reb-match-2 ((,vaccinium-class (:background ,vaccinium-square-a-2 :foreground ,vaccinium-white))))
-   `(reb-match-3 ((,vaccinium-class (:background ,vaccinium-square-a-3 :foreground ,vaccinium-white))))
+   `(reb-match-0 ((,vaccinium-class (:background ,vaccinium-tetradic-b-0 :foreground ,vaccinium-white))))
+   `(reb-match-1 ((,vaccinium-class (:background ,vaccinium-tetradic-b-1 :foreground ,vaccinium-white))))
+   `(reb-match-2 ((,vaccinium-class (:background ,vaccinium-tetradic-b-2 :foreground ,vaccinium-white))))
+   `(reb-match-3 ((,vaccinium-class (:background ,vaccinium-tetradic-b-3 :foreground ,vaccinium-white))))
 
    ;; custom
    ;; (progn (setopt custom-raised-buttons nil) (setq mouse-highlight t))
@@ -390,10 +390,10 @@
    `(corfu-border ((,vaccinium-class (:background ,vaccinium-shadow))))
 
    ;; orderless
-   `(orderless-match-face-0 ((,vaccinium-class (:foreground ,vaccinium-square-a-0 :weight bold))))
-   `(orderless-match-face-1 ((,vaccinium-class (:foreground ,vaccinium-square-a-1 :weight bold))))
-   `(orderless-match-face-2 ((,vaccinium-class (:foreground ,vaccinium-square-a-2 :weight bold))))
-   `(orderless-match-face-3 ((,vaccinium-class (:foreground ,vaccinium-square-a-3 :weight bold))))
+   `(orderless-match-face-0 ((,vaccinium-class (:foreground ,vaccinium-tetradic-b-0 :weight bold))))
+   `(orderless-match-face-1 ((,vaccinium-class (:foreground ,vaccinium-tetradic-b-1 :weight bold))))
+   `(orderless-match-face-2 ((,vaccinium-class (:foreground ,vaccinium-tetradic-b-2 :weight bold))))
+   `(orderless-match-face-3 ((,vaccinium-class (:foreground ,vaccinium-tetradic-b-3 :weight bold))))
 
    ;; prescient (vertico-prescient-enable-filtering, corfu-prescient-enable-filtering)
    `(prescient-primary-highlight ((,vaccinium-class (:foreground ,vaccinium-complementary-a-0 :weight bold))))
@@ -410,7 +410,7 @@
    `(devdocs-code-block ((,vaccinium-class (:weight bold :background ,vaccinium-highlight :extend t))))
 
    ;; pdf-tools
-   `(pdf-view-region ((,vaccinium-class (:foreground ,vaccinium-white :background ,vaccinium-square-a-3 :inherit region))))
+   `(pdf-view-region ((,vaccinium-class (:foreground ,vaccinium-white :background ,vaccinium-tetradic-b-3 :inherit region))))
 
    ;; idle-highlight
    `(idle-highlight ((,vaccinium-class (:foreground ,vaccinium-white :background ,vaccinium-fl-builtin :inherit region))))

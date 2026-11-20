@@ -100,18 +100,18 @@
       (petunia-diff-context              "#828282")
       (petunia-smerge-base               "#5A5AA0")
 
-      (petunia-square-a-0                "#c878dc")
-      (petunia-square-a-1                "#28b43c")
-      (petunia-square-a-2                "#ff7300")
-      (petunia-square-a-3                "#009bff")
-
       (petunia-complementary-a-0         "#46C8A5")
       (petunia-complementary-a-1         "#C84669")
 
       (petunia-tetradic-a-0              petunia-mode-line-modified)
       (petunia-tetradic-a-1              "#CEA9D7")
       (petunia-tetradic-a-2              "#D7B7A9")
-      (petunia-tetradic-a-3              "#B2D7A9"))
+      (petunia-tetradic-a-3              "#B2D7A9")
+
+      (petunia-tetradic-b-0              "#A646B9")
+      (petunia-tetradic-b-1              "#59B946")
+      (petunia-tetradic-b-2              "#B96C46")
+      (petunia-tetradic-b-3              "#4693B9"))
 
   (custom-theme-set-faces
    'guava-themes-petunia
@@ -269,8 +269,8 @@
    `(org-table-header ((,petunia-class (:inverse-video t :inherit org-table))))
    `(org-date ((,petunia-class (:foreground ,petunia-light-orange))))
    `(org-date-selected ((,petunia-class (:foreground unspecified :inverse-video t :inherit org-date))))
-   `(org-headline-todo ((,petunia-class (:foreground ,petunia-square-a-0))))
-   `(org-headline-done ((,petunia-class (:foreground ,petunia-square-a-1))))
+   `(org-headline-todo ((,petunia-class (:foreground ,petunia-tetradic-b-0))))
+   `(org-headline-done ((,petunia-class (:foreground ,petunia-tetradic-b-1))))
    `(org-document-title ((,petunia-class (:inherit font-lock-keyword-face))))
    `(org-document-info-keyword ((,petunia-class (:inherit shadow))))
    `(org-meta-line ((,petunia-class (:inherit font-lock-comment-face))))
@@ -280,22 +280,22 @@
    `(window-divider-first-pixel ((,petunia-class (:inherit window-divider))))
    `(window-divider-last-pixel ((,petunia-class (:inherit window-divider))))
 
-   ;; isearch (use "M-x isearch-forward-regexp foo-\([0-9]+\)\([a-z]+\)" to check the group faces)
-   `(isearch ((,petunia-class (:foreground ,petunia-white :background ,petunia-square-a-2))))
+   ;; isearch (use "M-x isearch-forward-regexp foo-\([0-9]+\)\([a-z]+\)\([0-9]+\)" to check the group faces)
+   `(isearch ((,petunia-class (:foreground ,petunia-white :background ,petunia-tetradic-b-2))))
    `(isearch-fail ((,petunia-class (:foreground ,petunia-white :background ,petunia-error))))
-   `(lazy-highlight ((,petunia-class (:foreground ,petunia-white :background ,petunia-square-a-3))))
-   `(isearch-group-1 ((,petunia-class (:foreground ,petunia-white :background ,petunia-square-a-0))))
-   `(isearch-group-2 ((,petunia-class (:foreground ,petunia-white :background ,petunia-square-a-1))))
+   `(lazy-highlight ((,petunia-class (:foreground ,petunia-white :background ,petunia-tetradic-b-3))))
+   `(isearch-group-1 ((,petunia-class (:foreground ,petunia-white :background ,petunia-tetradic-b-0))))
+   `(isearch-group-2 ((,petunia-class (:foreground ,petunia-white :background ,petunia-tetradic-b-1))))
 
    ;; replace (use "M-x occur" to check the match face)
    `(query-replace ((,petunia-class (:inherit isearch))))
    `(match ((,petunia-class (:inherit lazy-highlight))))
 
    ;; re-builder
-   `(reb-match-0 ((,petunia-class (:background ,petunia-square-a-0 :foreground ,petunia-white))))
-   `(reb-match-1 ((,petunia-class (:background ,petunia-square-a-1 :foreground ,petunia-white))))
-   `(reb-match-2 ((,petunia-class (:background ,petunia-square-a-2 :foreground ,petunia-white))))
-   `(reb-match-3 ((,petunia-class (:background ,petunia-square-a-3 :foreground ,petunia-white))))
+   `(reb-match-0 ((,petunia-class (:background ,petunia-tetradic-b-0 :foreground ,petunia-white))))
+   `(reb-match-1 ((,petunia-class (:background ,petunia-tetradic-b-1 :foreground ,petunia-white))))
+   `(reb-match-2 ((,petunia-class (:background ,petunia-tetradic-b-2 :foreground ,petunia-white))))
+   `(reb-match-3 ((,petunia-class (:background ,petunia-tetradic-b-3 :foreground ,petunia-white))))
 
    ;; custom
    ;; (progn (setopt custom-raised-buttons nil) (setq mouse-highlight t))
@@ -387,10 +387,10 @@
    `(corfu-border ((,petunia-class (:background ,petunia-shadow))))
 
    ;; orderless
-   `(orderless-match-face-0 ((,petunia-class (:foreground ,petunia-square-a-0 :weight bold))))
-   `(orderless-match-face-1 ((,petunia-class (:foreground ,petunia-square-a-1 :weight bold))))
-   `(orderless-match-face-2 ((,petunia-class (:foreground ,petunia-square-a-2 :weight bold))))
-   `(orderless-match-face-3 ((,petunia-class (:foreground ,petunia-square-a-3 :weight bold))))
+   `(orderless-match-face-0 ((,petunia-class (:foreground ,petunia-tetradic-b-0 :weight bold))))
+   `(orderless-match-face-1 ((,petunia-class (:foreground ,petunia-tetradic-b-1 :weight bold))))
+   `(orderless-match-face-2 ((,petunia-class (:foreground ,petunia-tetradic-b-2 :weight bold))))
+   `(orderless-match-face-3 ((,petunia-class (:foreground ,petunia-tetradic-b-3 :weight bold))))
 
    ;; prescient (vertico-prescient-enable-filtering, corfu-prescient-enable-filtering)
    `(prescient-primary-highlight ((,petunia-class (:foreground ,petunia-complementary-a-0 :weight bold))))
@@ -407,7 +407,7 @@
    `(devdocs-code-block ((,petunia-class (:weight bold :background ,petunia-highlight :extend t))))
 
    ;; pdf-tools
-   `(pdf-view-region ((,petunia-class (:foreground ,petunia-white :background ,petunia-square-a-3 :inherit region))))
+   `(pdf-view-region ((,petunia-class (:foreground ,petunia-white :background ,petunia-tetradic-b-3 :inherit region))))
 
    ;; idle-highlight
    `(idle-highlight ((,petunia-class (:foreground ,petunia-white :background ,petunia-fl-builtin :inherit region))))

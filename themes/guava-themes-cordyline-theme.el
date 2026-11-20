@@ -102,18 +102,18 @@
       (cordyline-diff-context              "#828282")
       (cordyline-smerge-base               "#5A5AA0")
 
-      (cordyline-square-a-0                "#af50b9")
-      (cordyline-square-a-1                "#28a03c")
-      (cordyline-square-a-2                "#ff6400")
-      (cordyline-square-a-3                "#3c82ff")
-
       (cordyline-complementary-a-0         "#46C8A5")
       (cordyline-complementary-a-1         "#C84669")
 
       (cordyline-tetradic-a-0              cordyline-mode-line-modified)
       (cordyline-tetradic-a-1              "#C778CD")
       (cordyline-tetradic-a-2              "#7ECD78")
-      (cordyline-tetradic-a-3              "#CD9D78"))
+      (cordyline-tetradic-a-3              "#CD9D78")
+
+      (cordyline-tetradic-b-0              "#A646B9")
+      (cordyline-tetradic-b-1              "#59B946")
+      (cordyline-tetradic-b-2              "#B96C46")
+      (cordyline-tetradic-b-3              "#4693B9"))
 
   (custom-theme-set-faces
    'guava-themes-cordyline
@@ -271,8 +271,8 @@
    `(org-table-header ((,cordyline-class (:inverse-video t :inherit org-table))))
    `(org-date ((,cordyline-class (:foreground ,cordyline-orange-red))))
    `(org-date-selected ((,cordyline-class (:foreground unspecified :inverse-video t :inherit org-date))))
-   `(org-headline-todo ((,cordyline-class (:foreground ,cordyline-square-a-2))))
-   `(org-headline-done ((,cordyline-class (:foreground ,cordyline-square-a-1))))
+   `(org-headline-todo ((,cordyline-class (:foreground ,cordyline-tetradic-b-2))))
+   `(org-headline-done ((,cordyline-class (:foreground ,cordyline-tetradic-b-1))))
    `(org-document-title ((,cordyline-class (:inherit font-lock-keyword-face))))
    `(org-document-info-keyword ((,cordyline-class (:inherit shadow))))
    `(org-meta-line ((,cordyline-class (:inherit font-lock-comment-face))))
@@ -282,22 +282,22 @@
    `(window-divider-first-pixel ((,cordyline-class (:inherit window-divider))))
    `(window-divider-last-pixel ((,cordyline-class (:inherit window-divider))))
 
-   ;; isearch (use "M-x isearch-forward-regexp foo-\([0-9]+\)\([a-z]+\)" to check the group faces)
-   `(isearch ((,cordyline-class (:foreground ,cordyline-white :background ,cordyline-square-a-2))))
+   ;; isearch (use "M-x isearch-forward-regexp foo-\([0-9]+\)\([a-z]+\)\([0-9]+\)" to check the group faces)
+   `(isearch ((,cordyline-class (:foreground ,cordyline-white :background ,cordyline-tetradic-b-2))))
    `(isearch-fail ((,cordyline-class (:foreground ,cordyline-white :background ,cordyline-error))))
-   `(lazy-highlight ((,cordyline-class (:foreground ,cordyline-white :background ,cordyline-square-a-3))))
-   `(isearch-group-1 ((,cordyline-class (:foreground ,cordyline-white :background ,cordyline-square-a-0))))
-   `(isearch-group-2 ((,cordyline-class (:foreground ,cordyline-white :background ,cordyline-square-a-1))))
+   `(lazy-highlight ((,cordyline-class (:foreground ,cordyline-white :background ,cordyline-tetradic-b-3))))
+   `(isearch-group-1 ((,cordyline-class (:foreground ,cordyline-white :background ,cordyline-tetradic-b-0))))
+   `(isearch-group-2 ((,cordyline-class (:foreground ,cordyline-white :background ,cordyline-tetradic-b-1))))
 
    ;; replace (use "M-x occur" to check the match face)
    `(query-replace ((,cordyline-class (:inherit isearch))))
    `(match ((,cordyline-class (:inherit lazy-highlight))))
 
    ;; re-builder
-   `(reb-match-0 ((,cordyline-class (:background ,cordyline-square-a-0 :foreground ,cordyline-white))))
-   `(reb-match-1 ((,cordyline-class (:background ,cordyline-square-a-1 :foreground ,cordyline-white))))
-   `(reb-match-2 ((,cordyline-class (:background ,cordyline-square-a-2 :foreground ,cordyline-white))))
-   `(reb-match-3 ((,cordyline-class (:background ,cordyline-square-a-3 :foreground ,cordyline-white))))
+   `(reb-match-0 ((,cordyline-class (:background ,cordyline-tetradic-b-0 :foreground ,cordyline-white))))
+   `(reb-match-1 ((,cordyline-class (:background ,cordyline-tetradic-b-1 :foreground ,cordyline-white))))
+   `(reb-match-2 ((,cordyline-class (:background ,cordyline-tetradic-b-2 :foreground ,cordyline-white))))
+   `(reb-match-3 ((,cordyline-class (:background ,cordyline-tetradic-b-3 :foreground ,cordyline-white))))
 
    ;; custom
    ;; (progn (setopt custom-raised-buttons nil) (setq mouse-highlight t))
@@ -389,10 +389,10 @@
    `(corfu-border ((,cordyline-class (:background ,cordyline-shadow))))
 
    ;; orderless
-   `(orderless-match-face-0 ((,cordyline-class (:foreground ,cordyline-square-a-0 :weight bold))))
-   `(orderless-match-face-1 ((,cordyline-class (:foreground ,cordyline-square-a-1 :weight bold))))
-   `(orderless-match-face-2 ((,cordyline-class (:foreground ,cordyline-square-a-2 :weight bold))))
-   `(orderless-match-face-3 ((,cordyline-class (:foreground ,cordyline-square-a-3 :weight bold))))
+   `(orderless-match-face-0 ((,cordyline-class (:foreground ,cordyline-tetradic-b-0 :weight bold))))
+   `(orderless-match-face-1 ((,cordyline-class (:foreground ,cordyline-tetradic-b-1 :weight bold))))
+   `(orderless-match-face-2 ((,cordyline-class (:foreground ,cordyline-tetradic-b-2 :weight bold))))
+   `(orderless-match-face-3 ((,cordyline-class (:foreground ,cordyline-tetradic-b-3 :weight bold))))
 
    ;; prescient (vertico-prescient-enable-filtering, corfu-prescient-enable-filtering)
    `(prescient-primary-highlight ((,cordyline-class (:foreground ,cordyline-complementary-a-0 :weight bold))))
@@ -409,7 +409,7 @@
    `(devdocs-code-block ((,cordyline-class (:weight bold :background ,cordyline-highlight :extend t))))
 
    ;; pdf-tools
-   `(pdf-view-region ((,cordyline-class (:foreground ,cordyline-white :background ,cordyline-square-a-3 :inherit region))))
+   `(pdf-view-region ((,cordyline-class (:foreground ,cordyline-white :background ,cordyline-tetradic-b-3 :inherit region))))
 
    ;; idle-highlight
    `(idle-highlight ((,cordyline-class (:foreground ,cordyline-white :background ,cordyline-fl-builtin :inherit region))))
