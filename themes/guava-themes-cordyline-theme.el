@@ -44,7 +44,7 @@
 
       (cordyline-light-blue                "#7387e1")
       (cordyline-blue                      "#5064b9")
-      (cordyline-deep-blue                 "#214bd5")
+      (cordyline-alt-blue                  "#2173d5")
       (cordyline-steel-blue                "#4f94cd")
       (cordyline-cyan                      "#00ffff")
       (cordyline-dark-cyan                 "#0091af")
@@ -88,7 +88,7 @@
       (cordyline-fl-type                   cordyline-light-purple)
       (cordyline-fl-function-name          cordyline-pink-purple)
       (cordyline-fl-variable-name          cordyline-blue)
-      (cordyline-fl-constant               cordyline-dark-cyan)
+      (cordyline-fl-constant               cordyline-alt-blue)
       (cordyline-fl-warning                cordyline-warning)
       (cordyline-fl-punctuation            cordyline-fg-2)
       (cordyline-fl-negation-char          cordyline-orange-red)
@@ -222,7 +222,7 @@
    ;; outline
    `(outline-1 ((,cordyline-class (:foreground ,cordyline-light-blue :weight medium))))
    `(outline-2 ((,cordyline-class (:foreground ,cordyline-light-purple :weight medium))))
-   `(outline-3 ((,cordyline-class (:foreground ,cordyline-dark-cyan :weight medium))))
+   `(outline-3 ((,cordyline-class (:foreground ,cordyline-alt-blue :weight medium))))
    `(outline-4 ((,cordyline-class (:foreground ,cordyline-purple-red :weight medium))))
    `(outline-5 ((,cordyline-class (:inherit outline-1))))
    `(outline-6 ((,cordyline-class (:inherit outline-2))))
@@ -354,7 +354,7 @@
    ;; elfeed
    `(elfeed-search-tag-face ((,cordyline-class (:foreground ,cordyline-green))))
    `(elfeed-search-date-face ((,cordyline-class (:foreground ,cordyline-light-blue))))
-   `(elfeed-search-feed-face ((,cordyline-class (:foreground ,cordyline-dark-cyan))))
+   `(elfeed-search-feed-face ((,cordyline-class (:foreground ,cordyline-alt-blue))))
    `(elfeed-search-title-face ((,cordyline-class (:foreground ,cordyline-alt-purple))))
    `(elfeed-search-unread-title-face ((,cordyline-class (:weight bold :foreground ,cordyline-purple-red))))
    `(elfeed-search-filter-face ((,cordyline-class (:weight bold :foreground ,cordyline-tetradic-a-1))))
