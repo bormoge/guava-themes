@@ -114,10 +114,10 @@
       (ceiba-tetradic-a-2              "#98AA98")
       (ceiba-tetradic-a-3              "#98A1AA")
 
-      (ceiba-tetradic-b-0              "#9D50B4")
-      (ceiba-tetradic-b-1              "#67B450")
-      (ceiba-tetradic-b-2              "#B46B50")
-      (ceiba-tetradic-b-3              "#5099B4"))
+      (ceiba-tetradic-b-0              "#803C96")
+      (ceiba-tetradic-b-1              "#53963C")
+      (ceiba-tetradic-b-2              "#96533C")
+      (ceiba-tetradic-b-3              "#3C8096"))
 
   (custom-theme-set-faces
    'guava-themes-ceiba
