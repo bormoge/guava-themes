@@ -47,16 +47,18 @@
       (jacaranda-orange                    "#ff9f79")
       (jacaranda-red                       "#af2a36")
 
-      (jacaranda-blue                      "#4534e3")
-      (jacaranda-deep-blue                 "#655db0")
+      (jacaranda-light-blue                "#73a5eb")
+      (jacaranda-blue                      "#4b7dc3")
+      (jacaranda-deep-blue                 "#3246e3")
       ;; (jacaranda-antarctic-blue            "#8cb2e6")
-      (jacaranda-light-cyan                "#60a1ba")
-      (jacaranda-cyan                      "#00778b")
+      (jacaranda-cyan                      "#00afaf")
+      (jacaranda-dark-cyan                 "#005f5f")
 
       (jacaranda-light-purple              "#be87e6")
       (jacaranda-purple                    "#aa69e6")
       (jacaranda-deep-purple               "#640cbe")
       (jacaranda-purple-red                "#8b2252")
+      (jacaranda-purple-blue               "#655db0")
 
       (jacaranda-fg-1                      "#000000")
       (jacaranda-fg-2                      "#3c3c3c")
@@ -84,10 +86,10 @@
       (jacaranda-fl-comment                jacaranda-deep-green)
       (jacaranda-fl-string                 jacaranda-purple-red)
       (jacaranda-fl-keyword                jacaranda-deep-purple)
-      (jacaranda-fl-builtin                jacaranda-deep-blue)
-      (jacaranda-fl-type                   jacaranda-cyan)
-      (jacaranda-fl-function-name          jacaranda-blue)
-      (jacaranda-fl-variable-name          jacaranda-light-cyan)
+      (jacaranda-fl-builtin                jacaranda-purple-blue)
+      (jacaranda-fl-type                   jacaranda-blue)
+      (jacaranda-fl-function-name          jacaranda-deep-blue)
+      (jacaranda-fl-variable-name          jacaranda-light-blue)
       (jacaranda-fl-constant               jacaranda-oceanic-green)
       (jacaranda-fl-warning                jacaranda-warning)
       (jacaranda-fl-punctuation            jacaranda-fg-2)
@@ -216,12 +218,12 @@
    `(trailing-whitespace ((,jacaranda-class (:background ,jacaranda-error))))
 
    ;; links
-   `(link ((,jacaranda-class (:foreground ,jacaranda-oceanic-green :underline t :weight bold))))
-   `(link-visited ((,jacaranda-class (:foreground ,jacaranda-deep-green :underline t :weight bold))))
+   `(link ((,jacaranda-class (:foreground ,jacaranda-cyan :underline t :weight bold))))
+   `(link-visited ((,jacaranda-class (:foreground ,jacaranda-dark-cyan :underline t :weight bold))))
 
    ;; outline
    `(outline-1 ((,jacaranda-class (:foreground ,jacaranda-purple :weight medium))))
-   `(outline-2 ((,jacaranda-class (:foreground ,jacaranda-light-cyan :weight medium))))
+   `(outline-2 ((,jacaranda-class (:foreground ,jacaranda-light-blue :weight medium))))
    `(outline-3 ((,jacaranda-class (:foreground ,jacaranda-light-green :weight medium))))
    `(outline-4 ((,jacaranda-class (:foreground ,jacaranda-red :weight medium))))
    `(outline-5 ((,jacaranda-class (:inherit outline-1))))
@@ -230,17 +232,17 @@
    `(outline-8 ((,jacaranda-class (:inherit outline-4))))
 
    ;; homoglyph, escape-glyph, nobreak-space (C-x 8 RET "FORM FEED") (C-x 8 RET "NO-BREAK SPACE")
-   `(homoglyph ((,jacaranda-class (:foreground ,jacaranda-blue))))
+   `(homoglyph ((,jacaranda-class (:foreground ,jacaranda-cyan))))
    `(escape-glyph ((,jacaranda-class (:inherit homoglyph))))
    `(nobreak-space ((,jacaranda-class (:box (:line-width (2 . 2)) :inherit homoglyph))))
    `(nobreak-hyphen ((,jacaranda-class (:inherit homoglyph))))
 
    ;; pulse-highlight-start-face
    ;; M-: (pulse-momentary-highlight-region (point-min) (point-max))
-   `(pulse-highlight-start-face ((,jacaranda-class (:background ,jacaranda-light-cyan))))
+   `(pulse-highlight-start-face ((,jacaranda-class (:background ,jacaranda-light-blue))))
 
    ;; help-key-binding
-   `(help-key-binding ((,jacaranda-class (:foreground ,jacaranda-deep-blue :background "grey96" :box (:line-width (-1 . -1) :color "grey80") :inherit fixed-pitch))))
+   `(help-key-binding ((,jacaranda-class (:foreground ,jacaranda-purple-blue :background "grey96" :box (:line-width (-1 . -1) :color "grey80") :inherit fixed-pitch))))
 
    ;; diff
    `(diff-added ((,jacaranda-class (:foreground ,jacaranda-black :background ,jacaranda-diff-added :extend t :inherit diff-changed))))
@@ -267,7 +269,7 @@
    `(org-todo ((,jacaranda-class (:foreground ,jacaranda-error :weight bold))))
    `(org-done ((,jacaranda-class (:foreground ,jacaranda-success :weight bold))))
    `(org-hide ((,jacaranda-class (:foreground ,jacaranda-bg-1))))
-   `(org-table ((,jacaranda-class (:foreground ,jacaranda-deep-blue))))
+   `(org-table ((,jacaranda-class (:foreground ,jacaranda-purple-blue))))
    `(org-table-header ((,jacaranda-class (:inverse-video t :inherit org-table))))
    `(org-date ((,jacaranda-class (:foreground ,jacaranda-red))))
    `(org-date-selected ((,jacaranda-class (:foreground unspecified :inverse-video t :inherit org-date))))
@@ -353,7 +355,7 @@
 
    ;; elfeed
    `(elfeed-search-tag-face ((,jacaranda-class (:foreground ,jacaranda-purple-red))))
-   `(elfeed-search-date-face ((,jacaranda-class (:foreground ,jacaranda-deep-blue))))
+   `(elfeed-search-date-face ((,jacaranda-class (:foreground ,jacaranda-purple-blue))))
    `(elfeed-search-feed-face ((,jacaranda-class (:foreground ,jacaranda-deep-purple))))
    `(elfeed-search-title-face ((,jacaranda-class (:foreground ,jacaranda-gray-green))))
    `(elfeed-search-unread-title-face ((,jacaranda-class (:weight bold :foreground ,jacaranda-deep-green))))
