@@ -46,8 +46,8 @@
       (cordyline-blue                      "#5064b9")
       (cordyline-alt-blue                  "#2173d5")
       (cordyline-steel-blue                "#4f94cd")
-      (cordyline-cyan                      "#00ffff")
-      (cordyline-dark-cyan                 "#0091af")
+      (cordyline-cyan                      "#00d7d7")
+      (cordyline-dark-cyan                 "#008787")
 
       (cordyline-light-green               "#afd2b9")
       (cordyline-green                     "#007d5f")
@@ -216,8 +216,8 @@
    `(trailing-whitespace ((,cordyline-class (:background ,cordyline-error))))
 
    ;; links
-   `(link ((,cordyline-class (:foreground ,cordyline-steel-blue :underline t :weight bold))))
-   `(link-visited ((,cordyline-class (:foreground ,cordyline-purple :underline t :weight bold))))
+   `(link ((,cordyline-class (:foreground ,cordyline-cyan :underline t :weight bold))))
+   `(link-visited ((,cordyline-class (:foreground ,cordyline-dark-cyan :underline t :weight bold))))
 
    ;; outline
    `(outline-1 ((,cordyline-class (:foreground ,cordyline-light-blue :weight medium))))

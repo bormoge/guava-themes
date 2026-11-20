@@ -53,7 +53,8 @@
       ;; (lavandula-alt-light-blue            "#b1c6c0")
       (lavandula-blue                      "#1e9be0")
       (lavandula-deep-blue                 "#2862b0")
-      (lavandula-light-cyan                "#00cfcf")
+      (lavandula-cyan                      "#00afaf")
+      (lavandula-dark-cyan                 "#005f5f")
 
       (lavandula-purple                    "#7d509b")
       (lavandula-lavender                  "#8061b8")
@@ -216,8 +217,8 @@
    `(trailing-whitespace ((,lavandula-class (:background ,lavandula-error))))
 
    ;; links
-   `(link ((,lavandula-class (:foreground ,lavandula-blue :underline t :weight bold))))
-   `(link-visited ((,lavandula-class (:foreground ,lavandula-deep-blue :underline t :weight bold))))
+   `(link ((,lavandula-class (:foreground ,lavandula-cyan :underline t :weight bold))))
+   `(link-visited ((,lavandula-class (:foreground ,lavandula-dark-cyan :underline t :weight bold))))
 
    ;; outline
    `(outline-1 ((,lavandula-class (:foreground ,lavandula-purple :weight medium))))
@@ -230,14 +231,14 @@
    `(outline-8 ((,lavandula-class (:inherit outline-4))))
 
    ;; homoglyph, escape-glyph, nobreak-space (C-x 8 RET "FORM FEED") (C-x 8 RET "NO-BREAK SPACE")
-   `(homoglyph ((,lavandula-class (:foreground ,lavandula-light-cyan))))
+   `(homoglyph ((,lavandula-class (:foreground ,lavandula-cyan))))
    `(escape-glyph ((,lavandula-class (:inherit homoglyph))))
    `(nobreak-space ((,lavandula-class (:box (:line-width (2 . 2)) :inherit homoglyph))))
    `(nobreak-hyphen ((,lavandula-class (:inherit homoglyph))))
 
    ;; pulse-highlight-start-face
    ;; M-: (pulse-momentary-highlight-region (point-min) (point-max))
-   `(pulse-highlight-start-face ((,lavandula-class (:background ,lavandula-light-cyan))))
+   `(pulse-highlight-start-face ((,lavandula-class (:background ,lavandula-cyan))))
 
    ;; help-key-binding
    `(help-key-binding ((,lavandula-class (:foreground ,lavandula-deep-blue :background "grey96" :box (:line-width (-1 . -1) :color "grey80") :inherit fixed-pitch))))

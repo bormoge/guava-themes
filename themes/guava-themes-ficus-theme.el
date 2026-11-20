@@ -56,10 +56,11 @@
       ;; (ficus-blue                      "#2327dc")
       (ficus-blue                      "#2d8296")
       (ficus-deep-blue                 "#465a6e")
-      (ficus-cyan                      "#00ffff")
-      (ficus-alt-cyan                  "#008cd2")
+      (ficus-cyan                      "#00afaf")
+      (ficus-dark-cyan                 "#007373")
 
-      (ficus-purple-red                "#874164")
+      (ficus-purple-red                "#914b6e")
+      (ficus-purple                    "#9678b9")
 
       (ficus-fg-1                      "#d7d7d7")
       (ficus-fg-2                      "#878787")
@@ -95,7 +96,7 @@
       (ficus-fl-constant               ficus-blue)
       (ficus-fl-warning                ficus-warning)
       (ficus-fl-punctuation            ficus-fg-2)
-      (ficus-fl-negation-char          ficus-alt-cyan)
+      (ficus-fl-negation-char          ficus-purple)
 
       (ficus-diff-added                "#5aa05a")
       (ficus-diff-removed              "#a05a5a")
@@ -220,8 +221,8 @@
    `(trailing-whitespace ((,ficus-class (:background ,ficus-error))))
 
    ;; links
-   `(link ((,ficus-class (:foreground ,ficus-blue :underline t :weight bold))))
-   `(link-visited ((,ficus-class (:foreground ,ficus-deep-blue :underline t :weight bold))))
+   `(link ((,ficus-class (:foreground ,ficus-cyan :underline t :weight bold))))
+   `(link-visited ((,ficus-class (:foreground ,ficus-dark-cyan :underline t :weight bold))))
 
    ;; outline
    `(outline-1 ((,ficus-class (:foreground ,ficus-deep-blue :weight medium))))
@@ -241,7 +242,7 @@
 
    ;; pulse-highlight-start-face
    ;; M-: (pulse-momentary-highlight-region (point-min) (point-max))
-   `(pulse-highlight-start-face ((,ficus-class (:background ,ficus-alt-cyan))))
+   `(pulse-highlight-start-face ((,ficus-class (:background ,ficus-cyan))))
 
    ;; help-key-binding
    `(help-key-binding ((,ficus-class (:foreground ,ficus-light-red :background "grey19" :box (:line-width (-1 . -1) :color "grey35") :inherit fixed-pitch))))

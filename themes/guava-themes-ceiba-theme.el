@@ -53,6 +53,8 @@
       ;; (ceiba-steel-blue                "#aabed8")
       (ceiba-blue                      "#2327dc")
       (ceiba-alt-blue                  "#2268a7")
+      (ceiba-cyan                      "#008787")
+      (ceiba-dark-cyan                 "#005f5f")
 
       (ceiba-light-purple              "#bec8ff")
       (ceiba-purple                    "#4e466d")
@@ -220,8 +222,8 @@
    `(trailing-whitespace ((,ceiba-class (:background ,ceiba-error))))
 
    ;; links
-   `(link ((,ceiba-class (:foreground ,ceiba-purple :underline t :weight bold))))
-   `(link-visited ((,ceiba-class (:foreground ,ceiba-purple-red :underline t :weight bold))))
+   `(link ((,ceiba-class (:foreground ,ceiba-cyan :underline t :weight bold))))
+   `(link-visited ((,ceiba-class (:foreground ,ceiba-dark-cyan :underline t :weight bold))))
 
    ;; outline
    `(outline-1 ((,ceiba-class (:foreground ,ceiba-alt-blue :weight medium))))
@@ -234,7 +236,7 @@
    `(outline-8 ((,ceiba-class (:inherit outline-4))))
 
    ;; homoglyph, escape-glyph, nobreak-space (C-x 8 RET "FORM FEED") (C-x 8 RET "NO-BREAK SPACE")
-   `(homoglyph ((,ceiba-class (:foreground ,ceiba-blue))))
+   `(homoglyph ((,ceiba-class (:foreground ,ceiba-cyan))))
    `(escape-glyph ((,ceiba-class (:inherit homoglyph))))
    `(nobreak-space ((,ceiba-class (:box (:line-width (2 . 2)) :inherit homoglyph))))
    `(nobreak-hyphen ((,ceiba-class (:inherit homoglyph))))

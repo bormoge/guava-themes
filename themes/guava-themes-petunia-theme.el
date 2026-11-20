@@ -50,9 +50,9 @@
       (petunia-green-forest              "#008741")
       (petunia-alt-green-forest          "#006941")
 
-      (petunia-light-blue                "#00c3d7")
-      (petunia-deep-blue                 "#004b82")
-      (petunia-cyan                      "#00ffff")
+      (petunia-blue                      "#287dd7")
+      (petunia-cyan                      "#00d7d7")
+      (petunia-dark-cyan                 "#007373")
 
       (petunia-purple                    "#8c6ecd")
 
@@ -86,7 +86,7 @@
       (petunia-fl-type                   petunia-yellow)
       (petunia-fl-function-name          petunia-red)
       (petunia-fl-variable-name          petunia-pink)
-      (petunia-fl-constant               petunia-light-blue)
+      (petunia-fl-constant               petunia-blue)
       (petunia-fl-warning                petunia-warning)
       (petunia-fl-punctuation            petunia-fg-2)
       (petunia-fl-negation-char          petunia-light-orange)
@@ -214,8 +214,8 @@
    `(trailing-whitespace ((,petunia-class (:background ,petunia-error))))
 
    ;; links
-   `(link ((,petunia-class (:foreground ,petunia-light-blue :underline t :weight bold))))
-   `(link-visited ((,petunia-class (:foreground ,petunia-orange :underline t :weight bold))))
+   `(link ((,petunia-class (:foreground ,petunia-cyan :underline t :weight bold))))
+   `(link-visited ((,petunia-class (:foreground ,petunia-dark-cyan :underline t :weight bold))))
 
    ;; outline
    `(outline-1 ((,petunia-class (:foreground ,petunia-red :weight medium))))
@@ -351,9 +351,9 @@
 
    ;; elfeed
    `(elfeed-search-tag-face ((,petunia-class (:foreground ,petunia-pink))))
-   `(elfeed-search-date-face ((,petunia-class (:foreground ,petunia-light-blue))))
+   `(elfeed-search-date-face ((,petunia-class (:foreground ,petunia-blue))))
    `(elfeed-search-feed-face ((,petunia-class (:foreground ,petunia-orange))))
-   `(elfeed-search-title-face ((,petunia-class (:foreground ,petunia-deep-blue))))
+   `(elfeed-search-title-face ((,petunia-class (:foreground ,petunia-cream))))
    `(elfeed-search-unread-title-face ((,petunia-class (:weight bold :foreground ,petunia-green-forest))))
    `(elfeed-search-filter-face ((,petunia-class (:weight bold :foreground ,petunia-tetradic-a-1))))
    `(elfeed-search-last-update-face ((,petunia-class (:weight bold :foreground ,petunia-tetradic-a-1))))

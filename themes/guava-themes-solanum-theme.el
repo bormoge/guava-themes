@@ -49,7 +49,8 @@
 
       (solanum-light-blue                "#8ec4de")
       (solanum-blue                      "#0d62b2")
-      (solanum-cyan                      "#00ffff")
+      (solanum-cyan                      "#00c3c3")
+      (solanum-dark-cyan                 "#007373")
 
       (solanum-light-purple              "#bec8ff")
       (solanum-purple                    "#786ed7")
@@ -215,8 +216,8 @@
    `(trailing-whitespace ((,solanum-class (:background ,solanum-error))))
 
    ;; links
-   `(link ((,solanum-class (:foreground ,solanum-yellow-potato :underline t :weight bold))))
-   `(link-visited ((,solanum-class (:foreground ,solanum-orange :underline t :weight bold))))
+   `(link ((,solanum-class (:foreground ,solanum-cyan :underline t :weight bold))))
+   `(link-visited ((,solanum-class (:foreground ,solanum-dark-cyan :underline t :weight bold))))
 
    ;; outline
    `(outline-1 ((,solanum-class (:foreground ,solanum-purple :weight medium))))

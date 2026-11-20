@@ -49,9 +49,11 @@
 
       (psidium-brown                     "#785f46")
 
-      (psidium-light-blue                "#37b9c0")
+      ;; (psidium-light-blue                "#3791c0")
       (psidium-blue                      "#2a4ad9")
       (psidium-deep-blue                 "#483d8b")
+      (psidium-cyan                      "#00afaf")
+      (psidium-dark-cyan                 "#006969")
 
       (psidium-purple                    "#812db2")
 
@@ -213,8 +215,8 @@
    `(trailing-whitespace ((,psidium-class (:background ,psidium-error))))
 
    ;; links
-   `(link ((,psidium-class (:foreground ,psidium-light-blue :underline t :weight bold))))
-   `(link-visited ((,psidium-class (:foreground ,psidium-purple :underline t :weight bold))))
+   `(link ((,psidium-class (:foreground ,psidium-cyan :underline t :weight bold))))
+   `(link-visited ((,psidium-class (:foreground ,psidium-dark-cyan :underline t :weight bold))))
 
    ;; outline
    `(outline-1 ((,psidium-class (:foreground ,psidium-red :weight medium))))
@@ -227,14 +229,14 @@
    `(outline-8 ((,psidium-class (:inherit outline-4))))
 
    ;; homoglyph, escape-glyph, nobreak-space (C-x 8 RET "FORM FEED") (C-x 8 RET "NO-BREAK SPACE")
-   `(homoglyph ((,psidium-class (:foreground ,psidium-blue))))
+   `(homoglyph ((,psidium-class (:foreground ,psidium-cyan))))
    `(escape-glyph ((,psidium-class (:inherit homoglyph))))
    `(nobreak-space ((,psidium-class (:box (:line-width (2 . 2)) :inherit homoglyph))))
    `(nobreak-hyphen ((,psidium-class (:inherit homoglyph))))
 
    ;; pulse-highlight-start-face
    ;; M-: (pulse-momentary-highlight-region (point-min) (point-max))
-   `(pulse-highlight-start-face ((,psidium-class (:background ,psidium-light-blue))))
+   `(pulse-highlight-start-face ((,psidium-class (:background ,psidium-cyan))))
 
    ;; help-key-binding
    `(help-key-binding ((,psidium-class (:foreground ,psidium-blue :background "grey96" :box (:line-width (-1 . -1) :color "grey80") :inherit fixed-pitch))))

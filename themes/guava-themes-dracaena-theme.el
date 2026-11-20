@@ -56,7 +56,8 @@
       (dracaena-light-blue                "#6496f0")
       (dracaena-blue                      "#2d50d5")
       (dracaena-steel-blue                "#4678d2")
-      (dracaena-cyan                      "#00ffff")
+      (dracaena-cyan                      "#00d7d7")
+      (dracaena-dark-cyan                 "#008787")
 
       (dracaena-fg-1                      "#becee6")
       (dracaena-fg-2                      "#8292aa")
@@ -216,8 +217,8 @@
    `(trailing-whitespace ((,dracaena-class (:background ,dracaena-error))))
 
    ;; links
-   `(link ((,dracaena-class (:foreground ,dracaena-snakeplant-yellow :underline t :weight bold))))
-   `(link-visited ((,dracaena-class (:foreground ,dracaena-orange :underline t :weight bold))))
+   `(link ((,dracaena-class (:foreground ,dracaena-cyan :underline t :weight bold))))
+   `(link-visited ((,dracaena-class (:foreground ,dracaena-dark-cyan :underline t :weight bold))))
 
    ;; outline
    `(outline-1 ((,dracaena-class (:foreground ,dracaena-light-orange :weight medium))))

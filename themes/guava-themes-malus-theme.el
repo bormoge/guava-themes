@@ -51,11 +51,12 @@
       (malus-deep-red                  "#aa4628")
       (malus-alt-deep-red              "#aa2846")
 
-      (malus-light-blue                "#50bebe")
+      (malus-light-blue                "#5096be")
       (malus-blue                      "#4548e3")
       (malus-blue-subdued              "#9cc4de")
       (malus-oceanic-blue              "#49835f")
-      (malus-cyan                      "#00ffff")
+      (malus-cyan                      "#00cdcd")
+      (malus-dark-cyan                 "#007d7d")
 
       (malus-purple                    "#8468ed")
 
@@ -217,8 +218,8 @@
    `(trailing-whitespace ((,malus-class (:background ,malus-error))))
 
    ;; links
-   `(link ((,malus-class (:foreground ,malus-light-blue :underline t :weight bold))))
-   `(link-visited ((,malus-class (:foreground ,malus-oceanic-blue :underline t :weight bold))))
+   `(link ((,malus-class (:foreground ,malus-cyan :underline t :weight bold))))
+   `(link-visited ((,malus-class (:foreground ,malus-dark-cyan :underline t :weight bold))))
 
    ;; outline
    `(outline-1 ((,malus-class (:foreground ,malus-deep-red :weight medium))))

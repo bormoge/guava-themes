@@ -49,6 +49,8 @@
 
       (rhododendron-blue                      "#3c3cee")
       (rhododendron-deep-blue                 "#3e3d8b")
+      (rhododendron-cyan                      "#009bcd")
+      (rhododendron-dark-cyan                 "#00699b")
 
       (rhododendron-bright-pink               "#fd3aae")
       (rhododendron-alt-bright-pink           "#e78deb")
@@ -56,7 +58,7 @@
 
       (rhododendron-light-purple              "#e0bde7")
       (rhododendron-purple                    "#826ec0")
-      (rhododendron-purple-pink               "#ad20f0")
+      ;; (rhododendron-purple-pink               "#ad20f0")
       (rhododendron-purple-blue               "#5346cc")
       (rhododendron-purple-red                "#a8206f")
       (rhododendron-dark-purple-red           "#7d2061")
@@ -219,8 +221,8 @@
    `(trailing-whitespace ((,rhododendron-class (:background ,rhododendron-error))))
 
    ;; links
-   `(link ((,rhododendron-class (:foreground ,rhododendron-purple-blue :underline t :weight bold))))
-   `(link-visited ((,rhododendron-class (:foreground ,rhododendron-purple-pink :underline t :weight bold))))
+   `(link ((,rhododendron-class (:foreground ,rhododendron-cyan :underline t :weight bold))))
+   `(link-visited ((,rhododendron-class (:foreground ,rhododendron-dark-cyan :underline t :weight bold))))
 
    ;; outline
    `(outline-1 ((,rhododendron-class (:foreground ,rhododendron-purple-red :weight medium))))
@@ -233,7 +235,7 @@
    `(outline-8 ((,rhododendron-class (:inherit outline-4))))
 
    ;; homoglyph, escape-glyph, nobreak-space (C-x 8 RET "FORM FEED") (C-x 8 RET "NO-BREAK SPACE")
-   `(homoglyph ((,rhododendron-class (:foreground ,rhododendron-blue))))
+   `(homoglyph ((,rhododendron-class (:foreground ,rhododendron-cyan))))
    `(escape-glyph ((,rhododendron-class (:inherit homoglyph))))
    `(nobreak-space ((,rhododendron-class (:box (:line-width (2 . 2)) :inherit homoglyph))))
    `(nobreak-hyphen ((,rhododendron-class (:inherit homoglyph))))

@@ -53,7 +53,8 @@
       (vaccinium-deep-blue                 "#1c5367")
       (vaccinium-steel-blue                "#6a7e98")
       (vaccinium-alt-steel-blue            "#566a84")
-      (vaccinium-cyan                      "#00ffff")
+      (vaccinium-cyan                      "#00c3c3")
+      (vaccinium-dark-cyan                 "#007373")
 
       (vaccinium-light-purple              "#8282af")
       (vaccinium-purple                    "#6464af")
@@ -217,8 +218,8 @@
    `(trailing-whitespace ((,vaccinium-class (:background ,vaccinium-error))))
 
    ;; links
-   `(link ((,vaccinium-class (:foreground ,vaccinium-yellow :underline t :weight bold))))
-   `(link-visited ((,vaccinium-class (:foreground ,vaccinium-orange :underline t :weight bold))))
+   `(link ((,vaccinium-class (:foreground ,vaccinium-cyan :underline t :weight bold))))
+   `(link-visited ((,vaccinium-class (:foreground ,vaccinium-dark-cyan :underline t :weight bold))))
 
    ;; outline
    `(outline-1 ((,vaccinium-class (:foreground ,vaccinium-blue :weight medium))))

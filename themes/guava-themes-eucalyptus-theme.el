@@ -52,9 +52,10 @@
       (eucalyptus-blue                      "#2327dc")
       (eucalyptus-deep-blue                 "#46466e")
       (eucalyptus-alt-deep-blue             "#373c4b")
-      (eucalyptus-cyan                      "#00ffff")
-      (eucalyptus-alt-cyan                  "#008cd2")
+      (eucalyptus-cyan                      "#007daf")
+      (eucalyptus-dark-cyan                 "#005f91")
 
+      (eucalyptus-purple                    "#825a91")
       (eucalyptus-purple-red                "#874164")
 
       (eucalyptus-fg-1                      "#2d3241")
@@ -90,7 +91,7 @@
       (eucalyptus-fl-constant               eucalyptus-light-blue)
       (eucalyptus-fl-warning                eucalyptus-warning)
       (eucalyptus-fl-punctuation            eucalyptus-fg-2)
-      (eucalyptus-fl-negation-char          eucalyptus-alt-cyan)
+      (eucalyptus-fl-negation-char          eucalyptus-purple)
 
       (eucalyptus-diff-added                "#c8f0c8")
       (eucalyptus-diff-removed              "#f0c8c8")
@@ -215,8 +216,8 @@
    `(trailing-whitespace ((,eucalyptus-class (:background ,eucalyptus-error))))
 
    ;; links
-   `(link ((,eucalyptus-class (:foreground ,eucalyptus-light-blue :underline t :weight bold))))
-   `(link-visited ((,eucalyptus-class (:foreground ,eucalyptus-deep-blue :underline t :weight bold))))
+   `(link ((,eucalyptus-class (:foreground ,eucalyptus-cyan :underline t :weight bold))))
+   `(link-visited ((,eucalyptus-class (:foreground ,eucalyptus-dark-cyan :underline t :weight bold))))
 
    ;; outline
    `(outline-1 ((,eucalyptus-class (:foreground ,eucalyptus-deep-blue :weight medium))))
@@ -236,7 +237,7 @@
 
    ;; pulse-highlight-start-face
    ;; M-: (pulse-momentary-highlight-region (point-min) (point-max))
-   `(pulse-highlight-start-face ((,eucalyptus-class (:background ,eucalyptus-alt-cyan))))
+   `(pulse-highlight-start-face ((,eucalyptus-class (:background ,eucalyptus-cyan))))
 
    ;; help-key-binding
    `(help-key-binding ((,eucalyptus-class (:foreground ,eucalyptus-deep-blue :background "grey96" :box (:line-width (-1 . -1) :color "grey80") :inherit fixed-pitch))))

@@ -54,7 +54,8 @@
       (rubus-light-blue                "#5096f1")
       (rubus-blue                      "#1455f1")
       (rubus-blue-subdued              "#1c81a1")
-      (rubus-cyan                      "#00FFFF")
+      (rubus-cyan                      "#00c3c3")
+      (rubus-dark-cyan                 "#007373")
 
       (rubus-light-purple              "#beaadc")
       (rubus-purple                    "#8c78dc")
@@ -218,8 +219,8 @@
    `(trailing-whitespace ((,rubus-class (:background ,rubus-error))))
 
    ;; links
-   `(link ((,rubus-class (:foreground ,rubus-light-green :underline t :weight bold))))
-   `(link-visited ((,rubus-class (:foreground ,rubus-green :underline t :weight bold))))
+   `(link ((,rubus-class (:foreground ,rubus-cyan :underline t :weight bold))))
+   `(link-visited ((,rubus-class (:foreground ,rubus-dark-cyan :underline t :weight bold))))
 
    ;; outline
    `(outline-1 ((,rubus-class (:foreground ,rubus-raspberry :weight medium))))

@@ -51,8 +51,10 @@
       (acer-deep-brown                "#8c695a")
 
       (acer-light-blue                "#3a9187")
-      (acer-blue                      "#2134d5")
+      ;; (acer-blue                      "#2134d5")
       (acer-deep-blue                 "#1B3B4D")
+      (acer-cyan                      "#009b9b")
+      (acer-dark-cyan                 "#006969")
 
       (acer-purple                    "#8a618a")
       (acer-deep-purple               "#60366e")
@@ -217,8 +219,8 @@
    `(trailing-whitespace ((,acer-class (:background ,acer-error))))
 
    ;; links
-   `(link ((,acer-class (:foreground ,acer-green-cyan :underline t :weight bold))))
-   `(link-visited ((,acer-class (:foreground ,acer-blue :underline t :weight bold))))
+   `(link ((,acer-class (:foreground ,acer-cyan :underline t :weight bold))))
+   `(link-visited ((,acer-class (:foreground ,acer-dark-cyan :underline t :weight bold))))
 
    ;; outline
    `(outline-1 ((,acer-class (:foreground ,acer-purple-red :weight medium))))
@@ -231,7 +233,7 @@
    `(outline-8 ((,acer-class (:inherit outline-4))))
 
    ;; homoglyph, escape-glyph, nobreak-space (C-x 8 RET "FORM FEED") (C-x 8 RET "NO-BREAK SPACE")
-   `(homoglyph ((,acer-class (:foreground ,acer-blue))))
+   `(homoglyph ((,acer-class (:foreground ,acer-cyan))))
    `(escape-glyph ((,acer-class (:inherit homoglyph))))
    `(nobreak-space ((,acer-class (:box (:line-width (2 . 2)) :inherit homoglyph))))
    `(nobreak-hyphen ((,acer-class (:inherit homoglyph))))
@@ -241,7 +243,7 @@
    `(pulse-highlight-start-face ((,acer-class (:background ,acer-light-blue))))
 
    ;; help-key-binding
-   `(help-key-binding ((,acer-class (:foreground ,acer-blue :background "grey96" :box (:line-width (-1 . -1) :color "grey80") :inherit fixed-pitch))))
+   `(help-key-binding ((,acer-class (:foreground ,acer-cyan :background "grey96" :box (:line-width (-1 . -1) :color "grey80") :inherit fixed-pitch))))
 
    ;; diff
    `(diff-added ((,acer-class (:foreground ,acer-black :background ,acer-diff-added :extend t :inherit diff-changed))))

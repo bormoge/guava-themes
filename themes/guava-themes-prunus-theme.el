@@ -57,7 +57,8 @@
 
       (prunus-blue                      "#4650e1")
       (prunus-deep-blue                 "#4650af")
-      (prunus-cyan                      "#00aaaa")
+      (prunus-cyan                      "#00b9b9")
+      (prunus-dark-cyan                 "#006969")
 
       (prunus-purple                    "#7350a0")
       (prunus-purple-red                "#8B2252")
@@ -225,8 +226,8 @@
    `(trailing-whitespace ((,prunus-class (:background ,prunus-error))))
 
    ;; links
-   `(link ((,prunus-class (:foreground ,prunus-deep-blue :underline t :weight bold))))
-   `(link-visited ((,prunus-class (:foreground ,prunus-cyan :underline t :weight bold))))
+   `(link ((,prunus-class (:foreground ,prunus-cyan :underline t :weight bold))))
+   `(link-visited ((,prunus-class (:foreground ,prunus-dark-cyan :underline t :weight bold))))
 
    ;; outline
    `(outline-1 ((,prunus-class (:foreground ,prunus-coffee :weight medium))))

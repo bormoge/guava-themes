@@ -59,6 +59,9 @@
       (citrus-light-blue                "#4eb096")
       (citrus-blue                      "#3275a5")
       (citrus-deep-blue                 "#2327dc")
+      (citrus-cyan                      "#00a5a5")
+      (citrus-dark-cyan                 "#005f5f")
+
       (citrus-light-purple              "#bec8ff")
       (citrus-deep-purple               "#6d4393")
       (citrus-purple-red                "#77003a")
@@ -221,8 +224,8 @@
    `(trailing-whitespace ((,citrus-class (:background ,citrus-error))))
 
    ;; links
-   `(link ((,citrus-class (:foreground ,citrus-light-blue :underline t :weight bold))))
-   `(link-visited ((,citrus-class (:foreground ,citrus-deep-blue :underline t :weight bold))))
+   `(link ((,citrus-class (:foreground ,citrus-cyan :underline t :weight bold))))
+   `(link-visited ((,citrus-class (:foreground ,citrus-dark-cyan :underline t :weight bold))))
 
    ;; outline
    `(outline-1 ((,citrus-class (:foreground ,citrus-blue :weight medium))))
@@ -235,7 +238,7 @@
    `(outline-8 ((,citrus-class (:inherit outline-4))))
 
    ;; homoglyph, escape-glyph, nobreak-space (C-x 8 RET "FORM FEED") (C-x 8 RET "NO-BREAK SPACE")
-   `(homoglyph ((,citrus-class (:foreground ,citrus-deep-blue))))
+   `(homoglyph ((,citrus-class (:foreground ,citrus-cyan))))
    `(escape-glyph ((,citrus-class (:inherit homoglyph))))
    `(nobreak-space ((,citrus-class (:box (:line-width (2 . 2)) :inherit homoglyph))))
    `(nobreak-hyphen ((,citrus-class (:inherit homoglyph))))

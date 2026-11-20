@@ -52,7 +52,8 @@
       (pyrus-light-blue                "#4ba5e6")
       (pyrus-blue                      "#2a4ad9")
       (pyrus-deep-blue                 "#483d8b")
-      (pyrus-cyan                      "#0080ff")
+      (pyrus-cyan                      "#00a5a5")
+      (pyrus-dark-cyan                 "#005f5f")
 
       (pyrus-light-purple              "#8787e1")
       (pyrus-purple                    "#874be1")
@@ -216,12 +217,12 @@
    `(trailing-whitespace ((,pyrus-class (:background ,pyrus-error))))
 
    ;; links
-   `(link ((,pyrus-class (:foreground ,pyrus-light-blue :underline t :weight bold))))
-   `(link-visited ((,pyrus-class (:foreground ,pyrus-green-subdued :underline t :weight bold))))
+   `(link ((,pyrus-class (:foreground ,pyrus-cyan :underline t :weight bold))))
+   `(link-visited ((,pyrus-class (:foreground ,pyrus-dark-cyan :underline t :weight bold))))
 
    ;; outline
    `(outline-1 ((,pyrus-class (:foreground ,pyrus-green :weight medium))))
-   `(outline-2 ((,pyrus-class (:foreground ,pyrus-cyan :weight medium))))
+   `(outline-2 ((,pyrus-class (:foreground ,pyrus-light-blue :weight medium))))
    `(outline-3 ((,pyrus-class (:foreground ,pyrus-deep-orange :weight medium))))
    `(outline-4 ((,pyrus-class (:foreground ,pyrus-purple :weight medium))))
    `(outline-5 ((,pyrus-class (:inherit outline-1))))
