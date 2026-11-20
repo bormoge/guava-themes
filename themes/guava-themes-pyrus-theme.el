@@ -58,7 +58,7 @@
       (pyrus-purple                    "#874be1")
       (pyrus-deep-magenta              "#642864")
 
-      (pyrus-fg-1                      "#780000")
+      (pyrus-fg-1                      "#6e0000")
       (pyrus-fg-2                      "#b43c3c")
       (pyrus-bg-1                      "#f9fefd")
       (pyrus-highlight                 "#e5eae9")
