@@ -237,7 +237,7 @@
 
    ;; pulse-highlight-start-face
    ;; M-: (pulse-momentary-highlight-region (point-min) (point-max))
-   `(pulse-highlight-start-face ((,cordyline-class (:background ,cordyline-steel-blue))))
+   `(pulse-highlight-start-face ((,cordyline-class (:background ,cordyline-cyan))))
 
    ;; help-key-binding
    `(help-key-binding ((,cordyline-class (:foreground ,cordyline-cyan :background "grey19" :box (:line-width (-1 . -1) :color "grey35") :inherit fixed-pitch))))

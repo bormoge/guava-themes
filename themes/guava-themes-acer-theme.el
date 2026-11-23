@@ -240,7 +240,7 @@
 
    ;; pulse-highlight-start-face
    ;; M-: (pulse-momentary-highlight-region (point-min) (point-max))
-   `(pulse-highlight-start-face ((,acer-class (:background ,acer-light-blue))))
+   `(pulse-highlight-start-face ((,acer-class (:background ,acer-cyan))))
 
    ;; help-key-binding
    `(help-key-binding ((,acer-class (:foreground ,acer-dark-cyan :background "grey96" :box (:line-width (-1 . -1) :color "grey80") :inherit fixed-pitch))))

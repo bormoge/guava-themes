@@ -240,7 +240,7 @@
 
    ;; pulse-highlight-start-face
    ;; M-: (pulse-momentary-highlight-region (point-min) (point-max))
-   `(pulse-highlight-start-face ((,rubus-class (:background ,rubus-light-blue))))
+   `(pulse-highlight-start-face ((,rubus-class (:background ,rubus-cyan))))
 
    ;; help-key-binding
    `(help-key-binding ((,rubus-class (:foreground ,rubus-cyan :background "grey19" :box (:line-width (-1 . -1) :color "grey35") :inherit fixed-pitch))))

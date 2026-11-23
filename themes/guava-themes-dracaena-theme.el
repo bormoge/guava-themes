@@ -238,7 +238,7 @@
 
    ;; pulse-highlight-start-face
    ;; M-: (pulse-momentary-highlight-region (point-min) (point-max))
-   `(pulse-highlight-start-face ((,dracaena-class (:background ,dracaena-steel-blue))))
+   `(pulse-highlight-start-face ((,dracaena-class (:background ,dracaena-cyan))))
 
    ;; help-key-binding
    `(help-key-binding ((,dracaena-class (:foreground ,dracaena-cyan :background "grey19" :box (:line-width (-1 . -1) :color "grey35") :inherit fixed-pitch))))

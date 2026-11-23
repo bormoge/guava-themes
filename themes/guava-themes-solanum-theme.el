@@ -237,7 +237,7 @@
 
    ;; pulse-highlight-start-face
    ;; M-: (pulse-momentary-highlight-region (point-min) (point-max))
-   `(pulse-highlight-start-face ((,solanum-class (:background ,solanum-light-blue))))
+   `(pulse-highlight-start-face ((,solanum-class (:background ,solanum-cyan))))
 
    ;; help-key-binding
    `(help-key-binding ((,solanum-class (:foreground ,solanum-cyan :background "grey19" :box (:line-width (-1 . -1) :color "grey35") :inherit fixed-pitch))))

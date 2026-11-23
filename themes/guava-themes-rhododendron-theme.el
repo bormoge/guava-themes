@@ -242,7 +242,7 @@
 
    ;; pulse-highlight-start-face
    ;; M-: (pulse-momentary-highlight-region (point-min) (point-max))
-   `(pulse-highlight-start-face ((,rhododendron-class (:background ,rhododendron-blue))))
+   `(pulse-highlight-start-face ((,rhododendron-class (:background ,rhododendron-cyan))))
 
    ;; help-key-binding
    `(help-key-binding ((,rhododendron-class (:foreground ,rhododendron-dark-cyan :background "grey96" :box (:line-width (-1 . -1) :color "grey80") :inherit fixed-pitch))))

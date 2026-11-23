@@ -245,7 +245,7 @@
 
    ;; pulse-highlight-start-face
    ;; M-: (pulse-momentary-highlight-region (point-min) (point-max))
-   `(pulse-highlight-start-face ((,citrus-class (:background ,citrus-light-blue))))
+   `(pulse-highlight-start-face ((,citrus-class (:background ,citrus-cyan))))
 
    ;; help-key-binding
    `(help-key-binding ((,citrus-class (:foreground ,citrus-dark-cyan :background "grey96" :box (:line-width (-1 . -1) :color "grey80") :inherit fixed-pitch))))
