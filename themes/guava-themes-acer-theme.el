@@ -243,7 +243,7 @@
    `(pulse-highlight-start-face ((,acer-class (:background ,acer-light-blue))))
 
    ;; help-key-binding
-   `(help-key-binding ((,acer-class (:foreground ,acer-cyan :background "grey96" :box (:line-width (-1 . -1) :color "grey80") :inherit fixed-pitch))))
+   `(help-key-binding ((,acer-class (:foreground ,acer-dark-cyan :background "grey96" :box (:line-width (-1 . -1) :color "grey80") :inherit fixed-pitch))))
 
    ;; diff
    `(diff-added ((,acer-class (:foreground ,acer-black :background ,acer-diff-added :extend t :inherit diff-changed))))

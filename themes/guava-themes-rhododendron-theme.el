@@ -245,7 +245,7 @@
    `(pulse-highlight-start-face ((,rhododendron-class (:background ,rhododendron-blue))))
 
    ;; help-key-binding
-   `(help-key-binding ((,rhododendron-class (:foreground ,rhododendron-blue :background "grey96" :box (:line-width (-1 . -1) :color "grey80") :inherit fixed-pitch))))
+   `(help-key-binding ((,rhododendron-class (:foreground ,rhododendron-dark-cyan :background "grey96" :box (:line-width (-1 . -1) :color "grey80") :inherit fixed-pitch))))
 
    ;; diff
    `(diff-added ((,rhododendron-class (:foreground ,rhododendron-black :background ,rhododendron-diff-added :extend t :inherit diff-changed))))

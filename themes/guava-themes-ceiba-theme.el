@@ -246,7 +246,7 @@
    `(pulse-highlight-start-face ((,ceiba-class (:background ,ceiba-alt-blue))))
 
    ;; help-key-binding
-   `(help-key-binding ((,ceiba-class (:foreground ,ceiba-blue :background "grey96" :box (:line-width (-1 . -1) :color "grey80") :inherit fixed-pitch))))
+   `(help-key-binding ((,ceiba-class (:foreground ,ceiba-dark-cyan :background "grey96" :box (:line-width (-1 . -1) :color "grey80") :inherit fixed-pitch))))
 
    ;; diff
    `(diff-added ((,ceiba-class (:foreground ,ceiba-black :background ,ceiba-diff-added :extend t :inherit diff-changed))))

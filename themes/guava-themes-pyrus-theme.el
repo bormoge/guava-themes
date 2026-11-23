@@ -241,7 +241,7 @@
    `(pulse-highlight-start-face ((,pyrus-class (:background ,pyrus-light-blue))))
 
    ;; help-key-binding
-   `(help-key-binding ((,pyrus-class (:foreground ,pyrus-cyan :background "grey96" :box (:line-width (-1 . -1) :color "grey80") :inherit fixed-pitch))))
+   `(help-key-binding ((,pyrus-class (:foreground ,pyrus-dark-cyan :background "grey96" :box (:line-width (-1 . -1) :color "grey80") :inherit fixed-pitch))))
 
    ;; diff
    `(diff-added ((,pyrus-class (:foreground ,pyrus-black :background ,pyrus-diff-added :extend t :inherit diff-changed))))

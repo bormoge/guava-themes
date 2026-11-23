@@ -239,7 +239,7 @@
    `(pulse-highlight-start-face ((,psidium-class (:background ,psidium-cyan))))
 
    ;; help-key-binding
-   `(help-key-binding ((,psidium-class (:foreground ,psidium-blue :background "grey96" :box (:line-width (-1 . -1) :color "grey80") :inherit fixed-pitch))))
+   `(help-key-binding ((,psidium-class (:foreground ,psidium-dark-cyan :background "grey96" :box (:line-width (-1 . -1) :color "grey80") :inherit fixed-pitch))))
 
    ;; diff
    `(diff-added ((,psidium-class (:foreground ,psidium-black :background ,psidium-diff-added :extend t :inherit diff-changed))))

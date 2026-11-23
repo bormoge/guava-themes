@@ -240,7 +240,7 @@
    `(pulse-highlight-start-face ((,eucalyptus-class (:background ,eucalyptus-cyan))))
 
    ;; help-key-binding
-   `(help-key-binding ((,eucalyptus-class (:foreground ,eucalyptus-deep-blue :background "grey96" :box (:line-width (-1 . -1) :color "grey80") :inherit fixed-pitch))))
+   `(help-key-binding ((,eucalyptus-class (:foreground ,eucalyptus-dark-cyan :background "grey96" :box (:line-width (-1 . -1) :color "grey80") :inherit fixed-pitch))))
 
    ;; diff
    `(diff-added ((,eucalyptus-class (:foreground ,eucalyptus-black :background ,eucalyptus-diff-added :extend t :inherit diff-changed))))

@@ -240,7 +240,7 @@
    `(pulse-highlight-start-face ((,solanum-class (:background ,solanum-light-blue))))
 
    ;; help-key-binding
-   `(help-key-binding ((,solanum-class (:foreground ,solanum-light-purple :background "grey19" :box (:line-width (-1 . -1) :color "grey35") :inherit fixed-pitch))))
+   `(help-key-binding ((,solanum-class (:foreground ,solanum-cyan :background "grey19" :box (:line-width (-1 . -1) :color "grey35") :inherit fixed-pitch))))
 
    ;; diff
    `(diff-added ((,solanum-class (:foreground ,solanum-white :background ,solanum-diff-added :extend t :inherit diff-changed))))

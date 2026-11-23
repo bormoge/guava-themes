@@ -245,7 +245,7 @@
    `(pulse-highlight-start-face ((,ficus-class (:background ,ficus-cyan))))
 
    ;; help-key-binding
-   `(help-key-binding ((,ficus-class (:foreground ,ficus-light-red :background "grey19" :box (:line-width (-1 . -1) :color "grey35") :inherit fixed-pitch))))
+   `(help-key-binding ((,ficus-class (:foreground ,ficus-cyan :background "grey19" :box (:line-width (-1 . -1) :color "grey35") :inherit fixed-pitch))))
 
    ;; diff
    `(diff-added ((,ficus-class (:foreground ,ficus-white :background ,ficus-diff-added :extend t :inherit diff-changed))))

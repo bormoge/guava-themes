@@ -248,7 +248,7 @@
    `(pulse-highlight-start-face ((,citrus-class (:background ,citrus-light-blue))))
 
    ;; help-key-binding
-   `(help-key-binding ((,citrus-class (:foreground ,citrus-deep-blue :background "grey96" :box (:line-width (-1 . -1) :color "grey80") :inherit fixed-pitch))))
+   `(help-key-binding ((,citrus-class (:foreground ,citrus-dark-cyan :background "grey96" :box (:line-width (-1 . -1) :color "grey80") :inherit fixed-pitch))))
 
    ;; diff
    `(diff-added ((,citrus-class (:foreground ,citrus-black :background ,citrus-diff-added :extend t :inherit diff-changed))))

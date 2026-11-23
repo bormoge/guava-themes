@@ -53,7 +53,7 @@
       (cordyline-green                     "#007d5f")
 
       (cordyline-light-purple              "#b46ee6")
-      (cordyline-alt-light-purple          "#a29cf1")
+      ;; (cordyline-alt-light-purple          "#a29cf1")
       (cordyline-purple                    "#7d5ab9")
       (cordyline-alt-purple                "#785a6e")
       (cordyline-purple-red                "#a03c5a")
@@ -240,7 +240,7 @@
    `(pulse-highlight-start-face ((,cordyline-class (:background ,cordyline-steel-blue))))
 
    ;; help-key-binding
-   `(help-key-binding ((,cordyline-class (:foreground ,cordyline-alt-light-purple :background "grey19" :box (:line-width (-1 . -1) :color "grey35") :inherit fixed-pitch))))
+   `(help-key-binding ((,cordyline-class (:foreground ,cordyline-cyan :background "grey19" :box (:line-width (-1 . -1) :color "grey35") :inherit fixed-pitch))))
 
    ;; diff
    `(diff-added ((,cordyline-class (:foreground ,cordyline-white :background ,cordyline-diff-added :extend t :inherit diff-changed))))

@@ -241,7 +241,7 @@
    `(pulse-highlight-start-face ((,lavandula-class (:background ,lavandula-cyan))))
 
    ;; help-key-binding
-   `(help-key-binding ((,lavandula-class (:foreground ,lavandula-deep-blue :background "grey96" :box (:line-width (-1 . -1) :color "grey80") :inherit fixed-pitch))))
+   `(help-key-binding ((,lavandula-class (:foreground ,lavandula-dark-cyan :background "grey96" :box (:line-width (-1 . -1) :color "grey80") :inherit fixed-pitch))))
 
    ;; diff
    `(diff-added ((,lavandula-class (:foreground ,lavandula-black :background ,lavandula-diff-added :extend t :inherit diff-changed))))

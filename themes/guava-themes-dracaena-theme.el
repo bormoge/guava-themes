@@ -241,7 +241,7 @@
    `(pulse-highlight-start-face ((,dracaena-class (:background ,dracaena-steel-blue))))
 
    ;; help-key-binding
-   `(help-key-binding ((,dracaena-class (:foreground ,dracaena-snakeplant-yellow :background "grey19" :box (:line-width (-1 . -1) :color "grey35") :inherit fixed-pitch))))
+   `(help-key-binding ((,dracaena-class (:foreground ,dracaena-cyan :background "grey19" :box (:line-width (-1 . -1) :color "grey35") :inherit fixed-pitch))))
 
    ;; diff
    `(diff-added ((,dracaena-class (:foreground ,dracaena-white :background ,dracaena-diff-added :extend t :inherit diff-changed))))
