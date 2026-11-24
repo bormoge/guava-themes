@@ -286,6 +286,7 @@
    `(org-document-title ((,prunus-class (:inherit font-lock-keyword-face))))
    `(org-document-info-keyword ((,prunus-class (:inherit shadow))))
    `(org-meta-line ((,prunus-class (:inherit font-lock-comment-face))))
+   `(org-ellipsis ((,prunus-class (:foreground unspecified :underline nil))))
 
    ;; window-divider
    `(window-divider ((,prunus-class (:foreground ,prunus-tab-3))))

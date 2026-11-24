@@ -277,6 +277,7 @@
    `(org-document-title ((,dracaena-class (:inherit font-lock-keyword-face))))
    `(org-document-info-keyword ((,dracaena-class (:inherit shadow))))
    `(org-meta-line ((,dracaena-class (:inherit font-lock-comment-face))))
+   `(org-ellipsis ((,dracaena-class (:foreground unspecified :underline nil))))
 
    ;; window-divider
    `(window-divider ((,dracaena-class (:foreground ,dracaena-tab-3))))

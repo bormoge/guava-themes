@@ -274,6 +274,7 @@
    `(org-document-title ((,petunia-class (:inherit font-lock-keyword-face))))
    `(org-document-info-keyword ((,petunia-class (:inherit shadow))))
    `(org-meta-line ((,petunia-class (:inherit font-lock-comment-face))))
+   `(org-ellipsis ((,petunia-class (:foreground unspecified :underline nil))))
 
    ;; window-divider
    `(window-divider ((,petunia-class (:foreground ,petunia-tab-3))))

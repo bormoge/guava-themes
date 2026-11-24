@@ -277,6 +277,7 @@
    `(org-document-title ((,pyrus-class (:inherit font-lock-keyword-face))))
    `(org-document-info-keyword ((,pyrus-class (:inherit shadow))))
    `(org-meta-line ((,pyrus-class (:inherit font-lock-comment-face))))
+   `(org-ellipsis ((,pyrus-class (:foreground unspecified :underline nil))))
 
    ;; window-divider
    `(window-divider ((,pyrus-class (:foreground ,pyrus-tab-3))))

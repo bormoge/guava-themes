@@ -277,6 +277,7 @@
    `(org-document-title ((,lavandula-class (:inherit font-lock-keyword-face))))
    `(org-document-info-keyword ((,lavandula-class (:inherit shadow))))
    `(org-meta-line ((,lavandula-class (:inherit font-lock-comment-face))))
+   `(org-ellipsis ((,lavandula-class (:foreground unspecified :underline nil))))
 
    ;; window-divider
    `(window-divider ((,lavandula-class (:foreground ,lavandula-tab-3))))

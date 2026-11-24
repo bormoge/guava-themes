@@ -279,6 +279,7 @@
    `(org-document-title ((,rubus-class (:inherit font-lock-keyword-face))))
    `(org-document-info-keyword ((,rubus-class (:inherit shadow))))
    `(org-meta-line ((,rubus-class (:inherit font-lock-comment-face))))
+   `(org-ellipsis ((,rubus-class (:foreground unspecified :underline nil))))
 
    ;; window-divider
    `(window-divider ((,rubus-class (:foreground ,rubus-tab-3))))

@@ -281,6 +281,7 @@
    `(org-document-title ((,rhododendron-class (:inherit font-lock-keyword-face))))
    `(org-document-info-keyword ((,rhododendron-class (:inherit shadow))))
    `(org-meta-line ((,rhododendron-class (:inherit font-lock-comment-face))))
+   `(org-ellipsis ((,rhododendron-class (:foreground unspecified :underline nil))))
 
    ;; window-divider
    `(window-divider ((,rhododendron-class (:foreground ,rhododendron-tab-3))))

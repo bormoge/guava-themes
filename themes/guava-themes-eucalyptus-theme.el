@@ -276,6 +276,7 @@
    `(org-document-title ((,eucalyptus-class (:inherit font-lock-keyword-face))))
    `(org-document-info-keyword ((,eucalyptus-class (:inherit shadow))))
    `(org-meta-line ((,eucalyptus-class (:inherit font-lock-comment-face))))
+   `(org-ellipsis ((,eucalyptus-class (:foreground unspecified :underline nil))))
 
    ;; window-divider
    `(window-divider ((,eucalyptus-class (:foreground ,eucalyptus-tab-3))))

@@ -278,6 +278,7 @@
    `(org-document-title ((,vaccinium-class (:inherit font-lock-keyword-face))))
    `(org-document-info-keyword ((,vaccinium-class (:inherit shadow))))
    `(org-meta-line ((,vaccinium-class (:inherit font-lock-comment-face))))
+   `(org-ellipsis ((,vaccinium-class (:foreground unspecified :underline nil))))
 
    ;; window-divider
    `(window-divider ((,vaccinium-class (:foreground ,vaccinium-tab-3))))

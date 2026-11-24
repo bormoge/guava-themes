@@ -278,6 +278,7 @@
    `(org-document-title ((,malus-class (:inherit font-lock-keyword-face))))
    `(org-document-info-keyword ((,malus-class (:inherit shadow))))
    `(org-meta-line ((,malus-class (:inherit font-lock-comment-face))))
+   `(org-ellipsis ((,malus-class (:foreground unspecified :underline nil))))
 
    ;; window-divider
    `(window-divider ((,malus-class (:foreground ,malus-tab-3))))

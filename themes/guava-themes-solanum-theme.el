@@ -276,6 +276,7 @@
    `(org-document-title ((,solanum-class (:inherit font-lock-keyword-face))))
    `(org-document-info-keyword ((,solanum-class (:inherit shadow))))
    `(org-meta-line ((,solanum-class (:inherit font-lock-comment-face))))
+   `(org-ellipsis ((,solanum-class (:foreground unspecified :underline nil))))
 
    ;; window-divider
    `(window-divider ((,solanum-class (:foreground ,solanum-tab-3))))

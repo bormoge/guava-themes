@@ -281,6 +281,7 @@
    `(org-document-title ((,ficus-class (:inherit font-lock-keyword-face))))
    `(org-document-info-keyword ((,ficus-class (:inherit shadow))))
    `(org-meta-line ((,ficus-class (:inherit font-lock-comment-face))))
+   `(org-ellipsis ((,ficus-class (:foreground unspecified :underline nil))))
 
    ;; window-divider
    `(window-divider ((,ficus-class (:foreground ,ficus-tab-3))))

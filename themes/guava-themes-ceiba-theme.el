@@ -282,6 +282,7 @@
    `(org-document-title ((,ceiba-class (:inherit font-lock-keyword-face))))
    `(org-document-info-keyword ((,ceiba-class (:inherit shadow))))
    `(org-meta-line ((,ceiba-class (:inherit font-lock-comment-face))))
+   `(org-ellipsis ((,ceiba-class (:foreground unspecified :underline nil))))
 
    ;; window-divider
    `(window-divider ((,ceiba-class (:foreground ,ceiba-tab-3))))

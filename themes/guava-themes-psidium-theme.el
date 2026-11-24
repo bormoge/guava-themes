@@ -275,6 +275,7 @@
    `(org-document-title ((,psidium-class (:inherit font-lock-keyword-face))))
    `(org-document-info-keyword ((,psidium-class (:inherit shadow))))
    `(org-meta-line ((,psidium-class (:inherit font-lock-comment-face))))
+   `(org-ellipsis ((,psidium-class (:foreground unspecified :underline nil))))
 
    ;; window-divider
    `(window-divider ((,psidium-class (:foreground ,psidium-tab-3))))

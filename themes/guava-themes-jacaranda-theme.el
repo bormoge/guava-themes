@@ -278,6 +278,7 @@
    `(org-document-title ((,jacaranda-class (:inherit font-lock-keyword-face))))
    `(org-document-info-keyword ((,jacaranda-class (:inherit shadow))))
    `(org-meta-line ((,jacaranda-class (:inherit font-lock-comment-face))))
+   `(org-ellipsis ((,jacaranda-class (:foreground unspecified :underline nil))))
 
    ;; window-divider
    `(window-divider ((,jacaranda-class (:foreground ,jacaranda-tab-3))))

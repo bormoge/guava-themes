@@ -284,6 +284,7 @@
    `(org-document-title ((,citrus-class (:inherit font-lock-keyword-face))))
    `(org-document-info-keyword ((,citrus-class (:inherit shadow))))
    `(org-meta-line ((,citrus-class (:inherit font-lock-comment-face))))
+   `(org-ellipsis ((,citrus-class (:foreground unspecified :underline nil))))
 
    ;; window-divider
    `(window-divider ((,citrus-class (:foreground ,citrus-tab-3))))

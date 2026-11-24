@@ -279,6 +279,7 @@
    `(org-document-title ((,acer-class (:inherit font-lock-keyword-face))))
    `(org-document-info-keyword ((,acer-class (:inherit shadow))))
    `(org-meta-line ((,acer-class (:inherit font-lock-comment-face))))
+   `(org-ellipsis ((,acer-class (:foreground unspecified :underline nil))))
 
    ;; window-divider
    `(window-divider ((,acer-class (:foreground ,acer-tab-3))))
