@@ -113,10 +113,10 @@
        (rubus-tetradic-a-2              "#AAA0DC")
        (rubus-tetradic-a-3              "#D2DCA0")
 
-       (rubus-tetradic-b-0              "#BA5ACD")
-       (rubus-tetradic-b-1              "#6DCD5A")
-       (rubus-tetradic-b-2              "#CD805A")
-       (rubus-tetradic-b-3              "#5AA7CD"))
+       (rubus-tetradic-b-0              "#B046CD")
+       (rubus-tetradic-b-1              "#63CD46")
+       (rubus-tetradic-b-2              "#CD6C46")
+       (rubus-tetradic-b-3              "#46A7CD"))
 
   (custom-theme-set-faces
    'guava-themes-rubus
