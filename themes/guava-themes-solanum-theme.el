@@ -110,10 +110,10 @@
        (solanum-tetradic-a-2              "#A0DCC8")
        (solanum-tetradic-a-3              "#D2DCA0")
 
-       (solanum-tetradic-b-0              "#BA5ACD")
-       (solanum-tetradic-b-1              "#6DCD5A")
-       (solanum-tetradic-b-2              "#CD805A")
-       (solanum-tetradic-b-3              "#5AA7CD"))
+       (solanum-tetradic-b-0              "#B046CD")
+       (solanum-tetradic-b-1              "#63CD46")
+       (solanum-tetradic-b-2              "#CD6C46")
+       (solanum-tetradic-b-3              "#46A7CD"))
 
   (custom-theme-set-faces
    'guava-themes-solanum
