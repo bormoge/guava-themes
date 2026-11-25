@@ -428,8 +428,6 @@
 
 ;; Local Variables:
 ;; no-byte-compile: t
-;; indent-tabs-mode: nil
-;; eval: (when (featurep 'package-lint-flymake) (package-lint-flymake-setup))
 ;; End:
 
 ;;; guava-themes-dracaena-theme.el ends here

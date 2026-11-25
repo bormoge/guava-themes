@@ -1,0 +1,5 @@
+((nil . ((indent-tabs-mode . nil)
+         (fill-column . 80)
+         ))
+ (emacs-lisp-mode . ((eval . (when (featurep 'package-lint-flymake) (package-lint-flymake-setup)))))
+ )

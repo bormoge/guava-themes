@@ -145,8 +145,6 @@ will blink when this function is called."
 
 ;; Local Variables:
 ;; no-byte-compile: t
-;; indent-tabs-mode: nil
-;; eval: (when (featurep 'package-lint-flymake) (package-lint-flymake-setup))
 ;; End:
 
 ;;; guava-themes.el ends here

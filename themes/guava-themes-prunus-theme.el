@@ -437,8 +437,6 @@
 
 ;; Local Variables:
 ;; no-byte-compile: t
-;; indent-tabs-mode: nil
-;; eval: (when (featurep 'package-lint-flymake) (package-lint-flymake-setup))
 ;; End:
 
 ;;; guava-themes-prunus-theme.el ends here
