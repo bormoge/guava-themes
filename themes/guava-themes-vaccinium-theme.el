@@ -112,10 +112,10 @@
        (vaccinium-tetradic-a-2              "#DFACF5")
        (vaccinium-tetradic-a-3              "#ACE6F5")
 
-       (vaccinium-tetradic-b-0              "#BA5ACD")
-       (vaccinium-tetradic-b-1              "#6DCD5A")
-       (vaccinium-tetradic-b-2              "#CD805A")
-       (vaccinium-tetradic-b-3              "#5AA7CD"))
+       (vaccinium-tetradic-b-0              "#B046CD")
+       (vaccinium-tetradic-b-1              "#63CD46")
+       (vaccinium-tetradic-b-2              "#CD6C46")
+       (vaccinium-tetradic-b-3              "#46A7CD"))
 
   (custom-theme-set-faces
    'guava-themes-vaccinium
