@@ -76,7 +76,7 @@
 
        (malus-mode-line                 "#cd5a5f")
        (malus-mode-line-inactive        "#49835f")
-       (malus-mode-line-modified        "#D2DCA0")
+       (malus-mode-line-modified        "#AADCC8")
        (malus-bell                      "#5A99CD")
 
        (malus-tab-1                     malus-mode-line)
@@ -108,9 +108,9 @@
        (malus-complementary-a-1         "#C84669")
 
        (malus-tetradic-a-0              malus-mode-line-modified)
-       (malus-tetradic-a-1              "#A0DCC8")
-       (malus-tetradic-a-2              "#AAA0DC")
-       (malus-tetradic-a-3              "#DCA0B4")
+       (malus-tetradic-a-1              "#DCAABE")
+       (malus-tetradic-a-2              "#AFAADC")
+       (malus-tetradic-a-3              "#D7DCAA")
 
        (malus-tetradic-b-0              "#BA5ACD")
        (malus-tetradic-b-1              "#6DCD5A")
