@@ -390,6 +390,7 @@
    `(doom-modeline-project-parent-dir ((,citrus-class (:foreground ,citrus-tetradic-a-2 :inherit (doom-modeline bold)))))
    `(doom-modeline-buffer-minor-mode ((,citrus-class (:foreground ,citrus-tetradic-a-1 :inherit (doom-modeline)))))
    `(doom-modeline-buffer-modified ((,citrus-class (:foreground ,citrus-tetradic-a-0 :inherit (doom-modeline warning bold)))))
+   `(doom-modeline-overwrite ((,citrus-class (:foreground ,citrus-tetradic-a-2 :inherit (doom-modeline-urgent)))))
 
    ;; corfu
    `(corfu-default ((,citrus-class (:foreground ,citrus-fg-1 :background ,citrus-bg-1))))

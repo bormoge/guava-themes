@@ -380,6 +380,7 @@
    `(doom-modeline-project-parent-dir ((,petunia-class (:foreground ,petunia-tetradic-a-2 :inherit (doom-modeline bold)))))
    `(doom-modeline-buffer-minor-mode ((,petunia-class (:foreground ,petunia-tetradic-a-1 :inherit (doom-modeline)))))
    `(doom-modeline-buffer-modified ((,petunia-class (:foreground ,petunia-tetradic-a-0 :inherit (doom-modeline warning bold)))))
+   `(doom-modeline-overwrite ((,petunia-class (:foreground ,petunia-tetradic-a-2 :inherit (doom-modeline-urgent)))))
 
    ;; corfu
    `(corfu-default ((,petunia-class (:foreground ,petunia-fg-1 :background ,petunia-bg-1))))

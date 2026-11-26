@@ -384,6 +384,7 @@
    `(doom-modeline-project-parent-dir ((,jacaranda-class (:foreground ,jacaranda-tetradic-a-2 :inherit (doom-modeline bold)))))
    `(doom-modeline-buffer-minor-mode ((,jacaranda-class (:foreground ,jacaranda-tetradic-a-1 :inherit (doom-modeline)))))
    `(doom-modeline-buffer-modified ((,jacaranda-class (:foreground ,jacaranda-tetradic-a-0 :inherit (doom-modeline warning bold)))))
+   `(doom-modeline-overwrite ((,jacaranda-class (:foreground ,jacaranda-tetradic-a-2 :inherit (doom-modeline-urgent)))))
 
    ;; corfu
    `(corfu-default ((,jacaranda-class (:foreground ,jacaranda-fg-1 :background ,jacaranda-bg-1))))

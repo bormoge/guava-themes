@@ -384,6 +384,7 @@
    `(doom-modeline-project-parent-dir ((,malus-class (:foreground ,malus-tetradic-a-2 :inherit (doom-modeline bold)))))
    `(doom-modeline-buffer-minor-mode ((,malus-class (:foreground ,malus-tetradic-a-1 :inherit (doom-modeline)))))
    `(doom-modeline-buffer-modified ((,malus-class (:foreground ,malus-tetradic-a-0 :inherit (doom-modeline warning bold)))))
+   `(doom-modeline-overwrite ((,malus-class (:foreground ,malus-tetradic-a-2 :inherit (doom-modeline-urgent)))))
 
    ;; corfu
    `(corfu-default ((,malus-class (:foreground ,malus-fg-1 :background ,malus-bg-1))))

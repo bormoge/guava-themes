@@ -383,6 +383,7 @@
    `(doom-modeline-project-parent-dir ((,dracaena-class (:foreground ,dracaena-tetradic-a-2 :inherit (doom-modeline bold)))))
    `(doom-modeline-buffer-minor-mode ((,dracaena-class (:foreground ,dracaena-tetradic-a-1 :inherit (doom-modeline)))))
    `(doom-modeline-buffer-modified ((,dracaena-class (:foreground ,dracaena-tetradic-a-0 :inherit (doom-modeline warning bold)))))
+   `(doom-modeline-overwrite ((,dracaena-class (:foreground ,dracaena-tetradic-a-2 :inherit (doom-modeline-urgent)))))
 
    ;; corfu
    `(corfu-default ((,dracaena-class (:foreground ,dracaena-fg-1 :background ,dracaena-bg-1))))

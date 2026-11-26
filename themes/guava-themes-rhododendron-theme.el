@@ -387,6 +387,7 @@
    `(doom-modeline-project-parent-dir ((,rhododendron-class (:foreground ,rhododendron-tetradic-a-2 :inherit (doom-modeline bold)))))
    `(doom-modeline-buffer-minor-mode ((,rhododendron-class (:foreground ,rhododendron-tetradic-a-1 :inherit (doom-modeline)))))
    `(doom-modeline-buffer-modified ((,rhododendron-class (:foreground ,rhododendron-tetradic-a-0 :inherit (doom-modeline warning bold)))))
+   `(doom-modeline-overwrite ((,rhododendron-class (:foreground ,rhododendron-tetradic-a-2 :inherit (doom-modeline-urgent)))))
 
    ;; corfu
    `(corfu-default ((,rhododendron-class (:foreground ,rhododendron-fg-1 :background ,rhododendron-bg-1))))

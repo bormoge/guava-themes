@@ -388,6 +388,7 @@
    `(doom-modeline-project-parent-dir ((,ceiba-class (:foreground ,ceiba-tetradic-a-2 :inherit (doom-modeline bold)))))
    `(doom-modeline-buffer-minor-mode ((,ceiba-class (:foreground ,ceiba-tetradic-a-1 :inherit (doom-modeline)))))
    `(doom-modeline-buffer-modified ((,ceiba-class (:foreground ,ceiba-tetradic-a-0 :inherit (doom-modeline warning bold)))))
+   `(doom-modeline-overwrite ((,ceiba-class (:foreground ,ceiba-tetradic-a-2 :inherit (doom-modeline-urgent)))))
 
    ;; corfu
    `(corfu-default ((,ceiba-class (:foreground ,ceiba-fg-1 :background ,ceiba-bg-1))))

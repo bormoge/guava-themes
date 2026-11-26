@@ -385,6 +385,7 @@
    `(doom-modeline-project-parent-dir ((,acer-class (:foreground ,acer-tetradic-a-2 :inherit (doom-modeline bold)))))
    `(doom-modeline-buffer-minor-mode ((,acer-class (:foreground ,acer-tetradic-a-1 :inherit (doom-modeline)))))
    `(doom-modeline-buffer-modified ((,acer-class (:foreground ,acer-tetradic-a-0 :inherit (doom-modeline warning bold)))))
+   `(doom-modeline-overwrite ((,acer-class (:foreground ,acer-tetradic-a-2 :inherit (doom-modeline-urgent)))))
 
    ;; corfu
    `(corfu-default ((,acer-class (:foreground ,acer-fg-1 :background ,acer-bg-1))))

@@ -384,6 +384,7 @@
    `(doom-modeline-project-parent-dir ((,vaccinium-class (:foreground ,vaccinium-tetradic-a-2 :inherit (doom-modeline bold)))))
    `(doom-modeline-buffer-minor-mode ((,vaccinium-class (:foreground ,vaccinium-tetradic-a-1 :inherit (doom-modeline)))))
    `(doom-modeline-buffer-modified ((,vaccinium-class (:foreground ,vaccinium-tetradic-a-0 :inherit (doom-modeline warning bold)))))
+   `(doom-modeline-overwrite ((,vaccinium-class (:foreground ,vaccinium-tetradic-a-2 :inherit (doom-modeline-urgent)))))
 
    ;; corfu
    `(corfu-default ((,vaccinium-class (:foreground ,vaccinium-fg-1 :background ,vaccinium-bg-1))))

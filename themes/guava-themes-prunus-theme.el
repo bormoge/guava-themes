@@ -392,6 +392,7 @@
    `(doom-modeline-project-parent-dir ((,prunus-class (:foreground ,prunus-tetradic-a-2 :inherit (doom-modeline bold)))))
    `(doom-modeline-buffer-minor-mode ((,prunus-class (:foreground ,prunus-tetradic-a-1 :inherit (doom-modeline)))))
    `(doom-modeline-buffer-modified ((,prunus-class (:foreground ,prunus-tetradic-a-0 :inherit (doom-modeline warning bold)))))
+   `(doom-modeline-overwrite ((,prunus-class (:foreground ,prunus-tetradic-a-2 :inherit (doom-modeline-urgent)))))
 
    ;; corfu
    `(corfu-default ((,prunus-class (:foreground ,prunus-fg-1 :background ,prunus-bg-1))))

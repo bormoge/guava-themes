@@ -387,6 +387,7 @@
    `(doom-modeline-project-parent-dir ((,ficus-class (:foreground ,ficus-tetradic-a-2 :inherit (doom-modeline bold)))))
    `(doom-modeline-buffer-minor-mode ((,ficus-class (:foreground ,ficus-tetradic-a-1 :inherit (doom-modeline)))))
    `(doom-modeline-buffer-modified ((,ficus-class (:foreground ,ficus-tetradic-a-0 :inherit (doom-modeline warning bold)))))
+   `(doom-modeline-overwrite ((,ficus-class (:foreground ,ficus-tetradic-a-2 :inherit (doom-modeline-urgent)))))
 
    ;; corfu
    `(corfu-default ((,ficus-class (:foreground ,ficus-fg-1 :background ,ficus-bg-1))))

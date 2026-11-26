@@ -385,6 +385,7 @@
    `(doom-modeline-project-parent-dir ((,rubus-class (:foreground ,rubus-tetradic-a-2 :inherit (doom-modeline bold)))))
    `(doom-modeline-buffer-minor-mode ((,rubus-class (:foreground ,rubus-tetradic-a-1 :inherit (doom-modeline)))))
    `(doom-modeline-buffer-modified ((,rubus-class (:foreground ,rubus-tetradic-a-0 :inherit (doom-modeline warning bold)))))
+   `(doom-modeline-overwrite ((,rubus-class (:foreground ,rubus-tetradic-a-2 :inherit (doom-modeline-urgent)))))
 
    ;; corfu
    `(corfu-default ((,rubus-class (:foreground ,rubus-fg-1 :background ,rubus-bg-1))))

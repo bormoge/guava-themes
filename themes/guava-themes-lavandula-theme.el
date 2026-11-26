@@ -383,6 +383,7 @@
    `(doom-modeline-project-parent-dir ((,lavandula-class (:foreground ,lavandula-tetradic-a-2 :inherit (doom-modeline bold)))))
    `(doom-modeline-buffer-minor-mode ((,lavandula-class (:foreground ,lavandula-tetradic-a-1 :inherit (doom-modeline)))))
    `(doom-modeline-buffer-modified ((,lavandula-class (:foreground ,lavandula-tetradic-a-0 :inherit (doom-modeline warning bold)))))
+   `(doom-modeline-overwrite ((,lavandula-class (:foreground ,lavandula-tetradic-a-2 :inherit (doom-modeline-urgent)))))
 
    ;; corfu
    `(corfu-default ((,lavandula-class (:foreground ,lavandula-fg-1 :background ,lavandula-bg-1))))

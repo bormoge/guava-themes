@@ -382,6 +382,7 @@
    `(doom-modeline-project-parent-dir ((,cordyline-class (:foreground ,cordyline-tetradic-a-2 :inherit (doom-modeline bold)))))
    `(doom-modeline-buffer-minor-mode ((,cordyline-class (:foreground ,cordyline-tetradic-a-1 :inherit (doom-modeline)))))
    `(doom-modeline-buffer-modified ((,cordyline-class (:foreground ,cordyline-tetradic-a-0 :inherit (doom-modeline warning bold)))))
+   `(doom-modeline-overwrite ((,cordyline-class (:foreground ,cordyline-tetradic-a-2 :inherit (doom-modeline-urgent)))))
 
    ;; corfu
    `(corfu-default ((,cordyline-class (:foreground ,cordyline-fg-1 :background ,cordyline-bg-1))))

@@ -381,6 +381,7 @@
    `(doom-modeline-project-parent-dir ((,psidium-class (:foreground ,psidium-tetradic-a-2 :inherit (doom-modeline bold)))))
    `(doom-modeline-buffer-minor-mode ((,psidium-class (:foreground ,psidium-tetradic-a-1 :inherit (doom-modeline)))))
    `(doom-modeline-buffer-modified ((,psidium-class (:foreground ,psidium-tetradic-a-0 :inherit (doom-modeline warning bold)))))
+   `(doom-modeline-overwrite ((,psidium-class (:foreground ,psidium-tetradic-a-2 :inherit (doom-modeline-urgent)))))
 
    ;; corfu
    `(corfu-default ((,psidium-class (:foreground ,psidium-fg-1 :background ,psidium-bg-1))))

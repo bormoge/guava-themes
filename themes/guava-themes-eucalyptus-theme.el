@@ -382,6 +382,7 @@
    `(doom-modeline-project-parent-dir ((,eucalyptus-class (:foreground ,eucalyptus-tetradic-a-2 :inherit (doom-modeline bold)))))
    `(doom-modeline-buffer-minor-mode ((,eucalyptus-class (:foreground ,eucalyptus-tetradic-a-1 :inherit (doom-modeline)))))
    `(doom-modeline-buffer-modified ((,eucalyptus-class (:foreground ,eucalyptus-tetradic-a-0 :inherit (doom-modeline warning bold)))))
+   `(doom-modeline-overwrite ((,eucalyptus-class (:foreground ,eucalyptus-tetradic-a-2 :inherit (doom-modeline-urgent)))))
 
    ;; corfu
    `(corfu-default ((,eucalyptus-class (:foreground ,eucalyptus-fg-1 :background ,eucalyptus-bg-1))))
