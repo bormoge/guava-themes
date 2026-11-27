@@ -35,6 +35,8 @@
 
 (let* (
        (jacaranda-class '((class color) (min-colors 257)))
+
+       ;; Effective colors
        (jacaranda-black                     "#000000")
        (jacaranda-white                     "#FFFFFF")
 
@@ -50,16 +52,29 @@
        (jacaranda-light-blue                "#73a5eb")
        (jacaranda-blue                      "#4b7dc3")
        (jacaranda-deep-blue                 "#3246e3")
-       ;; (jacaranda-antarctic-blue            "#8cb2e6")
        (jacaranda-cyan                      "#00afaf")
        (jacaranda-dark-cyan                 "#005f5f")
 
-       (jacaranda-light-purple              "#be87e6")
        (jacaranda-purple                    "#aa69e6")
        (jacaranda-deep-purple               "#640cbe")
        (jacaranda-purple-red                "#8b2252")
        (jacaranda-purple-blue               "#655db0")
 
+       ;; Harmonic colors
+       (jacaranda-complementary-a-0         "#4680DE")
+       (jacaranda-complementary-a-1         "#DE4680")
+
+       (jacaranda-tetradic-a-0              "#FFAA8D")
+       (jacaranda-tetradic-a-1              "#8DE3FF")
+       (jacaranda-tetradic-a-2              "#AAFF8D")
+       (jacaranda-tetradic-a-3              "#E38DFF")
+
+       (jacaranda-tetradic-b-0              "#9D50B4")
+       (jacaranda-tetradic-b-1              "#67B450")
+       (jacaranda-tetradic-b-2              "#B46B50")
+       (jacaranda-tetradic-b-3              "#5099B4")
+
+       ;; Symbolic colors
        (jacaranda-fg-1                      "#000000")
        (jacaranda-fg-2                      "#3c3c3c")
        (jacaranda-bg-1                      "#e9d9f9")
@@ -69,19 +84,28 @@
        (jacaranda-region-1                  "#be87e6")
        (jacaranda-region-2                  "#ff9f79")
 
+       (jacaranda-mode-line                 jacaranda-purple-blue)
+       (jacaranda-mode-line-inactive        jacaranda-purple)
+       (jacaranda-mode-line-modified        jacaranda-tetradic-a-0)
+       (jacaranda-bell                      "#7EB05D")
+
+       (jacaranda-tab-1                     jacaranda-mode-line)
+       (jacaranda-tab-2                     jacaranda-mode-line-inactive)
+       (jacaranda-tab-3                     "#be87e6")
+
        (jacaranda-error                     "#FF0000")
        (jacaranda-warning                   "#ebb515")
        (jacaranda-success                   "#00c200")
        (jacaranda-change                    "#4534e3")
 
-       (jacaranda-mode-line                 "#655db0")
-       (jacaranda-mode-line-inactive        "#aa69e6")
-       (jacaranda-mode-line-modified        "#FFAA8D")
-       (jacaranda-bell                      "#7EB05D")
-
-       (jacaranda-tab-1                     jacaranda-mode-line)
-       (jacaranda-tab-2                     jacaranda-mode-line-inactive)
-       (jacaranda-tab-3                     jacaranda-light-purple)
+       (jacaranda-diff-added                "#c8f0c8")
+       (jacaranda-diff-removed              "#f0c8c8")
+       (jacaranda-diff-refine-added         "#78f078")
+       (jacaranda-diff-refine-removed       "#f07878")
+       (jacaranda-diff-header               "#b4b4b4")
+       (jacaranda-diff-file-header          "#8c8c8c")
+       (jacaranda-diff-context              "#dcdcdc")
+       (jacaranda-smerge-base               "#C8C8F0")
 
        (jacaranda-fl-comment                jacaranda-deep-green)
        (jacaranda-fl-string                 jacaranda-purple-red)
@@ -93,35 +117,12 @@
        (jacaranda-fl-constant               jacaranda-oceanic-green)
        (jacaranda-fl-warning                jacaranda-warning)
        (jacaranda-fl-punctuation            jacaranda-fg-2)
-       (jacaranda-fl-negation-char          jacaranda-red)
-
-       (jacaranda-diff-added                "#c8f0c8")
-       (jacaranda-diff-removed              "#f0c8c8")
-       (jacaranda-diff-refine-added         "#78f078")
-       (jacaranda-diff-refine-removed       "#f07878")
-       (jacaranda-diff-header               "#b4b4b4")
-       (jacaranda-diff-file-header          "#8c8c8c")
-       (jacaranda-diff-context              "#dcdcdc")
-       (jacaranda-smerge-base               "#C8C8F0")
-
-       (jacaranda-complementary-a-0         "#4680DE")
-       (jacaranda-complementary-a-1         "#DE4680")
-
-       (jacaranda-tetradic-a-0              jacaranda-mode-line-modified)
-       (jacaranda-tetradic-a-1              "#8DE3FF")
-       (jacaranda-tetradic-a-2              "#AAFF8D")
-       (jacaranda-tetradic-a-3              "#E38DFF")
-
-       (jacaranda-tetradic-b-0              "#9D50B4")
-       (jacaranda-tetradic-b-1              "#67B450")
-       (jacaranda-tetradic-b-2              "#B46B50")
-       (jacaranda-tetradic-b-3              "#5099B4"))
+       (jacaranda-fl-negation-char          jacaranda-red))
 
   (custom-theme-set-faces
    'guava-themes-jacaranda
 
    ;; built-in faces
-   ;; with unique colors
 
    ;; default
    `(default ((,jacaranda-class (:foreground ,jacaranda-fg-1 :background ,jacaranda-bg-1))))
@@ -156,9 +157,6 @@
    `(font-lock-warning-face ((,jacaranda-class (:foreground ,jacaranda-fl-warning :weight bold))))
    `(font-lock-punctuation-face ((,jacaranda-class (:foreground ,jacaranda-fl-punctuation :weight medium))))
    `(font-lock-negation-char-face ((,jacaranda-class (:foreground ,jacaranda-fl-negation-char :weight medium))))
-
-   ;; built-in faces
-   ;; with non-unique colors
 
    ;; cursor
    `(cursor ((,jacaranda-class (:foreground ,jacaranda-white :background ,jacaranda-mode-line))))
@@ -352,7 +350,7 @@
    `(eww-form-textarea ((,jacaranda-class (:foreground ,jacaranda-fg-1 :background ,jacaranda-tab-3 :box (:line-width 1 :color ,jacaranda-tab-1)))))
 
 
-   ;; external packages
+   ;; third-party packages
 
    ;; elfeed
    `(elfeed-search-tag-face ((,jacaranda-class (:foreground ,jacaranda-purple-red))))

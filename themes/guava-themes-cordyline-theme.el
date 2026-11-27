@@ -35,6 +35,8 @@
 
 (let* (
        (cordyline-class '((class color) (min-colors 257)))
+
+       ;; Effective colors
        (cordyline-black                     "#000000")
        (cordyline-white                     "#FFFFFF")
 
@@ -53,11 +55,26 @@
        (cordyline-green                     "#007d5f")
 
        (cordyline-light-purple              "#b46ee6")
-       ;; (cordyline-alt-light-purple          "#a29cf1")
+       (cordyline-alt-light-purple          "#aa82c8")
        (cordyline-purple                    "#7d5ab9")
-       (cordyline-alt-purple                "#785a6e")
+       (cordyline-alt-purple                "#5a375a")
        (cordyline-purple-red                "#a03c5a")
 
+       ;; Harmonic colors
+       (cordyline-complementary-a-0         "#46C8A5")
+       (cordyline-complementary-a-1         "#C84669")
+
+       (cordyline-tetradic-a-0              "#78A8CD")
+       (cordyline-tetradic-a-1              "#C778CD")
+       (cordyline-tetradic-a-2              "#7ECD78")
+       (cordyline-tetradic-a-3              "#CD9D78")
+
+       (cordyline-tetradic-b-0              "#A646B9")
+       (cordyline-tetradic-b-1              "#59B946")
+       (cordyline-tetradic-b-2              "#B96C46")
+       (cordyline-tetradic-b-3              "#4693B9")
+
+       ;; Symbolic colors
        (cordyline-fg-1                      "#FFFFFF")
        (cordyline-fg-2                      "#c3c3c3")
        (cordyline-bg-1                      "#2f212e")
@@ -67,19 +84,28 @@
        (cordyline-region-1                  "#6e1551")
        (cordyline-region-2                  "#00695f")
 
+       (cordyline-mode-line                 cordyline-purple-red)
+       (cordyline-mode-line-inactive        cordyline-alt-purple)
+       (cordyline-mode-line-modified        cordyline-tetradic-a-0)
+       (cordyline-bell                      "#3C8CA0")
+
+       (cordyline-tab-1                     cordyline-mode-line)
+       (cordyline-tab-2                     cordyline-mode-line-inactive)
+       (cordyline-tab-3                     "#785a6e")
+
        (cordyline-error                     "#FF0000")
        (cordyline-warning                   "#f6d909")
        (cordyline-success                   "#23a334")
        (cordyline-change                    "#214bd5")
 
-       (cordyline-mode-line                 "#a03c5a")
-       (cordyline-mode-line-inactive        "#5a375a")
-       (cordyline-mode-line-modified        "#78A8CD")
-       (cordyline-bell                      "#3C8CA0")
-
-       (cordyline-tab-1                     cordyline-mode-line)
-       (cordyline-tab-2                     cordyline-mode-line-inactive)
-       (cordyline-tab-3                     cordyline-alt-purple)
+       (cordyline-diff-added                "#5aa05a")
+       (cordyline-diff-removed              "#a05a5a")
+       (cordyline-diff-refine-added         "#007800")
+       (cordyline-diff-refine-removed       "#780000")
+       (cordyline-diff-header               "#5a5a5a")
+       (cordyline-diff-file-header          "#3c3c3c")
+       (cordyline-diff-context              "#828282")
+       (cordyline-smerge-base               "#5A5AA0")
 
        (cordyline-fl-comment                cordyline-light-blue)
        (cordyline-fl-string                 cordyline-pink-red)
@@ -91,35 +117,12 @@
        (cordyline-fl-constant               cordyline-alt-blue)
        (cordyline-fl-warning                cordyline-warning)
        (cordyline-fl-punctuation            cordyline-fg-2)
-       (cordyline-fl-negation-char          cordyline-orange-red)
-
-       (cordyline-diff-added                "#5aa05a")
-       (cordyline-diff-removed              "#a05a5a")
-       (cordyline-diff-refine-added         "#007800")
-       (cordyline-diff-refine-removed       "#780000")
-       (cordyline-diff-header               "#5a5a5a")
-       (cordyline-diff-file-header          "#3c3c3c")
-       (cordyline-diff-context              "#828282")
-       (cordyline-smerge-base               "#5A5AA0")
-
-       (cordyline-complementary-a-0         "#46C8A5")
-       (cordyline-complementary-a-1         "#C84669")
-
-       (cordyline-tetradic-a-0              cordyline-mode-line-modified)
-       (cordyline-tetradic-a-1              "#C778CD")
-       (cordyline-tetradic-a-2              "#7ECD78")
-       (cordyline-tetradic-a-3              "#CD9D78")
-
-       (cordyline-tetradic-b-0              "#A646B9")
-       (cordyline-tetradic-b-1              "#59B946")
-       (cordyline-tetradic-b-2              "#B96C46")
-       (cordyline-tetradic-b-3              "#4693B9"))
+       (cordyline-fl-negation-char          cordyline-orange-red))
 
   (custom-theme-set-faces
    'guava-themes-cordyline
 
    ;; built-in faces
-   ;; with unique colors
 
    ;; default
    `(default ((,cordyline-class (:foreground ,cordyline-fg-1 :background ,cordyline-bg-1))))
@@ -154,9 +157,6 @@
    `(font-lock-warning-face ((,cordyline-class (:foreground ,cordyline-fl-warning :weight bold))))
    `(font-lock-punctuation-face ((,cordyline-class (:foreground ,cordyline-fl-punctuation :weight medium))))
    `(font-lock-negation-char-face ((,cordyline-class (:foreground ,cordyline-fl-negation-char :weight medium))))
-
-   ;; built-in faces
-   ;; with non-unique colors
 
    ;; cursor
    `(cursor ((,cordyline-class (:foreground ,cordyline-white :background ,cordyline-mode-line))))
@@ -350,13 +350,13 @@
    `(eww-form-textarea ((,cordyline-class (:foreground ,cordyline-fg-1 :background ,cordyline-tab-3 :box (:line-width 1 :color ,cordyline-tab-1)))))
 
 
-   ;; external packages
+   ;; third-party packages
 
    ;; elfeed
    `(elfeed-search-tag-face ((,cordyline-class (:foreground ,cordyline-green))))
    `(elfeed-search-date-face ((,cordyline-class (:foreground ,cordyline-light-blue))))
    `(elfeed-search-feed-face ((,cordyline-class (:foreground ,cordyline-alt-blue))))
-   `(elfeed-search-title-face ((,cordyline-class (:foreground ,cordyline-alt-purple))))
+   `(elfeed-search-title-face ((,cordyline-class (:foreground ,cordyline-alt-light-purple))))
    `(elfeed-search-unread-title-face ((,cordyline-class (:weight bold :foreground ,cordyline-purple-red))))
    `(elfeed-search-filter-face ((,cordyline-class (:weight bold :foreground ,cordyline-tetradic-a-1))))
    `(elfeed-search-last-update-face ((,cordyline-class (:weight bold :foreground ,cordyline-tetradic-a-1))))

@@ -35,10 +35,10 @@
 
 (let* (
        (ceiba-class '((class color) (min-colors 257)))
+
+       ;; Effective colors
        (ceiba-black                     "#000000")
        (ceiba-white                     "#FFFFFF")
-
-       ;; (ceiba-light-gray                "#bab49e")
 
        (ceiba-light-green               "#64786e")
        (ceiba-green                     "#5b6452")
@@ -50,7 +50,6 @@
        (ceiba-orange                    "#ca6f39")
        (ceiba-deep-orange               "#a85639")
 
-       ;; (ceiba-steel-blue                "#aabed8")
        (ceiba-blue                      "#2327dc")
        (ceiba-alt-blue                  "#2268a7")
        (ceiba-cyan                      "#008787")
@@ -60,32 +59,56 @@
        (ceiba-purple                    "#4e466d")
        (ceiba-purple-red                "#762362")
 
-       (ceiba-light-brown               "#a08c6e")
        (ceiba-brown                     "#6d4b30")
+       (ceiba-alt-brown                 "#826e51")
        (ceiba-brown-wood                "#53453d")
 
+       ;; Harmonic colors
+       (ceiba-complementary-a-0         "#4680DE")
+       (ceiba-complementary-a-1         "#DE4680")
+
+       (ceiba-tetradic-a-0              "#aa98aa")
+       (ceiba-tetradic-a-1              "#AAA198")
+       (ceiba-tetradic-a-2              "#98AA98")
+       (ceiba-tetradic-a-3              "#98A1AA")
+
+       (ceiba-tetradic-b-0              "#803C96")
+       (ceiba-tetradic-b-1              "#53963C")
+       (ceiba-tetradic-b-2              "#96533C")
+       (ceiba-tetradic-b-3              "#3C8096")
+
+       ;; Symbolic colors
        (ceiba-fg-1                      "#000000")
        (ceiba-fg-2                      "#3c3c3c")
        (ceiba-bg-1                      "#bab49e")
        (ceiba-highlight                 "#a6a08a")
        (ceiba-shadow                    "#7f7f7f")
        (ceiba-tooltip                   "#ffffe0")
-       (ceiba-region-1                  "#798585")
-       (ceiba-region-2                  "#826e51")
+       (ceiba-region-1                  "#a08c6e")
+       (ceiba-region-2                  "#798585")
+
+       (ceiba-mode-line                 ceiba-green)
+       (ceiba-mode-line-inactive        ceiba-alt-brown)
+       (ceiba-mode-line-modified        ceiba-tetradic-a-0)
+       (ceiba-bell                      "#786678")
+
+       (ceiba-tab-1                     ceiba-mode-line)
+       (ceiba-tab-2                     ceiba-mode-line-inactive)
+       (ceiba-tab-3                     "#a08c6e")
 
        (ceiba-error                     "#ff0000")
        (ceiba-warning                   "#f6c911")
        (ceiba-success                   "#1ea01e")
        (ceiba-change                    "#2327dc")
 
-       (ceiba-mode-line                 "#5b6452")
-       (ceiba-mode-line-inactive        "#826e51")
-       (ceiba-mode-line-modified        "#aa98aa")
-       (ceiba-bell                      "#786678")
-
-       (ceiba-tab-1                     ceiba-mode-line)
-       (ceiba-tab-2                     ceiba-mode-line-inactive)
-       (ceiba-tab-3                     ceiba-light-brown)
+       (ceiba-diff-added                "#c8f0c8")
+       (ceiba-diff-removed              "#f0c8c8")
+       (ceiba-diff-refine-added         "#78f078")
+       (ceiba-diff-refine-removed       "#f07878")
+       (ceiba-diff-header               "#b4b4b4")
+       (ceiba-diff-file-header          "#8c8c8c")
+       (ceiba-diff-context              "#dcdcdc")
+       (ceiba-smerge-base               "#C8C8F0")
 
        (ceiba-fl-comment                ceiba-deep-green)
        (ceiba-fl-string                 ceiba-brown)
@@ -97,35 +120,12 @@
        (ceiba-fl-constant               ceiba-deep-orange)
        (ceiba-fl-warning                ceiba-warning)
        (ceiba-fl-punctuation            ceiba-fg-2)
-       (ceiba-fl-negation-char          ceiba-orange)
-
-       (ceiba-diff-added                "#c8f0c8")
-       (ceiba-diff-removed              "#f0c8c8")
-       (ceiba-diff-refine-added         "#78f078")
-       (ceiba-diff-refine-removed       "#f07878")
-       (ceiba-diff-header               "#b4b4b4")
-       (ceiba-diff-file-header          "#8c8c8c")
-       (ceiba-diff-context              "#dcdcdc")
-       (ceiba-smerge-base               "#C8C8F0")
-
-       (ceiba-complementary-a-0         "#4680DE")
-       (ceiba-complementary-a-1         "#DE4680")
-
-       (ceiba-tetradic-a-0              ceiba-mode-line-modified)
-       (ceiba-tetradic-a-1              "#AAA198")
-       (ceiba-tetradic-a-2              "#98AA98")
-       (ceiba-tetradic-a-3              "#98A1AA")
-
-       (ceiba-tetradic-b-0              "#803C96")
-       (ceiba-tetradic-b-1              "#53963C")
-       (ceiba-tetradic-b-2              "#96533C")
-       (ceiba-tetradic-b-3              "#3C8096"))
+       (ceiba-fl-negation-char          ceiba-orange))
 
   (custom-theme-set-faces
    'guava-themes-ceiba
 
    ;; built-in faces
-   ;; with unique colors
 
    ;; default
    `(default ((,ceiba-class (:foreground ,ceiba-fg-1 :background ,ceiba-bg-1))))
@@ -160,9 +160,6 @@
    `(font-lock-warning-face ((,ceiba-class (:foreground ,ceiba-fl-warning :weight bold))))
    `(font-lock-punctuation-face ((,ceiba-class (:foreground ,ceiba-fl-punctuation :weight medium))))
    `(font-lock-negation-char-face ((,ceiba-class (:foreground ,ceiba-fl-negation-char :weight medium))))
-
-   ;; built-in faces
-   ;; with non-unique colors
 
    ;; cursor
    `(cursor ((,ceiba-class (:foreground ,ceiba-white :background ,ceiba-mode-line))))
@@ -356,7 +353,7 @@
    `(eww-form-textarea ((,ceiba-class (:foreground ,ceiba-fg-1 :background ,ceiba-tab-3 :box (:line-width 1 :color ,ceiba-tab-1)))))
 
 
-   ;; external packages
+   ;; third-party packages
 
    ;; elfeed
    `(elfeed-search-tag-face ((,ceiba-class (:foreground ,ceiba-alt-blue))))

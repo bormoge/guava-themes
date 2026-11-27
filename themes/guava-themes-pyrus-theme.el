@@ -35,6 +35,8 @@
 
 (let* (
        (pyrus-class '((class color) (min-colors 257)))
+
+       ;; Effective colors
        (pyrus-black                     "#000000")
        (pyrus-white                     "#FFFFFF")
 
@@ -59,6 +61,21 @@
        (pyrus-purple                    "#874be1")
        (pyrus-deep-magenta              "#642864")
 
+       ;; Harmonic colors
+       (pyrus-complementary-a-0         "#4680DE")
+       (pyrus-complementary-a-1         "#DE4680")
+
+       (pyrus-tetradic-a-0              "#F3A5A2")
+       (pyrus-tetradic-a-1              "#C8F3A2")
+       (pyrus-tetradic-a-2              "#CDA2F3")
+       (pyrus-tetradic-a-3              "#A2F0F3")
+
+       (pyrus-tetradic-b-0              "#8F82BE")
+       (pyrus-tetradic-b-1              "#B1BE82")
+       (pyrus-tetradic-b-2              "#BE8293")
+       (pyrus-tetradic-b-3              "#82BEAD")
+
+       ;; Symbolic colors
        (pyrus-fg-1                      "#6e0000")
        (pyrus-fg-2                      "#b43c3c")
        (pyrus-bg-1                      "#f9fefd")
@@ -68,19 +85,28 @@
        (pyrus-region-1                  "#c8c887")
        (pyrus-region-2                  "#e5e73b")
 
+       (pyrus-mode-line                 pyrus-alt-green)
+       (pyrus-mode-line-inactive        pyrus-green)
+       (pyrus-mode-line-modified        pyrus-tetradic-a-0)
+       (pyrus-bell                      "#532341")
+
+       (pyrus-tab-1                     pyrus-mode-line)
+       (pyrus-tab-2                     pyrus-mode-line-inactive)
+       (pyrus-tab-3                     "#316355")
+
        (pyrus-error                     "#ff0000")
        (pyrus-warning                   "#ffd200")
        (pyrus-success                   "#228B22")
        (pyrus-change                    "#2a4ad9")
 
-       (pyrus-mode-line                 "#295323")
-       (pyrus-mode-line-inactive        "#228b22")
-       (pyrus-mode-line-modified        "#F3A5A2")
-       (pyrus-bell                      "#532341")
-
-       (pyrus-tab-1                     pyrus-mode-line)
-       (pyrus-tab-2                     pyrus-mode-line-inactive)
-       (pyrus-tab-3                     pyrus-green-subdued)
+       (pyrus-diff-added                "#c8f0c8")
+       (pyrus-diff-removed              "#f0c8c8")
+       (pyrus-diff-refine-added         "#78f078")
+       (pyrus-diff-refine-removed       "#f07878")
+       (pyrus-diff-header               "#b4b4b4")
+       (pyrus-diff-file-header          "#8c8c8c")
+       (pyrus-diff-context              "#dcdcdc")
+       (pyrus-smerge-base               "#C8C8F0")
 
        (pyrus-fl-comment                pyrus-light-green)
        (pyrus-fl-string                 pyrus-deep-orange)
@@ -92,35 +118,12 @@
        (pyrus-fl-constant               pyrus-deep-blue)
        (pyrus-fl-warning                pyrus-warning)
        (pyrus-fl-punctuation            pyrus-fg-2)
-       (pyrus-fl-negation-char          pyrus-orange-subdued)
-
-       (pyrus-diff-added                "#c8f0c8")
-       (pyrus-diff-removed              "#f0c8c8")
-       (pyrus-diff-refine-added         "#78f078")
-       (pyrus-diff-refine-removed       "#f07878")
-       (pyrus-diff-header               "#b4b4b4")
-       (pyrus-diff-file-header          "#8c8c8c")
-       (pyrus-diff-context              "#dcdcdc")
-       (pyrus-smerge-base               "#C8C8F0")
-
-       (pyrus-complementary-a-0         "#4680DE")
-       (pyrus-complementary-a-1         "#DE4680")
-
-       (pyrus-tetradic-a-0              pyrus-mode-line-modified)
-       (pyrus-tetradic-a-1              "#C8F3A2")
-       (pyrus-tetradic-a-2              "#CDA2F3")
-       (pyrus-tetradic-a-3              "#A2F0F3")
-
-       (pyrus-tetradic-b-0              "#8F82BE")
-       (pyrus-tetradic-b-1              "#B1BE82")
-       (pyrus-tetradic-b-2              "#BE8293")
-       (pyrus-tetradic-b-3              "#82BEAD"))
+       (pyrus-fl-negation-char          pyrus-orange-subdued))
 
   (custom-theme-set-faces
    'guava-themes-pyrus
 
    ;; built-in faces
-   ;; with unique colors
 
    ;; default
    `(default ((,pyrus-class (:foreground ,pyrus-fg-1 :background ,pyrus-bg-1))))
@@ -155,9 +158,6 @@
    `(font-lock-warning-face ((,pyrus-class (:foreground ,pyrus-fl-warning :weight bold))))
    `(font-lock-punctuation-face ((,pyrus-class (:foreground ,pyrus-fl-punctuation :weight medium))))
    `(font-lock-negation-char-face ((,pyrus-class (:foreground ,pyrus-fl-negation-char :weight medium))))
-
-   ;; built-in faces
-   ;; with non-unique colors
 
    ;; cursor
    `(cursor ((,pyrus-class (:foreground ,pyrus-white :background ,pyrus-mode-line))))
@@ -351,7 +351,7 @@
    `(eww-form-textarea ((,pyrus-class (:foreground ,pyrus-white :background ,pyrus-tab-3 :box (:line-width 1 :color ,pyrus-tab-1)))))
 
 
-   ;; external packages
+   ;; third-party packages
 
    ;; elfeed
    `(elfeed-search-tag-face ((,pyrus-class (:foreground ,pyrus-light-purple))))

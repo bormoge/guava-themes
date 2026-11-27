@@ -35,6 +35,8 @@
 
 (let* (
        (acer-class '((class color) (min-colors 257)))
+
+       ;; Effective colors
        (acer-black                     "#000000")
        (acer-white                     "#FFFFFF")
 
@@ -42,16 +44,14 @@
        (acer-green-cyan                "#277a6a")
        (acer-deep-green                "#006041")
 
+       (acer-light-orange              "#eb8c4e")
        (acer-orange                    "#e76144")
-       ;; (acer-deep-orange               "#d44400")
        (acer-orange-pink               "#cd475f")
        (acer-autumn                    "#ff8c4e")
 
-       (acer-cream                     "#dca56e")
        (acer-deep-brown                "#8c695a")
 
        (acer-light-blue                "#3a9187")
-       ;; (acer-blue                      "#2134d5")
        (acer-deep-blue                 "#1B3B4D")
        (acer-cyan                      "#009b9b")
        (acer-dark-cyan                 "#006969")
@@ -61,6 +61,21 @@
        (acer-purple-red                "#9b234b")
        (acer-purple-pink               "#5f2258")
 
+       ;; Harmonic colors
+       (acer-complementary-a-0         "#4680DE")
+       (acer-complementary-a-1         "#DE4680")
+
+       (acer-tetradic-a-0              "#CEB2D7")
+       (acer-tetradic-a-1              "#D7BBB2")
+       (acer-tetradic-a-2              "#B2CED7")
+       (acer-tetradic-a-3              "#BBD7B2")
+
+       (acer-tetradic-b-0              "#9D50B4")
+       (acer-tetradic-b-1              "#67B450")
+       (acer-tetradic-b-2              "#B46B50")
+       (acer-tetradic-b-3              "#5099B4")
+
+       ;; Symbolic colors
        (acer-fg-1                      "#000000")
        (acer-fg-2                      "#3c3c3c")
        (acer-bg-1                      "#f7bb78")
@@ -70,19 +85,28 @@
        (acer-region-1                  "#c88550")
        (acer-region-2                  "#a07150")
 
+       (acer-mode-line                 acer-orange)
+       (acer-mode-line-inactive        acer-light-orange)
+       (acer-mode-line-modified        acer-tetradic-a-0)
+       (acer-bell                      "#4478E7")
+
+       (acer-tab-1                     acer-mode-line)
+       (acer-tab-2                     acer-mode-line-inactive)
+       (acer-tab-3                     "#dca56e")
+
        (acer-error                     "#d70000")
        (acer-warning                   "#b4a000")
        (acer-success                   "#28823c")
        (acer-change                    "#2134d5")
 
-       (acer-mode-line                 "#e76144")
-       (acer-mode-line-inactive        "#eb8c4e")
-       (acer-mode-line-modified        "#CEB2D7")
-       (acer-bell                      "#4478E7")
-
-       (acer-tab-1                     acer-mode-line)
-       (acer-tab-2                     acer-mode-line-inactive)
-       (acer-tab-3                     acer-cream)
+       (acer-diff-added                "#c8f0c8")
+       (acer-diff-removed              "#f0c8c8")
+       (acer-diff-refine-added         "#78f078")
+       (acer-diff-refine-removed       "#f07878")
+       (acer-diff-header               "#b4b4b4")
+       (acer-diff-file-header          "#8c8c8c")
+       (acer-diff-context              "#dcdcdc")
+       (acer-smerge-base               "#C8C8F0")
 
        (acer-fl-comment                acer-deep-green)
        (acer-fl-string                 acer-deep-brown)
@@ -94,35 +118,12 @@
        (acer-fl-constant               acer-green-cyan)
        (acer-fl-warning                acer-warning)
        (acer-fl-punctuation            acer-fg-2)
-       (acer-fl-negation-char          acer-light-blue)
-
-       (acer-diff-added                "#c8f0c8")
-       (acer-diff-removed              "#f0c8c8")
-       (acer-diff-refine-added         "#78f078")
-       (acer-diff-refine-removed       "#f07878")
-       (acer-diff-header               "#b4b4b4")
-       (acer-diff-file-header          "#8c8c8c")
-       (acer-diff-context              "#dcdcdc")
-       (acer-smerge-base               "#C8C8F0")
-
-       (acer-complementary-a-0         "#4680DE")
-       (acer-complementary-a-1         "#DE4680")
-
-       (acer-tetradic-a-0              acer-mode-line-modified)
-       (acer-tetradic-a-1              "#D7BBB2")
-       (acer-tetradic-a-2              "#B2CED7")
-       (acer-tetradic-a-3              "#BBD7B2")
-
-       (acer-tetradic-b-0              "#9D50B4")
-       (acer-tetradic-b-1              "#67B450")
-       (acer-tetradic-b-2              "#B46B50")
-       (acer-tetradic-b-3              "#5099B4"))
+       (acer-fl-negation-char          acer-light-blue))
 
   (custom-theme-set-faces
    'guava-themes-acer
 
    ;; built-in faces
-   ;; with unique colors
 
    ;; default
    `(default ((,acer-class (:foreground ,acer-fg-1 :background ,acer-bg-1))))
@@ -157,9 +158,6 @@
    `(font-lock-warning-face ((,acer-class (:foreground ,acer-fl-warning :weight bold))))
    `(font-lock-punctuation-face ((,acer-class (:foreground ,acer-fl-punctuation :weight medium))))
    `(font-lock-negation-char-face ((,acer-class (:foreground ,acer-fl-negation-char :weight medium))))
-
-   ;; built-in faces
-   ;; with non-unique colors
 
    ;; cursor
    `(cursor ((,acer-class (:foreground ,acer-black :background ,acer-mode-line))))
@@ -353,7 +351,7 @@
    `(eww-form-textarea ((,acer-class (:foreground ,acer-fg-1 :background ,acer-tab-3 :box (:line-width 1 :color ,acer-tab-1)))))
 
 
-   ;; external packages
+   ;; third-party packages
 
    ;; elfeed
    `(elfeed-search-tag-face ((,acer-class (:foreground ,acer-orange-pink))))

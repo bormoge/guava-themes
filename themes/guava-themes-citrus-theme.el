@@ -35,6 +35,8 @@
 
 (let* (
        (citrus-class '((class color) (min-colors 257)))
+
+       ;; Effective colors
        (citrus-black                     "#000000")
        (citrus-white                     "#edf2ed")
 
@@ -44,14 +46,12 @@
        (citrus-green-blue                "#197d5a")
 
        (citrus-yellow                    "#f5d49b")
-       ;; (citrus-alt-yellow                "#e1b69b")
        (citrus-deep-yellow               "#b99869")
 
        (citrus-red                       "#df352c")
        (citrus-deep-red                  "#a0352c")
        (citrus-orange-red                "#ce462c")
        (citrus-orange-orange             "#f29a43")
-       (citrus-alt-orange                "#f26e43")
        (citrus-deep-orange               "#c85802")
 
        (citrus-brown                     "#735f50")
@@ -66,6 +66,21 @@
        (citrus-deep-purple               "#6d4393")
        (citrus-purple-red                "#77003a")
 
+       ;; Harmonic colors
+       (citrus-complementary-a-0         "#4680DE")
+       (citrus-complementary-a-1         "#DE4680")
+
+       (citrus-tetradic-a-0              "#E6F0B4")
+       (citrus-tetradic-a-1              "#B4F0DC")
+       (citrus-tetradic-a-2              "#BEB4F0")
+       (citrus-tetradic-a-3              "#F0B4C8")
+
+       (citrus-tetradic-b-0              "#7B6EAA")
+       (citrus-tetradic-b-1              "#9DAA6E")
+       (citrus-tetradic-b-2              "#AA6E7F")
+       (citrus-tetradic-b-3              "#6EAA99")
+
+       ;; Symbolic colors
        (citrus-fg-1                      "#000000")
        (citrus-fg-2                      "#3c3c3c")
        (citrus-bg-1                      "#edf2ed")
@@ -75,19 +90,28 @@
        (citrus-region-1                  "#f5d49b")
        (citrus-region-2                  "#f29a43")
 
+       (citrus-mode-line                 citrus-green-lime)
+       (citrus-mode-line-inactive        citrus-light-green)
+       (citrus-mode-line-modified        citrus-tetradic-a-0)
+       (citrus-bell                      "#933787")
+
+       (citrus-tab-1                     citrus-orange-red)
+       (citrus-tab-2                     citrus-orange-orange)
+       (citrus-tab-3                     "#f26e43")
+
        (citrus-error                     "#FF0000")
        (citrus-warning                   "#ffbe00")
        (citrus-success                   "#2bdc26")
        (citrus-change                    "#2327dc")
 
-       (citrus-mode-line                 "#589337")
-       (citrus-mode-line-inactive        "#6ea56e")
-       (citrus-mode-line-modified        "#E6F0B4")
-       (citrus-bell                      "#933787")
-
-       (citrus-tab-1                     citrus-orange-red)
-       (citrus-tab-2                     citrus-orange-orange)
-       (citrus-tab-3                     citrus-alt-orange)
+       (citrus-diff-added                "#c8f0c8")
+       (citrus-diff-removed              "#f0c8c8")
+       (citrus-diff-refine-added         "#78f078")
+       (citrus-diff-refine-removed       "#f07878")
+       (citrus-diff-header               "#b4b4b4")
+       (citrus-diff-file-header          "#8c8c8c")
+       (citrus-diff-context              "#dcdcdc")
+       (citrus-smerge-base               "#C8C8F0")
 
        (citrus-fl-comment                citrus-green-blue)
        (citrus-fl-string                 citrus-light-green)
@@ -99,35 +123,12 @@
        (citrus-fl-constant               citrus-deep-blue)
        (citrus-fl-warning                citrus-warning)
        (citrus-fl-punctuation            citrus-fg-2)
-       (citrus-fl-negation-char          citrus-purple-red)
-
-       (citrus-diff-added                "#c8f0c8")
-       (citrus-diff-removed              "#f0c8c8")
-       (citrus-diff-refine-added         "#78f078")
-       (citrus-diff-refine-removed       "#f07878")
-       (citrus-diff-header               "#b4b4b4")
-       (citrus-diff-file-header          "#8c8c8c")
-       (citrus-diff-context              "#dcdcdc")
-       (citrus-smerge-base               "#C8C8F0")
-
-       (citrus-complementary-a-0         "#4680DE")
-       (citrus-complementary-a-1         "#DE4680")
-
-       (citrus-tetradic-a-0              citrus-mode-line-modified)
-       (citrus-tetradic-a-1              "#B4F0DC")
-       (citrus-tetradic-a-2              "#BEB4F0")
-       (citrus-tetradic-a-3              "#F0B4C8")
-
-       (citrus-tetradic-b-0              "#7B6EAA")
-       (citrus-tetradic-b-1              "#9DAA6E")
-       (citrus-tetradic-b-2              "#AA6E7F")
-       (citrus-tetradic-b-3              "#6EAA99"))
+       (citrus-fl-negation-char          citrus-purple-red))
 
   (custom-theme-set-faces
    'guava-themes-citrus
 
    ;; built-in faces
-   ;; with unique colors
 
    ;; default
    `(default ((,citrus-class (:foreground ,citrus-fg-1 :background ,citrus-bg-1))))
@@ -162,9 +163,6 @@
    `(font-lock-warning-face ((,citrus-class (:foreground ,citrus-fl-warning :weight bold))))
    `(font-lock-punctuation-face ((,citrus-class (:foreground ,citrus-fl-punctuation :weight medium))))
    `(font-lock-negation-char-face ((,citrus-class (:foreground ,citrus-fl-negation-char :weight medium))))
-
-   ;; built-in faces
-   ;; with non-unique colors
 
    ;; cursor
    `(cursor ((,citrus-class (:foreground ,citrus-white :background ,citrus-mode-line))))
@@ -358,7 +356,7 @@
    `(eww-form-textarea ((,citrus-class (:foreground ,citrus-fg-1 :background ,citrus-tab-3 :box (:line-width 1 :color ,citrus-tab-1)))))
 
 
-   ;; external packages
+   ;; third-party packages
 
    ;; elfeed
    `(elfeed-search-tag-face ((,citrus-class (:foreground ,citrus-deep-yellow))))

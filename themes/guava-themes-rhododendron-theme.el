@@ -35,6 +35,8 @@
 
 (let* (
        (rhododendron-class '((class color) (min-colors 257)))
+
+       ;; Effective colors
        (rhododendron-black                     "#000000")
        (rhododendron-white                     "#FFFFFF")
 
@@ -53,16 +55,29 @@
        (rhododendron-dark-cyan                 "#00699b")
 
        (rhododendron-bright-pink               "#fd3aae")
-       (rhododendron-alt-bright-pink           "#e78deb")
        (rhododendron-deep-pink                 "#c00e88")
 
        (rhododendron-light-purple              "#e0bde7")
        (rhododendron-purple                    "#826ec0")
-       ;; (rhododendron-purple-pink               "#ad20f0")
        (rhododendron-purple-blue               "#5346cc")
        (rhododendron-purple-red                "#a8206f")
        (rhododendron-dark-purple-red           "#7d2061")
 
+       ;; Harmonic colors
+       (rhododendron-complementary-a-0         "#4680DE")
+       (rhododendron-complementary-a-1         "#DE4680")
+
+       (rhododendron-tetradic-a-0              "#94DCFD")
+       (rhododendron-tetradic-a-1              "#EA94FD")
+       (rhododendron-tetradic-a-2              "#A7FD94")
+       (rhododendron-tetradic-a-3              "#FDB594")
+
+       (rhododendron-tetradic-b-0              "#9D50B4")
+       (rhododendron-tetradic-b-1              "#67B450")
+       (rhododendron-tetradic-b-2              "#B46B50")
+       (rhododendron-tetradic-b-3              "#5099B4")
+
+       ;; Symbolic colors
        (rhododendron-fg-1                      "#000000")
        (rhododendron-fg-2                      "#3c3c3c")
        (rhododendron-bg-1                      "#e8c7e3")
@@ -72,19 +87,28 @@
        (rhododendron-region-1                  "#e78deb")
        (rhododendron-region-2                  "#64d264")
 
+       (rhododendron-mode-line                 rhododendron-red)
+       (rhododendron-mode-line-inactive        rhododendron-bright-pink)
+       (rhododendron-mode-line-modified        rhododendron-tetradic-a-0)
+       (rhododendron-bell                      "#03C013")
+
+       (rhododendron-tab-1                     rhododendron-mode-line)
+       (rhododendron-tab-2                     rhododendron-mode-line-inactive)
+       (rhododendron-tab-3                     "#e78deb")
+
        (rhododendron-error                     "#FF0000")
        (rhododendron-warning                   "#F68511")
        (rhododendron-success                   "#29b425")
        (rhododendron-change                    "#3c3cee")
 
-       (rhododendron-mode-line                 "#c00353")
-       (rhododendron-mode-line-inactive        "#fd3aae")
-       (rhododendron-mode-line-modified        "#94DCFD")
-       (rhododendron-bell                      "#03C013")
-
-       (rhododendron-tab-1                     rhododendron-mode-line)
-       (rhododendron-tab-2                     rhododendron-mode-line-inactive)
-       (rhododendron-tab-3                     rhododendron-alt-bright-pink)
+       (rhododendron-diff-added                "#c8f0c8")
+       (rhododendron-diff-removed              "#f0c8c8")
+       (rhododendron-diff-refine-added         "#78f078")
+       (rhododendron-diff-refine-removed       "#f07878")
+       (rhododendron-diff-header               "#b4b4b4")
+       (rhododendron-diff-file-header          "#8c8c8c")
+       (rhododendron-diff-context              "#dcdcdc")
+       (rhododendron-smerge-base               "#C8C8F0")
 
        (rhododendron-fl-comment                rhododendron-deep-green)
        (rhododendron-fl-string                 rhododendron-purple-red)
@@ -96,35 +120,12 @@
        (rhododendron-fl-constant               rhododendron-bright-pink)
        (rhododendron-fl-warning                rhododendron-warning)
        (rhododendron-fl-punctuation            rhododendron-fg-2)
-       (rhododendron-fl-negation-char          rhododendron-red-orange)
-
-       (rhododendron-diff-added                "#c8f0c8")
-       (rhododendron-diff-removed              "#f0c8c8")
-       (rhododendron-diff-refine-added         "#78f078")
-       (rhododendron-diff-refine-removed       "#f07878")
-       (rhododendron-diff-header               "#b4b4b4")
-       (rhododendron-diff-file-header          "#8c8c8c")
-       (rhododendron-diff-context              "#dcdcdc")
-       (rhododendron-smerge-base               "#C8C8F0")
-
-       (rhododendron-complementary-a-0         "#4680DE")
-       (rhododendron-complementary-a-1         "#DE4680")
-
-       (rhododendron-tetradic-a-0              rhododendron-mode-line-modified)
-       (rhododendron-tetradic-a-1              "#EA94FD")
-       (rhododendron-tetradic-a-2              "#A7FD94")
-       (rhododendron-tetradic-a-3              "#FDB594")
-
-       (rhododendron-tetradic-b-0              "#9D50B4")
-       (rhododendron-tetradic-b-1              "#67B450")
-       (rhododendron-tetradic-b-2              "#B46B50")
-       (rhododendron-tetradic-b-3              "#5099B4"))
+       (rhododendron-fl-negation-char          rhododendron-red-orange))
 
   (custom-theme-set-faces
    'guava-themes-rhododendron
 
    ;; built-in faces
-   ;; with unique colors
 
    ;; default
    `(default ((,rhododendron-class (:foreground ,rhododendron-fg-1 :background ,rhododendron-bg-1))))
@@ -159,9 +160,6 @@
    `(font-lock-warning-face ((,rhododendron-class (:foreground ,rhododendron-fl-warning :weight bold))))
    `(font-lock-punctuation-face ((,rhododendron-class (:foreground ,rhododendron-fl-punctuation :weight medium))))
    `(font-lock-negation-char-face ((,rhododendron-class (:foreground ,rhododendron-fl-negation-char :weight medium))))
-
-   ;; built-in faces
-   ;; with non-unique colors
 
    ;; cursor
    `(cursor ((,rhododendron-class (:foreground ,rhododendron-black :background ,rhododendron-mode-line))))
@@ -355,7 +353,7 @@
    `(eww-form-textarea ((,rhododendron-class (:foreground ,rhododendron-fg-1 :background ,rhododendron-tab-3 :box (:line-width 1 :color ,rhododendron-tab-1)))))
 
 
-   ;; external packages
+   ;; third-party packages
 
    ;; elfeed
    `(elfeed-search-tag-face ((,rhododendron-class (:foreground ,rhododendron-dark-purple-red))))

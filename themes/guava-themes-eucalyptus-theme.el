@@ -35,12 +35,14 @@
 
 (let* (
        (eucalyptus-class '((class color) (min-colors 257)))
+
+       ;; Effective colors
        (eucalyptus-black                     "#000000")
        (eucalyptus-white                     "#FFFFFF")
 
-       (eucalyptus-light-gray                "#9196a5")
        (eucalyptus-gray                      "#646464")
        (eucalyptus-gray-green                "#505a46")
+       (eucalyptus-gray-blue                 "#737887")
 
        (eucalyptus-green                     "#465f32")
        (eucalyptus-alt-green                 "#307d0f")
@@ -58,6 +60,21 @@
        (eucalyptus-purple                    "#825a91")
        (eucalyptus-purple-red                "#874164")
 
+       ;; Harmonic colors
+       (eucalyptus-complementary-a-0         "#4680DE")
+       (eucalyptus-complementary-a-1         "#DE4680")
+
+       (eucalyptus-tetradic-a-0              "#aa5956")
+       (eucalyptus-tetradic-a-1              "#7DAA56")
+       (eucalyptus-tetradic-a-2              "#8356AA")
+       (eucalyptus-tetradic-a-3              "#56A7AA")
+
+       (eucalyptus-tetradic-b-0              "#803C96")
+       (eucalyptus-tetradic-b-1              "#53963C")
+       (eucalyptus-tetradic-b-2              "#96533C")
+       (eucalyptus-tetradic-b-3              "#3C8096")
+
+       ;; Symbolic colors
        (eucalyptus-fg-1                      "#2d3241")
        (eucalyptus-fg-2                      "#696e7d")
        (eucalyptus-bg-1                      "#a5aa96")
@@ -67,19 +84,28 @@
        (eucalyptus-region-1                  "#e1e696")
        (eucalyptus-region-2                  "#96B9E6")
 
+       (eucalyptus-mode-line                 eucalyptus-alt-deep-blue)
+       (eucalyptus-mode-line-inactive        eucalyptus-gray-blue)
+       (eucalyptus-mode-line-modified        eucalyptus-tetradic-a-0)
+       (eucalyptus-bell                      "#5a5f4b")
+
+       (eucalyptus-tab-1                     eucalyptus-mode-line)
+       (eucalyptus-tab-2                     eucalyptus-mode-line-inactive)
+       (eucalyptus-tab-3                     "#9196a5")
+
        (eucalyptus-error                     "#e10000")
        (eucalyptus-warning                   "#f6c911")
        (eucalyptus-success                   "#1ea01e")
        (eucalyptus-change                    "#2327dc")
 
-       (eucalyptus-mode-line                 "#373c4b")
-       (eucalyptus-mode-line-inactive        "#737887")
-       (eucalyptus-mode-line-modified        "#aa5956")
-       (eucalyptus-bell                      "#5a5f4b")
-
-       (eucalyptus-tab-1                     eucalyptus-mode-line)
-       (eucalyptus-tab-2                     eucalyptus-mode-line-inactive)
-       (eucalyptus-tab-3                     eucalyptus-light-gray)
+       (eucalyptus-diff-added                "#c8f0c8")
+       (eucalyptus-diff-removed              "#f0c8c8")
+       (eucalyptus-diff-refine-added         "#78f078")
+       (eucalyptus-diff-refine-removed       "#f07878")
+       (eucalyptus-diff-header               "#b4b4b4")
+       (eucalyptus-diff-file-header          "#8c8c8c")
+       (eucalyptus-diff-context              "#dcdcdc")
+       (eucalyptus-smerge-base               "#C8C8F0")
 
        (eucalyptus-fl-comment                eucalyptus-green)
        (eucalyptus-fl-string                 eucalyptus-purple-red)
@@ -91,35 +117,12 @@
        (eucalyptus-fl-constant               eucalyptus-light-blue)
        (eucalyptus-fl-warning                eucalyptus-warning)
        (eucalyptus-fl-punctuation            eucalyptus-fg-2)
-       (eucalyptus-fl-negation-char          eucalyptus-purple)
-
-       (eucalyptus-diff-added                "#c8f0c8")
-       (eucalyptus-diff-removed              "#f0c8c8")
-       (eucalyptus-diff-refine-added         "#78f078")
-       (eucalyptus-diff-refine-removed       "#f07878")
-       (eucalyptus-diff-header               "#b4b4b4")
-       (eucalyptus-diff-file-header          "#8c8c8c")
-       (eucalyptus-diff-context              "#dcdcdc")
-       (eucalyptus-smerge-base               "#C8C8F0")
-
-       (eucalyptus-complementary-a-0         "#4680DE")
-       (eucalyptus-complementary-a-1         "#DE4680")
-
-       (eucalyptus-tetradic-a-0              eucalyptus-mode-line-modified)
-       (eucalyptus-tetradic-a-1              "#7DAA56")
-       (eucalyptus-tetradic-a-2              "#8356AA")
-       (eucalyptus-tetradic-a-3              "#56A7AA")
-
-       (eucalyptus-tetradic-b-0              "#803C96")
-       (eucalyptus-tetradic-b-1              "#53963C")
-       (eucalyptus-tetradic-b-2              "#96533C")
-       (eucalyptus-tetradic-b-3              "#3C8096"))
+       (eucalyptus-fl-negation-char          eucalyptus-purple))
 
   (custom-theme-set-faces
    'guava-themes-eucalyptus
 
    ;; built-in faces
-   ;; with unique colors
 
    ;; default
    `(default ((,eucalyptus-class (:foreground ,eucalyptus-fg-1 :background ,eucalyptus-bg-1))))
@@ -154,9 +157,6 @@
    `(font-lock-warning-face ((,eucalyptus-class (:foreground ,eucalyptus-fl-warning :weight bold))))
    `(font-lock-punctuation-face ((,eucalyptus-class (:foreground ,eucalyptus-fl-punctuation :weight medium))))
    `(font-lock-negation-char-face ((,eucalyptus-class (:foreground ,eucalyptus-fl-negation-char :weight medium))))
-
-   ;; built-in faces
-   ;; with non-unique colors
 
    ;; cursor
    `(cursor ((,eucalyptus-class (:foreground ,eucalyptus-white :background ,eucalyptus-mode-line))))
@@ -350,7 +350,7 @@
    `(eww-form-textarea ((,eucalyptus-class (:foreground ,eucalyptus-fg-1 :background ,eucalyptus-tab-3 :box (:line-width 1 :color ,eucalyptus-tab-1)))))
 
 
-   ;; external packages
+   ;; third-party packages
 
    ;; elfeed
    `(elfeed-search-tag-face ((,eucalyptus-class (:foreground ,eucalyptus-gray-green))))

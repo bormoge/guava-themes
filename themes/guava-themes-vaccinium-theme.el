@@ -35,6 +35,8 @@
 
 (let* (
        (vaccinium-class '((class color) (min-colors 257)))
+
+       ;; Effective colors
        (vaccinium-black                     "#000000")
        (vaccinium-white                     "#FFFFFF")
 
@@ -49,10 +51,8 @@
 
        (vaccinium-blueberry                 "#5582d7")
        (vaccinium-blue                      "#0f5fb4")
-       (vaccinium-alt-blue                  "#1455f1")
        (vaccinium-deep-blue                 "#1c5367")
        (vaccinium-steel-blue                "#6a7e98")
-       (vaccinium-alt-steel-blue            "#566a84")
        (vaccinium-cyan                      "#00c3c3")
        (vaccinium-dark-cyan                 "#007373")
 
@@ -60,6 +60,21 @@
        (vaccinium-purple                    "#6464af")
        (vaccinium-purple-pink               "#aa78cf")
 
+       ;; Harmonic colors
+       (vaccinium-complementary-a-0         "#46C8A5")
+       (vaccinium-complementary-a-1         "#C84669")
+
+       (vaccinium-tetradic-a-0              "#F5BBAC")
+       (vaccinium-tetradic-a-1              "#C2F5AC")
+       (vaccinium-tetradic-a-2              "#DFACF5")
+       (vaccinium-tetradic-a-3              "#ACE6F5")
+
+       (vaccinium-tetradic-b-0              "#B046CD")
+       (vaccinium-tetradic-b-1              "#63CD46")
+       (vaccinium-tetradic-b-2              "#CD6C46")
+       (vaccinium-tetradic-b-3              "#46A7CD")
+
+       ;; Symbolic colors
        (vaccinium-fg-1                      "#FFFFFF")
        (vaccinium-fg-2                      "#c3c3c3")
        (vaccinium-bg-1                      "#1c1c26")
@@ -69,19 +84,28 @@
        (vaccinium-region-1                  "#1c5367")
        (vaccinium-region-2                  "#3755a0")
 
+       (vaccinium-mode-line                 vaccinium-blueberry)
+       (vaccinium-mode-line-inactive        vaccinium-steel-blue)
+       (vaccinium-mode-line-modified        vaccinium-tetradic-a-0)
+       (vaccinium-bell                      "#D76955")
+
+       (vaccinium-tab-1                     vaccinium-mode-line)
+       (vaccinium-tab-2                     vaccinium-mode-line-inactive)
+       (vaccinium-tab-3                     "#566a84")
+
        (vaccinium-error                     "#FF0000")
        (vaccinium-warning                   "#f6d909")
        (vaccinium-success                   "#1ebe1e")
        (vaccinium-change                    "#1455f1")
 
-       (vaccinium-mode-line                 "#5582d7")
-       (vaccinium-mode-line-inactive        "#6a7e98")
-       (vaccinium-mode-line-modified        "#F5BBAC")
-       (vaccinium-bell                      "#D76955")
-
-       (vaccinium-tab-1                     vaccinium-mode-line)
-       (vaccinium-tab-2                     vaccinium-mode-line-inactive)
-       (vaccinium-tab-3                     vaccinium-alt-steel-blue)
+       (vaccinium-diff-added                "#5aa05a")
+       (vaccinium-diff-removed              "#a05a5a")
+       (vaccinium-diff-refine-added         "#007800")
+       (vaccinium-diff-refine-removed       "#780000")
+       (vaccinium-diff-header               "#5a5a5a")
+       (vaccinium-diff-file-header          "#3c3c3c")
+       (vaccinium-diff-context              "#828282")
+       (vaccinium-smerge-base               "#5A5AA0")
 
        (vaccinium-fl-comment                vaccinium-green-forest)
        (vaccinium-fl-string                 vaccinium-orange)
@@ -93,35 +117,12 @@
        (vaccinium-fl-constant               vaccinium-pink)
        (vaccinium-fl-warning                vaccinium-warning)
        (vaccinium-fl-punctuation            vaccinium-fg-2)
-       (vaccinium-fl-negation-char          vaccinium-purple-pink)
-
-       (vaccinium-diff-added                "#5aa05a")
-       (vaccinium-diff-removed              "#a05a5a")
-       (vaccinium-diff-refine-added         "#007800")
-       (vaccinium-diff-refine-removed       "#780000")
-       (vaccinium-diff-header               "#5a5a5a")
-       (vaccinium-diff-file-header          "#3c3c3c")
-       (vaccinium-diff-context              "#828282")
-       (vaccinium-smerge-base               "#5A5AA0")
-
-       (vaccinium-complementary-a-0         "#46C8A5")
-       (vaccinium-complementary-a-1         "#C84669")
-
-       (vaccinium-tetradic-a-0              vaccinium-mode-line-modified)
-       (vaccinium-tetradic-a-1              "#C2F5AC")
-       (vaccinium-tetradic-a-2              "#DFACF5")
-       (vaccinium-tetradic-a-3              "#ACE6F5")
-
-       (vaccinium-tetradic-b-0              "#B046CD")
-       (vaccinium-tetradic-b-1              "#63CD46")
-       (vaccinium-tetradic-b-2              "#CD6C46")
-       (vaccinium-tetradic-b-3              "#46A7CD"))
+       (vaccinium-fl-negation-char          vaccinium-purple-pink))
 
   (custom-theme-set-faces
    'guava-themes-vaccinium
 
    ;; built-in faces
-   ;; with unique colors
 
    ;; default
    `(default ((,vaccinium-class (:foreground ,vaccinium-fg-1 :background ,vaccinium-bg-1))))
@@ -156,9 +157,6 @@
    `(font-lock-warning-face ((,vaccinium-class (:foreground ,vaccinium-fl-warning :weight bold))))
    `(font-lock-punctuation-face ((,vaccinium-class (:foreground ,vaccinium-fl-punctuation :weight medium))))
    `(font-lock-negation-char-face ((,vaccinium-class (:foreground ,vaccinium-fl-negation-char :weight medium))))
-
-   ;; built-in faces
-   ;; with non-unique colors
 
    ;; cursor
    `(cursor ((,vaccinium-class (:foreground ,vaccinium-white :background ,vaccinium-mode-line))))
@@ -352,7 +350,7 @@
    `(eww-form-textarea ((,vaccinium-class (:foreground ,vaccinium-fg-1 :background ,vaccinium-tab-3 :box (:line-width 1 :color ,vaccinium-tab-1)))))
 
 
-   ;; external packages
+   ;; third-party packages
 
    ;; elfeed
    `(elfeed-search-tag-face ((,vaccinium-class (:foreground ,vaccinium-light-purple))))

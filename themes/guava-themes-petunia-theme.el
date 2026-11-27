@@ -35,6 +35,8 @@
 
 (let* (
        (petunia-class '((class color) (min-colors 257)))
+
+       ;; Effective colors
        (petunia-black                     "#000000")
        (petunia-white                     "#FFFFFF")
 
@@ -48,7 +50,6 @@
 
        (petunia-light-green               "#78c878")
        (petunia-green-forest              "#008741")
-       (petunia-alt-green-forest          "#006941")
 
        (petunia-blue                      "#287dd7")
        (petunia-cyan                      "#00d7d7")
@@ -56,6 +57,21 @@
 
        (petunia-purple                    "#8c6ecd")
 
+       ;; Harmonic colors
+       (petunia-complementary-a-0         "#46C8A5")
+       (petunia-complementary-a-1         "#C84669")
+
+       (petunia-tetradic-a-0              "#a9c9d7")
+       (petunia-tetradic-a-1              "#CEA9D7")
+       (petunia-tetradic-a-2              "#D7B7A9")
+       (petunia-tetradic-a-3              "#B2D7A9")
+
+       (petunia-tetradic-b-0              "#A646B9")
+       (petunia-tetradic-b-1              "#59B946")
+       (petunia-tetradic-b-2              "#B96C46")
+       (petunia-tetradic-b-3              "#4693B9")
+
+       ;; Symbolic colors
        (petunia-fg-1                      "#FFFFFF")
        (petunia-fg-2                      "#c3c3c3")
        (petunia-bg-1                      "#000000")
@@ -65,19 +81,28 @@
        (petunia-region-1                  "#3246cd")
        (petunia-region-2                  "#32a0cd")
 
+       (petunia-mode-line                 petunia-purple)
+       (petunia-mode-line-inactive        petunia-green-forest)
+       (petunia-mode-line-modified        petunia-tetradic-a-0)
+       (petunia-bell                      "#FFDB5A")
+
+       (petunia-tab-1                     petunia-mode-line)
+       (petunia-tab-2                     petunia-mode-line-inactive)
+       (petunia-tab-3                     "#006941")
+
        (petunia-error                     "#FF0000")
        (petunia-warning                   "#ffff00")
        (petunia-success                   "#00ff00")
        (petunia-change                    "#3246cd")
 
-       (petunia-mode-line                 "#8c6ecd")
-       (petunia-mode-line-inactive        "#008741")
-       (petunia-mode-line-modified        "#a9c9d7")
-       (petunia-bell                      "#FFDB5A")
-
-       (petunia-tab-1                     petunia-mode-line)
-       (petunia-tab-2                     petunia-mode-line-inactive)
-       (petunia-tab-3                     petunia-alt-green-forest)
+       (petunia-diff-added                "#5aa05a")
+       (petunia-diff-removed              "#a05a5a")
+       (petunia-diff-refine-added         "#007800")
+       (petunia-diff-refine-removed       "#780000")
+       (petunia-diff-header               "#5a5a5a")
+       (petunia-diff-file-header          "#3c3c3c")
+       (petunia-diff-context              "#828282")
+       (petunia-smerge-base               "#5A5AA0")
 
        (petunia-fl-comment                petunia-light-green)
        (petunia-fl-string                 petunia-orange)
@@ -89,35 +114,12 @@
        (petunia-fl-constant               petunia-blue)
        (petunia-fl-warning                petunia-warning)
        (petunia-fl-punctuation            petunia-fg-2)
-       (petunia-fl-negation-char          petunia-light-orange)
-
-       (petunia-diff-added                "#5aa05a")
-       (petunia-diff-removed              "#a05a5a")
-       (petunia-diff-refine-added         "#007800")
-       (petunia-diff-refine-removed       "#780000")
-       (petunia-diff-header               "#5a5a5a")
-       (petunia-diff-file-header          "#3c3c3c")
-       (petunia-diff-context              "#828282")
-       (petunia-smerge-base               "#5A5AA0")
-
-       (petunia-complementary-a-0         "#46C8A5")
-       (petunia-complementary-a-1         "#C84669")
-
-       (petunia-tetradic-a-0              petunia-mode-line-modified)
-       (petunia-tetradic-a-1              "#CEA9D7")
-       (petunia-tetradic-a-2              "#D7B7A9")
-       (petunia-tetradic-a-3              "#B2D7A9")
-
-       (petunia-tetradic-b-0              "#A646B9")
-       (petunia-tetradic-b-1              "#59B946")
-       (petunia-tetradic-b-2              "#B96C46")
-       (petunia-tetradic-b-3              "#4693B9"))
+       (petunia-fl-negation-char          petunia-light-orange))
 
   (custom-theme-set-faces
    'guava-themes-petunia
 
    ;; built-in faces
-   ;; with unique colors
 
    ;; default
    `(default ((,petunia-class (:foreground ,petunia-fg-1 :background ,petunia-bg-1))))
@@ -152,9 +154,6 @@
    `(font-lock-warning-face ((,petunia-class (:foreground ,petunia-fl-warning :weight bold))))
    `(font-lock-punctuation-face ((,petunia-class (:foreground ,petunia-fl-punctuation :weight medium))))
    `(font-lock-negation-char-face ((,petunia-class (:foreground ,petunia-fl-negation-char :weight medium))))
-
-   ;; built-in faces
-   ;; with non-unique colors
 
    ;; cursor
    `(cursor ((,petunia-class (:foreground ,petunia-white :background ,petunia-mode-line))))
@@ -348,7 +347,7 @@
    `(eww-form-textarea ((,petunia-class (:foreground ,petunia-fg-1 :background ,petunia-tab-3 :box (:line-width 1 :color ,petunia-tab-1)))))
 
 
-   ;; external packages
+   ;; third-party packages
 
    ;; elfeed
    `(elfeed-search-tag-face ((,petunia-class (:foreground ,petunia-pink))))

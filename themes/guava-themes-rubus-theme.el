@@ -35,13 +35,15 @@
 
 (let* (
        (rubus-class '((class color) (min-colors 257)))
+
+       ;; Effective colors
        (rubus-black                     "#000000")
        (rubus-white                     "#FFFFFF")
 
        (rubus-raspberry                 "#aa3232")
+       (rubus-alt-raspberry             "#cd7378")
        (rubus-red-pink                  "#c83c64")
        (rubus-pink-cream                "#c87873")
-       (rubus-alt-pink-cream            "#aa5550")
        (rubus-orange                    "#ffa07a")
 
        (rubus-yellow                    "#fde8b9")
@@ -61,6 +63,21 @@
        (rubus-purple                    "#8c78dc")
        (rubus-purple-pink               "#aa649b")
 
+       ;; Harmonic colors
+       (rubus-complementary-a-0         "#46C8A5")
+       (rubus-complementary-a-1         "#C84669")
+
+       (rubus-tetradic-a-0              "#A0DCC8")
+       (rubus-tetradic-a-1              "#DCA0B4")
+       (rubus-tetradic-a-2              "#AAA0DC")
+       (rubus-tetradic-a-3              "#D2DCA0")
+
+       (rubus-tetradic-b-0              "#B046CD")
+       (rubus-tetradic-b-1              "#63CD46")
+       (rubus-tetradic-b-2              "#CD6C46")
+       (rubus-tetradic-b-3              "#46A7CD")
+
+       ;; Symbolic colors
        (rubus-fg-1                      "#FFFFFF")
        (rubus-fg-2                      "#c3c3c3")
        (rubus-bg-1                      "#0e1216")
@@ -70,19 +87,28 @@
        (rubus-region-1                  "#663a43")
        (rubus-region-2                  "#6e504b")
 
+       (rubus-mode-line                 rubus-raspberry)
+       (rubus-mode-line-inactive        rubus-alt-raspberry)
+       (rubus-mode-line-modified        rubus-tetradic-a-0)
+       (rubus-bell                      "#326EAA")
+
+       (rubus-tab-1                     rubus-mode-line)
+       (rubus-tab-2                     rubus-mode-line-inactive)
+       (rubus-tab-3                     "#aa5550")
+
        (rubus-error                     "#ff1e00")
        (rubus-warning                   "#f6d909")
        (rubus-success                   "#1ebe1e")
        (rubus-change                    "#1455f1")
 
-       (rubus-mode-line                 "#aa3232")
-       (rubus-mode-line-inactive        "#cd7378")
-       (rubus-mode-line-modified        "#A0DCC8")
-       (rubus-bell                      "#326EAA")
-
-       (rubus-tab-1                     rubus-mode-line)
-       (rubus-tab-2                     rubus-mode-line-inactive)
-       (rubus-tab-3                     rubus-alt-pink-cream)
+       (rubus-diff-added                "#5aa05a")
+       (rubus-diff-removed              "#a05a5a")
+       (rubus-diff-refine-added         "#007800")
+       (rubus-diff-refine-removed       "#780000")
+       (rubus-diff-header               "#5a5a5a")
+       (rubus-diff-file-header          "#3c3c3c")
+       (rubus-diff-context              "#828282")
+       (rubus-smerge-base               "#5A5AA0")
 
        (rubus-fl-comment                rubus-green-forest)
        (rubus-fl-string                 rubus-orange)
@@ -94,35 +120,12 @@
        (rubus-fl-constant               rubus-purple)
        (rubus-fl-warning                rubus-warning)
        (rubus-fl-punctuation            rubus-fg-2)
-       (rubus-fl-negation-char          rubus-green-blue)
-
-       (rubus-diff-added                "#5aa05a")
-       (rubus-diff-removed              "#a05a5a")
-       (rubus-diff-refine-added         "#007800")
-       (rubus-diff-refine-removed       "#780000")
-       (rubus-diff-header               "#5a5a5a")
-       (rubus-diff-file-header          "#3c3c3c")
-       (rubus-diff-context              "#828282")
-       (rubus-smerge-base               "#5A5AA0")
-
-       (rubus-complementary-a-0         "#46C8A5")
-       (rubus-complementary-a-1         "#C84669")
-
-       (rubus-tetradic-a-0              rubus-mode-line-modified)
-       (rubus-tetradic-a-1              "#DCA0B4")
-       (rubus-tetradic-a-2              "#AAA0DC")
-       (rubus-tetradic-a-3              "#D2DCA0")
-
-       (rubus-tetradic-b-0              "#B046CD")
-       (rubus-tetradic-b-1              "#63CD46")
-       (rubus-tetradic-b-2              "#CD6C46")
-       (rubus-tetradic-b-3              "#46A7CD"))
+       (rubus-fl-negation-char          rubus-green-blue))
 
   (custom-theme-set-faces
    'guava-themes-rubus
 
    ;; built-in faces
-   ;; with unique colors
 
    ;; default
    `(default ((,rubus-class (:foreground ,rubus-fg-1 :background ,rubus-bg-1))))
@@ -157,9 +160,6 @@
    `(font-lock-warning-face ((,rubus-class (:foreground ,rubus-fl-warning :weight bold))))
    `(font-lock-punctuation-face ((,rubus-class (:foreground ,rubus-fl-punctuation :weight medium))))
    `(font-lock-negation-char-face ((,rubus-class (:foreground ,rubus-fl-negation-char :weight medium))))
-
-   ;; built-in faces
-   ;; with non-unique colors
 
    ;; cursor
    `(cursor ((,rubus-class (:foreground ,rubus-white :background ,rubus-mode-line))))
@@ -353,7 +353,7 @@
    `(eww-form-textarea ((,rubus-class (:foreground ,rubus-fg-1 :background ,rubus-tab-3 :box (:line-width 1 :color ,rubus-tab-1)))))
 
 
-   ;; external packages
+   ;; third-party packages
 
    ;; elfeed
    `(elfeed-search-tag-face ((,rubus-class (:foreground ,rubus-green-blue))))

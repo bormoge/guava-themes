@@ -35,9 +35,10 @@
 
 (let* (
        (malus-class '((class color) (min-colors 257)))
-       ;; (malus-black                     "#000000")
-       (malus-white                     "#FFFFFF")
+
+       ;; Effective colors
        (malus-black                     "#000000")
+       (malus-white                     "#FFFFFF")
 
        (malus-brown                     "#826e5a")
 
@@ -60,6 +61,21 @@
 
        (malus-purple                    "#8468ed")
 
+       ;; Harmonic colors
+       (malus-complementary-a-0         "#46C8A5")
+       (malus-complementary-a-1         "#C84669")
+
+       (malus-tetradic-a-0              "#AADCC8")
+       (malus-tetradic-a-1              "#DCAABE")
+       (malus-tetradic-a-2              "#AFAADC")
+       (malus-tetradic-a-3              "#D7DCAA")
+
+       (malus-tetradic-b-0              "#BA5ACD")
+       (malus-tetradic-b-1              "#6DCD5A")
+       (malus-tetradic-b-2              "#CD805A")
+       (malus-tetradic-b-3              "#5AA7CD")
+
+       ;; Symbolic colors
        (malus-fg-1                      "#fafbb7")
        (malus-fg-2                      "#bebf7b")
        (malus-bg-1                      "#1e0910")
@@ -69,19 +85,28 @@
        (malus-region-1                  "#788250")
        (malus-region-2                  "#8c9632")
 
+       (malus-mode-line                 malus-red-sweetango)
+       (malus-mode-line-inactive        malus-oceanic-blue)
+       (malus-mode-line-modified        malus-tetradic-a-0)
+       (malus-bell                      "#5A99CD")
+
+       (malus-tab-1                     malus-mode-line)
+       (malus-tab-2                     malus-mode-line-inactive)
+       (malus-tab-3                     "#aa4628")
+
        (malus-error                     "#d70000")
        (malus-warning                   "#f6d911")
        (malus-success                   "#23d723")
        (malus-change                    "#4548e3")
 
-       (malus-mode-line                 "#cd5a5f")
-       (malus-mode-line-inactive        "#49835f")
-       (malus-mode-line-modified        "#AADCC8")
-       (malus-bell                      "#5A99CD")
-
-       (malus-tab-1                     malus-mode-line)
-       (malus-tab-2                     malus-mode-line-inactive)
-       (malus-tab-3                     malus-deep-red)
+       (malus-diff-added                "#5aa05a")
+       (malus-diff-removed              "#a05a5a")
+       (malus-diff-refine-added         "#007800")
+       (malus-diff-refine-removed       "#780000")
+       (malus-diff-header               "#5a5a5a")
+       (malus-diff-file-header          "#3c3c3c")
+       (malus-diff-context              "#828282")
+       (malus-smerge-base               "#5A5AA0")
 
        (malus-fl-comment                malus-green-granny)
        (malus-fl-string                 malus-light-blue)
@@ -93,35 +118,12 @@
        (malus-fl-constant               malus-purple)
        (malus-fl-warning                malus-warning)
        (malus-fl-punctuation            malus-fg-2)
-       (malus-fl-negation-char          malus-oceanic-blue)
-
-       (malus-diff-added                "#5aa05a")
-       (malus-diff-removed              "#a05a5a")
-       (malus-diff-refine-added         "#007800")
-       (malus-diff-refine-removed       "#780000")
-       (malus-diff-header               "#5a5a5a")
-       (malus-diff-file-header          "#3c3c3c")
-       (malus-diff-context              "#828282")
-       (malus-smerge-base               "#5A5AA0")
-
-       (malus-complementary-a-0         "#46C8A5")
-       (malus-complementary-a-1         "#C84669")
-
-       (malus-tetradic-a-0              malus-mode-line-modified)
-       (malus-tetradic-a-1              "#DCAABE")
-       (malus-tetradic-a-2              "#AFAADC")
-       (malus-tetradic-a-3              "#D7DCAA")
-
-       (malus-tetradic-b-0              "#BA5ACD")
-       (malus-tetradic-b-1              "#6DCD5A")
-       (malus-tetradic-b-2              "#CD805A")
-       (malus-tetradic-b-3              "#5AA7CD"))
+       (malus-fl-negation-char          malus-oceanic-blue))
 
   (custom-theme-set-faces
    'guava-themes-malus
 
    ;; built-in faces
-   ;; with unique colors
 
    ;; default
    `(default ((,malus-class (:foreground ,malus-fg-1 :background ,malus-bg-1))))
@@ -156,9 +158,6 @@
    `(font-lock-warning-face ((,malus-class (:foreground ,malus-fl-warning :weight bold))))
    `(font-lock-punctuation-face ((,malus-class (:foreground ,malus-fl-punctuation :weight medium))))
    `(font-lock-negation-char-face ((,malus-class (:foreground ,malus-fl-negation-char :weight medium))))
-
-   ;; built-in faces
-   ;; with non-unique colors
 
    ;; cursor
    `(cursor ((,malus-class (:foreground ,malus-white :background ,malus-mode-line))))
@@ -352,7 +351,7 @@
    `(eww-form-textarea ((,malus-class (:foreground ,malus-fg-1 :background ,malus-tab-3 :box (:line-width 1 :color ,malus-tab-1)))))
 
 
-   ;; external packages
+   ;; third-party packages
 
    ;; elfeed
    `(elfeed-search-tag-face ((,malus-class (:foreground ,malus-blue-subdued))))

@@ -35,10 +35,11 @@
 
 (let* (
        (ficus-class '((class color) (min-colors 257)))
+
+       ;; Effective colors
        (ficus-black                     "#000000")
        (ficus-white                     "#FFFFFF")
 
-       ;; (ficus-light-gray                "#9196a5")
        (ficus-gray                      "#646464")
 
        (ficus-light-green               "#6e7d64")
@@ -47,13 +48,10 @@
 
        (ficus-light-red                 "#b05051")
        (ficus-red                       "#82322d")
-       ;; (ficus-deep-red                  "#693c50")
 
-       (ficus-light-brown               "#b49d97")
+       (ficus-brown                     "#967f79")
 
        (ficus-light-blue                "#46cee0")
-       ;; (ficus-alt-light-blue            "#96B9E6")
-       ;; (ficus-blue                      "#2327dc")
        (ficus-blue                      "#2d8296")
        (ficus-deep-blue                 "#465a6e")
        (ficus-cyan                      "#00afaf")
@@ -62,6 +60,21 @@
        (ficus-purple-red                "#914b6e")
        (ficus-purple                    "#9678b9")
 
+       ;; Harmonic colors
+       (ficus-complementary-a-0         "#4680DE")
+       (ficus-complementary-a-1         "#DE4680")
+
+       (ficus-tetradic-a-0              "#8CF4ED")
+       (ficus-tetradic-a-1              "#F48C93")
+       (ficus-tetradic-a-2              "#b98cf4")
+       (ficus-tetradic-a-3              "#C7F48C")
+
+       (ficus-tetradic-b-0              "#BA5ACD")
+       (ficus-tetradic-b-1              "#6DCD5A")
+       (ficus-tetradic-b-2              "#CD805A")
+       (ficus-tetradic-b-3              "#5AA7CD")
+
+       ;; Symbolic colors
        (ficus-fg-1                      "#d7d7d7")
        (ficus-fg-2                      "#878787")
        (ficus-bg-1                      "#232020")
@@ -71,20 +84,28 @@
        (ficus-region-1                  "#464b50")
        (ficus-region-2                  "#46504b")
 
+       (ficus-mode-line                 ficus-light-red)
+       (ficus-mode-line-inactive        ficus-brown)
+       (ficus-mode-line-modified        ficus-tetradic-a-0)
+       (ficus-bell                      "#5082B0")
+
+       (ficus-tab-1                     ficus-mode-line)
+       (ficus-tab-2                     ficus-mode-line-inactive)
+       (ficus-tab-3                     "#b49d97")
+
        (ficus-error                     "#f50000")
        (ficus-warning                   "#f6c911")
        (ficus-success                   "#1ea01e")
        (ficus-change                    "#144be7")
 
-       (ficus-mode-line                 "#b05051")
-       (ficus-mode-line-inactive        "#967f79")
-       (ficus-mode-line-modified        "#8CF4ED")
-       (ficus-bell                      "#5082B0")
-
-
-       (ficus-tab-1                     ficus-mode-line)
-       (ficus-tab-2                     ficus-mode-line-inactive)
-       (ficus-tab-3                     ficus-light-brown)
+       (ficus-diff-added                "#5aa05a")
+       (ficus-diff-removed              "#a05a5a")
+       (ficus-diff-refine-added         "#007800")
+       (ficus-diff-refine-removed       "#780000")
+       (ficus-diff-header               "#5a5a5a")
+       (ficus-diff-file-header          "#3c3c3c")
+       (ficus-diff-context              "#828282")
+       (ficus-smerge-base               "#5A5AA0")
 
        (ficus-fl-comment                ficus-light-green)
        (ficus-fl-string                 ficus-purple-red)
@@ -96,35 +117,12 @@
        (ficus-fl-constant               ficus-blue)
        (ficus-fl-warning                ficus-warning)
        (ficus-fl-punctuation            ficus-fg-2)
-       (ficus-fl-negation-char          ficus-purple)
-
-       (ficus-diff-added                "#5aa05a")
-       (ficus-diff-removed              "#a05a5a")
-       (ficus-diff-refine-added         "#007800")
-       (ficus-diff-refine-removed       "#780000")
-       (ficus-diff-header               "#5a5a5a")
-       (ficus-diff-file-header          "#3c3c3c")
-       (ficus-diff-context              "#828282")
-       (ficus-smerge-base               "#5A5AA0")
-
-       (ficus-complementary-a-0         "#4680DE")
-       (ficus-complementary-a-1         "#DE4680")
-
-       (ficus-tetradic-a-0              ficus-mode-line-modified)
-       (ficus-tetradic-a-1              "#F48C93")
-       (ficus-tetradic-a-2              "#b98cf4")
-       (ficus-tetradic-a-3              "#C7F48C")
-
-       (ficus-tetradic-b-0              "#BA5ACD")
-       (ficus-tetradic-b-1              "#6DCD5A")
-       (ficus-tetradic-b-2              "#CD805A")
-       (ficus-tetradic-b-3              "#5AA7CD"))
+       (ficus-fl-negation-char          ficus-purple))
 
   (custom-theme-set-faces
    'guava-themes-ficus
 
    ;; built-in faces
-   ;; with unique colors
 
    ;; default
    `(default ((,ficus-class (:foreground ,ficus-fg-1 :background ,ficus-bg-1))))
@@ -159,9 +157,6 @@
    `(font-lock-warning-face ((,ficus-class (:foreground ,ficus-fl-warning :weight bold))))
    `(font-lock-punctuation-face ((,ficus-class (:foreground ,ficus-fl-punctuation :weight medium))))
    `(font-lock-negation-char-face ((,ficus-class (:foreground ,ficus-fl-negation-char :weight medium))))
-
-   ;; built-in faces
-   ;; with non-unique colors
 
    ;; cursor
    `(cursor ((,ficus-class (:foreground ,ficus-white :background ,ficus-mode-line))))
@@ -355,7 +350,7 @@
    `(eww-form-textarea ((,ficus-class (:foreground ,ficus-black :background ,ficus-tab-3 :box (:line-width 1 :color ,ficus-tab-1)))))
 
 
-   ;; external packages
+   ;; third-party packages
 
    ;; elfeed
    `(elfeed-search-tag-face ((,ficus-class (:foreground ,ficus-light-green))))

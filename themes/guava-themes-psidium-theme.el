@@ -35,6 +35,8 @@
 
 (let* (
        (psidium-class '((class color) (min-colors 257)))
+
+       ;; Effective colors
        (psidium-black                     "#000000")
        (psidium-white                     "#FFFFFF")
 
@@ -49,7 +51,6 @@
 
        (psidium-brown                     "#785f46")
 
-       ;; (psidium-light-blue                "#3791c0")
        (psidium-blue                      "#2a4ad9")
        (psidium-deep-blue                 "#483d8b")
        (psidium-cyan                      "#00afaf")
@@ -57,6 +58,21 @@
 
        (psidium-purple                    "#812db2")
 
+       ;; Harmonic colors
+       (psidium-complementary-a-0         "#4680DE")
+       (psidium-complementary-a-1         "#DE4680")
+
+       (psidium-tetradic-a-0              "#F8EDC6")
+       (psidium-tetradic-a-1              "#F8C6EA")
+       (psidium-tetradic-a-2              "#C6D1F8")
+       (psidium-tetradic-a-3              "#C6F8D4")
+
+       (psidium-tetradic-b-0              "#C94ED0")
+       (psidium-tetradic-b-1              "#55D04E")
+       (psidium-tetradic-b-2              "#D0894E")
+       (psidium-tetradic-b-3              "#4E96D0")
+
+       ;; Symbolic colors
        (psidium-fg-1                      "#000000")
        (psidium-fg-2                      "#3c3c3c")
        (psidium-bg-1                      "#F1EECE")
@@ -66,19 +82,28 @@
        (psidium-region-1                  "#ffbe9b")
        (psidium-region-2                  "#8cb4d1")
 
+       (psidium-mode-line                 psidium-pink)
+       (psidium-mode-line-inactive        psidium-guava-green)
+       (psidium-mode-line-modified        psidium-tetradic-a-0)
+       (psidium-bell                      "#76BEF8")
+
+       (psidium-tab-1                     psidium-mode-line)
+       (psidium-tab-2                     psidium-mode-line-inactive)
+       (psidium-tab-3                     "#28bb6b")
+
        (psidium-error                     "#FF0000")
        (psidium-warning                   "#d6c800")
        (psidium-success                   "#228B22")
        (psidium-change                    "#2a4ad9")
 
-       (psidium-mode-line                 "#F8767C")
-       (psidium-mode-line-inactive        "#aecd34")
-       (psidium-mode-line-modified        "#F8EDC6")
-       (psidium-bell                      "#76BEF8")
-
-       (psidium-tab-1                     psidium-mode-line)
-       (psidium-tab-2                     psidium-mode-line-inactive)
-       (psidium-tab-3                     psidium-light-green)
+       (psidium-diff-added                "#c8f0c8")
+       (psidium-diff-removed              "#f0c8c8")
+       (psidium-diff-refine-added         "#78f078")
+       (psidium-diff-refine-removed       "#f07878")
+       (psidium-diff-header               "#b4b4b4")
+       (psidium-diff-file-header          "#8c8c8c")
+       (psidium-diff-context              "#dcdcdc")
+       (psidium-smerge-base               "#C8C8F0")
 
        (psidium-fl-comment                psidium-green)
        (psidium-fl-string                 psidium-brown)
@@ -90,35 +115,12 @@
        (psidium-fl-constant               psidium-blue)
        (psidium-fl-warning                psidium-warning)
        (psidium-fl-punctuation            psidium-fg-2)
-       (psidium-fl-negation-char          psidium-deep-blue)
-
-       (psidium-diff-added                "#c8f0c8")
-       (psidium-diff-removed              "#f0c8c8")
-       (psidium-diff-refine-added         "#78f078")
-       (psidium-diff-refine-removed       "#f07878")
-       (psidium-diff-header               "#b4b4b4")
-       (psidium-diff-file-header          "#8c8c8c")
-       (psidium-diff-context              "#dcdcdc")
-       (psidium-smerge-base               "#C8C8F0")
-
-       (psidium-complementary-a-0         "#4680DE")
-       (psidium-complementary-a-1         "#DE4680")
-
-       (psidium-tetradic-a-0              psidium-mode-line-modified)
-       (psidium-tetradic-a-1              "#F8C6EA")
-       (psidium-tetradic-a-2              "#C6D1F8")
-       (psidium-tetradic-a-3              "#C6F8D4")
-
-       (psidium-tetradic-b-0              "#C94ED0")
-       (psidium-tetradic-b-1              "#55D04E")
-       (psidium-tetradic-b-2              "#D0894E")
-       (psidium-tetradic-b-3              "#4E96D0"))
+       (psidium-fl-negation-char          psidium-deep-blue))
 
   (custom-theme-set-faces
    'guava-themes-psidium
 
    ;; built-in faces
-   ;; with unique colors
 
    ;; default
    `(default ((,psidium-class (:foreground ,psidium-fg-1 :background ,psidium-bg-1))))
@@ -153,9 +155,6 @@
    `(font-lock-warning-face ((,psidium-class (:foreground ,psidium-fl-warning :weight bold))))
    `(font-lock-punctuation-face ((,psidium-class (:foreground ,psidium-fl-punctuation :weight medium))))
    `(font-lock-negation-char-face ((,psidium-class (:foreground ,psidium-fl-negation-char :weight medium))))
-
-   ;; built-in faces
-   ;; with non-unique colors
 
    ;; cursor
    `(cursor ((,psidium-class (:foreground ,psidium-black :background ,psidium-mode-line))))
@@ -349,7 +348,7 @@
    `(eww-form-textarea ((,psidium-class (:foreground ,psidium-fg-1 :background ,psidium-tab-3 :box (:line-width 1 :color ,psidium-tab-1)))))
 
 
-   ;; external packages
+   ;; third-party packages
 
    ;; elfeed
    `(elfeed-search-tag-face ((,psidium-class (:foreground ,psidium-purple))))

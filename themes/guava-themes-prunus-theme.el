@@ -35,6 +35,8 @@
 
 (let* (
        (prunus-class '((class color) (min-colors 257)))
+
+       ;; Effective colors
        (prunus-black                     "#000000")
        (prunus-white                     "#FFFFFF")
 
@@ -63,6 +65,21 @@
        (prunus-purple                    "#7350a0")
        (prunus-purple-red                "#8B2252")
 
+       ;; Harmonic colors
+       (prunus-complementary-a-0         "#46C8A5")
+       (prunus-complementary-a-1         "#C84669")
+
+       (prunus-tetradic-a-0              "#D2DCA0")
+       (prunus-tetradic-a-1              "#A0DCC8")
+       (prunus-tetradic-a-2              "#AAA0DC")
+       (prunus-tetradic-a-3              "#DCA0B4")
+
+       (prunus-tetradic-b-0              "#A646B9")
+       (prunus-tetradic-b-1              "#59B946")
+       (prunus-tetradic-b-2              "#B96C46")
+       (prunus-tetradic-b-3              "#4693B9")
+
+       ;; Symbolic colors
        (prunus-fg-1                      "#ebafc8")
        (prunus-fg-2                      "#af738c")
        (prunus-bg-1                      "#190f05")
@@ -72,19 +89,28 @@
        (prunus-region-1                  "#3c3228")
        (prunus-region-2                  "#645a50")
 
+       (prunus-mode-line                 prunus-brown)
+       (prunus-mode-line-inactive        prunus-alt-brown)
+       (prunus-mode-line-modified        prunus-tetradic-a-0)
+       (prunus-bell                      "#465a5a")
+
+       (prunus-tab-1                     prunus-mode-line)
+       (prunus-tab-2                     prunus-mode-line-inactive)
+       (prunus-tab-3                     "#9b7d6e")
+
        (prunus-error                     "#FF0000")
        (prunus-warning                   "#f6d911")
        (prunus-success                   "#23D734")
        (prunus-change                    "#4650e1")
 
-       (prunus-mode-line                 "#50463c")
-       (prunus-mode-line-inactive        "#645a50")
-       (prunus-mode-line-modified        "#D2DCA0")
-       (prunus-bell                      "#465a5a")
-
-       (prunus-tab-1                     prunus-mode-line)
-       (prunus-tab-2                     prunus-mode-line-inactive)
-       (prunus-tab-3                     prunus-alt-light-brown)
+       (prunus-diff-added                "#5aa05a")
+       (prunus-diff-removed              "#a05a5a")
+       (prunus-diff-refine-added         "#007800")
+       (prunus-diff-refine-removed       "#780000")
+       (prunus-diff-header               "#5a5a5a")
+       (prunus-diff-file-header          "#3c3c3c")
+       (prunus-diff-context              "#828282")
+       (prunus-smerge-base               "#5A5AA0")
 
        (prunus-fl-comment                prunus-green-forest)
        (prunus-fl-string                 prunus-purple-red)
@@ -96,40 +122,12 @@
        (prunus-fl-constant               prunus-purple)
        (prunus-fl-warning                prunus-warning)
        (prunus-fl-punctuation            prunus-fg-2)
-       (prunus-fl-negation-char          prunus-deep-red)
-
-       (prunus-diff-added                "#5aa05a")
-       (prunus-diff-removed              "#a05a5a")
-       (prunus-diff-refine-added         "#007800")
-       (prunus-diff-refine-removed       "#780000")
-       (prunus-diff-header               "#5a5a5a")
-       (prunus-diff-file-header          "#3c3c3c")
-       (prunus-diff-context              "#828282")
-       (prunus-smerge-base               "#5A5AA0")
-
-       (prunus-tetradic-b-0              "#af50c8")
-       (prunus-tetradic-b-1              "#28a03c")
-       (prunus-tetradic-b-2              "#ff6400")
-       (prunus-tetradic-b-3              "#3c82ff")
-
-       (prunus-complementary-a-0         "#46C8A5")
-       (prunus-complementary-a-1         "#C84669")
-
-       (prunus-tetradic-a-0              prunus-mode-line-modified)
-       (prunus-tetradic-a-1              "#A0DCC8")
-       (prunus-tetradic-a-2              "#AAA0DC")
-       (prunus-tetradic-a-3              "#DCA0B4")
-
-       (prunus-tetradic-b-0              "#A646B9")
-       (prunus-tetradic-b-1              "#59B946")
-       (prunus-tetradic-b-2              "#B96C46")
-       (prunus-tetradic-b-3              "#4693B9"))
+       (prunus-fl-negation-char          prunus-deep-red))
 
   (custom-theme-set-faces
    'guava-themes-prunus
 
    ;; built-in faces
-   ;; with unique colors
 
    ;; default
    `(default ((,prunus-class (:foreground ,prunus-fg-1 :background ,prunus-bg-1))))
@@ -164,9 +162,6 @@
    `(font-lock-warning-face ((,prunus-class (:foreground ,prunus-fl-warning :weight bold))))
    `(font-lock-punctuation-face ((,prunus-class (:foreground ,prunus-fl-punctuation :weight medium))))
    `(font-lock-negation-char-face ((,prunus-class (:foreground ,prunus-fl-negation-char :weight medium))))
-
-   ;; built-in faces
-   ;; with non-unique colors
 
    ;; cursor
    `(cursor ((,prunus-class (:foreground ,prunus-white :background ,prunus-mode-line))))
@@ -360,7 +355,7 @@
    `(eww-form-textarea ((,prunus-class (:foreground ,prunus-fg-1 :background ,prunus-tab-3 :box (:line-width 1 :color ,prunus-tab-1)))))
 
 
-   ;; external packages
+   ;; third-party packages
 
    ;; elfeed
    `(elfeed-search-tag-face ((,prunus-class (:foreground ,prunus-light-pink))))

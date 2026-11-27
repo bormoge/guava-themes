@@ -35,10 +35,12 @@
 
 (let* (
        (dracaena-class '((class color) (min-colors 257)))
+
+       ;; Effective colors
        (dracaena-black                     "#000000")
        (dracaena-white                     "#FFFFFF")
 
-       (dracaena-gray                      "#484e4b")
+       (dracaena-gray                      "#5c625f")
 
        (dracaena-light-green               "#78be78")
        (dracaena-green                     "#288c23")
@@ -59,6 +61,21 @@
        (dracaena-cyan                      "#00d7d7")
        (dracaena-dark-cyan                 "#008787")
 
+       ;; Harmonic colors
+       (dracaena-complementary-a-0         "#46E6A6")
+       (dracaena-complementary-a-1         "#E64686")
+
+       (dracaena-tetradic-a-0              "#D29B7D")
+       (dracaena-tetradic-a-1              "#8AD27D")
+       (dracaena-tetradic-a-2              "#c57dd2")
+       (dracaena-tetradic-a-3              "#7DB4D2")
+
+       (dracaena-tetradic-b-0              "#BA5ACD")
+       (dracaena-tetradic-b-1              "#6DCD5A")
+       (dracaena-tetradic-b-2              "#CD805A")
+       (dracaena-tetradic-b-3              "#5AA7CD")
+
+       ;; Symbolic colors
        (dracaena-fg-1                      "#becee6")
        (dracaena-fg-2                      "#8292aa")
        (dracaena-bg-1                      "#343a37")
@@ -68,19 +85,28 @@
        (dracaena-region-1                  "#883634")
        (dracaena-region-2                  "#005f55")
 
+       (dracaena-mode-line                 dracaena-red)
+       (dracaena-mode-line-inactive        dracaena-gray)
+       (dracaena-mode-line-modified        dracaena-tetradic-a-0)
+       (dracaena-bell                      "#3CB464")
+
+       (dracaena-tab-1                     dracaena-mode-line)
+       (dracaena-tab-2                     dracaena-mode-line-inactive)
+       (dracaena-tab-3                     "#484e4b")
+
        (dracaena-error                     "#FF0000")
        (dracaena-warning                   "#f6be14")
        (dracaena-success                   "#29d925")
        (dracaena-change                    "#2d50d5")
 
-       (dracaena-mode-line                 "#b43c50")
-       (dracaena-mode-line-inactive        "#5c625f")
-       (dracaena-mode-line-modified        "#D29B7D")
-       (dracaena-bell                      "#3CB464")
-
-       (dracaena-tab-1                     dracaena-mode-line)
-       (dracaena-tab-2                     dracaena-mode-line-inactive)
-       (dracaena-tab-3                     dracaena-gray)
+       (dracaena-diff-added                "#5aa05a")
+       (dracaena-diff-removed              "#a05a5a")
+       (dracaena-diff-refine-added         "#007800")
+       (dracaena-diff-refine-removed       "#780000")
+       (dracaena-diff-header               "#5a5a5a")
+       (dracaena-diff-file-header          "#3c3c3c")
+       (dracaena-diff-context              "#828282")
+       (dracaena-smerge-base               "#5A5AA0")
 
        (dracaena-fl-comment                dracaena-green)
        (dracaena-fl-string                 dracaena-snakeplant-yellow)
@@ -92,35 +118,12 @@
        (dracaena-fl-constant               dracaena-light-blue)
        (dracaena-fl-warning                dracaena-warning)
        (dracaena-fl-punctuation            dracaena-fg-2)
-       (dracaena-fl-negation-char          dracaena-orange)
-
-       (dracaena-diff-added                "#5aa05a")
-       (dracaena-diff-removed              "#a05a5a")
-       (dracaena-diff-refine-added         "#007800")
-       (dracaena-diff-refine-removed       "#780000")
-       (dracaena-diff-header               "#5a5a5a")
-       (dracaena-diff-file-header          "#3c3c3c")
-       (dracaena-diff-context              "#828282")
-       (dracaena-smerge-base               "#5A5AA0")
-
-       (dracaena-complementary-a-0         "#46E6A6")
-       (dracaena-complementary-a-1         "#E64686")
-
-       (dracaena-tetradic-a-0              dracaena-mode-line-modified)
-       (dracaena-tetradic-a-1              "#8AD27D")
-       (dracaena-tetradic-a-2              "#c57dd2")
-       (dracaena-tetradic-a-3              "#7DB4D2")
-
-       (dracaena-tetradic-b-0              "#BA5ACD")
-       (dracaena-tetradic-b-1              "#6DCD5A")
-       (dracaena-tetradic-b-2              "#CD805A")
-       (dracaena-tetradic-b-3              "#5AA7CD"))
+       (dracaena-fl-negation-char          dracaena-orange))
 
   (custom-theme-set-faces
    'guava-themes-dracaena
 
    ;; built-in faces
-   ;; with unique colors
 
    ;; default
    `(default ((,dracaena-class (:foreground ,dracaena-fg-1 :background ,dracaena-bg-1))))
@@ -155,9 +158,6 @@
    `(font-lock-warning-face ((,dracaena-class (:foreground ,dracaena-fl-warning :weight bold))))
    `(font-lock-punctuation-face ((,dracaena-class (:foreground ,dracaena-fl-punctuation :weight medium))))
    `(font-lock-negation-char-face ((,dracaena-class (:foreground ,dracaena-fl-negation-char :weight medium))))
-
-   ;; built-in faces
-   ;; with non-unique colors
 
    ;; cursor
    `(cursor ((,dracaena-class (:foreground ,dracaena-white :background ,dracaena-mode-line))))
@@ -351,7 +351,7 @@
    `(eww-form-textarea ((,dracaena-class (:foreground ,dracaena-fg-1 :background ,dracaena-tab-3 :box (:line-width 1 :color ,dracaena-tab-1)))))
 
 
-   ;; external packages
+   ;; third-party packages
 
    ;; elfeed
    `(elfeed-search-tag-face ((,dracaena-class (:foreground ,dracaena-snakeplant-yellow))))

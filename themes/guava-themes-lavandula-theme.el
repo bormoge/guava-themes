@@ -35,13 +35,15 @@
 
 (let* (
        (lavandula-class '((class color) (min-colors 257)))
+
+       ;; Effective colors
        (lavandula-black                     "#000000")
        (lavandula-white                     "#FFFFFF")
 
-       (lavandula-gray-black                "#626262")
+       (lavandula-gray                      "#626262")
+       (lavandula-gray-black                "#3a3a3a")
 
        (lavandula-light-green               "#64a464")
-       ;; (lavandula-alt-light-green           "#78c278")
        (lavandula-green                     "#1e8246")
        (lavandula-deep-green                "#0a6432")
 
@@ -50,7 +52,6 @@
        (lavandula-red                       "#e01e50")
        (lavandula-deep-red                  "#ae1e50")
 
-       ;; (lavandula-alt-light-blue            "#b1c6c0")
        (lavandula-blue                      "#1e9be0")
        (lavandula-deep-blue                 "#2862b0")
        (lavandula-cyan                      "#00afaf")
@@ -59,6 +60,21 @@
        (lavandula-purple                    "#7d509b")
        (lavandula-lavender                  "#8061b8")
 
+       ;; Harmonic colors
+       (lavandula-complementary-a-0         "#4680DE")
+       (lavandula-complementary-a-1         "#DE4680")
+
+       (lavandula-tetradic-a-0              "#FFAE97")
+       (lavandula-tetradic-a-1              "#E297FF")
+       (lavandula-tetradic-a-2              "#B4FF97")
+       (lavandula-tetradic-a-3              "#97E8FF")
+
+       (lavandula-tetradic-b-0              "#9D50B4")
+       (lavandula-tetradic-b-1              "#67B450")
+       (lavandula-tetradic-b-2              "#B46B50")
+       (lavandula-tetradic-b-3              "#5099B4")
+
+       ;; Symbolic colors
        (lavandula-fg-1                      "#505050")
        (lavandula-fg-2                      "#a5a5a5")
        (lavandula-bg-1                      "#eee8d9")
@@ -68,19 +84,28 @@
        (lavandula-region-1                  "#E4C5B1")
        (lavandula-region-2                  "#b1e4de")
 
+       (lavandula-mode-line                 lavandula-lavender)
+       (lavandula-mode-line-inactive        lavandula-gray-black)
+       (lavandula-mode-line-modified        lavandula-tetradic-a-0)
+       (lavandula-bell                      "#6EB861")
+
+       (lavandula-tab-1                     lavandula-mode-line)
+       (lavandula-tab-2                     lavandula-mode-line-inactive)
+       (lavandula-tab-3                     "#626262")
+
        (lavandula-error                     "#FF0000")
        (lavandula-warning                   "#ebb515")
        (lavandula-success                   "#00c200")
        (lavandula-change                    "#453ee3")
 
-       (lavandula-mode-line                 "#8061b8")
-       (lavandula-mode-line-inactive        "#3a3a3a")
-       (lavandula-mode-line-modified        "#FFAE97")
-       (lavandula-bell                      "#6EB861")
-
-       (lavandula-tab-1                     lavandula-mode-line)
-       (lavandula-tab-2                     lavandula-mode-line-inactive)
-       (lavandula-tab-3                     lavandula-gray-black)
+       (lavandula-diff-added                "#c8f0c8")
+       (lavandula-diff-removed              "#f0c8c8")
+       (lavandula-diff-refine-added         "#78f078")
+       (lavandula-diff-refine-removed       "#f07878")
+       (lavandula-diff-header               "#b4b4b4")
+       (lavandula-diff-file-header          "#8c8c8c")
+       (lavandula-diff-context              "#dcdcdc")
+       (lavandula-smerge-base               "#C8C8F0")
 
        (lavandula-fl-comment                lavandula-light-green)
        (lavandula-fl-string                 lavandula-light-orange)
@@ -92,35 +117,12 @@
        (lavandula-fl-constant               lavandula-deep-blue)
        (lavandula-fl-warning                lavandula-warning)
        (lavandula-fl-punctuation            lavandula-fg-2)
-       (lavandula-fl-negation-char          lavandula-deep-red)
-
-       (lavandula-diff-added                "#c8f0c8")
-       (lavandula-diff-removed              "#f0c8c8")
-       (lavandula-diff-refine-added         "#78f078")
-       (lavandula-diff-refine-removed       "#f07878")
-       (lavandula-diff-header               "#b4b4b4")
-       (lavandula-diff-file-header          "#8c8c8c")
-       (lavandula-diff-context              "#dcdcdc")
-       (lavandula-smerge-base               "#C8C8F0")
-
-       (lavandula-complementary-a-0         "#4680DE")
-       (lavandula-complementary-a-1         "#DE4680")
-
-       (lavandula-tetradic-a-0              lavandula-mode-line-modified)
-       (lavandula-tetradic-a-1              "#E297FF")
-       (lavandula-tetradic-a-2              "#B4FF97")
-       (lavandula-tetradic-a-3              "#97E8FF")
-
-       (lavandula-tetradic-b-0              "#9D50B4")
-       (lavandula-tetradic-b-1              "#67B450")
-       (lavandula-tetradic-b-2              "#B46B50")
-       (lavandula-tetradic-b-3              "#5099B4"))
+       (lavandula-fl-negation-char          lavandula-deep-red))
 
   (custom-theme-set-faces
    'guava-themes-lavandula
 
    ;; built-in faces
-   ;; with unique colors
 
    ;; default
    `(default ((,lavandula-class (:foreground ,lavandula-fg-1 :background ,lavandula-bg-1))))
@@ -155,9 +157,6 @@
    `(font-lock-warning-face ((,lavandula-class (:foreground ,lavandula-fl-warning :weight bold))))
    `(font-lock-punctuation-face ((,lavandula-class (:foreground ,lavandula-fl-punctuation :weight medium))))
    `(font-lock-negation-char-face ((,lavandula-class (:foreground ,lavandula-fl-negation-char :weight medium))))
-
-   ;; built-in faces
-   ;; with non-unique colors
 
    ;; cursor
    `(cursor ((,lavandula-class (:foreground ,lavandula-white :background ,lavandula-mode-line))))
@@ -351,13 +350,13 @@
    `(eww-form-textarea ((,lavandula-class (:foreground ,lavandula-white :background ,lavandula-tab-3 :box (:line-width 1 :color ,lavandula-tab-1)))))
 
 
-   ;; external packages
+   ;; third-party packages
 
    ;; elfeed
    `(elfeed-search-tag-face ((,lavandula-class (:foreground ,lavandula-blue))))
    `(elfeed-search-date-face ((,lavandula-class (:foreground ,lavandula-deep-blue))))
    `(elfeed-search-feed-face ((,lavandula-class (:foreground ,lavandula-purple))))
-   `(elfeed-search-title-face ((,lavandula-class (:foreground ,lavandula-gray-black))))
+   `(elfeed-search-title-face ((,lavandula-class (:foreground ,lavandula-gray))))
    `(elfeed-search-unread-title-face ((,lavandula-class (:weight bold :foreground ,lavandula-green))))
    `(elfeed-search-filter-face ((,lavandula-class (:weight bold :foreground ,lavandula-tetradic-a-1))))
    `(elfeed-search-last-update-face ((,lavandula-class (:weight bold :foreground ,lavandula-tetradic-a-1))))

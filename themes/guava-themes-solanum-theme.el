@@ -35,6 +35,8 @@
 
 (let* (
        (solanum-class '((class color) (min-colors 257)))
+
+       ;; Effective colors
        (solanum-black                     "#000000")
        (solanum-white                     "#FFFFFF")
 
@@ -52,12 +54,27 @@
        (solanum-cyan                      "#00c3c3")
        (solanum-dark-cyan                 "#007373")
 
-       (solanum-light-purple              "#bec8ff")
+       (solanum-light-purple              "#b4aad7")
        (solanum-purple                    "#786ed7")
        (solanum-purple-pink               "#915d93")
        (solanum-dark-purple               "#73466e")
-       (solanum-alt-dark-purple           "#59536e")
+       (solanum-alt-dark-purple           "#3b3550")
 
+       ;; Harmonic colors
+       (solanum-complementary-a-0         "#46C8A5")
+       (solanum-complementary-a-1         "#C84669")
+
+       (solanum-tetradic-a-0              "#AAA0DC")
+       (solanum-tetradic-a-1              "#DCA0B4")
+       (solanum-tetradic-a-2              "#A0DCC8")
+       (solanum-tetradic-a-3              "#D2DCA0")
+
+       (solanum-tetradic-b-0              "#B046CD")
+       (solanum-tetradic-b-1              "#63CD46")
+       (solanum-tetradic-b-2              "#CD6C46")
+       (solanum-tetradic-b-3              "#46A7CD")
+
+       ;; Symbolic colors
        (solanum-fg-1                      "#FFFFFF")
        (solanum-fg-2                      "#c3c3c3")
        (solanum-bg-1                      "#130d1a")
@@ -67,19 +84,28 @@
        (solanum-region-1                  "#492b87")
        (solanum-region-2                  "#3a6b43")
 
+       (solanum-mode-line                 solanum-dark-purple)
+       (solanum-mode-line-inactive        solanum-alt-dark-purple)
+       (solanum-mode-line-modified        solanum-tetradic-a-0)
+       (solanum-bell                      "#4b7337")
+
+       (solanum-tab-1                     solanum-mode-line)
+       (solanum-tab-2                     solanum-mode-line-inactive)
+       (solanum-tab-3                     "#59536e")
+
        (solanum-error                     "#FF0000")
        (solanum-warning                   "#f6d909")
        (solanum-success                   "#23b734")
        (solanum-change                    "#0d62b2")
 
-       (solanum-mode-line                 "#73466e")
-       (solanum-mode-line-inactive        "#3b3550")
-       (solanum-mode-line-modified        "#AAA0DC")
-       (solanum-bell                      "#4b7337")
-
-       (solanum-tab-1                     solanum-mode-line)
-       (solanum-tab-2                     solanum-mode-line-inactive)
-       (solanum-tab-3                     solanum-alt-dark-purple)
+       (solanum-diff-added                "#5aa05a")
+       (solanum-diff-removed              "#a05a5a")
+       (solanum-diff-refine-added         "#007800")
+       (solanum-diff-refine-removed       "#780000")
+       (solanum-diff-header               "#5a5a5a")
+       (solanum-diff-file-header          "#3c3c3c")
+       (solanum-diff-context              "#828282")
+       (solanum-smerge-base               "#5A5AA0")
 
        (solanum-fl-comment                solanum-deep-green)
        (solanum-fl-string                 solanum-yellow-potato)
@@ -91,35 +117,12 @@
        (solanum-fl-constant               solanum-light-blue)
        (solanum-fl-warning                solanum-warning)
        (solanum-fl-punctuation            solanum-fg-2)
-       (solanum-fl-negation-char          solanum-blue)
-
-       (solanum-diff-added                "#5aa05a")
-       (solanum-diff-removed              "#a05a5a")
-       (solanum-diff-refine-added         "#007800")
-       (solanum-diff-refine-removed       "#780000")
-       (solanum-diff-header               "#5a5a5a")
-       (solanum-diff-file-header          "#3c3c3c")
-       (solanum-diff-context              "#828282")
-       (solanum-smerge-base               "#5A5AA0")
-
-       (solanum-complementary-a-0         "#46C8A5")
-       (solanum-complementary-a-1         "#C84669")
-
-       (solanum-tetradic-a-0              solanum-mode-line-modified)
-       (solanum-tetradic-a-1              "#DCA0B4")
-       (solanum-tetradic-a-2              "#A0DCC8")
-       (solanum-tetradic-a-3              "#D2DCA0")
-
-       (solanum-tetradic-b-0              "#B046CD")
-       (solanum-tetradic-b-1              "#63CD46")
-       (solanum-tetradic-b-2              "#CD6C46")
-       (solanum-tetradic-b-3              "#46A7CD"))
+       (solanum-fl-negation-char          solanum-blue))
 
   (custom-theme-set-faces
    'guava-themes-solanum
 
    ;; built-in faces
-   ;; with unique colors
 
    ;; default
    `(default ((,solanum-class (:foreground ,solanum-fg-1 :background ,solanum-bg-1))))
@@ -154,9 +157,6 @@
    `(font-lock-warning-face ((,solanum-class (:foreground ,solanum-fl-warning :weight bold))))
    `(font-lock-punctuation-face ((,solanum-class (:foreground ,solanum-fl-punctuation :weight medium))))
    `(font-lock-negation-char-face ((,solanum-class (:foreground ,solanum-fl-negation-char :weight medium))))
-
-   ;; built-in faces
-   ;; with non-unique colors
 
    ;; cursor
    `(cursor ((,solanum-class (:foreground ,solanum-white :background ,solanum-mode-line))))
@@ -350,13 +350,13 @@
    `(eww-form-textarea ((,solanum-class (:foreground ,solanum-fg-1 :background ,solanum-tab-3 :box (:line-width 1 :color ,solanum-tab-1)))))
 
 
-   ;; external packages
+   ;; third-party packages
 
    ;; elfeed
    `(elfeed-search-tag-face ((,solanum-class (:foreground ,solanum-light-blue))))
    `(elfeed-search-date-face ((,solanum-class (:foreground ,solanum-purple))))
    `(elfeed-search-feed-face ((,solanum-class (:foreground ,solanum-light-green))))
-   `(elfeed-search-title-face ((,solanum-class (:foreground ,solanum-alt-dark-purple))))
+   `(elfeed-search-title-face ((,solanum-class (:foreground ,solanum-light-purple))))
    `(elfeed-search-unread-title-face ((,solanum-class (:weight bold :foreground ,solanum-deep-green))))
    `(elfeed-search-filter-face ((,solanum-class (:weight bold :foreground ,solanum-tetradic-a-1))))
    `(elfeed-search-last-update-face ((,solanum-class (:weight bold :foreground ,solanum-tetradic-a-1))))
