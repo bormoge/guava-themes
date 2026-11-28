@@ -73,10 +73,10 @@
        (eucalyptus-tetradic-a-2              "#8356AA")
        (eucalyptus-tetradic-a-3              "#56A7AA")
 
-       (eucalyptus-tetradic-b-0              "#803C96")
-       (eucalyptus-tetradic-b-1              "#53963C")
-       (eucalyptus-tetradic-b-2              "#96533C")
-       (eucalyptus-tetradic-b-3              "#3C8096")
+       (eucalyptus-tetradic-b-0              "#7F3C8C")
+       (eucalyptus-tetradic-b-1              "#498C3C")
+       (eucalyptus-tetradic-b-2              "#8C573C")
+       (eucalyptus-tetradic-b-3              "#3C718C")
 
        ;; Symbolic colors
        (eucalyptus-fg-1                      "#2d3241")
