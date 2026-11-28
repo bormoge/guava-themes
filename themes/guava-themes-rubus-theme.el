@@ -46,8 +46,7 @@
 
        (rubus-raspberry                 "#aa3232")
        (rubus-alt-raspberry             "#cd7378")
-       (rubus-red-pink                  "#c83c64")
-       (rubus-pink-cream                "#c87873")
+       (rubus-red-pink                  "#c8466e")
        (rubus-orange                    "#ffa07a")
 
        (rubus-yellow                    "#fde8b9")
@@ -274,7 +273,7 @@
    `(org-todo ((,rubus-class (:foreground ,rubus-error :weight bold))))
    `(org-done ((,rubus-class (:foreground ,rubus-success :weight bold))))
    `(org-hide ((,rubus-class (:foreground ,rubus-bg-1))))
-   `(org-table ((,rubus-class (:foreground ,rubus-pink-cream))))
+   `(org-table ((,rubus-class (:foreground ,rubus-raspberry))))
    `(org-table-header ((,rubus-class (:inverse-video t :inherit org-table))))
    `(org-date ((,rubus-class (:foreground ,rubus-green-blue))))
    `(org-date-selected ((,rubus-class (:foreground unspecified :inverse-video t :inherit org-date))))
