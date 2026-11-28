@@ -219,7 +219,7 @@
 
    ;; parentheses
    `(show-paren-match ((,prunus-class (:foreground ,prunus-white :background ,prunus-bell))))
-   `(show-paren-mismatch ((,prunus-class (:foreground ,prunus-white :background ,prunus-error :inherit show-paren-match))))
+   `(show-paren-mismatch ((,prunus-class (:background ,prunus-error :inherit show-paren-match))))
 
    ;; trailing whitespaces
    `(trailing-whitespace ((,prunus-class (:background ,prunus-error))))

@@ -212,7 +212,7 @@
 
    ;; parentheses
    `(show-paren-match ((,psidium-class (:foreground ,psidium-black :background ,psidium-bell))))
-   `(show-paren-mismatch ((,psidium-class (:foreground ,psidium-black :background ,psidium-error :inherit show-paren-match))))
+   `(show-paren-mismatch ((,psidium-class (:background ,psidium-error :inherit show-paren-match))))
 
    ;; trailing whitespaces
    `(trailing-whitespace ((,psidium-class (:background ,psidium-error))))

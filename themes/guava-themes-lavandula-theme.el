@@ -214,7 +214,7 @@
 
    ;; parentheses
    `(show-paren-match ((,lavandula-class (:foreground ,lavandula-black :background ,lavandula-bell))))
-   `(show-paren-mismatch ((,lavandula-class (:foreground ,lavandula-white :background ,lavandula-error :inherit show-paren-match))))
+   `(show-paren-mismatch ((,lavandula-class (:background ,lavandula-error :inherit show-paren-match))))
 
    ;; trailing whitespaces
    `(trailing-whitespace ((,lavandula-class (:background ,lavandula-error))))

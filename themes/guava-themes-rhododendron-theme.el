@@ -217,7 +217,7 @@
 
    ;; parentheses
    `(show-paren-match ((,rhododendron-class (:foreground ,rhododendron-black :background ,rhododendron-bell))))
-   `(show-paren-mismatch ((,rhododendron-class (:foreground ,rhododendron-black :background ,rhododendron-error :inherit show-paren-match))))
+   `(show-paren-mismatch ((,rhododendron-class (:background ,rhododendron-error :inherit show-paren-match))))
 
    ;; trailing whitespaces
    `(trailing-whitespace ((,rhododendron-class (:background ,rhododendron-error))))

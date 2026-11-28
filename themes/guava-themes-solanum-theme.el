@@ -214,7 +214,7 @@
 
    ;; parentheses
    `(show-paren-match ((,solanum-class (:foreground ,solanum-white :background ,solanum-bell))))
-   `(show-paren-mismatch ((,solanum-class (:foreground ,solanum-white :background ,solanum-error :inherit show-paren-match))))
+   `(show-paren-mismatch ((,solanum-class (:background ,solanum-error :inherit show-paren-match))))
 
    ;; trailing whitespaces
    `(trailing-whitespace ((,solanum-class (:background ,solanum-error))))

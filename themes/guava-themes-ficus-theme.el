@@ -214,7 +214,7 @@
 
    ;; parentheses
    `(show-paren-match ((,ficus-class (:foreground ,ficus-white :background ,ficus-bell))))
-   `(show-paren-mismatch ((,ficus-class (:foreground ,ficus-white :background ,ficus-error :inherit show-paren-match))))
+   `(show-paren-mismatch ((,ficus-class (:background ,ficus-error :inherit show-paren-match))))
 
    ;; trailing whitespaces
    `(trailing-whitespace ((,ficus-class (:background ,ficus-error))))

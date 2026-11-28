@@ -211,7 +211,7 @@
 
    ;; parentheses
    `(show-paren-match ((,petunia-class (:foreground ,petunia-black :background ,petunia-bell))))
-   `(show-paren-mismatch ((,petunia-class (:foreground ,petunia-white :background ,petunia-error :inherit show-paren-match))))
+   `(show-paren-mismatch ((,petunia-class (:background ,petunia-error :inherit show-paren-match))))
 
    ;; trailing whitespaces
    `(trailing-whitespace ((,petunia-class (:background ,petunia-error))))

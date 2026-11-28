@@ -215,7 +215,7 @@
 
    ;; parentheses
    `(show-paren-match ((,acer-class (:foreground ,acer-black :background ,acer-bell))))
-   `(show-paren-mismatch ((,acer-class (:foreground ,acer-black :background ,acer-error :inherit show-paren-match))))
+   `(show-paren-mismatch ((,acer-class (:background ,acer-error :inherit show-paren-match))))
 
    ;; trailing whitespaces
    `(trailing-whitespace ((,acer-class (:background ,acer-error))))

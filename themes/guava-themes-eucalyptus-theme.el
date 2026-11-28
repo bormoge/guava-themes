@@ -214,7 +214,7 @@
 
    ;; parentheses
    `(show-paren-match ((,eucalyptus-class (:foreground ,eucalyptus-white :background ,eucalyptus-bell))))
-   `(show-paren-mismatch ((,eucalyptus-class (:foreground ,eucalyptus-white :background ,eucalyptus-error :inherit show-paren-match))))
+   `(show-paren-mismatch ((,eucalyptus-class (:background ,eucalyptus-error :inherit show-paren-match))))
 
    ;; trailing whitespaces
    `(trailing-whitespace ((,eucalyptus-class (:background ,eucalyptus-error))))

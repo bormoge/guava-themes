@@ -217,7 +217,7 @@
 
    ;; parentheses
    `(show-paren-match ((,ceiba-class (:foreground ,ceiba-white :background ,ceiba-bell))))
-   `(show-paren-mismatch ((,ceiba-class (:foreground ,ceiba-white :background ,ceiba-error :inherit show-paren-match))))
+   `(show-paren-mismatch ((,ceiba-class (:background ,ceiba-error :inherit show-paren-match))))
 
    ;; trailing whitespaces
    `(trailing-whitespace ((,ceiba-class (:background ,ceiba-error))))

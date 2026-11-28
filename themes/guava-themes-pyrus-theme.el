@@ -215,7 +215,7 @@
 
    ;; parentheses
    `(show-paren-match ((,pyrus-class (:foreground ,pyrus-white :background ,pyrus-bell))))
-   `(show-paren-mismatch ((,pyrus-class (:foreground ,pyrus-white :background ,pyrus-error :inherit show-paren-match))))
+   `(show-paren-mismatch ((,pyrus-class (:background ,pyrus-error :inherit show-paren-match))))
 
    ;; trailing whitespaces
    `(trailing-whitespace ((,pyrus-class (:background ,pyrus-error))))

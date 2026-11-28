@@ -215,7 +215,7 @@
 
    ;; parentheses
    `(show-paren-match ((,dracaena-class (:foreground ,dracaena-white :background ,dracaena-bell))))
-   `(show-paren-mismatch ((,dracaena-class (:foreground ,dracaena-white :background ,dracaena-error :inherit show-paren-match))))
+   `(show-paren-mismatch ((,dracaena-class (:background ,dracaena-error :inherit show-paren-match))))
 
    ;; trailing whitespaces
    `(trailing-whitespace ((,dracaena-class (:background ,dracaena-error))))

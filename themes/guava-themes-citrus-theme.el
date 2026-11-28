@@ -220,7 +220,7 @@
 
    ;; parentheses
    `(show-paren-match ((,citrus-class (:foreground ,citrus-white :background ,citrus-bell))))
-   `(show-paren-mismatch ((,citrus-class (:foreground ,citrus-white :background ,citrus-error :inherit show-paren-match))))
+   `(show-paren-mismatch ((,citrus-class (:background ,citrus-error :inherit show-paren-match))))
 
    ;; trailing whitespaces
    `(trailing-whitespace ((,citrus-class (:background ,citrus-error))))

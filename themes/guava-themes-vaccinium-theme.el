@@ -214,7 +214,7 @@
 
    ;; parentheses
    `(show-paren-match ((,vaccinium-class (:foreground ,vaccinium-white :background ,vaccinium-bell))))
-   `(show-paren-mismatch ((,vaccinium-class (:foreground ,vaccinium-white :background ,vaccinium-error :inherit show-paren-match))))
+   `(show-paren-mismatch ((,vaccinium-class (:background ,vaccinium-error :inherit show-paren-match))))
 
    ;; trailing whitespaces
    `(trailing-whitespace ((,vaccinium-class (:background ,vaccinium-error))))
