@@ -74,10 +74,10 @@
        (acer-tetradic-a-2              "#B2CED7")
        (acer-tetradic-a-3              "#BBD7B2")
 
-       (acer-tetradic-b-0              "#9D50B4")
-       (acer-tetradic-b-1              "#67B450")
-       (acer-tetradic-b-2              "#B46B50")
-       (acer-tetradic-b-3              "#5099B4")
+       (acer-tetradic-b-0              "#9C50AA")
+       (acer-tetradic-b-1              "#5DAA50")
+       (acer-tetradic-b-2              "#AA6F50")
+       (acer-tetradic-b-3              "#508AAA")
 
        ;; Symbolic colors
        (acer-fg-1                      "#000000")
