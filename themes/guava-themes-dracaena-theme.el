@@ -69,10 +69,10 @@
        (dracaena-complementary-a-0         "#46E6A6")
        (dracaena-complementary-a-1         "#E64686")
 
-       (dracaena-tetradic-a-0              "#D29B7D")
-       (dracaena-tetradic-a-1              "#8AD27D")
-       (dracaena-tetradic-a-2              "#c57dd2")
-       (dracaena-tetradic-a-3              "#7DB4D2")
+       (dracaena-tetradic-a-0              "#96DCC8")
+       (dracaena-tetradic-a-1              "#DC96AA")
+       (dracaena-tetradic-a-2              "#A596DC")
+       (dracaena-tetradic-a-3              "#CDDC96")
 
        (dracaena-tetradic-b-0              "#BA5ACD")
        (dracaena-tetradic-b-1              "#6DCD5A")
