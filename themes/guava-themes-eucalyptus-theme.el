@@ -85,8 +85,8 @@
        (eucalyptus-highlight                 "#9ba08c")
        (eucalyptus-shadow                    "#717171")
        (eucalyptus-tooltip                   "#ffffe0")
-       (eucalyptus-region-1                  "#e1e696")
-       (eucalyptus-region-2                  "#96B9E6")
+       (eucalyptus-region-1                  "#b9beaa")
+       (eucalyptus-region-2                  "#aabeb9")
 
        (eucalyptus-mode-line                 eucalyptus-alt-deep-blue)
        (eucalyptus-mode-line-inactive        eucalyptus-gray-blue)
