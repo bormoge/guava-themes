@@ -31,7 +31,11 @@
 
 (require 'guava-themes)
 
-(deftheme guava-themes-jacaranda "A theme inspired by jacaranda colors.")
+(deftheme guava-themes-jacaranda
+  "A theme inspired by jacaranda colors."
+  :background-mode 'light
+  :family 'guava-themes
+  :kind 'color-scheme)
 
 (let* (
        (jacaranda-class '((class color) (min-colors 257)))

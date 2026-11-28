@@ -31,7 +31,11 @@
 
 (require 'guava-themes)
 
-(deftheme guava-themes-citrus "A theme inspired by orange, lime, lemon, and grapefruit colors.")
+(deftheme guava-themes-citrus
+  "A theme inspired by orange, lime, lemon, and grapefruit colors."
+  :background-mode 'light
+  :family 'guava-themes
+  :kind 'color-scheme)
 
 (let* (
        (citrus-class '((class color) (min-colors 257)))

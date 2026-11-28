@@ -31,7 +31,11 @@
 
 (require 'guava-themes)
 
-(deftheme guava-themes-prunus "A theme inspired by cherry colors.")
+(deftheme guava-themes-prunus
+  "A theme inspired by cherry colors."
+  :background-mode 'dark
+  :family 'guava-themes
+  :kind 'color-scheme)
 
 (let* (
        (prunus-class '((class color) (min-colors 257)))

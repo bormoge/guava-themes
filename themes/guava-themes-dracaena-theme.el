@@ -31,7 +31,11 @@
 
 (require 'guava-themes)
 
-(deftheme guava-themes-dracaena "A theme inspired by the dragon tree colors.")
+(deftheme guava-themes-dracaena
+  "A theme inspired by the dragon tree colors."
+  :background-mode 'dark
+  :family 'guava-themes
+  :kind 'color-scheme)
 
 (let* (
        (dracaena-class '((class color) (min-colors 257)))

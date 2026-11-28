@@ -31,7 +31,11 @@
 
 (require 'guava-themes)
 
-(deftheme guava-themes-malus "A theme inspired by apple colors.")
+(deftheme guava-themes-malus
+  "A theme inspired by apple colors."
+  :background-mode 'dark
+  :family 'guava-themes
+  :kind 'color-scheme)
 
 (let* (
        (malus-class '((class color) (min-colors 257)))

@@ -31,7 +31,11 @@
 
 (require 'guava-themes)
 
-(deftheme guava-themes-solanum "A theme inspired by eggplant, potato, and tomato colors.")
+(deftheme guava-themes-solanum
+  "A theme inspired by eggplant, potato, and tomato colors."
+  :background-mode 'dark
+  :family 'guava-themes
+  :kind 'color-scheme)
 
 (let* (
        (solanum-class '((class color) (min-colors 257)))

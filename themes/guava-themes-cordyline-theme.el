@@ -31,7 +31,11 @@
 
 (require 'guava-themes)
 
-(deftheme guava-themes-cordyline "A theme inspired by the ti plant colors.")
+(deftheme guava-themes-cordyline
+  "A theme inspired by the ti plant colors."
+  :background-mode 'dark
+  :family 'guava-themes
+  :kind 'color-scheme)
 
 (let* (
        (cordyline-class '((class color) (min-colors 257)))

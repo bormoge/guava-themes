@@ -31,7 +31,11 @@
 
 (require 'guava-themes)
 
-(deftheme guava-themes-lavandula "A theme inspired by lavender colors.")
+(deftheme guava-themes-lavandula
+  "A theme inspired by lavender colors."
+  :background-mode 'light
+  :family 'guava-themes
+  :kind 'color-scheme)
 
 (let* (
        (lavandula-class '((class color) (min-colors 257)))

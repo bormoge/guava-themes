@@ -31,7 +31,11 @@
 
 (require 'guava-themes)
 
-(deftheme guava-themes-psidium "A theme inspired by guava colors.")
+(deftheme guava-themes-psidium
+  "A theme inspired by guava colors."
+  :background-mode 'light
+  :family 'guava-themes
+  :kind 'color-scheme)
 
 (let* (
        (psidium-class '((class color) (min-colors 257)))

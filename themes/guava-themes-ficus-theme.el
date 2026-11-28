@@ -31,7 +31,11 @@
 
 (require 'guava-themes)
 
-(deftheme guava-themes-ficus "A theme inspired by fig colors.")
+(deftheme guava-themes-ficus
+  "A theme inspired by fig colors."
+  :background-mode 'dark
+  :family 'guava-themes
+  :kind 'color-scheme)
 
 (let* (
        (ficus-class '((class color) (min-colors 257)))

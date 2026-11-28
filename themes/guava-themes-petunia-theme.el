@@ -31,7 +31,11 @@
 
 (require 'guava-themes)
 
-(deftheme guava-themes-petunia "A theme inspired by petunia colors.")
+(deftheme guava-themes-petunia
+  "A theme inspired by petunia colors."
+  :background-mode 'dark
+  :family 'guava-themes
+  :kind 'color-scheme)
 
 (let* (
        (petunia-class '((class color) (min-colors 257)))

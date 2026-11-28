@@ -31,7 +31,11 @@
 
 (require 'guava-themes)
 
-(deftheme guava-themes-vaccinium "A theme inspired by blueberry, huckleberry, cranberry, and bilberry colors.")
+(deftheme guava-themes-vaccinium
+  "A theme inspired by blueberry, huckleberry, cranberry, and bilberry colors."
+  :background-mode 'dark
+  :family 'guava-themes
+  :kind 'color-scheme)
 
 (let* (
        (vaccinium-class '((class color) (min-colors 257)))

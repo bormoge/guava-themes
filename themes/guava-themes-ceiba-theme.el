@@ -31,7 +31,11 @@
 
 (require 'guava-themes)
 
-(deftheme guava-themes-ceiba "A theme inspired by the ceiba tree colors.")
+(deftheme guava-themes-ceiba
+  "A theme inspired by the ceiba tree colors."
+  :background-mode 'light
+  :family 'guava-themes
+  :kind 'color-scheme)
 
 (let* (
        (ceiba-class '((class color) (min-colors 257)))

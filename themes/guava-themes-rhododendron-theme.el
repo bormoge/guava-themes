@@ -31,7 +31,11 @@
 
 (require 'guava-themes)
 
-(deftheme guava-themes-rhododendron "A theme inspired by the azalea tree colors.")
+(deftheme guava-themes-rhododendron
+  "A theme inspired by the azalea tree colors."
+  :background-mode 'light
+  :family 'guava-themes
+  :kind 'color-scheme)
 
 (let* (
        (rhododendron-class '((class color) (min-colors 257)))

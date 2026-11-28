@@ -31,7 +31,11 @@
 
 (require 'guava-themes)
 
-(deftheme guava-themes-pyrus "A theme inspired by pear colors.")
+(deftheme guava-themes-pyrus
+  "A theme inspired by pear colors."
+  :background-mode 'light
+  :family 'guava-themes
+  :kind 'color-scheme)
 
 (let* (
        (pyrus-class '((class color) (min-colors 257)))

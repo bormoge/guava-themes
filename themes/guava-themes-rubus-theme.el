@@ -31,7 +31,11 @@
 
 (require 'guava-themes)
 
-(deftheme guava-themes-rubus "A theme inspired by raspberry, blackberry, and dewberry colors.")
+(deftheme guava-themes-rubus
+  "A theme inspired by raspberry, blackberry, and dewberry colors."
+  :background-mode 'dark
+  :family 'guava-themes
+  :kind 'color-scheme)
 
 (let* (
        (rubus-class '((class color) (min-colors 257)))

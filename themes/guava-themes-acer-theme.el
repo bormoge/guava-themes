@@ -31,7 +31,11 @@
 
 (require 'guava-themes)
 
-(deftheme guava-themes-acer "A theme inspired by maple colors.")
+(deftheme guava-themes-acer
+  "A theme inspired by maple colors."
+  :background-mode 'light
+  :family 'guava-themes
+  :kind 'color-scheme)
 
 (let* (
        (acer-class '((class color) (min-colors 257)))

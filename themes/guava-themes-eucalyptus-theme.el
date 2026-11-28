@@ -31,7 +31,11 @@
 
 (require 'guava-themes)
 
-(deftheme guava-themes-eucalyptus "A theme inspired by the eucalyptus tree colors.")
+(deftheme guava-themes-eucalyptus
+  "A theme inspired by the eucalyptus tree colors."
+  :background-mode 'light
+  :family 'guava-themes
+  :kind 'color-scheme)
 
 (let* (
        (eucalyptus-class '((class color) (min-colors 257)))
