@@ -73,10 +73,10 @@
        (lavandula-tetradic-a-2              "#B4FF97")
        (lavandula-tetradic-a-3              "#97E8FF")
 
-       (lavandula-tetradic-b-0              "#9D50B4")
-       (lavandula-tetradic-b-1              "#67B450")
-       (lavandula-tetradic-b-2              "#B46B50")
-       (lavandula-tetradic-b-3              "#5099B4")
+       (lavandula-tetradic-b-0              "#A864BE")
+       (lavandula-tetradic-b-1              "#7ABE64")
+       (lavandula-tetradic-b-2              "#BE7A64")
+       (lavandula-tetradic-b-3              "#64A8BE")
 
        ;; Symbolic colors
        (lavandula-fg-1                      "#505050")
