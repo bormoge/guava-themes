@@ -158,7 +158,7 @@
    `(font-lock-function-name-face ((,eucalyptus-class (:foreground ,eucalyptus-fl-function-name :weight medium))))
    `(font-lock-variable-name-face ((,eucalyptus-class (:foreground ,eucalyptus-fl-variable-name :weight medium))))
    `(font-lock-constant-face ((,eucalyptus-class (:foreground ,eucalyptus-fl-constant :weight medium))))
-   `(font-lock-warning-face ((,eucalyptus-class (:foreground ,eucalyptus-fl-warning :weight bold))))
+   `(font-lock-warning-face ((,eucalyptus-class (:inherit warning))))
    `(font-lock-punctuation-face ((,eucalyptus-class (:foreground ,eucalyptus-fl-punctuation :weight medium))))
    `(font-lock-negation-char-face ((,eucalyptus-class (:foreground ,eucalyptus-fl-negation-char :weight medium))))
 

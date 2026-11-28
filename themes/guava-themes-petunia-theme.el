@@ -155,7 +155,7 @@
    `(font-lock-function-name-face ((,petunia-class (:foreground ,petunia-fl-function-name :weight medium))))
    `(font-lock-variable-name-face ((,petunia-class (:foreground ,petunia-fl-variable-name :weight medium))))
    `(font-lock-constant-face ((,petunia-class (:foreground ,petunia-fl-constant :weight medium))))
-   `(font-lock-warning-face ((,petunia-class (:foreground ,petunia-fl-warning :weight bold))))
+   `(font-lock-warning-face ((,petunia-class (:inherit warning))))
    `(font-lock-punctuation-face ((,petunia-class (:foreground ,petunia-fl-punctuation :weight medium))))
    `(font-lock-negation-char-face ((,petunia-class (:foreground ,petunia-fl-negation-char :weight medium))))
 

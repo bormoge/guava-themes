@@ -161,7 +161,7 @@
    `(font-lock-function-name-face ((,rhododendron-class (:foreground ,rhododendron-fl-function-name :weight medium))))
    `(font-lock-variable-name-face ((,rhododendron-class (:foreground ,rhododendron-fl-variable-name :weight medium))))
    `(font-lock-constant-face ((,rhododendron-class (:foreground ,rhododendron-fl-constant :weight medium))))
-   `(font-lock-warning-face ((,rhododendron-class (:foreground ,rhododendron-fl-warning :weight bold))))
+   `(font-lock-warning-face ((,rhododendron-class (:inherit warning))))
    `(font-lock-punctuation-face ((,rhododendron-class (:foreground ,rhododendron-fl-punctuation :weight medium))))
    `(font-lock-negation-char-face ((,rhododendron-class (:foreground ,rhododendron-fl-negation-char :weight medium))))
 

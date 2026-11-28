@@ -161,7 +161,7 @@
    `(font-lock-function-name-face ((,rubus-class (:foreground ,rubus-fl-function-name :weight medium))))
    `(font-lock-variable-name-face ((,rubus-class (:foreground ,rubus-fl-variable-name :weight medium))))
    `(font-lock-constant-face ((,rubus-class (:foreground ,rubus-fl-constant :weight medium))))
-   `(font-lock-warning-face ((,rubus-class (:foreground ,rubus-fl-warning :weight bold))))
+   `(font-lock-warning-face ((,rubus-class (:inherit warning))))
    `(font-lock-punctuation-face ((,rubus-class (:foreground ,rubus-fl-punctuation :weight medium))))
    `(font-lock-negation-char-face ((,rubus-class (:foreground ,rubus-fl-negation-char :weight medium))))
 

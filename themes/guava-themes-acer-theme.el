@@ -159,7 +159,7 @@
    `(font-lock-function-name-face ((,acer-class (:foreground ,acer-fl-function-name :weight medium))))
    `(font-lock-variable-name-face ((,acer-class (:foreground ,acer-fl-variable-name :weight medium))))
    `(font-lock-constant-face ((,acer-class (:foreground ,acer-fl-constant :weight medium))))
-   `(font-lock-warning-face ((,acer-class (:foreground ,acer-fl-warning :weight bold))))
+   `(font-lock-warning-face ((,acer-class (:inherit warning))))
    `(font-lock-punctuation-face ((,acer-class (:foreground ,acer-fl-punctuation :weight medium))))
    `(font-lock-negation-char-face ((,acer-class (:foreground ,acer-fl-negation-char :weight medium))))
 

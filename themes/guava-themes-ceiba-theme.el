@@ -161,7 +161,7 @@
    `(font-lock-function-name-face ((,ceiba-class (:foreground ,ceiba-fl-function-name :weight medium))))
    `(font-lock-variable-name-face ((,ceiba-class (:foreground ,ceiba-fl-variable-name :weight medium))))
    `(font-lock-constant-face ((,ceiba-class (:foreground ,ceiba-fl-constant :weight medium))))
-   `(font-lock-warning-face ((,ceiba-class (:foreground ,ceiba-fl-warning :weight bold))))
+   `(font-lock-warning-face ((,ceiba-class (:inherit warning))))
    `(font-lock-punctuation-face ((,ceiba-class (:foreground ,ceiba-fl-punctuation :weight medium))))
    `(font-lock-negation-char-face ((,ceiba-class (:foreground ,ceiba-fl-negation-char :weight medium))))
 

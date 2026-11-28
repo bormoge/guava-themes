@@ -163,7 +163,7 @@
    `(font-lock-function-name-face ((,prunus-class (:foreground ,prunus-fl-function-name :weight medium))))
    `(font-lock-variable-name-face ((,prunus-class (:foreground ,prunus-fl-variable-name :weight medium))))
    `(font-lock-constant-face ((,prunus-class (:foreground ,prunus-fl-constant :weight medium))))
-   `(font-lock-warning-face ((,prunus-class (:foreground ,prunus-fl-warning :weight bold))))
+   `(font-lock-warning-face ((,prunus-class (:inherit warning))))
    `(font-lock-punctuation-face ((,prunus-class (:foreground ,prunus-fl-punctuation :weight medium))))
    `(font-lock-negation-char-face ((,prunus-class (:foreground ,prunus-fl-negation-char :weight medium))))
 

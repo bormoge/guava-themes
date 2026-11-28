@@ -159,7 +159,7 @@
    `(font-lock-function-name-face ((,malus-class (:foreground ,malus-fl-function-name :weight medium))))
    `(font-lock-variable-name-face ((,malus-class (:foreground ,malus-fl-variable-name :weight medium))))
    `(font-lock-constant-face ((,malus-class (:foreground ,malus-fl-constant :weight medium))))
-   `(font-lock-warning-face ((,malus-class (:foreground ,malus-fl-warning :weight bold))))
+   `(font-lock-warning-face ((,malus-class (:inherit warning))))
    `(font-lock-punctuation-face ((,malus-class (:foreground ,malus-fl-punctuation :weight medium))))
    `(font-lock-negation-char-face ((,malus-class (:foreground ,malus-fl-negation-char :weight medium))))
 

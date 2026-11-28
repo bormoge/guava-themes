@@ -158,7 +158,7 @@
    `(font-lock-function-name-face ((,cordyline-class (:foreground ,cordyline-fl-function-name :weight medium))))
    `(font-lock-variable-name-face ((,cordyline-class (:foreground ,cordyline-fl-variable-name :weight medium))))
    `(font-lock-constant-face ((,cordyline-class (:foreground ,cordyline-fl-constant :weight medium))))
-   `(font-lock-warning-face ((,cordyline-class (:foreground ,cordyline-fl-warning :weight bold))))
+   `(font-lock-warning-face ((,cordyline-class (:inherit warning))))
    `(font-lock-punctuation-face ((,cordyline-class (:foreground ,cordyline-fl-punctuation :weight medium))))
    `(font-lock-negation-char-face ((,cordyline-class (:foreground ,cordyline-fl-negation-char :weight medium))))
 

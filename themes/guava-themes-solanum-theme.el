@@ -158,7 +158,7 @@
    `(font-lock-function-name-face ((,solanum-class (:foreground ,solanum-fl-function-name :weight medium))))
    `(font-lock-variable-name-face ((,solanum-class (:foreground ,solanum-fl-variable-name :weight medium))))
    `(font-lock-constant-face ((,solanum-class (:foreground ,solanum-fl-constant :weight medium))))
-   `(font-lock-warning-face ((,solanum-class (:foreground ,solanum-fl-warning :weight bold))))
+   `(font-lock-warning-face ((,solanum-class (:inherit warning))))
    `(font-lock-punctuation-face ((,solanum-class (:foreground ,solanum-fl-punctuation :weight medium))))
    `(font-lock-negation-char-face ((,solanum-class (:foreground ,solanum-fl-negation-char :weight medium))))
 

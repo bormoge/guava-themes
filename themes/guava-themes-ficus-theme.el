@@ -158,7 +158,7 @@
    `(font-lock-function-name-face ((,ficus-class (:foreground ,ficus-fl-function-name :weight medium))))
    `(font-lock-variable-name-face ((,ficus-class (:foreground ,ficus-fl-variable-name :weight medium))))
    `(font-lock-constant-face ((,ficus-class (:foreground ,ficus-fl-constant :weight medium))))
-   `(font-lock-warning-face ((,ficus-class (:foreground ,ficus-fl-warning :weight bold))))
+   `(font-lock-warning-face ((,ficus-class (:inherit warning))))
    `(font-lock-punctuation-face ((,ficus-class (:foreground ,ficus-fl-punctuation :weight medium))))
    `(font-lock-negation-char-face ((,ficus-class (:foreground ,ficus-fl-negation-char :weight medium))))
 

@@ -159,7 +159,7 @@
    `(font-lock-function-name-face ((,pyrus-class (:foreground ,pyrus-fl-function-name :weight medium))))
    `(font-lock-variable-name-face ((,pyrus-class (:foreground ,pyrus-fl-variable-name :weight medium))))
    `(font-lock-constant-face ((,pyrus-class (:foreground ,pyrus-fl-constant :weight medium))))
-   `(font-lock-warning-face ((,pyrus-class (:foreground ,pyrus-fl-warning :weight bold))))
+   `(font-lock-warning-face ((,pyrus-class (:inherit warning))))
    `(font-lock-punctuation-face ((,pyrus-class (:foreground ,pyrus-fl-punctuation :weight medium))))
    `(font-lock-negation-char-face ((,pyrus-class (:foreground ,pyrus-fl-negation-char :weight medium))))
 

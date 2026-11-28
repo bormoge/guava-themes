@@ -158,7 +158,7 @@
    `(font-lock-function-name-face ((,jacaranda-class (:foreground ,jacaranda-fl-function-name :weight medium))))
    `(font-lock-variable-name-face ((,jacaranda-class (:foreground ,jacaranda-fl-variable-name :weight medium))))
    `(font-lock-constant-face ((,jacaranda-class (:foreground ,jacaranda-fl-constant :weight medium))))
-   `(font-lock-warning-face ((,jacaranda-class (:foreground ,jacaranda-fl-warning :weight bold))))
+   `(font-lock-warning-face ((,jacaranda-class (:inherit warning))))
    `(font-lock-punctuation-face ((,jacaranda-class (:foreground ,jacaranda-fl-punctuation :weight medium))))
    `(font-lock-negation-char-face ((,jacaranda-class (:foreground ,jacaranda-fl-negation-char :weight medium))))
 

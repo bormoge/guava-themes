@@ -158,7 +158,7 @@
    `(font-lock-function-name-face ((,vaccinium-class (:foreground ,vaccinium-fl-function-name :weight medium))))
    `(font-lock-variable-name-face ((,vaccinium-class (:foreground ,vaccinium-fl-variable-name :weight medium))))
    `(font-lock-constant-face ((,vaccinium-class (:foreground ,vaccinium-fl-constant :weight medium))))
-   `(font-lock-warning-face ((,vaccinium-class (:foreground ,vaccinium-fl-warning :weight bold))))
+   `(font-lock-warning-face ((,vaccinium-class (:inherit warning))))
    `(font-lock-punctuation-face ((,vaccinium-class (:foreground ,vaccinium-fl-punctuation :weight medium))))
    `(font-lock-negation-char-face ((,vaccinium-class (:foreground ,vaccinium-fl-negation-char :weight medium))))
 

@@ -158,7 +158,7 @@
    `(font-lock-function-name-face ((,lavandula-class (:foreground ,lavandula-fl-function-name :weight medium))))
    `(font-lock-variable-name-face ((,lavandula-class (:foreground ,lavandula-fl-variable-name :weight medium))))
    `(font-lock-constant-face ((,lavandula-class (:foreground ,lavandula-fl-constant :weight medium))))
-   `(font-lock-warning-face ((,lavandula-class (:foreground ,lavandula-fl-warning :weight bold))))
+   `(font-lock-warning-face ((,lavandula-class (:inherit warning))))
    `(font-lock-punctuation-face ((,lavandula-class (:foreground ,lavandula-fl-punctuation :weight medium))))
    `(font-lock-negation-char-face ((,lavandula-class (:foreground ,lavandula-fl-negation-char :weight medium))))
 

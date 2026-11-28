@@ -164,7 +164,7 @@
    `(font-lock-function-name-face ((,citrus-class (:foreground ,citrus-fl-function-name :weight medium))))
    `(font-lock-variable-name-face ((,citrus-class (:foreground ,citrus-fl-variable-name :weight medium))))
    `(font-lock-constant-face ((,citrus-class (:foreground ,citrus-fl-constant :weight medium))))
-   `(font-lock-warning-face ((,citrus-class (:foreground ,citrus-fl-warning :weight bold))))
+   `(font-lock-warning-face ((,citrus-class (:inherit warning))))
    `(font-lock-punctuation-face ((,citrus-class (:foreground ,citrus-fl-punctuation :weight medium))))
    `(font-lock-negation-char-face ((,citrus-class (:foreground ,citrus-fl-negation-char :weight medium))))
 

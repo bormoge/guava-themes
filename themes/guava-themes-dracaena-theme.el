@@ -159,7 +159,7 @@
    `(font-lock-function-name-face ((,dracaena-class (:foreground ,dracaena-fl-function-name :weight medium))))
    `(font-lock-variable-name-face ((,dracaena-class (:foreground ,dracaena-fl-variable-name :weight medium))))
    `(font-lock-constant-face ((,dracaena-class (:foreground ,dracaena-fl-constant :weight medium))))
-   `(font-lock-warning-face ((,dracaena-class (:foreground ,dracaena-fl-warning :weight bold))))
+   `(font-lock-warning-face ((,dracaena-class (:inherit warning))))
    `(font-lock-punctuation-face ((,dracaena-class (:foreground ,dracaena-fl-punctuation :weight medium))))
    `(font-lock-negation-char-face ((,dracaena-class (:foreground ,dracaena-fl-negation-char :weight medium))))
 

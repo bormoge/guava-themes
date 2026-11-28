@@ -156,7 +156,7 @@
    `(font-lock-function-name-face ((,psidium-class (:foreground ,psidium-fl-function-name :weight medium))))
    `(font-lock-variable-name-face ((,psidium-class (:foreground ,psidium-fl-variable-name :weight medium))))
    `(font-lock-constant-face ((,psidium-class (:foreground ,psidium-fl-constant :weight medium))))
-   `(font-lock-warning-face ((,psidium-class (:foreground ,psidium-fl-warning :weight bold))))
+   `(font-lock-warning-face ((,psidium-class (:inherit warning))))
    `(font-lock-punctuation-face ((,psidium-class (:foreground ,psidium-fl-punctuation :weight medium))))
    `(font-lock-negation-char-face ((,psidium-class (:foreground ,psidium-fl-negation-char :weight medium))))
 
