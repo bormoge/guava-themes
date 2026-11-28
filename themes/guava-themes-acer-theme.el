@@ -86,8 +86,8 @@
        (acer-highlight                 "#ffca87")
        (acer-shadow                    "#717171")
        (acer-tooltip                   "#ffffe0")
-       (acer-region-1                  "#c88550")
-       (acer-region-2                  "#a07150")
+       (acer-region-1                  "#c89964")
+       (acer-region-2                  "#b49978")
 
        (acer-mode-line                 acer-orange)
        (acer-mode-line-inactive        acer-light-orange)
