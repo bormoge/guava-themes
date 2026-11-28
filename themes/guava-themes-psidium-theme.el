@@ -71,10 +71,10 @@
        (psidium-tetradic-a-2              "#C6D1F8")
        (psidium-tetradic-a-3              "#C6F8D4")
 
-       (psidium-tetradic-b-0              "#C94ED0")
-       (psidium-tetradic-b-1              "#55D04E")
-       (psidium-tetradic-b-2              "#D0894E")
-       (psidium-tetradic-b-3              "#4E96D0")
+       (psidium-tetradic-b-0              "#B54EBC")
+       (psidium-tetradic-b-1              "#55BC4E")
+       (psidium-tetradic-b-2              "#BC7E4E")
+       (psidium-tetradic-b-3              "#4E8CBC")
 
        ;; Symbolic colors
        (psidium-fg-1                      "#000000")
