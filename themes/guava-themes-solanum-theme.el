@@ -61,7 +61,7 @@
        (solanum-light-purple              "#b4aad7")
        (solanum-purple                    "#786ed7")
        (solanum-purple-pink               "#915d93")
-       (solanum-dark-purple               "#73466e")
+       (solanum-dark-purple               "#7d5078")
        (solanum-alt-dark-purple           "#3b3550")
 
        ;; Harmonic colors
