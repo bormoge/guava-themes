@@ -82,8 +82,8 @@
        ;; Symbolic colors
        (acer-fg-1                      "#000000")
        (acer-fg-2                      "#3c3c3c")
-       (acer-bg-1                      "#f7bb78")
-       (acer-highlight                 "#e3a764")
+       (acer-bg-1                      "#f0bb78")
+       (acer-highlight                 "#ffca87")
        (acer-shadow                    "#717171")
        (acer-tooltip                   "#ffffe0")
        (acer-region-1                  "#c88550")
