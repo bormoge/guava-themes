@@ -76,10 +76,10 @@
        (rhododendron-tetradic-a-2              "#A7FD94")
        (rhododendron-tetradic-a-3              "#FDB594")
 
-       (rhododendron-tetradic-b-0              "#9D50B4")
-       (rhododendron-tetradic-b-1              "#67B450")
-       (rhododendron-tetradic-b-2              "#B46B50")
-       (rhododendron-tetradic-b-3              "#5099B4")
+       (rhododendron-tetradic-b-0              "#8946AA")
+       (rhododendron-tetradic-b-1              "#67AA46")
+       (rhododendron-tetradic-b-2              "#AA5746")
+       (rhododendron-tetradic-b-3              "#4699AA")
 
        ;; Symbolic colors
        (rhododendron-fg-1                      "#000000")
