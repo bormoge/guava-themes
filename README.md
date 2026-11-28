@@ -1,6 +1,8 @@
-[![MELPA](https://melpa.org/packages/guava-themes-badge.svg)](https://melpa.org/#/guava-themes)
-[![MELPA Stable](https://stable.melpa.org/packages/guava-themes-badge.svg)](https://stable.melpa.org/#/guava-themes)
-[![License](https://img.shields.io/github/license/bormoge/guava-themes)](https://github.com/bormoge/guava-themes)
+<!-- [![MELPA](https://melpa.org/packages/guava-themes-badge.svg)](https://melpa.org/#/guava-themes) -->
+<!-- [![MELPA Stable](https://stable.melpa.org/packages/guava-themes-badge.svg)](https://stable.melpa.org/#/guava-themes) -->
+[![MELPA Snapshots](https://snapshots.melpa.org/packages/guava-themes-badge.svg)](https://snapshots.melpa.org/#/guava-themes)
+[![MELPA Releases](https://releases.melpa.org/packages/guava-themes-badge.svg)](https://releases.melpa.org/#/guava-themes)
+[![License](https://img.shields.io/badge/License-GPL--3.0--or--later-blue.svg)](https://github.com/bormoge/guava-themes)
 
 # guava-themes
 A few Emacs themes inspired by guavas (and other plants).
@@ -41,7 +43,7 @@ Originally conceived as a tribute to the [guava fruit](https://en.wikipedia.org/
 And so, the package name became an Artifact Title, as is known in the tropes community.  
 
 ## Installation
-You can install **guava-themes** from [MELPA](https://melpa.org/#/getting-started) using **one** of the following methods: 
+You can install **guava-themes** from [MELPA](https://snapshots.melpa.org/#/getting-started) using **one** of the following methods: 
 
 <details>
 <summary><b>use-package</b></summary>
